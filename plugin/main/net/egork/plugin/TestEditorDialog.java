@@ -107,7 +107,6 @@ public class TestEditorDialog extends JDialog {
 		main.add(right, BorderLayout.CENTER);
 		main.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 		setContentPane(main);
-		setLocation(200, 200);
 		pack();
 	}
 

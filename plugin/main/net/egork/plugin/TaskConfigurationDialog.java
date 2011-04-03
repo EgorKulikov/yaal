@@ -86,7 +86,6 @@ public class TaskConfigurationDialog extends JDialog {
 		setContentPane(panel);
 		pack();
 		applyConfiguration(configuration);
-		setLocation(630, 70);
 		getRootPane().setDefaultButton(ok);
 	}
 
