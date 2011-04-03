@@ -1,4 +1,4 @@
-package net.egork.y2011.m4.d2;
+package net.egork.y2011.m4.codecheflongcontest;
 
 import net.egork.collections.map.cppmap.CPPMap;
 import net.egork.collections.pair.Pair;

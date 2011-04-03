@@ -1,4 +1,4 @@
-package net.egork.y2011.m4.d2;
+package net.egork.y2011.m4.d2.localcontestfrommexico;
 
 import net.egork.collections.pair.Pair;
 import net.egork.utils.io.inputreader.InputReader;

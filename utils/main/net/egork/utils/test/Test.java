@@ -27,8 +27,8 @@ public class Test implements Serializable {
 	@Override
 	public String toString() {
 		String result = (input + " ").replace('\n', ' ');
-		if (result.length() > 20)
-			result = result.substring(0, 20) + "...";
+		if (result.length() > 30)
+			result = result.substring(0, 30) + "...";
 		return result;
 	}
 }

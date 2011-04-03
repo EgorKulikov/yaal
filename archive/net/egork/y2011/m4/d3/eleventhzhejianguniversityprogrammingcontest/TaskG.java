@@ -1,4 +1,4 @@
-package net.egork.y2011.m4.d3;
+package net.egork.y2011.m4.d3.eleventhzhejianguniversityprogrammingcontest;
 
 import net.egork.numbers.NumberAlgorithms;
 import net.egork.numbers.rational.Rational;

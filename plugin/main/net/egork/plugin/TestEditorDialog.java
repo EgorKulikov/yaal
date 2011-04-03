@@ -39,13 +39,15 @@ public class TestEditorDialog extends JDialog {
 					output.setText(tests.get(index).getExpectedOutput());
 					currentTest = index;
 					input.setEnabled(true);
-					output.setEditable(true);
+					output.setEnabled(true);
 				}
 			}
 		});
 
 		input = new JTextArea();
 		output = new JTextArea();
+		input.setEnabled(false);
+		output.setEnabled(false);
 		JBScrollPane scrollTestList = new JBScrollPane(testList, JBScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JBScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		JBScrollPane scrollInput = new JBScrollPane(input);
 		JBScrollPane scrollOutput = new JBScrollPane(output);
@@ -68,7 +70,7 @@ public class TestEditorDialog extends JDialog {
 				output.setText("");
 				currentTest = tests.size() - 1;
 				input.setEnabled(true);
-				output.setEditable(true);
+				output.setEnabled(true);
 			}
 		});
 		JButton remove = new JButton("Remove");
@@ -82,7 +84,7 @@ public class TestEditorDialog extends JDialog {
 				output.setText("");
 				currentTest = -1;
 				input.setEnabled(false);
-				output.setEditable(false);
+				output.setEnabled(false);
 			}
 		});
 		JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 5));
@@ -103,6 +105,7 @@ public class TestEditorDialog extends JDialog {
 		JPanel main = new JPanel(new BorderLayout(5, 5));
 		main.add(left, BorderLayout.WEST);
 		main.add(right, BorderLayout.CENTER);
+		main.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 		setContentPane(main);
 		setLocation(200, 200);
 		pack();
