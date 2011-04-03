@@ -19,6 +19,8 @@ public class RunTask extends AnAction {
 		if (mainSource == null)
 			return;
 		Util.saveSourceFile("test", "Main.java", mainSource);
+		Util.saveSourceFile("main", "Main.java", configuration.generateMainRunEnvironment());
 		Util.saveSourceFile("test", "Tests.java", configuration.generateTests());
+		Util.saveSourceFile("main", "Tests.java", configuration.generateTests());
 	}
 }

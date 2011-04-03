@@ -85,16 +85,37 @@ public class TaskConfiguration implements Serializable {
 		String checkerSource = Util.loadSourceFile(checkerFileName);
 		if (source == null || checkerSource == null)
 			return null;
-		source = "import net.egork.utils.exit.Exit;\nimport net.egork.utils.io.streaminputreader.StreamInputReader;\nimport java.io.*;\nimport net.egork.utils.io.stringinputreader.StringInputReader;\n" + source;
+		source = mandatoryImports() + source;
 		StringBuilder additionalCode = new StringBuilder();
 		additionalCode.append(generateMainClass());
-		additionalCode.append("\nclass MainChecker {\n");
-		additionalCode.append("\tpublic static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {\n");
-		additionalCode.append("\t\treturn new ").append(taskID).append("Checker().check(input, expectedOutput, actualOutput);\n");
-		additionalCode.append("\t}\n");
-		additionalCode.append("}\n\n");
+		additionalCode.append(generateMainChecker());
 		StringBuilder result = inlineImports(additionalCode.toString(), checkerSource, source);
 		return result.toString();
+	}
+
+	public String generateMainChecker() {
+		StringBuilder checker = new StringBuilder();
+		checker.append("\nclass MainChecker {\n");
+		checker.append("\tpublic static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {\n");
+		checker.append("\t\treturn new ").append(taskID).append("Checker().check(input, expectedOutput, actualOutput);\n");
+		checker.append("\t}\n");
+		checker.append("}\n");
+		return checker.toString();
+	}
+
+	public String mandatoryImports() {
+		StringBuilder mandatoryImports = new StringBuilder();
+		mandatoryImports.append("import net.egork.utils.exit.Exit;\n");
+		mandatoryImports.append("import net.egork.utils.io.streaminputreader.StreamInputReader;\n");
+		mandatoryImports.append("import java.io.*;\n");
+		mandatoryImports.append("import net.egork.utils.io.stringinputreader.StringInputReader;\n");
+		mandatoryImports.append("import net.egork.utils.io.inputreader.InputReader;\n");
+		mandatoryImports.append("import net.egork.utils.solver.Solver;\n");
+		return mandatoryImports.toString();
+	}
+
+	public String generateMainRunEnvironment() {
+		return mandatoryImports() + generateMainClass() + generateMainChecker();
 	}
 
 	private static StringBuilder inlineImports(String additionalCode, String...sources) {

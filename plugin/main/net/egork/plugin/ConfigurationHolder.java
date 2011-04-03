@@ -1,5 +1,6 @@
 package net.egork.plugin;
 
+import com.intellij.openapi.actionSystem.ActionManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.*;
 
@@ -14,9 +15,12 @@ public class ConfigurationHolder {
 	private TaskConfiguration currentTask = null;
 	private NavigableMap<String, TaskConfiguration> tasks = new TreeMap<String, TaskConfiguration>();
 	private VirtualFile homeDirectory = null;
+	private TaskConfiguration lastConfiguration = null;
+	private boolean initialized = false;
 
 	public static ConfigurationHolder getInstance() {
-		instance.rebuildTaskList(instance.currentTask == null ? "" : instance.currentTask.getTaskID());
+		if (!instance.initialized)
+			instance.rebuildTaskList(instance.currentTask == null ? "" : instance.currentTask.getTaskID());
 		return instance;
 	}
 
@@ -91,6 +95,7 @@ public class ConfigurationHolder {
 	private void rebuildTaskList(String selected) {
 		if (updateHomeDirectory() == null)
 			return;
+		initialized = true;
 		tasks.clear();
 		for (VirtualFile child : homeDirectory.getChildren()) {
 			if (!"task".equals(child.getExtension()))
@@ -108,6 +113,7 @@ public class ConfigurationHolder {
 			currentTask = tasks.get(tasks.tailMap(selected).firstKey());
 		if (currentTask == null)
 			currentTask = tasks.firstEntry().getValue();
+		setCurrentTask(currentTask);
 	}
 
 	public TaskConfiguration getCurrentTask() {
@@ -120,5 +126,15 @@ public class ConfigurationHolder {
 
 	public void setCurrentTask(TaskConfiguration currentTask) {
 		this.currentTask = currentTask;
+		TaskList taskList = (TaskList) ActionManager.getInstance().getAction("taskList");
+		taskList.update(currentTask);
+	}
+
+	public TaskConfiguration getLastConfiguration() {
+		return lastConfiguration;
+	}
+
+	public void setLastConfiguration(TaskConfiguration lastConfiguration) {
+		this.lastConfiguration = lastConfiguration;
 	}
 }

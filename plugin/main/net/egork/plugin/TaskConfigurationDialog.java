@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -84,6 +85,17 @@ public class TaskConfigurationDialog extends JDialog {
 		pack();
 		applyConfiguration(configuration);
 		setLocation(630, 70);
+		getRootPane().setDefaultButton(ok);
+	}
+
+	@Override
+	public void setVisible(boolean b) {
+		if (b) {
+			taskID.requestFocusInWindow();
+			taskID.setSelectionStart(0);
+			taskID.setSelectionEnd(taskID.getText().length());
+		}
+		super.setVisible(b);
 	}
 
 	public static TaskConfiguration editConfiguration(TaskConfiguration configuration) {
