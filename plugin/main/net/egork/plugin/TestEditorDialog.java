@@ -118,8 +118,9 @@ public class TestEditorDialog extends JDialog {
 		testList.setListData(tests.toArray());
 	}
 
-	public static TaskConfiguration editTests() {
+	public static TaskConfiguration editTests(Component component) {
 		TestEditorDialog dialog = new TestEditorDialog();
+		dialog.setLocation(Util.getLocation(component));
 		dialog.setVisible(true);
 		return dialog.configuration;
 	}

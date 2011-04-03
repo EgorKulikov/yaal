@@ -8,14 +8,11 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
  */
 public class NewTask extends AnAction {
 	public void actionPerformed(final AnActionEvent event) {
-		TaskConfiguration configuration = ConfigurationHolder.getInstance().getLastConfiguration();
-		TaskConfiguration returnedConfiguration = TaskConfigurationDialog.editConfiguration(
-			configuration == null ? TaskConfiguration.CODE_FORCES : configuration);
+		TaskConfiguration returnedConfiguration = TaskConfigurationDialog.editConfiguration(event.getInputEvent().getComponent());
 		if (returnedConfiguration == null)
 			return;
 		ConfigurationHolder.getInstance().setLastConfiguration(returnedConfiguration);
-		configuration = returnedConfiguration;
-		createSourceStub(configuration);
+		createSourceStub(returnedConfiguration);
 	}
 
 	@Override

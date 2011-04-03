@@ -6,13 +6,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class TaskConfigurationDialog extends JDialog {
 	private TaskConfiguration configuration;
+	private TaskConfiguration returnedConfiguration = null;
 	private JComboBox predefinedConfigurations;
 	private JTextField taskID;
 	private JComboBox testType;
@@ -23,6 +23,8 @@ public class TaskConfigurationDialog extends JDialog {
 
 	private TaskConfigurationDialog(TaskConfiguration configuration) {
 		super((Frame)null, true);
+		if (configuration == null)
+			configuration = TaskConfiguration.CODE_FORCES;
 		this.configuration = configuration;
 		predefinedConfigurations = new JComboBox(new Object[]{
 			TaskConfiguration.CODE_FORCES,
@@ -68,7 +70,7 @@ public class TaskConfigurationDialog extends JDialog {
 		buttonPanel.add(ok, BorderLayout.WEST);
 		ok.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				TaskConfigurationDialog.this.configuration = constructConfiguration();
+				returnedConfiguration = constructConfiguration();
 				setVisible(false);
 			}
 		});
@@ -76,7 +78,7 @@ public class TaskConfigurationDialog extends JDialog {
 		buttonPanel.add(cancel, BorderLayout.EAST);
 		cancel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				TaskConfigurationDialog.this.configuration = null;
+				returnedConfiguration = null;
 				setVisible(false);
 			}
 		});
@@ -98,10 +100,11 @@ public class TaskConfigurationDialog extends JDialog {
 		super.setVisible(b);
 	}
 
-	public static TaskConfiguration editConfiguration(TaskConfiguration configuration) {
-		TaskConfigurationDialog dialog = new TaskConfigurationDialog(configuration);
+	public static TaskConfiguration editConfiguration(Component component) {
+		TaskConfigurationDialog dialog = new TaskConfigurationDialog(ConfigurationHolder.getInstance().getLastConfiguration());
+		dialog.setLocation(Util.getLocation(component));
 		dialog.setVisible(true);
-		return dialog.getConfiguration();
+		return dialog.returnedConfiguration;
 	}
 
 	private void applyConfiguration(TaskConfiguration current) {
@@ -121,9 +124,5 @@ public class TaskConfigurationDialog extends JDialog {
 		return new TaskConfiguration(taskID.getText(), (TaskConfiguration.TestType) testType.getSelectedItem(),
 			(TaskConfiguration.InputType) inputType.getSelectedItem(), customInputFileName.getText(),
 			(TaskConfiguration.InputType) outputType.getSelectedItem(), customOutputFileName.getText());
-	}
-
-	private TaskConfiguration getConfiguration() {
-		return configuration;
 	}
 }

@@ -47,16 +47,11 @@ public class SelectTaskDialog extends JDialog {
 		setUndecorated(true);
 		setContentPane(taskList);
 		pack();
-//		setLocation(700, 70);
 	}
 
 	public static TaskConfiguration selectTask(Component component) {
 		SelectTaskDialog dialog = new SelectTaskDialog();
-		Point location = new Point(component.getX(), component.getY() + component.getHeight());
-		SwingUtilities.convertPointToScreen(location, component);
-		location.x -= component.getLocation().x;
-		location.y -= component.getLocation().y;
-		dialog.setLocation(location);
+		dialog.setLocation(Util.getLocation(component));
 		dialog.setVisible(true);
 		return dialog.selectedTask;
 	}

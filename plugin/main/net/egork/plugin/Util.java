@@ -6,6 +6,8 @@ import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.VirtualFile;
 import net.egork.utils.io.streaminputreader.StreamInputReader;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.*;
 import java.util.InputMismatchException;
 
@@ -56,6 +58,14 @@ public class Util {
 				}
 			}
 		});
+	}
+
+	public static Point getLocation(Component component) {
+		Point location = new Point(component.getX(), component.getY() + component.getHeight());
+		SwingUtilities.convertPointToScreen(location, component);
+		location.x -= component.getLocation().x;
+		location.y -= component.getLocation().y;
+		return location;
 	}
 
 	public static OutputStream getOutputStream(String path, String filename) {

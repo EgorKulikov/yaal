@@ -13,7 +13,7 @@ public class EditTests extends AnAction {
 	}
 
 	public void actionPerformed(AnActionEvent e) {
-		TaskConfiguration current = TestEditorDialog.editTests();
+		TaskConfiguration current = TestEditorDialog.editTests(e.getInputEvent().getComponent());
 		Util.saveConfiguration("main", current.getTaskID() + ".task", current);
 	}
 }
