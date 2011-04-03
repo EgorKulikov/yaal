@@ -1,0 +1,29 @@
+<idea-plugin version="2">
+  <name>Algorithm helper</name>
+  <description>short description of the plugin</description>
+  <version>1.0</version>
+  <vendor>YourCompany</vendor>
+  <idea-version since-build="8000"/>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+      <action id="newTask" class="net.egork.plugin.NewTask" text="New Task" />
+      <action id="runTask" class="net.egork.plugin.RunTask" text="Run Task" />
+      <action id="taskList" class="net.egork.plugin.TaskList" text="Task List" />
+      <action id="deleteTask" class="net.egork.plugin.DeleteTask" text="Delete Task"/>
+      <action id="archiveTask" class="net.egork.plugin.ArchiveTask" text="Archive Task"/>
+      <action id="editTests" class="net.egork.plugin.EditTests" text="Edit Tests"/>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+</idea-plugin>
