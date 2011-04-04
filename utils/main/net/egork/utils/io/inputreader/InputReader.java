@@ -195,4 +195,11 @@ public abstract class InputReader {
 	}
 
 	public abstract void close();
+
+	public int[][] readIntTable(int rowCount, int columnCount) {
+		int[][] table = new int[rowCount][];
+		for (int i = 0; i < rowCount; i++)
+			table[i] = readIntArray(columnCount);
+		return table;
+	}
 }

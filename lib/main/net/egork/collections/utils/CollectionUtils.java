@@ -1,5 +1,6 @@
 package net.egork.collections.utils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,5 +20,45 @@ public class CollectionUtils {
 		for (int element : list)
 			array[index++] = element;
 		return array;
+	}
+
+	public static int minIndex(long[] array) {
+		if (array.length == 0)
+			return -1;
+		long minimalValue = Long.MAX_VALUE;
+		int index = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] < minimalValue) {
+				minimalValue = array[i];
+				index = i;
+			}
+		}
+		return index;
+	}
+
+	public static List<Integer> interval(int from, int to) {
+		List<Integer> result = new ArrayList<Integer>(Math.max(from, to) - Math.min(from, to) + 1);
+		if (to > from) {
+			for (int i = from; i <= to; i++)
+				result.add(i);
+		} else {
+			for (int i = from; i >= to; i--)
+				result.add(i);
+		}
+		return result;
+	}
+
+	public static int maxIndex(int[] array) {
+		if (array.length == 0)
+			return -1;
+		int maximalValue = Integer.MIN_VALUE;
+		int index = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > maximalValue) {
+				maximalValue = array[i];
+				index = i;
+			}
+		}
+		return index;
 	}
 }

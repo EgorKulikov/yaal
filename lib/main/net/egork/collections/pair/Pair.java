@@ -4,6 +4,15 @@ package net.egork.collections.pair;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class Pair<U, V> {
+	public static class Comparator<U extends Comparable<U>, V extends Comparable<V>> implements java.util.Comparator<Pair<U, V>> {
+		public int compare(Pair<U, V> o1, Pair<U, V> o2) {
+			int result = o1.first.compareTo(o2.first);
+			if (result != 0)
+				return result;
+			return o1.second.compareTo(o2.second);
+		}
+	}
+
 	private final U first;
 	private final V second;
 

@@ -169,13 +169,17 @@ public class TaskConfiguration implements Serializable {
 		result.append("public class Tests {\n");
 		result.append("\tpublic static final Test[] TESTS = {\n");
 		for (Test test : tests) {
-			result.append("\t\tnew Test(\"").append(test.getInput().replaceAll("\n", "\\\\n")).append("\", \"").
-				append(test.getExpectedOutput().replaceAll("\n", "\\\\n")).append("\"),\n");
+			result.append("\t\tnew Test(\"").append(escape(test.getInput())).append("\", \"").
+				append(escape(test.getExpectedOutput())).append("\"),\n");
 		}
 		result.append("\t};\n");
 		result.append("}\n");
 		result = inlineImports("", result.toString());
 		return result.toString();
+	}
+
+	private static String escape(String input) {
+		return input.replaceAll("\\\\", "\\\\").replaceAll("\n", "\\\\n").replaceAll("\t", "\\\\t").replaceAll("\"", "\\\\\"");
 	}
 
 	public String generateMainClass() {

@@ -5,9 +5,10 @@ import net.egork.numbers.NumberAlgorithms;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class Rational {
+public class Rational implements Comparable<Rational> {
 	private final long numerator;
 	private final long denominator;
+	public static final Rational MAX_VALUE = new Rational(Integer.MAX_VALUE, 1);
 
 	public Rational(long numerator, long denominator) {
 		if (denominator == 0)
@@ -33,5 +34,9 @@ public class Rational {
 	@Override
 	public String toString() {
 		return numerator + "/" + denominator;
+	}
+
+	public int compareTo(Rational other) {
+		return NumberAlgorithms.longCompare(numerator * other.denominator, denominator * other.numerator);
 	}
 }
