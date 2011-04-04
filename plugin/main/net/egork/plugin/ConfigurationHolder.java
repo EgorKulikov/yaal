@@ -25,49 +25,6 @@ public class ConfigurationHolder {
 	}
 
 	private ConfigurationHolder() {
-		VirtualFileManager.getInstance().addVirtualFileListener(new VirtualFileListener() {
-			public void propertyChanged(VirtualFilePropertyEvent virtualFilePropertyEvent) {
-			}
-
-			public void contentsChanged(VirtualFileEvent virtualFileEvent) {
-				String fileName = checkFileEvent(virtualFileEvent);
-				if (fileName == null)
-					return;
-				rebuildTaskList(fileName);
-			}
-
-			public void fileCreated(VirtualFileEvent virtualFileEvent) {
-				String fileName = checkFileEvent(virtualFileEvent);
-				if (fileName == null)
-					return;
-				rebuildTaskList(fileName);
-			}
-
-			public void fileDeleted(VirtualFileEvent virtualFileEvent) {
-				String fileName = checkFileEvent(virtualFileEvent);
-				if (fileName == null)
-					return;
-				rebuildTaskList(currentTask == null ? "" : currentTask.getTaskID());
-			}
-
-			public void fileMoved(VirtualFileMoveEvent virtualFileMoveEvent) {
-			}
-
-			public void fileCopied(VirtualFileCopyEvent virtualFileCopyEvent) {
-			}
-
-			public void beforePropertyChange(VirtualFilePropertyEvent virtualFilePropertyEvent) {
-			}
-
-			public void beforeContentsChange(VirtualFileEvent virtualFileEvent) {
-			}
-
-			public void beforeFileDeletion(VirtualFileEvent virtualFileEvent) {
-			}
-
-			public void beforeFileMovement(VirtualFileMoveEvent virtualFileMoveEvent) {
-			}
-		});
 	}
 
 	private String checkFileEvent(VirtualFileEvent virtualFileEvent) {
@@ -95,6 +52,51 @@ public class ConfigurationHolder {
 	private void rebuildTaskList(String selected) {
 		if (updateHomeDirectory() == null)
 			return;
+		if (!initialized) {
+			VirtualFileManager.getInstance().addVirtualFileListener(new VirtualFileListener() {
+				public void propertyChanged(VirtualFilePropertyEvent virtualFilePropertyEvent) {
+				}
+
+				public void contentsChanged(VirtualFileEvent virtualFileEvent) {
+					String fileName = checkFileEvent(virtualFileEvent);
+					if (fileName == null)
+						return;
+					rebuildTaskList(fileName);
+				}
+
+				public void fileCreated(VirtualFileEvent virtualFileEvent) {
+					String fileName = checkFileEvent(virtualFileEvent);
+					if (fileName == null)
+						return;
+					rebuildTaskList(fileName);
+				}
+
+				public void fileDeleted(VirtualFileEvent virtualFileEvent) {
+					String fileName = checkFileEvent(virtualFileEvent);
+					if (fileName == null)
+						return;
+					rebuildTaskList(currentTask == null ? "" : currentTask.getTaskID());
+				}
+
+				public void fileMoved(VirtualFileMoveEvent virtualFileMoveEvent) {
+				}
+
+				public void fileCopied(VirtualFileCopyEvent virtualFileCopyEvent) {
+				}
+
+				public void beforePropertyChange(VirtualFilePropertyEvent virtualFilePropertyEvent) {
+				}
+
+				public void beforeContentsChange(VirtualFileEvent virtualFileEvent) {
+				}
+
+				public void beforeFileDeletion(VirtualFileEvent virtualFileEvent) {
+				}
+
+				public void beforeFileMovement(VirtualFileMoveEvent virtualFileMoveEvent) {
+				}
+			});
+		}
 		initialized = true;
 		tasks.clear();
 		for (VirtualFile child : homeDirectory.getChildren()) {

@@ -1,14 +1,21 @@
 package net.egork.plugin;
 
+import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.DataKeys;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.VirtualFile;
 import net.egork.utils.io.streaminputreader.StreamInputReader;
 
-import javax.swing.*;
-import java.awt.*;
-import java.io.*;
+import javax.swing.SwingUtilities;
+import java.awt.Component;
+import java.awt.Point;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.InputMismatchException;
 
 /**
@@ -21,6 +28,11 @@ public class Util {
 				return project;
 		}
 		return null;
+	}
+
+	public static boolean isCurrentProjectAlgo(AnActionEvent event) {
+		Project project = event.getData(DataKeys.PROJECT);
+		return project != null && project.getProjectFilePath().contains("algo");
 	}
 
 	public static InputStream getInputStream(String path) {

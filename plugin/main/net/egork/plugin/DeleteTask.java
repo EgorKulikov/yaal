@@ -11,7 +11,7 @@ import javax.swing.*;
 public class DeleteTask extends AnAction {
 	@Override
 	public void update(AnActionEvent e) {
-		e.getPresentation().setEnabled(Util.getProject() != null && ConfigurationHolder.getInstance().getCurrentTask() != null);
+		e.getPresentation().setEnabled(Util.isCurrentProjectAlgo(e) && ConfigurationHolder.getInstance().getCurrentTask() != null);
 	}
 
 

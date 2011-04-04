@@ -9,7 +9,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 public class RunTask extends AnAction {
 	@Override
 	public void update(AnActionEvent e) {
-		e.getPresentation().setEnabled(Util.getProject() != null && ConfigurationHolder.getInstance().getCurrentTask() != null);
+		e.getPresentation().setEnabled(Util.isCurrentProjectAlgo(e) && ConfigurationHolder.getInstance().getCurrentTask() != null);
 	}
 
 	public void actionPerformed(final AnActionEvent e) {

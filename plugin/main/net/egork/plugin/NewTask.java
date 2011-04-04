@@ -17,7 +17,7 @@ public class NewTask extends AnAction {
 
 	@Override
 	public void update(AnActionEvent e) {
-		e.getPresentation().setEnabled(Util.getProject() != null);
+		e.getPresentation().setEnabled(Util.isCurrentProjectAlgo(e));
 	}
 
 	private void createSourceStub(final TaskConfiguration configuration) {

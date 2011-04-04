@@ -4,15 +4,17 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.Presentation;
 
-import java.awt.*;
+import java.awt.Component;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class TaskList extends AnAction {
-	private final Set<Presentation> presentations = new HashSet<Presentation>();
+	private final Map<Presentation, AnActionEvent> presentations = new HashMap<Presentation, AnActionEvent>();
 	private final Set<Component> components = new HashSet<Component>();
 
 	@Override
@@ -23,7 +25,7 @@ public class TaskList extends AnAction {
 	@Override
 	public void update(AnActionEvent e) {
 		TaskConfiguration currentTask = ConfigurationHolder.getInstance().getCurrentTask();
-		presentations.add(e.getPresentation());
+		presentations.put(e.getPresentation(), e);
 		if (e.getInputEvent() != null && e.getInputEvent().getComponent() != null) {
 			components.add(e.getInputEvent().getComponent());
 		}
@@ -43,10 +45,10 @@ public class TaskList extends AnAction {
 	}
 
 	public void update(TaskConfiguration currentTask) {
-		for (Presentation presentation : presentations) {
+		for (Presentation presentation : presentations.keySet()) {
 			presentation.setText("");
 			presentation.setText(currentTask == null ? "No task" : currentTask.getTaskID());
-			presentation.setEnabled(Util.getProject() != null && currentTask != null);
+			presentation.setEnabled(Util.isCurrentProjectAlgo(presentations.get(presentation)) && currentTask != null);
 		}
 		for (Component component : components) {
 			if (component.isDisplayable())

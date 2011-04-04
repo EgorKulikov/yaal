@@ -258,11 +258,6 @@ public class TaskConfiguration implements Serializable {
 		return testCode.toString();
 	}
 
-	public static void main(String[] args) {
-//		System.out.println(new TaskConfiguration("Solution", TestType.MULTI_EOF, InputType.STDIN).generateMainClass());
-		System.out.println(CODE_FORCES.generateCodeStub());
-	}
-
 	private String getInputFileName() {
 		if (inputType == InputType.STDIN)
 			return null;
