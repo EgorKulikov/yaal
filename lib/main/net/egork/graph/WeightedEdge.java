@@ -1,7 +1,7 @@
-package net.egork.graph.edge.weightededge;
+package net.egork.graph;
 
-import net.egork.graph.edge.Edge;
-import net.egork.graph.edge.simpleedge.SimpleEdge;
+import net.egork.graph.Edge;
+import net.egork.graph.SimpleEdge;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

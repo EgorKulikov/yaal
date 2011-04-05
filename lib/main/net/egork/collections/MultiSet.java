@@ -1,4 +1,4 @@
-package net.egork.collections.set.multiset;
+package net.egork.collections;
 
 import java.util.HashMap;
 import java.util.Iterator;

@@ -15,12 +15,14 @@ public class RunTask extends AnAction {
 	public void actionPerformed(final AnActionEvent e) {
 		TaskConfiguration configuration = ConfigurationHolder.getInstance().getCurrentTask();
 		String taskID = configuration.getTaskID();
-		String mainSource = configuration.generateFullSource("main/" + taskID + ".java", "main/" + taskID + "Checker.java");
-		if (mainSource == null)
+		String[] sources = configuration.generateFullSource("main/" + taskID + ".java", "main/" + taskID + "Checker.java");
+		if (sources == null)
 			return;
-		Util.saveSourceFile("test", "Main.java", mainSource);
+		Util.saveSourceFile("test", "Main.java", sources[0]);
+		Util.saveSourceFile("test", "MainChecker.java", sources[1]);
 		Util.saveSourceFile("main", "Main.java", configuration.generateMainRunEnvironment());
 		Util.saveSourceFile("test", "Tests.java", configuration.generateTests());
 		Util.saveSourceFile("main", "Tests.java", configuration.generateTests());
+		Util.eliminateUnusedCode("test/Main.java");
 	}
 }

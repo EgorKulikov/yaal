@@ -18,7 +18,7 @@ public class IOUtils {
 		out.println();
 	}
 
-	public static<T> void printList(Collection<T> collection, PrintWriter out) {
+	public static<T> void printCollection(Collection<T> collection, PrintWriter out) {
 		boolean isFirst = true;
 		for (T element : collection) {
 			if (isFirst)

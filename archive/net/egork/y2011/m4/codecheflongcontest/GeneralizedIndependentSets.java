@@ -1,9 +1,9 @@
 package net.egork.y2011.m4.codecheflongcontest;
 
+import net.egork.graph.BidirectionalGraph;
+import net.egork.graph.Edge;
 import net.egork.graph.Graph;
-import net.egork.graph.bidirectionalgraph.BidirectionalGraph;
-import net.egork.graph.edge.Edge;
-import net.egork.graph.edge.weightededge.WeightedEdge;
+import net.egork.graph.WeightedEdge;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
 

@@ -1,9 +1,9 @@
 package net.egork.y2011.m4.codecheflongcontest;
 
-import net.egork.collections.map.cppmap.CPPMap;
-import net.egork.collections.pair.Pair;
-import net.egork.collections.utils.CollectionUtils;
-import net.egork.helper.factory.Factory;
+import net.egork.collections.ArrayUtils;
+import net.egork.collections.CPPMap;
+import net.egork.collections.Pair;
+import net.egork.helper.Factory;
 import net.egork.utils.exit.Exit;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
@@ -23,7 +23,7 @@ public class RectanglesCounting implements Solver {
 		final int[] x = new int[n];
 		int[] y = new int[n];
 		in.readIntArrays(x, y);
-		Integer[] order = CollectionUtils.generateOrder(n);
+		Integer[] order = ArrayUtils.generateOrder(n);
 		Arrays.sort(order, new Comparator<Integer>() {
 			public int compare(Integer o1, Integer o2) {
 				return x[o1] - x[o2];

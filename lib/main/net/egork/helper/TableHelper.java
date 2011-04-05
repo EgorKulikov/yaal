@@ -1,4 +1,4 @@
-package net.egork.helper.table;
+package net.egork.helper;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

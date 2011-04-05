@@ -1,6 +1,6 @@
 package net.egork.y2011.m4.d2.localcontestfrommexico;
 
-import net.egork.collections.pair.Pair;
+import net.egork.collections.Pair;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.io.stringinputreader.StringInputReader;
 import net.egork.utils.solver.Solver;

@@ -1,6 +1,6 @@
 package net.egork.numbers;
 
-import net.egork.collections.utils.CollectionUtils;
+import net.egork.collections.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class NumberAlgorithms {
+public class IntegerUtils {
 	public static long gcd(long a, long b) {
 		while (b != 0) {
 			long temp = a % b;
@@ -17,10 +17,6 @@ public class NumberAlgorithms {
 			b = temp;
 		}
 		return a;
-	}
-
-	public static double fastHypot(double x, double y) {
-		return Math.sqrt(x * x + y * y);
 	}
 
 	public static int[] generatePrimes(int upTo) {
@@ -92,14 +88,6 @@ public class NumberAlgorithms {
 		if (a > b)
 			return 1;
 		return 0;
-	}
-
-	public static double sumGeometricProgression(double p, double q) {
-		return p / (1 - q);
-	}
-
-	public static double missileTrajectoryLength(double v, double angle, double g) {
-		return (v * v * Math.sin(2 * angle)) / g;
 	}
 
 	public static long[][] generateBinomialCoefficients(int n) {

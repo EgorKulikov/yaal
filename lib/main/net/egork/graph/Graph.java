@@ -1,7 +1,5 @@
 package net.egork.graph;
 
-import net.egork.graph.edge.Edge;
-
 import java.util.ArrayList;
 import java.util.List;
 

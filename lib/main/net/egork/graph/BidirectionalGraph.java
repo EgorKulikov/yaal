@@ -1,7 +1,7 @@
-package net.egork.graph.bidirectionalgraph;
+package net.egork.graph;
 
 import net.egork.graph.Graph;
-import net.egork.graph.edge.Edge;
+import net.egork.graph.Edge;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

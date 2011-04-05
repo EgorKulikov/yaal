@@ -1,4 +1,4 @@
-package net.egork.graph.edge;
+package net.egork.graph;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

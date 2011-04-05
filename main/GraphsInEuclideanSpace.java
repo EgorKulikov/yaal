@@ -1,7 +1,7 @@
+import net.egork.geometry.GeometryUtils;
 import net.egork.io.IOUtils;
-import net.egork.numbers.NumberAlgorithms;
-import net.egork.utils.solver.Solver;
 import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.solver.Solver;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -48,7 +48,7 @@ public class GraphsInEuclideanSpace implements Solver {
 			return Math.abs(first[0] - second[0]);
 		double distance = 0;
 		for (int i = 0; i < first.length; i++)
-			distance = NumberAlgorithms.fastHypot(distance, first[i] - second[i]);
+			distance = GeometryUtils.fastHypot(distance, first[i] - second[i]);
 		return distance;
 	}
 

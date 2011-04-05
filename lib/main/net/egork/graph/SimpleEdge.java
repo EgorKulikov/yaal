@@ -1,6 +1,4 @@
-package net.egork.graph.edge.simpleedge;
-
-import net.egork.graph.edge.Edge;
+package net.egork.graph;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

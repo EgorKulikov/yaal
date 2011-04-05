@@ -1,7 +1,7 @@
-package net.egork.graph.algorithms;
+package net.egork.graph;
 
+import net.egork.graph.Edge;
 import net.egork.graph.Graph;
-import net.egork.graph.edge.Edge;
 
 import java.util.*;
 

@@ -1,6 +1,6 @@
-package net.egork.collections.map.cppmap;
+package net.egork.collections;
 
-import net.egork.helper.factory.Factory;
+import net.egork.helper.Factory;
 
 import java.util.HashMap;
 

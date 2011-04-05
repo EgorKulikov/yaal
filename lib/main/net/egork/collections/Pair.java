@@ -1,4 +1,4 @@
-package net.egork.collections.pair;
+package net.egork.collections;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

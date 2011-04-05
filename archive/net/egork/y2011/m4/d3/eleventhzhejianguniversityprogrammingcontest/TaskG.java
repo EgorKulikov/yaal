@@ -1,7 +1,7 @@
 package net.egork.y2011.m4.d3.eleventhzhejianguniversityprogrammingcontest;
 
-import net.egork.numbers.NumberAlgorithms;
-import net.egork.numbers.rational.Rational;
+import net.egork.numbers.IntegerUtils;
+import net.egork.numbers.Rational;
 import net.egork.utils.solver.Solver;
 import net.egork.utils.io.inputreader.InputReader;
 
@@ -11,7 +11,7 @@ public class TaskG implements Solver {
 	private final boolean[] isPrime;
 
 	public TaskG() {
-		isPrime = NumberAlgorithms.generatePrimalityTable(40001);
+		isPrime = IntegerUtils.generatePrimalityTable(40001);
 	}
 
 	public void solve(int testNumber, InputReader in, PrintWriter out) {

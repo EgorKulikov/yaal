@@ -6,6 +6,14 @@ import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.psi.PsiClass;
+import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.PsiField;
+import com.intellij.psi.PsiFile;
+import com.intellij.psi.PsiManager;
+import com.intellij.psi.PsiMethod;
+import com.intellij.psi.search.searches.ReferencesSearch;
 import net.egork.utils.io.streaminputreader.StreamInputReader;
 
 import javax.swing.SwingUtilities;
@@ -16,7 +24,9 @@ import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -175,5 +185,61 @@ public class Util {
 				}
 			}
 		});
+	}
+
+	public static VirtualFile getFile(String path) {
+		Project project = getProject();
+		if (project == null)
+			return null;
+		VirtualFile baseDirectory = project.getBaseDir();
+		if (baseDirectory == null)
+			return null;
+		return baseDirectory.findFileByRelativePath(path);
+	}
+
+	public static void eliminateUnusedCode(final String fileName) {
+		ApplicationManager.getApplication().runWriteAction(new Runnable() {
+			public void run() {
+				PsiFile file = PsiManager.getInstance(getProject()).findFile(getFile(fileName));
+				if (file == null)
+					return;
+				while (true) {
+					final List<PsiElement> toRemove = new ArrayList<PsiElement>();
+					file.acceptChildren(new PsiTreeElementVisitor(new PsiElementVisitor() {
+						@Override
+						public void visitElement(PsiElement element) {
+							if (!(element instanceof PsiClass) && !(element instanceof PsiMethod) && !(element instanceof PsiField))
+								return;
+							if (element instanceof PsiMethod && ((PsiMethod) element).getName().equals("main"))
+								return;
+							if (element instanceof PsiMethod && ((PsiMethod) element).findSuperMethods().length != 0)
+								return;
+							if (ReferencesSearch.search(element).findAll().isEmpty())
+								toRemove.add(element);
+						}
+					}));
+					if (toRemove.isEmpty())
+						break;
+					for (PsiElement element : toRemove) {
+						if (element.isValid())
+							element.delete();
+					}
+				}
+			}
+		});
+	}
+
+	private static class PsiTreeElementVisitor extends PsiElementVisitor {
+		private final PsiElementVisitor delegate;
+
+		private PsiTreeElementVisitor(PsiElementVisitor delegate) {
+			this.delegate = delegate;
+		}
+
+		@Override
+		public void visitElement(PsiElement element) {
+			delegate.visitElement(element);
+			element.acceptChildren(this);
+		}
 	}
 }

@@ -1,5 +1,6 @@
 package net.egork.plugin;
 
+import com.intellij.openapi.vfs.VirtualFile;
 import net.egork.utils.test.Test;
 
 import java.io.Serializable;
@@ -80,7 +81,7 @@ public class TaskConfiguration implements Serializable {
 		return tests;
 	}
 
-	public String generateFullSource(String solverFileName, String checkerFileName) {
+	public String[] generateFullSource(String solverFileName, String checkerFileName) {
 		String source = Util.loadSourceFile(solverFileName);
 		String checkerSource = Util.loadSourceFile(checkerFileName);
 		if (source == null || checkerSource == null)
@@ -88,9 +89,11 @@ public class TaskConfiguration implements Serializable {
 		source = mandatoryImports() + source;
 		StringBuilder additionalCode = new StringBuilder();
 		additionalCode.append(generateMainClass());
-		additionalCode.append(generateMainChecker());
-		StringBuilder result = inlineImports(additionalCode.toString(), checkerSource, source);
-		return result.toString();
+		Set<String> imports = new HashSet<String>();
+		String fullSource = inlineImports(additionalCode.toString(), imports, source).toString();
+		String checkerImport = "import net.egork.utils.io.stringinputreader.StringInputReader;\n";
+		String checkerFullSource = inlineImports(generateMainChecker(), imports, checkerImport + checkerSource).toString();
+		return new String[]{fullSource, checkerFullSource};
 	}
 
 	public String generateMainChecker() {
@@ -99,7 +102,7 @@ public class TaskConfiguration implements Serializable {
 		checker.append("\tpublic static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {\n");
 		checker.append("\t\treturn new ").append(taskID).append("Checker().check(input, expectedOutput, actualOutput);\n");
 		checker.append("\t}\n");
-		checker.append("}\n");
+		checker.append("}\n\n");
 		return checker.toString();
 	}
 
@@ -108,7 +111,6 @@ public class TaskConfiguration implements Serializable {
 		mandatoryImports.append("import net.egork.utils.exit.Exit;\n");
 		mandatoryImports.append("import net.egork.utils.io.streaminputreader.StreamInputReader;\n");
 		mandatoryImports.append("import java.io.*;\n");
-		mandatoryImports.append("import net.egork.utils.io.stringinputreader.StringInputReader;\n");
 		mandatoryImports.append("import net.egork.utils.io.inputreader.InputReader;\n");
 		mandatoryImports.append("import net.egork.utils.solver.Solver;\n");
 		return mandatoryImports.toString();
@@ -118,9 +120,8 @@ public class TaskConfiguration implements Serializable {
 		return mandatoryImports() + generateMainClass() + generateMainChecker();
 	}
 
-	private static StringBuilder inlineImports(String additionalCode, String...sources) {
+	private static StringBuilder inlineImports(String additionalCode, Set<String> imports, String...sources) {
 		List<String> fullSource = new ArrayList<String>();
-		Set<String> imports = new HashSet<String>();
 		for (String source : sources)
 			parse(source, fullSource, imports);
 		StringBuilder result = new StringBuilder();
@@ -147,11 +148,29 @@ public class TaskConfiguration implements Serializable {
 				if (!imports.contains(importedClass)) {
 					if (importedClass.startsWith("java.io.") && !importedClass.substring(8).contains(".") && importedClass.length() != 9)
 						continue;
-					imports.add(importedClass);
+					String packagePath = null;
+					String packageName = importedClass.substring(0, importedClass.lastIndexOf('.'));
 					if (importedClass.startsWith("net.egork.utils."))
-						parse(Util.loadSourceFile("utils/main/" + importedClass.replace('.', '/') + ".java"), fullSource, imports);
+						packagePath = "utils/main/" + packageName.replace('.', '/');
 					else if (importedClass.startsWith("net.egork."))
-						parse(Util.loadSourceFile("lib/main/" + importedClass.replace('.', '/') + ".java"), fullSource, imports);
+						packagePath = "lib/main/" + packageName.replace('.', '/');
+					else
+						imports.add(importedClass);
+					if (packagePath == null)
+						continue;
+					VirtualFile directory = Util.getFile(packagePath);
+					if (directory == null)
+						continue;
+					for (VirtualFile child : directory.getChildren()) {
+						String extension = child.getExtension();
+						if (extension != null && extension.equals("java")) {
+							String fullyQualifiedName = packageName + "." + child.getNameWithoutExtension();
+							if (imports.contains(fullyQualifiedName))
+								continue;
+							imports.add(fullyQualifiedName);
+							parse(Util.loadSourceFile(packagePath + "/" + child.getName()), fullSource, imports);
+						}
+					}
 				}
 			} else if (lines[i].startsWith("public ")) {
 				fullSource.add(lines[i].substring(7));
@@ -174,7 +193,7 @@ public class TaskConfiguration implements Serializable {
 		}
 		result.append("\t};\n");
 		result.append("}\n");
-		result = inlineImports("", result.toString());
+		result = inlineImports("", new HashSet<String>(), result.toString());
 		return result.toString();
 	}
 
@@ -205,7 +224,7 @@ public class TaskConfiguration implements Serializable {
 		mainClass.append("\tpublic static void run(InputReader in, PrintWriter out) {\n");
 		mainClass.append(generateTestCode());
 		mainClass.append("\t}\n");
-		mainClass.append("}\n");
+		mainClass.append("}\n\n");
 		return mainClass.toString();
 	}
 

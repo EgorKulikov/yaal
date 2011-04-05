@@ -1,6 +1,6 @@
 package net.egork.y2011.m4.d3.eleventhzhejianguniversityprogrammingcontest;
 
-import net.egork.helper.table.TableHelper;
+import net.egork.helper.TableHelper;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
 

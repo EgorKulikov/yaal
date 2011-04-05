@@ -1,6 +1,4 @@
-package net.egork.numbers.rational;
-
-import net.egork.numbers.NumberAlgorithms;
+package net.egork.numbers;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -13,7 +11,7 @@ public class Rational implements Comparable<Rational> {
 	public Rational(long numerator, long denominator) {
 		if (denominator == 0)
 			throw new IllegalArgumentException();
-		long gcd = NumberAlgorithms.gcd(Math.abs(numerator), Math.abs(denominator));
+		long gcd = IntegerUtils.gcd(Math.abs(numerator), Math.abs(denominator));
 		if (denominator > 0) {
 			this.numerator = numerator / gcd;
 			this.denominator = denominator / gcd;
@@ -37,6 +35,6 @@ public class Rational implements Comparable<Rational> {
 	}
 
 	public int compareTo(Rational other) {
-		return NumberAlgorithms.longCompare(numerator * other.denominator, denominator * other.numerator);
+		return IntegerUtils.longCompare(numerator * other.denominator, denominator * other.numerator);
 	}
 }

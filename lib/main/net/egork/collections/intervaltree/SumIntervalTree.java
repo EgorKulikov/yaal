@@ -1,4 +1,4 @@
-package net.egork.collections.intervaltree.sumintervaltree;
+package net.egork.collections.intervaltree;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

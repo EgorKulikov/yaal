@@ -13,6 +13,7 @@ public class Exit {
 
 	public static void exit(InputReader in, PrintWriter out) {
 		in.setFinished(true);
+		in.close();
 		out.close();
 	}
 }
