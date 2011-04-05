@@ -26,5 +26,7 @@ public class DeleteTask extends AnAction {
 		Util.removeFile("main/" + taskID + ".java");
 		Util.removeFile("main/" + taskID + ".task");
 		Util.removeFile("main/" + taskID + "Checker.java");
+		if (configuration.isTopCoder())
+			Util.removeFile("topcoder/" + taskID + ".java");
 	}
 }

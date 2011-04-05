@@ -24,14 +24,20 @@ public class ArchiveTask extends AnAction {
 		Calendar currentDate = Calendar.getInstance();
 		String packageName = "net.egork.y" + currentDate.get(Calendar.YEAR) + ".m" +
 			(currentDate.get(Calendar.MONTH) + 1) + ".d" + currentDate.get(Calendar.DAY_OF_MONTH);
-		sourceCode = "package " + packageName + ";\n\n" + sourceCode;
-		checkerCode = "package " + packageName + ";\n\n" + checkerCode;
+		if (sourceCode != null)
+			sourceCode = "package " + packageName + ";\n\n" + sourceCode;
+		if (checkerCode != null)
+			checkerCode = "package " + packageName + ";\n\n" + checkerCode;
 		String filePath = "archive/" + packageName.replace('.', '/');
-		Util.saveSourceFile(filePath, taskID + ".java", sourceCode);
-		Util.saveSourceFile(filePath, taskID + "Checker.java", checkerCode);
+		if (sourceCode != null)
+			Util.saveSourceFile(filePath, taskID + ".java", sourceCode);
+		if (checkerCode != null)
+			Util.saveSourceFile(filePath, taskID + "Checker.java", checkerCode);
 		Util.saveConfiguration(filePath, taskID + ".task", configuration);
 		Util.removeFile("main/" + taskID + ".java");
 		Util.removeFile("main/" + taskID + ".task");
 		Util.removeFile("main/" + taskID + "Checker.java");
+		if (configuration.isTopCoder())
+			Util.removeFile("topcoder/" + taskID + ".java");
 	}
 }

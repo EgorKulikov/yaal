@@ -65,6 +65,7 @@ public class ConfigurationHolder {
 				}
 
 				public void fileCreated(VirtualFileEvent virtualFileEvent) {
+					checkTopCoder(virtualFileEvent);
 					String fileName = checkFileEvent(virtualFileEvent);
 					if (fileName == null)
 						return;
@@ -116,6 +117,19 @@ public class ConfigurationHolder {
 		if (currentTask == null)
 			currentTask = tasks.firstEntry().getValue();
 		setCurrentTask(currentTask);
+	}
+
+	private void checkTopCoder(VirtualFileEvent event) {
+		VirtualFile parent = event.getParent();
+		VirtualFile file = event.getFile();
+		if (parent == null)
+			return;
+		if (parent.getName().equals("topcoder") && !file.getName().equals("TopCoder.java") && !tasks.containsKey(file.getNameWithoutExtension()) && "java".equals(file.getExtension())) {
+			String taskID = file.getNameWithoutExtension();
+			TopCoderConfiguration configuration = new TopCoderConfiguration(taskID);
+			Util.saveConfiguration("main", taskID + ".task", configuration);
+			Util.saveSourceFile("main", taskID + ".java", Util.loadSourceFile("topcoder/" + taskID + ".java"));
+		}
 	}
 
 	public TaskConfiguration getCurrentTask() {

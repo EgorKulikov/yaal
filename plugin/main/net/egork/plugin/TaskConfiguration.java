@@ -81,6 +81,10 @@ public class TaskConfiguration implements Serializable {
 		return tests;
 	}
 
+	public boolean isTopCoder() {
+		return false;
+	}
+
 	public String[] generateFullSource(String solverFileName, String checkerFileName) {
 		String source = Util.loadSourceFile(solverFileName);
 		String checkerSource = Util.loadSourceFile(checkerFileName);
@@ -120,7 +124,7 @@ public class TaskConfiguration implements Serializable {
 		return mandatoryImports() + generateMainClass() + generateMainChecker();
 	}
 
-	private static StringBuilder inlineImports(String additionalCode, Set<String> imports, String...sources) {
+	protected StringBuilder inlineImports(String additionalCode, Set<String> imports, String...sources) {
 		List<String> fullSource = new ArrayList<String>();
 		for (String source : sources)
 			parse(source, fullSource, imports);
@@ -140,7 +144,7 @@ public class TaskConfiguration implements Serializable {
 		return result;
 	}
 
-	private static void parse(String source, List<String> fullSource, Set<String> imports) {
+	private void parse(String source, List<String> fullSource, Set<String> imports) {
 		String[] lines = source.split("\n");
 		for (int i = 0; i < lines.length; i++) {
 			if (lines[i].startsWith("import")) {
@@ -173,7 +177,10 @@ public class TaskConfiguration implements Serializable {
 					}
 				}
 			} else if (lines[i].startsWith("public ")) {
-				fullSource.add(lines[i].substring(7));
+				if (isTopCoder() && lines[i].startsWith("public class " + taskID))
+					fullSource.add(lines[i]);
+				else
+					fullSource.add(lines[i].substring(7));
 				fullSource.addAll(Arrays.asList(lines).subList(i + 1, lines.length));
 				fullSource.add("");
 				return;

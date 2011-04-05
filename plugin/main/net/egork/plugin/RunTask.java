@@ -15,6 +15,17 @@ public class RunTask extends AnAction {
 	public void actionPerformed(final AnActionEvent e) {
 		TaskConfiguration configuration = ConfigurationHolder.getInstance().getCurrentTask();
 		String taskID = configuration.getTaskID();
+		if (configuration.isTopCoder()) {
+			TopCoderConfiguration tcConfiguration = (TopCoderConfiguration) configuration;
+			String source = tcConfiguration.generateSource();
+			if (source == null)
+				return;
+			Util.saveSourceFile("main", "TopCoder.java", tcConfiguration.generateMain());
+			Util.saveSourceFile("topcoder", "TopCoder.java", tcConfiguration.generateMain());
+			Util.saveSourceFile("topcoder", taskID + ".java", tcConfiguration.generateSource());
+			Util.eliminateUnusedCode("topcoder/" + taskID + ".java");
+			return;
+		}
 		String[] sources = configuration.generateFullSource("main/" + taskID + ".java", "main/" + taskID + "Checker.java");
 		if (sources == null)
 			return;
