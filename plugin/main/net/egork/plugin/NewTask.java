@@ -22,8 +22,10 @@ public class NewTask extends AnAction {
 
 	private void createSourceStub(final TaskConfiguration configuration) {
 		String taskID = configuration.getTaskID();
-		Util.saveSourceFile("main", taskID + ".java", configuration.generateCodeStub());
-		Util.saveSourceFile("main", taskID + "Checker.java", configuration.generateChecker());
 		Util.saveConfiguration("main", taskID + ".task", configuration);
+		if (Util.getFile("main/" + taskID + ".java") == null)
+			Util.saveSourceFile("main", taskID + ".java", configuration.generateCodeStub());
+		if (Util.getFile("main/" + taskID + "Checker.java") == null)
+			Util.saveSourceFile("main", taskID + "Checker.java", configuration.generateChecker());
 	}
 }
