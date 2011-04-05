@@ -61,4 +61,11 @@ public class CollectionUtils {
 		}
 		return index;
 	}
+
+	public static long sumArray(int[] array) {
+		long result = 0;
+		for (int element : array)
+			result += element;
+		return result;
+	}
 }

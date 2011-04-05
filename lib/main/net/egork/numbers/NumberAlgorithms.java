@@ -111,4 +111,21 @@ public class NumberAlgorithms {
 		}
 		return result;
 	}
+
+	public static int calculateNumDivisors(long n) {
+		int result = 1;
+		for (long i = 2; i * i <= n; i++) {
+			if (n % i == 0) {
+				int power = 1;
+				do {
+					power++;
+					n /= i;
+				} while (n % i == 0);
+				result *= power;
+			}
+		}
+		if (n != 1)
+			result *= 2;
+		return result;
+	}
 }

@@ -36,7 +36,7 @@ public class Tester {
 				System.out.println(result);
 				System.out.print("Verdict: ");
 				String checkResult = MainChecker.check(new StringInputReader(test.getInput()),
-					new StringInputReader(result), new StringInputReader(test.getExpectedOutput()));
+					new StringInputReader(test.getExpectedOutput()), new StringInputReader(result));
 				if (checkResult == null) {
 					System.out.print("OK");
 					verdicts.add(Verdict.OK);
