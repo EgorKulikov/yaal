@@ -1,4 +1,4 @@
-package net.egork.helper;
+package net.egork.misc;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

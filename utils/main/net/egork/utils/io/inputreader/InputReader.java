@@ -202,4 +202,17 @@ public abstract class InputReader {
 			table[i] = readIntArray(columnCount);
 		return table;
 	}
+
+	public String readText() {
+		StringBuilder result = new StringBuilder();
+		while (true) {
+			int character = read();
+			if (character == '\r')
+				continue;
+			if (character == -1)
+				break;
+			result.append((char) character);
+		}
+		return result.toString();
+	}
 }

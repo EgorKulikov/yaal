@@ -1,6 +1,6 @@
 package net.egork.y2011.m4.d3.eleventhzhejianguniversityprogrammingcontest;
 
-import net.egork.helper.TableHelper;
+import net.egork.misc.MiscUtils;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
 
@@ -111,8 +111,8 @@ public class TaskB implements Solver {
 						}
 						if (position.firstStuck) {
 							for (int j = 0; j < 4; j++) {
-								int newSecondRow = position.secondRow + TableHelper.DX_4_CONNECTED[j];
-								int newSecondColumn = position.secondColumn + TableHelper.DY_4_CONNECTED[j];
+								int newSecondRow = position.secondRow + MiscUtils.DX_4_CONNECTED[j];
+								int newSecondColumn = position.secondColumn + MiscUtils.DY_4_CONNECTED[j];
 								if (maze[newSecondRow][newSecondColumn] != 'X') {
 									Position next = new Position(position.firstRow, position.firstColumn, newSecondRow, newSecondColumn, true, maze[newSecondRow][newSecondColumn] == 'O');
 									if (!visited.contains(next))
@@ -121,8 +121,8 @@ public class TaskB implements Solver {
 							}
 						} else {
 							for (int j = 0; j < 4; j++) {
-								int newFirstRow = position.firstRow + TableHelper.DX_4_CONNECTED[j];
-								int newFirstColumn = position.firstColumn+ TableHelper.DY_4_CONNECTED[j];
+								int newFirstRow = position.firstRow + MiscUtils.DX_4_CONNECTED[j];
+								int newFirstColumn = position.firstColumn+ MiscUtils.DY_4_CONNECTED[j];
 								if (maze[newFirstRow][newFirstColumn] != 'X') {
 									Position next = new Position(newFirstRow, newFirstColumn, position.secondRow, position.secondColumn, maze[newFirstRow][newFirstColumn] == 'O', true);
 									if (!visited.contains(next))
@@ -132,14 +132,14 @@ public class TaskB implements Solver {
 						}
 					} else {
 						for (int j = 0; j < 4; j++) {
-							int newFirstRow = position.firstRow + TableHelper.DX_4_CONNECTED[j];
-							int newFirstColumn = position.firstColumn+ TableHelper.DY_4_CONNECTED[j];
+							int newFirstRow = position.firstRow + MiscUtils.DX_4_CONNECTED[j];
+							int newFirstColumn = position.firstColumn+ MiscUtils.DY_4_CONNECTED[j];
 							if (maze[newFirstRow][newFirstColumn] == 'X') {
 								newFirstRow = position.firstRow;
 								newFirstColumn = position.firstColumn;
 							}
-							int newSecondRow = position.secondRow + TableHelper.DX_4_CONNECTED[j];
-							int newSecondColumn = position.secondColumn + TableHelper.DY_4_CONNECTED[j ^ 2];
+							int newSecondRow = position.secondRow + MiscUtils.DX_4_CONNECTED[j];
+							int newSecondColumn = position.secondColumn + MiscUtils.DY_4_CONNECTED[j ^ 2];
 							if (maze[newSecondRow][newSecondColumn] == 'X') {
 								newSecondRow = position.secondRow;
 								newSecondColumn = position.secondColumn;

@@ -1,6 +1,6 @@
 package net.egork.collections;
 
-import net.egork.helper.Factory;
+import net.egork.misc.Factory;
 
 import java.util.HashMap;
 

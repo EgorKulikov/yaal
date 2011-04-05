@@ -3,7 +3,7 @@ package net.egork.y2011.m4.codecheflongcontest;
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.CPPMap;
 import net.egork.collections.Pair;
-import net.egork.helper.Factory;
+import net.egork.misc.Factory;
 import net.egork.utils.exit.Exit;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
