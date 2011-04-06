@@ -1,4 +1,4 @@
-package net.egork.collections;
+package net.egork.arrays;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -43,6 +43,19 @@ public class ArrayUtils {
 		long result = 0;
 		for (int element : array)
 			result += element;
+		return result;
+	}
+
+	public static int[] range(int from, int to) {
+		int[] result = new int[Math.max(from, to) - Math.min(from, to) + 1];
+		int index = 0;
+		if (to > from) {
+			for (int i = from; i <= to; i++)
+				result[index++] = i;
+		} else {
+			for (int i = from; i >= to; i--)
+				result[index++] = i;
+		}
 		return result;
 	}
 }

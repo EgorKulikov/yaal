@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.collections.ArrayUtils;
+import net.egork.arrays.ArrayUtils;
 import net.egork.collections.Pair;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;

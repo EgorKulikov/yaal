@@ -1,9 +1,11 @@
 package net.egork.graph;
 
-import net.egork.graph.Edge;
-import net.egork.graph.Graph;
-
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Deque;
+import java.util.PriorityQueue;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -96,5 +98,47 @@ public class GraphAlgorithms {
 			}
 		}
 		return new DistanceResult(distance, last);
+	}
+
+	public static int[] colorGraphTwoColors(Graph graph, boolean allowBadEdges) {
+		final int[] coloring = new int[graph.getSize()];
+		boolean correctColoring = new DFS<Boolean, Integer>(graph) {
+			@Override
+			protected Boolean enterUnvisited(int vertex, Integer parameters) {
+				if (vertex == -1)
+					return true;
+				coloring[vertex] = parameters;
+				return true;
+			}
+
+			@Override
+			protected Boolean enterVisited(int vertex, Integer parameters) {
+				return vertex == -1 || coloring[vertex] == parameters;
+			}
+
+			@Override
+			protected Integer getParameters(int vertex, Boolean result, Integer parameters, Edge edge,
+				AtomicBoolean enterVertex)
+			{
+				if (vertex == -1)
+					return coloring[edge.getDestination()];
+				return 1 - parameters;
+			}
+
+			@Override
+			protected Boolean processResult(int vertex, Boolean result, Integer parameters, Boolean callResult,
+				AtomicBoolean continueProcess)
+			{
+				return result && callResult;
+			}
+
+			@Override
+			protected Boolean exit(int vertex, Boolean result, Integer parameters) {
+				return result;
+			}
+		}.run(null);
+		if (!correctColoring && !allowBadEdges)
+			return null;
+		return coloring;
 	}
 }

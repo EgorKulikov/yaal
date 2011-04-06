@@ -1,6 +1,6 @@
 package net.egork.y2011.m4.codecheflongcontest;
 
-import net.egork.collections.ArrayUtils;
+import net.egork.arrays.ArrayUtils;
 import net.egork.collections.CPPMap;
 import net.egork.collections.Pair;
 import net.egork.misc.Factory;

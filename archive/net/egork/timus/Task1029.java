@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.collections.ArrayUtils;
+import net.egork.arrays.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.inputreader.InputReader;
@@ -41,7 +41,7 @@ public class Task1029 implements Solver {
 		int floor = floorCount - 1;
 		List<Integer> answer = new ArrayList<Integer>();
 		while (floor != 0) {
-			answer.addAll(CollectionUtils.interval(index + 1, lastOfficialVisited[floor][index] + 1));
+			answer.addAll(CollectionUtils.range(index + 1, lastOfficialVisited[floor][index] + 1));
 			index = lastOfficialVisited[floor][index];
 			floor--;
 		}

@@ -6,6 +6,7 @@ import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.psi.PsiAnonymousClass;
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
@@ -13,6 +14,7 @@ import com.intellij.psi.PsiField;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiManager;
 import com.intellij.psi.PsiMethod;
+import com.intellij.psi.PsiReference;
 import com.intellij.psi.search.searches.ReferencesSearch;
 import net.egork.utils.io.streaminputreader.StreamInputReader;
 
@@ -214,8 +216,18 @@ public class Util {
 								return;
 							if (element instanceof PsiMethod && ((PsiMethod) element).findSuperMethods().length != 0)
 								return;
-							if (ReferencesSearch.search(element).findAll().isEmpty())
-								toRemove.add(element);
+							if (element instanceof PsiMethod && ((PsiMethod) element).isConstructor())
+								return;
+							if (element instanceof PsiAnonymousClass)
+								return;
+							for (PsiReference reference : ReferencesSearch.search(element).findAll()) {
+								PsiElement referenceElement = reference.getElement();
+								while (referenceElement != null && referenceElement != element)
+									referenceElement = referenceElement.getParent();
+								if (referenceElement == null)
+									return;
+							}
+							toRemove.add(element);
 						}
 					}));
 					if (toRemove.isEmpty())
