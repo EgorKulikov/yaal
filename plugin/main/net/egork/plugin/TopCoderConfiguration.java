@@ -34,4 +34,17 @@ public class TopCoderConfiguration extends TaskConfiguration {
 		main.append("}\n");
 		return main.toString();
 	}
+
+	public void commentMainIfNeeded() {
+		String mainSource = Util.loadSourceFile("main/TopCoder.java");
+		if (mainSource.contains("\t" + getTaskID() + ".main")) {
+			StringBuilder main = new StringBuilder();
+			main.append("public class TopCoder {\n");
+			main.append("\tpublic static void main(String[] args) {\n");
+			main.append("\t}\n");
+			main.append("}\n");
+			Util.saveSourceFile("main", "TopCoder.java", main.toString());
+			Util.saveSourceFile("topcoder", "TopCoder.java", main.toString());
+		}
+	}
 }

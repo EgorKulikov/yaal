@@ -37,7 +37,9 @@ public class ArchiveTask extends AnAction {
 		Util.removeFile("main/" + taskID + ".java");
 		Util.removeFile("main/" + taskID + ".task");
 		Util.removeFile("main/" + taskID + "Checker.java");
-		if (configuration.isTopCoder())
+		if (configuration.isTopCoder()) {
 			Util.removeFile("topcoder/" + taskID + ".java");
+			((TopCoderConfiguration)configuration).commentMainIfNeeded();
+		}
 	}
 }
