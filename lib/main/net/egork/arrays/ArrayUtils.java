@@ -1,5 +1,7 @@
 package net.egork.arrays;
 
+import java.util.Arrays;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -57,5 +59,30 @@ public class ArrayUtils {
 				result[index++] = i;
 		}
 		return result;
+	}
+
+	public static void fill(long[][] array, long value) {
+		for (long[] row : array)
+			Arrays.fill(row, value);
+	}
+
+	public static void fillColumn(long[][] array, int index, long value) {
+		for (long[] row : array)
+			row[index] = value;
+	}
+
+	public static void fillColumn(int[][] array, int index, int value) {
+		for (int[] row : array)
+			row[index] = value;
+	}
+
+	public static void fill(int[][] array, int value) {
+		for (int[] row : array)
+			Arrays.fill(row, value);
+	}
+
+	public static void fill(boolean[][] array, boolean value) {
+		for (boolean[] row : array)
+			Arrays.fill(row, value);
 	}
 }

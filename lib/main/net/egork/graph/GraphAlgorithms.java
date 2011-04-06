@@ -1,9 +1,15 @@
 package net.egork.graph;
 
+import net.egork.arrays.ArrayUtils;
+import net.egork.collections.Pair;
+
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Deque;
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -11,6 +17,30 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class GraphAlgorithms {
+	public static List<Integer> getPath(DistanceResult result, int source, int destination) {
+		List<Integer> path = new ArrayList<Integer>();
+		path.add(destination);
+		while (destination != source) {
+			destination = result.getLast()[destination];
+			path.add(destination);
+		}
+		Collections.reverse(path);
+		return path;
+	}
+
+	public static List<Integer> getPath(MultiPathDistanceResult result, int source, int destination, int pathNumber) {
+		List<Integer> path = new ArrayList<Integer>();
+		path.add(destination);
+		while (destination != source || pathNumber != 0) {
+			int nextDestination = result.getLastIndex()[destination][pathNumber];
+			pathNumber = result.getLastPathNumber()[destination][pathNumber];
+			destination = nextDestination;
+			path.add(destination);
+		}
+		Collections.reverse(path);
+		return path;
+	}
+
 	public static class DistanceResult {
 		private final long[] distances;
 		private final int[] last;
@@ -26,6 +56,30 @@ public class GraphAlgorithms {
 
 		public int[] getLast() {
 			return last;
+		}
+	}
+
+	public static class MultiPathDistanceResult {
+		private final long[][] distances;
+		private final int[][] lastIndex;
+		private final int[][] lastPathNumber;
+
+		public MultiPathDistanceResult(long[][] distances, int[][] lastIndex, int[][] lastPathNumber) {
+			this.distances = distances;
+			this.lastIndex = lastIndex;
+			this.lastPathNumber = lastPathNumber;
+		}
+
+		public long[][] getDistances() {
+			return distances;
+		}
+
+		public int[][] getLastIndex() {
+			return lastIndex;
+		}
+
+		public int[][] getLastPathNumber() {
+			return lastPathNumber;
 		}
 	}
 
@@ -62,6 +116,55 @@ public class GraphAlgorithms {
 			}
 		}
 		return new DistanceResult(distance, last);
+	}
+
+	public static MultiPathDistanceResult leviteAlgorithm(Graph graph, int source, int numPath) {
+		int size = graph.getSize();
+		Deque<Pair<Integer, Integer>> queue = new ArrayDeque<Pair<Integer, Integer>>(size);
+		boolean[][] processed = new boolean[size][numPath];
+		boolean[][] notReached = new boolean[size][numPath];
+		ArrayUtils.fill(notReached, true);
+		long[][] distance = new long[size][numPath];
+		int[][] lastIndex = new int[size][numPath];
+		int[][] lastPathNumber = new int[size][numPath];
+		ArrayUtils.fill(distance, Long.MAX_VALUE);
+		ArrayUtils.fill(lastIndex, -1);
+		ArrayUtils.fill(lastPathNumber, -1);
+		distance[source][0] = 0;
+		queue.add(new Pair<Integer, Integer>(source, 0));
+		notReached[source][0] = false;
+		while (!queue.isEmpty()) {
+			int current = queue.peek().getFirst();
+			int currentPath = queue.poll().getSecond();
+			processed[current][currentPath] = true;
+			for (Edge edge : graph.getIncident(current)) {
+				int next = edge.getDestination();
+				long weight = edge.getWeight();
+				if (lastIndex[current][currentPath] == next)
+					continue;
+				for (int i = 0; i < numPath; i++) {
+					if (distance[next][i] > distance[current][currentPath] + weight) {
+						for (int j = numPath - 1; j > i; j--) {
+							distance[next][j] = distance[next][j - 1];
+							lastIndex[next][j] = lastIndex[next][j - 1];
+							lastPathNumber[next][j] = lastPathNumber[next][j - 1];
+						}
+						distance[next][i] = distance[current][currentPath] + weight;
+						lastIndex[next][i] = current;
+						lastPathNumber[next][i] = currentPath;
+						if (notReached[next][i]) {
+							notReached[next][i] = false;
+							queue.add(new Pair<Integer, Integer>(next, i));
+						} else if (processed[next][i]) {
+							processed[next][i] = false;
+							queue.addFirst(new Pair<Integer, Integer>(next, i));
+						}
+						break;
+					}
+				}
+			}
+		}
+		return new MultiPathDistanceResult(distance, lastIndex, lastPathNumber);
 	}
 
 	public static DistanceResult dijkstraAlgorithm(Graph graph, int source) {
