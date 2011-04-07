@@ -6,26 +6,13 @@ import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.psi.PsiAnonymousClass;
-import com.intellij.psi.PsiClass;
-import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiElementVisitor;
-import com.intellij.psi.PsiField;
-import com.intellij.psi.PsiFile;
-import com.intellij.psi.PsiManager;
-import com.intellij.psi.PsiMethod;
-import com.intellij.psi.PsiReference;
+import com.intellij.psi.*;
 import com.intellij.psi.search.searches.ReferencesSearch;
 import net.egork.utils.io.streaminputreader.StreamInputReader;
 
-import javax.swing.SwingUtilities;
-import java.awt.Component;
-import java.awt.Point;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.OutputStream;
+import javax.swing.*;
+import java.awt.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -207,29 +194,35 @@ public class Util {
 					return;
 				while (true) {
 					final List<PsiElement> toRemove = new ArrayList<PsiElement>();
-					file.acceptChildren(new PsiTreeElementVisitor(new PsiElementVisitor() {
-						@Override
-						public void visitElement(PsiElement element) {
+					file.acceptChildren(new PsiElementVisitor() {
+						private boolean visitElementImpl(PsiElement element) {
 							if (!(element instanceof PsiClass) && !(element instanceof PsiMethod) && !(element instanceof PsiField))
-								return;
+								return true;
 							if (element instanceof PsiMethod && ((PsiMethod) element).getName().equals("main"))
-								return;
+								return false;
 							if (element instanceof PsiMethod && ((PsiMethod) element).findSuperMethods().length != 0)
-								return;
+								return false;
 							if (element instanceof PsiMethod && ((PsiMethod) element).isConstructor())
-								return;
+								return false;
 							if (element instanceof PsiAnonymousClass)
-								return;
-							for (PsiReference reference : ReferencesSearch.search(element).findAll()) {
+								return false;
+							for (PsiReference reference : ReferencesSearch.search(element)) {
 								PsiElement referenceElement = reference.getElement();
 								while (referenceElement != null && referenceElement != element)
 									referenceElement = referenceElement.getParent();
 								if (referenceElement == null)
-									return;
+									return element instanceof PsiClass;
 							}
 							toRemove.add(element);
+							return false;
 						}
-					}));
+
+						@Override
+						public void visitElement(PsiElement element) {
+							if (visitElementImpl(element))
+								element.acceptChildren(this);
+						}
+					});
 					if (toRemove.isEmpty())
 						break;
 					for (PsiElement element : toRemove) {

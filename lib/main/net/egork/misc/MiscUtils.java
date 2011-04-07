@@ -23,4 +23,8 @@ public class MiscUtils {
 			result += result / (k - 1);
 		return result;
 	}
+
+	public static boolean isValidCell(int row, int column, int rowCount, int columnCount) {
+		return row >= 0 && row < rowCount && column >= 0 && column < columnCount;
+	}
 }

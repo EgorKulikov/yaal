@@ -27,4 +27,8 @@ public class CollectionUtils {
 		}
 		return result;
 	}
+
+	public static void rotate(List<Integer> list) {
+		list.add(list.remove(0));
+	}
 }
