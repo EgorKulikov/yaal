@@ -1,8 +1,8 @@
 package net.egork.timus;
 
-import net.egork.collections.utils.CollectionUtils;
-import net.egork.utils.solver.Solver;
+import net.egork.arrays.ArrayUtils;
 import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.solver.Solver;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ public class Task1178 implements Solver {
 		final int[] x = new int[n];
 		final int[] y = new int[n];
 		in.readIntArrays(x, y);
-		Integer[] order = CollectionUtils.generateOrder(n);
+		Integer[] order = ArrayUtils.generateOrder(n);
 		Arrays.sort(order, new Comparator<Integer>() {
 			public int compare(Integer o1, Integer o2) {
 				if (x[o1] != x[o2])

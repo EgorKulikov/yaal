@@ -22,7 +22,7 @@ public class FaceTheMaze implements Solver {
 			//noinspection InfiniteLoopStatement
 			while (true) {
 				Pair<Integer, Integer> cell = readCell(in);
-				map[cell.getFirst() - 1][cell.getSecond() - 1] = true;
+				map[cell.first() - 1][cell.second() - 1] = true;
 			}
 		} catch (InputMismatchException ignored) {
 		}
@@ -34,21 +34,21 @@ public class FaceTheMaze implements Solver {
 	private boolean go(Pair<Integer, Integer> start, Pair<Integer, Integer> target, boolean[][] map,
 		boolean[][] visited, boolean first, PrintWriter out)
 	{
-		if (visited[start.getFirst() - 1][start.getSecond() - 1])
+		if (visited[start.first() - 1][start.second() - 1])
 			return false;
 		if (first)
 			first = false;
 		else
 			out.print(' ');
 		out.print(start);
-		visited[start.getFirst() - 1][start.getSecond() - 1] = true;
+		visited[start.first() - 1][start.second() - 1] = true;
 		if (start.equals(target))
 			return true;
-		if (Math.abs(start.getFirst() - target.getFirst()) + Math.abs(start.getSecond() - target.getSecond()) <= 1)
+		if (Math.abs(start.first() - target.first()) + Math.abs(start.second() - target.second()) <= 1)
 			return go(target, target, map, visited, first, out);
 		for (int i = 0; i < 4; i++) {
-			int nextRow = start.getFirst() + D_ROW[i];
-			int nextColumn = start.getSecond() + D_COLUMN[i];
+			int nextRow = start.first() + D_ROW[i];
+			int nextColumn = start.second() + D_COLUMN[i];
 			if (nextRow > 0 && nextRow <= map.length && nextColumn > 0 && nextColumn <= map.length && !visited[nextRow - 1][nextColumn - 1] && !map[nextRow - 1][nextColumn - 1]) {
 				if (go(new Pair<Integer, Integer>(nextRow, nextColumn), target, map, visited, first, out))
 					return true;

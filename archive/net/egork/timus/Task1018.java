@@ -21,7 +21,7 @@ public class Task1018 implements Solver {
 			int from = in.readInt() - 1;
 			int to = in.readInt() - 1;
 			int appleCount = in.readInt();
-			graph.addEdge(new WeightedEdge(from, to, appleCount));
+			graph.add(new WeightedEdge(from, to, appleCount));
 		}
 		out.println(new DFS<int[], Edge>(graph) {
 

@@ -4,12 +4,9 @@ import net.egork.arrays.ArrayUtils;
 import net.egork.collections.Pair;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.Deque;
-import java.util.List;
 import java.util.PriorityQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -17,30 +14,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class GraphAlgorithms {
-	public static List<Integer> getPath(DistanceResult result, int source, int destination) {
-		List<Integer> path = new ArrayList<Integer>();
-		path.add(destination);
-		while (destination != source) {
-			destination = result.getLast()[destination];
-			path.add(destination);
-		}
-		Collections.reverse(path);
-		return path;
-	}
-
-	public static List<Integer> getPath(MultiPathDistanceResult result, int source, int destination, int pathNumber) {
-		List<Integer> path = new ArrayList<Integer>();
-		path.add(destination);
-		while (destination != source || pathNumber != 0) {
-			int nextDestination = result.getLastIndex()[destination][pathNumber];
-			pathNumber = result.getLastPathNumber()[destination][pathNumber];
-			destination = nextDestination;
-			path.add(destination);
-		}
-		Collections.reverse(path);
-		return path;
-	}
-
 	public static class DistanceResult {
 		private final long[] distances;
 		private final int[] last;
@@ -134,8 +107,8 @@ public class GraphAlgorithms {
 		queue.add(new Pair<Integer, Integer>(source, 0));
 		notReached[source][0] = false;
 		while (!queue.isEmpty()) {
-			int current = queue.peek().getFirst();
-			int currentPath = queue.poll().getSecond();
+			int current = queue.peek().first();
+			int currentPath = queue.poll().second();
 			processed[current][currentPath] = true;
 			for (Edge edge : graph.getIncident(current)) {
 				int next = edge.getDestination();

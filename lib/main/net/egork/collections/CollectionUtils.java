@@ -31,4 +31,13 @@ public class CollectionUtils {
 	public static void rotate(List<Integer> list) {
 		list.add(list.remove(0));
 	}
+
+	public static void increment(List<Integer> path) {
+		Transformer.transform(path, new Transformer<Integer>() {
+			@Override
+			public Integer transform(Integer value) {
+				return value + 1;
+			}
+		});
+	}
 }

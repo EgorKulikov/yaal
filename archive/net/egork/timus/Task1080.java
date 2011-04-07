@@ -18,7 +18,7 @@ public class Task1080 implements Solver {
 				int to = in.readInt();
 				if (to == 0)
 					break;
-				graph.addEdge(new SimpleEdge(i, to - 1));
+				graph.add(new SimpleEdge(i, to - 1));
 			}
 		}
 		int[] coloring = GraphAlgorithms.colorGraphTwoColors(graph, false);

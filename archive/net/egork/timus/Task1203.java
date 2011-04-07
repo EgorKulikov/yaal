@@ -1,8 +1,8 @@
 package net.egork.timus;
 
-import net.egork.collections.pair.Pair;
-import net.egork.utils.solver.Solver;
+import net.egork.collections.Pair;
 import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.solver.Solver;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -21,9 +21,9 @@ public class Task1203 implements Solver {
 		int lastFinish = 0;
 		int result = 0;
 		for (Pair<Integer, Integer> event : events) {
-			if (event.getSecond() > lastFinish) {
+			if (event.second() > lastFinish) {
 				result++;
-				lastFinish = event.getFirst();
+				lastFinish = event.first();
 			}
 		}
 		out.println(result);

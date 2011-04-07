@@ -215,4 +215,11 @@ public abstract class InputReader {
 		}
 		return result.toString();
 	}
+
+	public long[][] readLongTable(int rowCount, int columnCount) {
+		long[][] table = new long[rowCount][];
+		for (int i = 0; i < rowCount; i++)
+			table[i] = readLongArray(columnCount);
+		return table;
+	}
 }

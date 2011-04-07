@@ -68,8 +68,8 @@ public class GeneralizedIndependentSets implements Solver {
 		for (int i = 0; i < m; i++) {
 			if (from[i] == to[i])
 				continue;
-			graph.addEdge(new WeightedEdge(from[i], to[i] + n, 1000 - weights[from[i]] - weights[to[i]]));
-			graph.addEdge(new WeightedEdge(from[i] + n, to[i], 1000 - weights[from[i]] - weights[to[i]]));
+			graph.add(new WeightedEdge(from[i], to[i] + n, 1000 - weights[from[i]] - weights[to[i]]));
+			graph.add(new WeightedEdge(from[i] + n, to[i], 1000 - weights[from[i]] - weights[to[i]]));
 		}
 		for (int i = 0; i < n; i++) {
 			int[][] result = leviteAlgorithm(graph, i);

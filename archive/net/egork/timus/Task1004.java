@@ -7,6 +7,7 @@ import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.graph.WeightedEdge;
 import net.egork.io.IOUtils;
+import net.egork.misc.MiscUtils;
 import net.egork.utils.exit.Exit;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
@@ -34,7 +35,7 @@ public class Task1004 implements Solver {
 		for (int i = 0; i < n; i++) {
 			for (int j = i + 1; j < n; j++) {
 				if (distances[i][j] != Long.MAX_VALUE)
-					graph.addEdge(new WeightedEdge(i, j, distances[i][j]));
+					graph.add(new WeightedEdge(i, j, distances[i][j]));
 			}
 		}
 		long result = Long.MAX_VALUE;
@@ -51,7 +52,7 @@ public class Task1004 implements Solver {
 			out.println("No solution.");
 		else {
 			GraphAlgorithms.MultiPathDistanceResult paths = GraphAlgorithms.leviteAlgorithm(graph, vertex, 2);
-			List<Integer> path = GraphAlgorithms.getPath(paths, vertex, vertex, 1);
+			List<Integer> path = MiscUtils.getPath(paths.getLastIndex(), paths.getLastPathNumber(), vertex, 1);
 			path = path.subList(0, path.size() - 1);
 			Transformer.transform(path, new Transformer<Integer>() {
 				@Override

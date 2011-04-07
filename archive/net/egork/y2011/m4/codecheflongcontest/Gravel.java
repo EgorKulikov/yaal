@@ -12,7 +12,7 @@ public class Gravel implements Solver {
 		int queryCount = in.readInt();
 		int startQuantity = in.readInt();
 		SumIntervalTree tree = new SumIntervalTree(size);
-		tree.put(0, size, startQuantity);
+		tree.putSegment(0, size, startQuantity);
 		for (int it = 0; it < queryCount; it++) {
 			char type = in.readCharacter();
 			if (type == 'Q') {
@@ -22,7 +22,7 @@ public class Gravel implements Solver {
 				int from = in.readInt() - 1;
 				int to = in.readInt();
 				int quantity = in.readInt();
-				tree.put(from, to, quantity);
+				tree.putSegment(from, to, quantity);
 			}
 		}
 	}

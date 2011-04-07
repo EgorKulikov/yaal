@@ -23,7 +23,7 @@ public class Task1106 implements Solver {
 				if (vertex == -1)
 					break;
 				hasEdge = true;
-				graph.addEdge(new SimpleEdge(i, vertex));
+				graph.add(new SimpleEdge(i, vertex));
 			}
 			if (!hasEdge) {
 				out.println(0);

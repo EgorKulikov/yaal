@@ -1,8 +1,5 @@
 package net.egork.graph;
 
-import net.egork.graph.Graph;
-import net.egork.graph.Edge;
-
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -12,8 +9,8 @@ public class BidirectionalGraph extends Graph {
 	}
 
 	@Override
-	public void addEdge(Edge edge) {
-		super.addEdge(edge);
-		super.addEdge(edge.getTransposedEdge());
+	public void add(Edge edge) {
+		super.add(edge);
+		super.add(edge.getTransposedEdge());
 	}
 }

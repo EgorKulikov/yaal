@@ -26,7 +26,7 @@ public class Graph {
 		return edges[vertex];
 	}
 
-	public void addEdge(Edge edge) {
+	public void add(Edge edge) {
 		edges[edge.getSource()].add(edge);
 		edge = edge.getReverseEdge();
 		if (edge != null)

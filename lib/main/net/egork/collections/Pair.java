@@ -1,9 +1,25 @@
 package net.egork.collections;
 
+import net.egork.utils.io.inputreader.InputReader;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class Pair<U, V> {
+	public static Pair<Long, Long>[] readArray(int n, InputReader in) {
+		@SuppressWarnings({"unchecked"})
+		Pair<Long, Long>[] result = new Pair[n];
+		for (int i = 0; i < n; i++)
+			result[i] = readPair(in);
+		return result;
+	}
+
+	public static Pair<Long, Long> readPair(InputReader in) {
+		long first = in.readLong();
+		long second = in.readLong();
+		return new Pair<Long, Long>(first, second);
+	}
+
 	public static class Comparator<U extends Comparable<U>, V extends Comparable<V>> implements java.util.Comparator<Pair<U, V>> {
 		public int compare(Pair<U, V> o1, Pair<U, V> o2) {
 			int result = o1.first.compareTo(o2.first);
@@ -21,11 +37,11 @@ public class Pair<U, V> {
 		this.second = second;
 	}
 
-	public U getFirst() {
+	public U first() {
 		return first;
 	}
 
-	public V getSecond() {
+	public V second() {
 		return second;
 	}
 

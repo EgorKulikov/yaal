@@ -1,5 +1,6 @@
 package net.egork.timus;
 
+import net.egork.arrays.Array;
 import net.egork.arrays.ArrayUtils;
 import net.egork.collections.Pair;
 import net.egork.utils.io.inputreader.InputReader;
@@ -25,11 +26,11 @@ public class Task1119 implements Solver {
 		for (int i = 0; i < blockCount; i++) {
 			maxSequence[i] = 1;
 			for (int j = 0; j < i; j++) {
-				if (blocks[j].getFirst() < blocks[i].getFirst() && blocks[j].getSecond() < blocks[i].getSecond())
+				if (blocks[j].first() < blocks[i].first() && blocks[j].second() < blocks[i].second())
 					maxSequence[i] = Math.max(maxSequence[i], maxSequence[j] + 1);
 			}
 		}
-		int maximum = blockCount == 0 ? 0 : maxSequence[ArrayUtils.maxIndex(maxSequence)];
+		int maximum = blockCount == 0 ? 0 : maxSequence[ArrayUtils.maxIndex(Array.create(maxSequence))];
 		out.printf("%.0f\n", (n + m - (2 - Math.sqrt(2)) * maximum) * 100);
 	}
 }

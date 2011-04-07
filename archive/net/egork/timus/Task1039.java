@@ -24,7 +24,7 @@ public class Task1039 implements Solver {
 			int boss = in.readInt() - 1;
 			if (boss == -1)
 				break;
-			graph.addEdge(new SimpleEdge(boss, employee));
+			graph.add(new SimpleEdge(boss, employee));
 			isRoot[employee] = false;
 		}
 		DFS<Pair<Integer, Integer>, Object> dfs = new DFS<Pair<Integer, Integer>, Object>(graph) {
@@ -45,18 +45,18 @@ public class Task1039 implements Solver {
 
 			@Override
 			protected Pair<Integer, Integer> processResult(int vertex, Pair<Integer, Integer> result, Object parameters, Pair<Integer, Integer> callResult, AtomicBoolean continueProcess) {
-				return new Pair<Integer, Integer>(result.getFirst() + callResult.getSecond(), result.getSecond() + callResult.getFirst());
+				return new Pair<Integer, Integer>(result.first() + callResult.second(), result.second() + callResult.first());
 			}
 
 			@Override
 			protected Pair<Integer, Integer> exit(int vertex, Pair<Integer, Integer> result, Object parameters) {
-				return new Pair<Integer, Integer>(Math.max(result.getFirst(), result.getSecond()), result.getSecond());
+				return new Pair<Integer, Integer>(Math.max(result.first(), result.second()), result.second());
 			}
 		};
 		int result = 0;
 		for (int i = 0; i < n; i++) {
 			if (isRoot[i])
-				result += dfs.run(i, null).getFirst();
+				result += dfs.run(i, null).first();
 		}
 		out.println(result);
 	}

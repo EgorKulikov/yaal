@@ -1,6 +1,10 @@
 package net.egork.arrays;
 
+import net.egork.collections.intervaltree.SumIntervalTree;
+
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -13,52 +17,39 @@ public class ArrayUtils {
 		return order;
 	}
 
-	public static int minIndex(long[] array) {
-		if (array.length == 0)
+	public static<T extends Comparable<T>> int minIndex(Array<T> array) {
+		if (array.size() == 0)
 			return -1;
-		long minimalValue = Long.MAX_VALUE;
+		T minimalValue = array.get(0);
 		int index = 0;
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] < minimalValue) {
-				minimalValue = array[i];
+		for (int i = 1; i < array.size(); i++) {
+			T element = array.get(i);
+			if (element.compareTo(minimalValue) < 0) {
+				minimalValue = element;
 				index = i;
 			}
 		}
 		return index;
 	}
 
-	public static int maxIndex(int[] array) {
-		if (array.length == 0)
+	public static<T extends Comparable<T>> int maxIndex(Array<T> array) {
+		if (array.size() == 0)
 			return -1;
-		int maximalValue = Integer.MIN_VALUE;
+		T maximalValue = array.get(0);
 		int index = 0;
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] > maximalValue) {
-				maximalValue = array[i];
+		for (int i = 1; i < array.size(); i++) {
+			T element = array.get(i);
+			if (element.compareTo(maximalValue) > 0) {
+				maximalValue = element;
 				index = i;
 			}
 		}
 		return index;
 	}
 
-	public static long sumArray(int[] array) {
-		long result = 0;
-		for (int element : array)
-			result += element;
-		return result;
-	}
-
-	public static int[] range(int from, int to) {
-		int[] result = new int[Math.max(from, to) - Math.min(from, to) + 1];
-		int index = 0;
-		if (to > from) {
-			for (int i = from; i <= to; i++)
-				result[index++] = i;
-		} else {
-			for (int i = from; i >= to; i--)
-				result[index++] = i;
-		}
-		return result;
+	public static<T> void fill(Array<T> array, T value) {
+		for (int i = 0; i < array.size(); i++)
+			array.set(i, value);			
 	}
 
 	public static void fill(long[][] array, long value) {
@@ -84,5 +75,48 @@ public class ArrayUtils {
 	public static void fill(boolean[][] array, boolean value) {
 		for (boolean[] row : array)
 			Arrays.fill(row, value);
+	}
+
+	public static<T extends Comparable<T>> long countUnorderedPairs(final Array<T> array) {
+		long result = 0;
+		Integer[] order = generateOrder(array.size());
+		Arrays.sort(order, new Comparator<Integer>() {
+			public int compare(Integer o1, Integer o2) {
+				return array.get(o1).compareTo(array.get(o2));
+			}
+		});
+		SumIntervalTree tree = new SumIntervalTree(array.size());
+		for (int i : order) {
+			result += i - tree.getSegment(0, i);
+			tree.put(i, 1);
+		}
+		return result;
+	}
+
+	public static<T extends Comparable<T>> boolean nextPermutation(Array<T> array) {
+		for (int i = array.size() - 2; i >= 0; i--) {
+			if (array.get(i).compareTo(array.get(i + 1)) < 0) {
+				int index = i + 1;
+				for (int j = i + 2; j < array.size(); j++) {
+					if (array.get(i).compareTo(array.get(j)) >= 0)
+						break;
+					else
+						index = j;
+				}
+				T temp = array.get(i);
+				array.set(i, array.get(index));
+				array.set(index, temp);
+				Collections.sort(array.subList(i + 1));
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static long sumArray(int[] array) {
+		long result = 0;
+		for (int element : array)
+			result += element;
+		return result;
 	}
 }
