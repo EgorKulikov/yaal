@@ -78,4 +78,12 @@ public class MiscUtils {
 		}
 		return result;
 	}
+
+	public static int parseIP(String ip) {
+		String[] components = ip.split("[.]");
+		int result = 0;
+		for (int i = 0; i < 4; i++)
+			result += (1 << (24 - 8 * i)) * Integer.parseInt(components[i]);
+		return result;
+	}
 }

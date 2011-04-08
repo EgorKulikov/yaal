@@ -4,8 +4,10 @@ import net.egork.utils.io.stringinputreader.StringInputReader;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -21,7 +23,14 @@ public class Tester {
 		List<Verdict> verdicts = new ArrayList<Verdict>();
 		long maximalTime = 0;
 		boolean ok = true;
+		Set<Integer> tests = new HashSet<Integer>();
+		for (String arg : args)
+			tests.add(Integer.parseInt(arg));
 		for (Test test : Tests.TESTS) {
+			if (!tests.isEmpty() && !tests.contains(testCase)) {
+				testCase++;
+				continue;
+			}
 			System.out.println("Test #" + testCase + ":");
 			InputReader in = new StringInputReader(test.getInput());
 			StringWriter out = new StringWriter(test.getExpectedOutput() == null ? 0 : test.getExpectedOutput().length());

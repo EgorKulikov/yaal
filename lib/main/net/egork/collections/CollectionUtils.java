@@ -32,8 +32,8 @@ public class CollectionUtils {
 		list.add(list.remove(0));
 	}
 
-	public static void increment(List<Integer> path) {
-		Transformer.transform(path, new Transformer<Integer>() {
+	public static List<Integer> increment(List<Integer> path) {
+		return Transformer.transform(path, new Transformer<Integer>() {
 			@Override
 			public Integer transform(Integer value) {
 				return value + 1;
@@ -57,5 +57,12 @@ public class CollectionUtils {
 				result = element;
 		}
 		return result;
+	}
+
+	public static<T> List<T> asList(Iterable<T> iterable) {
+		List<T> list = new ArrayList<T>();
+		for (T element : iterable)
+			list.add(element);
+		return list;
 	}
 }

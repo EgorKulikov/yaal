@@ -1,7 +1,6 @@
 package net.egork.io;
 
 import java.io.PrintWriter;
-import java.util.Collection;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -18,7 +17,7 @@ public class IOUtils {
 		out.println();
 	}
 
-	public static<T> void printCollection(Collection<T> collection, PrintWriter out) {
+	public static<T> void printCollection(Iterable<T> collection, PrintWriter out) {
 		boolean isFirst = true;
 		for (T element : collection) {
 			if (isFirst)

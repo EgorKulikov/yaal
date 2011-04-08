@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.numbers.IntegerUtils;
+import net.egork.numbers.MultiplicativeFunction;
 import net.egork.numbers.Rational;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
@@ -18,7 +18,7 @@ public class Task1118 implements Solver {
 		int answer = -1;
 		Rational triviality = Rational.MAX_VALUE;
 		for (int i = to; i >= from; i--) {
-			long sumDivisors = IntegerUtils.calculateSumDivisors(i);
+			long sumDivisors = MultiplicativeFunction.DIVISOR_SUM.calculate(i);
 			Rational currentTriviality = new Rational(sumDivisors, i);
 			if (currentTriviality.compareTo(triviality) < 0) {
 				triviality = currentTriviality;

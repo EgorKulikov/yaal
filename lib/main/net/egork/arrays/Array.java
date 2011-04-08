@@ -76,7 +76,7 @@ public abstract class Array<T> implements Iterable<T> {
 
 	public int indexOf(T o) {
 		for (int i = 0; i < size; i++) {
-			if (get(i) == o)
+			if (get(i).equals(o))
 				return i;
 		}
 		return -1;
@@ -88,7 +88,7 @@ public abstract class Array<T> implements Iterable<T> {
 
 	public int lastIndexOf(T o) {
 		for (int i = size - 1; i >= 0; i--) {
-			if (get(i) == o)
+			if (get(i).equals(o))
 				return i;
 		}
 		return -1;

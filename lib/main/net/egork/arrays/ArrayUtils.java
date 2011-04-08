@@ -161,4 +161,37 @@ public class ArrayUtils {
 		return array;
 	}
 
+	public static<T> boolean isSubSequence(Array<T> array, Array<T> sample) {
+		int index = 0;
+		for (T element : array) {
+			if (element.equals(sample.get(index))) {
+				if (++index == sample.size)
+					return true;
+			}
+		}
+		return false;
+	}
+
+	public static Integer[] order(int size, Comparator<Integer> comparator) {
+		Integer[] order = generateOrder(size);
+		Arrays.sort(order, comparator);
+		return order;
+	}
+
+	public static<T extends Comparable> Integer[] order(final Array<T> array) {
+		return order(array.size, new Comparator<Integer>() {
+			public int compare(Integer o1, Integer o2) {
+				return array.get(o1).compareTo(array.get(o2));
+			}
+		});
+	}
+
+	public static<T> int count(Array<T> array, T sample) {
+		int result = 0;
+		for (T element : array) {
+			if (element.equals(sample))
+				result++;
+		}
+		return result;
+	}
 }

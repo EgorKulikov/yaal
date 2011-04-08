@@ -8,8 +8,16 @@ import java.util.Map;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class MultiSet<K> implements Iterable<K> {
-	private Map<K, Integer> map = new HashMap<K, Integer>();
+	private final Map<K, Integer> map;
 	private int size = 0;
+
+	public MultiSet() {
+		this(new HashMap<K, Integer>());
+	}
+
+	public MultiSet(Map<K, Integer> underlying) {
+		map = underlying;
+	}
 
 	public int size() {
 		return size;

@@ -65,23 +65,6 @@ public class IntegerUtils {
 		return digit + 10 - 'a';
 	}
 
-	public static long calculateSumDivisors(long n) {
-		long result = 1;
-		for (long i = 2; i * i <= n; i++) {
-			if (n % i == 0) {
-				long pn = i;
-				do {
-					pn *= i;
-					n /= i;
-				} while (n % i == 0);
-				result *= (pn - 1) / (i - 1);
-			}
-		}
-		if (n != 1)
-			result *= n + 1;
-		return result;
-	}
-
 	public static int longCompare(long a, long b) {
 		if (a < b)
 			return -1;
@@ -100,20 +83,30 @@ public class IntegerUtils {
 		return result;
 	}
 
-	public static int calculateNumDivisors(long n) {
-		int result = 1;
-		for (long i = 2; i * i <= n; i++) {
-			if (n % i == 0) {
-				int power = 1;
-				do {
-					power++;
-					n /= i;
-				} while (n % i == 0);
-				result *= power;
-			}
+	public static int[] representationInBase(long number, int base) {
+		long basePower = base;
+		int exponent = 1;
+		while (number >= basePower) {
+			basePower *= base;
+			exponent++;
 		}
-		if (n != 1)
-			result *= 2;
-		return result;
+		int[] representation = new int[exponent];
+		for (int i = 0; i < exponent; i++) {
+			basePower /= base;
+			representation[i] = (int) (number / basePower);
+			number %= basePower;
+		}
+		return representation;
+	}
+
+	public static int trueDivide(int a, int b) {
+		return (a - trueMod(a, b)) / b;
+	}
+
+	public static int trueMod(int a, int b) {
+		a %= b;
+		a += b;
+		a %= b;
+		return a;
 	}
 }

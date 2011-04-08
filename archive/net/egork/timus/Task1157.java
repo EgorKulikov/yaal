@@ -1,6 +1,7 @@
 package net.egork.timus;
 
 import net.egork.numbers.IntegerUtils;
+import net.egork.numbers.MultiplicativeFunction;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
 
@@ -12,7 +13,7 @@ public class Task1157 implements Solver {
 		int n = in.readInt();
 		int k = in.readInt();
 		for (int l = k + 1; l <= 10000; l++) {
-			if ((IntegerUtils.calculateNumDivisors(l) + 1) / 2 == n && (IntegerUtils.calculateNumDivisors(l - k) + 1) / 2 == m) {
+			if ((MultiplicativeFunction.DIVISOR_COUNT.calculate(l) + 1) / 2 == n && (MultiplicativeFunction.DIVISOR_COUNT.calculate(l - k) + 1) / 2 == m) {
 				out.println(l);
 				return;
 			}

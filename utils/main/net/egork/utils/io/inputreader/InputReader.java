@@ -222,4 +222,11 @@ public abstract class InputReader {
 			table[i] = readLongArray(columnCount);
 		return table;
 	}
+
+	public String[][] readStringTable(int rowCount, int columnCount) {
+		String[][] table = new String[rowCount][];
+		for (int i = 0; i < rowCount; i++)
+			table[i] = readStringArray(columnCount);
+		return table;
+	}
 }
