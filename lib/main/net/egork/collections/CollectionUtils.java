@@ -40,4 +40,22 @@ public class CollectionUtils {
 			}
 		});
 	}
+
+	public static<T extends Comparable<T>> T minElement(Iterable<T> collection) {
+		T result = null;
+		for (T element : collection) {
+			if (result == null || result.compareTo(element) > 0)
+				result = element;
+		}
+		return result;
+	}
+
+	public static<T extends Comparable<T>> T maxElement(Iterable<T> collection) {
+		T result = null;
+		for (T element : collection) {
+			if (result == null || result.compareTo(element) < 0)
+				result = element;
+		}
+		return result;
+	}
 }

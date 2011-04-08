@@ -1,10 +1,9 @@
 package net.egork.arrays;
 
+import net.egork.collections.CollectionUtils;
 import net.egork.collections.intervaltree.SumIntervalTree;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -18,33 +17,11 @@ public class ArrayUtils {
 	}
 
 	public static<T extends Comparable<T>> int minIndex(Array<T> array) {
-		if (array.size() == 0)
-			return -1;
-		T minimalValue = array.get(0);
-		int index = 0;
-		for (int i = 1; i < array.size(); i++) {
-			T element = array.get(i);
-			if (element.compareTo(minimalValue) < 0) {
-				minimalValue = element;
-				index = i;
-			}
-		}
-		return index;
+		return array.indexOf(CollectionUtils.minElement(array));
 	}
 
 	public static<T extends Comparable<T>> int maxIndex(Array<T> array) {
-		if (array.size() == 0)
-			return -1;
-		T maximalValue = array.get(0);
-		int index = 0;
-		for (int i = 1; i < array.size(); i++) {
-			T element = array.get(i);
-			if (element.compareTo(maximalValue) > 0) {
-				maximalValue = element;
-				index = i;
-			}
-		}
-		return index;
+		return array.indexOf(CollectionUtils.maxElement(array));
 	}
 
 	public static<T> void fill(Array<T> array, T value) {
@@ -106,7 +83,7 @@ public class ArrayUtils {
 				T temp = array.get(i);
 				array.set(i, array.get(index));
 				array.set(index, temp);
-				Collections.sort(array.subList(i + 1));
+				sort(array.subArray(i + 1));
 				return true;
 			}
 		}
@@ -119,4 +96,69 @@ public class ArrayUtils {
 			result += element;
 		return result;
 	}
+
+	public static int[] range(int from, int to) {
+		int[] result = new int[Math.max(from, to) - Math.min(from, to) + 1];
+		int index = 0;
+		if (to > from) {
+			for (int i = from; i <= to; i++)
+				result[index++] = i;
+		} else {
+			for (int i = from; i >= to; i--)
+				result[index++] = i;
+		}
+		return result;
+	}
+
+	@SuppressWarnings({"unchecked"})
+	public static<T extends Comparable<T>> Array<T> sort(Array<T> array) {
+		Object underlying = array.underlying;
+		if (underlying instanceof char[])
+			Arrays.sort((char[]) underlying, array.from, array.to);
+		else if (underlying instanceof int[])
+			Arrays.sort((int[]) underlying, array.from, array.to);
+		else if (underlying instanceof long[])
+			Arrays.sort((long[]) underlying, array.from, array.to);
+		else if (underlying instanceof Object[])
+			Arrays.sort((T[]) underlying, array.from, array.to);
+		else if (underlying instanceof List)
+			Collections.sort(((List<T>) underlying).subList(array.from, array.to));
+		else
+			throw new IllegalArgumentException();
+		return array;
+	}
+
+	@SuppressWarnings({"unchecked", "RedundantCast"})
+	public static<T> Array<T> sort(Array<T> array, Comparator<? super T> comparator) {
+		Object underlying = array.underlying;
+		if (underlying instanceof char[]) {
+			Character[] copy = new Character[array.size];
+			for (int i = 0, j = array.from; i < array.size; i++, j++)
+				copy[i] = ((char[])underlying)[j];
+			Arrays.sort(copy, (Comparator<? super Character>) comparator);
+			for (int i = 0, j = array.from; i < array.size; i++, j++)
+				((char[])underlying)[j] = copy[i];
+		} else if (underlying instanceof int[]) {
+			Integer[] copy = new Integer[array.size];
+			for (int i = 0, j = array.from; i < array.size; i++, j++)
+				copy[i] = ((int[])underlying)[j];
+			Arrays.sort(copy, (Comparator<? super Integer>) comparator);
+			for (int i = 0, j = array.from; i < array.size; i++, j++)
+				((int[])underlying)[j] = copy[i];
+		} else if (underlying instanceof long[]) {
+			Long[] copy = new Long[array.size];
+			for (int i = 0, j = array.from; i < array.size; i++, j++)
+				copy[i] = ((long[])underlying)[j];
+			Arrays.sort(copy, (Comparator<? super Long>) comparator);
+			for (int i = 0, j = array.from; i < array.size; i++, j++)
+				((long[])underlying)[j] = copy[i];
+		} else if (underlying instanceof Object[])
+			Arrays.sort((T[]) underlying, array.from, array.to, comparator);
+		else if (underlying instanceof List)
+			Collections.sort(((List<T>) underlying).subList(array.from, array.to), comparator);
+		else
+			throw new IllegalArgumentException();
+		return array;
+	}
+
 }
