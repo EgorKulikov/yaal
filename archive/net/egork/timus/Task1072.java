@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
@@ -27,7 +27,7 @@ public class Task1072 implements Solver {
 			for (int j = i + 1; j < computerCount; j++) {
 				boolean connected = false;
 				for (int k : networks[i]) {
-					if (Array.create(networks[j]).contains(k))
+					if (ArrayWrapper.wrap(networks[j]).contains(k))
 						connected = true;
 				}
 				if (connected)

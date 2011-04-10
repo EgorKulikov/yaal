@@ -42,6 +42,19 @@ public class IntegerUtils {
 		return isPrime;
 	}
 
+	public static int[] generateDivisorTable(int upTo) {
+		int[] divisor = new int[upTo];
+		for (int i = 1; i < upTo; i++)
+			divisor[i] = i;
+		for (int i = 2; i * i < upTo; i++) {
+			if (divisor[i] == i) {
+				for (int j = i * i; j < upTo; j += i)
+					divisor[j] = i;
+			}
+		}
+		return divisor;
+	}
+
 	public static long powerInFactorial(long n, long p) {
 		long result = 0;
 		while (n != 0) {

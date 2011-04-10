@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.arrays.ArrayUtils;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
@@ -27,7 +27,7 @@ public class Task1210 implements Solver {
 			}
 			last = next;
 		}
-		out.println(last[ArrayUtils.minIndex(Array.create(last))]);
+		out.println(last[ArrayUtils.minIndex(ArrayWrapper.wrap(last))]);
 	}
 }
 

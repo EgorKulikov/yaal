@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.utils.solver.Solver;
 import net.egork.utils.io.inputreader.InputReader;
 
@@ -17,7 +17,7 @@ public class Task1208 implements Solver {
 					continue;
 				boolean conflict = false;
 				for (String participant : teams[i]) {
-					if (Array.create(teams[j]).contains(participant))
+					if (ArrayWrapper.wrap(teams[j]).contains(participant))
 						conflict = true;
 				}
 				if (conflict)

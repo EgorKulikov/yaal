@@ -103,4 +103,8 @@ public class Time {
 		copyHours = IntegerUtils.trueMod(copyHours, 24);
 		return new Time(copyHours, copyMinutes, copySeconds);
 	}
+
+	public int totalSeconds() {
+		return totalMinutes() * 60 + seconds;
+	}
 }

@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.arrays.ArrayUtils;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
@@ -27,7 +27,7 @@ public class Task1095 implements Solver {
 				out.println(new String(number));
 				return;
 			}
-		} while (ArrayUtils.nextPermutation(Array.create(number)));
+		} while (ArrayUtils.nextPermutation(ArrayWrapper.wrap(number)));
 		out.println(0);
 	}
 }

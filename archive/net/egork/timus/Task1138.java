@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.inputreader.InputReader;
@@ -25,7 +25,7 @@ public class Task1138 implements Solver {
 			for (int j = i + step; j <= s; j += step)
 				maxSequence[j] = Math.max(maxSequence[j], maxSequence[i] + 1);
 		}
-		out.println(CollectionUtils.maxElement(Array.create(maxSequence)));
+		out.println(CollectionUtils.maxElement(ArrayWrapper.wrap(maxSequence)));
 	}
 }
 

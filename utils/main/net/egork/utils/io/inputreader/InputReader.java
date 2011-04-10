@@ -229,4 +229,11 @@ public abstract class InputReader {
 			table[i] = readStringArray(columnCount);
 		return table;
 	}
+
+	public void readDoubleArrays(double[]...arrays) {
+		for (int i = 0; i < arrays[0].length; i++) {
+			for (int j = 0; j < arrays.length; j++)
+				arrays[j][i] = readDouble();
+		}
+	}
 }

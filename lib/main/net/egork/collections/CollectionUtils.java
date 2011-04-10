@@ -65,4 +65,13 @@ public class CollectionUtils {
 			list.add(element);
 		return list;
 	}
+
+	public static<T> int count(Iterable<T> array, T sample) {
+		int result = 0;
+		for (T element : array) {
+			if (element.equals(sample))
+				result++;
+		}
+		return result;
+	}
 }

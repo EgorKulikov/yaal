@@ -46,6 +46,21 @@ public abstract class Checker {
 		}
 	}
 
+	public String strictCheck(InputReader expectedOutput, InputReader actualOutput) {
+		while (true) {
+			int ch1 = expectedOutput.read();
+			while (ch1 == '\r')
+				ch1 = expectedOutput.read();
+			int ch2 = actualOutput.read();
+			while (ch2 == '\r')
+				ch2 = actualOutput.read();
+			if (ch1 != ch2)
+				return "WA";
+			if (ch1 == -1)
+				return null;
+		}		
+	}
+
 	protected static boolean isDoubleEquals(double expected, double actual, double certainty) {
 		return Math.abs(expected - actual) < certainty * Math.max(Math.abs(expected), 1);
 	}

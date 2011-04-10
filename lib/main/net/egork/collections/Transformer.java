@@ -1,6 +1,6 @@
 package net.egork.collections;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 
 import java.util.List;
 
@@ -24,7 +24,7 @@ public abstract class Transformer<T> {
 		return array;
 	}
 
-	public static<T>Array<T> transform(Array<T> array, Transformer<T> transformer) {
+	public static<T>ArrayWrapper<T> transform(ArrayWrapper<T> array, Transformer<T> transformer) {
 		int size = array.size();
 		for (int i = 0; i < size; i++)
 			array.set(i, transformer.transform(array.get(i)));

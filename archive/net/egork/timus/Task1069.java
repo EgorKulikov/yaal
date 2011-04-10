@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.arrays.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.Function;
@@ -44,7 +44,7 @@ public class Task1069 implements Solver {
 		}
 		for (int i = 0; i < graph.getSize(); i++) {
 			out.print((i + 1) + ": ");
-			IOUtils.printCollection(ArrayUtils.sort(Array.create(Function.apply(graph.getIncident(i), new Function<Edge, Integer>() {
+			IOUtils.printCollection(ArrayUtils.sort(ArrayWrapper.wrap(Function.apply(graph.getIncident(i), new Function<Edge, Integer>() {
 				@Override
 				public Integer value(Edge argument) {
 					return argument.getDestination() + 1;

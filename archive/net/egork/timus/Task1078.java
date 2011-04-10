@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.arrays.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
@@ -40,7 +40,7 @@ public class Task1078 implements Solver {
 				}
 			}
 		}
-		int index = ArrayUtils.maxIndex(Array.create(answer));
+		int index = ArrayUtils.maxIndex(ArrayWrapper.wrap(answer));
 		out.println(answer[index]);
 		List<Integer> path = MiscUtils.getPath(last, index);
 		CollectionUtils.increment(path);

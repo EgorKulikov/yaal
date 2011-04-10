@@ -230,6 +230,7 @@ public class Util {
 							element.delete();
 					}
 				}
+				getFile(fileName).refresh(false, false);
 			}
 		});
 	}

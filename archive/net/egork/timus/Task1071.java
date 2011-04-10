@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.arrays.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.inputreader.InputReader;
@@ -13,8 +13,8 @@ public class Task1071 implements Solver {
 		int x = in.readInt();
 		int y = in.readInt();
 		for (int base = 2; base * base <= x; base++) {
-			if (ArrayUtils.isSubSequence(Array.create(IntegerUtils.representationInBase(x, base)),
-				Array.create(IntegerUtils.representationInBase(y, base))))
+			if (ArrayUtils.isSubSequence(ArrayWrapper.wrap(IntegerUtils.representationInBase(x, base)),
+				ArrayWrapper.wrap(IntegerUtils.representationInBase(y, base))))
 			{
 				out.println(base);
 				return;

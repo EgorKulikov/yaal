@@ -2,8 +2,12 @@ package net.egork.arrays;
 
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.intervaltree.SumIntervalTree;
+import net.egork.misc.Factory;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -16,17 +20,22 @@ public class ArrayUtils {
 		return order;
 	}
 
-	public static<T extends Comparable<T>> int minIndex(Array<T> array) {
+	public static<T extends Comparable<T>> int minIndex(ArrayWrapper<T> array) {
 		return array.indexOf(CollectionUtils.minElement(array));
 	}
 
-	public static<T extends Comparable<T>> int maxIndex(Array<T> array) {
+	public static<T extends Comparable<T>> int maxIndex(ArrayWrapper<T> array) {
 		return array.indexOf(CollectionUtils.maxElement(array));
 	}
 
-	public static<T> void fill(Array<T> array, T value) {
+	public static<T> void fill(ArrayWrapper<T> array, T value) {
 		for (int i = 0; i < array.size(); i++)
 			array.set(i, value);			
+	}
+
+	public static<T> void fill(ArrayWrapper<T> array, Factory<T> factory) {
+		for (int i = 0; i < array.size(); i++)
+			array.set(i, factory.create());
 	}
 
 	public static void fill(long[][] array, long value) {
@@ -54,7 +63,7 @@ public class ArrayUtils {
 			Arrays.fill(row, value);
 	}
 
-	public static<T extends Comparable<T>> long countUnorderedPairs(final Array<T> array) {
+	public static<T extends Comparable<T>> long countUnorderedPairs(final ArrayWrapper<T> array) {
 		long result = 0;
 		Integer[] order = generateOrder(array.size());
 		Arrays.sort(order, new Comparator<Integer>() {
@@ -70,7 +79,7 @@ public class ArrayUtils {
 		return result;
 	}
 
-	public static<T extends Comparable<T>> boolean nextPermutation(Array<T> array) {
+	public static<T extends Comparable<T>> boolean nextPermutation(ArrayWrapper<T> array) {
 		for (int i = array.size() - 2; i >= 0; i--) {
 			if (array.get(i).compareTo(array.get(i + 1)) < 0) {
 				int index = i + 1;
@@ -111,7 +120,7 @@ public class ArrayUtils {
 	}
 
 	@SuppressWarnings({"unchecked"})
-	public static<T extends Comparable<T>> Array<T> sort(Array<T> array) {
+	public static<T extends Comparable<T>> ArrayWrapper<T> sort(ArrayWrapper<T> array) {
 		Object underlying = array.underlying;
 		if (underlying instanceof char[])
 			Arrays.sort((char[]) underlying, array.from, array.to);
@@ -129,7 +138,7 @@ public class ArrayUtils {
 	}
 
 	@SuppressWarnings({"unchecked", "RedundantCast"})
-	public static<T> Array<T> sort(Array<T> array, Comparator<? super T> comparator) {
+	public static<T> ArrayWrapper<T> sort(ArrayWrapper<T> array, Comparator<? super T> comparator) {
 		Object underlying = array.underlying;
 		if (underlying instanceof char[]) {
 			Character[] copy = new Character[array.size];
@@ -161,7 +170,7 @@ public class ArrayUtils {
 		return array;
 	}
 
-	public static<T> boolean isSubSequence(Array<T> array, Array<T> sample) {
+	public static<T> boolean isSubSequence(ArrayWrapper<T> array, ArrayWrapper<T> sample) {
 		int index = 0;
 		for (T element : array) {
 			if (element.equals(sample.get(index))) {
@@ -178,7 +187,7 @@ public class ArrayUtils {
 		return order;
 	}
 
-	public static<T extends Comparable> Integer[] order(final Array<T> array) {
+	public static<T extends Comparable> Integer[] order(final ArrayWrapper<T> array) {
 		return order(array.size, new Comparator<Integer>() {
 			public int compare(Integer o1, Integer o2) {
 				return array.get(o1).compareTo(array.get(o2));
@@ -186,12 +195,8 @@ public class ArrayUtils {
 		});
 	}
 
-	public static<T> int count(Array<T> array, T sample) {
-		int result = 0;
-		for (T element : array) {
-			if (element.equals(sample))
-				result++;
-		}
-		return result;
+	public static void fill(int[][][] array, int value) {
+		for (int[][] subArray : array)
+			fill(subArray, value);
 	}
 }

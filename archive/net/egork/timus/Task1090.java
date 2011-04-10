@@ -1,6 +1,6 @@
 package net.egork.timus;
 
-import net.egork.arrays.Array;
+import net.egork.arrays.ArrayWrapper;
 import net.egork.arrays.ArrayUtils;
 import net.egork.utils.io.inputreader.InputReader;
 import net.egork.utils.solver.Solver;
@@ -13,8 +13,8 @@ public class Task1090 implements Solver {
 		int k = in.readInt();
 		long[] answer = new long[k];
 		for (int i = 0; i < k; i++)
-			answer[i] = ArrayUtils.countUnorderedPairs(Array.create(in.readIntArray(n)));
-		out.println(ArrayUtils.maxIndex(Array.create(answer)) + 1);
+			answer[i] = ArrayUtils.countUnorderedPairs(ArrayWrapper.wrap(in.readIntArray(n)));
+		out.println(ArrayUtils.maxIndex(ArrayWrapper.wrap(answer)) + 1);
 	}
 }
 

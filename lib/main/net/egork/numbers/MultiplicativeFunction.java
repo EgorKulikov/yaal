@@ -52,4 +52,20 @@ public abstract class MultiplicativeFunction {
 			value *= value(argument, 1, argument);
 		return value;
 	}
+
+	public long[] calculateUpTo(int upTo) {
+		int[] divisor = IntegerUtils.generateDivisorTable(upTo);
+		long[] result = new long[upTo];
+		result[1] = 1;
+		for (int i = 2; i < upTo; i++) {
+			int iDivided = i;
+			int exponent = 0;
+			do {
+				iDivided /= divisor[i];
+				exponent++;
+			} while (iDivided % divisor[i] == 0);
+			result[i] = result[iDivided] * value(divisor[i], exponent, i / iDivided);
+		}
+		return result;
+	}
 }

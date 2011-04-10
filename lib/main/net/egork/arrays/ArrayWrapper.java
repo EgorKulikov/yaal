@@ -6,46 +6,46 @@ import java.util.List;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public abstract class Array<T> implements Iterable<T> {
+public abstract class ArrayWrapper<T> implements Iterable<T> {
 	protected final int from;
 	protected final int to;
 	protected final int size;
 	protected final Object underlying;
 
-	public static<T> Array<T> create(T[] array) {
-		return new ReferenceArray<T>(array);
+	public static<T> ArrayWrapper<T> wrap(T[] array) {
+		return new ReferenceArrayWrapper<T>(array);
 	}
 
-	public static<T> Array<T> create(List<T> list) {
-		return new ListArray<T>(list);
+	public static<T> ArrayWrapper<T> wrap(List<T> list) {
+		return new ListWrapper<T>(list);
 	}
 
-	public static Array<Integer> create(int[] array) {
-		return new IntArray(array);
+	public static ArrayWrapper<Integer> wrap(int[] array) {
+		return new IntArrayWrapper(array);
 	}
 
-	public static Array<Long> create(long[] array) {
-		return new LongArray(array);
+	public static ArrayWrapper<Long> wrap(long[] array) {
+		return new LongArrayWrapper(array);
 	}
 
-	public static Array<Character> create(char[] array) {
-		return new CharArray(array);
+	public static ArrayWrapper<Character> wrap(char[] array) {
+		return new CharArrayWrapper(array);
 	}
 
-	protected Array(Object underlying, int from, int to) {
+	protected ArrayWrapper(Object underlying, int from, int to) {
 		this.underlying = underlying;
 		this.from = from;
 		this.to = to;
 		size = to - from;
 	}
 
-	protected abstract Array<T> subArrayImpl(int from, int to);
+	protected abstract ArrayWrapper<T> subArrayImpl(int from, int to);
 
-	public Array<T> subArray(int from) {
+	public ArrayWrapper<T> subArray(int from) {
 		return subArray(from, size);
 	}
 
-	public Array<T> subArray(int from, int to) {
+	public ArrayWrapper<T> subArray(int from, int to) {
 		if (from < 0)
 			from += size;
 		if (to < 0)
@@ -117,14 +117,14 @@ public abstract class Array<T> implements Iterable<T> {
 		}
 	}
 
-	protected static class ReferenceArray<T> extends Array<T> {
+	protected static class ReferenceArrayWrapper<T> extends ArrayWrapper<T> {
 		protected final T[] array;
 
-		protected ReferenceArray(T[] array) {
+		protected ReferenceArrayWrapper(T[] array) {
 			this(array, 0, array.length);
 		}
 
-		protected ReferenceArray(T[] array, int from, int to) {
+		protected ReferenceArrayWrapper(T[] array, int from, int to) {
 			super(array, from, to);
 			this.array = array;
 		}
@@ -137,19 +137,19 @@ public abstract class Array<T> implements Iterable<T> {
 			array[index + from] = element;
 		}
 
-		protected Array<T> subArrayImpl(int fromIndex, int toIndex) {
-			return new ReferenceArray<T>(array, fromIndex, toIndex);
+		protected ArrayWrapper<T> subArrayImpl(int fromIndex, int toIndex) {
+			return new ReferenceArrayWrapper<T>(array, fromIndex + from, toIndex + from);
 		}
 	}
 
-	protected static class ListArray<T> extends Array<T> {
+	protected static class ListWrapper<T> extends ArrayWrapper<T> {
 		protected final List<T> list;
 
-		protected ListArray(List<T> list) {
+		protected ListWrapper(List<T> list) {
 			this(list, 0, list.size());
 		}
 
-		protected ListArray(List<T> list, int from, int to) {
+		protected ListWrapper(List<T> list, int from, int to) {
 			super(list, from, to);
 			this.list = list;
 		}
@@ -162,19 +162,19 @@ public abstract class Array<T> implements Iterable<T> {
 			list.set(index + from, element);
 		}
 
-		protected Array<T> subArrayImpl(int fromIndex, int toIndex) {
-			return new ListArray<T>(list, fromIndex, toIndex);
+		protected ArrayWrapper<T> subArrayImpl(int fromIndex, int toIndex) {
+			return new ListWrapper<T>(list, fromIndex + from, toIndex + from);
 		}
 	}
 
-	protected static class IntArray extends Array<Integer> {
+	protected static class IntArrayWrapper extends ArrayWrapper<Integer> {
 		protected final int[] array;
 
-		protected IntArray(int[] array) {
+		protected IntArrayWrapper(int[] array) {
 			this(array, 0, array.length);
 		}
 
-		protected IntArray(int[] array, int from, int to) {
+		protected IntArrayWrapper(int[] array, int from, int to) {
 			super(array, from, to);
 			this.array = array;
 		}
@@ -187,19 +187,19 @@ public abstract class Array<T> implements Iterable<T> {
 			array[index + from] = element;
 		}
 
-		protected Array<Integer> subArrayImpl(int fromIndex, int toIndex) {
-			return new IntArray(array, fromIndex, toIndex);
+		protected ArrayWrapper<Integer> subArrayImpl(int fromIndex, int toIndex) {
+			return new IntArrayWrapper(array, fromIndex + from, toIndex + from);
 		}
 	}
 
-	protected static class LongArray extends Array<Long> {
+	protected static class LongArrayWrapper extends ArrayWrapper<Long> {
 		protected final long[] array;
 
-		protected LongArray(long[] array) {
+		protected LongArrayWrapper(long[] array) {
 			this(array, 0, array.length);
 		}
 
-		protected LongArray(long[] array, int from, int to) {
+		protected LongArrayWrapper(long[] array, int from, int to) {
 			super(array, from, to);
 			this.array = array;
 		}
@@ -212,19 +212,19 @@ public abstract class Array<T> implements Iterable<T> {
 			array[index + from] = element;
 		}
 
-		protected Array<Long> subArrayImpl(int fromIndex, int toIndex) {
-			return new LongArray(array, fromIndex, toIndex);
+		protected ArrayWrapper<Long> subArrayImpl(int fromIndex, int toIndex) {
+			return new LongArrayWrapper(array, fromIndex + from, toIndex + from);
 		}
 	}
 
-	protected static class CharArray extends Array<Character> {
+	protected static class CharArrayWrapper extends ArrayWrapper<Character> {
 		protected final char[] array;
 
-		protected CharArray(char[] array) {
+		protected CharArrayWrapper(char[] array) {
 			this(array, 0, array.length);
 		}
 
-		protected CharArray(char[] array, int from, int to) {
+		protected CharArrayWrapper(char[] array, int from, int to) {
 			super(array, from, to);
 			this.array = array;
 		}
@@ -237,8 +237,8 @@ public abstract class Array<T> implements Iterable<T> {
 			array[index + from] = element;
 		}
 
-		protected Array<Character> subArrayImpl(int fromIndex, int toIndex) {
-			return new CharArray(array, fromIndex, toIndex);
+		protected ArrayWrapper<Character> subArrayImpl(int fromIndex, int toIndex) {
+			return new CharArrayWrapper(array, fromIndex + from, toIndex + from);
 		}
 	}
 }
