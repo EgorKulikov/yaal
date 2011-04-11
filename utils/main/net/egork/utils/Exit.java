@@ -1,6 +1,6 @@
-package net.egork.utils.exit;
+package net.egork.utils;
 
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 

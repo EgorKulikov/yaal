@@ -1,4 +1,4 @@
-package net.egork.utils.io.inputreader;
+package net.egork.utils.io;
 
 import java.math.BigInteger;
 import java.util.InputMismatchException;

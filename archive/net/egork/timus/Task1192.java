@@ -2,8 +2,8 @@ package net.egork.timus;
 
 import net.egork.geometry.GeometryUtils;
 import net.egork.numbers.DoubleUtils;
-import net.egork.utils.solver.Solver;
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.Solver;
+import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 

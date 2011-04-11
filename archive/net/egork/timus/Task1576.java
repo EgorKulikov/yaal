@@ -1,8 +1,8 @@
 package net.egork.timus;
 
 import net.egork.datetime.Time;
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.io.InputReader;
+import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
 

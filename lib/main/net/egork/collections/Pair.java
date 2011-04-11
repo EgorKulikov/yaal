@@ -1,6 +1,6 @@
 package net.egork.collections;
 
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.io.InputReader;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

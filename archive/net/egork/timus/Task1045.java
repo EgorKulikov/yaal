@@ -5,8 +5,8 @@ import net.egork.graph.DFS;
 import net.egork.graph.Edge;
 import net.egork.graph.Graph;
 import net.egork.graph.SimpleEdge;
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.Solver;
+import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.concurrent.atomic.AtomicBoolean;

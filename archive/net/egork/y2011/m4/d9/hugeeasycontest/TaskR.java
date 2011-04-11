@@ -3,8 +3,8 @@ package net.egork.y2011.m4.d9.hugeeasycontest;
 import net.egork.arrays.ArrayUtils;
 import net.egork.arrays.ArrayWrapper;
 import net.egork.collections.Function;
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.Solver;
+import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 

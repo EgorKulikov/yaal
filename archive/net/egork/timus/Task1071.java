@@ -3,8 +3,8 @@ package net.egork.timus;
 import net.egork.arrays.ArrayWrapper;
 import net.egork.arrays.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.Solver;
+import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 

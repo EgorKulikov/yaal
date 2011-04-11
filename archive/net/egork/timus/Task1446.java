@@ -2,8 +2,8 @@ package net.egork.timus;
 
 import net.egork.collections.CPPMap;
 import net.egork.misc.Factory;
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.io.InputReader;
+import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;

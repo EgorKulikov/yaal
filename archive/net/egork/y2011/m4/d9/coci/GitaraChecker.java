@@ -1,7 +1,7 @@
 package net.egork.y2011.m4.d9.coci;
 
 import net.egork.utils.checker.Checker;
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.io.InputReader;
 
 public class GitaraChecker extends Checker {
 	@Override

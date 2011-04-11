@@ -1,6 +1,6 @@
-package net.egork.utils.io.streaminputreader;
+package net.egork.utils.io;
 
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.io.InputReader;
 
 import java.io.IOException;
 import java.io.InputStream;

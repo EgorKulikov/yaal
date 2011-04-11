@@ -1,7 +1,7 @@
 package net.egork.y2011.m4.d3.regionalcontestfrommexico;
 
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.io.InputReader;
+import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
 

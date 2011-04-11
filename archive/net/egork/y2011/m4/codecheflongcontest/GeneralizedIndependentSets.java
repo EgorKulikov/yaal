@@ -4,8 +4,8 @@ import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Edge;
 import net.egork.graph.Graph;
 import net.egork.graph.WeightedEdge;
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.Solver;
+import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.*;

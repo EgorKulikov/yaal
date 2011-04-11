@@ -21,9 +21,7 @@ public class ArchiveTask extends AnAction {
 		String taskID = configuration.getTaskID();
 		String sourceCode = Util.loadSourceFile("main/" + taskID + ".java");
 		String checkerCode = Util.loadSourceFile("main/" + taskID + "Checker.java");
-		Calendar currentDate = Calendar.getInstance();
-		String packageName = "net.egork.y" + currentDate.get(Calendar.YEAR) + ".m" +
-			(currentDate.get(Calendar.MONTH) + 1) + ".d" + currentDate.get(Calendar.DAY_OF_MONTH);
+		String packageName = "unsorted";
 		if (sourceCode != null)
 			sourceCode = "package " + packageName + ";\n\n" + sourceCode;
 		if (checkerCode != null)

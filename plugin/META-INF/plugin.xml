@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-  <name>Algorithm helper</name>
+  <name>Contest helper</name>
   <description>Helps to integrate your library code into your solutions and to test them</description>
   <version>1.0</version>
   <vendor>Egor Kulikov (egor@egork.net)</vendor>

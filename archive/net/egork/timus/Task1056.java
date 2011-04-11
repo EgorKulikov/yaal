@@ -6,8 +6,8 @@ import net.egork.graph.Edge;
 import net.egork.graph.Graph;
 import net.egork.graph.SimpleEdge;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.io.InputReader;
+import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;

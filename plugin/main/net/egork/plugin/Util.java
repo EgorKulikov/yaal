@@ -9,7 +9,7 @@ import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.*;
 import com.intellij.psi.search.searches.ReferencesSearch;
-import net.egork.utils.io.streaminputreader.StreamInputReader;
+import net.egork.utils.io.StreamInputReader;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,6 +22,8 @@ import java.util.List;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class Util {
+	private static String packageName = null;
+
 	public static Project getProject() {
 		for (Project project : ProjectManager.getInstance().getOpenProjects()) {
 			if (project.getName().contains("algo"))
@@ -237,4 +239,8 @@ public class Util {
 		});
 	}
 
+	public static boolean isLibraryClass(String className) {
+		className = className.substring(0, className.lastIndexOf('.'));
+		return getFile("lib/main/" + className.replace('.', '/')) != null;
+	}
 }

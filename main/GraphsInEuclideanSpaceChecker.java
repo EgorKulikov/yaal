@@ -1,5 +1,5 @@
 import net.egork.utils.checker.Checker;
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.io.InputReader;
 
 public class GraphsInEuclideanSpaceChecker extends Checker {
 	@Override

@@ -1,8 +1,8 @@
 package net.egork.y2011.m4.d3.eleventhzhejianguniversityprogrammingcontest;
 
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.inputreader.InputReader;
-import net.egork.utils.solver.Solver;
+import net.egork.utils.Solver;
+import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.*;

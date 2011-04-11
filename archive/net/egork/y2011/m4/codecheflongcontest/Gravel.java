@@ -1,8 +1,8 @@
 package net.egork.y2011.m4.codecheflongcontest;
 
 import net.egork.collections.intervaltree.SumIntervalTree;
-import net.egork.utils.solver.Solver;
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.io.InputReader;
+import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
 

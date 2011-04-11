@@ -1,6 +1,6 @@
 package net.egork.utils.checker;
 
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.io.InputReader;
 
 import java.util.InputMismatchException;
 

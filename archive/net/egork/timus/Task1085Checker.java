@@ -1,7 +1,7 @@
 package net.egork.timus;
 
 import net.egork.utils.checker.Checker;
-import net.egork.utils.io.inputreader.InputReader;
+import net.egork.utils.io.InputReader;
 
 public class Task1085Checker extends Checker {
 	@Override
