@@ -4,6 +4,8 @@ package net.egork.geometry;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class GeometryUtils {
+	public static double epsilon = 1e-8;
+
 	public static double fastHypot(double...x) {
 		if (x.length == 0)
 			return 0;

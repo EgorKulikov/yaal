@@ -1,8 +1,8 @@
 <idea-plugin version="2">
   <name>Algorithm helper</name>
-  <description>short description of the plugin</description>
+  <description>Helps to integrate your library code into your solutions and to test them</description>
   <version>1.0</version>
-  <vendor>YourCompany</vendor>
+  <vendor>Egor Kulikov (egor@egork.net)</vendor>
   <idea-version since-build="8000"/>
 
   <application-components>
@@ -15,12 +15,12 @@
 
   <actions>
     <!-- Add your actions here -->
-      <action id="newTask" class="net.egork.plugin.NewTask" text="New Task" />
-      <action id="runTask" class="net.egork.plugin.RunTask" text="Run Task" />
-      <action id="taskList" class="net.egork.plugin.TaskList" text="Task List" />
-      <action id="deleteTask" class="net.egork.plugin.DeleteTask" text="Delete Task"/>
-      <action id="archiveTask" class="net.egork.plugin.ArchiveTask" text="Archive Task"/>
-      <action id="editTests" class="net.egork.plugin.EditTests" text="Edit Tests"/>
+      <action id="newTask" class="net.egork.plugin.NewTask" text="New Task" icon="/icons/newtask.png"/>
+      <action id="runTask" class="net.egork.plugin.RunTask" text="Run Task" icon="/icons/runtask.png"/>
+      <action id="taskList" class="net.egork.plugin.TaskList" text="Task List" icon="/icons/select.png"/>
+      <action id="deleteTask" class="net.egork.plugin.DeleteTask" text="Delete Task" icon="/icons/delete.png"/>
+      <action id="archiveTask" class="net.egork.plugin.ArchiveTask" text="Archive Task" icon="/icons/archive.png"/>
+      <action id="editTests" class="net.egork.plugin.EditTests" text="Edit Tests" icon="/icons/edit.png"/>
   </actions>
 
   <extensions defaultExtensionNs="com.intellij">

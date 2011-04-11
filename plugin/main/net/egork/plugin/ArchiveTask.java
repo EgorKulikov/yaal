@@ -40,6 +40,8 @@ public class ArchiveTask extends AnAction {
 		if (configuration.isTopCoder()) {
 			Util.removeFile("topcoder/" + taskID + ".java");
 			((TopCoderConfiguration)configuration).commentMainIfNeeded();
+		} else {
+			Util.saveSourceFile("main", "Main.java", configuration.generateMainStub());
 		}
 	}
 }

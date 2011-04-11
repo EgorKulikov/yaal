@@ -2,6 +2,7 @@ package net.egork.plugin;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.fileEditor.FileEditorManager;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -13,6 +14,7 @@ public class NewTask extends AnAction {
 			return;
 		ConfigurationHolder.getInstance().setLastConfiguration(returnedConfiguration);
 		createSourceStub(returnedConfiguration);
+
 	}
 
 	@Override
@@ -27,5 +29,6 @@ public class NewTask extends AnAction {
 			Util.saveSourceFile("main", taskID + ".java", configuration.generateCodeStub());
 		if (Util.getFile("main/" + taskID + "Checker.java") == null)
 			Util.saveSourceFile("main", taskID + "Checker.java", configuration.generateChecker());
+		FileEditorManager.getInstance(Util.getProject()).openFile(Util.getFile("main/" + taskID + ".java"), true);
 	}
 }

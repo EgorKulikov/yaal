@@ -14,7 +14,6 @@ public class DeleteTask extends AnAction {
 		e.getPresentation().setEnabled(Util.isCurrentProjectAlgo(e) && ConfigurationHolder.getInstance().getCurrentTask() != null);
 	}
 
-
 	public void actionPerformed(AnActionEvent e) {
 		TaskConfiguration configuration = ConfigurationHolder.getInstance().getCurrentTask();
 		if (configuration == null)
@@ -29,6 +28,8 @@ public class DeleteTask extends AnAction {
 		if (configuration.isTopCoder()) {
 			Util.removeFile("topcoder/" + taskID + ".java");
 			((TopCoderConfiguration)configuration).commentMainIfNeeded();
+		} else {
+			Util.saveSourceFile("main", "Main.java", configuration.generateMainStub());
 		}
 	}
 }

@@ -28,6 +28,14 @@ public class ArrayUtils {
 		return array.indexOf(CollectionUtils.maxElement(array));
 	}
 
+	public static<T> int minIndex(ArrayWrapper<T> array, Comparator<T> comparator) {
+		return array.indexOf(CollectionUtils.minElement(array, comparator));
+	}
+
+	public static<T> int maxIndex(ArrayWrapper<T> array, Comparator<T> comparator) {
+		return array.indexOf(CollectionUtils.maxElement(array, comparator));
+	}
+
 	public static<T> void fill(ArrayWrapper<T> array, T value) {
 		for (int i = 0; i < array.size(); i++)
 			array.set(i, value);			
@@ -128,6 +136,8 @@ public class ArrayUtils {
 			Arrays.sort((int[]) underlying, array.from, array.to);
 		else if (underlying instanceof long[])
 			Arrays.sort((long[]) underlying, array.from, array.to);
+		else if (underlying instanceof double[])
+			Arrays.sort((double[]) underlying, array.from, array.to);
 		else if (underlying instanceof Object[])
 			Arrays.sort((T[]) underlying, array.from, array.to);
 		else if (underlying instanceof List)
@@ -161,6 +171,13 @@ public class ArrayUtils {
 			Arrays.sort(copy, (Comparator<? super Long>) comparator);
 			for (int i = 0, j = array.from; i < array.size; i++, j++)
 				((long[])underlying)[j] = copy[i];
+		} else if (underlying instanceof double[]) {
+			Double[] copy = new Double[array.size];
+			for (int i = 0, j = array.from; i < array.size; i++, j++)
+				copy[i] = ((double[])underlying)[j];
+			Arrays.sort(copy, (Comparator<? super Double>) comparator);
+			for (int i = 0, j = array.from; i < array.size; i++, j++)
+				((double[])underlying)[j] = copy[i];
 		} else if (underlying instanceof Object[])
 			Arrays.sort((T[]) underlying, array.from, array.to, comparator);
 		else if (underlying instanceof List)
@@ -190,6 +207,7 @@ public class ArrayUtils {
 	public static<T extends Comparable> Integer[] order(final ArrayWrapper<T> array) {
 		return order(array.size, new Comparator<Integer>() {
 			public int compare(Integer o1, Integer o2) {
+				//noinspection unchecked
 				return array.get(o1).compareTo(array.get(o2));
 			}
 		});
@@ -198,5 +216,13 @@ public class ArrayUtils {
 	public static void fill(int[][][] array, int value) {
 		for (int[][] subArray : array)
 			fill(subArray, value);
+	}
+
+	public static<T> Integer[] order(final ArrayWrapper<T> array, final Comparator<T> comparator) {
+		return order(array.size, new Comparator<Integer>() {
+			public int compare(Integer o1, Integer o2) {
+				return comparator.compare(array.get(o1), array.get(o2));
+			}
+		});
 	}
 }

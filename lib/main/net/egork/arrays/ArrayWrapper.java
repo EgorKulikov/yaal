@@ -32,6 +32,10 @@ public abstract class ArrayWrapper<T> implements Iterable<T> {
 		return new CharArrayWrapper(array);
 	}
 
+	public static ArrayWrapper<Double> wrap(double[] array) {
+		return new DoubleArrayWrapper(array);
+	}
+
 	protected ArrayWrapper(Object underlying, int from, int to) {
 		this.underlying = underlying;
 		this.from = from;
@@ -64,14 +68,6 @@ public abstract class ArrayWrapper<T> implements Iterable<T> {
 
 	public Iterator<T> iterator() {
 		return new ArrayIterator();
-	}
-
-	public boolean containsAll(Iterable<? extends T> c) {
-		for (T o : c) {
-			if (!contains(o))
-				return false;
-		}
-		return true;
 	}
 
 	public int indexOf(T o) {
@@ -239,6 +235,31 @@ public abstract class ArrayWrapper<T> implements Iterable<T> {
 
 		protected ArrayWrapper<Character> subArrayImpl(int fromIndex, int toIndex) {
 			return new CharArrayWrapper(array, fromIndex + from, toIndex + from);
+		}
+	}
+
+	protected static class DoubleArrayWrapper extends ArrayWrapper<Double> {
+		protected final double[] array;
+
+		protected DoubleArrayWrapper(double[] array) {
+			this(array, 0, array.length);
+		}
+
+		protected DoubleArrayWrapper(double[] array, int from, int to) {
+			super(array, from, to);
+			this.array = array;
+		}
+
+		public Double get(int index) {
+			return array[index + from];
+		}
+
+		public void set(int index, Double element) {
+			array[index + from] = element;
+		}
+
+		protected ArrayWrapper<Double> subArrayImpl(int fromIndex, int toIndex) {
+			return new DoubleArrayWrapper(array, fromIndex + from, toIndex + from);
 		}
 	}
 }

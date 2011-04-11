@@ -235,6 +235,23 @@ public class TaskConfiguration implements Serializable {
 		return mainClass.toString();
 	}
 
+	public String generateMainStub() {
+		StringBuilder mainClass = new StringBuilder();
+		mainClass.append(mandatoryImports());
+		mainClass.append("public class Main {\n");
+		mainClass.append("\tpublic static void main(String[] args) {\n");
+		mainClass.append("\t}\n\n");
+		mainClass.append("\tpublic static void run(InputReader in, PrintWriter out) {\n");
+		mainClass.append("\t}\n");
+		mainClass.append("}\n\n");
+		mainClass.append("\nclass MainChecker {\n");
+		mainClass.append("\tpublic static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {\n");
+		mainClass.append("\t\treturn null;\n");
+		mainClass.append("\t}\n");
+		mainClass.append("}\n\n");
+		return mainClass.toString();
+	}
+
 	public String generateChecker() {
 		return "import net.egork.utils.checker.Checker;\n" +
 			"import net.egork.utils.io.inputreader.InputReader;\n" +

@@ -2,6 +2,7 @@ package net.egork.collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -54,6 +55,24 @@ public class CollectionUtils {
 		T result = null;
 		for (T element : collection) {
 			if (result == null || result.compareTo(element) < 0)
+				result = element;
+		}
+		return result;
+	}
+
+	public static<T> T minElement(Iterable<T> collection, Comparator<T> comparator) {
+		T result = null;
+		for (T element : collection) {
+			if (result == null || comparator.compare(result, element) > 0)
+				result = element;
+		}
+		return result;
+	}
+
+	public static<T> T maxElement(Iterable<T> collection, Comparator<T> comparator) {
+		T result = null;
+		for (T element : collection) {
+			if (result == null || comparator.compare(result, element) < 0)
 				result = element;
 		}
 		return result;

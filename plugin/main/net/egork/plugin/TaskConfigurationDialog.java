@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -66,27 +67,46 @@ public class TaskConfigurationDialog extends JDialog {
 		panel.add(outputType);
 		panel.add(customOutputFileName);
 		JPanel buttonPanel = new JPanel(new BorderLayout());
-		JButton ok = new JButton("OK");
+		JButton ok = new JButton();
 		buttonPanel.add(ok, BorderLayout.WEST);
-		ok.addActionListener(new ActionListener() {
+		JButton cancel = new JButton();
+		buttonPanel.add(cancel, BorderLayout.EAST);
+		panel.add(buttonPanel);
+		setContentPane(panel);
+		applyConfiguration(configuration);
+		getRootPane().setDefaultButton(ok);
+		Action saveAction = new AbstractAction() {
 			public void actionPerformed(ActionEvent e) {
 				returnedConfiguration = constructConfiguration();
 				setVisible(false);
 			}
-		});
-		JButton cancel = new JButton("Cancel");
-		buttonPanel.add(cancel, BorderLayout.EAST);
-		cancel.addActionListener(new ActionListener() {
+		};
+		Action cancelAction = new AbstractAction() {
 			public void actionPerformed(ActionEvent e) {
 				returnedConfiguration = null;
 				setVisible(false);
 			}
-		});
-		panel.add(buttonPanel);
-		setContentPane(panel);
+		};
+		ok.setAction(saveAction);
+		cancel.setAction(cancelAction);
+		initializeActions(taskID, saveAction, cancelAction);
+		initializeActions(testType, saveAction, cancelAction);
+		initializeActions(inputType, saveAction, cancelAction);
+		initializeActions(customInputFileName, saveAction, cancelAction);
+		initializeActions(outputType, saveAction, cancelAction);
+		initializeActions(customOutputFileName, saveAction, cancelAction);
+		initializeActions(predefinedConfigurations, saveAction, cancelAction);
+		initializeActions(panel, saveAction, cancelAction);
+		ok.setText("OK");
+		cancel.setText("Cancel");
 		pack();
-		applyConfiguration(configuration);
-		getRootPane().setDefaultButton(ok);
+	}
+
+	private void initializeActions(JComponent component, Action saveAction, Action cancelAction) {
+		component.getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "save");
+		component.getInputMap().put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancel");
+		component.getActionMap().put("save", saveAction);
+		component.getActionMap().put("cancel", cancelAction);
 	}
 
 	@Override

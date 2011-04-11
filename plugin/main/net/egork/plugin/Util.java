@@ -3,6 +3,7 @@ package net.egork.plugin;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.DataKeys;
 import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.fileEditor.FileDocumentManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.VirtualFile;
@@ -230,22 +231,10 @@ public class Util {
 							element.delete();
 					}
 				}
-				getFile(fileName).refresh(false, false);
+				FileDocumentManager.getInstance().saveDocument(FileDocumentManager.getInstance().
+					getDocument(getFile(fileName)));
 			}
 		});
 	}
 
-	private static class PsiTreeElementVisitor extends PsiElementVisitor {
-		private final PsiElementVisitor delegate;
-
-		private PsiTreeElementVisitor(PsiElementVisitor delegate) {
-			this.delegate = delegate;
-		}
-
-		@Override
-		public void visitElement(PsiElement element) {
-			delegate.visitElement(element);
-			element.acceptChildren(this);
-		}
-	}
 }

@@ -45,9 +45,11 @@ public class TaskList extends AnAction {
 	}
 
 	public void update(TaskConfiguration currentTask) {
+		String taskName = currentTask == null ? "No task" : currentTask.getTaskID().length() <= 13 ?
+			currentTask.getTaskID() : currentTask.getTaskID().substring(0, 10) + "...";
 		for (Presentation presentation : presentations.keySet()) {
 			presentation.setText("");
-			presentation.setText(currentTask == null ? "No task" : currentTask.getTaskID());
+			presentation.setText(taskName);
 			presentation.setEnabled(Util.isCurrentProjectAlgo(presentations.get(presentation)) && currentTask != null);
 		}
 		for (Component component : components) {
