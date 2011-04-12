@@ -1,9 +1,9 @@
-package net.egork.timus;
+package April2011.CodeforcesUkrainianSchoolOlympiad;
 
 import net.egork.utils.checker.Checker;
 import net.egork.utils.io.InputReader;
 
-public class Task1164Checker extends Checker {
+public class TaskAChecker extends Checker {
 	@Override
 	public String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
 		return tokenCheck(expectedOutput, actualOutput);

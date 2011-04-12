@@ -1,5 +1,7 @@
 package net.egork.misc;
 
+import net.egork.collections.Function;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -85,5 +87,16 @@ public class MiscUtils {
 		for (int i = 0; i < 4; i++)
 			result += (1 << (24 - 8 * i)) * Integer.parseInt(components[i]);
 		return result;
+	}
+
+	public static long binarySearch(long from, long to, Function<Long, Boolean> function) {
+		while (from < to) {
+			long argument = from + (to - from) / 2;
+			if (function.value(argument))
+				to = argument;
+			else
+				from = argument + 1;
+		}
+		return from;
 	}
 }

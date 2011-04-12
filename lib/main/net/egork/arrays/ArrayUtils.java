@@ -204,11 +204,16 @@ public class ArrayUtils {
 		return order;
 	}
 
-	public static<T extends Comparable> Integer[] order(final ArrayWrapper<T> array) {
-		return order(array.size, new Comparator<Integer>() {
+	public static Integer[] order(final ArrayWrapper<? extends Comparable>...array) {
+		return order(array[0].size, new Comparator<Integer>() {
 			public int compare(Integer o1, Integer o2) {
-				//noinspection unchecked
-				return array.get(o1).compareTo(array.get(o2));
+				for (ArrayWrapper<? extends Comparable> anArray : array) {
+					//noinspection unchecked
+					int value = anArray.get(o1).compareTo(anArray.get(o2));
+					if (value != 0)
+						return value;
+				}
+				return 0;
 			}
 		});
 	}

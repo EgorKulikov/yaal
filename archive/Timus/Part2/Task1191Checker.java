@@ -1,9 +1,9 @@
-package net.egork.timus;
+package Timus.Part2;
 
 import net.egork.utils.checker.Checker;
 import net.egork.utils.io.InputReader;
 
-public class Task1306Checker extends Checker {
+public class Task1191Checker extends Checker {
 	@Override
 	public String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
 		return tokenCheck(expectedOutput, actualOutput);

@@ -1,6 +1,8 @@
+import net.egork.utils.Exit;
+import net.egork.utils.io.StreamInputReader;
+import java.io.*;
 import net.egork.utils.io.InputReader;
-
-import java.io.PrintWriter;
+import net.egork.utils.Solver;
 public class Main {
 	public static void main(String[] args) {
 	}
