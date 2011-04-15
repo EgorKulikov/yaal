@@ -10,7 +10,7 @@ public class SumIntervalTree {
 	private long[] delta;
 
 	public SumIntervalTree(int size) {
-		int arraysSize = Integer.highestOneBit(size) * 4;
+		int arraysSize = Math.max(1, Integer.highestOneBit(size) << 2);
 		left = new int[arraysSize];
 		right = new int[arraysSize];
 		value = new long[arraysSize];
