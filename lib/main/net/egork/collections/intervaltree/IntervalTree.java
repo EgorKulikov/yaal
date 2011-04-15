@@ -15,7 +15,7 @@ public class IntervalTree<V> {
 
 	public IntervalTree(int size, PowerOperation<V> operation) {
 		this.operation = operation;
-		int arraysSize = Integer.highestOneBit(size) * 4;
+		int arraysSize = Math.max(1, Integer.highestOneBit(size) << 2);
 		left = new int[arraysSize];
 		right = new int[arraysSize];
 		value = new Object[arraysSize];
