@@ -12,7 +12,7 @@ public class Tester {
 			OK, WA, RTE
 		}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		Locale.setDefault(Locale.US);
 		int testCase = 0;
 		List<Verdict> verdicts = new ArrayList<Verdict>();
@@ -63,6 +63,6 @@ public class Tester {
 			for (int i = 0; i < verdicts.size(); i++)
 				System.out.println("Test #" + i + ": " + verdicts.get(i));
 		}
-
+		Thread.currentThread().join(100L);
 	}
 }

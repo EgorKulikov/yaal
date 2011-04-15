@@ -18,7 +18,7 @@ public class Line {
 	public Point intersect(Line other) {
 		if (parallel(other))
 			return null;
-		double determinant = a * other.b - b * other.a;
+		double determinant = b * other.a - a * other.b;
 		double x = (c * other.b - b * other.c) / determinant;
 		double y = (a * other.c - c * other.a) / determinant;
 		return new Point(x, y);
@@ -26,5 +26,17 @@ public class Line {
 
 	public boolean parallel(Line other) {
 		return Math.abs(a * other.b - b * other.a) < GeometryUtils.epsilon;
+	}
+
+	public boolean contains(Point point) {
+		return Math.abs(value(point)) < GeometryUtils.epsilon;
+	}
+
+	public Line perpendicular(Point point) {
+		return new Line(-b, a, b * point.x - a * point.y);
+	}
+
+	public double value(Point point) {
+		return a * point.x + b * point.y + c;
 	}
 }
