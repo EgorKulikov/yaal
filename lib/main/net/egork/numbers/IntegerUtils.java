@@ -1,6 +1,7 @@
 package net.egork.numbers;
 
 import net.egork.collections.CollectionUtils;
+import net.egork.collections.Pair;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -127,6 +128,44 @@ public class IntegerUtils {
 		long result = 1;
 		for (int i = 2; i <= n; i++)
 			result *= i;
+		return result;
+	}
+
+	public static List<Pair<Long, Integer>> factorize(long number) {
+		List<Pair<Long, Integer>> result = new ArrayList<Pair<Long, Integer>>();
+		for (long i = 2; i * i <= number; i++) {
+			if (number % i == 0) {
+				int power = 0;
+				do {
+					power++;
+					number /= i;
+				} while (number % i == 0);
+				result.add(new Pair<Long, Integer>(i, power));
+			}
+		}
+		if (number != 1)
+			result.add(new Pair<Long, Integer>(number, 1));
+		return result;
+	}
+
+	public static List<Long> getDivisors(long number) {
+		List<Pair<Long, Integer>> primeDivisors = factorize(number);
+		return getDivisorsImpl(primeDivisors, 0, 1, new ArrayList<Long>());
+	}
+
+	private static List<Long> getDivisorsImpl(List<Pair<Long, Integer>> primeDivisors, int index, long current,
+		List<Long> result)
+	{
+		if (index == primeDivisors.size()) {
+			result.add(current);
+			return result;
+		}
+		long p = primeDivisors.get(index).first();
+		int power = primeDivisors.get(index).second();
+		for (int i = 0; i <= power; i++) {
+			getDivisorsImpl(primeDivisors, index + 1, current, result);
+			current *= p;
+		}
 		return result;
 	}
 }

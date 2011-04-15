@@ -28,4 +28,33 @@ public class Segment {
 			return left;
 		return point.distance(a.line(b));
 	}
+
+	public Point intersect(Segment other, boolean includeEnds) {
+		Line line = line();
+		Line otherLine = other.a.line(other.b);
+		if (line.parallel(otherLine))
+			return null;
+		Point intersection = line.intersect(otherLine);
+		if (contains(intersection, includeEnds) && other.contains(intersection, includeEnds))
+			return intersection;
+		else
+			return null;
+	}
+
+	public boolean contains(Point point, boolean includeEnds) {
+		Line line = line();
+		if (a.equals(point) || b.equals(point))
+			return includeEnds;
+		if (!line.contains(point))
+			return false;
+		Line perpendicular = line.perpendicular(a);
+		double aValue = perpendicular.value(a);
+		double bValue = perpendicular.value(b);
+		double pointValue = perpendicular.value(point);
+		return aValue < pointValue && pointValue < bValue || bValue < pointValue && pointValue < aValue;
+	}
+
+	public Line line() {
+		return a.line(b);
+	}
 }

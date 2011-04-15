@@ -39,7 +39,7 @@ public abstract class MultiplicativeFunction {
 		for (long i = 2; i * i <= argument; i++) {
 			if (argument % i == 0) {
 				int exponent = 0;
-				long power = 0;
+				long power = 1;
 				do {
 					exponent++;
 					power *= i;
