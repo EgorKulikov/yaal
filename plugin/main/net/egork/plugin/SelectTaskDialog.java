@@ -12,10 +12,9 @@ import java.awt.event.*;
 public class SelectTaskDialog extends JDialog {
 	private TaskConfiguration selectedTask;
 
-	private SelectTaskDialog() {
+	private SelectTaskDialog(final TaskConfiguration[] tasks, TaskConfiguration defaultTask) {
 		super(null, ModalityType.DOCUMENT_MODAL);
-		selectedTask = ConfigurationHolder.getInstance().getCurrentTask();
-		final TaskConfiguration[] tasks = ConfigurationHolder.getInstance().getTasks();
+		selectedTask = defaultTask;
 		final JBList taskList = new JBList(tasks);
 		taskList.setSelectedValue(selectedTask, true);
 		taskList.addMouseListener(new MouseAdapter() {
@@ -51,7 +50,14 @@ public class SelectTaskDialog extends JDialog {
 	}
 
 	public static TaskConfiguration selectTask(Component component) {
-		SelectTaskDialog dialog = new SelectTaskDialog();
+		SelectTaskDialog dialog = new SelectTaskDialog(ConfigurationHolder.getInstance().getTasks(), ConfigurationHolder.getInstance().getCurrentTask());
+		dialog.setLocation(Util.getLocation(component));
+		dialog.setVisible(true);
+		return dialog.selectedTask;
+	}
+
+	public static TaskConfiguration selectTaskToRestore(Component component, TaskConfiguration[] tasks) {
+		SelectTaskDialog dialog = new SelectTaskDialog(tasks, null);
 		dialog.setLocation(Util.getLocation(component));
 		dialog.setVisible(true);
 		return dialog.selectedTask;

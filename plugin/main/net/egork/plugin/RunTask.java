@@ -15,6 +15,7 @@ public class RunTask extends AnAction {
 	public void actionPerformed(final AnActionEvent e) {
 		TaskConfiguration configuration = ConfigurationHolder.getInstance().getCurrentTask();
 		String taskID = configuration.getTaskID();
+		Util.synchronizeFile("main/" + taskID + ".java");
 		if (configuration.isTopCoder()) {
 			TopCoderConfiguration tcConfiguration = (TopCoderConfiguration) configuration;
 			String source = tcConfiguration.generateSource();
@@ -33,7 +34,7 @@ public class RunTask extends AnAction {
 		Util.saveSourceFile("test", "MainChecker.java", sources[1]);
 		Util.saveSourceFile("main", "Main.java", configuration.generateMainRunEnvironment());
 		Util.saveSourceFile("test", "Tests.java", configuration.generateTests());
-		Util.saveSourceFile("main", "Tests.java", configuration.generateTests());
+		Util.saveSourceFile("main", "Tests.java", configuration.generateMainTests());
 		Util.eliminateUnusedCode("test/Main.java");
 	}
 }
