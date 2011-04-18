@@ -4,8 +4,8 @@ package net.egork.graph;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class SimpleEdge implements Edge {
-	private final int source;
-	private final int destination;
+	protected final int source;
+	protected final int destination;
 
 	public SimpleEdge(int source, int destination) {
 		this.source = source;

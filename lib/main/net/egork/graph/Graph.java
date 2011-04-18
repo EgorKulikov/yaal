@@ -22,7 +22,7 @@ public class Graph {
 		return size;
 	}
 
-	public Iterable<Edge> getIncident(int vertex) {
+	public List<Edge> getIncident(int vertex) {
 		return edges[vertex];
 	}
 

@@ -42,9 +42,11 @@ public class Segment {
 	}
 
 	public boolean contains(Point point, boolean includeEnds) {
-		Line line = line();
 		if (a.equals(point) || b.equals(point))
 			return includeEnds;
+		if (a.equals(b))
+			return false;
+		Line line = line();
 		if (!line.contains(point))
 			return false;
 		Line perpendicular = line.perpendicular(a);
@@ -56,5 +58,28 @@ public class Segment {
 
 	public Line line() {
 		return a.line(b);
+	}
+
+	public Point middle() {
+		return new Point((a.x + b.x) / 2, (a.y + b.y) / 2);
+	}
+
+	public Point[] intersect(Circle circle) {
+		Point[] result = line().intersect(circle);
+		if (result.length == 0)
+			return result;
+		if (result.length == 1) {
+			if (contains(result[0], true))
+				return result;
+			return new Point[0];
+		}
+		if (contains(result[0], true)) {
+			if (contains(result[1], true))
+				return result;
+			return new Point[]{result[0]};
+		}
+		if (contains(result[1], true))
+			return new Point[]{result[1]};
+		return new Point[0];
 	}
 }

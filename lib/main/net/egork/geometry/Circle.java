@@ -4,8 +4,8 @@ package net.egork.geometry;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class Circle {
-	private final Point center;
-	private final double radius;
+	public final Point center;
+	public final double radius;
 
 	public Circle(Point center, double radius) {
 		this.center = center;

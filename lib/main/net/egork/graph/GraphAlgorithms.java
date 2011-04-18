@@ -3,17 +3,98 @@ package net.egork.graph;
 import net.egork.arrays.ArrayUtils;
 import net.egork.collections.Pair;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Deque;
-import java.util.PriorityQueue;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class GraphAlgorithms {
+	public static long dinic(Graph graph, int source, int destination) {
+		long totalFlow = 0;
+		int vertexCount = graph.getSize();
+		int[] nextEdge = new int[vertexCount];
+		while (true) {
+			long[] distance = edgeDistances(graph, source).getDistances();
+			if (distance[destination] == Long.MAX_VALUE)
+				break;
+			Arrays.fill(nextEdge, 0);
+			totalFlow += dinicImpl(graph, source, destination, Long.MAX_VALUE, distance, nextEdge);
+		}
+		return totalFlow;
+	}
+
+	private static DistanceResult edgeDistances(Graph graph, int source) {
+		int size = graph.getSize();
+		Deque<Integer> queue = new ArrayDeque<Integer>(size);
+		boolean[] processed = new boolean[size];
+		boolean[] notReached = new boolean[size];
+		Arrays.fill(notReached, true);
+		long[] distance = new long[size];
+		int[] last = new int[size];
+		Arrays.fill(distance, Long.MAX_VALUE);
+		distance[source] = 0;
+		last[source] = -1;
+		queue.add(source);
+		notReached[source] = false;
+		int iterationCount = 0;
+		while (!queue.isEmpty()) {
+			iterationCount++;
+			if (iterationCount / size / size / size != 0)
+				return null;
+			int current = queue.poll();
+			processed[current] = true;
+			for (Edge edge : graph.getIncident(current)) {
+				if (edge.getCapacity() == 0)
+					continue;
+				int next = edge.getDestination();
+				long weight = 1;
+				if (distance[next] > distance[current] + weight) {
+					distance[next] = distance[current] + weight;
+					last[next] = current;
+					if (notReached[next]) {
+						notReached[next] = false;
+						queue.add(next);
+					} else if (processed[next]) {
+						processed[next] = false;
+						queue.addFirst(next);
+					}
+				}
+			}
+		}
+		return new DistanceResult(distance, last);
+	}
+
+	private static long dinicImpl(Graph graph, int source, int destination, long flow, long[] distance, int[] nextEdge) {
+		if (source == destination)
+			return flow;
+		if (flow == 0 || distance[source] == distance[destination])
+			return 0;
+		List<Edge> incident = graph.getIncident(source);
+		int incidentSize = incident.size();
+		int totalPushed = 0;
+		for (int i = nextEdge[source]; i < incidentSize; i++) {
+			Edge edge = incident.get(i);
+			int nextDestination = edge.getDestination();
+			if (distance[nextDestination] != distance[source] + 1)
+				continue;
+			long pushed = dinicImpl(graph, nextDestination, destination, Math.min(flow, edge.getCapacity()),
+				distance, nextEdge);
+			if (pushed != 0) {
+				edge.pushFlow(pushed);
+				flow -= pushed;
+				totalPushed += pushed;
+				if (flow == 0) {
+					nextEdge[source] = i;
+					return totalPushed;
+				}
+			}
+		}
+		nextEdge[source] = incidentSize;
+		return totalPushed;
+	}
+
+
 	public static class DistanceResult {
 		private final long[] distances;
 		private final int[] last;
@@ -69,7 +150,11 @@ public class GraphAlgorithms {
 		last[source] = -1;
 		queue.add(source);
 		notReached[source] = false;
+		int iterationCount = 0;
 		while (!queue.isEmpty()) {
+			iterationCount++;
+			if (iterationCount / size / size / size != 0)
+				return null;
 			int current = queue.poll();
 			processed[current] = true;
 			for (Edge edge : graph.getIncident(current)) {
@@ -106,7 +191,11 @@ public class GraphAlgorithms {
 		distance[source][0] = 0;
 		queue.add(new Pair<Integer, Integer>(source, 0));
 		notReached[source][0] = false;
+		int iterationCount = 0;
 		while (!queue.isEmpty()) {
+			iterationCount++;
+			if (iterationCount / size / size / size != 0)
+				return null;
 			int current = queue.peek().first();
 			int currentPath = queue.poll().second();
 			processed[current][currentPath] = true;

@@ -39,4 +39,20 @@ public class Line {
 	public double value(Point point) {
 		return a * point.x + b * point.y + c;
 	}
+
+	public Point[] intersect(Circle circle) {
+		double distance = distance(circle.center);
+		if (distance > circle.radius + GeometryUtils.epsilon)
+			return new Point[0];
+		Point intersection = intersect(perpendicular(circle.center));
+		if (Math.abs(distance - circle.radius) < GeometryUtils.epsilon)
+			return new Point[]{intersection};
+		double shift = Math.sqrt(circle.radius * circle.radius - distance * distance);
+		return new Point[]{new Point(intersection.x + shift * b, intersection.y - shift * a),
+			new Point(intersection.x - shift * b, intersection.y + shift * a)};
+	}
+
+	public double distance(Point center) {
+		return Math.abs(value(center));
+	}
 }
