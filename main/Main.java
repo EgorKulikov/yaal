@@ -1,8 +1,9 @@
-import net.egork.utils.Exit;
-import net.egork.utils.io.StreamInputReader;
-import java.io.*;
 import net.egork.utils.io.InputReader;
-import net.egork.utils.Solver;
+import net.egork.utils.test.Test;
+
+import java.io.PrintWriter;
+import java.util.Collection;
+import java.util.Collections;
 public class Main {
 	public static void main(String[] args) {
 	}
@@ -15,6 +16,10 @@ public class Main {
 class MainChecker {
 	public static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
 		return null;
+	}
+
+	public static Collection<Test> generateTests() {
+		return Collections.emptyList();
 	}
 }
 

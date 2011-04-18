@@ -1,8 +1,11 @@
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -18,7 +21,17 @@ public class Tester {
 		List<Verdict> verdicts = new ArrayList<Verdict>();
 		long maximalTime = 0;
 		boolean ok = true;
-		for (Test test : Tests.TESTS) {
+		Set<Integer> testCases = new HashSet<Integer>();
+		for (String arg : args)
+			testCases.add(Integer.parseInt(arg));
+		List<Test> tests = new ArrayList<Test>();
+		tests.addAll(Arrays.asList(Tests.TESTS));
+		tests.addAll(MainChecker.generateTests());
+		for (Test test : tests) {
+			if (!testCases.isEmpty() && !testCases.contains(testCase)) {
+				testCase++;
+				continue;
+			}
 			System.out.println("Test #" + testCase + ":");
 			InputReader in = new StringInputReader(test.getInput());
 			StringWriter out = new StringWriter(test.getExpectedOutput() == null ? 0 : test.getExpectedOutput().length());
