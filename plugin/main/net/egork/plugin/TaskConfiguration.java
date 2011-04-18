@@ -106,6 +106,10 @@ public class TaskConfiguration implements Serializable {
 		checker.append("\tpublic static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {\n");
 		checker.append("\t\treturn new ").append(taskID).append("Checker().check(input, expectedOutput, actualOutput);\n");
 		checker.append("\t}\n");
+		checker.append("\n");
+		checker.append("\tpublic static Collection<Test> generateTests() {\n");
+		checker.append("\t\treturn new ").append(taskID).append("Checker().generateTests();\n");
+		checker.append("\t}\n");
 		checker.append("}\n\n");
 		return checker.toString();
 	}
@@ -121,7 +125,7 @@ public class TaskConfiguration implements Serializable {
 	}
 
 	public String generateMainRunEnvironment() {
-		return mandatoryImports() + generateMainClass() + generateMainChecker();
+		return "import net.egork.utils.test.Test;\n" + "import java.util.Collection;\n" + mandatoryImports() + generateMainClass() + generateMainChecker();
 	}
 
 	protected StringBuilder inlineImports(String additionalCode, Set<String> imports, String...sources) {
@@ -190,7 +194,6 @@ public class TaskConfiguration implements Serializable {
 
 	public String generateTests() {
 		StringBuilder result = new StringBuilder();
-		result.append("import net.egork.utils.test.Test;\n");
 		result.append("import java.io.*;\n");
 		result.append("public class Tests {\n");
 		result.append("\tpublic static final Test[] TESTS = {\n");
@@ -201,6 +204,21 @@ public class TaskConfiguration implements Serializable {
 		result.append("\t};\n");
 		result.append("}\n");
 		result = inlineImports("", new HashSet<String>(), result.toString());
+		return result.toString();
+	}
+
+	public String generateMainTests() {
+		StringBuilder result = new StringBuilder();
+		result.append("import java.io.*;\n");
+		result.append("import net.egork.utils.test.Test;\n");
+		result.append("public class Tests {\n");
+		result.append("\tpublic static final Test[] TESTS = {\n");
+		for (Test test : tests) {
+			result.append("\t\tnew Test(\"").append(escape(test.getInput())).append("\", \"").
+				append(escape(test.getExpectedOutput())).append("\"),\n");
+		}
+		result.append("\t};\n");
+		result.append("}\n");
 		return result.toString();
 	}
 
@@ -238,6 +256,8 @@ public class TaskConfiguration implements Serializable {
 	public String generateMainStub() {
 		StringBuilder mainClass = new StringBuilder();
 		mainClass.append(mandatoryImports());
+		mainClass.append("import java.util.Collection;\n");
+		mainClass.append("import java.util.Collections;\n");
 		mainClass.append("public class Main {\n");
 		mainClass.append("\tpublic static void main(String[] args) {\n");
 		mainClass.append("\t}\n\n");
@@ -248,6 +268,10 @@ public class TaskConfiguration implements Serializable {
 		mainClass.append("\tpublic static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {\n");
 		mainClass.append("\t\treturn null;\n");
 		mainClass.append("\t}\n");
+		mainClass.append("\n");
+		mainClass.append("\tpublic static Collection<Test> generateTests() {\n");
+		mainClass.append("\t\treturn Collections.emptyList();\n");
+		mainClass.append("\t}\n");
 		mainClass.append("}\n\n");
 		return mainClass.toString();
 	}
@@ -255,6 +279,9 @@ public class TaskConfiguration implements Serializable {
 	public String generateChecker() {
 		return "import net.egork.utils.checker.Checker;\n" +
 			"import net.egork.utils.io.InputReader;\n" +
+			"import java.util.Collections;\n" +
+			"import java.util.Collection;\n" +
+			"import net.egork.utils.test.Test;\n" +
 			"\n" +
 			"public class " + taskID + "Checker extends Checker {\n" +
 			"\t@Override\n" +
@@ -265,6 +292,11 @@ public class TaskConfiguration implements Serializable {
 			"\t@Override\n" +
 			"\tpublic double getCertainty() {\n" +
 			"\t\treturn 0;\n" +
+			"\t}\n" +
+			"\n" +
+			"\t@Override\n" +
+			"\tpublic Collection<Test> generateTests() {\n" +
+			"\t\treturn Collections.<Test>emptyList();\n" +
 			"\t}\n" +
 			"}\n";
 	}

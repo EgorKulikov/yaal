@@ -3,8 +3,6 @@ package net.egork.plugin;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 
-import java.util.Calendar;
-
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */

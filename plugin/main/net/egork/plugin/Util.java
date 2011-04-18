@@ -7,14 +7,28 @@ import com.intellij.openapi.fileEditor.FileDocumentManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.psi.*;
+import com.intellij.psi.PsiAnonymousClass;
+import com.intellij.psi.PsiClass;
+import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.PsiField;
+import com.intellij.psi.PsiFile;
+import com.intellij.psi.PsiManager;
+import com.intellij.psi.PsiMethod;
+import com.intellij.psi.PsiReference;
 import com.intellij.psi.search.searches.ReferencesSearch;
 import net.egork.utils.io.StreamInputReader;
 
-import javax.swing.*;
-import java.awt.*;
-import java.io.*;
+import javax.swing.SwingUtilities;
+import java.awt.Component;
+import java.awt.Point;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.List;
 
@@ -233,14 +247,33 @@ public class Util {
 							element.delete();
 					}
 				}
-				FileDocumentManager.getInstance().saveDocument(FileDocumentManager.getInstance().
-					getDocument(getFile(fileName)));
+				synchronizeFile(fileName);
 			}
 		});
+	}
+
+	public static void synchronizeFile(String fileName) {
+		FileDocumentManager.getInstance().saveDocument(FileDocumentManager.getInstance().
+			getDocument(getFile(fileName)));
 	}
 
 	public static boolean isLibraryClass(String className) {
 		className = className.substring(0, className.lastIndexOf('.'));
 		return getFile("lib/main/" + className.replace('.', '/')) != null;
+	}
+
+	public static List<TaskConfiguration> loadTasks(String directoryName) {
+		VirtualFile directory = getFile(directoryName);
+		if (directory == null)
+			return Collections.emptyList();
+		List<TaskConfiguration> tasks = new ArrayList<TaskConfiguration>();
+		for (VirtualFile child : directory.getChildren()) {
+			if (!"task".equals(child.getExtension()))
+				continue;
+			TaskConfiguration configuration = loadConfiguration(directoryName + "/" + child.getName());
+			if (configuration != null)
+				tasks.add(configuration);
+		}
+		return tasks;
 	}
 }

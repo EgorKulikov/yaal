@@ -1,9 +1,11 @@
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.stringinputreader.StringInputReader;
+import net.egork.utils.test.Test;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
@@ -23,11 +25,14 @@ public class Tester {
 		List<Verdict> verdicts = new ArrayList<Verdict>();
 		long maximalTime = 0;
 		boolean ok = true;
-		Set<Integer> tests = new HashSet<Integer>();
+		Set<Integer> testCases = new HashSet<Integer>();
 		for (String arg : args)
-			tests.add(Integer.parseInt(arg));
-		for (Test test : Tests.TESTS) {
-			if (!tests.isEmpty() && !tests.contains(testCase)) {
+			testCases.add(Integer.parseInt(arg));
+		List<Test> tests = new ArrayList<Test>();
+		tests.addAll(Arrays.asList(Tests.TESTS));
+		tests.addAll(MainChecker.generateTests());
+		for (Test test : tests) {
+			if (!testCases.isEmpty() && !testCases.contains(testCase)) {
 				testCase++;
 				continue;
 			}
