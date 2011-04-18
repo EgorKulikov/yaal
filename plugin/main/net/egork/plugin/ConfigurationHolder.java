@@ -2,8 +2,15 @@ package net.egork.plugin;
 
 import com.intellij.openapi.actionSystem.ActionManager;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.vfs.*;
+import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.openapi.vfs.VirtualFileCopyEvent;
+import com.intellij.openapi.vfs.VirtualFileEvent;
+import com.intellij.openapi.vfs.VirtualFileListener;
+import com.intellij.openapi.vfs.VirtualFileManager;
+import com.intellij.openapi.vfs.VirtualFileMoveEvent;
+import com.intellij.openapi.vfs.VirtualFilePropertyEvent;
 
+import java.util.Collection;
 import java.util.NavigableMap;
 import java.util.TreeMap;
 
@@ -100,13 +107,9 @@ public class ConfigurationHolder {
 		}
 		initialized = true;
 		tasks.clear();
-		for (VirtualFile child : homeDirectory.getChildren()) {
-			if (!"task".equals(child.getExtension()))
-				continue;
-			TaskConfiguration configuration = Util.loadConfiguration("main/" + child.getName());
-			if (configuration != null)
-				tasks.put(configuration.getTaskID(), configuration);
-		}
+		Collection<TaskConfiguration> loadedTasks = Util.loadTasks("main");
+		for (TaskConfiguration configuration : loadedTasks)
+			tasks.put(configuration.getTaskID(), configuration);
 		if (tasks.isEmpty()) {
 			currentTask = null;
 			return;

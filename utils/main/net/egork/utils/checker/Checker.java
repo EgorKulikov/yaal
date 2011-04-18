@@ -1,7 +1,10 @@
 package net.egork.utils.checker;
 
 import net.egork.utils.io.InputReader;
+import net.egork.utils.test.Test;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.InputMismatchException;
 
 /**
@@ -10,6 +13,10 @@ import java.util.InputMismatchException;
 public abstract class Checker {
 	public abstract String check(InputReader input, InputReader expectedOutput, InputReader actualOutput);
 	public abstract double getCertainty();
+
+	public Collection<Test> generateTests() {
+		return Collections.<Test>emptyList();
+	}
 
 	public String tokenCheck(InputReader expectedOutput, InputReader actualOutput) {
 		int index = 0;
