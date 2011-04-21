@@ -1,6 +1,6 @@
 package April2011.ZJU8thZhejiangProvincialCollegiateProgrammingContest;
 
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;

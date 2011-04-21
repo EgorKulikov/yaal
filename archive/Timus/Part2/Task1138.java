@@ -1,6 +1,6 @@
 package Timus.Part2;
 
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;

@@ -1,6 +1,7 @@
 package April2011.UVaHugeEasyContestII;
 
-import net.egork.collections.CollectionUtils;
+import net.egork.collections.sequence.ListWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.graph.*;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
@@ -68,7 +69,7 @@ public class TaskV implements Solver {
 		if (result.isEmpty())
 			out.println("none");
 		else
-			IOUtils.printCollection(CollectionUtils.increment(result), out);
+			IOUtils.printCollection(SequenceUtils.increment(ListWrapper.wrap(result)), out);
 	}
 }
 

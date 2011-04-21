@@ -1,12 +1,13 @@
 package Timus.Part1;
 
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.arrays.ArrayUtils;
-import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
+import net.egork.collections.sequence.ListWrapper;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -40,10 +41,10 @@ public class Task1078 implements Solver {
 				}
 			}
 		}
-		int index = ArrayUtils.maxIndex(ArrayWrapper.wrap(answer));
+		int index = SequenceUtils.maxIndex(ArrayWrapper.wrap(answer));
 		out.println(answer[index]);
 		List<Integer> path = MiscUtils.getPath(last, index);
-		CollectionUtils.increment(path);
+		SequenceUtils.increment(ListWrapper.wrap(path));
 		IOUtils.printCollection(path, out);
 	}
 }

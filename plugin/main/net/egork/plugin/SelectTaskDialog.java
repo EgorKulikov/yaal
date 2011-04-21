@@ -15,7 +15,7 @@ public class SelectTaskDialog extends JDialog {
 	private SelectTaskDialog(final TaskConfiguration[] tasks, TaskConfiguration defaultTask) {
 		super(null, ModalityType.DOCUMENT_MODAL);
 		selectedTask = defaultTask;
-		final JBList taskList = new JBList(tasks);
+		final JBList taskList = new JBList((Object[])tasks);
 		taskList.setSelectedValue(selectedTask, true);
 		taskList.addMouseListener(new MouseAdapter() {
 			@Override

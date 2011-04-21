@@ -5,6 +5,7 @@ import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 import java.util.Collection;
 import java.util.Collections;
+import net.egork.utils.test.Test;
 public class Main {
 	public static void main(String[] args) {
 	}

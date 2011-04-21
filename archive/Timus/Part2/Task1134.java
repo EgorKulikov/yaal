@@ -1,7 +1,8 @@
 package Timus.Part2;
 
-import net.egork.arrays.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
+import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.WritableSequence;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -11,7 +12,7 @@ public class Task1134 implements Solver {
 	public void solve(int testNumber, InputReader in, PrintWriter out) {
 		int cardCount = in.readInt();
 		int cardTaken = in.readInt();
-		ArrayWrapper<Integer> cards = ArrayWrapper.wrap(in.readIntArray(cardTaken));
+		WritableSequence<Integer> cards = ArrayWrapper.wrap(in.readIntArray(cardTaken));
 		boolean allowTwo = false;
 		for (int i = 0; i <= cardCount; i++) {
 			int count = CollectionUtils.count(cards, i);

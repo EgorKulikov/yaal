@@ -1,6 +1,6 @@
 package Timus.Part5;
 
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;

@@ -1,6 +1,6 @@
 package Timus.Part2;
 
-import net.egork.collections.Function;
+import net.egork.collections.function.Function;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
@@ -28,7 +28,6 @@ public class Task1133 implements Solver {
 		final int finalSecondIndex = secondIndex;
 		final long finalSecondValue = secondValue;
 		long nextValue = MiscUtils.binarySearch(-2000000000, 2000000000, new Function<Long, Boolean>() {
-			@Override
 			public Boolean value(Long argument) {
 				long lastValue = startValue;
 				long currentValue = argument;

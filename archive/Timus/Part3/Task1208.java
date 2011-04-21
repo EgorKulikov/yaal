@@ -1,6 +1,7 @@
 package Timus.Part3;
 
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -17,7 +18,7 @@ public class Task1208 implements Solver {
 					continue;
 				boolean conflict = false;
 				for (String participant : teams[i]) {
-					if (ArrayWrapper.wrap(teams[j]).contains(participant))
+					if (SequenceUtils.contains(ArrayWrapper.wrap(teams[j]), participant))
 						conflict = true;
 				}
 				if (conflict)

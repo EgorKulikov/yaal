@@ -1,7 +1,7 @@
 package April2011.CodeforcesBetaRound68;
 
-import net.egork.arrays.ArrayUtils;
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -19,7 +19,7 @@ public class TaskA implements Solver {
 			for (int j = 0; j < 5; j++)
 				points[i] += in.readInt();
 		}
-		out.println(names[ArrayUtils.maxIndex(ArrayWrapper.wrap(points))]);
+		out.println(names[SequenceUtils.maxIndex(ArrayWrapper.wrap(points))]);
 	}
 }
 

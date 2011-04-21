@@ -1,7 +1,8 @@
 package Timus.Part1;
 
 import net.egork.arrays.ArrayUtils;
-import net.egork.collections.Transformer;
+import net.egork.collections.sequence.ListWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
@@ -54,12 +55,7 @@ public class Task1004 implements Solver {
 			GraphAlgorithms.MultiPathDistanceResult paths = GraphAlgorithms.leviteAlgorithm(graph, vertex, 2);
 			List<Integer> path = MiscUtils.getPath(paths.getLastIndex(), paths.getLastPathNumber(), vertex, 1);
 			path = path.subList(0, path.size() - 1);
-			Transformer.transform(path, new Transformer<Integer>() {
-				@Override
-				public Integer transform(Integer value) {
-					return value + 1;
-				}
-			});
+			SequenceUtils.increment(ListWrapper.wrap(path));
 			IOUtils.printCollection(path, out);
 		}
 	}
