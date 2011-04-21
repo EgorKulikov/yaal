@@ -1,6 +1,6 @@
 package net.egork.misc;
 
-import net.egork.collections.Function;
+import net.egork.collections.function.Function;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -98,5 +98,9 @@ public class MiscUtils {
 				from = argument + 1;
 		}
 		return from;
+	}
+
+	public static<T> boolean equals(T first, T second) {
+		return first == null && second == null || first != null && first.equals(second);
 	}
 }

@@ -1,8 +1,8 @@
 package Timus.Part8;
 
-import net.egork.arrays.ArrayUtils;
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -15,7 +15,7 @@ public class Task1723 implements Solver {
 		for (char letter = 'a'; letter <= 'z'; letter++) {
 			count[letter] = CollectionUtils.count(ArrayWrapper.wrap(spell), letter);
 		}
-		out.println((char)ArrayUtils.maxIndex(ArrayWrapper.wrap(count)));
+		out.println((char) SequenceUtils.maxIndex(ArrayWrapper.wrap(count)));
 	}
 }
 

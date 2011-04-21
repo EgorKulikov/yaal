@@ -258,6 +258,7 @@ public class TaskConfiguration implements Serializable {
 		mainClass.append(mandatoryImports());
 		mainClass.append("import java.util.Collection;\n");
 		mainClass.append("import java.util.Collections;\n");
+		mainClass.append("import net.egork.utils.test.Test;\n");
 		mainClass.append("public class Main {\n");
 		mainClass.append("\tpublic static void main(String[] args) {\n");
 		mainClass.append("\t}\n\n");

@@ -1,17 +1,17 @@
 package Timus.Part1;
 
-import net.egork.arrays.ArrayWrapper;
-import net.egork.arrays.ArrayUtils;
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.Function;
 import net.egork.collections.MultiSet;
+import net.egork.collections.function.Function;
+import net.egork.collections.sequence.ListWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Edge;
 import net.egork.graph.Graph;
 import net.egork.graph.SimpleEdge;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
+import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -44,12 +44,12 @@ public class Task1069 implements Solver {
 		}
 		for (int i = 0; i < graph.getSize(); i++) {
 			out.print((i + 1) + ": ");
-			IOUtils.printCollection(ArrayUtils.sort(ArrayWrapper.wrap(Function.apply(graph.getIncident(i), new Function<Edge, Integer>() {
-				@Override
-				public Integer value(Edge argument) {
-					return argument.getDestination() + 1;
-				}
-			}))), out);
+			IOUtils.printCollection(SequenceUtils.sort(
+				ListWrapper.wrap(CollectionUtils.apply(graph.getIncident(i), new Function<Edge, Integer>() {
+					public Integer value(Edge argument) {
+						return argument.getDestination() + 1;
+					}
+				}))), out);
 		}
 	}
 }

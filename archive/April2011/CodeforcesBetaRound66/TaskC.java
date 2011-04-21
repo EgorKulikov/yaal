@@ -1,7 +1,7 @@
 package April2011.CodeforcesBetaRound66;
 
 import net.egork.arrays.ArrayUtils;
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;

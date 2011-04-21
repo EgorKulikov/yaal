@@ -1,9 +1,9 @@
 package Timus.Part1;
 
-import net.egork.arrays.ArrayWrapper;
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
 import net.egork.io.IOUtils;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -38,7 +38,7 @@ public class Task1029 implements Solver {
 			lastFloorCosts = thisFloorCosts;
 			index++;
 		}
-		index = ArrayUtils.minIndex(ArrayWrapper.wrap(lastFloorCosts));
+		index = SequenceUtils.minIndex(ArrayWrapper.wrap(lastFloorCosts));
 		int floor = floorCount - 1;
 		List<Integer> answer = new ArrayList<Integer>();
 		while (floor != 0) {

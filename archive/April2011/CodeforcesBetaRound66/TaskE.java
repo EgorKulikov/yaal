@@ -1,8 +1,8 @@
 package April2011.CodeforcesBetaRound66;
 
-import net.egork.arrays.ArrayUtils;
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.numbers.IntegerUtils;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 
@@ -28,7 +28,7 @@ public class TaskE implements Solver {
 			return;
 		}
 		int[] primes = IntegerUtils.generatePrimes(Math.min(1300000, x));
-		if (ArrayUtils.isSubSequence(ArrayWrapper.wrap(a), ArrayWrapper.wrap(primes)))
+		if (SequenceUtils.isSubSequence(ArrayWrapper.wrap(a), ArrayWrapper.wrap(primes)))
 			out.println(primes.length);
 		else
 			out.println(-1);

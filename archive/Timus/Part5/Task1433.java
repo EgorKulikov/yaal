@@ -1,7 +1,7 @@
 package Timus.Part5;
 
-import net.egork.arrays.ArrayUtils;
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -12,8 +12,8 @@ public class Task1433 implements Solver {
 	public void solve(int testNumber, InputReader in, PrintWriter out) {
 		char[] first = in.readString().toCharArray();
 		char[] second = in.readString().toCharArray();
-		long firstOddity = ArrayUtils.countUnorderedPairs(ArrayWrapper.wrap(first)) % 2;
-		long secondOddity = ArrayUtils.countUnorderedPairs(ArrayWrapper.wrap(second)) % 2;
+		long firstOddity = SequenceUtils.countUnorderedPairs(ArrayWrapper.wrap(first)) % 2;
+		long secondOddity = SequenceUtils.countUnorderedPairs(ArrayWrapper.wrap(second)) % 2;
 		Arrays.sort(first);
 		Arrays.sort(second);
 		if (!Arrays.equals(first, second)) {

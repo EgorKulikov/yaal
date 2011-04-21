@@ -1,6 +1,7 @@
 package April2011.ZJU8thZhejiangProvincialCollegiateProgrammingContest;
 
-import net.egork.arrays.ArrayWrapper;
+import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -11,7 +12,7 @@ public class TaskF implements Solver {
 		int count = in.readInt();
 		String front = in.readString();
 		String[] order = in.readStringArray(count);
-		int index = ArrayWrapper.wrap(order).indexOf(front);
+		int index = SequenceUtils.find(ArrayWrapper.wrap(order), (front));
 		index = (index + count / 2) % count;
 		out.println(order[index]);
 	}

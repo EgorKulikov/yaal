@@ -1,7 +1,8 @@
 package Timus.Part1;
 
-import net.egork.arrays.ArrayWrapper;
 import net.egork.collections.Pair;
+import net.egork.collections.sequence.ListWrapper;
+import net.egork.collections.sequence.WritableSequence;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.graph.SimpleEdge;
@@ -42,7 +43,7 @@ public class Task1096 implements Solver {
 		if (index == -1)
 			out.println("IMPOSSIBLE");
 		else {
-			ArrayWrapper<Integer> path = ArrayWrapper.wrap(MiscUtils.getPath(result.getLast(), index)).subArray(1);
+			WritableSequence<Integer> path = ListWrapper.wrap(MiscUtils.getPath(result.getLast(), index)).subSequence(1);
 			out.println(path.size());
 			for (int vertex : path)
 				out.println(vertex + 1);

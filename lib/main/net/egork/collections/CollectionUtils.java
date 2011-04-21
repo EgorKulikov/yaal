@@ -1,5 +1,8 @@
 package net.egork.collections;
 
+import net.egork.collections.filter.Filter;
+import net.egork.collections.function.Function;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -31,15 +34,6 @@ public class CollectionUtils {
 
 	public static void rotate(List<Integer> list) {
 		list.add(list.remove(0));
-	}
-
-	public static List<Integer> increment(List<Integer> path) {
-		return Transformer.transform(path, new Transformer<Integer>() {
-			@Override
-			public Integer transform(Integer value) {
-				return value + 1;
-			}
-		});
 	}
 
 	public static<T extends Comparable<T>> T minElement(Iterable<T> collection) {
@@ -91,6 +85,31 @@ public class CollectionUtils {
 			if (element.equals(sample))
 				result++;
 		}
+		return result;
+	}
+
+	public static<T> int count(Iterable<T> array, Filter<T> filter) {
+		int result = 0;
+		for (T element : array) {
+			if (filter.accept(element))
+				result++;
+		}
+		return result;
+	}
+
+	public static<T> List<T> filter(Iterable<T> sequence, Filter<T> filter) {
+		List<T> result = new ArrayList<T>();
+		for (T element : sequence) {
+			if (filter.accept(element))
+				result.add(element);
+		}
+		return result;
+	}
+
+	public static<A, V> List<V> apply(Iterable<A> sequence, Function<A, V> function) {
+		List<V> result = new ArrayList<V>();
+		for (A element : sequence)
+			result.add(function.value(element));
 		return result;
 	}
 }

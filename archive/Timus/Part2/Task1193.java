@@ -1,7 +1,7 @@
 package Timus.Part2;
 
-import net.egork.arrays.ArrayWrapper;
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
@@ -14,7 +14,7 @@ public class Task1193 implements Solver {
 		int[] answerTime = new int[studentCount];
 		int[] goAwayTime = new int[studentCount];
 		in.readIntArrays(preparationTime, answerTime, goAwayTime);
-		Integer[] order = ArrayUtils.order(ArrayWrapper.wrap(preparationTime));
+		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(preparationTime));
 		int currentTime = 0;
 		int answer = 0;
 		for (int i : order) {

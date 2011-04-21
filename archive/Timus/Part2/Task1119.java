@@ -1,8 +1,8 @@
 package Timus.Part2;
 
-import net.egork.arrays.ArrayWrapper;
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.Pair;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 
@@ -30,7 +30,7 @@ public class Task1119 implements Solver {
 					maxSequence[i] = Math.max(maxSequence[i], maxSequence[j] + 1);
 			}
 		}
-		int maximum = blockCount == 0 ? 0 : maxSequence[ArrayUtils.maxIndex(ArrayWrapper.wrap(maxSequence))];
+		int maximum = blockCount == 0 ? 0 : maxSequence[SequenceUtils.maxIndex(ArrayWrapper.wrap(maxSequence))];
 		out.printf("%.0f\n", (n + m - (2 - Math.sqrt(2)) * maximum) * 100);
 	}
 }

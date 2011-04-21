@@ -1,7 +1,8 @@
 package Timus.Part1;
 
-import net.egork.arrays.ArrayWrapper;
-import net.egork.collections.CollectionUtils;
+import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.ListWrapper;
+import net.egork.collections.sequence.SequenceUtils;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
@@ -27,7 +28,7 @@ public class Task1072 implements Solver {
 			for (int j = i + 1; j < computerCount; j++) {
 				boolean connected = false;
 				for (int k : networks[i]) {
-					if (ArrayWrapper.wrap(networks[j]).contains(k))
+					if (SequenceUtils.contains(ArrayWrapper.wrap(networks[j]), k))
 						connected = true;
 				}
 				if (connected)
@@ -41,7 +42,7 @@ public class Task1072 implements Solver {
 			out.println("No");
 		else {
 			out.println("Yes");
-			IOUtils.printCollection(CollectionUtils.increment(MiscUtils.getPath(result.getLast(), destination)), out);
+			IOUtils.printCollection(SequenceUtils.increment(ListWrapper.wrap(MiscUtils.getPath(result.getLast(), destination))), out);
 		}
 	}
 }

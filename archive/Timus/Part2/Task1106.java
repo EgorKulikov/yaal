@@ -1,7 +1,7 @@
 package Timus.Part2;
 
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.Filter;
+import net.egork.collections.filter.Filter;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.graph.SimpleEdge;
@@ -31,10 +31,9 @@ public class Task1106 implements Solver {
 			}
 		}
 		final int[] coloring = GraphAlgorithms.colorGraphTwoColors(graph, true);
-		List<Integer> result = Filter.filter(CollectionUtils.range(1, n), new Filter<Integer>() {
-			@Override
-			public boolean accept(Integer element) {
-				return coloring[element - 1] == 1;
+		List<Integer> result = CollectionUtils.filter(CollectionUtils.range(1, n), new Filter<Integer>() {
+			public boolean accept(Integer value) {
+				return coloring[value - 1] == 1;
 			}
 		});
 		out.println(result.size());
