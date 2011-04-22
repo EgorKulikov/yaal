@@ -14,7 +14,7 @@ public class TaskConfiguration implements Serializable {
 
 	public static final TaskConfiguration CODE_FORCES = new TaskConfiguration("Codeforces", "Task", TestType.SINGLE, InputType.STDIN);
 	public static final TaskConfiguration CODE_CHEF = new TaskConfiguration("CodeChef", "", TestType.MULTI_NUMBER, InputType.STDIN);
-	public static final TaskConfiguration OPEN_CUP = new TaskConfiguration("Open Cup", "", TestType.SINGLE, InputType.FILE_TASK_ID);
+	public static final TaskConfiguration OPEN_CUP = new TaskConfiguration("Open Cup", " ", TestType.SINGLE, InputType.FILE_TASK_ID);
 
 	private final String taskID;
 	private final TestType testType;
@@ -357,6 +357,66 @@ public class TaskConfiguration implements Serializable {
 	public TaskConfiguration setTests(List<Test> tests) {
 		return new TaskConfiguration(taskID, testType, inputType, customInputFilename, outputType, customOutputFilename,
 			tests);
+	}
+
+	public void generateUnitTest(String sourceCode, String checkerCode) {
+		int id = Math.abs((sourceCode + checkerCode).replaceAll("[\n\r ]", "").hashCode());
+		String packageName = "generated.test" + id;
+		String testCode = "import net.egork.utils.io.stringinputreader.StringInputReader;\n" +
+			"import net.egork.utils.test.Test;\n" +
+			"import org.junit.Assert;\n" +
+			"\n" +
+			"import java.io.PrintWriter;\n" +
+			"import java.io.StringWriter;\n" +
+			"import java.util.Arrays;\n" +
+			"import java.util.Collection;\n" +
+			"import java.util.Locale;\n" +
+			"\n" +
+			"public class Test" + id + " {\n" +
+			"\t@org.junit.Test\n" +
+			"\tpublic void test() throws Exception {\n" +
+			"\t\tLocale.setDefault(Locale.US);\n" +
+			"\t\tCollection<Test> tests = Arrays.asList(Tests.TESTS);\n" +
+			"\t\ttests.addAll(MainChecker.generateTests());\n" +
+			"\t\tfor (Test test : tests) {\n" +
+			"\t\t\tStringWriter output = new StringWriter();\n" +
+			"\t\t\ttry {\n" +
+			"\t\t\t\tMain.run(new StringInputReader(test.getInput()), new PrintWriter(output));\n" +
+			"\t\t\t\tString verdict = MainChecker.check(new StringInputReader(test.getInput()),\n" +
+			"\t\t\t\t\tnew StringInputReader(test.getExpectedOutput()), new StringInputReader(output.toString()));\n" +
+			"\t\t\t\tif (verdict != null) {\n" +
+			"\t\t\t\t\tSystem.err.println(\"Failed with wrong answer: \" + verdict);\n" +
+			"\t\t\t\t\tSystem.err.println(\"Input:\");\n" +
+			"\t\t\t\t\tSystem.err.println(test.getInput());\n" +
+			"\t\t\t\t\tSystem.err.println(\"Expected output:\");\n" +
+			"\t\t\t\t\tSystem.err.println(test.getExpectedOutput());\n" +
+			"\t\t\t\t\tSystem.err.println(\"Actual output:\");\n" +
+			"\t\t\t\t\tSystem.err.println(output.toString());\n" +
+			"\t\t\t\t\tAssert.fail();\n" +
+			"\t\t\t\t}\n" +
+			"\t\t\t} catch (Throwable e) {\n" +
+			"\t\t\t\tSystem.err.println(\"Failed with runtime error\");\n" +
+			"\t\t\t\tSystem.err.println(\"Input:\");\n" +
+			"\t\t\t\tSystem.err.println(test.getInput());\n" +
+			"\t\t\t\tSystem.err.println(\"Expected output:\");\n" +
+			"\t\t\t\tSystem.err.println(test.getExpectedOutput());\n" +
+			"\t\t\t\tSystem.err.println(\"Exception:\");\n" +
+			"\t\t\t\te.printStackTrace();\n" +
+			"\t\t\t\tAssert.fail();\n" +
+			"\t\t\t}\n" +
+			"\t\t}\n" +
+			"\t}\n" +
+			"}";
+		String path = "lib/test/generated/test" + id;
+		Util.saveSourceFile(path, "Test" + id + ".java", addPackage(packageName, testCode));
+		Util.saveSourceFile(path, "Main.java", addPackage(packageName, generateMainRunEnvironment()));
+		Util.saveSourceFile(path, "Tests.java", addPackage(packageName, generateMainTests()));
+		Util.saveSourceFile(path, taskID + ".java", addPackage(packageName, sourceCode));
+		Util.saveSourceFile(path, taskID + "Checker.java", addPackage(packageName, checkerCode));
+	}
+
+	private String addPackage(String packageName, String code) {
+		return "package " + packageName + ";\n\n" + code;
 	}
 
 	public static enum TestType {

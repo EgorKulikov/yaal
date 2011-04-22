@@ -19,12 +19,7 @@ public class ArchiveTask extends AnAction {
 		String taskID = configuration.getTaskID();
 		String sourceCode = Util.loadSourceFile("main/" + taskID + ".java");
 		String checkerCode = Util.loadSourceFile("main/" + taskID + "Checker.java");
-		String packageName = "unsorted";
-		if (sourceCode != null)
-			sourceCode = "package " + packageName + ";\n\n" + sourceCode;
-		if (checkerCode != null)
-			checkerCode = "package " + packageName + ";\n\n" + checkerCode;
-		String filePath = "archive/" + packageName.replace('.', '/');
+		String filePath = "archive/unsorted";
 		if (sourceCode != null)
 			Util.saveSourceFile(filePath, taskID + ".java", sourceCode);
 		if (checkerCode != null)
@@ -38,6 +33,7 @@ public class ArchiveTask extends AnAction {
 			((TopCoderConfiguration)configuration).commentMainIfNeeded();
 		} else {
 			Util.saveSourceFile("main", "Main.java", configuration.generateMainStub());
+			configuration.generateUnitTest(sourceCode, checkerCode);
 		}
 	}
 }
