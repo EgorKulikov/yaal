@@ -5,7 +5,7 @@ import net.egork.numbers.IntegerUtils;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class Time {
+public class Time implements Comparable<Time> {
 	private final int hours;
 	private final int minutes;
 	private final int seconds;
@@ -106,5 +106,9 @@ public class Time {
 
 	public int totalSeconds() {
 		return totalMinutes() * 60 + seconds;
+	}
+
+	public int compareTo(Time o) {
+		return totalSeconds() - o.totalSeconds();
 	}
 }
