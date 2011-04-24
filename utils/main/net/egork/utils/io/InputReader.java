@@ -142,50 +142,6 @@ public abstract class InputReader {
 		return res * sgn;
 	}
 
-	public int[] readIntArray(int size) {
-		int[] array = new int[size];
-		for (int i = 0; i < size; i++)
-			array[i] = readInt();
-		return array;
-	}
-
-	public long[] readLongArray(int size) {
-		long[] array = new long[size];
-		for (int i = 0; i < size; i++)
-			array[i] = readLong();
-		return array;
-	}
-
-	public double[] readDoubleArray(int size) {
-		double[] array = new double[size];
-		for (int i = 0; i < size; i++)
-			array[i] = readDouble();
-		return array;
-	}
-
-	public String[] readStringArray(int size) {
-		String[] array = new String[size];
-		for (int i = 0; i < size; i++)
-			array[i] = readString();
-		return array;
-	}
-
-	public char[][] readTable(int rowCount, int columnCount) {
-		char[][] table = new char[rowCount][columnCount];
-		for (int i = 0; i < rowCount; i++) {
-			for (int j = 0; j < columnCount; j++)
-				table[i][j] = readCharacter();
-		}
-		return table;
-	}
-
-	public void readIntArrays(int[]... arrays) {
-		for (int i = 0; i < arrays[0].length; i++) {
-			for (int j = 0; j < arrays.length; j++)
-				arrays[j][i] = readInt();
-		}
-	}
-
 	public boolean isFinished() {
 		return finished;
 	}
@@ -195,45 +151,4 @@ public abstract class InputReader {
 	}
 
 	public abstract void close();
-
-	public int[][] readIntTable(int rowCount, int columnCount) {
-		int[][] table = new int[rowCount][];
-		for (int i = 0; i < rowCount; i++)
-			table[i] = readIntArray(columnCount);
-		return table;
-	}
-
-	public String readText() {
-		StringBuilder result = new StringBuilder();
-		while (true) {
-			int character = read();
-			if (character == '\r')
-				continue;
-			if (character == -1)
-				break;
-			result.append((char) character);
-		}
-		return result.toString();
-	}
-
-	public long[][] readLongTable(int rowCount, int columnCount) {
-		long[][] table = new long[rowCount][];
-		for (int i = 0; i < rowCount; i++)
-			table[i] = readLongArray(columnCount);
-		return table;
-	}
-
-	public String[][] readStringTable(int rowCount, int columnCount) {
-		String[][] table = new String[rowCount][];
-		for (int i = 0; i < rowCount; i++)
-			table[i] = readStringArray(columnCount);
-		return table;
-	}
-
-	public void readDoubleArrays(double[]...arrays) {
-		for (int i = 0; i < arrays[0].length; i++) {
-			for (int j = 0; j < arrays.length; j++)
-				arrays[j][i] = readDouble();
-		}
-	}
 }

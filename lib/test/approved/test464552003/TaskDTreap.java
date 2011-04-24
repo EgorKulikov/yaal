@@ -1,7 +1,7 @@
 package approved.test464552003;
 
 import net.egork.collections.Pair;
-import net.egork.collections.TreapSet;
+import net.egork.collections.set.TreapSet;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
@@ -15,16 +15,16 @@ public class TaskDTreap implements Solver {
 		int queryCount = in.readInt();
 		NavigableSet<Pair<Long, Long>> byLength = new TreeSet<Pair<Long, Long>>(new Comparator<Pair<Long, Long>>() {
 			public int compare(Pair<Long, Long> o1, Pair<Long, Long> o2) {
-				long length1 = o1.second() - o1.first();
-				long length2 = o2.second() - o2.first();
+				long length1 = o1.second - o1.first;
+				long length2 = o2.second - o2.first;
 				int value = IntegerUtils.longCompare(length1, length2);
 				if (value != 0)
 					return -value;
-				return IntegerUtils.longCompare(o2.first(), o1.first());
+				return IntegerUtils.longCompare(o2.first, o1.first);
 			}
 		});
 		NavigableSet<Pair<Long, Long>> byOrder = new TreeSet<Pair<Long, Long>>(new Pair.Comparator<Long, Long>());
-		Pair<Long, Long> all = new Pair<Long, Long>(1L, (long)count);
+		Pair<Long, Long> all = Pair.makePair(1L, (long)count);
 		byLength.add(all);
 		byOrder.add(all);
 		Map<Integer, Integer> atWork = new HashMap<Integer, Integer>();
@@ -51,18 +51,18 @@ public class TaskDTreap implements Solver {
 	}
 
 	private void remove(NavigableSet<Pair<Long, Long>> byLength, NavigableSet<Pair<Long, Long>> byOrder, long position) {
-		Pair<Long, Long> toTest = new Pair<Long, Long>(position, position);
+		Pair<Long, Long> toTest = Pair.makePair(position, position);
 		Pair<Long, Long> left = null;
 		SortedSet<Pair<Long, Long>> headSet = byOrder.headSet(toTest);
 		if (!headSet.isEmpty())
 			left = headSet.last();
-		if (left != null && left.second() + 1 != position)
+		if (left != null && left.second + 1 != position)
 			left = null;
 		Pair<Long, Long> right = null;
 		SortedSet<Pair<Long, Long>> tailSet = byOrder.tailSet(toTest);
 		if (!tailSet.isEmpty())
 			right = tailSet.first();
-		if (right != null && right.first() - 1 != position)
+		if (right != null && right.first - 1 != position)
 			right = null;
 		if (left != null) {
 			byLength.remove(left);
@@ -72,7 +72,7 @@ public class TaskDTreap implements Solver {
 			byLength.remove(right);
 			byOrder.remove(right);
 		}
-		Pair<Long, Long> toAdd = new Pair<Long, Long>(left != null ? left.first() : position, right != null ? right.second() : position);
+		Pair<Long, Long> toAdd = Pair.makePair(left != null ? left.first : position, right != null ? right.second : position);
 		byLength.add(toAdd);
 		byOrder.add(toAdd);
 	}
@@ -81,14 +81,14 @@ public class TaskDTreap implements Solver {
 		Pair<Long, Long> toDivide = byLength.first();
 		byLength.remove(toDivide);
 		byOrder.remove(toDivide);
-		long position = (toDivide.first() + toDivide.second() + 1) / 2;
-		Pair<Long, Long> left = new Pair<Long, Long>(toDivide.first(), position - 1);
-		Pair<Long, Long> right = new Pair<Long, Long>(position + 1, toDivide.second());
-		if (left.first() <= left.second()) {
+		long position = (toDivide.first + toDivide.second + 1) / 2;
+		Pair<Long, Long> left = Pair.makePair(toDivide.first, position - 1);
+		Pair<Long, Long> right = Pair.makePair(position + 1, toDivide.second);
+		if (left.first <= left.second) {
 			byLength.add(left);
 			byOrder.add(left);
 		}
-		if (right.first() <= right.second()) {
+		if (right.first <= right.second) {
 			byLength.add(right);
 			byOrder.add(right);
 		}

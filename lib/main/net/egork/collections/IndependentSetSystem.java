@@ -6,6 +6,7 @@ package net.egork.collections;
 public class IndependentSetSystem {
 	private final int[] color;
 	private int setCount;
+	private Listener listener;
 
 	public IndependentSetSystem(int size) {
 		color = new int[size];
@@ -26,6 +27,8 @@ public class IndependentSetSystem {
 			return false;
 		setCount--;
 		color[b] = a;
+		if (listener != null)
+			listener.joined(b, a);
 		return true;
 	}
 
@@ -37,5 +40,13 @@ public class IndependentSetSystem {
 
 	public int getSetCount() {
 		return setCount;
+	}
+
+	public void setListener(Listener listener) {
+		this.listener = listener;
+	}
+
+	public static interface Listener {
+		public void joined(int joinedRoot, int root);
 	}
 }

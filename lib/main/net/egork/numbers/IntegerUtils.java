@@ -140,11 +140,11 @@ public class IntegerUtils {
 					power++;
 					number /= i;
 				} while (number % i == 0);
-				result.add(new Pair<Long, Integer>(i, power));
+				result.add(Pair.makePair(i, power));
 			}
 		}
 		if (number != 1)
-			result.add(new Pair<Long, Integer>(number, 1));
+			result.add(Pair.makePair(number, 1));
 		return result;
 	}
 
@@ -160,8 +160,8 @@ public class IntegerUtils {
 			result.add(current);
 			return result;
 		}
-		long p = primeDivisors.get(index).first();
-		int power = primeDivisors.get(index).second();
+		long p = primeDivisors.get(index).first;
+		int power = primeDivisors.get(index).second;
 		for (int i = 0; i <= power; i++) {
 			getDivisorsImpl(primeDivisors, index + 1, current, result);
 			current *= p;

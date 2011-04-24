@@ -1,6 +1,6 @@
 package net.egork.graph;
 
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.ArrayUtils;
 import net.egork.collections.Pair;
 
 import java.util.*;
@@ -189,15 +189,15 @@ public class GraphAlgorithms {
 		ArrayUtils.fill(lastIndex, -1);
 		ArrayUtils.fill(lastPathNumber, -1);
 		distance[source][0] = 0;
-		queue.add(new Pair<Integer, Integer>(source, 0));
+		queue.add(Pair.makePair(source, 0));
 		notReached[source][0] = false;
 		int iterationCount = 0;
 		while (!queue.isEmpty()) {
 			iterationCount++;
 			if (iterationCount / size / size / size != 0)
 				return null;
-			int current = queue.peek().first();
-			int currentPath = queue.poll().second();
+			int current = queue.peek().first;
+			int currentPath = queue.poll().second;
 			processed[current][currentPath] = true;
 			for (Edge edge : graph.getIncident(current)) {
 				int next = edge.getDestination();
@@ -216,10 +216,10 @@ public class GraphAlgorithms {
 						lastPathNumber[next][i] = currentPath;
 						if (notReached[next][i]) {
 							notReached[next][i] = false;
-							queue.add(new Pair<Integer, Integer>(next, i));
+							queue.add(Pair.makePair(next, i));
 						} else if (processed[next][i]) {
 							processed[next][i] = false;
-							queue.addFirst(new Pair<Integer, Integer>(next, i));
+							queue.addFirst(Pair.makePair(next, i));
 						}
 						break;
 					}

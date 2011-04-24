@@ -1,6 +1,6 @@
 package April2011.UVaHugeEasyContestII;
 
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.ArrayUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
 
