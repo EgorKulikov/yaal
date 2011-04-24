@@ -13,24 +13,20 @@ public class Main {
 	}
 
 	public static void run(InputReader in, PrintWriter out) {
-		Solver solver = new TaskK();
-		int i = 1;
-		while (true) {
-			solver.solve(i++, in, out);
-			if (in.isFinished())
-				break;
-		}
+		Solver solver = new TaskA();
+		solver.solve(1, in, out);
+		Exit.exit(in, out);
 	}
 }
 
 
 class MainChecker {
 	public static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
-		return new TaskKChecker().check(input, expectedOutput, actualOutput);
+		return new TaskAChecker().check(input, expectedOutput, actualOutput);
 	}
 
 	public static Collection<Test> generateTests() {
-		return new TaskKChecker().generateTests();
+		return new TaskAChecker().generateTests();
 	}
 }
 
