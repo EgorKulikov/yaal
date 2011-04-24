@@ -1,6 +1,6 @@
 package April2011.CodeforcesBetaRound66;
 
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.ArrayUtils;
 import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.CollectionUtils;
 import net.egork.utils.Solver;

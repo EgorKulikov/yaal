@@ -1,7 +1,7 @@
 package April2011.CodechefAprilLongContest;
 
-import net.egork.arrays.ArrayUtils;
-import net.egork.collections.CPPMap;
+import net.egork.collections.ArrayUtils;
+import net.egork.collections.map.CPPMap;
 import net.egork.collections.Pair;
 import net.egork.misc.Factory;
 import net.egork.utils.Exit;

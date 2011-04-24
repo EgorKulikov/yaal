@@ -1,6 +1,6 @@
 package April2011.TopCoderSRM502;
 
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.ArrayUtils;
 import net.egork.numbers.Rational;
 
 import java.util.Arrays;

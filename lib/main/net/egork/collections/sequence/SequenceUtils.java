@@ -1,8 +1,8 @@
 package net.egork.collections.sequence;
 
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.ArrayUtils;
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.TreapSet;
+import net.egork.collections.set.TreapSet;
 import net.egork.collections.filter.Filter;
 import net.egork.collections.function.Function;
 import net.egork.misc.Factory;

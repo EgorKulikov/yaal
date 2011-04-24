@@ -1,6 +1,6 @@
 package net.egork.graph;
 
-import net.egork.arrays.ArrayUtils;
+import net.egork.collections.ArrayUtils;
 
 import java.util.Iterator;
 import java.util.Stack;
