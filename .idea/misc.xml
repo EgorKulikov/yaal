@@ -9,6 +9,9 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\proj\algo\exportToHTML" />
+  </component>
   <component name="IdProvider" IDEtalkID="5D56931DB74C788F019E25DD93B5B43A" />
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />

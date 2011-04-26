@@ -6,11 +6,11 @@ import java.util.*;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class TreapSet<K> implements NavigableSet<K> {
-	private static final Random rnd = new Random(239);
+	protected static final Random rnd = new Random(239);
 
-	private final Node nullNode;
-	private final Comparator<? super K> comparator;
-	private Node root;
+	protected final Node nullNode;
+	protected final Comparator<? super K> comparator;
+	protected Node root;
 	private final K from;
 	private final K to;
 	private final boolean fromInclusive;
@@ -33,7 +33,7 @@ public class TreapSet<K> implements NavigableSet<K> {
 		addAll(collection);
 	}
 
-	private TreapSet(K from, K to, boolean fromInclusive, boolean toInclusive, Comparator<? super K> comparator, Node root, Node nullNode) {
+	protected TreapSet(K from, K to, boolean fromInclusive, boolean toInclusive, Comparator<? super K> comparator, Node root, Node nullNode) {
 		this.comparator = comparator;
 		this.from = from;
 		this.to = to;
@@ -186,8 +186,12 @@ public class TreapSet<K> implements NavigableSet<K> {
 			throw new NullPointerException();
 		if (contains(k))
 			return false;
-		root = root.insert(new Node(k, rnd.nextLong()));
+		root = root.insert(createNode(k));
 		return true;
+	}
+
+	protected Node createNode(K k) {
+		return new Node(k, rnd.nextLong());
 	}
 
 	public boolean remove(Object o) {
@@ -302,7 +306,7 @@ public class TreapSet<K> implements NavigableSet<K> {
 		return lower(to);
 	}
 
-	private int compare(K first, K second) {
+	protected int compare(K first, K second) {
 		if (first == null || second == null)
 			return -1;
 		if (comparator != null)
@@ -311,9 +315,9 @@ public class TreapSet<K> implements NavigableSet<K> {
 		return ((Comparable<? super K>)first).compareTo(second);
 	}
 
-	private class Node {
-		private final K key;
-		private final long priority;
+	protected class Node {
+		protected final K key;
+		protected final long priority;
 		protected Node left;
 		protected Node right;
 		protected int size;
