@@ -1,27 +1,34 @@
+package approved.test300546403;
+
+import net.egork.utils.test.Test;
+import java.util.Collection;
 import net.egork.utils.Exit;
 import net.egork.utils.io.StreamInputReader;
 import java.io.*;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
-import java.util.Collection;
-import java.util.Collections;
-import net.egork.utils.test.Test;
 public class Main {
 	public static void main(String[] args) {
+		InputReader in = new StreamInputReader(System.in);
+		PrintWriter out = new PrintWriter(System.out);
+		run(in, out);
 	}
 
 	public static void run(InputReader in, PrintWriter out) {
+		Solver solver = new MagicIsInTheAir();
+		solver.solve(1, in, out);
+		Exit.exit(in, out);
 	}
 }
 
 
 class MainChecker {
 	public static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
-		return null;
+		return new MagicIsInTheAirChecker().check(input, expectedOutput, actualOutput);
 	}
 
 	public static Collection<Test> generateTests() {
-		return Collections.emptyList();
+		return new MagicIsInTheAirChecker().generateTests();
 	}
 }
 

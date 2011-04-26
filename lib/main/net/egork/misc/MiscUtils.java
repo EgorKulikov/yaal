@@ -103,4 +103,9 @@ public class MiscUtils {
 	public static<T> boolean equals(T first, T second) {
 		return first == null && second == null || first != null && first.equals(second);
 	}
+
+	public static boolean isVowel(char ch) {
+		ch = Character.toUpperCase(ch);
+		return ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' || ch == 'Y';
+	}
 }

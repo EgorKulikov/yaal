@@ -1,6 +1,7 @@
 package approved.test324363384;
 
-import net.egork.collections.IndependentSetSystem;
+import net.egork.collections.iss.IndependentSetSystem;
+import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
 import net.egork.utils.io.InputReader;
@@ -19,7 +20,7 @@ public class TaskA implements Solver {
 			return;
 		}
 		int[] index = new int[size + 1];
-		IndependentSetSystem setSystem = new IndependentSetSystem(size + queryCount);
+		IndependentSetSystem setSystem = new RecursiveIndependentSetSystem(size + queryCount);
 		final int[] count = new int[size + queryCount];
 		final long[] sum = new long[size + queryCount];
 		for (int i = 0; i < size; i++) {
