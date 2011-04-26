@@ -15,4 +15,8 @@ public class Circle {
 	public boolean contains(Point point) {
 		return center.distance(point) < radius + GeometryUtils.epsilon;
 	}
+
+	public boolean strictContains(Point point) {
+		return center.distance(point) < radius - GeometryUtils.epsilon;
+	}
 }

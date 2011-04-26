@@ -2,13 +2,16 @@ package net.egork.collections.sequence;
 
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.set.TreapSet;
+import net.egork.collections.Pair;
 import net.egork.collections.filter.Filter;
 import net.egork.collections.function.Function;
+import net.egork.collections.set.TreapSet;
 import net.egork.misc.Factory;
 import net.egork.misc.MiscUtils;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.NavigableSet;
 
 /**
@@ -189,5 +192,15 @@ public class SequenceUtils {
 
 	public static<T> boolean contains(WritableSequence<T> sequence, Filter<T> filter) {
 		return find(sequence, filter) != -1;
+	}
+
+	public static<T> List<T> filter(Sequence<T> sequence, Filter<Pair<T, Integer>> filter) {
+		List<T> result = new ArrayList<T>();
+		for (int i = 0; i < sequence.size(); i++) {
+			T element = sequence.get(i);
+			if (filter.accept(Pair.makePair(element, i)))
+				result.add(element);
+		}
+		return result;
 	}
 }
