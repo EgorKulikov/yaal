@@ -8,7 +8,7 @@ import java.util.Map;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class PersistentTreapSet<K> extends TreapSet<K> implements PersistentSet<K> {
-	private Map<Object, PersistentSet<K>> states = new HashMap<Object, PersistentSet<K>>();
+	private Map<Object, Node> states = new HashMap<Object, Node>();
 
 	public PersistentTreapSet() {
 		super();
@@ -31,11 +31,12 @@ public class PersistentTreapSet<K> extends TreapSet<K> implements PersistentSet<
 	}
 
 	public void markState(Object marker) {
-		states.put(marker, new PersistentTreapSet<K>(root, comparator, nullNode));
+		//noinspection unchecked
+		states.put(marker, root);
 	}
 
-	public PersistentSet<K> getState(Object marker) {
-		return states.get(marker);
+	public PersistentTreapSet<K> getState(Object marker) {
+		return new PersistentTreapSet<K>(states.get(marker), comparator, nullNode);
 	}
 
 	@Override
