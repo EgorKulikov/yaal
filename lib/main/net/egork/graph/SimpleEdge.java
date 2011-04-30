@@ -6,6 +6,7 @@ package net.egork.graph;
 public class SimpleEdge implements Edge {
 	protected final int source;
 	protected final int destination;
+	protected Edge transposed = null;
 
 	public SimpleEdge(int source, int destination) {
 		this.source = source;
@@ -37,7 +38,9 @@ public class SimpleEdge implements Edge {
 	}
 
 	public Edge getTransposedEdge() {
-		return new SimpleTransposedEdge();
+		if (transposed == null)
+			transposed = new SimpleTransposedEdge();
+		return transposed;
 	}
 
 	public Edge getReverseEdge() {

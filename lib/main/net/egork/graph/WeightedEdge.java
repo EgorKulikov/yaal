@@ -1,8 +1,5 @@
 package net.egork.graph;
 
-import net.egork.graph.Edge;
-import net.egork.graph.SimpleEdge;
-
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -21,7 +18,9 @@ public class WeightedEdge extends SimpleEdge {
 
 	@Override
 	public Edge getTransposedEdge() {
-		return new WeightedTransposedEdge();
+		if (transposed == null)
+			transposed = new WeightedTransposedEdge();
+		return transposed;
 	}
 
 	protected class WeightedTransposedEdge extends SimpleTransposedEdge {

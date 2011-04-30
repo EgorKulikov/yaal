@@ -44,8 +44,7 @@ public class Pair<U, V> {
 	}
 
 	public Pair<V, U> swap() {
-		//noinspection unchecked
-		return new Pair<V, U>(second, first);
+		return makePair(second, first);
 	}
 
 	@Override
