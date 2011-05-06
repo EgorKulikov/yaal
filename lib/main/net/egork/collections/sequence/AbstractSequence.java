@@ -31,7 +31,7 @@ public abstract class AbstractSequence<T> implements Sequence<T> {
 	}
 
 	protected void checkIndices(int from, int to, int size) {
-		if (from < 0 || to < 0 || from >= size || to >= size || from > to)
+		if (from < 0 || to < 0 || from > size || to > size || from > to)
 			throw new IndexOutOfBoundsException();
 	}
 
