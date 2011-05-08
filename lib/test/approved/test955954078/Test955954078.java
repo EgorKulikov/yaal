@@ -1,4 +1,4 @@
-package approved.test1784436859;
+package approved.test955954078;
 
 import net.egork.utils.io.stringinputreader.StringInputReader;
 import net.egork.utils.test.Test;
@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Locale;
 
-public class Test1784436859 {
+public class Test955954078 {
 	@org.junit.Test
 	public void test() throws Exception {
 		Locale.setDefault(Locale.US);

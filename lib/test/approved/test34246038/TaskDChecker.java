@@ -1,4 +1,4 @@
-package approved.test1784436859;
+package approved.test34246038;
 
 import net.egork.utils.checker.Checker;
 import net.egork.utils.io.InputReader;

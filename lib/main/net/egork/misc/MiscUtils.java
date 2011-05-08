@@ -13,6 +13,9 @@ public class MiscUtils {
 	public static final int[] DX_4_CONNECTED = {1, 0, -1, 0};
 	public static final int[] DY_4_CONNECTED = {0, -1, 0, 1};
 
+	private static final String[] ROMAN_TOKENS = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+	private static final int[] ROMAN_VALUES = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+
 	public static long josephProblem(long n, int k) {
 		if (n == 1)
 			return 0;
@@ -107,5 +110,16 @@ public class MiscUtils {
 	public static boolean isVowel(char ch) {
 		ch = Character.toUpperCase(ch);
 		return ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' || ch == 'Y';
+	}
+
+	public static String convertToRoman(int number) {
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < ROMAN_TOKENS.length; i++) {
+			while (number >= ROMAN_VALUES[i]) {
+				number -= ROMAN_VALUES[i];
+				result.append(ROMAN_TOKENS[i]);
+			}
+		}
+		return result.toString();
 	}
 }

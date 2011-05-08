@@ -1,4 +1,4 @@
-package approved.test1784436859;
+package approved.test34246038;
 
 import net.egork.utils.test.Test;
 import java.util.Collection;
