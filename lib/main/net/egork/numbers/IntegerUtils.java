@@ -124,6 +124,13 @@ public class IntegerUtils {
 		return a;
 	}
 
+	public static long trueMod(long a, long b) {
+		a %= b;
+		a += b;
+		a %= b;
+		return a;
+	}
+
 	public static long factorial(int n) {
 		long result = 1;
 		for (int i = 2; i <= n; i++)

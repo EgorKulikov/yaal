@@ -52,4 +52,13 @@ public class GeometryUtils {
 	public static double missileTrajectoryLength(double v, double angle, double g) {
 		return (v * v * Math.sin(2 * angle)) / g;
 	}
+
+	public static double sphereVolume(double radius) {
+		return 4 * Math.PI * radius * radius * radius / 3;
+	}
+
+	public static double triangleSquare(double first, double second, double third) {
+		double p = (first + second + third) / 2;
+		return Math.sqrt(p * (p - first) * (p - second) * (p - third));
+	}
 }

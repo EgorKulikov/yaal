@@ -7,6 +7,7 @@ public class Rational implements Comparable<Rational> {
 	private final long numerator;
 	private final long denominator;
 	public static final Rational MAX_VALUE = new Rational(Integer.MAX_VALUE, 1);
+	public static final Rational MIN_VALUE = new Rational(Integer.MIN_VALUE, 1);;
 
 	public Rational(long numerator, long denominator) {
 		if (denominator == 0)
