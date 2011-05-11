@@ -34,4 +34,32 @@ public class StringUtils {
 		}
 		return result;
 	}
+
+	public static int[] zAlgorithm(CharSequence s) {
+		int length = s.length();
+		int[] z = new int[length];
+		z[0] = 0;
+
+		int left = 0, right = 0;
+		for (int i = 1; i < length; i++) {
+			if (i > right) {
+				int j;
+				//noinspection StatementWithEmptyBody
+				for (j = 0; i + j < length && s.charAt(i + j) == s.charAt(j); j++);
+				z[i] = j;
+				left = i;
+				right = i + j - 1;
+			} else if (z[i - left] < right - i + 1)
+				z[i] = z[i - left];
+			else {
+				int j;
+				//noinspection StatementWithEmptyBody
+				for (j = 1; right + j < length && s.charAt(right + j) == s.charAt(right - i + j); j++);
+				z[i] = right - i + j;
+				left = i;
+				right = right + j - 1;
+			}
+		}
+		return z;
+	}
 }

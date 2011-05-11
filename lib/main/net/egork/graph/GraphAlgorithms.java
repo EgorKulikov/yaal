@@ -94,7 +94,6 @@ public class GraphAlgorithms {
 		return totalPushed;
 	}
 
-
 	public static class DistanceResult {
 		private final long[] distances;
 		private final int[] last;
