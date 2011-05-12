@@ -62,7 +62,7 @@ public class FlowEdge extends SimpleEdge {
 		}
 
 		public long getWeight() {
-			return 0;
+			return -FlowEdge.this.getWeight();
 		}
 
 		public long getCapacity() {
