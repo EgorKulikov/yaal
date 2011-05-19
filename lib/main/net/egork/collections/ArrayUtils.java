@@ -69,4 +69,9 @@ public class ArrayUtils {
 		Arrays.sort(order, comparator);
 		return order;
 	}
+
+	public static void fill(char[][] array, char value) {
+		for (char[] row : array)
+			Arrays.fill(row, value);
+	}
 }

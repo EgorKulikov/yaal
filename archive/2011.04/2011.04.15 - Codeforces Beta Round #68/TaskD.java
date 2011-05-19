@@ -23,7 +23,7 @@ public class TaskD implements Solver {
 				return IntegerUtils.longCompare(o2.first(), o1.first());
 			}
 		});
-		NavigableSet<Pair<Long, Long>> byOrder = new TreeSet<Pair<Long, Long>>(new Pair.Comparator<Long, Long>());
+		NavigableSet<Pair<Long, Long>> byOrder = new TreeSet<Pair<Long, Long>>();
 		Pair<Long, Long> all = new Pair<Long, Long>(1L, (long)count);
 		byLength.add(all);
 		byOrder.add(all);
