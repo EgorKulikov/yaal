@@ -46,6 +46,7 @@ public class ListIndependentSetSystem implements IndependentSetSystem {
 		lists[second] = null;
 		if (listener != null)
 			listener.joined(second, first);
+		setCount--;
 		return true;
 	}
 

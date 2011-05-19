@@ -38,7 +38,7 @@ public class HarmoniousDecorating implements Solver {
 		Set<Pair<Integer, Integer>> processed = new HashSet<Pair<Integer, Integer>>();
 		List<Set<Integer>> faces = new ArrayList<Set<Integer>>();
 		int outerIndex = -1;
-		int minIndex = SequenceUtils.minIndex(ArrayWrapper.wrap(vertices), new Pair.Comparator<Integer, Integer>());
+		int minIndex = SequenceUtils.minIndex(ArrayWrapper.wrap(vertices));
 		for (int i = 0; i < edgeCount; i++) {
 			for (int j = 0; j < 2; j++) {
 				int currentVertex = j == 0 ? from[i] : to[i];

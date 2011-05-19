@@ -3,16 +3,7 @@ package net.egork.collections;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class Pair<U, V> {
-	public static class Comparator<U extends Comparable<U>, V extends Comparable<V>> implements java.util.Comparator<Pair<U, V>> {
-		public int compare(Pair<U, V> o1, Pair<U, V> o2) {
-			int result = o1.first.compareTo(o2.first);
-			if (result != 0)
-				return result;
-			return o1.second.compareTo(o2.second);
-		}
-	}
-
+public class Pair<U, V> implements Comparable<Pair<U, V>> {
 	public final U first;
 	public final V second;
 
@@ -50,5 +41,13 @@ public class Pair<U, V> {
 	@Override
 	public String toString() {
 		return "(" + first + "," + second + ")";
+	}
+
+	@SuppressWarnings({"unchecked"})
+	public int compareTo(Pair<U, V> o) {
+		int value = ((Comparable<U>)first).compareTo(o.first);
+		if (value != 0)
+			return value;
+		return ((Comparable<V>)second).compareTo(o.second);
 	}
 }
