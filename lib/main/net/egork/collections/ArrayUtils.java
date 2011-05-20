@@ -70,6 +70,11 @@ public class ArrayUtils {
 		return order;
 	}
 
+	public static<T> void fill(T[][] array, T value) {
+		for (T[] row : array)
+			Arrays.fill(row, value);
+	}
+
 	public static void fill(char[][] array, char value) {
 		for (char[] row : array)
 			Arrays.fill(row, value);
