@@ -5,6 +5,7 @@ package net.egork.datetime;
  */
 public class Date implements Comparable<Date> {
 	private static final int[] DAYS_IN_MONTH = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	public static final String[] WEEKDAYS = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
 	private final int year;
 	private final int month;
