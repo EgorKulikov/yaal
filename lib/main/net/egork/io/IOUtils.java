@@ -154,4 +154,10 @@ public class IOUtils {
 		return result.toString();
 	}
 
+	public static void readStringArrays(InputReader in, String[]... arrays) {
+		for (int i = 0; i < arrays[0].length; i++) {
+			for (int j = 0; j < arrays.length; j++)
+				arrays[j][i] = in.readString();
+		}
+	}
 }
