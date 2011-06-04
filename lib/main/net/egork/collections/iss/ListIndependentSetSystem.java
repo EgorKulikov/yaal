@@ -1,6 +1,8 @@
 package net.egork.collections.iss;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -60,5 +62,11 @@ public class ListIndependentSetSystem implements IndependentSetSystem {
 
 	public void setListener(Listener listener) {
 		this.listener = listener;
+	}
+
+	public List<Integer> getChildren(int vertex) {
+		if (parent[vertex] != vertex)
+			throw new IllegalArgumentException();
+		return lists[vertex] == null ? Collections.<Integer>emptyList() : lists[vertex];
 	}
 }
