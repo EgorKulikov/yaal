@@ -10,8 +10,10 @@ import java.util.List;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class MiscUtils {
-	public static final int[] DX_4_CONNECTED = {1, 0, -1, 0};
-	public static final int[] DY_4_CONNECTED = {0, -1, 0, 1};
+	public static final int[] DX4 = {1, 0, -1, 0};
+	public static final int[] DY4 = {0, -1, 0, 1};
+	public static final int[] DX8 = {1, 1, 1, 0, -1, -1, -1, 0};
+	public static final int[] DY8 = {-1, 0, 1, 1, 1, 0, -1, -1};
 
 	private static final String[] ROMAN_TOKENS = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 	private static final int[] ROMAN_VALUES = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};

@@ -51,8 +51,8 @@ public class TaskE implements Solver {
 						Set<Pair<Integer, Integer>> nextCanBe = new HashSet<Pair<Integer, Integer>>();
 						for (Pair<Integer, Integer> cell : canBe) {
 							for (int l = 0; l < 4; l++) {
-								int newRow = cell.first + MiscUtils.DX_4_CONNECTED[l];
-								int newColumn = cell.second + MiscUtils.DY_4_CONNECTED[l];
+								int newRow = cell.first + MiscUtils.DX4[l];
+								int newColumn = cell.second + MiscUtils.DY4[l];
 								if (newRow >= 0 && newColumn >= 0 && newRow < size && newColumn < size && Character.isDigit(scientists[newRow][newColumn])) {
 									Pair<Integer, Integer> next = Pair.makePair(newRow, newColumn);
 									if (!caNtBe.contains(next)) {
@@ -67,8 +67,8 @@ public class TaskE implements Solver {
 						for (Pair<Integer, Integer> cell : caNtBe) {
 							nextCaNtBe.add(cell);
 							for (int l = 0; l < 4; l++) {
-								int newRow = cell.first + MiscUtils.DX_4_CONNECTED[l];
-								int newColumn = cell.second + MiscUtils.DY_4_CONNECTED[l];
+								int newRow = cell.first + MiscUtils.DX4[l];
+								int newColumn = cell.second + MiscUtils.DY4[l];
 								if (newRow >= 0 && newColumn >= 0 && newRow < size && newColumn < size && Character.isDigit(scientists[newRow][newColumn])) {
 									Pair<Integer, Integer> next = Pair.makePair(newRow, newColumn);
 									nextCaNtBe.add(next);

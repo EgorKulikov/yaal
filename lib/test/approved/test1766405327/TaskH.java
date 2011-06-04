@@ -20,8 +20,8 @@ public class TaskH implements Solver {
 					int influence = 0;
 					int neighborCount = 0;
 					for (int k = 0; k < 4; k++) {
-						int row = i + MiscUtils.DX_4_CONNECTED[k];
-						int column = j + MiscUtils.DY_4_CONNECTED[k];
+						int row = i + MiscUtils.DX4[k];
+						int column = j + MiscUtils.DY4[k];
 						if (row < 0 || row >= size || column < 0 || column >= size)
 							continue;
 						influence += mesh[row][column];
