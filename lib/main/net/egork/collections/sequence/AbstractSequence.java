@@ -1,10 +1,7 @@
 package net.egork.collections.sequence;
 
 import net.egork.collections.ReadOnlyIterator;
-import net.egork.io.IOUtils;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -49,13 +46,6 @@ public abstract class AbstractSequence<T> implements Sequence<T> {
 				return get(index++);
 			}
 		};
-	}
-
-	@Override
-	public String toString() {
-		StringWriter writer = new StringWriter();
-		IOUtils.printCollection(this, new PrintWriter(writer), ",");
-		return "[" + writer.toString().substring(0, writer.toString().length() - 1) + "]";
 	}
 
 	protected class SubSequence implements Sequence<T> {
