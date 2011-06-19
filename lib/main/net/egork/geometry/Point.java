@@ -51,4 +51,8 @@ public class Point {
 	public double distance(Line line) {
 		return Math.abs(line.a * x + line.b * y + line.c);
 	}
+
+	public double value() {
+		return GeometryUtils.fastHypot(x, y);
+	}
 }
