@@ -97,6 +97,21 @@ public class IntegerUtils {
 		return result;
 	}
 
+	public static long[][] generateBinomialCoefficients(int n, long module) {
+		long[][] result = new long[n + 1][n + 1];
+		if (module == 1)
+			return result;
+		for (int i = 0; i <= n; i++) {
+			result[i][0] = 1;
+			for (int j = 1; j <= i; j++) {
+				result[i][j] = result[i - 1][j - 1] + result[i - 1][j];
+				if (result[i][j] >= module)
+					result[i][j] -= module;
+			}
+		}
+		return result;
+	}
+
 	public static int[] representationInBase(long number, int base) {
 		long basePower = base;
 		int exponent = 1;
