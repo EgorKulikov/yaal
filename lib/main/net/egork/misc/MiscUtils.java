@@ -124,4 +124,10 @@ public class MiscUtils {
 		}
 		return result.toString();
 	}
+
+	public static int distance(int x1, int y1, int x2, int y2) {
+		int dx = x1 - x2;
+		int dy = y1 - y2;
+		return dx * dx + dy * dy;
+	}
 }
