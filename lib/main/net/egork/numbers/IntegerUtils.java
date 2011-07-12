@@ -200,4 +200,8 @@ public class IntegerUtils {
 			result = result * base % mod;
 		return result;
 	}
+
+	public static long lcm(long a, long b) {
+		return a / gcd(a, b) * b;
+	}
 }
