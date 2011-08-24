@@ -1,13 +1,12 @@
-package approved.test1230212088;
+package approved.test911889265;
 
 import net.egork.utils.checker.Checker;
 import net.egork.utils.io.InputReader;
+import java.util.Collections;
+import java.util.Collection;
 import net.egork.utils.test.Test;
 
-import java.util.Collection;
-import java.util.Collections;
-
-public class TaskDChecker extends Checker {
+public class TaskAChecker extends Checker {
 	@Override
 	public String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
 		return tokenCheck(expectedOutput, actualOutput);
@@ -20,7 +19,7 @@ public class TaskDChecker extends Checker {
 
 	@Override
 	public Collection<Test> generateTests() {
-		return Collections.emptyList();
+		return Collections.<Test>emptyList();
 	}
 }
 
