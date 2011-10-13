@@ -1,4 +1,4 @@
-package approved.test56582609;
+package approved.test902498230;
 
 import net.egork.utils.io.stringinputreader.StringInputReader;
 import net.egork.utils.test.Test;
@@ -6,16 +6,15 @@ import org.junit.Assert;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Locale;
 
-public class Test56582609 {
+public class Test902498230 {
 	@org.junit.Test
 	public void test() throws Exception {
 		Locale.setDefault(Locale.US);
-		Collection<Test> tests = new ArrayList<Test>(Arrays.asList(Tests.TESTS));
+		Collection<Test> tests = Arrays.asList(Tests.TESTS);
 		tests.addAll(MainChecker.generateTests());
 		for (Test test : tests) {
 			StringWriter output = new StringWriter();

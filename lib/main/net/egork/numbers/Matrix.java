@@ -60,7 +60,7 @@ public class Matrix {
 		return result;
 	}
 
-	public Matrix power(int exponent) {
+	public Matrix power(long exponent) {
 		if (exponent == 0)
 			return identityMatrix(rowCount);
 		if (exponent == 1)
@@ -72,7 +72,7 @@ public class Matrix {
 		return result;
 	}
 
-	public Matrix fastPower(int exponent) {
+	public Matrix fastPower(long exponent) {
 		if (exponent == 0)
 			return identityMatrix(rowCount);
 		if (exponent == 1)
