@@ -1,4 +1,4 @@
-package approved.test1391747263;
+package approved.test6111634;
 
 import net.egork.utils.checker.Checker;
 import net.egork.utils.io.InputReader;
@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Collection;
 import net.egork.utils.test.Test;
 
-public class TaskEChecker extends Checker {
+public class TaskHChecker extends Checker {
 	@Override
 	public String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
 		return tokenCheck(expectedOutput, actualOutput);
