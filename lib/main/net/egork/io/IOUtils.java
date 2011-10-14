@@ -106,6 +106,13 @@ public class IOUtils {
 		}
 	}
 
+	public static void readLongArrays(InputReader in, long[]... arrays) {
+		for (int i = 0; i < arrays[0].length; i++) {
+			for (int j = 0; j < arrays.length; j++)
+				arrays[j][i] = in.readLong();
+		}
+	}
+
 	public static void readDoubleArrays(InputReader in, double[]...arrays) {
 		for (int i = 0; i < arrays[0].length; i++) {
 			for (int j = 0; j < arrays.length; j++)
