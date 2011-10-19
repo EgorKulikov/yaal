@@ -233,17 +233,24 @@ public class TaskConfiguration implements Serializable {
 		String inputFileName = getInputFileName();
 		String outputFileName = getOutputFileName();
 		if (inputFileName != null || outputFileName != null) {
+			mainClass.append("\t\tInputReader in;\n");
+			mainClass.append("\t\tPrintWriter out;\n");
 			mainClass.append("\t\ttry {\n");
 			if (inputFileName != null)
-				mainClass.append("\t\t\tSystem.setIn(new FileInputStream(\"").append(inputFileName).append("\"));\n");
+				mainClass.append("\t\t\tin = new StreamInputReader(new FileInputStream(\"").append(inputFileName).append("\"));\n");
+			else
+				mainClass.append("\t\t\tin = new StreamInputReader(System.in);\n");
 			if (outputFileName != null)
-				mainClass.append("\t\t\tSystem.setOut(new PrintStream(new FileOutputStream(\"").append(outputFileName).append("\")));\n");
+				mainClass.append("\t\t\tout = new PrintWriter(new PrintStream(new FileOutputStream(\"").append(outputFileName).append("\")));\n");
+			else
+				mainClass.append("\t\t\tout = new PrintWriter(System.out);\n");
 			mainClass.append("\t\t} catch (Exception e) {\n");
 			mainClass.append("\t\t\tthrow new RuntimeException(e);\n");
 			mainClass.append("\t\t}\n");
+		} else {
+			mainClass.append("\t\tInputReader in = new StreamInputReader(System.in);\n");
+			mainClass.append("\t\tPrintWriter out = new PrintWriter(System.out);\n");
 		}
-		mainClass.append("\t\tInputReader in = new StreamInputReader(System.in);\n");
-		mainClass.append("\t\tPrintWriter out = new PrintWriter(System.out);\n");
 		mainClass.append("\t\trun(in, out);\n");
 		mainClass.append("\t}\n\n");
 		mainClass.append("\tpublic static void run(InputReader in, PrintWriter out) {\n");
