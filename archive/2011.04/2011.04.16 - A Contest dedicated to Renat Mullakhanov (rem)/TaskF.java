@@ -1,7 +1,6 @@
 package April2011.UVaAContestDedicatedToRenatMullakhanov;
 
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
@@ -10,7 +9,7 @@ public class TaskF implements Solver {
 	private long[][] result = new long[1001][1001];
 	private static final long MOD = 1000000007;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		long result = go(0, 0, testNumber, in.readString().toCharArray());
 		out.println("Case " + testNumber + ": " + result);
 	}

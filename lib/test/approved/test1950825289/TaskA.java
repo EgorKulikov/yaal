@@ -3,7 +3,7 @@ package approved.test1950825289;
 import net.egork.geometry.Point;
 import net.egork.geometry.Polygon;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.io.PrintWriter;
 

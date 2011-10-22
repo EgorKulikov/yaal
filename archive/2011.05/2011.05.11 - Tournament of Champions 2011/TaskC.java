@@ -1,14 +1,13 @@
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskC implements Solver {
 	private int timer;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int vertexCount = in.readInt();
 		int edgeCount = in.readInt();
 		int[] from = new int[edgeCount];

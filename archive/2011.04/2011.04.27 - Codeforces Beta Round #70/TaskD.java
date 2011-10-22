@@ -1,11 +1,10 @@
 import net.egork.geometry.GeometryUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		GeometryUtils.epsilon = 5e-8;
 		long diameter = in.readInt();
 		double sqrt3 = Math.sqrt(3);

@@ -1,14 +1,14 @@
 package approved.test1117144249;
 
 import net.egork.utils.checker.Checker;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 import java.util.Collections;
 import java.util.Collection;
 import net.egork.utils.test.Test;
 
 public class TaskDChecker extends Checker {
 	@Override
-	public String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
+	public String check(net.egork.utils.io.old.InputReader input, net.egork.utils.io.old.InputReader expectedOutput, InputReader actualOutput) {
 		return tokenCheck(expectedOutput, actualOutput);
 	}
 

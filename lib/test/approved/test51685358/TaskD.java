@@ -2,12 +2,11 @@ package approved.test51685358;
 
 import net.egork.collections.ArrayUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int infantryCount = in.readInt();
 		int cavalryCount = in.readInt();
 		int maxInfantry = in.readInt();

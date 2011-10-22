@@ -2,7 +2,7 @@ package approved.test402518479;
 
 import net.egork.geometry.*;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Locale;

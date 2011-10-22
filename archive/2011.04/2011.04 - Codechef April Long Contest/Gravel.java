@@ -1,13 +1,12 @@
 package April2011.CodechefAprilLongContest;
 
 import net.egork.collections.intervaltree.SumIntervalTree;
-import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
 
 public class Gravel implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int size = in.readInt();
 		int queryCount = in.readInt();
 		int startQuantity = in.readInt();

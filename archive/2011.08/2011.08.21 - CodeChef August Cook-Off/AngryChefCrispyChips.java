@@ -1,7 +1,6 @@
 import net.egork.collections.set.TreapSet;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -9,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AngryChefCrispyChips implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int size = in.readInt();
 		int threshold = in.readInt();
 		int[] villages = IOUtils.readIntArray(in, size);

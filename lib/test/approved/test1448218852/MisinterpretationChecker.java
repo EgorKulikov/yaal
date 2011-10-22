@@ -1,7 +1,7 @@
 package approved.test1448218852;
 
 import net.egork.utils.checker.Checker;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 import net.egork.utils.test.Test;
 
 import java.util.Collection;
@@ -9,7 +9,7 @@ import java.util.Collections;
 
 public class MisinterpretationChecker extends Checker {
 	@Override
-	public String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
+	public String check(net.egork.utils.io.old.InputReader input, net.egork.utils.io.old.InputReader expectedOutput, InputReader actualOutput) {
 		return tokenCheck(expectedOutput, actualOutput);
 	}
 

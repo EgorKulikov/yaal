@@ -3,7 +3,7 @@ package approved.test1638902021;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.ListIndependentSetSystem;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.io.PrintWriter;
 

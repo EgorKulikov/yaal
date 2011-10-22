@@ -2,7 +2,7 @@ package April2011.UVaHugeEasyContestII;
 
 import net.egork.collections.ArrayUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;

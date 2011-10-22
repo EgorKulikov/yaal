@@ -3,7 +3,7 @@ package approved.test1220406980;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.sequence.StringWrapper;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.io.PrintWriter;
 

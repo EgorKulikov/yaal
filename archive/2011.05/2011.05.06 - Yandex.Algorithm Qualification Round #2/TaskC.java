@@ -3,13 +3,12 @@ import net.egork.collections.sequence.SequenceUtils;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int cityCount = in.readInt();
 		int[] priority = IOUtils.readIntArray(in, cityCount);
 		int[] from = new int[cityCount - 1];

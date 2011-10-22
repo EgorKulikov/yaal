@@ -1,11 +1,10 @@
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class GardenSquares implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int rowCount = in.readInt();
 		int columnCount = in.readInt();
 		char[][] garden = IOUtils.readTable(in, rowCount, columnCount);

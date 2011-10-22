@@ -3,14 +3,13 @@ package April2011.CodeforcesBetaRound66;
 import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.numbers.IntegerUtils;
 import net.egork.collections.sequence.SequenceUtils;
-import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TaskE implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		int x = in.readInt();
 		int[] a = in.readIntArray(n);

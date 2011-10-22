@@ -1,12 +1,11 @@
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class Pairs implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		int X = in.readInt();
 		if (n == 0 && X == 0) {

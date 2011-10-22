@@ -1,7 +1,7 @@
 package April2011.EOlimpWeekly21;
 
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.io.PrintWriter;
 

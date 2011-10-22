@@ -7,7 +7,6 @@ import net.egork.collections.sequence.SequenceUtils;
 import net.egork.collections.sequence.WritableSequence;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.HashMap;
@@ -16,7 +15,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		int length = in.readInt();
 		final int minLength = in.readInt();

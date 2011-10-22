@@ -3,13 +3,12 @@ import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.io.IOUtils;
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.math.BigInteger;
 
 public class TreeProduct implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int height = in.readInt();
 		if (height == 0) {
 			Exit.exit(in, out);

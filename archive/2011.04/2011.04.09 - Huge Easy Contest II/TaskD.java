@@ -3,7 +3,7 @@ package April2011.UVaHugeEasyContestII;
 import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.sequence.Sequence;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.io.PrintWriter;
 import java.math.BigInteger;

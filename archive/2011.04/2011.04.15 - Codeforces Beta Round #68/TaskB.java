@@ -1,13 +1,12 @@
 package April2011.CodeforcesBetaRound68;
 
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int carCount = in.readInt();
 		int cheaterCar = in.readInt() - 1;
 		int controllerCar = in.readInt() - 1;

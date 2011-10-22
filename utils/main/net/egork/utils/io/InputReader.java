@@ -1,15 +1,39 @@
 package net.egork.utils.io;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
 import java.util.InputMismatchException;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public abstract class InputReader {
+public class InputReader {
 	private boolean finished = false;
 
-	public abstract int read();
+	private InputStream stream;
+	private byte[] buf = new byte[1024];
+	private int curChar, numChars;
+
+	public InputReader(InputStream stream) {
+		this.stream = stream;
+	}
+
+	public int read() {
+		if (numChars == -1)
+			throw new InputMismatchException();
+		if (curChar >= numChars) {
+			curChar = 0;
+			try {
+				numChars = stream.read(buf);
+			} catch (IOException e) {
+				throw new InputMismatchException();
+			}
+			if (numChars <= 0)
+				return -1;
+		}
+		return buf[curChar++];
+	}
 
 	public int readInt() {
 		int c = read();
@@ -150,5 +174,7 @@ public abstract class InputReader {
 		this.finished = finished;
 	}
 
-	public abstract void close();
+	public String next() {
+		return readString();
+	}
 }

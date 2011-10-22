@@ -1,13 +1,12 @@
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskC implements Solver {
 	private static final int MOD = 1000003;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int rowCount = in.readInt();
 		int columnCount = in.readInt();
 		char[][] table = IOUtils.readTable(in, rowCount, columnCount);

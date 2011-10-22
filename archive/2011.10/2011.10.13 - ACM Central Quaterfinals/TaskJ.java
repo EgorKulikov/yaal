@@ -1,12 +1,11 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.math.BigInteger;
 import java.util.Arrays;
 
 public class TaskJ implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		int length = in.readInt();
 		int transitionCount = in.readInt();

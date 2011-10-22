@@ -1,6 +1,5 @@
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -17,7 +16,7 @@ public class StrPack implements Solver {
 	private long[] freq;
 	private long[] delta = new long[30 * 101];
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		this.testNumber = testNumber;
 		int size = in.readInt();
 		maxLength = in.readInt();

@@ -1,5 +1,4 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,7 +7,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 
 public class TaskL implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		try {
 			InputStream firstStream = new FileInputStream(in.readString());
 			InputStream secondStream = new FileInputStream(in.readString());

@@ -2,7 +2,6 @@ package April2011.UVaHugeEasyContestII;
 
 import net.egork.numbers.MultiplicativeFunction;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
@@ -21,7 +20,7 @@ public class TaskJ implements Solver {
 		}
 	}
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		out.println(result[in.readInt()]);
 	}
 }

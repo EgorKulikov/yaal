@@ -2,7 +2,7 @@ package approved.test1479782644;
 
 import net.egork.datetime.Date;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.io.PrintWriter;
 

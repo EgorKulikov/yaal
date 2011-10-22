@@ -1,12 +1,11 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		Map<String, Integer> types = new HashMap<String, Integer>();
 		types.put("void", 0);
 		int queryCount = in.readInt();

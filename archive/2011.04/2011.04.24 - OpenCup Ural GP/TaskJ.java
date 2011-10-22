@@ -1,5 +1,4 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ import java.util.List;
 public class TaskJ implements Solver {
 	private static final double EPS = 1e-11;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int curveCount = in.readInt();
 		int pointCount = in.readInt();
 		Point[] p = new Point[curveCount];

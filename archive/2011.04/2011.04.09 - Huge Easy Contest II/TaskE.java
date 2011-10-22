@@ -3,12 +3,11 @@ package April2011.UVaHugeEasyContestII;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.stringinputreader.StringInputReader;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskE implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		String expression = in.readString().replace('(', ' ').replace(')', ' ').replace('+', ' ').replace('^', ' ');
 		in = new StringInputReader(expression);
 		String a = in.readString();

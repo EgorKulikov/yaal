@@ -1,12 +1,11 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
 public class InTouch implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		int eventCount = in.readInt();
 		int[] eventType = new int[eventCount];

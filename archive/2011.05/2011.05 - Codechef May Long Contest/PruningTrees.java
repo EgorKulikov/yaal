@@ -2,7 +2,6 @@ import net.egork.collections.ArrayUtils;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Collections;
@@ -15,7 +14,7 @@ public class PruningTrees implements Solver {
 	private int radius;
 	private int[][] result;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int vertexCount = in.readInt();
 		radius = in.readInt();
 		from = new int[vertexCount - 1];

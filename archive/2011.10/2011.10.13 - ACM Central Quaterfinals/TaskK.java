@@ -1,13 +1,12 @@
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TaskK implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int commandSize = in.readInt();
 		int count = in.readInt();
 		int[] commandType = new int[128];

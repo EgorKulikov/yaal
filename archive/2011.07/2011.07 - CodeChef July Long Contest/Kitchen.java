@@ -1,11 +1,10 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class Kitchen implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		if (testNumber != 1)
 			out.println();
 		int rowCount = in.readInt();

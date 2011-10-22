@@ -1,5 +1,4 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
@@ -11,7 +10,7 @@ import java.util.Queue;
 import java.util.TreeMap;
 
 public class TaskH implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int teamCount = in.readInt();
 		Map<String, List<Integer>> map = new HashMap<String, List<Integer>>() {
 			@Override

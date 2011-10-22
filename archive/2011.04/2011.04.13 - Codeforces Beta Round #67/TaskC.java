@@ -2,14 +2,13 @@ package April2011.CodeforcesBetaRound67;
 
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int a = in.readInt();
 		int b = in.readInt();
 		long g = IntegerUtils.gcd(a, b);

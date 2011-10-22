@@ -1,7 +1,6 @@
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -11,7 +10,7 @@ public class TaskC implements Solver {
 	private long[][] result;
 	private int[][] mark;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		long index = in.readLong() - 2001;
 		int restrictionCount = in.readInt();

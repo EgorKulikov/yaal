@@ -1,12 +1,11 @@
 package April2011.CodeforcesBetaRound68;
 
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int rowCount = in.readInt() - 1;
 		int columnCount = in.readInt() - 1;
 		boolean[] spotted = new boolean[columnCount + 1];

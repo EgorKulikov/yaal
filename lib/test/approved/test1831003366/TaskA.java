@@ -5,12 +5,11 @@ import net.egork.collections.filter.Filter;
 import net.egork.collections.sequence.StringWrapper;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskA implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int[] correctCount = {5, 7, 5};
 		for (int i = 0; i < 3; i++) {
 			String phrase = in.readLine();

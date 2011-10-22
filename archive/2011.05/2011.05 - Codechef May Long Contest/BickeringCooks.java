@@ -1,10 +1,9 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class BickeringCooks implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int[][][] input = readInput(in);
 		int[][] disruption = input[0];
 		int[][] collaboration = input[1];
@@ -90,7 +89,7 @@ public class BickeringCooks implements Solver {
 		out.println();
 	}
 
-	public static int[][][] readInput(InputReader in) {
+	public static int[][][] readInput(net.egork.utils.io.old.InputReader in) {
 		int cookCount = in.readInt();
 		int disruptivePairCount = in.readInt();
 		int collaborativePairCount = in.readInt();

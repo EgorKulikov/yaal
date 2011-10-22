@@ -1,6 +1,5 @@
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -8,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int theoremCount = in.readInt();
 		int taskCount = in.readInt();
 		int[] knowledge = IOUtils.readIntArray(in, theoremCount);

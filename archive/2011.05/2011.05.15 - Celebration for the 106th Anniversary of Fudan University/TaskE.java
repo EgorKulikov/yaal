@@ -1,5 +1,4 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
@@ -9,7 +8,7 @@ public class TaskE implements Solver {
 	private boolean[] serveDone = new boolean[100];
 	private double[] serveResult = new double[100];
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int first = in.readInt();
 		int second = in.readInt();
 		if (done[first][second]) {

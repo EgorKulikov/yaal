@@ -1,6 +1,5 @@
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -9,7 +8,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class WirelessNetwork implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int pointCount = in.readInt();
 		int computerCount = in.readInt();
 		int vertexCount = pointCount + computerCount + 2;
