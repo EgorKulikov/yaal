@@ -118,4 +118,36 @@ public class Date implements Comparable<Date> {
 	public int compareTo(Date o) {
 		return asInt() - o.asInt();
 	}
+
+	@Override
+	public String toString() {
+		return toString("DD.MM.YYYY");
+	}
+
+	public String toString(String pattern) {
+		int copyYear = year;
+		int copyMonth = month;
+		int copyDay = day;
+		StringBuilder result = new StringBuilder();
+		for (int i = pattern.length() - 1; i >= 0; i--) {
+			char character = pattern.charAt(i);
+			switch (character) {
+			case 'D': case 'd':
+				result.append(copyDay % 10);
+				copyDay /= 10;
+				break;
+			case 'M': case 'm':
+				result.append(copyMonth % 10);
+				copyMonth /= 10;
+				break;
+			case 'Y': case 'y':
+				result.append(copyYear % 10);
+				copyYear /= 10;
+				break;
+			default:
+				result.append(character);
+			}
+		}
+		return result.reverse().toString();
+	}
 }
