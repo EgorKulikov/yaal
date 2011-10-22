@@ -13,7 +13,8 @@ public class InputReader {
 
 	private InputStream stream;
 	private byte[] buf = new byte[1024];
-	private int curChar, numChars;
+	private int curChar;
+	private int numChars;
 
 	public InputReader(InputStream stream) {
 		this.stream = stream;
