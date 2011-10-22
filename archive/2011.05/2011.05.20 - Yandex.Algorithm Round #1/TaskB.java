@@ -1,11 +1,10 @@
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count1 = in.readInt();
 		int count2 = in.readInt();
 		int count3 = in.readInt();

@@ -5,7 +5,7 @@ import java.util.Collection;
 import net.egork.utils.Exit;
 import net.egork.utils.io.StreamInputReader;
 import java.io.*;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 import net.egork.utils.Solver;
 public class Main {
 	public static void main(String[] args) {

@@ -4,7 +4,6 @@ import net.egork.collections.ArrayUtils;
 import net.egork.collections.map.CPPMap;
 import net.egork.misc.Factory;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Comparator;
@@ -13,7 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		String name = in.readString();
 		Map<String, Integer> friends = new CPPMap<String, Integer>(new Factory<Integer>() {
 			public Integer create() {

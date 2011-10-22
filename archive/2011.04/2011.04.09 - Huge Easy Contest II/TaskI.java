@@ -1,14 +1,13 @@
 package April2011.UVaHugeEasyContestII;
 
 import net.egork.collections.CollectionUtils;
-import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
 import java.util.*;
 
 public class TaskI implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		Set<List<Integer>> dice = new HashSet<List<Integer>>();
 		for (int i = 0; i < 2; i++) {
 			int left = in.readCharacter() - '0';

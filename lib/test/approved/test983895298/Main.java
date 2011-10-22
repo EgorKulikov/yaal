@@ -5,7 +5,7 @@ import java.util.Collection;
 import net.egork.utils.Exit;
 import net.egork.utils.io.StreamInputReader;
 import java.io.*;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 import net.egork.utils.Solver;
 public class Main {
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Main {
 
 
 class MainChecker {
-	public static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
+	public static String check(net.egork.utils.io.old.InputReader input, InputReader expectedOutput, InputReader actualOutput) {
 		return new TaskAChecker().check(input, expectedOutput, actualOutput);
 	}
 

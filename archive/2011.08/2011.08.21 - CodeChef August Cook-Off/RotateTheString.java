@@ -1,11 +1,10 @@
 import net.egork.string.StringUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class RotateTheString implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		String s = in.readString();
 		int mouseMove = in.readInt();
 		int poMove = in.readInt();

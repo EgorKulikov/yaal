@@ -5,16 +5,16 @@ import java.util.Collection;
 import net.egork.utils.Exit;
 import net.egork.utils.io.StreamInputReader;
 import java.io.*;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 import net.egork.utils.Solver;
 public class Main {
 	public static void main(String[] args) {
-		InputReader in = new StreamInputReader(System.in);
+		net.egork.utils.io.old.InputReader in = new StreamInputReader(System.in);
 		PrintWriter out = new PrintWriter(System.out);
 		run(in, out);
 	}
 
-	public static void run(InputReader in, PrintWriter out) {
+	public static void run(net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		Solver solver = new TaskA();
 		solver.solve(1, in, out);
 		Exit.exit(in, out);
@@ -23,7 +23,7 @@ public class Main {
 
 
 class MainChecker {
-	public static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
+	public static String check(net.egork.utils.io.old.InputReader input, InputReader expectedOutput, net.egork.utils.io.old.InputReader actualOutput) {
 		return new TaskAChecker().check(input, expectedOutput, actualOutput);
 	}
 

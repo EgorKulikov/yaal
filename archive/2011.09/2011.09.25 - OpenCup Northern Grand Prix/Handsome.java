@@ -1,12 +1,11 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.math.BigInteger;
 import java.util.Arrays;
 
 public class Handsome implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int z = 30;
 		boolean[] prime = new boolean[1000];
 		int[] ps = new int[z];

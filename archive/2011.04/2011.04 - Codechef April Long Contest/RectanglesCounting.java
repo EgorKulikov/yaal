@@ -6,7 +6,6 @@ import net.egork.collections.Pair;
 import net.egork.misc.Factory;
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -14,7 +13,7 @@ import java.util.Comparator;
 import java.util.Map;
 
 public class RectanglesCounting implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		if (n == 0) {
 			Exit.exit(in, out);

@@ -1,5 +1,4 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
@@ -9,7 +8,7 @@ public class TaskC implements Solver {
 	private int[] answerSecondRegister = new int[6];
 	private int[] answerSecondCoefficient = new int[6];
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		int[] achieved = new int[6];
 		int[] firstRegister = new int[6];

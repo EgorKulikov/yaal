@@ -3,12 +3,11 @@ package approved.test1421529331;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int intersectionCount = in.readInt();
 		int roadCount = in.readInt();
 		int answer = 0;

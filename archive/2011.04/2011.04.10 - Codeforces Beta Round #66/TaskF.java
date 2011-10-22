@@ -2,14 +2,13 @@ package April2011.CodeforcesBetaRound66;
 
 import net.egork.geometry.GeometryUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskF implements Solver {
 	private double length;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		double startX = in.readDouble();
 		double startY = in.readDouble();
 		double finishX = in.readDouble();

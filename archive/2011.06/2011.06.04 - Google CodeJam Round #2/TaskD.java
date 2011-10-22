@@ -1,12 +1,11 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		System.err.println(testNumber);
 		int planetCount = in.readInt();
 		boolean[][] connected = new boolean[planetCount + 1][planetCount + 1];

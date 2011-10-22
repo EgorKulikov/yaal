@@ -1,13 +1,12 @@
 import net.egork.collections.Pair;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.*;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		in.readInt();
 		int toReplace = in.readInt();
 		char[] number = in.readString().toCharArray();

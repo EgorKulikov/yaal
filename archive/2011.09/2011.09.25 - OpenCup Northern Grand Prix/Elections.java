@@ -1,11 +1,10 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class Elections implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		int size = in.readInt();
 		int[] votes = new int[count];

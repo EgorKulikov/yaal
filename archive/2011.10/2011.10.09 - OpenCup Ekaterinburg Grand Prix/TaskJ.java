@@ -1,5 +1,4 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -7,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TaskJ implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		Map<String, Integer> id = new HashMap<String, Integer>();
 		String[][] followers = new String[count][];

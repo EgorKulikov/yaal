@@ -4,12 +4,11 @@ import net.egork.geometry.Circle;
 import net.egork.geometry.Point;
 import net.egork.geometry.Segment;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskI implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int baseCount = in.readInt();
 		int brickCount = in.readInt();
 		Circle[] bases = new Circle[baseCount];

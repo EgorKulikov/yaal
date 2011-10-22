@@ -1,6 +1,5 @@
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -24,7 +23,7 @@ public class SumDividesProduct implements Solver {
 		}
 	}
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		int[] start = new int[100000];
 		int[] end = new int[100000];

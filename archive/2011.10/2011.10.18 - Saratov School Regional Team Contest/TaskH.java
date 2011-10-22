@@ -6,7 +6,6 @@ import net.egork.graph.GraphAlgorithms;
 import net.egork.io.IOUtils;
 import net.egork.misc.Factory;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.HashSet;
@@ -14,7 +13,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class TaskH implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		String[] words = IOUtils.readStringArray(in, count);
 		Map<String, Set<Integer>> indices = new CPPMap<String, Set<Integer>>(new Factory<Set<Integer>>() {

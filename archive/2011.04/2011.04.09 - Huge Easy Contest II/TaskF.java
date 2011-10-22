@@ -1,12 +1,11 @@
 package April2011.UVaHugeEasyContestII;
 
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskF implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		char[] program = in.readString().toCharArray();
 		int[] memory = new int[100];
 		int pointer = 0;

@@ -5,7 +5,7 @@ import java.util.Collection;
 import net.egork.utils.Exit;
 import net.egork.utils.io.StreamInputReader;
 import java.io.*;
-import net.egork.utils.io.InputReader;
+
 import net.egork.utils.Solver;
 public class Main {
 	public static void main(String[] args) {
@@ -15,12 +15,12 @@ public class Main {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
-		InputReader in = new StreamInputReader(System.in);
+		net.egork.utils.io.old.InputReader in = new StreamInputReader(System.in);
 		PrintWriter out = new PrintWriter(System.out);
 		run(in, out);
 	}
 
-	public static void run(InputReader in, PrintWriter out) {
+	public static void run(net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		Solver solver = new TaskC();
 		int testCount = in.readInt();
 		for (int i = 1; i <= testCount; i++)
@@ -31,7 +31,8 @@ public class Main {
 
 
 class MainChecker {
-	public static String check(InputReader input, InputReader expectedOutput, InputReader actualOutput) {
+	public static String check(
+		net.egork.utils.io.old.InputReader input, net.egork.utils.io.old.InputReader expectedOutput, net.egork.utils.io.old.InputReader actualOutput) {
 		return new TaskCChecker().check(input, expectedOutput, actualOutput);
 	}
 

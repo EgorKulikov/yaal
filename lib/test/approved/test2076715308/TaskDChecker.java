@@ -1,7 +1,7 @@
 package approved.test2076715308;
 
 import net.egork.utils.checker.Checker;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 import net.egork.utils.test.Test;
 
 import java.util.Collection;

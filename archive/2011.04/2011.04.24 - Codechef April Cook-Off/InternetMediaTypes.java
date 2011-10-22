@@ -1,13 +1,12 @@
 import net.egork.collections.map.CPPMap;
 import net.egork.misc.Factory;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Map;
 
 public class InternetMediaTypes implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int typeCount = in.readInt();
 		int queryCount = in.readInt();
 		Map<String, String> types = new CPPMap<String, String>(new Factory<String>() {

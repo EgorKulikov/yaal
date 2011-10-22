@@ -5,12 +5,11 @@ import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.sequence.SequenceUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int[] x1 = new int[4];
 		int[] y1 = new int[4];
 		int[] x2 = new int[4];

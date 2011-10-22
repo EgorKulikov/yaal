@@ -1,10 +1,9 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskI implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		String[] digits = {"1110111", "0010010", "1011101", "1011011", "0111010", "1101011", "1101111", "1010010",
 			"1111111", "1111011"};
 		int[][] happiness = new int[10][10];

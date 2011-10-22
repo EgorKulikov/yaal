@@ -3,7 +3,6 @@ package approved.test1117144249;
 import net.egork.collections.Pair;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.math.BigInteger;
@@ -14,7 +13,7 @@ public class TaskD implements Solver {
 	private Map<Pair<Integer, Integer>, Integer> map = new HashMap<Pair<Integer, Integer>, Integer>();
 	private int[] primes;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int from = in.readInt();
 		int to = in.readInt();
 		int divisor = in.readInt();

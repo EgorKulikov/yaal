@@ -1,7 +1,7 @@
 package approved.test464552003;
 
 import net.egork.utils.checker.Checker;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 public class TaskDTreapChecker extends Checker {
 	@Override

@@ -4,14 +4,13 @@ import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.sequence.SequenceUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		System.err.println(testNumber);
 		int rowCount = in.readInt();
 		int columnCount = in.readInt();

@@ -1,14 +1,13 @@
 package April2011.CodeforcesBetaRound69;
 
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TaskA implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		Map<String, Integer> index = new HashMap<String, Integer>();
 		index.put("Anka", 0);
 		index.put("Chapay", 1);

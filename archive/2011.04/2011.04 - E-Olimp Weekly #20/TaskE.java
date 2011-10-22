@@ -3,13 +3,12 @@ package April2011.EOlimpWeekly20;
 import net.egork.numbers.Matrix;
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.InputMismatchException;
 
 public class TaskE implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		try {
 			int a = in.readInt();
 			int b = in.readInt();

@@ -1,5 +1,4 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 import net.egork.utils.io.stringinputreader.StringInputReader;
 
 import java.io.PrintWriter;
@@ -9,13 +8,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int commandCount = in.readInt();
 		Map<String, Widget> map = new TreeMap<String, Widget>();
 		for (int i = 0; i < commandCount; i++) {
 			String command = in.readLine();
 			command = command.replace('.', ' ').replace('(', ' ').replace(')', ' ').replace(',', ' ');
-			InputReader reader = new StringInputReader(command);
+			net.egork.utils.io.old.InputReader reader = new StringInputReader(command);
 			String first = reader.readString();
 			if ("Widget".equals(first)) {
 				String name = reader.readString();

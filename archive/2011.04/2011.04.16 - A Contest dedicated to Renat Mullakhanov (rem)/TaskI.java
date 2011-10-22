@@ -5,7 +5,6 @@ import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.HashMap;
@@ -18,7 +17,7 @@ public class TaskI implements Solver {
 		divisors = IntegerUtils.generateDivisorTable(500001);
 	}
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int numberCount = in.readInt();
 		int[] numbers = in.readIntArray(numberCount);
 		Map<Integer, Integer> index = new HashMap<Integer, Integer>();

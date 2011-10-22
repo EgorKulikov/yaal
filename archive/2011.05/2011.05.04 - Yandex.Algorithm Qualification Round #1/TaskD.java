@@ -4,7 +4,6 @@ import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.sequence.SequenceUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Comparator;
@@ -12,7 +11,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int photoCount = in.readInt();
 		int albumCount = in.readInt();
 		final int[] albums = IOUtils.readIntArray(in, albumCount);

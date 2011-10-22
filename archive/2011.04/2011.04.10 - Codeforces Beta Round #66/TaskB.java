@@ -1,7 +1,6 @@
 package April2011.CodeforcesBetaRound66;
 
 import net.egork.collections.ArrayUtils;
-import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
@@ -9,7 +8,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int racerCount = in.readInt();
 		final String[] name = new String[racerCount];
 		final int[] points = new int[racerCount];

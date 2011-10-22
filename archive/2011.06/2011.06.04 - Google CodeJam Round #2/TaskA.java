@@ -1,13 +1,12 @@
 import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Locale;
 
 public class TaskA implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		Locale.setDefault(Locale.US);
 		int length = in.readInt();
 		int speed = in.readInt();

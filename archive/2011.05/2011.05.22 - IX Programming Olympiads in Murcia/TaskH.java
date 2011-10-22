@@ -3,12 +3,11 @@ import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskH implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int size = in.readInt();
 		int[][] mesh = IOUtils.readIntTable(in, size, size);
 		boolean[][] result = new boolean[size][size];

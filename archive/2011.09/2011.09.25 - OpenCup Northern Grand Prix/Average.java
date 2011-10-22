@@ -1,5 +1,5 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
+import net.egork.utils.io.old.InputReader;
 
 import java.awt.Point;
 import java.io.PrintWriter;

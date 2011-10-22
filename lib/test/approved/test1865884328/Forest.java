@@ -8,7 +8,6 @@ import net.egork.geometry.GeometryUtils;
 import net.egork.geometry.Line;
 import net.egork.geometry.Point;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ public class Forest implements Solver {
 	private static final double B = 100500;
 	private Line scanLine;
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		GeometryUtils.epsilon = 1e-10;
 		int vertexCount = in.readInt();
 		int pointCount = in.readInt();

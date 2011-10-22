@@ -1,6 +1,5 @@
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
@@ -52,7 +51,7 @@ public class Crc implements Solver {
 		}
 	}
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		String s = in.readLine();
 		if (s.equals("0")) {
 			Exit.exit(in, out);

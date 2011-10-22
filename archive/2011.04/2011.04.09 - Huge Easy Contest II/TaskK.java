@@ -1,6 +1,5 @@
 package April2011.UVaHugeEasyContestII;
 
-import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
@@ -11,7 +10,7 @@ public class TaskK implements Solver {
 	private static final char[] elements = {'A', 'C', 'G', 'T'};
 
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int sequenceLength = in.readInt();
 		int maxMutations = in.readInt();
 		int initial = convert(in.readString());

@@ -3,12 +3,11 @@ package approved.test690958244;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int vertexCount = in.readInt();
 		int edgeCount = in.readInt();
 		if (vertexCount != edgeCount) {

@@ -1,13 +1,12 @@
 import net.egork.collections.Pair;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class SuperPlane implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int flightCount = in.readInt();
 		int[] departureCity = new int[flightCount];
 		final int[] departureTime = new int[flightCount];

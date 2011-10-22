@@ -1,11 +1,10 @@
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 
 public class TaskF implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		long result = 0;
 		long numerator = IntegerUtils.factorial(count);

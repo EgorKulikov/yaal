@@ -1,6 +1,5 @@
 package April2011.UVaHugeEasyContestII;
 
-import net.egork.utils.io.InputReader;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
@@ -26,7 +25,7 @@ public class TaskN implements Solver {
 		}
 	}
 
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int k = in.readInt();
 		long m = in.readLong();
 		out.println("Case " + testNumber + ": " + result[k].mod(BigInteger.valueOf(m)));

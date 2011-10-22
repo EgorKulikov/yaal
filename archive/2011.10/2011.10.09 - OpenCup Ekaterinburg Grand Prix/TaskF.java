@@ -1,5 +1,4 @@
 import net.egork.utils.Solver;
-import net.egork.utils.io.InputReader;
 
 import java.awt.Point;
 import java.io.PrintWriter;
@@ -9,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class TaskF implements Solver {
-	public void solve(int testNumber, InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		int[][] distances = new int[count][count];
 		for (int i = 0; i < count; i++) {
