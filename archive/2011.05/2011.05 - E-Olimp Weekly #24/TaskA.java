@@ -4,7 +4,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskA implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		double width = in.readDouble();
 		double height = in.readDouble();
 		if (width == 0 && height == 0) {

@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.math.BigInteger;
 
 public class TreeProduct implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int height = in.readInt();
 		if (height == 0) {
 			Exit.exit(in, out);

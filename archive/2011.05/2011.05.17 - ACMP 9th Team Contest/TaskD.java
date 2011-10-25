@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		int[] numbers = IOUtils.readIntArray(in, count);
 		Arrays.sort(numbers);

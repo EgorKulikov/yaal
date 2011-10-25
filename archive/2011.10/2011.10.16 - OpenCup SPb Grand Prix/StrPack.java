@@ -16,7 +16,7 @@ public class StrPack implements Solver {
 	private long[] freq;
 	private long[] delta = new long[30 * 101];
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		this.testNumber = testNumber;
 		int size = in.readInt();
 		maxLength = in.readInt();

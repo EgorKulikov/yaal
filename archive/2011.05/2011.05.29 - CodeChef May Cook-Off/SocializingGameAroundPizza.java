@@ -20,7 +20,7 @@ public class SocializingGameAroundPizza implements Solver {
 		}
 	}
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		if (result[count] == 0)
 			out.println("Bhima");

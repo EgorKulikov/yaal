@@ -2,8 +2,8 @@ package April2011.ZJU8thZhejiangProvincialCollegiateProgrammingContest;
 
 import net.egork.numbers.BooleanMatrix;
 import net.egork.utils.Solver;
-import net.egork.utils.io.old.InputReader;
-import net.egork.utils.io.stringinputreader.StringInputReader;
+import net.egork.utils.old.io.old.InputReader;
+import net.egork.utils.old.io.stringinputreader.StringInputReader;
 
 import java.io.PrintWriter;
 

@@ -7,7 +7,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskH implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int size = in.readInt();
 		int[][] mesh = IOUtils.readIntTable(in, size, size);
 		boolean[][] result = new boolean[size][size];

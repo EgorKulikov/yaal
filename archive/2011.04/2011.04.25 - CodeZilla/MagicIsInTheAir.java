@@ -5,7 +5,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class MagicIsInTheAir implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int cubeCount = in.readInt();
 		int minimalSameColor = in.readInt();
 		int[] colors = IOUtils.readIntArray(in, cubeCount);

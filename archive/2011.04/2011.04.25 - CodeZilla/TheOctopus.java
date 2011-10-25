@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TheOctopus implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int peopleCount = in.readInt();
 		int capacity = in.readInt();
 		if (peopleCount == 0 && capacity == 0) {

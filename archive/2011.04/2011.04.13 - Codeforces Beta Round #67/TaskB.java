@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		String name = in.readString();
 		Map<String, Integer> friends = new CPPMap<String, Integer>(new Factory<Integer>() {
 			public Integer create() {

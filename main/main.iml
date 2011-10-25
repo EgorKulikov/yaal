@@ -12,7 +12,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../chelper/tester.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../chelper/chelper.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

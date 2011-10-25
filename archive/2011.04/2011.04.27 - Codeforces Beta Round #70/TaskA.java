@@ -7,7 +7,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskA implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int[] correctCount = {5, 7, 5};
 		for (int i = 0; i < 3; i++) {
 			String phrase = in.readLine();

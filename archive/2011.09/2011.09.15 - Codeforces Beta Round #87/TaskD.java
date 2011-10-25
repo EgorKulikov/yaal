@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class TaskD implements Solver {
 	private static final long MOD = 1000003;
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		String formula = "+" + in.readString();
 		if (!Character.isDigit(formula.charAt(formula.length() - 1))) {
 			out.println(0);

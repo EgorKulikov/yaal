@@ -13,7 +13,7 @@ public class TaskA implements Solver {
 		primes = IntegerUtils.generatePrimes(100001);
 	}
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		long result = 1;
 		boolean found = false;
 		int n = in.readInt();

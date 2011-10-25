@@ -10,7 +10,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		System.err.println(testNumber);
 		int rowCount = in.readInt();
 		int columnCount = in.readInt();

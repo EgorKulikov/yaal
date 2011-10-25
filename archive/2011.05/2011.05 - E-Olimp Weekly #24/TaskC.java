@@ -4,7 +4,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		Point[] points = new Point[4];
 		for (int i = 0; i < 4; i++) {
 			double x = in.readDouble();

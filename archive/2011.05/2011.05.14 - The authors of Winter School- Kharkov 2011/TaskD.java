@@ -7,7 +7,7 @@ import java.math.BigInteger;
 import java.util.InputMismatchException;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		try {
 			String x = in.readString();
 			int a = x.length() == 1 ? 1 : Integer.parseInt(x.substring(0, x.length() - 1));

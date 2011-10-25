@@ -14,7 +14,7 @@ public class PruningTrees implements Solver {
 	private int radius;
 	private int[][] result;
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int vertexCount = in.readInt();
 		radius = in.readInt();
 		from = new int[vertexCount - 1];

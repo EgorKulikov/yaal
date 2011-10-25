@@ -4,7 +4,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class ISpyYou implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		while (true) {
 			int ch = in.read();
 			if (ch == -1)

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class Dual implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		List<Node> roots = new ArrayList<Node>();
 		Node[] v = new Node[n];

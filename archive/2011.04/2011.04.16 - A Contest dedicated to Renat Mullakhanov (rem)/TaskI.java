@@ -17,7 +17,7 @@ public class TaskI implements Solver {
 		divisors = IntegerUtils.generateDivisorTable(500001);
 	}
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int numberCount = in.readInt();
 		int[] numbers = in.readIntArray(numberCount);
 		Map<Integer, Integer> index = new HashMap<Integer, Integer>();

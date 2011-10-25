@@ -2,7 +2,7 @@ package April2011.EOlimpWeekly20;
 
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
-import net.egork.utils.io.old.InputReader;
+import net.egork.utils.old.io.old.InputReader;
 
 import java.io.PrintWriter;
 import java.util.InputMismatchException;

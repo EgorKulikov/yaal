@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int artistCount = in.readInt();
 		char[] result = new char[artistCount];
 		List<Integer> divisors = new ArrayList<Integer>();

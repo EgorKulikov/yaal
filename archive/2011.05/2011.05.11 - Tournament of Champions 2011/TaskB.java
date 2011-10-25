@@ -5,7 +5,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int cipherLength = in.readInt();
 		int[] firstPart = IOUtils.readIntArray(in, cipherLength);
 		int[] secondPart = IOUtils.readIntArray(in, cipherLength);

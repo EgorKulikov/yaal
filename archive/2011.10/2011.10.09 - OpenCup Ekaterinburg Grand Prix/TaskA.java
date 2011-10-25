@@ -18,7 +18,7 @@ public class TaskA implements Solver {
 		return ((2 * t) % MOD);
 	}
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		long n = in.readLong();
 		long t = two(n);
 		long a = t * t;

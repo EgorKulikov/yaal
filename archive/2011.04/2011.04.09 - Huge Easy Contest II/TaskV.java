@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class TaskV implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int vertexCount = in.readInt();
 		int edgeCount = in.readInt();
 		int vertex = in.readInt() - 1;

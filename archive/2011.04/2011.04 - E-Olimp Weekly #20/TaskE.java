@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.util.InputMismatchException;
 
 public class TaskE implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		try {
 			int a = in.readInt();
 			int b = in.readInt();

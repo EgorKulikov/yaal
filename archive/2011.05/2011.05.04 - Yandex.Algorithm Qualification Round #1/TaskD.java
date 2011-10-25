@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int photoCount = in.readInt();
 		int albumCount = in.readInt();
 		final int[] albums = IOUtils.readIntArray(in, albumCount);

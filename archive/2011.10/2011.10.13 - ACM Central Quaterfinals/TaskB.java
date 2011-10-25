@@ -3,7 +3,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		String s = in.readLine();
 		if (s.contains("<") || s.contains(">") || s.contains("'") || s.contains("\"")) {
 			out.println(0);

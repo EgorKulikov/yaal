@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Comparator;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int walrusCount = in.readInt();
 		final int[] age = IOUtils.readIntArray(in, walrusCount);
 		Integer[] order = ArrayUtils.order(walrusCount, new Comparator<Integer>() {

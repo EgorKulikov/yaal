@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int setCount = in.readInt();
 		int[][] containsIn = new int[201][setCount - 1];
 		int[][] setJoins = new int[setCount * (setCount - 1) / 2][];

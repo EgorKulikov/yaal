@@ -4,7 +4,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskE implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		int[] numbers = IOUtils.readIntArray(in, count);
 		boolean[] reachable = new boolean[200002];

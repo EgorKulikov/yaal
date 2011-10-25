@@ -2,6 +2,7 @@ package net.egork;
 
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
+
 import java.io.PrintWriter;
 
 public class GeneralizedArithmeticProgressionFreeSequence {

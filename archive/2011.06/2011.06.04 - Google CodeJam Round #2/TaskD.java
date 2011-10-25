@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		System.err.println(testNumber);
 		int planetCount = in.readInt();
 		boolean[][] connected = new boolean[planetCount + 1][planetCount + 1];

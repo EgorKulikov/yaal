@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		Map<String, Integer> types = new HashMap<String, Integer>();
 		types.put("void", 0);
 		int queryCount = in.readInt();

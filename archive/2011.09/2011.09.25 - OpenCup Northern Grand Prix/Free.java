@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Free implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		List<GoodString> list = new ArrayList<GoodString>();
 		list.add(new GoodString("", new boolean[0]));

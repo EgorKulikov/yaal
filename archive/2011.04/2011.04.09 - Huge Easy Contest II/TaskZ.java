@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TaskZ implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int exceptionalCount = in.readInt();
 		Map<Date, Boolean> exceptionalDates = new HashMap<Date, Boolean>();
 		for (int i = 0; i < exceptionalCount; i++) {

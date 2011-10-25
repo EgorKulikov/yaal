@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TaskB implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		char[] number = in.readString().toCharArray();
 		if (number.length % 2 == 1) {
 			char[] temp = new char[number.length + 1];

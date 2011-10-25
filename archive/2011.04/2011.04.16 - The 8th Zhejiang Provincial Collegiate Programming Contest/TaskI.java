@@ -8,7 +8,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskI implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int baseCount = in.readInt();
 		int brickCount = in.readInt();
 		Circle[] bases = new Circle[baseCount];
