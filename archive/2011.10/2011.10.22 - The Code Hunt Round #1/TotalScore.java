@@ -1,9 +1,5 @@
-import net.egork.graph.BidirectionalGraph;
-import net.egork.graph.Graph;
-import net.egork.graph.GraphAlgorithms;
-import net.egork.graph.WeightedFlowEdge;
-import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.InputReader;
+
 import java.io.PrintWriter;
 
 public class TotalScore {

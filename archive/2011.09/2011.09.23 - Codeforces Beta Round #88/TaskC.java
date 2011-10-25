@@ -4,7 +4,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		char[][] graph = IOUtils.readTable(in, count, count);
 		Node head = new Node(null, 0);

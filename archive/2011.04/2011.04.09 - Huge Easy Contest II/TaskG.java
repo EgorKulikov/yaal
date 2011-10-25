@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 public class TaskG implements Solver {
 	private static final int MOD = 1000007;
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int size = in.readInt();
 		char[][] field = in.readTable(size, size);
 		int[][] answer = new int[size][size];

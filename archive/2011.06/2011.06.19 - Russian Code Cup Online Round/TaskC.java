@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int red = in.readInt();
 		int black = in.readInt();
 		if (red == 1 && black == 2) {

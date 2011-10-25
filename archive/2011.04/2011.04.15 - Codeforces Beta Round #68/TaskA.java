@@ -3,7 +3,7 @@ package April2011.CodeforcesBetaRound68;
 import net.egork.collections.sequence.ArrayWrapper;
 import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.old.InputReader;
+import net.egork.utils.old.io.old.InputReader;
 
 import java.io.PrintWriter;
 

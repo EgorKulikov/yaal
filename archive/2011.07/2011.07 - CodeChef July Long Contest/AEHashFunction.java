@@ -11,7 +11,7 @@ public class AEHashFunction implements Solver {
 			go(i, 152);
 	}
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int aCount = in.readInt();
 		int eCount = in.readInt();
 		int value = in.readInt();

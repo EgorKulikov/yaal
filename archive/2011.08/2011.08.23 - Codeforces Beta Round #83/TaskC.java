@@ -10,7 +10,7 @@ public class TaskC implements Solver {
 	private long[][] result;
 	private int[][] mark;
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		long index = in.readLong() - 2001;
 		int restrictionCount = in.readInt();

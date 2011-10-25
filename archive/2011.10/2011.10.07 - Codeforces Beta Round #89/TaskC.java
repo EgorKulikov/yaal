@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.*;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		in.readInt();
 		int toReplace = in.readInt();
 		char[] number = in.readString().toCharArray();

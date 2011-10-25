@@ -4,7 +4,7 @@ import net.egork.collections.Pair;
 import net.egork.collections.intervaltree.SumIntervalTree;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.old.InputReader;
+import net.egork.utils.old.io.old.InputReader;
 
 import java.io.PrintWriter;
 import java.util.*;

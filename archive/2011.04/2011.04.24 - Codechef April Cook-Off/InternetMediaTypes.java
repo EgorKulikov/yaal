@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Map;
 
 public class InternetMediaTypes implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int typeCount = in.readInt();
 		int queryCount = in.readInt();
 		Map<String, String> types = new CPPMap<String, String>(new Factory<String>() {

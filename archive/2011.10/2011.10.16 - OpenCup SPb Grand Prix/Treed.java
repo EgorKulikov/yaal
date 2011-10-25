@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Treed implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		if (n == 0) {
 			Exit.exit(in, out);

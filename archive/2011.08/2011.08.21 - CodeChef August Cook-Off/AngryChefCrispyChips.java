@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AngryChefCrispyChips implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int size = in.readInt();
 		int threshold = in.readInt();
 		int[] villages = IOUtils.readIntArray(in, size);

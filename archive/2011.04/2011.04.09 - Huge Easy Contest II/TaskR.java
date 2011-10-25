@@ -11,7 +11,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskR implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		final int itemCount = in.readInt();
 		int drinkCount = in.readInt();
 		int cakeCount = in.readInt();

@@ -3,7 +3,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskA implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int length = in.readInt();
 		char[][] answer = new char[4][length];
 		for (int i = 0; i < length; i += 4) {

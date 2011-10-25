@@ -13,7 +13,7 @@ import java.util.Random;
 import java.util.SortedSet;
 
 public class TaskD implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int queries = in.readInt();
 		TreapSet<Integer> set = new TreapSet<Integer>();
 		for (int i = 0; i < queries; i++) {

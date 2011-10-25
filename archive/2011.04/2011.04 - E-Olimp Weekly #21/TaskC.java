@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int timeCount = in.readInt();
 		Time[] times = new Time[timeCount];
 		for (int i = 0; i < timeCount; i++) {

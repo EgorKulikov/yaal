@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Locale;
 
 public class TaskA implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		Locale.setDefault(Locale.US);
 		int length = in.readInt();
 		int speed = in.readInt();

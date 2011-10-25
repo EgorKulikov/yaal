@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TaskA implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		Map<String, Integer> index = new HashMap<String, Integer>();
 		index.put("Anka", 0);
 		index.put("Chapay", 1);

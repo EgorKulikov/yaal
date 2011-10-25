@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class TaskT implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int n = in.readInt();
 		List<Integer> result = new ArrayList<Integer>();
 		for (int i = 1; i * i < n; i++) {

@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 public class TaskC implements Solver {
 	private int timer;
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int vertexCount = in.readInt();
 		int edgeCount = in.readInt();
 		int[] from = new int[edgeCount];

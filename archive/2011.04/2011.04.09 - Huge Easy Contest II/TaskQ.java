@@ -11,7 +11,7 @@ public class TaskQ implements Solver {
 	private static final int[] DX = {0, 1, 1, 1};
 	private static final int[] DY = {1, -1, 0, 1};
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int moveCount = in.readInt();
 		int winningLine = in.readInt();
 		Set<Pair<Integer, Integer>> crosses = new HashSet<Pair<Integer, Integer>>();

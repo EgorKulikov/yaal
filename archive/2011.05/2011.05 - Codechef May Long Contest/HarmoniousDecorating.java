@@ -4,7 +4,7 @@ import net.egork.collections.sequence.SequenceUtils;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
-import net.egork.utils.io.old.InputReader;
+import net.egork.utils.old.io.old.InputReader;
 
 import java.io.PrintWriter;
 import java.util.*;

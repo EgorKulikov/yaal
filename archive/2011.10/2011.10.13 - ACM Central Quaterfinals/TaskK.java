@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TaskK implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int commandSize = in.readInt();
 		int count = in.readInt();
 		int[] commandType = new int[128];

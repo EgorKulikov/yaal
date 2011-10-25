@@ -5,7 +5,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TheGrandCookOff implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int chefCount = in.readInt();
 		int[] tokenCount = IOUtils.readIntArray(in, chefCount);
 		int sum = (int) ArrayUtils.sumArray(tokenCount);

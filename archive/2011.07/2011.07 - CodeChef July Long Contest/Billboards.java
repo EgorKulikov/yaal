@@ -7,7 +7,7 @@ public class Billboards implements Solver {
 	private static final int MOD = 1000000007;
 	private static final BigInteger BI_MOD = BigInteger.valueOf(MOD);
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int billboardCount = in.readInt();
 		int consecutive = in.readInt();
 		int mandatory = in.readInt();

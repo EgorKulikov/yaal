@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.*;
 
 public class TaskI implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		Set<List<Integer>> dice = new HashSet<List<Integer>>();
 		for (int i = 0; i < 2; i++) {
 			int left = in.readCharacter() - '0';

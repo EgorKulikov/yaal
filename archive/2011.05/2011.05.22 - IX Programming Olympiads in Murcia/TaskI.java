@@ -1,6 +1,6 @@
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
-import net.egork.utils.io.old.InputReader;
+import net.egork.utils.old.io.old.InputReader;
 
 import java.io.PrintWriter;
 

@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class TaskH implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		String[] words = IOUtils.readStringArray(in, count);
 		Map<String, Set<Integer>> indices = new CPPMap<String, Set<Integer>>(new Factory<Set<Integer>>() {

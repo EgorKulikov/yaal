@@ -5,7 +5,7 @@ import net.egork.utils.Solver;
 import java.io.PrintWriter;
 
 public class TaskC implements Solver {
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int rowCount = in.readInt() - 1;
 		int columnCount = in.readInt() - 1;
 		boolean[] spotted = new boolean[columnCount + 1];

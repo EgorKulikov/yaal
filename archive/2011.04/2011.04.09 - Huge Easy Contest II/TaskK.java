@@ -10,7 +10,7 @@ public class TaskK implements Solver {
 	private static final char[] elements = {'A', 'C', 'G', 'T'};
 
 
-	public void solve(int testNumber, net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int sequenceLength = in.readInt();
 		int maxMutations = in.readInt();
 		int initial = convert(in.readString());

@@ -9,7 +9,7 @@ public class Exit {
 	private Exit() {
 	}
 
-	public static void exit(net.egork.utils.io.old.InputReader in, PrintWriter out) {
+	public static void exit(net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		in.setFinished(true);
 		in.close();
 		out.close();
