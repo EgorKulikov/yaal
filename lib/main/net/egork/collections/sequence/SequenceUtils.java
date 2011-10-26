@@ -203,4 +203,22 @@ public class SequenceUtils {
 		}
 		return result;
 	}
+
+	public static <T> int findLast(Sequence<T> sequence, T value) {
+		int size = sequence.size();
+		for (int i = size - 1; i >= 0; i--) {
+			if (MiscUtils.equals(sequence.get(i), value))
+				return i;
+		}
+		return -1;
+	}
+
+	public static <T> int findLast(Sequence<T> sequence, Filter<T> filter) {
+		int size = sequence.size();
+		for (int i = size - 1; i >= 0; i--) {
+			if (filter.accept(sequence.get(i)))
+				return i;
+		}
+		return -1;
+	}
 }
