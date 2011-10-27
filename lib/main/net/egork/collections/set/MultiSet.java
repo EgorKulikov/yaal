@@ -45,6 +45,16 @@ public class MultiSet<K> implements Iterable<K> {
 		return value;
 	}
 
+	public int add(K key, int count) {
+		Integer value = map.get(key);
+		if (value == null)
+			value = 0;
+		value += count;
+		size += count;
+		map.put(key, value);
+		return value;
+	}
+
 	public int remove(K key) {
 		Integer value = map.get(key);
 		if (value == null)
@@ -96,5 +106,9 @@ public class MultiSet<K> implements Iterable<K> {
 
 	public Iterator<K> iterator() {
 		return map.keySet().iterator();
+	}
+
+	public Map<K, Integer> getUnderlying() {
+		return map;
 	}
 }

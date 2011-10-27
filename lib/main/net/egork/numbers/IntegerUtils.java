@@ -237,4 +237,22 @@ public class IntegerUtils {
 		}
 		return result;
 	}
+
+	public static long[] generateHappy(int digits) {
+		long[] happy = new long[(1 << (digits + 1)) - 2];
+		happy[0] = 4;
+		happy[1] = 7;
+		int first = 0;
+		int last = 2;
+		for (int i = 2; i <= digits; i++) {
+			for (int j = 0; j < last - first; j++) {
+				happy[last + 2 * j] = 10 * happy[first + j] + 4;
+				happy[last + 2 * j + 1] = 10 * happy[first + j] + 7;
+			}
+			int next = last + 2 * (last - first);
+			first = last;
+			last = next;
+		}
+		return happy;
+	}
 }
