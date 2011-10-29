@@ -53,4 +53,24 @@ public class Rational implements Comparable<Rational> {
 		return new Rational(numerator * other.denominator - denominator * other.numerator,
 			denominator * other.denominator);
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		Rational rational = (Rational) o;
+
+		if (denominator != rational.denominator) return false;
+		if (numerator != rational.numerator) return false;
+
+		return true;
+	}
+
+	@Override
+	public int hashCode() {
+		int result = (int) (numerator ^ (numerator >>> 32));
+		result = 31 * result + (int) (denominator ^ (denominator >>> 32));
+		return result;
+	}
 }
