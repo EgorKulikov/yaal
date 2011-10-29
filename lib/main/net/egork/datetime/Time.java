@@ -111,4 +111,31 @@ public class Time implements Comparable<Time> {
 	public int compareTo(Time o) {
 		return totalSeconds() - o.totalSeconds();
 	}
+
+	public Time advance(int seconds) {
+		int total = totalSeconds() + seconds;
+		return new Time(total / (60 * 60), total / 60 % 60, total % 60);
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		Time time = (Time) o;
+
+		if (hours != time.hours) return false;
+		if (minutes != time.minutes) return false;
+		if (seconds != time.seconds) return false;
+
+		return true;
+	}
+
+	@Override
+	public int hashCode() {
+		int result = hours;
+		result = 31 * result + minutes;
+		result = 31 * result + seconds;
+		return result;
+	}
 }
