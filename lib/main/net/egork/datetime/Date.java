@@ -7,9 +7,9 @@ public class Date implements Comparable<Date> {
 	private static final int[] DAYS_IN_MONTH = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	public static final String[] WEEKDAYS = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
-	private final int year;
-	private final int month;
-	private final int day;
+	public final int year;
+	public final int month;
+	public final int day;
 	private int weekday;
 
 	public Date(int year, int month, int day) {
@@ -17,18 +17,6 @@ public class Date implements Comparable<Date> {
 		this.month = month;
 		this.day = day;
 		weekday = -1;
-	}
-
-	public int getYear() {
-		return year;
-	}
-
-	public int getMonth() {
-		return month;
-	}
-
-	public int getDay() {
-		return day;
 	}
 
 	public int getWeekday() {
@@ -53,22 +41,24 @@ public class Date implements Comparable<Date> {
 		return day;
 	}
 
+	public boolean isValid() {
+		return !(month > 12 || month < 1) && !(day > DAYS_IN_MONTH[month] &&
+			(day != 29 || month != 2 || !isLeapYear(year))) && day >= 1;
+	}
+
 	public Date next() {
 		int year = this.year;
 		int month = this.month;
 		int day = this.day;
 		day++;
-		if (day > DAYS_IN_MONTH[month] && (day != 29 || month != 2 || !isLeapYear(year))) {
-			day = 1;
-			month++;
-		}
-		if (month > 12) {
-			month = 1;
-			year++;
-		}
-		Date date = new Date(year, month, day);
-		date.weekday = (weekday + 1) % 7;
-		return date;
+		Date next = new Date(day, month, year);
+		if (!next.isValid())
+			next = new Date(1, month + 1, year);
+		if (!next.isValid())
+			next = new Date(1, 1, year + 1);
+		if (weekday != -1)
+			next.weekday = (weekday + 1) % 7;
+		return next;
 	}
 
 	@Override
