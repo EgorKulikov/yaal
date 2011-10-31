@@ -73,4 +73,8 @@ public class Rational implements Comparable<Rational> {
 		result = 31 * result + (int) (denominator ^ (denominator >>> 32));
 		return result;
 	}
+
+	public Rational divide(long number) {
+		return new Rational(numerator, denominator * number);
+	}
 }
