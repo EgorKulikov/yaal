@@ -1,7 +1,7 @@
 package April2011.CodeforcesBetaRound66;
 
 import net.egork.collections.ArrayUtils;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.collections.CollectionUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
@@ -41,7 +41,7 @@ public class TaskC implements Solver {
 		}
 		int answer = Integer.MIN_VALUE;
 		for (int i = 0; i <= maxAlterations; i++)
-			answer = Math.max(answer, CollectionUtils.maxElement(ArrayWrapper.wrap(result[name.length - 1][i])));
+			answer = Math.max(answer, CollectionUtils.maxElement(Array.wrap(result[name.length - 1][i])));
 		out.println(answer);
 	}
 }

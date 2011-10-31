@@ -1,5 +1,4 @@
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
@@ -14,7 +13,7 @@ public class TaskB implements Solver {
 		int[] hdd = new int[count];
 		int[] cost = new int[count];
 		IOUtils.readIntArrays(in, speed, ram, hdd, cost);
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(cost));
+		Integer[] order = SequenceUtils.order(Array.wrap(cost));
 		for (int i : order) {
 			boolean old = false;
 			for (int j = 0; j < count && !old; j++) {

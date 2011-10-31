@@ -1,8 +1,7 @@
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
 import net.egork.collections.filter.Filter;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 
@@ -23,10 +22,10 @@ public class TaskB implements Solver {
 					return (finalI >> value.second & 1) != 0;
 				}
 			};
-			int maxX1 = CollectionUtils.maxElement(SequenceUtils.filter(ArrayWrapper.wrap(x1), filter));
-			int minX2 = CollectionUtils.minElement(SequenceUtils.filter(ArrayWrapper.wrap(x2), filter));
-			int maxY1 = CollectionUtils.maxElement(SequenceUtils.filter(ArrayWrapper.wrap(y1), filter));
-			int minY2 = CollectionUtils.minElement(SequenceUtils.filter(ArrayWrapper.wrap(y2), filter));
+			int maxX1 = CollectionUtils.maxElement(SequenceUtils.filter(Array.wrap(x1), filter));
+			int minX2 = CollectionUtils.minElement(SequenceUtils.filter(Array.wrap(x2), filter));
+			int maxY1 = CollectionUtils.maxElement(SequenceUtils.filter(Array.wrap(y1), filter));
+			int minY2 = CollectionUtils.minElement(SequenceUtils.filter(Array.wrap(y2), filter));
 			int square = Math.max(minX2 - maxX1, 0) * Math.max(minY2 - maxY1, 0);
 			if (Integer.bitCount(i) % 2 == 1)
 				result += square;

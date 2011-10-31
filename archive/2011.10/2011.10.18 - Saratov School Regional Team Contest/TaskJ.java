@@ -1,6 +1,5 @@
 import net.egork.collections.Pair;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
@@ -25,7 +24,7 @@ public class TaskJ implements Solver {
 			x[i + 2 * count] = x[i];
 			y[i + 2 * count] = -y[i];
 		}
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(x));
+		Integer[] order = SequenceUtils.order(Array.wrap(x));
 		Pair<Integer, Integer> vectors = minDistance(order, x, y, 0, 3 * count).second;
 		out.println((vectors.first % count + 1) + " " + (vectors.first / count + 1) + " " + (vectors.second % count + 1)
 			+ " " + (4 - vectors.second / count));

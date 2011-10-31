@@ -1,6 +1,5 @@
 import net.egork.collections.ArrayUtils;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
@@ -58,7 +57,7 @@ public class TaskC implements Solver {
 		int count = -1;
 		for (int i = 0, longsLength = longs.length; i < longsLength; i++) {
 			long[] row = longs[i];
-			int index = SequenceUtils.maxIndex(ArrayWrapper.wrap(row));
+			int index = SequenceUtils.maxIndex(Array.wrap(row));
 			if (row[index] > result) {
 				result = row[index];
 				lastStudy = i;

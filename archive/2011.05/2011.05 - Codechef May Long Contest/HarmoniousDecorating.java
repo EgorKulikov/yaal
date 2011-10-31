@@ -1,6 +1,5 @@
 import net.egork.collections.Pair;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
@@ -38,7 +37,7 @@ public class HarmoniousDecorating implements Solver {
 		Set<Pair<Integer, Integer>> processed = new HashSet<Pair<Integer, Integer>>();
 		List<Set<Integer>> faces = new ArrayList<Set<Integer>>();
 		int outerIndex = -1;
-		int minIndex = SequenceUtils.minIndex(ArrayWrapper.wrap(vertices));
+		int minIndex = SequenceUtils.minIndex(Array.wrap(vertices));
 		for (int i = 0; i < edgeCount; i++) {
 			for (int j = 0; j < 2; j++) {
 				int currentVertex = j == 0 ? from[i] : to[i];

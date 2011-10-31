@@ -2,8 +2,7 @@ package net.egork;
 
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.filter.Filter;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 
@@ -12,7 +11,7 @@ import java.io.PrintWriter;
 public class TaskA {
 	public void solve(int testNumber, InputReader in, PrintWriter out) {
 		int[] weights = IOUtils.readIntArray(in, 3);
-		if (SequenceUtils.find(ArrayWrapper.wrap(weights), new Filter<Integer>() {
+		if (SequenceUtils.find(Array.wrap(weights), new Filter<Integer>() {
 			public boolean accept(Integer value) {
 				return value < 94 || value > 727;
 			}
@@ -21,6 +20,6 @@ public class TaskA {
 			out.println("Error");
 			return;
 		}
-		out.println(CollectionUtils.maxElement(ArrayWrapper.wrap(weights)));
+		out.println(CollectionUtils.maxElement(Array.wrap(weights)));
 	}
 }

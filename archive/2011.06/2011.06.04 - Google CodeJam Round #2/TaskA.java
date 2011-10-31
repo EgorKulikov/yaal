@@ -1,5 +1,4 @@
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
@@ -24,7 +23,7 @@ public class TaskA implements Solver {
 			walkwayLengths[walkwayCount] -= walkwayLengths[i];
 			walkwaySpeeds[i] = in.readInt() + speed;
 		}
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(walkwaySpeeds));
+		Integer[] order = SequenceUtils.order(Array.wrap(walkwaySpeeds));
 		double answer = 0;
 		for (int i : order) {
 			double currentRunTime = Math.min(runTime, (double)walkwayLengths[i] / (walkwaySpeeds[i] + runSpeed));

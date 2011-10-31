@@ -1,5 +1,5 @@
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
@@ -41,7 +41,7 @@ public class TaskH implements Solver {
 		}
 		int answer = 0;
 		for (boolean[] row : result)
-			answer += CollectionUtils.count(ArrayWrapper.wrap(row), false);
+			answer += CollectionUtils.count(Array.wrap(row), false);
 		out.println(answer);
 
 	}

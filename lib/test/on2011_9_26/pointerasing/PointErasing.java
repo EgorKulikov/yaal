@@ -1,22 +1,21 @@
 package on2011_9_26.pointerasing;
 
 
-
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
-import net.egork.collections.sequence.WritableSequence;
+import net.egork.collections.sequence.Array;
+import net.egork.collections.sequence.ListUtils;
 
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class PointErasing {
 	public int[] getOutcomes(int[] y) {
-		WritableSequence<Integer> wrappedY = ArrayWrapper.wrap(y);
+		List<Integer> wrappedY = Array.wrap(y);
 		int min = CollectionUtils.minElement(wrappedY);
 		int max = CollectionUtils.maxElement(wrappedY);
-		int first = Math.min(SequenceUtils.find(wrappedY, min), SequenceUtils.find(wrappedY, max));
-		int last = Math.max(SequenceUtils.findLast(wrappedY, min), SequenceUtils.findLast(wrappedY, max));
+		int first = Math.min(ListUtils.find(wrappedY, min), ListUtils.find(wrappedY, max));
+		int last = Math.max(ListUtils.findLast(wrappedY, min), ListUtils.findLast(wrappedY, max));
 		int minAnswer = CollectionUtils.count(wrappedY, min);
 		if (min != max)
 			minAnswer += CollectionUtils.count(wrappedY, max);
@@ -62,7 +61,7 @@ public class PointErasing {
 				}
 			}
 		}
-		int size = CollectionUtils.count(ArrayWrapper.wrap(canBe[upTo - 1]), true);
+		int size = CollectionUtils.count(Array.wrap(canBe[upTo - 1]), true);
 		int[] result = new int[size];
 		int index = 0;
 		for (int i = 0; i < upTo; i++) {

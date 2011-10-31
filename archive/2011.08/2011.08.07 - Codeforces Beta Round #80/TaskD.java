@@ -1,5 +1,4 @@
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
@@ -14,7 +13,7 @@ public class TaskD implements Solver {
 		int[] a = new int[queryCount];
 		int[] b = new int[queryCount];
 		IOUtils.readIntArrays(in, a, b);
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(b));
+		Integer[] order = SequenceUtils.order(Array.wrap(b));
 		int lastB = 0;
 		long[] temp = new long[count];
 		long[] answer = new long[queryCount];

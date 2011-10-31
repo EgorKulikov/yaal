@@ -1,9 +1,7 @@
 package on2011_9_29.taskb;
 
 
-
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
@@ -11,6 +9,7 @@ import net.egork.utils.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 
 public class TaskB {
@@ -27,7 +26,7 @@ public class TaskB {
 		MiscUtils.decreaseByOne(from, to);
 		int[][] graph = GraphUtils.buildOrientedGraph(airportCount, from, to);
 		for (int i = 0; i < airportCount; i++) {
-			SequenceUtils.sort(ArrayWrapper.wrap(graph[i]), new Comparator<Integer>() {
+			Collections.sort(Array.wrap(graph[i]), new Comparator<Integer>() {
 				public int compare(Integer o1, Integer o2) {
 					return departs[o1] - departs[o2];
 				}

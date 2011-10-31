@@ -1,7 +1,6 @@
 package April2011.UVaHugeEasyContestII;
 
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.Sequence;
+import net.egork.collections.sequence.Array;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
 
@@ -10,7 +9,7 @@ import java.math.BigInteger;
 
 public class TaskD implements Solver {
 	public void solve(int testNumber, InputReader in, PrintWriter out) {
-		out.println("Case " + testNumber + ": " + calculate(ArrayWrapper.wrap(in.readLine().split(" "))).toString(2));
+		out.println("Case " + testNumber + ": " + calculate(Array.wrap(in.readLine().split(" "))).toString(2));
 	}
 
 	private BigInteger calculate(Sequence<String> expression) {

@@ -1,5 +1,5 @@
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 
 public class FiveHundredEleven {
 	public String theWinner(int[] cards) {
@@ -22,7 +22,7 @@ public class FiveHundredEleven {
 				}
 			}
 		}
-		int result = go(511, CollectionUtils.count(ArrayWrapper.wrap(cards), 0), winner, cards, newUselessCount);
+		int result = go(511, CollectionUtils.count(Array.wrap(cards), 0), winner, cards, newUselessCount);
 		if (result == 1)
 			return first;
 		else
