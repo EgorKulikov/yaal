@@ -1,5 +1,4 @@
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
@@ -56,7 +55,7 @@ public class TaskF implements Solver {
 		int[] order = new int[size * 2];
 		for (int i = 0; i < order.length; i++)
 			order[i] = i;
-		SequenceUtils.sort(ArrayWrapper.wrap(order), new Comparator<Integer>() {
+		SequenceUtils.sort(Array.wrap(order), new Comparator<Integer>() {
 			public int compare(Integer o1, Integer o2) {
 				int y1 = o1 >= size ? endY[o1 - size] : startY[o1];
 				int y2 = o2 >= size ? endY[o2 - size] : startY[o2];

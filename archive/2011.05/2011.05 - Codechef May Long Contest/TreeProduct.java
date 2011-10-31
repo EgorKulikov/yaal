@@ -1,5 +1,5 @@
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Exit;
 import net.egork.utils.Solver;
@@ -19,7 +19,7 @@ public class TreeProduct implements Solver {
 		result[0] = BigInteger.valueOf(numbers[0]);
 		for (int i = 1; i < (1 << height) - 1; i++)
 			result[i] = result[(i - 1) / 2].multiply(BigInteger.valueOf(numbers[i]));
-		out.println(CollectionUtils.maxElement(ArrayWrapper.wrap(result)).mod(BigInteger.valueOf(1000000007)));
+		out.println(CollectionUtils.maxElement(Array.wrap(result)).mod(BigInteger.valueOf(1000000007)));
 	}
 }
 

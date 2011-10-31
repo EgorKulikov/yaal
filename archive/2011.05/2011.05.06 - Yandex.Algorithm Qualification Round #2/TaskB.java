@@ -1,4 +1,4 @@
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 
@@ -21,7 +21,7 @@ public class TaskB implements Solver {
 		if (setCount == 2) {
 			out.println(1 + " " + setJoins[0][0]);
 			out.print((setJoins[0].length - 1) + " ");
-			IOUtils.printCollection(ArrayWrapper.wrap(setJoins[0]).subSequence(1), out);
+			IOUtils.printCollection(Array.wrap(setJoins[0]).subSequence(1), out);
 			return;
 		}
 		boolean[] accounted = new boolean[201];

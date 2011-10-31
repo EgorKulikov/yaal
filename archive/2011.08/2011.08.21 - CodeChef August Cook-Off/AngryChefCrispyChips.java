@@ -54,7 +54,7 @@ public class AngryChefCrispyChips implements Solver {
 			toProcess[i] = new int[count[i]];
 		for (int i = 0; i < queryCount; i++)
 			toProcess[from[i]][--count[from[i]]] = i;
-//		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(from));
+//		Integer[] order = ListUtils.order(Array.wrap(from));
 		int[] answer = new int[queryCount];
 		for (int i = 0; i < size; i++) {
 			for (int j : toProcess[i])

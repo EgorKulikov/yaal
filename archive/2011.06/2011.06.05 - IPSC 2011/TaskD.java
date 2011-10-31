@@ -1,7 +1,6 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.Pair;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.Solver;
 
@@ -167,7 +166,7 @@ public class TaskD implements Solver {
 			int nextColumn = column + MiscUtils.DY4[i];
 			dist[i] = Math.abs(nextRow - finishRow) + Math.abs(nextColumn - finishColumn);
 		}
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(dist));
+		Integer[] order = SequenceUtils.order(Array.wrap(dist));
 		for (int i : order) {
 			int nextRow = row + MiscUtils.DX4[i];
 			int nextColumn = column + MiscUtils.DY4[i];

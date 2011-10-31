@@ -1,8 +1,7 @@
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
 import net.egork.collections.filter.Filter;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
@@ -16,8 +15,8 @@ public class TaskG implements Solver {
 			pages[i] = in.readString();
 			rank[i] = in.readInt();
 		}
-		final int maxRank = CollectionUtils.maxElement(ArrayWrapper.wrap(rank));
-		List<String> answer = SequenceUtils.filter(ArrayWrapper.wrap(pages), new Filter<Pair<String, Integer>>() {
+		final int maxRank = CollectionUtils.maxElement(Array.wrap(rank));
+		List<String> answer = SequenceUtils.filter(Array.wrap(pages), new Filter<Pair<String, Integer>>() {
 			public boolean accept(Pair<String, Integer> value) {
 				return rank[value.second] == maxRank;
 			}

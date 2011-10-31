@@ -1,6 +1,6 @@
 package April2011.ZJU8thZhejiangProvincialCollegiateProgrammingContest;
 
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.collections.CollectionUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
@@ -112,7 +112,7 @@ public class TaskG implements Solver {
 			out.print("Infinity ");
 		else
 			out.printf("%.3f ", expectation[all]);
-		double maximalProbability = CollectionUtils.maxElement(ArrayWrapper.wrap(lose[all]));
+		double maximalProbability = CollectionUtils.maxElement(Array.wrap(lose[all]));
 		out.printf("%.3f", maximalProbability * 100);
 		out.println("%");
 		List<String> losers = new ArrayList<String>();

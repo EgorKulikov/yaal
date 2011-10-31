@@ -1,6 +1,5 @@
 import net.egork.collections.filter.Filter;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
 
@@ -12,7 +11,7 @@ public class TaskE implements Solver {
 		int[] demons = new int[positionCount + 2];
 		for (int i = 0; i < positionCount; i++)
 			demons[i + 2] = in.readInt();
-		int leftmost = SequenceUtils.find(ArrayWrapper.wrap(demons), new Filter<Integer>() {
+		int leftmost = SequenceUtils.find(Array.wrap(demons), new Filter<Integer>() {
 			public boolean accept(Integer value) {
 				return value != 0;
 			}

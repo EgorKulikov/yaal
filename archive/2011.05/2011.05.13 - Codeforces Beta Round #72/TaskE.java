@@ -1,6 +1,6 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
 
@@ -41,7 +41,7 @@ public class TaskE implements Solver {
 				delta[k][suffix] = Math.min(delta[k][suffix], bestValue);
 			}
 		}
-		totalLength += Math.min(0, CollectionUtils.minElement(ArrayWrapper.wrap(delta[length])));
+		totalLength += Math.min(0, CollectionUtils.minElement(Array.wrap(delta[length])));
 		out.println(totalLength);
 	}
 }

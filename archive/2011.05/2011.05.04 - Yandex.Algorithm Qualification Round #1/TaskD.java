@@ -1,7 +1,6 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 
@@ -23,13 +22,13 @@ public class TaskD implements Solver {
 			out.println(-1);
 			return;
 		}
-		int maxPhoto = (int) (ArrayUtils.sumArray(albums) - CollectionUtils.maxElement(ArrayWrapper.wrap(albums)));
+		int maxPhoto = (int) (ArrayUtils.sumArray(albums) - CollectionUtils.maxElement(Array.wrap(albums)));
 		if (maxPhoto * 2 < photoCount) {
 			out.println(-1);
 			return;
 		}
 		int[] result = new int[photoCount];
-		final int maxIndex = SequenceUtils.maxIndex(ArrayWrapper.wrap(albums));
+		final int maxIndex = SequenceUtils.maxIndex(Array.wrap(albums));
 		result[0] = maxIndex + 1;
 		albums[maxIndex]--;
 		Queue<Integer> queue = new PriorityQueue<Integer>(albumCount, new Comparator<Integer>() {

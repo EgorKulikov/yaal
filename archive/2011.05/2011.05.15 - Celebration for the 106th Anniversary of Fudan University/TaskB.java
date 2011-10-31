@@ -1,8 +1,7 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.function.Function;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 
@@ -13,8 +12,7 @@ public class TaskB implements Solver {
 	public void solve(int testNumber, net.egork.utils.old.io.old.InputReader in, PrintWriter out) {
 		int size = in.readInt();
 		int[] order = IOUtils.readIntArray(in, size);
-		SequenceUtils.transform(ArrayWrapper.wrap(order), new Function<Integer, Integer>() {
-			public Integer value(Integer argument) {
+		SequenceUtils.transform(Array.wrap(order), new Function<Integer, Integer>() {ArrayWrapperublic Integer value(Integer argument) {
 				return argument - 1;
 			}
 		});
@@ -45,8 +43,8 @@ public class TaskB implements Solver {
 				}
 			}
 		}
-		int maxLevel = CollectionUtils.maxElement(ArrayWrapper.wrap(level));
-		char[][] answer = new char[2 * maxLevel + 1][size];
+		int maxLevel = CollectionUtils.maxElement(Array.wrap(level));
+		char[][] answer = new char[2 * ArrayWrappervel + 1][size];
 		ArrayUtils.fill(answer, ' ');
 		for (int i = 0; i < size; i++) {
 			int row = level[i] * 2;

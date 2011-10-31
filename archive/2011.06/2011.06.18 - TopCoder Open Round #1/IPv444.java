@@ -1,6 +1,5 @@
 import net.egork.collections.ReverseComparator;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 
 import java.util.Arrays;
 
@@ -56,7 +55,7 @@ public class IPv444 {
 				}
 			}
 		}
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(price), new ReverseComparator<Integer>());
+		Integer[] order = SequenceUtils.order(Array.wrap(price), new ReverseComparator<Integer>());
 		long answer = 0;
 		for (int i : order) {
 			long current = 0;

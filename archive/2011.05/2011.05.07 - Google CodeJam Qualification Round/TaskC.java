@@ -1,6 +1,6 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 
@@ -17,7 +17,7 @@ public class TaskC implements Solver {
 		if (patrickValue != 0)
 			out.println("NO");
 		else
-			out.println(ArrayUtils.sumArray(candies) - CollectionUtils.minElement(ArrayWrapper.wrap(candies)));
+			out.println(ArrayUtils.sumArray(candies) - CollectionUtils.minElement(Array.wrap(candies)));
 	}
 }
 

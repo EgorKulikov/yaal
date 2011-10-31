@@ -1,16 +1,14 @@
 package net.egork;
 
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
-import net.egork.collections.sequence.WritableSequence;
+import net.egork.collections.sequence.Array;
 
 import java.util.Set;
 import java.util.TreeSet;
 
 public class PointErasing {
 	public int[] getOutcomes(int[] y) {
-		WritableSequence<Integer> wrappedY = ArrayWrapper.wrap(y);
+		WritableSequence<Integer> wrappedY = Array.wrap(y);
 		int min = CollectionUtils.minElement(wrappedY);
 		int max = CollectionUtils.maxElement(wrappedY);
 		int first = Math.min(SequenceUtils.find(wrappedY, min), SequenceUtils.find(wrappedY, max));
@@ -60,7 +58,7 @@ public class PointErasing {
 				}
 			}
 		}
-		int size = CollectionUtils.count(ArrayWrapper.wrap(canBe[upTo - 1]), true);
+		int size = CollectionUtils.count(Array.wrap(canBe[upTo - 1]), true);
 		int[] result = new int[size];
 		int index = 0;
 		for (int i = 0; i < upTo; i++) {

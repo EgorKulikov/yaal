@@ -1,8 +1,5 @@
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.filter.Filter;
-import net.egork.collections.sequence.ListWrapper;
-import net.egork.collections.sequence.SequenceUtils;
-import net.egork.collections.sequence.WritableSequence;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;

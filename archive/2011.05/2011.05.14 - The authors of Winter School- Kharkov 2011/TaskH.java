@@ -1,7 +1,7 @@
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
 import net.egork.collections.filter.Filter;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 
@@ -36,7 +36,7 @@ public class TaskH implements Solver {
 				}
 			}
 		}
-		int result = CollectionUtils.count(ArrayWrapper.wrap(segments), new Filter<Pair<Integer, Integer>>() {
+		int result = CollectionUtils.count(Array.wrap(segments), new Filter<Pair<Integer, Integer>>() {
 			public boolean accept(Pair<Integer, Integer> value) {
 				return !value.first.equals(value.second);
 			}

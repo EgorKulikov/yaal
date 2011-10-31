@@ -2,10 +2,8 @@ package April2011.UVaHugeEasyContestII;
 
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.collections.function.Function;
-import net.egork.collections.sequence.ListWrapper;
-import net.egork.collections.sequence.SequenceUtils;
 import net.egork.utils.Solver;
 
 import java.io.PrintWriter;
@@ -17,7 +15,7 @@ public class TaskR implements Solver {
 		int cakeCount = in.readInt();
 		int[] prices = in.readIntArray(itemCount);
 		final long sumPrices = ArrayUtils.sumArray(prices);
-		int drinkIndex = SequenceUtils.minIndex(ListWrapper.wrap(CollectionUtils.apply(ArrayWrapper.wrap(prices).
+		int drinkIndex = SequenceUtils.minIndex(ListWrapper.wrap(CollectionUtils.apply(Array.wrap(prices).
 			subSequence(0, drinkCount), new Function<Integer, Long>()
 		{
 			public Long value(Integer argument) {
@@ -26,7 +24,7 @@ public class TaskR implements Solver {
 			}
 		})));
 		int cakeIndex = SequenceUtils.minIndex(ListWrapper.wrap(CollectionUtils.apply(
-			ArrayWrapper.wrap(prices).subSequence(drinkCount, drinkCount + cakeCount), new Function<Integer, Long>()
+			Array.wrap(prices).subSequence(drinkCount, drinkCount + cakeCount), new Function<Integer, Long>()
 		{
 			public Long value(Integer argument) {
 				return Math.abs((long) argument * itemCount - sumPrices) * 2 +

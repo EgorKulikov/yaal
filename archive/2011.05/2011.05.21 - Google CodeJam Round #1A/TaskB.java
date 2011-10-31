@@ -1,6 +1,5 @@
 import net.egork.collections.Pair;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.StringWrapper;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
@@ -57,7 +56,7 @@ public class TaskB implements Solver {
 				for (int i = 0; i < wordCount; i++)
 					type[i] = index.get(newType[i]);
 			}
-			out.print(" " + words[SequenceUtils.maxIndex(ArrayWrapper.wrap(result))]);
+			out.print(" " + words[SequenceUtils.maxIndex(Array.wrap(result))]);
 		}
 		out.println();
 	}

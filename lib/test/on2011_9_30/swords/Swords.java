@@ -1,12 +1,12 @@
 package on2011_9_30.swords;
 
 
-
 import net.egork.collections.ReverseComparator;
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
+import net.egork.collections.sequence.ListUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
+
 import java.io.PrintWriter;
 
 public class Swords {
@@ -14,7 +14,7 @@ public class Swords {
 		int count = in.readInt();
 		int delta = in.readInt();
 		int[] age = IOUtils.readIntArray(in, count);
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(age), new ReverseComparator<Integer>());
+		Integer[] order = ListUtils.order(Array.wrap(age), new ReverseComparator<Integer>());
 		int[] parent = new int[count];
 		for (int ii = 1; ii < count; ii++) {
 			int i = order[ii];

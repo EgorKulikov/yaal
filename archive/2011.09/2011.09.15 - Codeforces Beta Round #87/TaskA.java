@@ -1,5 +1,5 @@
 import net.egork.collections.CollectionUtils;
-import net.egork.collections.sequence.ArrayWrapper;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
@@ -13,7 +13,7 @@ public class TaskA implements Solver {
 		int[] depth = new int[count];
 		for (int i = 0; i < count; i++)
 			go(i, boss, depth);
-		out.println(CollectionUtils.maxElement(ArrayWrapper.wrap(depth)));
+		out.println(CollectionUtils.maxElement(Array.wrap(depth)));
 	}
 
 	private int go(int index, int[] boss, int[] depth) {

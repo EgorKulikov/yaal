@@ -1,6 +1,4 @@
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
-import net.egork.collections.sequence.WritableSequence;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.Solver;
@@ -63,7 +61,7 @@ public class TaskA implements Solver {
 				nonDoubleIndices[nonDoubleIndex++] = i;
 		}
 		long answer = 0;
-		WritableSequence<Integer> permutation = ArrayWrapper.wrap(nonDoubleIndices);
+		WritableSequence<Integer> permutation = Array.wrap(nonDoubleIndices);
 		do {
 			boolean good = true;
 			for (int i = 7; i < nonDoubleIndex - 1; i++) {

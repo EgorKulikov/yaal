@@ -1,5 +1,4 @@
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
@@ -30,7 +29,7 @@ public class TaskC implements Solver {
 			remainingCapacity[i] = new int[size[i]];
 			Arrays.fill(remainingCapacity[i], capacityUp[i]);
 		}
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(priority));
+		Integer[] order = SequenceUtils.order(Array.wrap(priority));
 		int[] answer = new int[cityCount];
 		for (int i : order) {
 			int vertex = i;

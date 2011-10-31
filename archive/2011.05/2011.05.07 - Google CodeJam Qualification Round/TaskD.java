@@ -1,5 +1,4 @@
-import net.egork.collections.sequence.ArrayWrapper;
-import net.egork.collections.sequence.SequenceUtils;
+import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
@@ -10,7 +9,7 @@ public class TaskD implements Solver {
 	public void solve(int testNumber, InputReader in, PrintWriter out) {
 		int count = in.readInt();
 		int[] numbers = IOUtils.readIntArray(in, count);
-		Integer[] order = SequenceUtils.order(ArrayWrapper.wrap(numbers));
+		Integer[] order = SequenceUtils.order(Array.wrap(numbers));
 		for (int i = count - 1; i >= 0; i--) {
 			if (order[i] == i)
 				count--;
