@@ -255,4 +255,24 @@ public class IntegerUtils {
 		}
 		return happy;
 	}
+
+	public static long[] generateFactorial(int count, long module) {
+		long[] result = new long[count];
+		if (module == -1) {
+			if (count != 0)
+				result[0] = 1;
+			for (int i = 1; i < count; i++)
+				result[i] = result[i - 1] * i;
+		} else {
+			if (count != 0)
+				result[0] = 1 % module;
+			for (int i = 1; i < count; i++)
+				result[i] = (result[i - 1] * i) % module;
+		}
+		return result;
+	}
+
+	public static long reverse(long number, long module) {
+		return power(number, module - 2, module);
+	}
 }

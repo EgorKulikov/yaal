@@ -36,6 +36,22 @@ public class InputReader {
 		return buf[curChar++];
 	}
 
+	public int peek() {
+		if (numChars == -1)
+			return -1;
+		if (curChar >= numChars) {
+			curChar = 0;
+			try {
+				numChars = stream.read(buf);
+			} catch (IOException e) {
+				return -1;
+			}
+			if (numChars <= 0)
+				return -1;
+		}
+		return buf[curChar];
+	}
+
 	public int readInt() {
 		int c = read();
 		while (isSpaceChar(c))
@@ -167,12 +183,11 @@ public class InputReader {
 		return res * sgn;
 	}
 
-	public boolean isFinished() {
-		return finished;
-	}
-
-	public void setFinished(boolean finished) {
-		this.finished = finished;
+	public boolean isExhausted() {
+		int value;
+		while (isSpaceChar(value = peek()) && value != -1)
+			read();
+		return value == -1;
 	}
 
 	public String next() {
