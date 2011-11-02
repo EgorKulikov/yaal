@@ -17,7 +17,7 @@ public class TaskA {
 			public boolean accept(Integer value) {
 				return value < 94 || value > 727;
 			}
-		}) != -1)
+		}) != 3)
 		{
 			out.println("Error");
 			return;
