@@ -275,4 +275,14 @@ public class IntegerUtils {
 	public static long reverse(long number, long module) {
 		return power(number, module - 2, module);
 	}
+
+	public static boolean isPrime(int number) {
+		if (number < 2)
+			return false;
+		for (int i = 2; i * i <= number; i++) {
+			if (number % i == 0)
+				return false;
+		}
+		return true;
+	}
 }
