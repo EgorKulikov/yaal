@@ -79,6 +79,11 @@ public class ArrayUtils {
 			fill(subArray, value);
 	}
 
+	public static void fill(int[][][][][] array, int value) {
+		for (int[][][][] subArray : array)
+			fill(subArray, value);
+	}
+
 	public static Integer[] order(int size, Comparator<Integer> comparator) {
 		Integer[] order = generateOrder(size);
 		Arrays.sort(order, comparator);

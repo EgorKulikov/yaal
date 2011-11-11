@@ -95,8 +95,8 @@ public class GraphAlgorithms {
 	}
 
 	public static class DistanceResult {
-		private final long[] distances;
-		private final int[] last;
+		public final long[] distances;
+		public final int[] last;
 
 		public DistanceResult(long[] distances, int[] last) {
 			this.distances = distances;

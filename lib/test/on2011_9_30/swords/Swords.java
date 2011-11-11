@@ -25,6 +25,13 @@ public class Swords {
 			}
 			parent[i] = parentIndex + 1;
 		}
-		IOUtils.printArray(parent, out);
+		if (parent.length == 0)
+			out.println();
+		else {
+			out.print(parent[0]);
+			for (int i = 1; i < parent.length; i++)
+				out.print(" " + parent[i]);
+			out.println();
+		}
 	}
 }
