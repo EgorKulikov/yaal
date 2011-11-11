@@ -2,40 +2,12 @@ package net.egork.io;
 
 import net.egork.collections.Pair;
 import net.egork.utils.io.InputReader;
-
-import java.io.PrintWriter;
+import net.egork.utils.io.OutputWriter;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class IOUtils {
-	public static void printArray(int[] array, PrintWriter out) {
-		if (array.length == 0) {
-			out.println();
-			return;
-		}
-		out.print(array[0]);
-		for (int i = 1; i < array.length; i++)
-			out.print(" " + array[i]);
-		out.println();
-	}
-
-	public static<T> void printCollection(Iterable<T> collection, PrintWriter out) {
-		printCollection(collection, out, " ");
-	}
-
-	public static<T> void printCollection(Iterable<T> collection, PrintWriter out, String delimiter) {
-		boolean isFirst = true;
-		for (T element : collection) {
-			if (isFirst)
-				isFirst = false;
-			else
-				out.print(delimiter);
-			out.print(element);
-		}
-		out.println();
-	}
-
 	public static Pair<Integer, Integer> readIntPair(InputReader in) {
 		int first = in.readInt();
 		int second = in.readInt();
@@ -166,5 +138,10 @@ public class IOUtils {
 			for (int j = 0; j < arrays.length; j++)
 				arrays[j][i] = in.readString();
 		}
+	}
+
+	public static void printTable(OutputWriter out, char[][] table) {
+		for (char[] row : table)
+			out.printLine(new String(row));
 	}
 }

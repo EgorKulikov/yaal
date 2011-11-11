@@ -82,6 +82,13 @@ public class TaskD {
 			}
 		}
 		out.println(maxDelta);
-		IOUtils.printArray(answer, out);
+		if (answer.length == 0)
+			out.println();
+		else {
+			out.print(answer[0]);
+			for (int i = 1; i < answer.length; i++)
+				out.print(" " + answer[i]);
+			out.println();
+		}
 	}
 }
