@@ -276,10 +276,10 @@ public class IntegerUtils {
 		return power(number, module - 2, module);
 	}
 
-	public static boolean isPrime(int number) {
+	public static boolean isPrime(long number) {
 		if (number < 2)
 			return false;
-		for (int i = 2; i * i <= number; i++) {
+		for (long i = 2; i * i <= number; i++) {
 			if (number % i == 0)
 				return false;
 		}
