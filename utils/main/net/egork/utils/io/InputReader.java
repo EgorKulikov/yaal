@@ -104,7 +104,7 @@ public class InputReader {
 		return res.toString();
 	}
 
-	private boolean isSpaceChar(int c) {
+	public static boolean isSpaceChar(int c) {
 		return c == ' ' || c == '\n' || c == '\r' || c == '\t' || c == -1;
 	}
 

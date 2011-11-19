@@ -1,4 +1,4 @@
-package on2011_10_17.magicdiamonds;
+package approved.on2011_10_17.magicdiamonds;
 
 
 
