@@ -31,6 +31,10 @@ public class OutputWriter {
 		writer.println();
 	}
 
+	public void printLine(char[] array) {
+		writer.println(array);
+	}
+
 	public void printFormat(String format, Object...objects) {
 		writer.printf(format, objects);
 	}
