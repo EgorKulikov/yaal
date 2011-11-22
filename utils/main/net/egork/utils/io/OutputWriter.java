@@ -42,4 +42,8 @@ public class OutputWriter {
 	public void close() {
 		writer.close();
 	}
+
+	public void flush() {
+		writer.flush();
+	}
 }
