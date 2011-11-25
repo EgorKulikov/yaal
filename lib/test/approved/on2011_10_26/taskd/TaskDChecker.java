@@ -1,4 +1,4 @@
-package approved.on2011_10_19.taska0;
+package approved.on2011_10_26.taskd;
 
 
 
@@ -9,7 +9,7 @@ import net.egork.chelper.tester.Verdict;
 import java.util.Collection;
 import java.util.Collections;
 
-public class TaskAChecker {
+public class TaskDChecker {
 	public Verdict check(InputReader input, InputReader expected, InputReader actual) {
 		return Verdict.UNDECIDED;
 	}
