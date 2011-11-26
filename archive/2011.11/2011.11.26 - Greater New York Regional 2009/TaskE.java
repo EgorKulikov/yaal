@@ -1,6 +1,4 @@
-package approved.on2011_10_26.taske;
-
-
+package net.egork;
 
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.ListUtils;

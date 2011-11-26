@@ -1,4 +1,4 @@
-package approved.on2011_10_26.taske;
+package approved.on2011_10_25.taskd;
 
 import net.egork.chelper.tester.Tester;
 import org.junit.Assert;
@@ -8,9 +8,9 @@ public class Main {
 	@Test
 	public void test() throws Exception {
 		if (!Tester.test("net.egork.utils.io.InputReader",
-			"approved.on2011_10_26.taske.TaskE",
-			"MULTI_NUMBER",
-			"3 /__1 123 /__2 279134399742 /__3 987/__;;1 132/__2 279134423799/__3 BIGGEST/__;;true",
+			"approved.on2011_10_25.taskd.TaskD",
+			"SINGLE",
+			"4/__1 3/__4 3/__4 2/__1 2/__;;0 0 0 0 ;;true::6/__1 2/__3 4/__6 4/__2 3/__1 3/__3 5/__;;0 0 0 1 1 2 ;;true::4/__1 2/__2 3/__3 4/__2 4/__;;1 0 0 0/__;;true",
 			"net.egork.utils.io.OutputWriter"))
 		{
 			Assert.fail();
