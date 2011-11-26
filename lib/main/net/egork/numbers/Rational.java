@@ -77,4 +77,18 @@ public class Rational implements Comparable<Rational> {
 	public Rational divide(long number) {
 		return new Rational(numerator, denominator * number);
 	}
+
+	public long floor() {
+		if (numerator >= 0)
+			return numerator / denominator;
+		else
+			return (numerator - denominator + 1) / denominator;
+	}
+
+	public long ceil() {
+		if (numerator >= 0)
+			return (numerator + denominator - 1) / denominator;
+		else
+			return numerator / denominator;
+	}
 }
