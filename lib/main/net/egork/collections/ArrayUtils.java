@@ -104,4 +104,11 @@ public class ArrayUtils {
 		for (char[] row : array)
 			Arrays.fill(row, value);
 	}
+
+	public static long multiply(int[] first, int[] second) {
+		long result = 0;
+		for (int i = 0; i < first.length; i++)
+			result += (long)first[i] * second[i];
+		return result;
+	}
 }

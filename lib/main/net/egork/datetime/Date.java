@@ -51,11 +51,11 @@ public class Date implements Comparable<Date> {
 		int month = this.month;
 		int day = this.day;
 		day++;
-		Date next = new Date(day, month, year);
+		Date next = new Date(year, month, day);
 		if (!next.isValid())
-			next = new Date(1, month + 1, year);
+			next = new Date(year, month + 1, 1);
 		if (!next.isValid())
-			next = new Date(1, 1, year + 1);
+			next = new Date(year + 1, 1, 1);
 		if (weekday != -1)
 			next.weekday = (weekday + 1) % 7;
 		return next;
