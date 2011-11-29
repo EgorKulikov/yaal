@@ -1,4 +1,4 @@
-package approved.on2011_9_30.chronicle;
+package on2011_9_30.chronicle;
 
 
 import net.egork.chelper.task.Test;

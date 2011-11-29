@@ -91,4 +91,12 @@ public class Rational implements Comparable<Rational> {
 		else
 			return numerator / denominator;
 	}
+
+	public Rational divide(Rational other) {
+		return new Rational(numerator * other.denominator, other.numerator * denominator);
+	}
+
+	public Rational multiply(Rational other) {
+		return new Rational(numerator * other.numerator, other.denominator * denominator);
+	}
 }
