@@ -1,4 +1,4 @@
-package approved.on2011_9_30.chronicle;
+package on2011_10_3.taskc;
 
 import net.egork.chelper.tester.Tester;
 import org.junit.Assert;
@@ -8,9 +8,10 @@ public class Main {
 	@Test
 	public void test() throws Exception {
 		if (!Tester.test("net.egork.utils.io.InputReader",
-			"approved.on2011_9_30.chronicle.Chronicle",
+			"on2011_10_3.taskc.TaskC",
 			"SINGLE",
-			"29/02/04;;29/02/04/__29/04/02/__02/04/29/__04/02/29::01/01/01;;01/01/01::99/99/99;;No such date"))
+			"1 2 1/__1 2/__;;()/__;;true::2 3 1/__1 2 3/__4 5 6/__;;(()/__())/__;;true::3 2 2/__3 6/__1 4/__2 5/__;;()/__)(/__()/__;;true",
+			"net.egork.utils.io.OutputWriter"))
 		{
 			Assert.fail();
 		}
