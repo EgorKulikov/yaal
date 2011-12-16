@@ -114,6 +114,11 @@ public class MiscUtils {
 		return ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' || ch == 'Y';
 	}
 
+	public static boolean isStrictVowel(char ch) {
+		ch = Character.toUpperCase(ch);
+		return ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U';
+	}
+
 	public static String convertToRoman(int number) {
 		StringBuilder result = new StringBuilder();
 		for (int i = 0; i < ROMAN_TOKENS.length; i++) {
