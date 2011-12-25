@@ -4,6 +4,7 @@ import net.egork.collections.ArrayUtils;
 import net.egork.collections.Pair;
 
 import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
@@ -15,7 +16,7 @@ public class GraphAlgorithms {
 		int vertexCount = graph.getSize();
 		int[] nextEdge = new int[vertexCount];
 		while (true) {
-			long[] distance = edgeDistances(graph, source).getDistances();
+			long[] distance = edgeDistances(graph, source).distances;
 			if (distance[destination] == Long.MAX_VALUE)
 				break;
 			Arrays.fill(nextEdge, 0);
@@ -26,15 +27,13 @@ public class GraphAlgorithms {
 
 	private static DistanceResult edgeDistances(Graph graph, int source) {
 		int size = graph.getSize();
-		Deque<Integer> queue = new ArrayDeque<Integer>(size);
-		boolean[] processed = new boolean[size];
+		Queue<Integer> queue = new ArrayBlockingQueue<Integer>(size);
 		boolean[] notReached = new boolean[size];
 		Arrays.fill(notReached, true);
 		long[] distance = new long[size];
-		int[] last = new int[size];
+		Edge[] last = new Edge[size];
 		Arrays.fill(distance, Long.MAX_VALUE);
 		distance[source] = 0;
-		last[source] = -1;
 		queue.add(source);
 		notReached[source] = false;
 		int iterationCount = 0;
@@ -43,7 +42,6 @@ public class GraphAlgorithms {
 			if (iterationCount / size / size / size != 0)
 				return null;
 			int current = queue.poll();
-			processed[current] = true;
 			for (Edge edge : graph.getIncident(current)) {
 				if (edge.getCapacity() == 0)
 					continue;
@@ -51,13 +49,10 @@ public class GraphAlgorithms {
 				long weight = 1;
 				if (distance[next] > distance[current] + weight) {
 					distance[next] = distance[current] + weight;
-					last[next] = current;
+					last[next] = edge;
 					if (notReached[next]) {
 						notReached[next] = false;
 						queue.add(next);
-					} else if (processed[next]) {
-						processed[next] = false;
-						queue.addFirst(next);
 					}
 				}
 			}
@@ -96,19 +91,11 @@ public class GraphAlgorithms {
 
 	public static class DistanceResult {
 		public final long[] distances;
-		public final int[] last;
+		public final Edge[] last;
 
-		public DistanceResult(long[] distances, int[] last) {
+		public DistanceResult(long[] distances, Edge[] last) {
 			this.distances = distances;
 			this.last = last;
-		}
-
-		public long[] getDistances() {
-			return distances;
-		}
-
-		public int[] getLast() {
-			return last;
 		}
 	}
 
@@ -136,17 +123,44 @@ public class GraphAlgorithms {
 		}
 	}
 
+	public static Pair<Long, Long> minCostMaxFlow(Graph graph, int source, int destination) {
+		long cost = 0;
+		long flow = 0;
+		while (true) {
+			DistanceResult result = leviteAlgorithm(graph, source, true);
+			if (result.distances[destination] == Long.MAX_VALUE)
+				return Pair.makePair(cost, flow);
+			int vertex = destination;
+			long currentFlow = Long.MAX_VALUE;
+			long currentCost = result.distances[destination];
+			while (vertex != source) {
+				currentFlow = Math.min(currentFlow, result.last[vertex].getCapacity());
+				vertex = result.last[vertex].getSource();
+			}
+			cost += currentCost * currentFlow;
+			flow += currentFlow;
+			vertex = destination;
+			while (vertex != source) {
+				result.last[vertex].pushFlow(currentFlow);
+				vertex = result.last[vertex].getSource();
+			}
+		}
+	}
+
 	public static DistanceResult leviteAlgorithm(Graph graph, int source) {
+		return leviteAlgorithm(graph, source, false);
+	}
+
+	public static DistanceResult leviteAlgorithm(Graph graph, int source, boolean ignoreEmpty) {
 		int size = graph.getSize();
 		Deque<Integer> queue = new ArrayDeque<Integer>(size);
 		boolean[] processed = new boolean[size];
 		boolean[] notReached = new boolean[size];
 		Arrays.fill(notReached, true);
 		long[] distance = new long[size];
-		int[] last = new int[size];
+		Edge[] last = new Edge[size];
 		Arrays.fill(distance, Long.MAX_VALUE);
 		distance[source] = 0;
-		last[source] = -1;
 		queue.add(source);
 		notReached[source] = false;
 		int iterationCount = 0;
@@ -157,11 +171,13 @@ public class GraphAlgorithms {
 			int current = queue.poll();
 			processed[current] = true;
 			for (Edge edge : graph.getIncident(current)) {
+				if (ignoreEmpty && edge.getCapacity() == 0)
+					continue;
 				int next = edge.getDestination();
 				long weight = edge.getWeight();
 				if (distance[next] > distance[current] + weight) {
 					distance[next] = distance[current] + weight;
-					last[next] = current;
+					last[next] = edge;
 					if (notReached[next]) {
 						notReached[next] = false;
 						queue.add(next);
@@ -240,10 +256,9 @@ public class GraphAlgorithms {
 				return 0;
 			}
 		});
-		int[] last = new int[size];
+		Edge[] last = new Edge[size];
 		Arrays.fill(distance, Long.MAX_VALUE);
 		distance[source] = 0;
-		last[source] = -1;
 		queue.add(source);
 		boolean[] processed = new boolean[size];
 		while (!queue.isEmpty()) {
@@ -256,7 +271,7 @@ public class GraphAlgorithms {
 				long weight = edge.getWeight();
 				if (distance[next] > distance[current] + weight) {
 					distance[next] = distance[current] + weight;
-					last[next] = current;
+					last[next] = edge;
 					queue.add(next);
 				}
 			}
