@@ -19,9 +19,14 @@ public class ArrayUtils {
 			Arrays.fill(row, value);
 	}
 
-	public static void fill(double[][] array, long value) {
+	public static void fill(double[][] array, double value) {
 		for (double[] row : array)
 			Arrays.fill(row, value);
+	}
+
+	public static void fill(double[][][] array, double value) {
+		for (double[][] row : array)
+			fill(row, value);
 	}
 
 	public static void fill(long[][][] array, long value) {
