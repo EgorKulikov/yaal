@@ -110,6 +110,16 @@ public class ArrayUtils {
 			Arrays.fill(row, value);
 	}
 
+	public static void fill(byte[][] array, byte value) {
+		for (byte[] row : array)
+			Arrays.fill(row, value);
+	}
+
+	public static void fill(byte[][][] array, byte value) {
+		for (byte[][] row : array)
+			fill(row, value);
+	}
+
 	public static long multiply(int[] first, int[] second) {
 		long result = 0;
 		for (int i = 0; i < first.length; i++)
