@@ -1,4 +1,4 @@
-package approved.on2011_10_4.taskd;
+package on2012_0_13.taskg;
 
 import net.egork.chelper.tester.Tester;
 import org.junit.Assert;
@@ -8,9 +8,9 @@ public class Main {
 	@Test
 	public void test() throws Exception {
 		if (!Tester.test("net.egork.utils.io.InputReader",
-			"approved.on2011_10_4.taskd.TaskD",
-			"MULTI_EOF",
-			"43/__1 3/__2 4/__40/__5 9/__5 12/__0;;13 1/__failed;;true",
+			"on2012_0_13.taskg.TaskG",
+			"SINGLE",
+			"zbbg/__2 3/__;;zbbg/__;;true::gaqipkajibk/__5 6/__;;gaqikpajibk/__;;true",
 			"net.egork.utils.io.OutputWriter"))
 		{
 			Assert.fail();
