@@ -124,19 +124,24 @@ public class GraphAlgorithms {
 	}
 
 	public static Pair<Long, Long> minCostMaxFlow(Graph graph, int source, int destination) {
+		return minCostMaxFlow(graph, source, destination, Long.MAX_VALUE);
+	}
+
+	public static Pair<Long, Long> minCostMaxFlow(Graph graph, int source, int destination, long maxFlow) {
 		long cost = 0;
 		long flow = 0;
-		while (true) {
+		while (maxFlow != 0) {
 			DistanceResult result = leviteAlgorithm(graph, source, true);
 			if (result.distances[destination] == Long.MAX_VALUE)
 				return Pair.makePair(cost, flow);
 			int vertex = destination;
-			long currentFlow = Long.MAX_VALUE;
+			long currentFlow = maxFlow;
 			long currentCost = result.distances[destination];
 			while (vertex != source) {
 				currentFlow = Math.min(currentFlow, result.last[vertex].getCapacity());
 				vertex = result.last[vertex].getSource();
 			}
+			maxFlow -= currentFlow;
 			cost += currentCost * currentFlow;
 			flow += currentFlow;
 			vertex = destination;
@@ -145,6 +150,7 @@ public class GraphAlgorithms {
 				vertex = result.last[vertex].getSource();
 			}
 		}
+		return Pair.makePair(cost, flow);
 	}
 
 	public static DistanceResult leviteAlgorithm(Graph graph, int source) {
