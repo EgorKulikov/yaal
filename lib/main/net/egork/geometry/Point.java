@@ -1,5 +1,7 @@
 package net.egork.geometry;
 
+import net.egork.utils.io.InputReader;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -54,5 +56,11 @@ public class Point {
 
 	public double value() {
 		return GeometryUtils.fastHypot(x, y);
+	}
+
+	public static Point readPoint(InputReader in) {
+		double x = in.readDouble();
+		double y = in.readDouble();
+		return new Point(x, y);
 	}
 }
