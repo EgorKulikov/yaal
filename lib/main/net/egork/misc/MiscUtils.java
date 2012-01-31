@@ -165,4 +165,12 @@ public class MiscUtils {
 				array[i]--;
 		}
 	}
+
+	public static int[] getIntArray(String s) {
+		String[] tokens = s.split(" ");
+		int[] result = new int[tokens.length];
+		for (int i = 0; i < result.length; i++)
+			result[i] = Integer.parseInt(tokens[i]);
+		return result;
+	}
 }
