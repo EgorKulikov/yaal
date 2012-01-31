@@ -153,10 +153,12 @@ public class GraphAlgorithms {
 		return Pair.makePair(cost, flow);
 	}
 
+	@Deprecated
 	public static DistanceResult leviteAlgorithm(Graph graph, int source) {
 		return leviteAlgorithm(graph, source, false);
 	}
 
+	@Deprecated
 	public static DistanceResult leviteAlgorithm(Graph graph, int source, boolean ignoreEmpty) {
 		int size = graph.getSize();
 		Deque<Integer> queue = new ArrayDeque<Integer>(size);
@@ -197,6 +199,7 @@ public class GraphAlgorithms {
 		return new DistanceResult(distance, last);
 	}
 
+	@Deprecated
 	public static MultiPathDistanceResult leviteAlgorithm(Graph graph, int source, int numPath) {
 		int size = graph.getSize();
 		Deque<Pair<Integer, Integer>> queue = new ArrayDeque<Pair<Integer, Integer>>(size);
