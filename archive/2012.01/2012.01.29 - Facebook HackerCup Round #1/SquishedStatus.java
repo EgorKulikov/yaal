@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class SquishedStatus {
-	static final long MOD = 0xfaceb00c;
+	static final long MOD = 0xfaceb00cL;
 
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int maxCode = in.readInt();
