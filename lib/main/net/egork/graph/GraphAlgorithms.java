@@ -97,10 +97,15 @@ public class GraphAlgorithms {
 	public static Pair<Long, Long> minCostMaxFlow(Graph graph, int source, int destination, long maxFlow) {
 		long cost = 0;
 		long flow = 0;
+		long[] phi = new long[graph.getSize()];
 		while (maxFlow != 0) {
-			Pair<long[], Edge[]> result = dijkstraAlgorithm(graph, source, true);
+			Pair<long[], Edge[]> result = dijkstraAlgorithm(graph, source, phi);
 			if (result.first[destination] == Long.MAX_VALUE)
 				return Pair.makePair(cost, flow);
+			for (int i = 0; i < graph.getSize(); i++) {
+				if (result.first[i] != Long.MAX_VALUE)
+					phi[i] -= result.first[i];
+			}
 			int vertex = destination;
 			long currentFlow = maxFlow;
 			long currentCost = result.first[destination];
@@ -121,10 +126,33 @@ public class GraphAlgorithms {
 	}
 
 	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source) {
-		return dijkstraAlgorithm(graph, source, false);
+		int size = graph.getSize();
+		final long[] distance = new long[size];
+		Queue<Pair<Long, Integer>> queue = new PriorityQueue<Pair<Long, Integer>>(size);
+		Edge[] last = new Edge[size];
+		Arrays.fill(distance, Long.MAX_VALUE);
+		distance[source] = 0;
+		queue.add(Pair.makePair(0L, source));
+		boolean[] processed = new boolean[size];
+		while (!queue.isEmpty()) {
+			int current = queue.poll().second;
+			if (processed[current])
+				continue;
+			processed[current] = true;
+			for (Edge edge : graph.getIncident(current)) {
+				int next = edge.getDestination();
+				long weight = edge.getWeight();
+				if (distance[next] > distance[current] + weight) {
+					distance[next] = distance[current] + weight;
+					last[next] = edge;
+					queue.add(Pair.makePair(distance[next], next));
+				}
+			}
+		}
+		return Pair.makePair(distance, last);
 	}
 
-	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source, boolean ignoreEmptyEdges) {
+	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source, long[] phi) {
 		int size = graph.getSize();
 		final long[] distance = new long[size];
 		Queue<Pair<Long, Integer>> queue = new PriorityQueue<Pair<Long, Integer>>(size);
@@ -142,7 +170,7 @@ public class GraphAlgorithms {
 				if (edge.getCapacity() == 0)
 					continue;
 				int next = edge.getDestination();
-				long weight = edge.getWeight();
+				long weight = edge.getWeight() + phi[next] - phi[current];
 				if (distance[next] > distance[current] + weight) {
 					distance[next] = distance[current] + weight;
 					last[next] = edge;
