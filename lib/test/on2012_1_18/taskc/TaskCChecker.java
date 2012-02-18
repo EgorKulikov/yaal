@@ -1,4 +1,4 @@
-package on2012_1_3.taskc;
+package on2012_1_18.taskc;
 
 
 
@@ -15,7 +15,7 @@ public class TaskCChecker {
 	}
 
 	public double getCertainty() {
-		return 0;
+		return 1e-6;
 	}
 
 	public Collection<? extends Test> generateTests() {

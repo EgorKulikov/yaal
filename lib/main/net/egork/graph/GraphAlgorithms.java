@@ -2,10 +2,7 @@ package net.egork.graph;
 
 import net.egork.collections.Pair;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -98,6 +95,11 @@ public class GraphAlgorithms {
 		long cost = 0;
 		long flow = 0;
 		long[] phi = new long[graph.getSize()];
+		long[] initialDistances = fordBellman(graph, source, true).first;
+		for (int i = 0; i < graph.getSize(); i++) {
+			if (initialDistances[i] != Long.MAX_VALUE)
+				phi[i] -= initialDistances[i];
+		}
 		while (maxFlow != 0) {
 			Pair<long[], Edge[]> result = dijkstraAlgorithm(graph, source, phi);
 			if (result.first[destination] == Long.MAX_VALUE)
@@ -108,9 +110,10 @@ public class GraphAlgorithms {
 			}
 			int vertex = destination;
 			long currentFlow = maxFlow;
-			long currentCost = result.first[destination];
+			long currentCost = 0;
 			while (vertex != source) {
 				currentFlow = Math.min(currentFlow, result.second[vertex].getCapacity());
+				currentCost += result.second[vertex].getWeight();
 				vertex = result.second[vertex].getSource();
 			}
 			maxFlow -= currentFlow;
@@ -123,6 +126,34 @@ public class GraphAlgorithms {
 			}
 		}
 		return Pair.makePair(cost, flow);
+	}
+
+	public static Pair<long[], Edge[]> fordBellman(Graph graph, int source) {
+		return fordBellman(graph, source, false);
+	}
+
+	public static Pair<long[], Edge[]> fordBellman(Graph graph, int source, boolean ignoreEmptyEdges) {
+		long[] distances = new long[graph.getSize()];
+		Arrays.fill(distances, Long.MAX_VALUE);
+		distances[source] = 0;
+		Edge[] last = new Edge[graph.getSize()];
+		Set<Integer> viable = Collections.singleton(source);
+		while (!viable.isEmpty()) {
+			Set<Integer> nextViable = new HashSet<Integer>();
+			for (int i : viable) {
+				for (Edge edge : graph.getIncident(i)) {
+					long total = distances[i] + edge.getWeight();
+					int destination = edge.getDestination();
+					if (total < distances[destination] && (!ignoreEmptyEdges || edge.getCapacity() != 0)) {
+						distances[destination] = total;
+						last[destination] = edge;
+						nextViable.add(destination);
+					}
+				}
+			}
+			viable = nextViable;
+		}
+		return Pair.makePair(distances, last);
 	}
 
 	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source) {
