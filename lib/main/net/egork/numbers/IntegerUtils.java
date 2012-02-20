@@ -285,4 +285,22 @@ public class IntegerUtils {
 		}
 		return true;
 	}
+
+	public static long[] generateReverse(int upTo, long module) {
+		long[] result = new long[upTo];
+		if (upTo > 1)
+			result[1] = 1;
+		for (int i = 2; i < upTo; i++)
+			result[i] = (module - module / i * result[((int) (module % i))] % module) % module;
+		return result;
+	}
+
+	public static long[] generateReverseFactorials(int upTo, long module) {
+		long[] result = generateReverse(upTo, module);
+		if (upTo > 0)
+			result[0] = 1;
+		for (int i = 1; i < upTo; i++)
+			result[i] = result[i] * result[i - 1] % module;
+		return result;
+	}
 }

@@ -2,10 +2,7 @@ package net.egork.graph;
 
 import net.egork.collections.Pair;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -97,15 +94,26 @@ public class GraphAlgorithms {
 	public static Pair<Long, Long> minCostMaxFlow(Graph graph, int source, int destination, long maxFlow) {
 		long cost = 0;
 		long flow = 0;
+		long[] phi = new long[graph.getSize()];
+		long[] initialDistances = fordBellman(graph, source, true).first;
+		for (int i = 0; i < graph.getSize(); i++) {
+			if (initialDistances[i] != Long.MAX_VALUE)
+				phi[i] -= initialDistances[i];
+		}
 		while (maxFlow != 0) {
-			Pair<long[], Edge[]> result = dijkstraAlgorithm(graph, source, true);
+			Pair<long[], Edge[]> result = dijkstraAlgorithm(graph, source, phi);
 			if (result.first[destination] == Long.MAX_VALUE)
 				return Pair.makePair(cost, flow);
+			for (int i = 0; i < graph.getSize(); i++) {
+				if (result.first[i] != Long.MAX_VALUE)
+					phi[i] -= result.first[i];
+			}
 			int vertex = destination;
 			long currentFlow = maxFlow;
-			long currentCost = result.first[destination];
+			long currentCost = 0;
 			while (vertex != source) {
 				currentFlow = Math.min(currentFlow, result.second[vertex].getCapacity());
+				currentCost += result.second[vertex].getWeight();
 				vertex = result.second[vertex].getSource();
 			}
 			maxFlow -= currentFlow;
@@ -120,11 +128,62 @@ public class GraphAlgorithms {
 		return Pair.makePair(cost, flow);
 	}
 
-	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source) {
-		return dijkstraAlgorithm(graph, source, false);
+	public static Pair<long[], Edge[]> fordBellman(Graph graph, int source) {
+		return fordBellman(graph, source, false);
 	}
 
-	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source, boolean ignoreEmptyEdges) {
+	public static Pair<long[], Edge[]> fordBellman(Graph graph, int source, boolean ignoreEmptyEdges) {
+		long[] distances = new long[graph.getSize()];
+		Arrays.fill(distances, Long.MAX_VALUE);
+		distances[source] = 0;
+		Edge[] last = new Edge[graph.getSize()];
+		Set<Integer> viable = Collections.singleton(source);
+		while (!viable.isEmpty()) {
+			Set<Integer> nextViable = new HashSet<Integer>();
+			for (int i : viable) {
+				for (Edge edge : graph.getIncident(i)) {
+					long total = distances[i] + edge.getWeight();
+					int destination = edge.getDestination();
+					if (total < distances[destination] && (!ignoreEmptyEdges || edge.getCapacity() != 0)) {
+						distances[destination] = total;
+						last[destination] = edge;
+						nextViable.add(destination);
+					}
+				}
+			}
+			viable = nextViable;
+		}
+		return Pair.makePair(distances, last);
+	}
+
+	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source) {
+		int size = graph.getSize();
+		final long[] distance = new long[size];
+		Queue<Pair<Long, Integer>> queue = new PriorityQueue<Pair<Long, Integer>>(size);
+		Edge[] last = new Edge[size];
+		Arrays.fill(distance, Long.MAX_VALUE);
+		distance[source] = 0;
+		queue.add(Pair.makePair(0L, source));
+		boolean[] processed = new boolean[size];
+		while (!queue.isEmpty()) {
+			int current = queue.poll().second;
+			if (processed[current])
+				continue;
+			processed[current] = true;
+			for (Edge edge : graph.getIncident(current)) {
+				int next = edge.getDestination();
+				long weight = edge.getWeight();
+				if (distance[next] > distance[current] + weight) {
+					distance[next] = distance[current] + weight;
+					last[next] = edge;
+					queue.add(Pair.makePair(distance[next], next));
+				}
+			}
+		}
+		return Pair.makePair(distance, last);
+	}
+
+	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source, long[] phi) {
 		int size = graph.getSize();
 		final long[] distance = new long[size];
 		Queue<Pair<Long, Integer>> queue = new PriorityQueue<Pair<Long, Integer>>(size);
@@ -142,7 +201,7 @@ public class GraphAlgorithms {
 				if (edge.getCapacity() == 0)
 					continue;
 				int next = edge.getDestination();
-				long weight = edge.getWeight();
+				long weight = edge.getWeight() + phi[next] - phi[current];
 				if (distance[next] > distance[current] + weight) {
 					distance[next] = distance[current] + weight;
 					last[next] = edge;
