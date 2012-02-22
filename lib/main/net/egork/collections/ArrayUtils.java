@@ -39,6 +39,11 @@ public class ArrayUtils {
 			fill(row, value);
 	}
 
+	public static void fill(long[][][][][] array, long value) {
+		for (long[][][][] row : array)
+			fill(row, value);
+	}
+
 	public static void fillColumn(long[][] array, int index, long value) {
 		for (long[] row : array)
 			row[index] = value;
