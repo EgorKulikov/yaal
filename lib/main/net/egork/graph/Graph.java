@@ -33,6 +33,10 @@ public class Graph {
 			edges[edge.getSource()].add(edge);
 	}
 
+	public void removeEdge(Edge edge) {
+		edges[edge.getSource()].remove(edge);
+	}
+
 	public void removeVertex(int vertex) {
 		edges[vertex] = new ArrayList<Edge>();
 	}

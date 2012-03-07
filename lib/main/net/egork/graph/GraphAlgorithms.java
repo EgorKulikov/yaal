@@ -138,6 +138,7 @@ public class GraphAlgorithms {
 		distances[source] = 0;
 		Edge[] last = new Edge[graph.getSize()];
 		Set<Integer> viable = Collections.singleton(source);
+		int stepCount = 0;
 		while (!viable.isEmpty()) {
 			Set<Integer> nextViable = new HashSet<Integer>();
 			for (int i : viable) {
@@ -152,6 +153,9 @@ public class GraphAlgorithms {
 				}
 			}
 			viable = nextViable;
+			stepCount++;
+			if (stepCount > graph.getSize() + 1)
+				return null;
 		}
 		return Pair.makePair(distances, last);
 	}
