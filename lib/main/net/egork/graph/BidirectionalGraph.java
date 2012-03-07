@@ -13,4 +13,10 @@ public class BidirectionalGraph extends Graph {
 		super.add(edge);
 		super.add(edge.getTransposedEdge());
 	}
+
+	@Override
+	public void removeEdge(Edge edge) {
+		super.removeEdge(edge);
+		super.removeEdge(edge.getTransposedEdge());
+	}
 }
