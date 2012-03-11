@@ -303,4 +303,13 @@ public class IntegerUtils {
 			result[i] = result[i] * result[i - 1] % module;
 		return result;
 	}
+
+	public static long[] generatePowers(long base, int upTo, long mod) {
+		long[] result = new long[upTo];
+		if (upTo != 0)
+			result[0] = 1 % mod;
+		for (int i = 1; i < upTo; i++)
+			result[i] = result[i - 1] * base % mod;
+		return result;
+	}
 }
