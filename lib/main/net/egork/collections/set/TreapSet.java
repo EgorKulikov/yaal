@@ -306,6 +306,14 @@ public class TreapSet<K> implements NavigableSet<K> {
 		return lower(to);
 	}
 
+	public K get(int index) {
+		if (index >= size() || index < 0)
+			throw new IndexOutOfBoundsException(Integer.toString(index));
+		if (from != null)
+			index += headSet(from, !fromInclusive).size();
+		return root.get(index);
+	}
+
 	protected int compare(K first, K second) {
 		if (first == null || second == null)
 			return -1;
@@ -461,6 +469,15 @@ public class TreapSet<K> implements NavigableSet<K> {
 			if (compare(node.key, this.key) > 0)
 				return left.size + 1 + right.indexOf(node);
 			return left.indexOf(node);
+		}
+
+		public K get(int index) {
+			if (index < left.size)
+				return left.get(index);
+			else if (index == left.size)
+				return key;
+			else
+				return right.get(index - left.size - 1);
 		}
 	}
 
