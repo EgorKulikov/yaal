@@ -1,8 +1,6 @@
 package net.egork.utils.io;
 
-import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.io.Writer;
+import java.io.*;
 
 /**
  * @author Egor Kulikov (egor@egork.net)
@@ -11,7 +9,7 @@ public class OutputWriter {
 	private final PrintWriter writer;
 
 	public OutputWriter(OutputStream outputStream) {
-		writer = new PrintWriter(outputStream);
+		writer = new PrintWriter(new BufferedWriter(new OutputStreamWriter(outputStream)));
 	}
 
 	public OutputWriter(Writer writer) {
