@@ -10,7 +10,7 @@ public class Main {
 		if (!Tester.test("net.egork.utils.io.InputReader",
 			"on2012_3_3.luckyarray.LuckyArray",
 			"MULTI_NUMBER",
-			"2/__2 4 7/__0/__3 7 4/__0 1/__;;-1/__1 7 7/__;;true::2/__2 1000000000 1000000000/__0/__2 1000000000 1000000000/__1/__;;;;true::1/__2 148 100/__0/__;;;;true",
+			"2/__2 4 7/__0/__3 7 4/__0 1/__;;-1/__1 7 7/__;;true",
 			"net.egork.utils.io.OutputWriter"))
 		{
 			Assert.fail();
