@@ -22,7 +22,7 @@ public abstract class IntervalTree<V> {
 		return neutral();
 	}
 
-	protected void init() {
+	public void init() {
 		init(0, 0, size - 1);
 	}
 
