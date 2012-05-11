@@ -26,15 +26,15 @@ public class P8XMatrixRecovery {
 				if (rows[i].charAt(j) != '?')
 					row.append(rows[i].charAt(j));
 				else {
-					Graph graph = new Graph(2 * columns.length + 2);
+					Graph<Integer> graph = new Graph<Integer>();
 					int source = 2 * columns.length;
 					int sink = source + 1;
 					for (int k = 0; k < columns.length; k++) {
-						graph.add(new FlowEdge(source, k, 1));
-						graph.add(new FlowEdge(columns.length + k, sink, 1));
+						graph.add(new FlowEdge<Integer>(source, k, 1));
+						graph.add(new FlowEdge<Integer>(columns.length + k, sink, 1));
 						for (int l = 0; l < columns.length; l++) {
 							if (matching[k][l] && (k != j || columns[l].charAt(i) != '1'))
-								graph.add(new FlowEdge(k, columns.length + l, 1));
+								graph.add(new FlowEdge<Integer>(k, columns.length + l, 1));
 						}
 					}
 					char next = GraphAlgorithms.dinic(graph, source, sink) == columns.length ? '0' : '1';

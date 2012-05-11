@@ -3,10 +3,10 @@ package net.egork.graph;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class WeightedFlowEdge extends FlowEdge {
+public class WeightedFlowEdge<V> extends FlowEdge<V> {
 	private final long weight;
 
-	public WeightedFlowEdge(int source, int destination, long weight, long capacity) {
+	public WeightedFlowEdge(V source, V destination, long weight, long capacity) {
 		super(source, destination, capacity);
 		this.weight = weight;
 	}
@@ -17,7 +17,9 @@ public class WeightedFlowEdge extends FlowEdge {
 	}
 
 	@Override
-	public Edge getTransposedEdge() {
-		return new WeightedFlowEdge(destination, source, weight, getCapacity() + getFlow());
+	public Edge<V> getTransposedEdge() {
+		if (transposed == null)
+			transposed = new WeightedFlowEdge<V>(destination, source, weight, getCapacity() + getFlow());
+		return transposed;
 	}
 }

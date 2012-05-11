@@ -35,16 +35,16 @@ public class TaskE {
 	}
 
 	private boolean canDo(int[][] favorite, int[] quantity, int middle) {
-		Graph graph = new Graph(favorite.length + quantity.length + 2);
+		Graph<Integer> graph = new Graph<Integer>();
 		int source = favorite.length + quantity.length;
 		int sink = source + 1;
 		for (int i = 0; i < favorite.length; i++) {
-			graph.add(new FlowEdge(source, i, middle));
+			graph.add(new FlowEdge<Integer>(source, i, middle));
 			for (int j : favorite[i])
-				graph.add(new FlowEdge(i, favorite.length + j, quantity[j]));
+				graph.add(new FlowEdge<Integer>(i, favorite.length + j, quantity[j]));
 		}
 		for (int j = 0; j < quantity.length; j++)
-			graph.add(new FlowEdge(favorite.length + j, sink, quantity[j]));
+			graph.add(new FlowEdge<Integer>(favorite.length + j, sink, quantity[j]));
 		return GraphAlgorithms.dinic(graph, source, sink) == middle * favorite.length;
 	}
 }

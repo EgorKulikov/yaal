@@ -10,66 +10,52 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class GraphAlgorithms {
-	public static long dinic(Graph graph, int source, int destination) {
+	public static<V> long dinic(Graph<V> graph, V source, V destination) {
 		long totalFlow = 0;
-		int vertexCount = graph.getSize();
-		int[] nextEdge = new int[vertexCount];
+		Map<V, Iterator<Edge<V>>> nextEdge = new HashMap<V, Iterator<Edge<V>>>();
 		while (true) {
-			int[] distance = edgeDistances(graph, source).first;
-			if (distance[destination] == Integer.MAX_VALUE)
+			Map<V, Integer> distance = edgeDistances(graph, source);
+			if (!distance.containsKey(destination))
 				break;
-			Arrays.fill(nextEdge, 0);
+			nextEdge.clear();
 			totalFlow += dinicImpl(graph, source, destination, Long.MAX_VALUE, distance, nextEdge);
 		}
 		return totalFlow;
 	}
 
-	private static Pair<int[], Edge[]> edgeDistances(Graph graph, int source) {
-		int size = graph.getSize();
-		Queue<Integer> queue = new ArrayBlockingQueue<Integer>(size);
-		boolean[] notReached = new boolean[size];
-		Arrays.fill(notReached, true);
-		int[] distance = new int[size];
-		Edge[] last = new Edge[size];
-		Arrays.fill(distance, Integer.MAX_VALUE);
-		distance[source] = 0;
+	private static<V> Map<V, Integer> edgeDistances(Graph<V> graph, V source) {
+		Queue<V> queue = new ArrayBlockingQueue<V>(graph.vertices().size());
+		Map<V, Integer> distance = new HashMap<V, Integer>();
+		distance.put(source, 0);
 		queue.add(source);
-		notReached[source] = false;
-		int iterationCount = 0;
 		while (!queue.isEmpty()) {
-			iterationCount++;
-			if (iterationCount / size / size / size != 0)
-				return null;
-			int current = queue.poll();
-			for (Edge edge : graph.getIncident(current)) {
+			V current = queue.poll();
+			for (Edge<V> edge : graph.getIncident(current)) {
 				if (edge.getCapacity() == 0)
 					continue;
-				int next = edge.getDestination();
-				if (distance[next] > distance[current] + 1) {
-					distance[next] = distance[current] + 1;
-					last[next] = edge;
-					if (notReached[next]) {
-						notReached[next] = false;
-						queue.add(next);
-					}
+				V next = edge.getDestination();
+				if (!distance.containsKey(next)) {
+					distance.put(next, distance.get(current) + 1);
+					queue.add(next);
 				}
 			}
 		}
-		return Pair.makePair(distance, last);
+		return distance;
 	}
 
-	private static long dinicImpl(Graph graph, int source, int destination, long flow, int[] distance, int[] nextEdge) {
-		if (source == destination)
+	private static<V> long dinicImpl(Graph<V> graph, V source, V destination, long flow, Map<V, Integer> distance, Map<V, Iterator<Edge<V>>> nextEdge) {
+		if (source.equals(destination))
 			return flow;
-		if (flow == 0 || distance[source] == distance[destination])
+		if (flow == 0 || distance.get(source).equals(distance.get(destination)))
 			return 0;
-		List<Edge> incident = graph.getIncident(source);
-		int incidentSize = incident.size();
+		Iterator<Edge<V>> incident = nextEdge.get(source);
+		if (incident == null)
+			nextEdge.put(source, incident = graph.getIncident(source).iterator());
 		int totalPushed = 0;
-		for (int i = nextEdge[source]; i < incidentSize; i++) {
-			Edge edge = incident.get(i);
-			int nextDestination = edge.getDestination();
-			if (distance[nextDestination] != distance[source] + 1)
+		while (incident.hasNext()) {
+			Edge<V> edge = incident.next();
+			V nextDestination = edge.getDestination();
+			if (edge.getCapacity() == 0 || !distance.get(nextDestination).equals(distance.get(source) + 1))
 				continue;
 			long pushed = dinicImpl(graph, nextDestination, destination, Math.min(flow, edge.getCapacity()),
 				distance, nextEdge);
@@ -77,179 +63,180 @@ public class GraphAlgorithms {
 				edge.pushFlow(pushed);
 				flow -= pushed;
 				totalPushed += pushed;
-				if (flow == 0) {
-					nextEdge[source] = i;
+				if (flow == 0)
 					return totalPushed;
-				}
 			}
 		}
-		nextEdge[source] = incidentSize;
 		return totalPushed;
 	}
 
-	public static Pair<Long, Long> minCostMaxFlow(Graph graph, int source, int destination) {
+	public static<V> Pair<Long, Long> minCostMaxFlow(Graph<V> graph, V source, V destination) {
 		return minCostMaxFlow(graph, source, destination, Long.MAX_VALUE);
 	}
 
-	public static Pair<Long, Long> minCostMaxFlow(Graph graph, int source, int destination, long maxFlow) {
+	public static<V> Pair<Long, Long> minCostMaxFlow(Graph<V> graph, V source, V destination, long maxFlow) {
 		long cost = 0;
 		long flow = 0;
-		long[] phi = new long[graph.getSize()];
-		long[] initialDistances = fordBellman(graph, source, true).first;
-		for (int i = 0; i < graph.getSize(); i++) {
-			if (initialDistances[i] != Long.MAX_VALUE)
-				phi[i] -= initialDistances[i];
-		}
+		Map<V, Long> phi = fordBellman(graph, source, true).first;
 		while (maxFlow != 0) {
-			Pair<long[], Edge[]> result = dijkstraAlgorithm(graph, source, phi);
-			if (result.first[destination] == Long.MAX_VALUE)
+			Pair<Map<V, Long>, Map<V, Edge<V>>> result = dijkstraAlgorithm(graph, source, phi);
+			if (!result.first.containsKey(destination))
 				return Pair.makePair(cost, flow);
-			for (int i = 0; i < graph.getSize(); i++) {
-				if (result.first[i] != Long.MAX_VALUE)
-					phi[i] -= result.first[i];
-			}
-			int vertex = destination;
+			for (Map.Entry<V, Long> entry : result.first.entrySet())
+				phi.put(entry.getKey(), phi.get(entry.getKey()) + entry.getValue());
+			V vertex = destination;
 			long currentFlow = maxFlow;
 			long currentCost = 0;
 			while (vertex != source) {
-				currentFlow = Math.min(currentFlow, result.second[vertex].getCapacity());
-				currentCost += result.second[vertex].getWeight();
-				vertex = result.second[vertex].getSource();
+				Edge<V> edge = result.second.get(vertex);
+				currentFlow = Math.min(currentFlow, edge.getCapacity());
+				currentCost += edge.getWeight();
+				vertex = edge.getSource();
 			}
 			maxFlow -= currentFlow;
 			cost += currentCost * currentFlow;
 			flow += currentFlow;
 			vertex = destination;
 			while (vertex != source) {
-				result.second[vertex].pushFlow(currentFlow);
-				vertex = result.second[vertex].getSource();
+				Edge<V> edge = result.second.get(vertex);
+				edge.pushFlow(currentFlow);
+				vertex = edge.getSource();
 			}
 		}
 		return Pair.makePair(cost, flow);
 	}
 
-	public static Pair<long[], Edge[]> fordBellman(Graph graph, int source) {
+	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> fordBellman(Graph<V> graph, V source) {
 		return fordBellman(graph, source, false);
 	}
 
-	public static Pair<long[], Edge[]> fordBellman(Graph graph, int source, boolean ignoreEmptyEdges) {
-		long[] distances = new long[graph.getSize()];
-		Arrays.fill(distances, Long.MAX_VALUE);
-		distances[source] = 0;
-		Edge[] last = new Edge[graph.getSize()];
-		Set<Integer> viable = Collections.singleton(source);
+	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> fordBellman(Graph<V> graph, V source, boolean ignoreEmptyEdges) {
+		Map<V, Long> distances = new HashMap<V, Long>();
+		distances.put(source, 0L);
+		Map<V, Edge<V>> last = new HashMap<V, Edge<V>>();
+		final Set<V> inQueue = new HashSet<V>();
+		Queue<V> queue = new ArrayBlockingQueue<V>(graph.vertices().size()) {
+			@Override
+			public boolean add(V v) {
+				inQueue.add(v);
+				return super.add(v);
+			}
+
+			@Override
+			public V poll() {
+				V result = super.poll();
+				inQueue.remove(result);
+				return result;
+			}
+		};
+		queue.add(source);
 		int stepCount = 0;
-		while (!viable.isEmpty()) {
-			Set<Integer> nextViable = new HashSet<Integer>();
-			for (int i : viable) {
-				for (Edge edge : graph.getIncident(i)) {
-					long total = distances[i] + edge.getWeight();
-					int destination = edge.getDestination();
-					if (total < distances[destination] && (!ignoreEmptyEdges || edge.getCapacity() != 0)) {
-						distances[destination] = total;
-						last[destination] = edge;
-						nextViable.add(destination);
-					}
+		int maxSteps = graph.vertices().size();
+		maxSteps *= 2 * maxSteps;
+		while (!queue.isEmpty()) {
+			V vertex = queue.poll();
+			for (Edge<V> edge : graph.getIncident(vertex)) {
+				long total = distances.get(vertex) + edge.getWeight();
+				V destination = edge.getDestination();
+				if ((!ignoreEmptyEdges || edge.getCapacity() != 0) && (!distances.containsKey(destination) || distances.get(destination) > total)) {
+					distances.put(destination, total);
+					last.put(destination, edge);
+					if (!inQueue.contains(destination))
+						queue.add(destination);
 				}
 			}
-			viable = nextViable;
-			stepCount++;
-			if (stepCount > graph.getSize() + 1)
+			if (++stepCount > maxSteps)
 				return null;
 		}
 		return Pair.makePair(distances, last);
 	}
 
-	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source) {
-		int size = graph.getSize();
-		final long[] distance = new long[size];
-		Queue<Pair<Long, Integer>> queue = new PriorityQueue<Pair<Long, Integer>>(size);
-		Edge[] last = new Edge[size];
-		Arrays.fill(distance, Long.MAX_VALUE);
-		distance[source] = 0;
+	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> dijkstraAlgorithm(Graph<V> graph, V source) {
+		Map<V, Long> distance = new HashMap<V, Long>();
+		Queue<Pair<Long, V>> queue = new PriorityQueue<Pair<Long, V>>();
+		Map<V, Edge<V>> last = new HashMap<V, Edge<V>>();
+		distance.put(source, 0L);
 		queue.add(Pair.makePair(0L, source));
-		boolean[] processed = new boolean[size];
+		Set<V> processed = new HashSet<V>();
 		while (!queue.isEmpty()) {
-			int current = queue.poll().second;
-			if (processed[current])
+			V current = queue.poll().second;
+			if (processed.contains(current))
 				continue;
-			processed[current] = true;
-			for (Edge edge : graph.getIncident(current)) {
-				int next = edge.getDestination();
-				long weight = edge.getWeight();
-				if (distance[next] > distance[current] + weight) {
-					distance[next] = distance[current] + weight;
-					last[next] = edge;
-					queue.add(Pair.makePair(distance[next], next));
+			processed.add(current);
+			for (Edge<V> edge : graph.getIncident(current)) {
+				V next = edge.getDestination();
+				long total = edge.getWeight() + distance.get(current);
+				if (!distance.containsKey(next) || distance.get(next) > total) {
+					distance.put(next, total);
+					last.put(next, edge);
+					queue.add(Pair.makePair(total, next));
 				}
 			}
 		}
 		return Pair.makePair(distance, last);
 	}
 
-	public static Pair<long[], Edge[]> dijkstraAlgorithm(Graph graph, int source, long[] phi) {
-		int size = graph.getSize();
-		final long[] distance = new long[size];
-		Queue<Pair<Long, Integer>> queue = new PriorityQueue<Pair<Long, Integer>>(size);
-		Edge[] last = new Edge[size];
-		Arrays.fill(distance, Long.MAX_VALUE);
-		distance[source] = 0;
+	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> dijkstraAlgorithm(Graph<V> graph, V source, Map<V, Long> phi) {
+		Map<V, Long> distance = new HashMap<V, Long>();
+		Queue<Pair<Long, V>> queue = new PriorityQueue<Pair<Long, V>>();
+		Map<V, Edge<V>> last = new HashMap<V, Edge<V>>();
+		distance.put(source, 0L);
 		queue.add(Pair.makePair(0L, source));
-		boolean[] processed = new boolean[size];
+		Set<V> processed = new HashSet<V>();
 		while (!queue.isEmpty()) {
-			int current = queue.poll().second;
-			if (processed[current])
+			V current = queue.poll().second;
+			if (processed.contains(current))
 				continue;
-			processed[current] = true;
-			for (Edge edge : graph.getIncident(current)) {
+			processed.add(current);
+			for (Edge<V> edge : graph.getIncident(current)) {
 				if (edge.getCapacity() == 0)
 					continue;
-				int next = edge.getDestination();
-				long weight = edge.getWeight() + phi[next] - phi[current];
-				if (distance[next] > distance[current] + weight) {
-					distance[next] = distance[current] + weight;
-					last[next] = edge;
-					queue.add(Pair.makePair(distance[next], next));
+				V next = edge.getDestination();
+				long total = edge.getWeight() - phi.get(next) + phi.get(current) + distance.get(current);
+				if (!distance.containsKey(next) || distance.get(next) > total) {
+					distance.put(next, total);
+					last.put(next, edge);
+					queue.add(Pair.makePair(total, next));
 				}
 			}
 		}
 		return Pair.makePair(distance, last);
 	}
 
-	public static int[] colorGraphTwoColors(Graph graph, boolean allowBadEdges) {
-		final int[] coloring = new int[graph.getSize()];
-		boolean correctColoring = new DFS<Boolean, Integer>(graph) {
+	public static<V> Map<V, Integer> colorGraphTwoColors(Graph<V> graph, boolean allowBadEdges) {
+		final Map<V, Integer> coloring = new HashMap<V, Integer>();
+		boolean correctColoring = new DFS<Boolean, Integer, V>(graph) {
 			@Override
-			protected Boolean enterUnvisited(int vertex, Integer parameters) {
-				if (vertex == -1)
+			protected Boolean enterUnvisited(V vertex, Integer parameters) {
+				if (vertex == null)
 					return true;
-				coloring[vertex] = parameters;
+				coloring.put(vertex, parameters);
 				return true;
 			}
 
 			@Override
-			protected Boolean enterVisited(int vertex, Integer parameters) {
-				return vertex == -1 || coloring[vertex] == parameters;
+			protected Boolean enterVisited(V vertex, Integer parameters) {
+				return vertex == null || coloring.get(vertex).equals(parameters);
 			}
 
 			@Override
-			protected Integer getParameters(int vertex, Boolean result, Integer parameters, Edge edge,
+			protected Integer getParameters(V vertex, Boolean result, Integer parameters, Edge<V> edge,
 				AtomicBoolean enterVertex)
 			{
-				if (vertex == -1)
-					return coloring[edge.getDestination()];
+				if (vertex == null)
+					return coloring.get(edge.getDestination());
 				return 1 - parameters;
 			}
 
 			@Override
-			protected Boolean processResult(int vertex, Boolean result, Integer parameters, Boolean callResult,
+			protected Boolean processResult(V vertex, Boolean result, Integer parameters, Boolean callResult,
 				AtomicBoolean continueProcess)
 			{
 				return result && callResult;
 			}
 
 			@Override
-			protected Boolean exit(int vertex, Boolean result, Integer parameters) {
+			protected Boolean exit(V vertex, Boolean result, Integer parameters) {
 				return result;
 			}
 		}.run(null);

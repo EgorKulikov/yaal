@@ -3,12 +3,12 @@ package net.egork.graph;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class FlowEdge extends SimpleEdge {
+public class FlowEdge<V> extends SimpleEdge<V> {
 	private long capacity;
 	private long flow = 0;
-	private Edge reverseEdge;
+	private Edge<V> reverseEdge;
 
-	public FlowEdge(int source, int destination, long capacity) {
+	public FlowEdge(V source, V destination, long capacity) {
 		super(source, destination);
 		this.capacity = capacity;
 		reverseEdge = new ReverseEdge();
@@ -43,21 +43,23 @@ public class FlowEdge extends SimpleEdge {
 	}
 
 	@Override
-	public Edge getTransposedEdge() {
-		return new FlowEdge(destination, source, capacity + flow);
+	public Edge<V> getTransposedEdge() {
+		if (transposed == null)
+			transposed = new FlowEdge<V>(destination, source, capacity + flow);
+		return transposed;
 	}
 
 	@Override
-	public Edge getReverseEdge() {
+	public Edge<V> getReverseEdge() {
 		return reverseEdge;
 	}
 
-	private class ReverseEdge implements Edge {
-		public int getSource() {
+	private class ReverseEdge implements Edge<V> {
+		public V getSource() {
 			return destination;
 		}
 
-		public int getDestination() {
+		public V getDestination() {
 			return source;
 		}
 
@@ -77,11 +79,11 @@ public class FlowEdge extends SimpleEdge {
 			FlowEdge.this.pushFlow(-flow);
 		}
 
-		public Edge getTransposedEdge() {
+		public Edge<V> getTransposedEdge() {
 			throw new UnsupportedOperationException();
 		}
 
-		public Edge getReverseEdge() {
+		public Edge<V> getReverseEdge() {
 			return FlowEdge.this;
 		}
 	}
