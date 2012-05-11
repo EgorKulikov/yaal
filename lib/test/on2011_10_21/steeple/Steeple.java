@@ -27,16 +27,16 @@ public class Steeple {
 			else
 				horizontal.add(segment);
 		}
-		Graph graph = new Graph(totalCount + 2);
+		Graph<Integer> graph = new Graph<Integer>();
 		for (int i = 0; i < horizontal.size(); i++) {
-			graph.add(new FlowEdge(totalCount, i, 1));
+			graph.add(new FlowEdge<Integer>(totalCount, i, 1));
 			for (int j = 0; j < vertical.size(); j++) {
 				if (intersect(horizontal.get(i), vertical.get(j)))
-					graph.add(new FlowEdge(i, horizontal.size() + j, 1));
+					graph.add(new FlowEdge<Integer>(i, horizontal.size() + j, 1));
 			}
 		}
 		for (int j = 0; j < vertical.size(); j++)
-			graph.add(new FlowEdge(horizontal.size() + j, totalCount + 1, 1));
+			graph.add(new FlowEdge<Integer>(horizontal.size() + j, totalCount + 1, 1));
 		long answer = totalCount - GraphAlgorithms.dinic(graph, totalCount, totalCount + 1);
 		out.printLine(answer);
 	}

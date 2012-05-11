@@ -27,15 +27,16 @@ public class TaskC {
 			interestingTimes[2 * i + 1] = start[i] + time[i];
 		}
 		Arrays.sort(interestingTimes);
-		Graph graph = new Graph(2 * count + 1);
+		Graph<Integer> graph = new Graph<Integer>();
 		for (int i = 1; i < 2 * count; i++)
-			graph.add(new FlowEdge(i - 1, i, workerCount));
-		FlowEdge[] edges = new FlowEdge[count];
+			graph.add(new FlowEdge<Integer>(i - 1, i, workerCount));
+		@SuppressWarnings("unchecked")
+		FlowEdge<Integer>[] edges = new FlowEdge[count];
 		for (int i = 0; i < count; i++) {
-			graph.add(edges[i] = new WeightedFlowEdge(Arrays.binarySearch(interestingTimes, start[i]),
+			graph.add(edges[i] = new WeightedFlowEdge<Integer>(Arrays.binarySearch(interestingTimes, start[i]),
 				Arrays.binarySearch(interestingTimes, start[i] + time[i]), -profit[i], 1));
 		}
-		graph.add(new FlowEdge(2 * count, 0, workerCount));
+		graph.add(new FlowEdge<Integer>(2 * count, 0, workerCount));
 		GraphAlgorithms.minCostMaxFlow(graph, 2 * count, 2 * count - 1);
 		int[] answer = new int[count];
 		for (int i = 0; i < count; i++)

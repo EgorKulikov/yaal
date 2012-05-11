@@ -40,19 +40,19 @@ public class TaskC {
 			isGood[in.readInt() - 1] = true;
 		int source = count + participantCount * taskCount;
 		int sink = source + 1;
-		Graph graph = new Graph(source + 2);
+		Graph<Integer> graph = new Graph<Integer>();
 		for (int i = 0; i < count; i++) {
-			graph.add(new WeightedFlowEdge(source, i, 0, 1));
+			graph.add(new WeightedFlowEdge<Integer>(source, i, 0, 1));
 			for (int j = 0; j < participantCount; j++) {
 				for (int k = 0; k < taskCount; k++) {
 					if (participantMatches[i][j] && taskMatches[i][k])
-						graph.add(new WeightedFlowEdge(i, count + j * taskCount + k, isGood[j] ? -points[i] : 0, 1));
+						graph.add(new WeightedFlowEdge<Integer>(i, count + j * taskCount + k, isGood[j] ? -points[i] : 0, 1));
 				}
 			}
 		}
 		for (int i = 0; i < participantCount; i++) {
 			for (int j = 0; j < taskCount; j++)
-				graph.add(new WeightedFlowEdge(count + i * taskCount + j, sink, 0, 1));
+				graph.add(new WeightedFlowEdge<Integer>(count + i * taskCount + j, sink, 0, 1));
 		}
 		out.printLine(-GraphAlgorithms.minCostMaxFlow(graph, source, sink).first);
 	}

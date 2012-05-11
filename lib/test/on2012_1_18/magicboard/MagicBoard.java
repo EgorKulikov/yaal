@@ -10,11 +10,13 @@ import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.graph.SimpleEdge;
 
+import java.util.Map;
+
 public class MagicBoard {
 	public String ableToUnlock(String[] board) {
 		int rowCount = board.length;
 		int columnCount = board[0].length();
-		Graph graph = new BidirectionalGraph(rowCount + columnCount);
+		Graph<Integer> graph = new BidirectionalGraph<Integer>();
 		int[] rowDegree = new int[rowCount];
 		int[] columnDegree = new int[columnCount];
 		for (int i = 0; i < rowCount; i++) {
@@ -22,18 +24,18 @@ public class MagicBoard {
 				if (board[i].charAt(j) == '#') {
 					rowDegree[i]++;
 					columnDegree[j]++;
-					graph.add(new SimpleEdge(i, rowCount + j));
+					graph.add(new SimpleEdge<Integer>(i, rowCount + j));
 				}
 			}
 		}
 		int source = 0;
-		while (source < graph.getSize() && graph.getIncident(source).isEmpty())
+		while (source < rowCount + columnCount && !graph.getIncident(source).iterator().hasNext())
 			source++;
-		if (source != graph.getSize()) {
-			long[] distances = GraphAlgorithms.dijkstraAlgorithm(graph, source).first;
-			for (int i = 0, distancesLength = distances.length; i < distancesLength; i++) {
-				long l = distances[i];
-				if (l == Long.MAX_VALUE && !graph.getIncident(i).isEmpty()) {
+		if (source != rowCount + columnCount) {
+			Map<Integer, Long> distances = GraphAlgorithms.dijkstraAlgorithm(graph, source).first;
+			for (int i = 0, distancesLength = rowCount + columnCount; i < distancesLength; i++) {
+				Long l = distances.get(i);
+				if (l == null && graph.getIncident(i).iterator().hasNext()) {
 					return "NO";
 				}
 			}

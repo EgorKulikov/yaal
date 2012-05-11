@@ -3,20 +3,16 @@ package net.egork.graph;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class BidirectionalGraph extends Graph {
-	public BidirectionalGraph(int size) {
-		super(size);
-	}
-
+public class BidirectionalGraph<V> extends Graph<V> {
 	@Override
-	public void add(Edge edge) {
+	public void add(Edge<V> edge) {
 		super.add(edge);
 		super.add(edge.getTransposedEdge());
 	}
 
 	@Override
-	public void removeEdge(Edge edge) {
-		super.removeEdge(edge);
-		super.removeEdge(edge.getTransposedEdge());
+	public void remove(Edge<V> edge) {
+		super.remove(edge);
+		super.remove(edge.getTransposedEdge());
 	}
 }

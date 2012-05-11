@@ -1,36 +1,30 @@
 package net.egork.graph;
 
-import net.egork.collections.ArrayUtils;
-
-import java.util.Iterator;
-import java.util.Stack;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public abstract class DFS<R, P> {
-	protected Graph graph;
-	private Iterator<Edge>[] currentEdge;
-	protected boolean[] visited;
-	protected int vertexCount;
+public abstract class DFS<R, P, V> {
+	protected Graph<V> graph;
+	private Map<V, Iterator<Edge<V>>> currentEdge;
+	protected Set<V> visited;
 
-	protected DFS(Graph graph) {
+	protected DFS(Graph<V> graph) {
 		this.graph = graph;
-		vertexCount = graph.getSize();
-		//noinspection unchecked
-		currentEdge = new Iterator[vertexCount];
-		visited = new boolean[vertexCount];
+		currentEdge = new HashMap<V, Iterator<Edge<V>>>();
+		visited = new HashSet<V>();
 	}
 
-	protected abstract R enterUnvisited(int vertex, P parameters);
-	protected abstract R enterVisited(int vertex, P parameters);
-	protected abstract P getParameters(int vertex, R result, P parameters, Edge edge, AtomicBoolean enterVertex);
-	protected abstract R processResult(int vertex, R result, P parameters, R callResult, AtomicBoolean continueProcess);
-	protected abstract R exit(int vertex, R result, P parameters);
+	protected abstract R enterUnvisited(V vertex, P parameters);
+	protected abstract R enterVisited(V vertex, P parameters);
+	protected abstract P getParameters(V vertex, R result, P parameters, Edge<V> edge, AtomicBoolean enterVertex);
+	protected abstract R processResult(V vertex, R result, P parameters, R callResult, AtomicBoolean continueProcess);
+	protected abstract R exit(V vertex, R result, P parameters);
 
 	@SuppressWarnings({"unchecked"})
-	public R run(int vertex, P parameters) {
+	public R run(V vertex, P parameters) {
 		Stack<Action> actions = new Stack<Action>();
 		actions.add(new Action(ActionType.ENTER, vertex, null, parameters));
 		R result = null;
@@ -39,19 +33,19 @@ public abstract class DFS<R, P> {
 			vertex = action.vertex;
 			switch (action.type) {
 			case ENTER:
-				if (visited[vertex])
+				if (visited.contains(vertex))
 					result = enterVisited(vertex, action.parameters);
 				else {
 					result = enterUnvisited(action.vertex, action.parameters);
-					visited[vertex] = true;
-					currentEdge[vertex] = graph.getIncident(vertex).iterator();
+					visited.add(vertex);
+					currentEdge.put(vertex, graph.getIncident(vertex).iterator());
 					actions.push(new Action(ActionType.GET_PARAMETERS, vertex, result, action.parameters));
 				}
 				break;
 			case GET_PARAMETERS:
-				if (currentEdge[vertex].hasNext()) {
-					Edge edge = currentEdge[vertex].next();
-					int destination = edge.getDestination();
+				if (currentEdge.get(vertex).hasNext()) {
+					Edge<V> edge = currentEdge.get(vertex).next();
+					V destination = edge.getDestination();
 					AtomicBoolean enter = new AtomicBoolean(true);
 					parameters = getParameters(vertex, action.result, action.parameters, edge, enter);
 					if (enter.get()) {
@@ -79,23 +73,23 @@ public abstract class DFS<R, P> {
 	}
 
 	public R run(P parameters) {
-		return run(parameters, ArrayUtils.range(0, vertexCount - 1));
+		return run(parameters, graph.vertices());
 	}
 
-	public R run(P parameters, int[] order) {
-		R result = enterUnvisited(-1, parameters);
-		for (int i : order) {
+	public R run(P parameters, Collection<? extends V> order) {
+		R result = enterUnvisited(null, parameters);
+		for (V vertex : order) {
 			AtomicBoolean enterVertex = new AtomicBoolean(true);
-			P callParameters = getParameters(-1, result, parameters, new SimpleEdge(-1, i), enterVertex);
+			P callParameters = getParameters(null, result, parameters, new SimpleEdge<V>(null, vertex), enterVertex);
 			if (enterVertex.get()) {
-				R callResult = run(i, callParameters);
+				R callResult = run(vertex, callParameters);
 				AtomicBoolean continueProcess = new AtomicBoolean(true);
-				result = processResult(-1, result, parameters, callResult, continueProcess);
+				result = processResult(null, result, parameters, callResult, continueProcess);
 				if (!continueProcess.get())
 					break;
 			}
 		}
-		return exit(-1, result, parameters);
+		return exit(null, result, parameters);
 	}
 
 	private static enum ActionType {
@@ -107,11 +101,11 @@ public abstract class DFS<R, P> {
 
 	private class Action {
 		private final ActionType type;
-		private final int vertex;
+		private final V vertex;
 		private final R result;
 		private final P parameters;
 
-		private Action(ActionType type, int vertex, R result, P parameters) {
+		private Action(ActionType type, V vertex, R result, P parameters) {
 			this.type = type;
 			this.vertex = vertex;
 			this.result = result;

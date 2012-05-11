@@ -3,21 +3,21 @@ package net.egork.graph;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class SimpleEdge implements Edge {
-	protected final int source;
-	protected final int destination;
-	protected Edge transposed = null;
+public class SimpleEdge<V> implements Edge<V> {
+	protected final V source;
+	protected final V destination;
+	protected Edge<V> transposed = null;
 
-	public SimpleEdge(int source, int destination) {
+	public SimpleEdge(V source, V destination) {
 		this.source = source;
 		this.destination = destination;
 	}
 
-	public int getSource() {
+	public V getSource() {
 		return source;
 	}
 
-	public int getDestination() {
+	public V getDestination() {
 		return destination;
 	}
 
@@ -37,22 +37,22 @@ public class SimpleEdge implements Edge {
 		throw new UnsupportedOperationException();
 	}
 
-	public Edge getTransposedEdge() {
+	public Edge<V> getTransposedEdge() {
 		if (transposed == null)
 			transposed = new SimpleTransposedEdge();
 		return transposed;
 	}
 
-	public Edge getReverseEdge() {
+	public Edge<V> getReverseEdge() {
 		return null;
 	}
 
-	protected class SimpleTransposedEdge implements Edge {
-		public int getSource() {
+	protected class SimpleTransposedEdge implements Edge<V> {
+		public V getSource() {
 			return destination;
 		}
 
-		public int getDestination() {
+		public V getDestination() {
 			return source;
 		}
 
@@ -72,11 +72,11 @@ public class SimpleEdge implements Edge {
 			throw new UnsupportedOperationException();
 		}
 
-		public Edge getTransposedEdge() {
+		public Edge<V> getTransposedEdge() {
 			return SimpleEdge.this;
 		}
 
-		public Edge getReverseEdge() {
+		public Edge<V> getReverseEdge() {
 			return null;
 		}
 	}
