@@ -12,4 +12,6 @@ public interface Edge<V> {
 	public void pushFlow(long flow);
 	public Edge<V> getTransposedEdge();
 	public Edge<V> getReverseEdge();
+	public void setMarked(boolean marked);
+	public boolean isMarked();
 }
