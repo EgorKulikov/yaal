@@ -86,5 +86,13 @@ public class FlowEdge<V> extends SimpleEdge<V> {
 		public Edge<V> getReverseEdge() {
 			return FlowEdge.this;
 		}
+
+		public void setMarked(boolean marked) {
+			FlowEdge.this.setMarked(marked);
+		}
+
+		public boolean isMarked() {
+			return FlowEdge.this.isMarked();
+		}
 	}
 }

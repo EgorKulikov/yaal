@@ -6,7 +6,7 @@ import java.math.BigInteger;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class StringHash {
-	private static final long MULTIPLIER = 43;
+	public static final long MULTIPLIER = 43;
 	private static final long REVERSE_MULTIPLIER = BigInteger.valueOf(MULTIPLIER).modInverse(BigInteger.valueOf(2).pow(64)).longValue();
 
 	private final long[] hash;

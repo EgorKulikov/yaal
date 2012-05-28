@@ -6,6 +6,7 @@ package net.egork.graph;
 public class SimpleEdge<V> implements Edge<V> {
 	protected final V source;
 	protected final V destination;
+	protected boolean marked;
 	protected Edge<V> transposed = null;
 
 	public SimpleEdge(V source, V destination) {
@@ -47,6 +48,14 @@ public class SimpleEdge<V> implements Edge<V> {
 		return null;
 	}
 
+	public boolean isMarked() {
+		return marked;
+	}
+
+	public void setMarked(boolean marked) {
+		this.marked = marked;
+	}
+
 	protected class SimpleTransposedEdge implements Edge<V> {
 		public V getSource() {
 			return destination;
@@ -78,6 +87,14 @@ public class SimpleEdge<V> implements Edge<V> {
 
 		public Edge<V> getReverseEdge() {
 			return null;
+		}
+
+		public void setMarked(boolean marked) {
+			SimpleEdge.this.setMarked(marked);
+		}
+
+		public boolean isMarked() {
+			return SimpleEdge.this.isMarked();
 		}
 	}
 }

@@ -51,7 +51,7 @@ public class GraphAlgorithms {
 		Iterator<Edge<V>> incident = nextEdge.get(source);
 		if (incident == null)
 			nextEdge.put(source, incident = graph.getIncident(source).iterator());
-		int totalPushed = 0;
+		long totalPushed = 0;
 		while (incident.hasNext()) {
 			Edge<V> edge = incident.next();
 			V nextDestination = edge.getDestination();
