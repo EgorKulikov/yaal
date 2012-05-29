@@ -1,4 +1,4 @@
-package on2012_4_27.taskd;
+package on2012_4_1.median;
 
 import net.egork.chelper.tester.Tester;
 import org.junit.Assert;
@@ -8,9 +8,9 @@ public class Main {
 	@Test
 	public void test() throws Exception {
 		if (!Tester.test("net.egork.utils.io.InputReader",
-			"on2012_4_27.taskd.TaskD",
-			"SINGLE",
-			"2/__uu/__u/__5/__.uu..uu/__.uu...u/__...uu.u/__.u.u.uu/__uuu.uu.;;2/__1 2;;true::1/__a/__1/__a./__;;2/__0 1/__;;true::5/__abc/__bc/__c/__ab/__a/__2/__bc.a/__bc.a/__;;4/__0 1 2 3/__;;true",
+			"on2012_4_1.median.Median",
+			"MULTI_NUMBER",
+			"2/__3/__1 2 3/__4/__2 1 1 2/__;;2/__1/__;;true",
 			"net.egork.utils.io.OutputWriter"))
 		{
 			Assert.fail();
