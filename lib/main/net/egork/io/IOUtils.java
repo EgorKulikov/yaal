@@ -106,6 +106,13 @@ public class IOUtils {
 		return table;
 	}
 
+	public static double[][] readDoubleTable(InputReader in, int rowCount, int columnCount) {
+		double[][] table = new double[rowCount][];
+		for (int i = 0; i < rowCount; i++)
+			table[i] = readDoubleArray(in, columnCount);
+		return table;
+	}
+
 	public static long[][] readLongTable(InputReader in, int rowCount, int columnCount) {
 		long[][] table = new long[rowCount][];
 		for (int i = 0; i < rowCount; i++)

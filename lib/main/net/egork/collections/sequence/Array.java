@@ -2,11 +2,12 @@ package net.egork.collections.sequence;
 
 import java.util.AbstractList;
 import java.util.List;
+import java.util.RandomAccess;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public abstract class Array<T> extends AbstractList<T> {
+public abstract class Array<T> extends AbstractList<T> implements RandomAccess {
 	public static<T> List<T> wrap(T...array) {
 		return new ReferenceArray<T>(array);
 	}
