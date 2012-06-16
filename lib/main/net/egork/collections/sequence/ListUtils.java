@@ -64,7 +64,7 @@ public class ListUtils {
 		NavigableSet<T> set = new TreapSet<T>();
 		int index = 0;
 		for (T element : sequence) {
-			result += index - set.headSet(element).size();
+			result += set.tailSet(element).size();
 			set.add(element);
 		}
 		return result;
