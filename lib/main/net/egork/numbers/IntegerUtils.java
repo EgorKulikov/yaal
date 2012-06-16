@@ -191,6 +191,16 @@ public class IntegerUtils {
 		return result;
 	}
 
+	public static long power(long base, long exponent) {
+		if (exponent == 0)
+			return 1;
+		long result = power(base, exponent >> 1);
+		result = result * result;
+		if ((exponent & 1) != 0)
+			result = result * base;
+		return result;
+	}
+
 	public static long power(long base, long exponent, long mod) {
 		if (exponent == 0)
 			return 1;

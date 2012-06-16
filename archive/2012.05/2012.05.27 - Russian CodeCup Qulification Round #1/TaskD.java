@@ -1,6 +1,7 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
+import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
@@ -24,13 +25,13 @@ public class TaskD {
 		int count = in.readInt();
 		Set<Long> set = new HashSet<Long>();
 		for (int i = 0; i < count; i++)
-			set.add(new StringHash(in.readString()).hash(0));
+			set.add(new SimpleStringHash(in.readString()).hash(0));
 		int rowCount = in.readInt();
 		String[] text = IOUtils.readStringArray(in, rowCount);
 		size = text[0].length();
 		hashes = new StringHash[rowCount];
 		for (int i = 0; i < rowCount; i++)
-			hashes[i] = new StringHash(text[i]);
+			hashes[i] = new SimpleStringHash(text[i]);
 		Set<Integer> variants = new HashSet<Integer>(Array.wrap(ArrayUtils.range(0, size - 1)));
 		int[][] end = new int[rowCount][size];
 		int[][] start = new int[rowCount][size];
