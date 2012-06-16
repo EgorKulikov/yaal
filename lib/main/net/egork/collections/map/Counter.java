@@ -1,17 +1,13 @@
 package net.egork.collections.map;
 
-import net.egork.misc.Factory;
+import java.util.HashMap;
 
 /**
  * @author Egor Kulikov (egor@egork.net)
  */
-public class Counter<K> extends CPPMap<K, Long> {
+public class Counter<K> extends HashMap<K, Long> {
 	public Counter() {
-		super(new Factory<Long>() {
-			public Long create() {
-				return 0L;
-			}
-		});
+		super();
 	}
 
 	public void add(K key) {
@@ -20,5 +16,12 @@ public class Counter<K> extends CPPMap<K, Long> {
 
 	public void add(K key, long delta) {
 		put(key, get(key) + delta);
+	}
+
+	@Override
+	public Long get(Object key) {
+		if (containsKey(key))
+			return super.get(key);
+		return 0L;
 	}
 }
