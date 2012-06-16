@@ -1,5 +1,6 @@
 package net.egork;
 
+import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.string.StringUtils;
 import net.egork.utils.io.InputReader;
@@ -16,8 +17,8 @@ public class FirstNonPalindrome {
 			out.println(0);
 			return;
 		}
-		direct = new StringHash(s);
-		reverse = new StringHash(StringUtils.reverse(s));
+		direct = new SimpleStringHash(s);
+		reverse = new SimpleStringHash(StringUtils.reverse(s));
 		if (s.charAt(0) != s.charAt(1)) {
 			int firstCycleEnd = -1;
 			for (int i = 2; i < s.length(); i++) {
