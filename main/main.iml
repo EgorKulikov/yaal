@@ -12,7 +12,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../chelper/chelper.jar!/" />
+          <root url="jar://$USER_HOME$/.IntelliJIdea11/config/plugins/chelper2.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
