@@ -1,6 +1,7 @@
 import net.egork.collections.ArrayUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
+import net.egork.string.AbstractStringHash;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.utils.io.InputReader;
@@ -18,7 +19,7 @@ public class TaskD {
 	{
 		power[0] = 1;
 		for (int i = 1; i <= 2000; i++)
-			power[i] = power[i - 1] * StringHash.MULTIPLIER;
+			power[i] = power[i - 1] * AbstractStringHash.MULTIPLIER;
 	}
 
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

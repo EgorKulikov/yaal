@@ -1,6 +1,7 @@
 package net.egork;
 
 import net.egork.collections.ArrayUtils;
+import net.egork.string.AbstractStringHash;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.string.StringUtils;
@@ -63,7 +64,7 @@ public class EquivalentSuffixTries {
             int remainder = deviateEnd % delta;
             long repeatHash = hash.hash(i, i + delta);
             long remainderHash = hash.hash(i, i + remainder);
-            long smallPower = power(StringHash.MULTIPLIER, delta);
+            long smallPower = power(AbstractStringHash.MULTIPLIER, delta);
             long curPower = 1;
             long curHash = 0;
             for (int j = 0; j < repeats; j++) {

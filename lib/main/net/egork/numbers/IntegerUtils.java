@@ -335,4 +335,13 @@ public class IntegerUtils {
 			result[i] = result[i - 1] * base % mod;
 		return result;
 	}
+
+    public static long nextPrime(long from) {
+        if (from <= 2)
+            return 2;
+        from += 1 - (from & 1);
+        while (!isPrime(from))
+            from += 2;
+        return from;
+    }
 }
