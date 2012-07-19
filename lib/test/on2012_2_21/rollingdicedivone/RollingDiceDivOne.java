@@ -2,7 +2,7 @@ package on2012_2_21.rollingdicedivone;
 
 
 
-import net.egork.collections.ReverseComparator;
+import net.egork.collections.comparators.ReverseComparator;
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.ListUtils;
 

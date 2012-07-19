@@ -2,7 +2,7 @@ package on2012_5_11.striirec;
 
 
 
-import net.egork.collections.ReverseComparator;
+import net.egork.collections.comparators.ReverseComparator;
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.ListUtils;
 
