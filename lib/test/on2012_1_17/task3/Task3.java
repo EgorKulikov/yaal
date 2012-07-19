@@ -2,7 +2,7 @@ package on2012_1_17.task3;
 
 
 
-import net.egork.collections.ReverseComparator;
+import net.egork.collections.comparators.ReverseComparator;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;

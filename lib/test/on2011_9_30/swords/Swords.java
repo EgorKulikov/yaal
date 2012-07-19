@@ -1,7 +1,7 @@
 package on2011_9_30.swords;
 
 
-import net.egork.collections.ReverseComparator;
+import net.egork.collections.comparators.ReverseComparator;
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.ListUtils;
 import net.egork.io.IOUtils;

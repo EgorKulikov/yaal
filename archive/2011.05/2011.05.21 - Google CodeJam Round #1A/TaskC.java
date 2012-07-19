@@ -1,4 +1,4 @@
-import net.egork.collections.ReverseComparator;
+import net.egork.collections.comparators.ReverseComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.Solver;
 import net.egork.utils.old.io.old.InputReader;
