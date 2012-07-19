@@ -12,7 +12,7 @@ public abstract class HeavyLightDecomposition<V, D> {
     private final int[] quantities;
     private final int[] level;
     private final int[] heavyChild;
-    private final IntervalTree<V, D>[] tree;
+    private final SimpleIntervalTree<V, D>[] tree;
     private final int[] indexInTree;
     private final LongIntervalTree lcmTree;
     private final long[] order;
@@ -28,7 +28,7 @@ public abstract class HeavyLightDecomposition<V, D> {
         Arrays.fill(heavyChild, -1);
         calculateHeavyChildren(0, -1);
         //noinspection unchecked
-        tree = new IntervalTree[graph.length];
+        tree = new SimpleIntervalTree[graph.length];
         indexInTree = new int[graph.length];
         parent = new int[graph.length];
         calculateTrees(0, -1);
@@ -90,7 +90,7 @@ public abstract class HeavyLightDecomposition<V, D> {
                 list.add(current);
                 current = heavyChild[current];
             }
-            IntervalTree<V, D> currentTree = new IntervalTree<V, D>(list.size()) {
+            SimpleIntervalTree<V, D> currentTree = new SimpleIntervalTree<V, D>(list.size()) {
                 @Override
                 protected V joinValue(V left, V right) {
                     return HeavyLightDecomposition.this.joinValue(left, right);
