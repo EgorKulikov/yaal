@@ -3,7 +3,7 @@ package net.egork.collections.intervaltree;
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)
  */
-public abstract class ArrayBasedIntervalTree<V, D> extends IntervalTree<V, D> {
+public abstract class ArrayBasedIntervalTree<V, D> extends SimpleIntervalTree<V, D> {
     private V[] array;
 
     protected ArrayBasedIntervalTree(V[] array) {
