@@ -18,8 +18,8 @@ public class SimpleStringHash extends AbstractStringHash {
         long firstPower = 1;
         long secondPower = 1;
 		for (int i = 0; i < length; i++) {
-			firstHash[i + 1] = firstHash[i] + string.charAt(i) * firstPower;
-            secondHash[i + 1] = secondHash[i] + string.charAt(i) * secondPower;
+			firstHash[i + 1] = (firstHash[i] + string.charAt(i) * firstPower) % FIRST_MOD;
+            secondHash[i + 1] = (secondHash[i] + string.charAt(i) * secondPower) % SECOND_MOD;
 			firstPower *= MULTIPLIER;
             firstPower %= FIRST_MOD;
             secondPower *= MULTIPLIER;
