@@ -8,24 +8,39 @@ import net.egork.numbers.IntegerUtils;
 public class CompositeStringHash extends AbstractStringHash {
 	private final StringHash first;
 	private final StringHash second;
-	private final long power;
+	private final long firstPower;
+    private final long secondPower;
 
 	public CompositeStringHash(StringHash first, StringHash second) {
 		this.first = first;
 		this.second = second;
-		power = IntegerUtils.power(StringHash.MULTIPLIER, first.length());
-	}
+		firstPower = IntegerUtils.power(MULTIPLIER, first.length(), FIRST_MOD);
+        secondPower = IntegerUtils.power(MULTIPLIER, first.length(), SECOND_MOD);
+    }
 
 	public long hash(int from, int to) {
-		try {
-		if (to <= first.length())
-			return first.hash(from, to);
-		if (from >= first.length())
-			return second.hash(from - first.length(), to - first.length()) * power;
-		return first.hash(from) + power * second.hash(0, to - first.length());
-		} catch (IndexOutOfBoundsException e) {
-			return 0;
-		}
+        long firstFirst;
+        long firstSecond;
+        long secondFirst;
+        long secondSecond;
+		if (to <= first.length()) {
+            secondFirst = 0;
+            secondSecond = 0;
+        } else {
+            long value = second.hash(from - first.length(), to - first.length());
+            secondFirst = value >>> 32;
+            secondSecond = value & ((1L << 32) - 1);
+        }
+		if (from >= first.length()) {
+            firstFirst = 0;
+            firstSecond = 0;
+        } else {
+            long value = first.hash(from, to);
+            firstFirst = value >>> 32;
+            firstSecond = value & ((1L << 32) - 1);
+        }
+        return (((firstFirst + secondFirst * firstPower) % FIRST_MOD) << 32) +
+            ((firstSecond + secondSecond * secondPower) % SECOND_MOD);
 	}
 
 	public int length() {
