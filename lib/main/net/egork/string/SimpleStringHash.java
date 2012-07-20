@@ -45,8 +45,8 @@ public class SimpleStringHash extends AbstractStringHash {
     }
 
     public long hash(int from, int to) {
-		return (((firstHash[to] - firstHash[from]) * firstReversePower[from] % FIRST_MOD) << 32) +
-            ((secondHash[to] - secondHash[from]) * secondReversePower[from] % SECOND_MOD);
+		return (((firstHash[to] - firstHash[from] + FIRST_MOD) * firstReversePower[from] % FIRST_MOD) << 32) +
+            ((secondHash[to] - secondHash[from] + SECOND_MOD) * secondReversePower[from] % SECOND_MOD);
 	}
 
 	public int length() {
