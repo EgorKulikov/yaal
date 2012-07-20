@@ -9,6 +9,8 @@ import java.util.Comparator;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class ArrayUtils {
+    private static int[] tempInt = new int[0];
+
 	public static Integer[] generateOrder(int size) {
 		Integer[] order = new Integer[size];
 		for (int i = 0; i < size; i++)
@@ -146,10 +148,17 @@ public class ArrayUtils {
     }
 
     public static int[] sort(int[] array, int from, int to, IntComparator comparator) {
-        int[] temp = new int[to - from];
-        System.arraycopy(array, from, temp, 0, to - from);
-        sortImpl(array, from, to, temp, 0, to - from, comparator);
+        ensureCapacityInt(to - from);
+        System.arraycopy(array, from, tempInt, 0, to - from);
+        sortImpl(array, from, to, tempInt, 0, to - from, comparator);
         return array;
+    }
+
+    private static void ensureCapacityInt(int size) {
+        if (tempInt.length >= size)
+            return;
+        size = Math.max(size, tempInt.length << 1);
+        tempInt = new int[size];
     }
 
     private static void sortImpl(int[] array, int from, int to, int[] temp, int fromTemp, int toTemp, IntComparator comparator) {
