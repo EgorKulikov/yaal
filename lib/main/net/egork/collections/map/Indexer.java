@@ -1,11 +1,9 @@
 package net.egork.collections.map;
 
-import java.util.HashMap;
-
 /**
  * @author Egor Kulikov (egor@egork.net)
  */
-public class Indexer<K> extends HashMap<K, Integer> {
+public class Indexer<K> extends EHashMap<K, Integer> {
 	private int index = 0;
 
 	@Override
