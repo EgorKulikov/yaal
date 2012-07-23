@@ -1,7 +1,7 @@
 package net.egork;
 
 import net.egork.collections.Pair;
-import net.egork.collections.ReverseComparator;
+import net.egork.collections.comparators.ReverseComparator;
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.ListUtils;
 import net.egork.collections.set.MultiSet;

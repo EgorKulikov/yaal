@@ -27,22 +27,22 @@ public class TaskF {
 			throw new RuntimeException();
 		SumIntervalTree tree = new SumIntervalTree(count);
 		for (int i = 0; i < count; i++)
-			tree.put(first[i], salary[i]);
+			tree.update(first[i], first[i], salary[i]);
 		for (int i = 0; i < queryCount; i++) {
 			String type = in.readString();
 			int index = in.readInt();
 			int maxSalary = in.readInt();
 			int delta = in.readInt();
 			if ("employee".equals(type)) {
-				if (tree.get(first[index]) < maxSalary)
-					tree.put(first[index], delta);
+				if (tree.query(first[index], first[index]) < maxSalary)
+					tree.update(first[index], first[index], delta);
 			} else {
-				if (tree.getSegment(first[index], last[index]) / (last[index] - first[index]) < maxSalary)
-					tree.putSegment(first[index], last[index], delta);
+				if (tree.query(first[index], last[index] - 1) / (last[index] - first[index]) < maxSalary)
+					tree.update(first[index], last[index] - 1, delta);
 			}
 		}
 		for (int i = 0; i < count; i++)
-			out.println(tree.get(first[i]));
+			out.println(tree.query(first[i], first[i]));
 	}
 
 	private int createOrder(int vertex, int index, int[][] graph, int[] first, int[] last) {

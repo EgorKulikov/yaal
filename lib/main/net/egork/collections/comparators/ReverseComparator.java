@@ -1,4 +1,4 @@
-package net.egork.collections;
+package net.egork.collections.comparators;
 
 import java.util.Comparator;
 

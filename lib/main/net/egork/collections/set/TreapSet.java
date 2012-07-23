@@ -482,6 +482,8 @@ public class TreapSet<K> implements NavigableSet<K> {
 	}
 
 	private class NullNode extends Node {
+        private Object[] splitResult = new Object[2];
+
 		private NullNode() {
 			super(null, Long.MIN_VALUE);
 			left = this;
@@ -491,7 +493,8 @@ public class TreapSet<K> implements NavigableSet<K> {
 
 		@Override
 		protected Object[] split(K key) {
-			return new Object[]{this, this};
+            splitResult[0] = splitResult[1] = this;
+			return splitResult;
 		}
 
 		@Override

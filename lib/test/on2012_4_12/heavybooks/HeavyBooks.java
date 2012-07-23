@@ -3,7 +3,7 @@ package on2012_4_12.heavybooks;
 
 
 import net.egork.collections.ArrayUtils;
-import net.egork.collections.ReverseComparator;
+import net.egork.collections.comparators.ReverseComparator;
 import net.egork.collections.sequence.Array;
 
 import java.util.Arrays;
