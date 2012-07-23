@@ -1,11 +1,9 @@
 package net.egork.collections.map;
 
-import java.util.HashMap;
-
 /**
  * @author Egor Kulikov (egor@egork.net)
  */
-public class Counter<K> extends HashMap<K, Long> {
+public class Counter<K> extends EHashMap<K, Long> {
 	public Counter() {
 		super();
 	}

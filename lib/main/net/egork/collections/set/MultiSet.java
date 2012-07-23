@@ -1,6 +1,7 @@
 package net.egork.collections.set;
 
-import java.util.HashMap;
+import net.egork.collections.map.EHashMap;
+
 import java.util.Iterator;
 import java.util.Map;
 
@@ -12,7 +13,7 @@ public class MultiSet<K> implements Iterable<K> {
 	private int size = 0;
 
 	public MultiSet() {
-		this(new HashMap<K, Integer>());
+		this(new EHashMap<K, Integer>());
 	}
 
 	public MultiSet(Map<K, Integer> underlying) {

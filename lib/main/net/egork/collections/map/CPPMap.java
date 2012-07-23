@@ -2,12 +2,10 @@ package net.egork.collections.map;
 
 import net.egork.misc.Factory;
 
-import java.util.HashMap;
-
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class CPPMap<K, V> extends HashMap<K, V> {
+public class CPPMap<K, V> extends EHashMap<K, V> {
 	private final Factory<V> defaultValueFactory;
 
 	public CPPMap(Factory<V> defaultValueFactory) {
