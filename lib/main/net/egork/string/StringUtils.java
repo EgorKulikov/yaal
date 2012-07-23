@@ -1,5 +1,9 @@
 package net.egork.string;
 
+import net.egork.collections.ArrayUtils;
+import net.egork.collections.comparators.IntComparator;
+import net.egork.numbers.IntegerUtils;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -41,14 +45,12 @@ public class StringUtils {
 	public static int[] zAlgorithm(CharSequence s) {
 		int length = s.length();
 		int[] z = new int[length];
-		z[0] = 0;
-
 		int left = 0, right = 0;
 		for (int i = 1; i < length; i++) {
 			if (i > right) {
 				int j;
 				//noinspection StatementWithEmptyBody
-				for (j = 0; i + j < length && s.charAt(i + j) == s.charAt(j); j++) ;
+				for (j = 0; i + j < length && s.charAt(i + j) == s.charAt(j); j++);
 				z[i] = j;
 				left = i;
 				right = i + j - 1;
@@ -57,7 +59,7 @@ public class StringUtils {
 			else {
 				int j;
 				//noinspection StatementWithEmptyBody
-				for (j = 1; right + j < length && s.charAt(right + j) == s.charAt(right - i + j); j++) ;
+				for (j = 1; right + j < length && s.charAt(right + j) == s.charAt(right - i + j); j++);
 				z[i] = right - i + j;
 				left = i;
 				right = right + j - 1;
@@ -80,4 +82,41 @@ public class StringUtils {
 		}
 		return p;
 	}
+
+    public static int[] suffixArray(CharSequence s) {
+        int length = s.length();
+        int[] result = new int[length];
+        for (int i = 0; i < length; i++)
+            result[i] = length - i - 1;
+        final long[] type = new long[length];
+        for (int i = 0; i < length; i++)
+            type[i] = s.charAt(i);
+        final long[] nextType = new long[length];
+        int curLength = 1;
+        ArrayUtils.sort(result, new IntComparator() {
+            public int compare(int first, int second) {
+                return IntegerUtils.longCompare(type[first], type[second]);
+            }
+        });
+        while (curLength < length) {
+            for (int i = 0; i < length; i++)
+                nextType[i] = (type[i] << 32) + (i + curLength < length ? type[i + curLength] : -1);
+            ArrayUtils.sort(result, new IntComparator() {
+                public int compare(int first, int second) {
+                    return IntegerUtils.longCompare(nextType[first], nextType[second]);
+                }
+            });
+            long currentType = nextType[result[0]];
+            long currentIndex = 0;
+            for (int i = 0; i < length; i++) {
+                if (nextType[result[i]] != currentType) {
+                    currentIndex++;
+                    currentType = nextType[result[i]];
+                }
+                type[result[i]] = currentIndex;
+            }
+            curLength <<= 1;
+        }
+        return result;
+    }
 }

@@ -16,11 +16,13 @@ public class TaskF {
 		for (int i = 0; i < count; i++) {
 			int from = in.readInt() - 1;
 			int to = in.readInt();
-			tree.putSegment(from, to, 1);
+			tree.update(from, to - 1, 1);
 		}
 		int[] answer = new int[queryCount];
-		for (int i = 0; i < queryCount; i++)
-			answer[i] = (int) tree.get(in.readInt() - 1);
+		for (int i = 0; i < queryCount; i++) {
+            int value = in.readInt() - 1;
+            answer[i] = (int) tree.query(value, value);
+        }
 		out.printLine(Array.wrap(answer).toArray());
 	}
 }

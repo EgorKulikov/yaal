@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class IntegerUtils {
 	public static long gcd(long a, long b) {
+        a = Math.abs(a);
+        b = Math.abs(b);
 		while (b != 0) {
 			long temp = a % b;
 			a = b;
@@ -20,7 +22,18 @@ public class IntegerUtils {
 		return a;
 	}
 
-	public static int[] generatePrimes(int upTo) {
+    public static int gcd(int a, int b) {
+        a = Math.abs(a);
+        b = Math.abs(b);
+        while (b != 0) {
+            int temp = a % b;
+            a = b;
+            b = temp;
+        }
+        return a;
+    }
+
+    public static int[] generatePrimes(int upTo) {
 		boolean[] isPrime = generatePrimalityTable(upTo);
 		List<Integer> primes = new ArrayList<Integer>();
 		for (int i = 0; i < upTo; i++) {
@@ -322,4 +335,13 @@ public class IntegerUtils {
 			result[i] = result[i - 1] * base % mod;
 		return result;
 	}
+
+    public static long nextPrime(long from) {
+        if (from <= 2)
+            return 2;
+        from += 1 - (from & 1);
+        while (!isPrime(from))
+            from += 2;
+        return from;
+    }
 }
