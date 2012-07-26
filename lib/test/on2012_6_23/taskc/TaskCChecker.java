@@ -15,7 +15,7 @@ public class TaskCChecker {
 	}
 
 	public double getCertainty() {
-		return 1e-6;
+		return 0;
 	}
 
 	public Collection<? extends Test> generateTests() {
