@@ -1,6 +1,4 @@
-package on2012_6_23.taske;
-
-
+package net.egork;
 
 import net.egork.collections.ArrayUtils;
 import net.egork.graph.GraphUtils;
