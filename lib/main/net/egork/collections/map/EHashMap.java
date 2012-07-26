@@ -45,9 +45,9 @@ public class EHashMap<E, V> extends AbstractMap<E, V> {
 					int index = 0;
 
 					public boolean hasNext() {
-						while (index < size && keys[index] == null)
+						while (index < capacity && keys[index] == null)
 							index++;
-						return index < size;
+						return index < capacity;
 					}
 
 					public Entry<E, V> next() {
