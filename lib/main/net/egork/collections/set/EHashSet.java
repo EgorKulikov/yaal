@@ -129,9 +129,9 @@ public class EHashSet<E> extends AbstractSet<E> {
 			private E lastReturnedKey;
 
 			public boolean hasNext() {
-				while (index < size && keys[index] == null)
+				while (index < capacity && keys[index] == null)
 					index++;
-				return index < size;
+				return index < capacity;
 			}
 
 			public E next() {
