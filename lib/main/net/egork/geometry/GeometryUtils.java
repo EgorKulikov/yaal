@@ -19,6 +19,10 @@ public class GeometryUtils {
 		}
 	}
 
+    public static double fastHypot(double x, double y) {
+        return Math.sqrt(x * x + y * y);
+    }
+
 	public static double fastHypot(double[] x, double[] y) {
 		if (x.length == 0)
 			return 0;
