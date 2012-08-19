@@ -224,7 +224,7 @@ public class GraphAlgorithms {
 				AtomicBoolean enterVertex)
 			{
 				if (vertex == null)
-					return coloring.get(edge.getDestination());
+					return coloring.containsKey(edge.getDestination()) ? coloring.get(edge.getDestination()) : 0;
 				return 1 - parameters;
 			}
 
