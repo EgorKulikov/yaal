@@ -6,6 +6,8 @@ package net.egork.geometry;
 public class Segment {
 	public final Point a;
 	public final Point b;
+    private double distance = Double.NaN;
+    private Line line = null;
 
 	public Segment(Point a, Point b) {
 		this.a = a;
@@ -13,7 +15,9 @@ public class Segment {
 	}
 
 	public double length() {
-		return a.distance(b);
+        if (Double.isNaN(distance))
+            distance = a.distance(b);
+        return distance;
 	}
 
 	public double distance(Point point) {
@@ -26,7 +30,7 @@ public class Segment {
 			return right;
 		if (right * right > left * left + length * length)
 			return left;
-		return point.distance(a.line(b));
+		return point.distance(line());
 	}
 
 	public Point intersect(Segment other, boolean includeEnds) {
@@ -57,7 +61,9 @@ public class Segment {
 	}
 
 	public Line line() {
-		return a.line(b);
+        if (line == null)
+            line = a.line(b);
+		return line;
 	}
 
 	public Point middle() {
