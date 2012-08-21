@@ -227,4 +227,12 @@ public class ArrayUtils {
             result = Math.max(result, array[i]);
         return result;
     }
+
+    public static int[] order(final double[] array) {
+        return sort(createOrder(array.length), new IntComparator() {
+            public int compare(int first, int second) {
+                return Double.compare(array[first], array[second]);
+            }
+        });
+    }
 }
