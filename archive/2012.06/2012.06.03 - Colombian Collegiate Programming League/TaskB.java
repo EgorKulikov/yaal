@@ -10,7 +10,7 @@ public class TaskB {
 			throw new UnknownError();
 		int[] heights = IOUtils.readIntArray(in, count);
 		int[] colors = IOUtils.readIntArray(in, count);
-		on2012_5_3.taskb.IntervalTree tree = new on2012_5_3.taskb.IntervalTree(heights, colors);
+		IntervalTree tree = new IntervalTree(heights, colors);
 		int[] leftQueue = new int[count];
 		int[] rightQueue = new int[count];
 		int allMask = (1 << colorCount) - 1;

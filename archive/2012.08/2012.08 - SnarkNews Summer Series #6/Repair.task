@@ -1,0 +1,35 @@
+6 Repair
+12 MULTI_NUMBER
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+210 2
+5 4
+hrenovina fignya figovina figo-hrenovina hreno-figovina
+2 fignya hreno-figovina
+2 hrenovina hreno-figovina
+1 figo-hrenovina
+1 figovina
+3 3
+figovina hrenovina progrebina
+1 figovina
+1 hrenovina
+1 progrebina
+4 19
+6
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+16 net.egork.Repair
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2012.08
+26 SnarkNews Summer Series #6
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
