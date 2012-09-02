@@ -11,9 +11,7 @@ public abstract class LongIntervalTree {
     protected LongIntervalTree(int size) {
         this.size = size;
         int nodeCount = Math.max(1, Integer.highestOneBit(size) << 2);
-        //noinspection unchecked
         value = new long[nodeCount];
-        //noinspection unchecked
         delta = new long[nodeCount];
     }
 
