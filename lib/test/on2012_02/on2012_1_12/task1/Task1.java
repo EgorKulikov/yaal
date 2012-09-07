@@ -23,7 +23,7 @@ public class Task1 {
 			out.printLine("NO");
 			return;
 		}
-//		Graph graph = new Graph(vertexCount * 2 + 2);
+//		OldGraph graph = new OldGraph(vertexCount * 2 + 2);
 //		for (int i = 0; i < vertexCount; i++) {
 //			int edgeCount = in.readInt();
 //			for (int j = 0; j < edgeCount; j++)
