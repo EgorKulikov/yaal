@@ -3,10 +3,7 @@ package on2012_04.on2012_3_11.taskc;
 
 
 import net.egork.collections.sequence.Array;
-import net.egork.graph.FlowEdge;
-import net.egork.graph.Graph;
-import net.egork.graph.GraphAlgorithms;
-import net.egork.graph.WeightedFlowEdge;
+import net.egork.graph.*;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
@@ -29,15 +26,15 @@ public class TaskC {
 		Arrays.sort(interestingTimes);
 		Graph<Integer> graph = new Graph<Integer>();
 		for (int i = 1; i < 2 * count; i++)
-			graph.add(new FlowEdge<Integer>(i - 1, i, workerCount));
+			graph.addFlowEdge(i - 1, i, workerCount);
 		@SuppressWarnings("unchecked")
-		FlowEdge<Integer>[] edges = new FlowEdge[count];
+		Edge<Integer>[] edges = new Edge[count];
 		for (int i = 0; i < count; i++) {
-			graph.add(edges[i] = new WeightedFlowEdge<Integer>(Arrays.binarySearch(interestingTimes, start[i]),
-				Arrays.binarySearch(interestingTimes, start[i] + time[i]), -profit[i], 1));
+			edges[i] = graph.addFlowWeightedEdge(Arrays.binarySearch(interestingTimes, start[i]),
+				Arrays.binarySearch(interestingTimes, start[i] + time[i]), -profit[i], 1);
 		}
-		graph.add(new FlowEdge<Integer>(2 * count, 0, workerCount));
-		GraphAlgorithms.minCostMaxFlow(graph, 2 * count, 2 * count - 1);
+		graph.addFlowEdge(2 * count, 0, workerCount);
+		new MinCostFlow<Integer>(graph, 2 * count, 2 * count - 1, true).minCostMaxFlow();
 		int[] answer = new int[count];
 		for (int i = 0; i < count; i++)
 			answer[i] = (int) edges[i].getFlow();

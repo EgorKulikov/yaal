@@ -1,5 +1,7 @@
 package net.egork.numbers;
 
+import java.util.Arrays;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -13,6 +15,12 @@ public class Matrix {
 		this.rowCount = rowCount;
 		this.columnCount = columnCount;
 		this.data = new long[rowCount][columnCount];
+	}
+
+	public Matrix(long[][] data) {
+		this.rowCount = data.length;
+		this.columnCount = data[0].length;
+		this.data = data;
 	}
 
 	public static Matrix add(Matrix first, Matrix second) {
@@ -58,6 +66,92 @@ public class Matrix {
 		for (int i = 0; i < size; i++)
 			result.data[i][i] = 1;
 		return result;
+	}
+
+	public static long[] convert(long[][] matrix) {
+		long[] result = new long[matrix.length * matrix.length];
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix.length; j++)
+				result[i * matrix.length + j] = matrix[i][j];
+		}
+		return result;
+	}
+
+	public static long[][] convert(long[] matrix, int side) {
+		long[][] result = new long[side][side];
+		for (int i = 0; i < side; i++) {
+			for (int j = 0; j < side; j++)
+				result[i][j] = matrix[i * side + j];
+		}
+		return result;
+	}
+
+	public static long[] power(long[] matrix, long exponent, long mod, int side) {
+		long[] result = new long[matrix.length];
+		long[] temp = new long[result.length];
+		power(matrix, result, temp, exponent, mod, side);
+		return result;
+	}
+
+	private static void power(long[] matrix, long[] result, long[] temp, long exponent, long mod, int side) {
+		if (exponent == 0) {
+			for (int i = 0; i < matrix.length; i += side + 1)
+				result[i] = 1;
+			return;
+		}
+		if ((exponent & 1) == 0) {
+			power(matrix, temp, result, exponent >> 1, mod, side);
+			multiply(result, temp, temp, mod, side);
+		} else {
+			power(matrix, temp, result, exponent - 1, mod, side);
+			multiply(result, temp, matrix, mod, side);
+		}
+	}
+
+	private static void multiply(long[] c, long[] a, long[] b, long mod, int side) {
+		Arrays.fill(c, 0);
+		for (int i = 0; i < side; i++) {
+			for (int j = 0; j < side; j++) {
+				for (int k = 0; k < side; k++)
+					c[i * side + k] += a[i * side + j] * b[j * side + k] % mod;
+			}
+		}
+		for (int i = 0; i < c.length; i++)
+			c[i] %= mod;
+	}
+
+	public static long[] fastPower(long[] matrix, long exponent, long mod, int side) {
+		long[] result = new long[matrix.length];
+		long[] temp = new long[result.length];
+		fastPower(matrix, result, temp, exponent, mod, side);
+		return result;
+	}
+
+	private static void fastPower(long[] matrix, long[] result, long[] temp, long exponent, long mod, int side) {
+		if (exponent == 0) {
+			for (int i = 0; i < matrix.length; i += side + 1)
+				result[i] = 1;
+			return;
+		}
+		if ((exponent & 1) == 0) {
+			fastPower(matrix, temp, result, exponent >> 1, mod, side);
+			fastMultiply(result, temp, temp, mod, side);
+		} else {
+			power(matrix, temp, result, exponent - 1, mod, side);
+			fastMultiply(result, temp, matrix, mod, side);
+		}
+	}
+
+	public static void fastMultiply(long[] c, long[] a, long[] b, long mod, int side) {
+		Arrays.fill(c, 0);
+		for (int i = 0; i < side; i++) {
+			for (int j = 0; j < side; j++) {
+				for (int k = 0; k < side; k++)
+					c[i * side + k] += a[i * side + j] * b[j * side + k];
+			}
+		}
+		for (int i = 0; i < c.length; i++)
+			c[i] %= mod;
 	}
 
 	public Matrix power(long exponent) {

@@ -1,247 +1,188 @@
 package net.egork.graph;
 
 import net.egork.collections.Pair;
+import net.egork.collections.comparators.IntComparator;
+import net.egork.collections.heap.Heap;
+import net.egork.numbers.IntegerUtils;
 
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class GraphAlgorithms {
 	public static<V> long dinic(Graph<V> graph, V source, V destination) {
+		int sourceID = graph.resolve(source);
+		int destinationID = graph.resolve(destination);
+		int vertexCount = graph.getVertexCount();
+		int[] queue = new int[vertexCount];
+		int[] distance = new int[vertexCount];
+		@SuppressWarnings("unchecked")
+		int[] nextEdge = new int[vertexCount];
 		long totalFlow = 0;
-		Map<V, Iterator<Edge<V>>> nextEdge = new HashMap<V, Iterator<Edge<V>>>();
 		while (true) {
-			Map<V, Integer> distance = edgeDistances(graph, source);
-			if (!distance.containsKey(destination))
+			edgeDistances(graph, sourceID, queue, distance);
+			if (distance[destinationID] == -1)
 				break;
-			nextEdge.clear();
-			totalFlow += dinicImpl(graph, source, destination, Long.MAX_VALUE, distance, nextEdge);
+			Arrays.fill(nextEdge, -2);
+			totalFlow += dinicImpl(graph, sourceID, destinationID, Long.MAX_VALUE, distance, nextEdge);
 		}
 		return totalFlow;
 	}
 
-	private static<V> Map<V, Integer> edgeDistances(Graph<V> graph, V source) {
-		Queue<V> queue = new ArrayBlockingQueue<V>(graph.vertices().size());
-		Map<V, Integer> distance = new HashMap<V, Integer>();
-		distance.put(source, 0);
-		queue.add(source);
-		while (!queue.isEmpty()) {
-			V current = queue.poll();
-			for (Edge<V> edge : graph.getIncident(current)) {
-				if (edge.getCapacity() == 0)
+	private static<V> void edgeDistances(Graph<V> graph, int sourceID, int[] queue, int[] distance) {
+		Arrays.fill(distance, -1);
+		distance[sourceID] = 0;
+		int size = 1;
+		queue[0] = sourceID;
+		for (int i = 0; i < size; i++) {
+			int current = queue[i];
+			int edgeID = graph.firstOutbound[current];
+			while (edgeID != -1) {
+				if (graph.removed[edgeID] || graph.capacity[edgeID] == 0) {
+					edgeID = graph.nextOutbound[edgeID];
 					continue;
-				V next = edge.getDestination();
-				if (!distance.containsKey(next)) {
-					distance.put(next, distance.get(current) + 1);
-					queue.add(next);
 				}
+				int next = graph.to[edgeID];
+				if (distance[next] == -1) {
+					distance[next] = distance[current] + 1;
+					queue[size++] = next;
+				}
+				edgeID = graph.nextOutbound[edgeID];
 			}
 		}
-		return distance;
 	}
 
-	private static<V> long dinicImpl(Graph<V> graph, V source, V destination, long flow, Map<V, Integer> distance, Map<V, Iterator<Edge<V>>> nextEdge) {
-		if (source.equals(destination))
+	private static<V> long dinicImpl(Graph<V> graph, int sourceID, int destinationID, long flow, int[] distance, int[] nextEdge) {
+		if (sourceID == destinationID)
 			return flow;
-		if (flow == 0 || distance.get(source).equals(distance.get(destination)))
+		if (flow == 0 || distance[sourceID] == distance[destinationID])
 			return 0;
-		Iterator<Edge<V>> incident = nextEdge.get(source);
-		if (incident == null)
-			nextEdge.put(source, incident = graph.getIncident(source).iterator());
+		int edgeID = nextEdge[sourceID];
+		if (edgeID == -2)
+			nextEdge[sourceID] = edgeID = graph.firstOutbound[sourceID];
 		long totalPushed = 0;
-		while (incident.hasNext()) {
-			Edge<V> edge = incident.next();
-			V nextDestination = edge.getDestination();
-			if (edge.getCapacity() == 0 || !distance.get(nextDestination).equals(distance.get(source) + 1))
+		while (edgeID != -1) {
+			int nextDestinationID = graph.to[edgeID];
+			if (graph.removed[edgeID] || graph.capacity[edgeID] == 0 || distance[nextDestinationID] != distance[sourceID] + 1) {
+				nextEdge[sourceID] = edgeID = graph.nextOutbound[edgeID];
 				continue;
-			long pushed = dinicImpl(graph, nextDestination, destination, Math.min(flow, edge.getCapacity()),
+			}
+			long pushed = dinicImpl(graph, nextDestinationID, destinationID, Math.min(flow, graph.capacity[edgeID]),
 				distance, nextEdge);
 			if (pushed != 0) {
-				edge.pushFlow(pushed);
+				graph.edges[edgeID].pushFlow(pushed);
 				flow -= pushed;
 				totalPushed += pushed;
 				if (flow == 0)
 					return totalPushed;
 			}
+			nextEdge[sourceID] = edgeID = graph.nextOutbound[edgeID];
 		}
 		return totalPushed;
 	}
 
-	public static<V> Pair<Long, Long> minCostMaxFlow(Graph<V> graph, V source, V destination) {
-		return minCostMaxFlow(graph, source, destination, Long.MAX_VALUE);
-	}
-
-	public static<V> Pair<Long, Long> minCostMaxFlow(Graph<V> graph, V source, V destination, long maxFlow) {
-		long cost = 0;
-		long flow = 0;
-		Map<V, Long> phi = fordBellman(graph, source, true).first;
-		while (maxFlow != 0) {
-			Pair<Map<V, Long>, Map<V, Edge<V>>> result = dijkstraAlgorithm(graph, source, phi);
-			if (!result.first.containsKey(destination))
-				return Pair.makePair(cost, flow);
-			for (Map.Entry<V, Long> entry : result.first.entrySet())
-				phi.put(entry.getKey(), phi.get(entry.getKey()) + entry.getValue());
-			V vertex = destination;
-			long currentFlow = maxFlow;
-			long currentCost = 0;
-			while (vertex != source) {
-				Edge<V> edge = result.second.get(vertex);
-				currentFlow = Math.min(currentFlow, edge.getCapacity());
-				currentCost += edge.getWeight();
-				vertex = edge.getSource();
-			}
-			maxFlow -= currentFlow;
-			cost += currentCost * currentFlow;
-			flow += currentFlow;
-			vertex = destination;
-			while (vertex != source) {
-				Edge<V> edge = result.second.get(vertex);
-				edge.pushFlow(currentFlow);
-				vertex = edge.getSource();
-			}
-		}
-		return Pair.makePair(cost, flow);
-	}
-
-	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> fordBellman(Graph<V> graph, V source) {
-		return fordBellman(graph, source, false);
-	}
-
-	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> fordBellman(Graph<V> graph, V source, boolean ignoreEmptyEdges) {
-		Map<V, Long> distances = new HashMap<V, Long>();
-		distances.put(source, 0L);
-		Map<V, Edge<V>> last = new HashMap<V, Edge<V>>();
-		final Set<V> inQueue = new HashSet<V>();
-		Queue<V> queue = new ArrayBlockingQueue<V>(graph.vertices().size()) {
-			@Override
-			public boolean add(V v) {
-				inQueue.add(v);
-				return super.add(v);
-			}
-
-			@Override
-			public V poll() {
-				V result = super.poll();
-				inQueue.remove(result);
-				return result;
-			}
-		};
-		queue.add(source);
-		int stepCount = 0;
-		int maxSteps = graph.vertices().size();
-		maxSteps *= 2 * maxSteps;
-		while (!queue.isEmpty()) {
-			V vertex = queue.poll();
-			for (Edge<V> edge : graph.getIncident(vertex)) {
-				long total = distances.get(vertex) + edge.getWeight();
-				V destination = edge.getDestination();
-				if ((!ignoreEmptyEdges || edge.getCapacity() != 0) && (!distances.containsKey(destination) || distances.get(destination) > total)) {
-					distances.put(destination, total);
-					last.put(destination, edge);
-					if (!inQueue.contains(destination))
-						queue.add(destination);
-				}
-			}
-			if (++stepCount > maxSteps)
-				return null;
-		}
-		return Pair.makePair(distances, last);
-	}
-
 	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> dijkstraAlgorithm(Graph<V> graph, V source) {
+		Pair<long[], int[]> result = dijkstraAlgorithmByID(graph, graph.resolve(source));
 		Map<V, Long> distance = new HashMap<V, Long>();
-		Queue<Pair<Long, V>> queue = new PriorityQueue<Pair<Long, V>>();
 		Map<V, Edge<V>> last = new HashMap<V, Edge<V>>();
-		distance.put(source, 0L);
-		queue.add(Pair.makePair(0L, source));
-		Set<V> processed = new HashSet<V>();
-		while (!queue.isEmpty()) {
-			V current = queue.poll().second;
-			if (processed.contains(current))
-				continue;
-			processed.add(current);
-			for (Edge<V> edge : graph.getIncident(current)) {
-				V next = edge.getDestination();
-				long total = edge.getWeight() + distance.get(current);
-				if (!distance.containsKey(next) || distance.get(next) > total) {
-					distance.put(next, total);
-					last.put(next, edge);
-					queue.add(Pair.makePair(total, next));
-				}
+		for (int i = graph.getVertexCount() - 1; i >= 0; i--) {
+			if (result.second[i] != -1) {
+				distance.put(graph.getVertex(i), result.first[i]);
+				last.put(graph.getVertex(i), graph.getEdge(result.second[i]));
 			}
 		}
+		distance.put(source, 0L);
 		return Pair.makePair(distance, last);
 	}
 
-	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> dijkstraAlgorithm(Graph<V> graph, V source, Map<V, Long> phi) {
-		Map<V, Long> distance = new HashMap<V, Long>();
-		Queue<Pair<Long, V>> queue = new PriorityQueue<Pair<Long, V>>();
-		Map<V, Edge<V>> last = new HashMap<V, Edge<V>>();
-		distance.put(source, 0L);
-		queue.add(Pair.makePair(0L, source));
-		Set<V> processed = new HashSet<V>();
-		while (!queue.isEmpty()) {
-			V current = queue.poll().second;
-			if (processed.contains(current))
-				continue;
-			processed.add(current);
-			for (Edge<V> edge : graph.getIncident(current)) {
-				if (edge.getCapacity() == 0)
-					continue;
-				V next = edge.getDestination();
-				long total = edge.getWeight() - phi.get(next) + phi.get(current) + distance.get(current);
-				if (!distance.containsKey(next) || distance.get(next) > total) {
-					distance.put(next, total);
-					last.put(next, edge);
-					queue.add(Pair.makePair(total, next));
-				}
-			}
-		}
-		return Pair.makePair(distance, last);
-	}
-
-	public static<V> Map<V, Integer> colorGraphTwoColors(Graph<V> graph, boolean allowBadEdges) {
-		final Map<V, Integer> coloring = new HashMap<V, Integer>();
-		boolean correctColoring = new DFS<Boolean, Integer, V>(graph) {
-			@Override
-			protected Boolean enterUnvisited(V vertex, Integer parameters) {
-				if (vertex == null)
-					return true;
-				coloring.put(vertex, parameters);
-				return true;
-			}
-
-			@Override
-			protected Boolean enterVisited(V vertex, Integer parameters) {
-				return vertex == null || coloring.get(vertex).equals(parameters);
-			}
-
-			@Override
-			protected Integer getParameters(V vertex, Boolean result, Integer parameters, Edge<V> edge,
-				AtomicBoolean enterVertex)
-			{
-				if (vertex == null)
-					return coloring.containsKey(edge.getDestination()) ? coloring.get(edge.getDestination()) : 0;
-				return 1 - parameters;
-			}
-
-			@Override
-			protected Boolean processResult(V vertex, Boolean result, Integer parameters, Boolean callResult,
-				AtomicBoolean continueProcess)
-			{
-				return result && callResult;
-			}
-
-			@Override
-			protected Boolean exit(V vertex, Boolean result, Integer parameters) {
-				return result;
-			}
-		}.run(null);
-		if (!correctColoring && !allowBadEdges)
+	public static<V> Pair<Long, List<Edge<V>>> dijkstraAlgorithm(Graph<V> graph, V source, V destination) {
+		int sourceID = graph.resolve(source);
+		int destinationID = graph.resolve(destination);
+		if (sourceID == destinationID)
+			return Pair.makePair(0L, Collections.<Edge<V>>emptyList());
+		Pair<long[], int[]> result = dijkstraAlgorithmByID(graph, sourceID);
+		if (result.second[destinationID] == -1)
 			return null;
-		return coloring;
+		List<Edge<V>> path = new ArrayList<Edge<V>>();
+		int id = destinationID;
+		while (id != sourceID) {
+			path.add(graph.getEdge(result.second[id]));
+			id = graph.from[result.second[id]];
+		}
+		Collections.reverse(path);
+		return Pair.makePair(result.first[destinationID], path);
+	}
+
+	public static<V> Pair<long[], int[]> dijkstraAlgorithmByID(Graph<V> graph, int sourceID) {
+		int vertexCount = graph.getVertexCount();
+		final long[] distance = new long[vertexCount];
+		int[] last = new int[vertexCount];
+		Arrays.fill(distance, Long.MAX_VALUE);
+		Arrays.fill(last, -1);
+		distance[sourceID] = 0;
+		if (graph.isSparse()) {
+			Heap heap = new Heap(vertexCount, new IntComparator() {
+				public int compare(int first, int second) {
+					return IntegerUtils.longCompare(distance[first], distance[second]);
+				}
+			}, vertexCount);
+			heap.add(sourceID);
+			while (!heap.isEmpty()) {
+				int current = heap.poll();
+				int edgeID = graph.firstOutbound[current];
+				while (edgeID != -1) {
+					if (graph.removed[edgeID]) {
+						edgeID = graph.nextOutbound[edgeID];
+						continue;
+					}
+					int next = graph.to[edgeID];
+					long total = graph.weight[edgeID] + distance[current];
+					if (distance[next] > total) {
+						distance[next] = total;
+						if (heap.getIndex(next) == -1)
+							heap.add(next);
+						else
+							heap.shiftUp(heap.getIndex(next));
+						last[next] = edgeID;
+					}
+					edgeID = graph.nextOutbound[edgeID];
+				}
+			}
+		} else {
+			boolean[] visited = new boolean[vertexCount];
+			for (int i = 0; i < vertexCount; i++) {
+				int index = -1;
+				long length = Long.MAX_VALUE;
+				for (int j = 0; j < vertexCount; j++) {
+					if (!visited[j] && distance[j] < length) {
+						length = distance[j];
+						index = j;
+					}
+				}
+				if (index == -1)
+					break;
+				visited[index] = true;
+				int edgeID = graph.firstOutbound[index];
+				while (edgeID != -1) {
+					if (graph.removed[edgeID]) {
+						edgeID = graph.nextOutbound[edgeID];
+						continue;
+					}
+					int next = graph.to[edgeID];
+					if (visited[next]) {
+						edgeID = graph.nextOutbound[edgeID];
+						continue;
+					}
+					long total = graph.weight[edgeID] + length;
+					if (distance[next] > total) {
+						distance[next] = total;
+						last[next] = edgeID;
+					}
+					edgeID = graph.nextOutbound[edgeID];
+				}
+			}
+		}
+		return Pair.makePair(distance, last);
 	}
 }

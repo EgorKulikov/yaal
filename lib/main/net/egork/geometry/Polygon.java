@@ -27,4 +27,8 @@ public class Polygon {
 		}
 		return new Point(sx / vertices.length, sy / vertices.length);
 	}
+
+	public static double triangleSquare(Point a, Point b, Point c) {
+		return Math.abs((a.x - b.x) * (a.y + b.y) + (b.x - c.x) * (b.y + c.y) + (c.x - a.x) * (c.y + a.y)) / 2;
+	}
 }

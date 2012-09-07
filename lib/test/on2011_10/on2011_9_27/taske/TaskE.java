@@ -1,13 +1,12 @@
 package on2011_10.on2011_9_27.taske;
 
 
-
 import net.egork.collections.ArrayUtils;
-import net.egork.graph.FlowEdge;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
+
 import java.io.PrintWriter;
 
 public class TaskE {
@@ -39,12 +38,12 @@ public class TaskE {
 		int source = favorite.length + quantity.length;
 		int sink = source + 1;
 		for (int i = 0; i < favorite.length; i++) {
-			graph.add(new FlowEdge<Integer>(source, i, middle));
+			graph.addFlowEdge(source, i, middle);
 			for (int j : favorite[i])
-				graph.add(new FlowEdge<Integer>(i, favorite.length + j, quantity[j]));
+				graph.addFlowEdge(i, favorite.length + j, quantity[j]);
 		}
 		for (int j = 0; j < quantity.length; j++)
-			graph.add(new FlowEdge<Integer>(favorite.length + j, sink, quantity[j]));
+			graph.addFlowEdge(favorite.length + j, sink, quantity[j]);
 		return GraphAlgorithms.dinic(graph, source, sink) == middle * favorite.length;
 	}
 }
