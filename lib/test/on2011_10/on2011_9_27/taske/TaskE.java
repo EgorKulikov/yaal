@@ -3,7 +3,7 @@ package on2011_10.on2011_9_27.taske;
 
 import net.egork.collections.ArrayUtils;
 import net.egork.graph.Graph;
-import net.egork.graph.GraphAlgorithms;
+import net.egork.graph.MaxFlow;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 
@@ -44,6 +44,6 @@ public class TaskE {
 		}
 		for (int j = 0; j < quantity.length; j++)
 			graph.addFlowEdge(favorite.length + j, sink, quantity[j]);
-		return GraphAlgorithms.dinic(graph, source, sink) == middle * favorite.length;
+		return MaxFlow.dinic(graph, source, sink) == middle * favorite.length;
 	}
 }

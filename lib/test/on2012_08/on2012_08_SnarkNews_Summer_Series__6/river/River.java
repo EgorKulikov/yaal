@@ -3,7 +3,7 @@ package on2012_08.on2012_08_SnarkNews_Summer_Series__6.river;
 
 import net.egork.collections.Pair;
 import net.egork.graph.Graph;
-import net.egork.graph.GraphAlgorithms;
+import net.egork.graph.MaxFlow;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 
@@ -53,7 +53,7 @@ public class River {
 			}
 			if (answer != count)
 				continue;
-			if (GraphAlgorithms.dinic(graph, source, sink) != 3) {
+			if (MaxFlow.dinic(graph, source, sink) != 3) {
 				answer = i;
 			}
 		}
