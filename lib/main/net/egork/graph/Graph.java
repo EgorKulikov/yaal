@@ -258,6 +258,10 @@ public class Graph<V> {
 		return Arrays.asList(vertices);
 	}
 
+	public void addVertex(V vertex) {
+		resolveOrAdd(vertex);
+	}
+
 	protected class GraphEdge implements Edge<V> {
 		protected int id;
 

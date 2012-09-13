@@ -10,78 +10,7 @@ import java.util.*;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class GraphAlgorithms {
-	public static<V> long dinic(Graph<V> graph, V source, V destination) {
-		int sourceID = graph.resolve(source);
-		int destinationID = graph.resolve(destination);
-		int vertexCount = graph.getVertexCount();
-		int[] queue = new int[vertexCount];
-		int[] distance = new int[vertexCount];
-		@SuppressWarnings("unchecked")
-		int[] nextEdge = new int[vertexCount];
-		long totalFlow = 0;
-		while (true) {
-			edgeDistances(graph, sourceID, queue, distance);
-			if (distance[destinationID] == -1)
-				break;
-			Arrays.fill(nextEdge, -2);
-			totalFlow += dinicImpl(graph, sourceID, destinationID, Long.MAX_VALUE, distance, nextEdge);
-		}
-		return totalFlow;
-	}
-
-	private static<V> void edgeDistances(Graph<V> graph, int sourceID, int[] queue, int[] distance) {
-		Arrays.fill(distance, -1);
-		distance[sourceID] = 0;
-		int size = 1;
-		queue[0] = sourceID;
-		for (int i = 0; i < size; i++) {
-			int current = queue[i];
-			int edgeID = graph.firstOutbound[current];
-			while (edgeID != -1) {
-				if (graph.removed[edgeID] || graph.capacity[edgeID] == 0) {
-					edgeID = graph.nextOutbound[edgeID];
-					continue;
-				}
-				int next = graph.to[edgeID];
-				if (distance[next] == -1) {
-					distance[next] = distance[current] + 1;
-					queue[size++] = next;
-				}
-				edgeID = graph.nextOutbound[edgeID];
-			}
-		}
-	}
-
-	private static<V> long dinicImpl(Graph<V> graph, int sourceID, int destinationID, long flow, int[] distance, int[] nextEdge) {
-		if (sourceID == destinationID)
-			return flow;
-		if (flow == 0 || distance[sourceID] == distance[destinationID])
-			return 0;
-		int edgeID = nextEdge[sourceID];
-		if (edgeID == -2)
-			nextEdge[sourceID] = edgeID = graph.firstOutbound[sourceID];
-		long totalPushed = 0;
-		while (edgeID != -1) {
-			int nextDestinationID = graph.to[edgeID];
-			if (graph.removed[edgeID] || graph.capacity[edgeID] == 0 || distance[nextDestinationID] != distance[sourceID] + 1) {
-				nextEdge[sourceID] = edgeID = graph.nextOutbound[edgeID];
-				continue;
-			}
-			long pushed = dinicImpl(graph, nextDestinationID, destinationID, Math.min(flow, graph.capacity[edgeID]),
-				distance, nextEdge);
-			if (pushed != 0) {
-				graph.edges[edgeID].pushFlow(pushed);
-				flow -= pushed;
-				totalPushed += pushed;
-				if (flow == 0)
-					return totalPushed;
-			}
-			nextEdge[sourceID] = edgeID = graph.nextOutbound[edgeID];
-		}
-		return totalPushed;
-	}
-
+public class ShortestDistance {
 	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> dijkstraAlgorithm(Graph<V> graph, V source) {
 		Pair<long[], int[]> result = dijkstraAlgorithmByID(graph, graph.resolve(source));
 		Map<V, Long> distance = new HashMap<V, Long>();
