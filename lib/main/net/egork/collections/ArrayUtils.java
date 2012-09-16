@@ -235,4 +235,11 @@ public class ArrayUtils {
             }
         });
     }
+
+	public static int[] reversePermutation(int[] permutation) {
+		int[] result = new int[permutation.length];
+		for (int i = 0; i < permutation.length; i++)
+			result[permutation[i]] = i;
+		return result;
+	}
 }
