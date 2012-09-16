@@ -61,7 +61,7 @@ public class Graph<V> {
 			nextOutbound[edgeCount] = -1;
 		firstOutbound[fromID] = edgeCount;
 		if (firstInbound[toID] != -1)
-			nextInbound[edgeCount] = nextInbound[toID];
+			nextInbound[edgeCount] = firstInbound[toID];
 		else
 			nextInbound[edgeCount] = -1;
 		firstInbound[toID] = edgeCount;
