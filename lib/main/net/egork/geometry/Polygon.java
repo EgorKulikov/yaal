@@ -1,5 +1,10 @@
 package net.egork.geometry;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -30,5 +35,49 @@ public class Polygon {
 
 	public static double triangleSquare(Point a, Point b, Point c) {
 		return Math.abs((a.x - b.x) * (a.y + b.y) + (b.x - c.x) * (b.y + c.y) + (c.x - a.x) * (c.y + a.y)) / 2;
+	}
+
+	private static boolean over(Point a, Point b, Point c) {
+		return a.x * (b.y - c.y) + b.x * (c.y - a.y) + c.x * (a.y - b.y) < -GeometryUtils.epsilon;
+	}
+
+	private static boolean under(Point a, Point b, Point c) {
+		return a.x * (b.y - c.y) + b.x * (c.y - a.y) + c.x * (a.y - b.y) > GeometryUtils.epsilon;
+	}
+
+	public static Polygon convexHull(Point[] points) {
+		if (points.length == 1)
+			return new Polygon(points);
+		Arrays.sort(points, new Comparator<Point>() {
+			public int compare(Point o1, Point o2) {
+				int value = Double.compare(o1.x, o2.x);
+				if (value != 0)
+					return value;
+				return Double.compare(o1.y, o2.y);
+			}
+		});
+		Point left = points[0];
+		Point right = points[points.length - 1];
+		List<Point> up = new ArrayList<Point>();
+		List<Point> down = new ArrayList<Point>();
+		for (Point point : points) {
+			if (point == left || point == right || over(left, point, right)) {
+				while (up.size() >= 2 && !over(up.get(up.size() - 2), up.get(up.size() - 1), point))
+					up.remove(up.size() - 1);
+				up.add(point);
+			}
+			if (point == left || point == right || under(left, point, right)) {
+				while (down.size() >= 2 && !under(down.get(down.size() - 2), down.get(down.size() - 1), point))
+					down.remove(down.size() - 1);
+				down.add(point);
+			}
+		}
+		Point[] result = new Point[up.size() + down.size() - 2];
+		int index = 0;
+		for (Point point : up)
+			result[index++] = point;
+		for (int i = down.size() - 2; i > 0; i--)
+			result[index++] = down.get(i);
+		return new Polygon(result);
 	}
 }
