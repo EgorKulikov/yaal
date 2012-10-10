@@ -216,7 +216,7 @@ public class IntegerUtils {
 
 	public static long power(long base, long exponent, long mod) {
 		if (exponent == 0)
-			return 1;
+			return 1 % mod;
 		long result = power(base, exponent >> 1, mod);
 		result = result * result % mod;
 		if ((exponent & 1) != 0)

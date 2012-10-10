@@ -96,7 +96,7 @@ public class Matrix {
 	private static void power(long[] matrix, long[] result, long[] temp, long exponent, long mod, int side) {
 		if (exponent == 0) {
 			for (int i = 0; i < matrix.length; i += side + 1)
-				result[i] = 1;
+				result[i] = 1 % mod;
 			return;
 		}
 		if ((exponent & 1) == 0) {

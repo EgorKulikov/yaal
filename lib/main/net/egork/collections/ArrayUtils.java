@@ -195,6 +195,18 @@ public class ArrayUtils {
         });
     }
 
+	public static int[] order(final long[] array) {
+     return sort(createOrder(array.length), new IntComparator() {
+         public int compare(int first, int second) {
+             if (array[first] < array[second])
+                 return -1;
+             if (array[first] > array[second])
+                 return 1;
+             return 0;
+         }
+     });
+ }
+
     public static int[] unique(int[] array) {
         return unique(array, 0, array.length);
     }
@@ -241,5 +253,13 @@ public class ArrayUtils {
 		for (int i = 0; i < permutation.length; i++)
 			result[permutation[i]] = i;
 		return result;
+	}
+
+	public static void reverse(int[] array) {
+		for (int i = 0, j = array.length - 1; i < j; i++, j--) {
+			int temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
 	}
 }
