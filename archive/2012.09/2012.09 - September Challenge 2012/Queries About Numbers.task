@@ -1,0 +1,37 @@
+21 Queries About Numbers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+32 12 6
+1 6
+1 14
+2 4
+2 3
+3 12
+3 14
+
+12 4
+2
+2
+3
+5
+6
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+29 net.egork.QueriesAboutNumbers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2012.09
+24 September Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
