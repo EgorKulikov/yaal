@@ -4,7 +4,7 @@ package net.egork.graph;
  * @author Egor Kulikov (egorku@yandex-team.ru)
  */
 public class BidirectionalGraph<V> extends Graph<V> {
-	protected int[] transposedEdge;
+	public int[] transposedEdge;
 
 	public BidirectionalGraph() {
 		this(10);
