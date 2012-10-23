@@ -14,5 +14,15 @@ public interface IntComparator {
         }
     };
 
-    public int compare(int first, int second);
+	public static final IntComparator REVERSE = new IntComparator() {
+		public int compare(int first, int second) {
+			if (first < second)
+				return 1;
+			if (first > second)
+				return -1;
+			return 0;
+		}
+	};
+
+	public int compare(int first, int second);
 }
