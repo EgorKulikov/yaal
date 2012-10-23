@@ -30,7 +30,7 @@ public class Circle {
         return intersect(power);
     }
 
-    private Point[] intersect(Circle other) {
+    public Point[] intersect(Circle other) {
         double distance = center.distance(other.center);
         if (distance > radius + other.radius + GeometryUtils.epsilon || Math.abs(radius - other.radius) > distance + GeometryUtils.epsilon)
             return new Point[0];
