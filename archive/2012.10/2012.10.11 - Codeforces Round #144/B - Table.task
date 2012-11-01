@@ -1,0 +1,30 @@
+9 B - Table
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+6 5 6 1
+
+2 45
+1
+1
+30 100 1000000000000000000 10000
+
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.11
+30 Codeforces Round #144 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
