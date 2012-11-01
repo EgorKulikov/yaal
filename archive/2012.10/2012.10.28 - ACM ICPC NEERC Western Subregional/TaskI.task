@@ -1,0 +1,39 @@
+5 TaskI
+6 SINGLE
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+2
+0
+24 4
+abxcaba
+abax
+abay
+abaz
+26 146028888064
+2
+aba
+abxcaba
+1
+1
+14 3
+aba
+aba
+aba
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.28
+0 
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

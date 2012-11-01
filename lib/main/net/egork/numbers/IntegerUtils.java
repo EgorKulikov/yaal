@@ -215,6 +215,8 @@ public class IntegerUtils {
 	}
 
 	public static long power(long base, long exponent, long mod) {
+		if (base >= mod)
+			base %= mod;
 		if (exponent == 0)
 			return 1 % mod;
 		long result = power(base, exponent >> 1, mod);
@@ -327,11 +329,11 @@ public class IntegerUtils {
 		return result;
 	}
 
-	public static long[] generatePowers(long base, int upTo, long mod) {
-		long[] result = new long[upTo];
-		if (upTo != 0)
+	public static long[] generatePowers(long base, int count, long mod) {
+		long[] result = new long[count];
+		if (count != 0)
 			result[0] = 1 % mod;
-		for (int i = 1; i < upTo; i++)
+		for (int i = 1; i < count; i++)
 			result[i] = result[i - 1] * base % mod;
 		return result;
 	}

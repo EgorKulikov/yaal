@@ -1,0 +1,35 @@
+27 D - Про политику
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+93 6 12
+000233434133
+000233434143
+001223434133
+101023434143
+101223434133
+110233434143
+4
+0 4 2 1
+
+6 23
+18
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+86 on2012_10.on2012_10_27_Ural_Regional_School_Programming_Contest.D_______________.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.27
+40 Ural Regional School Programming Contest
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
