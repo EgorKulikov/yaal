@@ -1,6 +1,13 @@
 package net.egork.numbers;
 
+<<<<<<< local
 class FastFourierTransform {
+=======
+/**
+ * @author Egor Kulikov (egorku@yandex-team.ru)
+ */
+public class FastFourierTransform {
+>>>>>>> other
 	public void fft(double[] a, double[] b, boolean invert) {
 		int count = a.length;
 		for (int i = 1, j = 0; i < count; i++) {
@@ -27,7 +34,13 @@ class FastFourierTransform {
 			for (int i = 0; i < count; i += len) {
 				double wA = 1;
 				double wB = 0;
+<<<<<<< local
+=======
+				int f = i;
+				int s = i + halfLen;
+>>>>>>> other
 				for (int j = 0; j < halfLen; j++) {
+<<<<<<< local
 					double uA = a[i + j];
 					double uB = b[i + j];
 					double vA = a[i + j + halfLen] * wA - b[i + j + halfLen] * wB;
@@ -36,9 +49,22 @@ class FastFourierTransform {
 					b[i + j] = uB + vB;
 					a[i + j + halfLen] = uA - vA;
 					b[i + j + halfLen] = uB - vB;
+=======
+					double vA = a[s] * wA - b[s] * wB;
+					double vB = a[s] * wB + b[s] * wA;
+					a[s] = a[f] - vA;
+					b[s] = b[f] - vB;
+					a[f] += vA;
+					b[f] += vB;
+>>>>>>> other
 					double nextWA = wA * wLenA - wB * wLenB;
 					wB = wA * wLenB + wB * wLenA;
 					wA = nextWA;
+<<<<<<< local
+=======
+					f++;
+					s++;
+>>>>>>> other
 				}
 			}
 		}
