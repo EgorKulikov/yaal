@@ -3,6 +3,7 @@ package net.egork.numbers;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -125,6 +126,14 @@ public class IntegerUtils {
 		return result;
 	}
 
+	public static long[] generateBinomialRow(int n, long module) {
+		long[] result = generateReverse(n + 1, module);
+		result[0] = 1;
+		for (int i = 1; i <= n; i++)
+			result[i] = result[i - 1] * (n - i + 1) % module * result[i] % module;
+		return result;
+	}
+
 	public static int[] representationInBase(long number, int base) {
 		long basePower = base;
 		int exponent = 1;
@@ -164,6 +173,13 @@ public class IntegerUtils {
 		for (int i = 2; i <= n; i++)
 			result *= i;
 		return result;
+	}
+
+	public static long factorial(int n, long mod) {
+		long result = 1;
+		for (int i = 2; i <= n; i++)
+			result = result * i % mod;
+		return result % mod;
 	}
 
 	public static List<Pair<Long, Integer>> factorize(long number) {
@@ -346,4 +362,15 @@ public class IntegerUtils {
             from += 2;
         return from;
     }
+
+	public static long binomialCoefficient(int n, int m, long mod) {
+		if (m < 0 || m > n)
+			return 0;
+		if (2 * m > n)
+			m = n - m;
+		long result = 1;
+		for (int i = n - m + 1; i <= n; i++)
+			result = result * i % mod;
+		return result * BigInteger.valueOf(factorial(m, mod)).modInverse(BigInteger.valueOf(mod)).longValue() % mod;
+	}
 }

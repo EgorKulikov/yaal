@@ -4,7 +4,7 @@ package net.egork.numbers;
  * @author Egor Kulikov (egorku@yandex-team.ru)
  */
 public class FastFourierTransform {
-	public void fft(double[] a, double[] b, boolean invert) {
+	public static void fft(double[] a, double[] b, boolean invert) {
 		int count = a.length;
 		for (int i = 1, j = 0; i < count; i++) {
 			int bit = count >> 1;
@@ -53,7 +53,7 @@ public class FastFourierTransform {
 		}
 	}
 
-	public long[] multiply(long[] a, long[] b) {
+	public static long[] multiply(long[] a, long[] b) {
 		int resultSize = Integer.highestOneBit(Math.max(a.length, b.length) - 1) << 2;
 		resultSize = Math.max(resultSize, 1);
 		double[] aReal = new double[resultSize];
