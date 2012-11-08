@@ -1,0 +1,43 @@
+16 The Great Escape
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+39 12 2
+2 3
+10 3
+2 3 5
+13 6
+2 4 6 8 10 12
+
+23 3
+1 2 4 12
+2
+1 2 10
+-1
+
+1
+1
+11 36 3
+4 9 6
+
+9 2
+1 4 36
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+24 net.egork.TheGreatEscape
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.07
+17 CodeWeavers 2012 
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
