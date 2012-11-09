@@ -10,14 +10,14 @@ public class Line {
 
 	public Line(double a, double b, double c) {
 		double h = GeometryUtils.fastHypot(a, b);
-		if (a < -GeometryUtils.epsilon) {
+		/*if (a < -GeometryUtils.epsilon) {
 			a = -a;
 			b = -b;
 			c = -c;
 		} else if (a < GeometryUtils.epsilon && b < -GeometryUtils.epsilon) {
 			b = -b;
 			c = -c;
-		}
+		}*/
 		this.a = a / h;
 		this.b = b / h;
 		this.c = c / h;

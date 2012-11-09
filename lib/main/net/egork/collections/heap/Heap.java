@@ -53,7 +53,7 @@ public class Heap {
 			throw new IllegalArgumentException();
 		while (index != 0) {
 			int parent = (index - 1) >>> 1;
-			if (comparator.compare(parent, index) <= 0)
+			if (comparator.compare(elements[parent], elements[index]) <= 0)
 				return;
 			swap(parent, index);
 			index = parent;
@@ -67,9 +67,9 @@ public class Heap {
 			int child = (index << 1) + 1;
 			if (child >= size)
 				return;
-			if (child + 1 < size && comparator.compare(child, child + 1) > 0)
+			if (child + 1 < size && comparator.compare(elements[child], elements[child + 1]) > 0)
 				child++;
-			if (comparator.compare(index, child) <= 0)
+			if (comparator.compare(elements[index], elements[child]) <= 0)
 				return;
 			swap(index, child);
 			index = child;
