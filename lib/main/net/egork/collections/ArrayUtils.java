@@ -11,10 +11,6 @@ import java.util.Comparator;
 public class ArrayUtils {
 	private static int[] tempInt = new int[0];
 
-	public <T> void qsort(T[] arr) {
-
-	}
-
 	public static Integer[] generateOrder(int size) {
 		Integer[] order = new Integer[size];
 		for (int i = 0; i < size; i++)
