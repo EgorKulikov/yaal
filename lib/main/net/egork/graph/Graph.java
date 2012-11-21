@@ -255,7 +255,7 @@ public class Graph<V> {
 	}
 
 	public Collection<? extends V> vertices() {
-		return Arrays.asList(vertices);
+		return Arrays.asList(vertices).subList(0, vertexCount);
 	}
 
 	public int addVertex(V vertex) {

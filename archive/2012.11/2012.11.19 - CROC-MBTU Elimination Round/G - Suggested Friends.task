@@ -1,0 +1,65 @@
+21 G - Suggested Friends
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+59 5
+Mike Gerald
+Kate Mike
+Kate Tank
+Gerald Tank
+Gerald David
+
+40 5
+Mike 1
+Gerald 1
+Kate 1
+Tank 1
+David 2
+
+1
+1
+52 4
+valera vanya
+valera edik
+pasha valera
+igor valera
+
+41 5
+valera 0
+vanya 3
+edik 3
+pasha 3
+igor 3
+
+1
+2
+14 3
+a b
+a c
+d e
+
+22 5
+a 2
+b 1
+c 1
+d 3
+e 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.19
+27 CROC-MBTU Elimination Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
