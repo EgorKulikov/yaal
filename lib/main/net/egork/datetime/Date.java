@@ -28,7 +28,7 @@ public class Date implements Comparable<Date> {
 		return weekday;
 	}
 
-	private int asInt() {
+	public int asInt() {
 		int day = (year - 1) * 365;
 		day += (year - 1) / 4;
 		day -= (year - 1) / 100;
