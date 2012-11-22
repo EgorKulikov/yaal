@@ -97,7 +97,7 @@ public class InputReader {
 		int c = read();
 		while (isSpaceChar(c))
 			c = read();
-		StringBuffer res = new StringBuffer();
+		StringBuilder res = new StringBuilder();
 		do {
 			res.appendCodePoint(c);
 			c = read();
@@ -112,7 +112,7 @@ public class InputReader {
 	}
 
 	private String readLine0() {
-		StringBuffer buf = new StringBuffer();
+		StringBuilder buf = new StringBuilder();
 		int c = read();
 		while (c != '\n' && c != -1) {
 			if (c != '\r')
