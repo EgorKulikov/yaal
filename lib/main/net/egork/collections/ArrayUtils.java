@@ -229,7 +229,29 @@ public class ArrayUtils {
 		return result;
 	}
 
-	public static int maxElement(int[] array) {
+    public static char[] unique(char[] array) {
+        return unique(array, 0, array.length);
+    }
+
+    public static char[] unique(char[] array, int from, int to) {
+        if (from == to)
+            return new char[0];
+        int count = 1;
+        for (int i = from + 1; i < to; i++) {
+            if (array[i] != array[i - 1])
+                count++;
+        }
+        char[] result = new char[count];
+        result[0] = array[from];
+        int index = 1;
+        for (int i = from + 1; i < to; i++) {
+            if (array[i] != array[i - 1])
+                result[index++] = array[i];
+        }
+        return result;
+    }
+
+    public static int maxElement(int[] array) {
 		return maxElement(array, 0, array.length);
 	}
 
@@ -281,4 +303,18 @@ public class ArrayUtils {
 			result = Math.max(result, array[i]);
 		return result;
 	}
+
+    public static int minPosition(int[] array, int from, int to, IntComparator comparator) {
+        if (from >= to)
+            return -1;
+        int min = array[from];
+        int result = from;
+        for (int i = from + 1; i < to; i++) {
+            if (comparator.compare(array[i], min) < 0) {
+                min = array[i];
+                result = i;
+            }
+        }
+        return result;
+    }
 }
