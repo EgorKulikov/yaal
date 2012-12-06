@@ -24,7 +24,20 @@ public class OutputWriter {
 		}
 	}
 
-	public void printLine(Object...objects) {
+    public void print(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (i != 0)
+                writer.print(' ');
+            writer.print(array[i]);
+        }
+    }
+
+    public void printLine(int[] array) {
+        print(array);
+        writer.println();
+    }
+
+    public void printLine(Object...objects) {
 		print(objects);
 		writer.println();
 	}
