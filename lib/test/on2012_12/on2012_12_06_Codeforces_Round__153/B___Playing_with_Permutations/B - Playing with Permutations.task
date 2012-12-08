@@ -1,0 +1,60 @@
+29 B - Playing with Permutations
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+5
+0
+20 4 1
+2 3 4 1
+1 2 3 4
+
+3 NO
+
+1
+1
+20 4 1
+4 3 1 2
+3 4 2 1
+
+4 YES
+
+1
+2
+20 4 3
+4 3 1 2
+3 4 2 1
+
+4 YES
+
+1
+3
+20 4 2
+4 3 1 2
+2 1 4 3
+
+4 YES
+
+1
+4
+20 4 1
+4 3 1 2
+2 1 4 3
+
+3 NO
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+80 on2012_12.on2012_12_06_Codeforces_Round__153.B___Playing_with_Permutations.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.06
+21 Codeforces Round #153
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
