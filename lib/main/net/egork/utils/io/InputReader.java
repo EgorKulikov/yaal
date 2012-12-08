@@ -108,6 +108,10 @@ public class InputReader {
 	public boolean isSpaceChar(int c) {
 		if (filter != null)
 			return filter.isSpaceChar(c);
+		return isWhitespace(c);
+	}
+
+	public static boolean isWhitespace(int c) {
 		return c == ' ' || c == '\n' || c == '\r' || c == '\t' || c == -1;
 	}
 

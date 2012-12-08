@@ -317,4 +317,13 @@ public class ArrayUtils {
         }
         return result;
     }
+
+	public static int[] multiplyPermutations(int[] first, int[] second) {
+		int count = first.length;
+		int[] result = new int[count];
+		for (int i = 0; i < count; i++) {
+			result[i] = first[second[i]];
+		}
+		return result;
+	}
 }
