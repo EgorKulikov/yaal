@@ -2,6 +2,9 @@ package on2011_11.on2011_10_26.taskg;
 
 
 
+import net.egork.collections.intcollection.IntArrayList;
+import net.egork.collections.intcollection.IntList;
+import net.egork.collections.intcollection.IntTask;
 import net.egork.geometry.GeometryUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
@@ -11,11 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TaskG {
-	public void solve(int testNumber, InputReader in, OutputWriter out) {
+	public void solve(int testNumber, InputReader in, final OutputWriter out) {
 		in.readInt();
 		int count = in.readInt();
-		int[] x = new int[count];
-		int[] y = new int[count];
+		final int[] x = new int[count];
+		final int[] y = new int[count];
 		IOUtils.readIntArrays(in, x, y);
 		int startIndex = 0;
 		for (int i = 1; i < count; i++) {
@@ -24,7 +27,7 @@ public class TaskG {
 		}
 		long dirX = 1;
 		long dirY = 0;
-		List<Integer> order = new ArrayList<Integer>();
+		IntList order = new IntArrayList();
 		int current = startIndex;
 		do {
 			order.add(current);
@@ -49,7 +52,10 @@ public class TaskG {
 			current = best;
 		} while (current != startIndex);
 		out.printLine(testNumber, order.size());
-		for (int i : order)
-			out.printLine(x[i], y[i]);
+		order.forEach(new IntTask() {
+			public void process(int value) {
+				out.printLine(x[value], y[value]);
+			}
+		});
 	}
 }

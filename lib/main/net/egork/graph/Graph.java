@@ -1,7 +1,5 @@
 package net.egork.graph;
 
-import net.egork.collections.IntIterator;
-
 import java.util.*;
 
 /**
@@ -174,14 +172,6 @@ public class Graph<V> {
 				return new EdgeIterator(id, firstInbound, nextInbound);
 			}
 		};
-	}
-
-	public IntIterator getOutboundIterator(int id) {
-		return new IDIterator(id, firstOutbound, nextOutbound);
-	}
-
-	public IntIterator getInboundIterator(int id) {
-		return new IDIterator(id, firstInbound, nextInbound);
 	}
 
 	private int resolveOrAdd(V vertex) {
@@ -360,46 +350,6 @@ public class Graph<V> {
 			lastID = edgeID;
 			edgeID = next[lastID] = nextEdge(next[lastID]);
 			return edges[lastID];
-		}
-
-		public void remove() {
-			if (lastID == -1)
-				throw new IllegalStateException();
-			removeEdgeByID(lastID);
-			lastID = -1;
-		}
-	}
-
-	private class IDIterator implements IntIterator {
-		private int edgeID;
-		private final int[] next;
-		private int lastID = -1;
-
-		public IDIterator(int id, int[] first, int[] next) {
-			this.next = next;
-			edgeID = first[id];
-			if (edgeID != -1 && removed[edgeID])
-				first[id] = edgeID = nextEdge(first[id]);
-		}
-
-		private int nextEdge(int id) {
-			while (id != -1 && removed[id])
-				id = next[id];
-			return id;
-		}
-
-		public boolean hasNext() {
-			return edgeID != -1;
-		}
-
-		public int next() {
-			if (edgeID == -1)
-				throw new NoSuchElementException();
-			lastID = edgeID;
-			edgeID = next[lastID];
-			if (edgeID != -1 && removed[edgeID])
-				edgeID = next[lastID] = nextEdge(next[lastID]);
-			return lastID;
 		}
 
 		public void remove() {
