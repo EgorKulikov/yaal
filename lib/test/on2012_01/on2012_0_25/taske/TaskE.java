@@ -2,6 +2,8 @@ package on2012_01.on2012_0_25.taske;
 
 
 
+import net.egork.collections.intcollection.IntArrayList;
+import net.egork.collections.intcollection.IntList;
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.ListUtils;
 import net.egork.io.IOUtils;
@@ -26,7 +28,7 @@ public class TaskE {
 				return column[o1] - column[o2];
 			}
 		});
-		List<Integer> answer = new ArrayList<Integer>();
+		IntList answer = new IntArrayList();
 		for (int i = 1; i <= size; i++) {
 			while (!queue.isEmpty() && column[queue.peek()] < i)
 				queue.poll();
@@ -35,8 +37,8 @@ public class TaskE {
 			if (!queue.isEmpty())
 				answer.add(queue.poll() + 1);
 		}
-		Collections.sort(answer);
+		answer.inPlaceSort();
 		out.printLine(answer.size());
-		out.printLine(answer.toArray());
+		out.printLine(answer);
 	}
 }

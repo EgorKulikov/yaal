@@ -2,6 +2,8 @@ package on2011_11.on2011_10_29.task1727;
 
 
 
+import net.egork.collections.intcollection.IntArrayList;
+import net.egork.collections.intcollection.IntList;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
@@ -13,7 +15,7 @@ public class Task1727 {
 		Random rnd = new Random(239);
 		int sum = in.readInt();
 		Set<Integer> was = new HashSet<Integer>();
-		List<Integer> answer = new ArrayList<Integer>();
+		IntList answer = new IntArrayList();
 		while (sum > 17) {
 			int next = rnd.nextInt(99990) + 10;
 			if (was.contains(next))
@@ -33,6 +35,6 @@ public class Task1727 {
 			answer.add(sum);
 		}
 		out.printLine(answer.size());
-		out.printLine(answer.toArray());
+		out.printLine(answer);
 	}
 }

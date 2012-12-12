@@ -2,6 +2,8 @@ package on2011_10.on2011_9_26.pointerasing;
 
 
 import net.egork.collections.CollectionUtils;
+import net.egork.collections.intcollection.IntArray;
+import net.egork.collections.intcollection.IntList;
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.ListUtils;
 
@@ -11,14 +13,14 @@ import java.util.TreeSet;
 
 public class PointErasing {
 	public int[] getOutcomes(int[] y) {
-		List<Integer> wrappedY = Array.wrap(y);
-		int min = CollectionUtils.minElement(wrappedY);
-		int max = CollectionUtils.maxElement(wrappedY);
-		int first = Math.min(ListUtils.find(wrappedY, min), ListUtils.find(wrappedY, max));
-		int last = Math.max(ListUtils.findLast(wrappedY, min), ListUtils.findLast(wrappedY, max));
-		int minAnswer = CollectionUtils.count(wrappedY, min);
+		IntList wrappedY = new IntArray(y);
+		int min = wrappedY.min();
+		int max = wrappedY.max();
+		int first = Math.min(wrappedY.find(min),wrappedY.find(max));
+		int last = Math.max(wrappedY.findLast(min), wrappedY.findLast(max));
+		int minAnswer = wrappedY.count(min);
 		if (min != max)
-			minAnswer += CollectionUtils.count(wrappedY, max);
+			minAnswer += wrappedY.count(max);
 		if (first != 0)
 			minAnswer++;
 		if (last != y.length - 1)

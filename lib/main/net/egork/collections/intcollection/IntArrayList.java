@@ -1,0 +1,50 @@
+package net.egork.collections.intcollection;
+
+/**
+ * @author egorku@yandex-team.ru
+ */
+public class IntArrayList extends IntList {
+	private int[] array;
+	private int size;
+
+	public IntArrayList() {
+		this(10);
+	}
+
+	public IntArrayList(int capacity) {
+		array = new int[capacity];
+	}
+
+	@Override
+	public int get(int index) {
+		if (index >= size)
+			throw new IndexOutOfBoundsException();
+		return array[index];
+	}
+
+	@Override
+	public void set(int index, int value) {
+		if (index >= size)
+			throw new IndexOutOfBoundsException();
+		array[index] = value;
+	}
+
+	@Override
+	public int size() {
+		return size;
+	}
+
+	@Override
+	public void add(int value) {
+		ensureCapacity(size + 1);
+		array[size++] = value;
+	}
+
+	private void ensureCapacity(int newCapacity) {
+		if (newCapacity > array.length) {
+			int[] newArray = new int[Math.max(newCapacity, array.length << 1)];
+			System.arraycopy(array, 0, newArray, 0, size);
+			array = newArray;
+		}
+	}
+}

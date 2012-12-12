@@ -2,6 +2,8 @@ package on2012_01.on2012_0_1.planning;
 
 
 
+import net.egork.collections.intcollection.IntArrayList;
+import net.egork.collections.intcollection.IntList;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;
@@ -27,7 +29,7 @@ public class Planning {
 					dependencies[j][k] |= dependencies[j][i] && dependencies[i][k];
 			}
 		}
-		List<Integer> answer = new ArrayList<Integer>();
+		IntList answer = new IntArrayList();
 		for (int i = 0; i < edgeCount; i++) {
 			boolean found = false;
 			for (int j = 0; j < vertexCount && !found; j++) {
@@ -38,6 +40,6 @@ public class Planning {
 				answer.add(i + 1);
 		}
 		out.printLine(answer.size());
-		out.printLine(answer.toArray());
+		out.printLine(answer);
 	}
 }
