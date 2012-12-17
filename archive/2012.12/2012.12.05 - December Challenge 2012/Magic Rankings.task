@@ -1,0 +1,33 @@
+14 Magic Rankings
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+27 2
+2
+0 -4
+8 0
+2
+0 -45
+-3  0
+
+20 8.000000
+Bad Judges
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.MagicRankings
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2012.12.05
+23 December Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
