@@ -31,10 +31,6 @@ public abstract class IntList extends IntCollection {
 				index++;
 			}
 
-			public void removeAndAdvance() throws NoSuchElementException, UnsupportedOperationException {
-				throw new UnsupportedOperationException();
-			}
-
 			public boolean isValid() {
 				return index < size;
 			}

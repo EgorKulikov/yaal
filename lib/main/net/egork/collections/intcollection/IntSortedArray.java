@@ -31,19 +31,6 @@ public class IntSortedArray extends IntSortedList {
 		ensureSorted();
 	}
 
-	private void ensureSorted() {
-		int size = size();
-		if (size == 0)
-			return;
-		int last = array[0];
-		for (int i = 1; i < size; i++) {
-			int current = get(i);
-			if (comparator.compare(last, current) > 0)
-				throw new IllegalArgumentException();
-			last = current;
-		}
-	}
-
 	@Override
 	public int get(int index) {
 		return array[index];
