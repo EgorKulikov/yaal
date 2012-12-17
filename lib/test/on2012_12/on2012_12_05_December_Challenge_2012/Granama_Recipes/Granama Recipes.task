@@ -1,0 +1,31 @@
+15 Granama Recipes
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+39 3
+alex axle
+paradise diapers
+alice bob
+
+11 YES
+NO
+YES
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+77 on2012_12.on2012_12_05_December_Challenge_2012.Granama_Recipes.GranamaRecipes
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.05
+23 December Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
