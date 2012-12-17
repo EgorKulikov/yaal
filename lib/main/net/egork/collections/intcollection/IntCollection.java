@@ -74,15 +74,6 @@ public abstract class IntCollection {
 							second.advance();
 					}
 
-					public void removeAndAdvance() throws NoSuchElementException, UnsupportedOperationException {
-						if (first.isValid()) {
-							first.removeAndAdvance();
-							if (!first.isValid())
-								second = other.iterator();
-						} else
-							second.advance();
-					}
-
 					public boolean isValid() {
 						return first.isValid() || second.isValid();
 					}
@@ -119,10 +110,6 @@ public abstract class IntCollection {
 
 					public void advance() throws NoSuchElementException {
 						iterator().advance();
-					}
-
-					public void removeAndAdvance() throws NoSuchElementException, UnsupportedOperationException {
-						iterator().removeAndAdvance();
 					}
 
 					public boolean isValid() {

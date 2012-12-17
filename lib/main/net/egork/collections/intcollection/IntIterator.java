@@ -11,6 +11,5 @@ public interface IntIterator {
 	 * @throws NoSuchElementException only if iterator already invalid
 	 */
 	public void advance() throws NoSuchElementException;
-	public void removeAndAdvance() throws NoSuchElementException, UnsupportedOperationException;
 	public boolean isValid();
 }
