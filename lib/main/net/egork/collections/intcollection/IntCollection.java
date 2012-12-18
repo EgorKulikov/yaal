@@ -134,4 +134,13 @@ public abstract class IntCollection {
 			}
 		};
 	}
+
+	public int[] toArray() {
+		int size = size();
+		int[] array = new int[size];
+		int i = 0;
+		for (IntIterator iterator = iterator(); iterator.isValid(); iterator.advance())
+			array[i++] = iterator.value();
+		return array;
+	}
 }

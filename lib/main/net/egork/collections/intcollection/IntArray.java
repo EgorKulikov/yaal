@@ -36,4 +36,9 @@ public class IntArray extends IntList {
 	public void add(int value) {
 		throw new UnsupportedOperationException();
 	}
+
+	@Override
+	public int[] toArray() {
+		return array;
+	}
 }

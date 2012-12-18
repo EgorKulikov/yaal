@@ -47,4 +47,11 @@ public class IntArrayList extends IntList {
 			array = newArray;
 		}
 	}
+
+	@Override
+	public int[] toArray() {
+		int[] array = new int[size];
+		System.arraycopy(this.array, 0, array, 0, size);
+		return array;
+	}
 }
