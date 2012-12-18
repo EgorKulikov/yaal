@@ -40,9 +40,4 @@ public class IntSortedArray extends IntSortedList {
 	public int size() {
 		return array.length;
 	}
-
-	@Override
-	public void add(int value) {
-		throw new UnsupportedOperationException();
-	}
 }
