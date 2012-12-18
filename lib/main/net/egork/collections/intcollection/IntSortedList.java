@@ -18,6 +18,11 @@ public abstract class IntSortedList extends IntList {
 	}
 
 	@Override
+	public void add(int value) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
 	public IntSortedList inPlaceSort(IntComparator comparator) {
 		if (comparator == this.comparator)
 			return this;
@@ -74,5 +79,24 @@ public abstract class IntSortedList extends IntList {
 				throw new IllegalArgumentException();
 			last = current;
 		}
+	}
+
+	@Override
+	public IntSortedList subList(final int from, final int to) {
+		return new IntSortedList(comparator) {
+			private int size = to - from;
+
+			@Override
+			public int get(int index) {
+				if (index < 0 || index >= size)
+					throw new IndexOutOfBoundsException();
+				return IntSortedList.this.get(index + from);
+			}
+
+			@Override
+			public int size() {
+				return size;
+			}
+		};
 	}
 }

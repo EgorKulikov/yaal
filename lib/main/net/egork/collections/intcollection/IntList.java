@@ -88,7 +88,7 @@ public abstract class IntList extends IntCollection {
 			swap(i, j);
 	}
 
-	private IntList subList(final int from, final int to) {
+	public IntList subList(final int from, final int to) {
 		return new IntList() {
 			private int size = to - from;
 
