@@ -73,7 +73,7 @@ public class IntHashSet extends IntCollection {
 	@Override
 	public void add(int value) {
 		ensureCapacity(2 * (size + 1));
-		int current = getHash(value) % values.length;
+		int current = getHash(value);
 		while (present[current]) {
 			if (values[current] == value)
 				return;
@@ -90,6 +90,9 @@ public class IntHashSet extends IntCollection {
 		int result = value;
 		for (int i : SHIFTS)
 			result ^= value >> i;
+		result %= values.length;
+		if (result < 0)
+			result += values.length;
 		return result;
 	}
 
@@ -110,7 +113,7 @@ public class IntHashSet extends IntCollection {
 
 	@Override
 	public void remove(int value) {
-		int base = getHash(value) % values.length;
+		int base = getHash(value);
 		int current = base;
 		int free = -1;
 		while (present[current]) {
@@ -131,7 +134,7 @@ public class IntHashSet extends IntCollection {
 			current -= values.length;
 		while (present[current]) {
 			int key = base;
-			int desired = getHash(values[current]) % values.length;
+			int desired = getHash(values[current]);
 			boolean found = free == desired;
 			if (!found) {
 				while (key != free) {
