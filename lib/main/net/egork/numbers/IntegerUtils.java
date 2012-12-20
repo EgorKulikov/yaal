@@ -1,7 +1,8 @@
 package net.egork.numbers;
 
-import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
+import net.egork.collections.intcollection.IntArrayList;
+import net.egork.collections.intcollection.IntList;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -36,12 +37,12 @@ public class IntegerUtils {
 
     public static int[] generatePrimes(int upTo) {
 		boolean[] isPrime = generatePrimalityTable(upTo);
-		List<Integer> primes = new ArrayList<Integer>();
+		IntList primes = new IntArrayList();
 		for (int i = 0; i < upTo; i++) {
 			if (isPrime[i])
 				primes.add(i);
 		}
-		return CollectionUtils.toArray(primes);
+		return primes.toArray();
 	}
 
 	public static boolean[] generatePrimalityTable(int upTo) {

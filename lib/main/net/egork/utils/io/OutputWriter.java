@@ -56,9 +56,17 @@ public class OutputWriter {
 		writer.println();
 	}
 
+	public void printLine() {
+		writer.println();
+	}
+
     public void printLine(Object...objects) {
 		print(objects);
 		writer.println();
+	}
+
+	public void print(char i) {
+		writer.print(i);
 	}
 
 	public void printLine(char[] array) {
