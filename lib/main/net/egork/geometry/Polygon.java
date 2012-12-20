@@ -80,4 +80,14 @@ public class Polygon {
 			result[index++] = down.get(i);
 		return new Polygon(result);
 	}
+
+	public boolean contains(Point point) {
+		double totalAngle = GeometryUtils.canonicAngle(Math.atan2(vertices[0].y - point.y, vertices[0].x - point.x) -
+				Math.atan2(vertices[vertices.length - 1].y - point.y, vertices[vertices.length - 1].x - point.x));
+		for (int i = 1; i < vertices.length; i++) {
+			totalAngle += GeometryUtils.canonicAngle(Math.atan2(vertices[i].y - point.y, vertices[i].x - point.x) -
+				Math.atan2(vertices[i - 1].y - point.y, vertices[i - 1].x - point.x));
+		}
+		return Math.abs(Math.abs(totalAngle) - 2 * Math.PI) < GeometryUtils.epsilon;
+	}
 }

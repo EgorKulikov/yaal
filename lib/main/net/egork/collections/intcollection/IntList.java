@@ -211,4 +211,8 @@ public abstract class IntList extends IntCollection {
 	public IntSortedList sort(IntComparator comparator) {
 		return new IntArray(this).inPlaceSort(comparator);
 	}
+
+	public int back() {
+		return get(size() - 1);
+	}
 }
