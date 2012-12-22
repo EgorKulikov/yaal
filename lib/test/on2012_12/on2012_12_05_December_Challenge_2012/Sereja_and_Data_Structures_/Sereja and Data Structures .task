@@ -1,0 +1,36 @@
+27 Sereja and Data Structures 
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+7 3
+1 2 4
+1 6
+1
+1
+11 5
+5 5 5 5 5
+1 0
+1
+2
+6 2
+1 5
+
+1 4
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+98 on2012_12.on2012_12_05_December_Challenge_2012.Sereja_and_Data_Structures_.SerejaAndDataStructures
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.05
+23 December Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

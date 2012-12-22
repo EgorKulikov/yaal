@@ -1,0 +1,37 @@
+17 Tennis Tournament
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+46 4
+2 1 42
+1
+4 2 66
+1 2
+4 2 66
+1 3
+8 3 71
+3 5 2
+
+72 42.00000000000000
+66.00000000000000
+73.18080000000000
+75.47784648840000
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+79 on2012_10.on2012_10_21_October_Cook_Off_2012.Tennis_Tournament.TennisTournament
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-6
+0
+10 2012.10.21
+21 October Cook-Off 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

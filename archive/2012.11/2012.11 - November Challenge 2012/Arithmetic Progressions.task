@@ -1,0 +1,28 @@
+23 Arithmetic Progressions
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+24 10
+3 5 3 6 3 4 10 4 5 2
+
+2 9
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+32 net.egork.ArithmeticProgressions
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+20 net.egork.APTestCase
+10 2012.11.02
+23 November Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

@@ -1,0 +1,30 @@
+24 Berry Tough Distribution
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+25 2
+3 5
+1 8 6
+5 8
+1 6 2 9 5
+8 3 3
+3 2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+32 net.egork.BerryToughDistribution
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.07
+17 CodeWeavers 2012 
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

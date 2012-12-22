@@ -1,0 +1,33 @@
+12 C - The team
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+12 5
+1
+3
+3
+6
+6
+
+14 2
+1 1
+3 1 2 3
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+82 on2012_10.on2012_10_27_Ural_Regional_School_Programming_Contest.C___The_team.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.27
+40 Ural Regional School Programming Contest
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

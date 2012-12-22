@@ -1,0 +1,33 @@
+7 Squarks
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+13 4
+3 5 4 7 6 5
+9 1
+1 2 3 4
+1
+1
+19 4
+11 17 12 20 21 15
+19 2
+4 7 8 13
+3 8 9 12
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+17 net.egork.Squarks
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.02
+14 OpenCup Onsite
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

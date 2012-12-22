@@ -1,0 +1,29 @@
+22 Mixing the Ingredients
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+19 1
+5
+1 2 3 4 5
+amam
+
+4 105
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+30 net.egork.MixingTheIngredients
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.07
+17 CodeWeavers 2012 
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
