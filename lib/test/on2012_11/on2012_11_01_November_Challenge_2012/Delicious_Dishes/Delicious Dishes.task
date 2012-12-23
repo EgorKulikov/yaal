@@ -1,0 +1,31 @@
+16 Delicious Dishes
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+13 2
+5 13
+1 100
+
+5 8
+90
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+79 on2012_11.on2012_11_01_November_Challenge_2012.Delicious_Dishes.DeliciousDishes
+39 net.egork.chelper.checkers.TokenChecker
+0 
+2
+74 on2012_11.on2012_11_01_November_Challenge_2012.Delicious_Dishes.DDTestCase
+82 on2012_11.on2012_11_01_November_Challenge_2012.Delicious_Dishes.DDAccuracyTestCase
+10 2012.11.01
+23 November Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
