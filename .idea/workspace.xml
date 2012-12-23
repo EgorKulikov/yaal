@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d974b4d0-f59c-4394-8a40-e0328c570b87" name="Default" comment="Missing files">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d974b4d0-f59c-4394-8a40-e0328c570b87" name="Default" comment="Missing files" />
     <list id="504fd17b-4883-4c04-b591-c04a5f28acfc" name="nfc" comment="Project" />
     <ignored path=".idea/workspace.xml" />
     <file path="/TaskA.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356190328538" ignored="false" />
     <file path="/TaskB.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356194513601" ignored="false" />
     <file path="/ArrayUtils.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1355052257767" ignored="false" />
     <file path="/TaskC.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356194176074" ignored="false" />
-    <file path="/fragment.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356261347078" ignored="false" />
+    <file path="/fragment.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356262569427" ignored="false" />
     <file path="/Generator.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1354810330810" ignored="false" />
     <file path="/TaskD.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356196694746" ignored="false" />
     <file path="/DCHecker.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1354813335410" ignored="false" />
     <file path="/DChecker.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1354813328929" ignored="false" />
     <file path="/DTestCase.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356196035338" ignored="false" />
-    <file path="/Dummy.txt" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356260115858" ignored="false" />
+    <file path="/Dummy.txt" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1356262569427" ignored="false" />
     <file path="/FoxAndHandle.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1354987231109" ignored="false" />
     <file path="/SpellCards.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1354988067901" ignored="false" />
     <file path="/CoinsGame.java" changelist="d974b4d0-f59c-4394-8a40-e0328c570b87" time="1354989338849" ignored="false" />
@@ -122,8 +120,10 @@
       <file leaf-file-name="Win32FileSystem.java" pinned="false" current="true" current-in-tab="true">
         <entry file="jar://C:/Program Files/Java/jdk1.7.0_10/src.zip!/java/io/Win32FileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="35" selection-start="555" selection-end="555" vertical-scroll-proportion="0.31610337">
-              <folding />
+            <state line="44" column="5" selection-start="805" selection-end="805" vertical-scroll-proportion="0.44035786">
+              <folding>
+                <element signature="method#Win32FileSystem#0;class#Win32FileSystem#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -707,7 +707,7 @@
       <recent name="D:\home\projects\algo\archive\2012.09" />
     </key>
   </component>
-  <component name="RunManager" selected="Task.Task">
+  <component name="RunManager" selected="JUnit.Library test">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -822,35 +822,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Library test" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="lib" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="62127" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="Task" type="Task" factoryName="Task">
@@ -1223,8 +1194,10 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_10/src.zip!/java/io/Win32FileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="35" selection-start="555" selection-end="555" vertical-scroll-proportion="0.31610337">
-          <folding />
+        <state line="44" column="5" selection-start="805" selection-end="805" vertical-scroll-proportion="0.44035786">
+          <folding>
+            <element signature="method#Win32FileSystem#0;class#Win32FileSystem#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
