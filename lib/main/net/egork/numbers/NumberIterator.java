@@ -8,7 +8,7 @@ public abstract class NumberIterator {
 
 	protected abstract void process(long prefix, int remainingDigits);
 
-	public void process(long from, long to) {
+	public void run(long from, long to) {
 		if (from < 0 || from > to)
 			throw new IllegalArgumentException();
 		to++;
