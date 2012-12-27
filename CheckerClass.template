@@ -1,0 +1,28 @@
+package %package%;
+
+import net.egork.chelper.tester.Verdict;
+import net.egork.chelper.checkers.Checker;
+import %InputClassFQN%;
+
+import java.io.StringBufferInputStream;
+
+
+public class %CheckerClass% implements Checker {
+    public %CheckerClass%(String parameters) {
+    }
+
+    public Verdict check(String input, String expectedOutput, String actualOutput) {
+        %InputClass% in = new %InputClass%(new StringBufferInputStream(input));
+        %InputClass% expected;
+        if (expectedOutput == null)
+            expected = null;
+        else
+            expected = new %InputClass%(new StringBufferInputStream(expectedOutput));
+        %InputClass% actual = new %InputClass%(new StringBufferInputStream(actualOutput));
+        return check(in, expected, actual);
+    }
+
+    public Verdict check(%InputClass% in, %InputClass% expected, %InputClass% actual) {
+        return Verdict.UNDECIDED;
+    }
+}
