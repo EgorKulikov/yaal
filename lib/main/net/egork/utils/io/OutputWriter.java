@@ -35,7 +35,15 @@ public class OutputWriter {
         }
     }
 
-	public void print(IntCollection collection) {
+    public void print(long[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (i != 0)
+                writer.print(' ');
+            writer.print(array[i]);
+        }
+    }
+
+    public void print(IntCollection collection) {
 		boolean first = true;
 		for (IntIterator iterator = collection.iterator(); iterator.isValid(); iterator.advance()) {
 			if (first)
@@ -51,7 +59,12 @@ public class OutputWriter {
         writer.println();
     }
 
-	public void printLine(IntCollection collection) {
+    public void printLine(long[] array) {
+        print(array);
+        writer.println();
+    }
+
+    public void printLine(IntCollection collection) {
 		print(collection);
 		writer.println();
 	}

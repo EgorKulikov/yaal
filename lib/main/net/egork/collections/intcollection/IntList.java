@@ -89,33 +89,7 @@ public abstract class IntList extends IntCollection {
 	}
 
 	public IntList subList(final int from, final int to) {
-		return new IntList() {
-			private int size = to - from;
-
-			@Override
-			public int get(int index) {
-				if (index < 0 || index >= size)
-					throw new IndexOutOfBoundsException();
-				return IntList.this.get(index + from);
-			}
-
-			@Override
-			public void set(int index, int value) {
-				if (index < 0 || index >= size)
-					throw new IndexOutOfBoundsException();
-				IntList.this.set(index + from, value);
-			}
-
-			@Override
-			public int size() {
-				return size;
-			}
-
-			@Override
-			public void add(int value) {
-				throw new UnsupportedOperationException();
-			}
-		};
+		return new SubList(from, to);
 	}
 
 	private void swap(int first, int second) {
@@ -218,5 +192,41 @@ public abstract class IntList extends IntCollection {
 
     public int popBack() {
         throw new UnsupportedOperationException();
+    }
+
+    private class SubList extends IntList {
+        private final int to;
+        private final int from;
+        private int size;
+
+        public SubList(int from, int to) {
+            this.to = to;
+            this.from = from;
+            size = to - from;
+        }
+
+        @Override
+        public int get(int index) {
+            if (index < 0 || index >= size)
+                throw new IndexOutOfBoundsException();
+            return IntList.this.get(index + from);
+        }
+
+        @Override
+        public void set(int index, int value) {
+            if (index < 0 || index >= size)
+                throw new IndexOutOfBoundsException();
+            IntList.this.set(index + from, value);
+        }
+
+        @Override
+        public int size() {
+            return size;
+        }
+
+        @Override
+        public void add(int value) {
+            throw new UnsupportedOperationException();
+        }
     }
 }
