@@ -54,4 +54,9 @@ public class IntArrayList extends IntList {
 		System.arraycopy(this.array, 0, array, 0, size);
 		return array;
 	}
+
+    @Override
+    public int popBack() {
+        return array[--size];
+    }
 }

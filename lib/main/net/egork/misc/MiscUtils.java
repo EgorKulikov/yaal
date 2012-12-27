@@ -14,8 +14,10 @@ public class MiscUtils {
 	public static final int[] DY4 = {0, -1, 0, 1};
 	public static final int[] DX8 = {1, 1, 1, 0, -1, -1, -1, 0};
 	public static final int[] DY8 = {-1, 0, 1, 1, 1, 0, -1, -1};
+    public static final int[] DX_KNIGHT = {2, 1, -1, -2, -2, -1, 1, 2};
+    public static final int[] DY_KNIGHT = {1, 2, 2, 1, -1, -2, -2, -1};
 
-	private static final String[] ROMAN_TOKENS = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+    private static final String[] ROMAN_TOKENS = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 	private static final int[] ROMAN_VALUES = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
 	public static long josephProblem(long n, int k) {

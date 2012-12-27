@@ -1,0 +1,53 @@
+15 1846 - GCD 2010
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+22 5
++ 8
++ 6
++ 8
+- 8
+- 8
+
+10 8
+2
+2
+2
+6
+
+1
+1
+26 6
++ 8
++ 6
++ 8
+- 8
+- 8
+- 6
+
+12 8
+2
+2
+2
+6
+1
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+57 on2012_12.on2012_12_27_Volume_9._1846___GCD_2010.Task1846
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.27
+8 Volume 9
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
