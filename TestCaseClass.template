@@ -1,0 +1,23 @@
+package %package%;
+
+import net.egork.chelper.task.Test;
+import net.egork.chelper.tester.TestProvider;
+
+import %OutputClassFQN%;
+
+import java.util.*;
+import java.io.StringWriter;
+
+public class %TestCaseClass% implements TestProvider {
+    public Collection<Test> createTests() {
+        List<Test> tests = new ArrayList<Test>();
+        Random random = new Random(239);
+        int testCount = 1;
+        for (int testNumber = 0; testNumber < testCount; testNumber++) {
+            StringWriter sw = new StringWriter();
+            %OutputClass% out = new %OutputClass%(sw);
+            tests.add(new Test(sw.toString()));
+        }
+        return tests;
+    }
+}
