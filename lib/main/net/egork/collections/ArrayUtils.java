@@ -68,7 +68,12 @@ public class ArrayUtils {
 			Arrays.fill(row, value);
 	}
 
-	public static long sumArray(int[] array) {
+    public static void fill(boolean[][][] array, boolean value) {
+        for (boolean[][] row : array)
+            fill(row, value);
+    }
+
+    public static long sumArray(int[] array) {
 		long result = 0;
 		for (int element : array)
 			result += element;

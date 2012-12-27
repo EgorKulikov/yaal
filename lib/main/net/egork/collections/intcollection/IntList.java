@@ -215,4 +215,8 @@ public abstract class IntList extends IntCollection {
 	public int back() {
 		return get(size() - 1);
 	}
+
+    public int popBack() {
+        throw new UnsupportedOperationException();
+    }
 }
