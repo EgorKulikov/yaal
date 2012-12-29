@@ -18,7 +18,12 @@ public class ArrayUtils {
 		return order;
 	}
 
-	public static void fill(long[][] array, long value) {
+    public static void fill(short[][] array, short value) {
+        for (short[] row : array)
+            Arrays.fill(row, value);
+    }
+
+    public static void fill(long[][] array, long value) {
 		for (long[] row : array)
 			Arrays.fill(row, value);
 	}
