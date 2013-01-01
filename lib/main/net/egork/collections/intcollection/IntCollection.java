@@ -143,4 +143,11 @@ public abstract class IntCollection {
 			array[i++] = iterator.value();
 		return array;
 	}
+
+	public long sum() {
+		long result = 0;
+		for (IntIterator iterator = iterator(); iterator.isValid(); iterator.advance())
+			result += iterator.value();
+		return result;
+	}
 }
