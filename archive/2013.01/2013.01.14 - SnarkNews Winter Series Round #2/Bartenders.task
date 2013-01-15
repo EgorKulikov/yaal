@@ -1,0 +1,35 @@
+10 Bartenders
+12 MULTI_NUMBER
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+55 2
+40 4
+10 5 6
+20 4 12
+30 6 9
+42 7 0
+20 2
+10 0 5
+66 1 0
+
+6 217
+15
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+20 net.egork.Bartenders
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.14
+32 SnarkNews Winter Series Round #2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

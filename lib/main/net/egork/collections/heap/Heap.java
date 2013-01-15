@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author Egor Kulikov (egorku@yandex-team.ru)
  */
 public class Heap {
-	private final IntComparator comparator;
+	private IntComparator comparator;
 	private int size = 0;
 	private int[] elements;
 	private int[] at;
@@ -36,7 +36,11 @@ public class Heap {
 		return size;
 	}
 
-	public boolean isEmpty() {
+    public void setComparator(IntComparator comparator) {
+        this.comparator = comparator;
+    }
+
+    public boolean isEmpty() {
 		return size == 0;
 	}
 
@@ -116,4 +120,8 @@ public class Heap {
 		shiftDown(0);
 		return result;
 	}
+
+    public void clear() {
+        size = 0;
+    }
 }
