@@ -1,31 +1,22 @@
 package net.egork.collections.set;
 
+import net.egork.collections.map.EHashMap;
+
 import java.util.*;
 
 /**
  * @author egor@egork.net
  */
 public class EHashSet<E> extends AbstractSet<E> {
-	private static final int[] shifts = new int[10];
-
-	private int size;
-	private Object[] keys;
-	private int capacity;
-	private int shift;
-	private int[] indices;
-
-	static {
-		Random random = new Random(System.currentTimeMillis());
-		for (int i = 0; i < 10; i++)
-			shifts[i] = 1 + 3 * i + random.nextInt(3);
-	}
+    private static final Object VALUE = new Object();
+    private final Map<E, Object> map;
 
 	public EHashSet() {
 		this(4);
 	}
 
 	public EHashSet(int maxSize) {
-		setCapacity(maxSize);
+		map = new EHashMap<E, Object>(maxSize);
 	}
 
 	public EHashSet(Collection<E> collection) {
@@ -35,122 +26,35 @@ public class EHashSet<E> extends AbstractSet<E> {
 
 	@Override
 	public boolean contains(Object o) {
-		if (o == null)
-			return false;
-		int index = index(o);
-		while (keys[index] != null && !keys[index].equals(o))
-			index = (index + shift) & (capacity - 1);
-		return keys[index] != null;
+        return map.containsKey(o);
 	}
 
 	@Override
 	public boolean add(E e) {
 		if (e == null)
 			return false;
-		int index = index(e);
-		while (keys[index] != null && !keys[index].equals(e))
-			index = (index + shift) & (capacity - 1);
-		if (keys[index] == null)
-			size++;
-		keys[index] = e;
-		if (size * 3 > capacity) {
-			Object[] oldKeys = keys;
-			setCapacity(size);
-			size = 0;
-			for (Object key : oldKeys) {
-				if (key != null)
-					add((E) key);
-			}
-		}
-		return true;
-	}
-
-	private int index(Object o) {
-		return getHash(o.hashCode()) & (capacity - 1);
-	}
-
-	private int getHash(int h) {
-		int result = h;
-		for (int i : shifts)
-			result ^= h >>> i;
-		return result;
+		return map.put(e, VALUE) == null;
 	}
 
 	@Override
 	public boolean remove(Object o) {
 		if (o == null)
 			return false;
-		int index = index(o);
-		int indicesSize = 0;
-		while (keys[index] != null && !keys[index].equals(o)) {
-			indices[indicesSize++] = index;
-			index = (index + shift) & (capacity - 1);
-		}
-		if (keys[index] == null)
-			return false;
-		size--;
-		int lastIndex = indicesSize;
-		indices[indicesSize++] = index;
-		keys[index] = null;
-		index = (index + shift) & (capacity - 1);
-		while (keys[index] != null) {
-			int curKey = index(keys[index]);
-			for (int i = 0; i <= lastIndex; i++) {
-				if (indices[i] == curKey) {
-					keys[indices[lastIndex]] = keys[index];
-					keys[index] = null;
-					lastIndex = indicesSize;
-				}
-			}
-			indices[indicesSize++] = index;
-			index = (index + shift) & (capacity - 1);
-		}
-		return true;
+		return map.remove(o) != null;
 	}
 
 	@Override
 	public void clear() {
-		Arrays.fill(keys, null);
-		size = 0;
-	}
-
-	private void setCapacity(int size) {
-		capacity = Integer.highestOneBit(10 * size);
-		keys = new Object[capacity];
-		shift = capacity / 3 - 1;
-		shift -= 1 - (shift & 1);
-		indices = new int[capacity];
+        map.clear();
 	}
 
 	@Override
 	public Iterator<E> iterator() {
-		return new Iterator<E>() {
-			private int index = 0;
-			private E lastReturnedKey;
-
-			public boolean hasNext() {
-				while (index < capacity && keys[index] == null)
-					index++;
-				return index < capacity;
-			}
-
-			public E next() {
-				if (!hasNext())
-					throw new NoSuchElementException();
-				return (E) keys[index++];
-			}
-
-			public void remove() {
-				if (lastReturnedKey == null)
-					throw new IllegalStateException();
-				EHashSet.this.remove(lastReturnedKey);
-				lastReturnedKey = null;
-			}
-		};
+        return map.keySet().iterator();
 	}
 
 	@Override
 	public int size() {
-		return size;
+		return map.size();
 	}
 }
