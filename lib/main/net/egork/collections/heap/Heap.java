@@ -123,5 +123,6 @@ public class Heap {
 
     public void clear() {
         size = 0;
+		Arrays.fill(at, -1);
     }
 }

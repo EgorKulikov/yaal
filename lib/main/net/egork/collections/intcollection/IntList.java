@@ -139,17 +139,17 @@ public abstract class IntList extends IntCollection {
 
 	private void heapSort(int from, int to, IntComparator comparator) {
 		for (int i = (to + from - 1) >> 1; i >= from; i--)
-			siftDown(i, to, comparator);
+			siftDown(i, to, comparator, from);
 		for (int i = to; i > from; i--) {
 			swap(from, i);
-			siftDown(from, i - 1, comparator);
+			siftDown(from, i - 1, comparator, from);
 		}
 	}
 
-	private void siftDown(int start, int end, IntComparator comparator) {
+	private void siftDown(int start, int end, IntComparator comparator, int delta) {
 		int value = get(start);
 		while (true) {
-			int child = (start << 1) + 1;
+			int child = ((start - delta) << 1) + 1 + delta;
 			if (child > end)
 				return;
 			int childValue = get(child);
