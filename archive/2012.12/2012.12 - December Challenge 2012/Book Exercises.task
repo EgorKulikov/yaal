@@ -1,0 +1,33 @@
+14 Book Exercises
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+55 6
+9 english
+6 mathematics
+8 geography
+-1
+3 graphics
+-1
+
+25 1 mathematics
+0 graphics
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.BookExercises
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.05
+23 December Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

@@ -1,0 +1,28 @@
+18 1423 - String Tale
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+26 11
+abracadabra
+racadabraab
+2 9
+
+1
+14 main/net/egork
+15 -Xmx16M -Xss16M
+4 Main
+60 on2012_12.on2012_12_26_Volume_5._1423___String_Tale.Task1423
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.26
+8 Volume 5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

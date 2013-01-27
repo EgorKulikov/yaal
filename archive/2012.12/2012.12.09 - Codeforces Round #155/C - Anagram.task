@@ -1,0 +1,34 @@
+11 C - Anagram
+6 SINGLE
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+2
+0
+8 ABA
+CBA
+
+5 1
+ABC
+1
+1
+14 CDBABC
+ADCABD
+
+8 2
+ADBADC
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.09
+21 Codeforces Round #155
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

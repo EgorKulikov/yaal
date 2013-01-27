@@ -1,0 +1,38 @@
+14 A - Dice Tower
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+16 3
+6
+3 2
+5 4
+2 4
+
+3 YES
+1
+1
+16 3
+3
+2 6
+4 1
+5 3
+
+2 NO
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.19
+30 Codeforces Round #139 (Div. 2)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

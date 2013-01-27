@@ -1,0 +1,30 @@
+3 Phi
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+4 2 4
+
+1 5
+1
+1
+28 3999998000000 4000000000000
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+13 net.egork.Phi
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.14
+14 OpenCup SPb GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

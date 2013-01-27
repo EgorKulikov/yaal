@@ -1,0 +1,63 @@
+5 Stamp
+14 getMinimumCost
+3 int
+3
+16 java.lang.String
+12 desiredColor
+3 int
+9 stampCost
+3 int
+8 pushCost
+6
+0
+3
+String
+6 RRGGBB
+int 1
+int 1
+int 5
+1
+1
+3
+String
+6 R**GB*
+int 1
+int 1
+int 5
+1
+2
+3
+String
+4 BRRB
+int 2
+int 7
+int 30
+1
+3
+3
+String
+7 R*RR*GG
+int 10
+int 58
+int 204
+1
+4
+3
+String
+24 *B**B**B*BB*G*BBB**B**B*
+int 5
+int 2
+int 33
+1
+5
+3
+String
+28 *R*RG*G*GR*RGG*G*GGR***RR*GG
+int 7
+int 1
+int 30
+1
+10 2012.10.19
+22 Single Round Match 558
+0
+15 net.egork.Stamp

@@ -1,0 +1,32 @@
+7 Rollout
+12 MULTI_NUMBER
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+33 2
+3 3
+X.B
+.L.
+B.B
+3 3
+B.B
+.LX
+.XB
+5 12
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+17 net.egork.Rollout
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2012.08
+26 SnarkNews Summer Series #6
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter

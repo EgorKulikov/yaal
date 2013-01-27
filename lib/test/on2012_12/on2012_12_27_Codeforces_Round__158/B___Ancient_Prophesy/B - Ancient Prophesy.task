@@ -1,0 +1,27 @@
+20 B - Ancient Prophesy
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+47 777-444---21-12-2013-12-2013-12-2013---444-777
+
+11 13-12-2013
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+71 on2012_12.on2012_12_27_Codeforces_Round__158.B___Ancient_Prophesy.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.27
+21 Codeforces Round #158
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

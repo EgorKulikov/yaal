@@ -1,0 +1,31 @@
+10 CuBuilding
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+12 1 1 1 2 3 4
+
+2 60
+1
+1
+12 2 3 4 5 6 7
+
+4 1680
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+77 on2013_01.on2013_01_14_SnarkNews_Winter_Series_Round__2.CuBuilding.CuBuilding
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.14
+32 SnarkNews Winter Series Round #2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

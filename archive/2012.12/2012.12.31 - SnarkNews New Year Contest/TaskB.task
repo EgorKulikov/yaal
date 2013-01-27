@@ -1,0 +1,29 @@
+5 TaskB
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+14 5 4 7 3 8 2 10
+7 12.6042
+1
+1
+15 5 4 7 3 8 2 4.5
+6 6.2976
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-4
+0
+10 2012.12.31
+26 SnarkNews New Year Contest
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

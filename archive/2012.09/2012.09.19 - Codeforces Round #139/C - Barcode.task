@@ -1,0 +1,40 @@
+11 C - Barcode
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+44 6 5 1 2
+##.#.
+.###.
+###..
+#...#
+.##.#
+###..
+
+3 11
+
+1
+1
+20 2 5 1 1
+#####
+.....
+
+2 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.19
+30 Codeforces Round #139 (Div. 2)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

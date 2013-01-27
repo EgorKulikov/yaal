@@ -1,0 +1,37 @@
+5 TaskA
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+15 2 3
+2 1
+1 2
+2 1
+3 2 1
+1
+1
+33 3 5
+1 2 3
+1 2 3
+2 1 3
+2 3 1
+3 2 1
+3 2 2
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+75 on2013_01.on2013_01_24_Arab_Collegiate_Programming_Contest_2012.TaskA.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.24
+40 Arab Collegiate Programming Contest 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

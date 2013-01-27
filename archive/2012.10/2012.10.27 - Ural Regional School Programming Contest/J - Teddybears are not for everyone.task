@@ -1,0 +1,29 @@
+35 J - Teddybears are not for everyone
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+101 
+6 4                                                                                        
+2 3 4 6
+
+4 
+10
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+15 net.egork.TaskJ
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.27
+40 Ural Regional School Programming Contest
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

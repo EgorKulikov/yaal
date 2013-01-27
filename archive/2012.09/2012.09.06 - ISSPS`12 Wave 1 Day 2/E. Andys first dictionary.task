@@ -1,0 +1,49 @@
+25 E. Andys first dictionary
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+154 Adventures in Disneyland
+
+Two blondes were going to Disneyland when they came to a fork in the
+road. The sign read: "Disneyland Left."
+
+So they went home.
+109 a
+adventures
+blondes
+came
+disneyland
+fork
+going
+home
+in
+left
+read
+road
+sign
+so
+the
+they
+to
+two
+went
+were
+when
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.06
+21 ISSPS`12 Wave 1 Day 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

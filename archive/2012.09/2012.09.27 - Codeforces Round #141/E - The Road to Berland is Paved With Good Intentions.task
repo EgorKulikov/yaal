@@ -1,0 +1,40 @@
+53 E - The Road to Berland is Paved With Good Intentions
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+28 4 4
+1 2 1
+2 4 0
+4 3 1
+3 2 0
+
+10 4
+3 2 1 3
+
+1
+1
+22 3 3
+1 2 0
+2 3 0
+3 1 0
+
+11 Impossible
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.27
+21 Codeforces Round #141
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

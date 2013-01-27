@@ -1,0 +1,58 @@
+5 TaskH
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+21 3
+011
+10x
+1x0
+2
+01
+10
+33 YES
+01101
+10011
+10011
+01101
+11110
+1
+1
+29 2
+0x
+x0
+4
+010x
+1010
+0100
+x000
+2 NO
+1
+2
+8 1
+0
+1
+0
+
+10 YES
+01
+10
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.24
+40 Arab Collegiate Programming Contest 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

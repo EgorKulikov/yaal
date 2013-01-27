@@ -1,0 +1,32 @@
+26 A - The Brand New Function
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+8 3
+1 2 0
+
+1 4
+1
+1
+24 10
+1 2 3 4 5 6 1 2 9 10
+
+2 11
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.16
+21 Codeforces Round #150
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
