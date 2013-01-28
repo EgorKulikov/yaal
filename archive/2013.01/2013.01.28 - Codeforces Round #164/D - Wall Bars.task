@@ -1,0 +1,50 @@
+13 D - Wall Bars
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+5
+0
+4 5 1
+
+2 4
+
+1
+1
+4 4 2
+
+4 148
+
+1
+2
+4 4 3
+
+4 256
+
+1
+3
+4 5 2
+
+4 376
+
+1
+4
+8 1000 30
+
+9 107282225
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.28
+21 Codeforces Round #164
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
