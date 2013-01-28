@@ -1,0 +1,32 @@
+21 Escape from the Mines
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+39 4
+0 0 10 10
+2 3 7 8
+3 4 5 6
+12 10 13 15
+9 -1
+0
+1
+-1
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+114 on2013_01.on2013_01_25_ACM_ICPC_Amritapuri_onsite_regionals_2012___Replay.Escape_from_the_Mines.EscapeFromTheMines
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.25
+50 ACM-ICPC Amritapuri onsite regionals 2012 : Replay
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,30 @@
+15 Dyslexic Gollum
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+13 3
+2 2
+3 3
+3 4
+5 2
+4
+8
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+104 on2013_01.on2013_01_25_ACM_ICPC_Amritapuri_onsite_regionals_2012___Replay.Dyslexic_Gollum.DyslexicGollum
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.25
+50 ACM-ICPC Amritapuri onsite regionals 2012 : Replay
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
