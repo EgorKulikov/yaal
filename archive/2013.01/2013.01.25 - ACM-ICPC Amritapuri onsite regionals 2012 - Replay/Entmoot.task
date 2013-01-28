@@ -1,0 +1,44 @@
+7 Entmoot
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+103 4
+3
+0 3 3
+4 0 4
+-3 -4 5
+3
+0 10 2
+0 20 2
+0 40 2
+3
+0 100 15
+0 -100 15
+8 0 7
+3
+0 0 1
+10000 0 1
+5000 8661 1
+38 1.000000
+7.500000
+6.666667
+5773.751357
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+17 net.egork.Entmoot
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-4
+0
+10 2013.01.25
+50 ACM-ICPC Amritapuri onsite regionals 2012 : Replay
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
