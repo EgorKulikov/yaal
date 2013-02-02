@@ -1,0 +1,35 @@
+8 Decoding
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+12 3
+2
+3 2
+2 1
+
+1 1
+1
+1
+4 9
+0
+
+6 362880
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+18 net.egork.Decoding
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.30
+32 SnarkNews Winter Series Round #5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
