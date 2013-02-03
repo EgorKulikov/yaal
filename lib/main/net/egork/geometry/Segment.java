@@ -88,4 +88,14 @@ public class Segment {
 			return new Point[]{result[1]};
 		return new Point[0];
 	}
+
+	public Point intersect(Line line) {
+		Line selfLine = line();
+		Point intersect = selfLine.intersect(line);
+		if (intersect == null)
+			return null;
+		if (contains(intersect, true))
+			return intersect;
+		return null;
+	}
 }
