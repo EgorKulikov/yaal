@@ -1,0 +1,39 @@
+8 CardGame
+12 MULTI_NUMBER
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+1
+0
+132 5
+4 3
+3 6 2 8 
+5 2
+10 20 30 40 50 
+6 4
+1 1 2 3 5 8 
+2 2
+1069 1122 
+10 5
+10386 10257 10432 10087 10381 10035 10167 10206 10347 10088 
+68 Case #1: 30
+Case #2: 400
+Case #3: 103
+Case #4: 1122
+Case #5: 2621483
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+18 net.egork.CardGame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.02
+35 Facebook Hacker Cup Online Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

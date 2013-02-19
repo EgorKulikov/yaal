@@ -1,0 +1,35 @@
+10 DeadPixels
+12 MULTI_NUMBER
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+1
+0
+126 5
+4 4 2 2 1 0 2 1 2 3 4
+4 4 1 1 3 1 1 2 2 2 2
+6 10 3 2 2 0 0 5 4 3 2
+16 18 5 1 5 10 8 21 27 29 87
+14 15 12 4 4 3 5 84 74 53 68
+59 Case #1: 7
+Case #2: 15
+Case #3: 32
+Case #4: 197
+Case #5: 16
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+20 net.egork.DeadPixels
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+28 net.egork.DeadPixelsTestCase
+10 2013.02.02
+35 Facebook Hacker Cup Online Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

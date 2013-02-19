@@ -1,0 +1,32 @@
+15 Climbing Stairs
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+11 2
+1 1
+7 4
+
+
+19 CORRECT
+INCORRECT
+
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+24 net.egork.ClimbingStairs
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.05
+23 February 2013 Challenge
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
