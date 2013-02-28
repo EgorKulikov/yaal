@@ -1,0 +1,43 @@
+18 The scholars party
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+18 4
+1 4
+2 3
+5 2
+4 3
+
+2 1
+
+1
+1
+26 6
+2 3
+3 5
+3 7
+4 6
+4 8
+5 7
+
+2 4
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.TheScholarsParty
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.22
+12 Exhibit 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,37 @@
+19 D - Google Code Jam
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+49 3 40
+10 20 15 4 0.5
+4 100 21 1 0.99
+1 4 1 1 0.25
+
+12 24.0 18.875
+
+1
+1
+30 1 1
+100000000 200000000 1 1 0
+
+12 100000000 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+70 on2013_02.on2013_02_28_Codeforces_Round__170.D___Google_Code_Jam.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2013.02.28
+21 Codeforces Round #170
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

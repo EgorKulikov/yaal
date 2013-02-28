@@ -23,7 +23,7 @@ public class IntHashSet extends IntCollection {
 	private int step;
 
 	public IntHashSet() {
-		this(8);
+		this(3);
 	}
 
 	public IntHashSet(int capacity) {
@@ -104,6 +104,7 @@ public class IntHashSet extends IntCollection {
 			boolean[] oldPresent = present;
 			values = new int[capacity];
 			present = new boolean[capacity];
+			size = 0;
 			for (int i = 0; i < oldValues.length; i++) {
 				if (oldPresent[i])
 					add(oldValues[i]);

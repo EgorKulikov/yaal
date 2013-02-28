@@ -1,0 +1,48 @@
+5 TaskG
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+18 4 3 7 12
+4 3 31 32
+48 Case 1:
+aac
+aacb
+aacc
+ab
+abac
+abb
+Case 2:
+bccc
+c
+1
+1
+13 4 3 1 100000
+
+0 
+0
+2
+9 4 3 31 32
+0 
+0
+3
+11 30 26 1 100
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.09
+18 OpenCup Saratov GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
