@@ -1,0 +1,38 @@
+8 C - Game
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+6 2 1 0
+
+14 FIRST
+1 0 1 1
+
+1
+1
+38 2 2 4
+0 1 2 1
+0 1 2 1
+1 2 1 0
+1 1 1 2
+
+7 SECOND
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+59 on2013_02.on2013_02_28_Codeforces_Round__170.C___Game.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.28
+21 Codeforces Round #170
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -108,7 +108,7 @@ public class Matrix {
 		}
 	}
 
-	private static void multiply(long[] c, long[] a, long[] b, long mod, int side) {
+	public static void multiply(long[] c, long[] a, long[] b, long mod, int side) {
 		Arrays.fill(c, 0);
 		for (int i = 0; i < side; i++) {
 			for (int j = 0; j < side; j++) {

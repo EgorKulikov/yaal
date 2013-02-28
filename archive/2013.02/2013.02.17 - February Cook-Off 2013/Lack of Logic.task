@@ -1,0 +1,34 @@
+13 Lack of Logic
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+93 4
+Father, what is the lack of logic?
+Where?
+The quick brown fox jumps over the lazy dog.
+!!!
+
+48 Bunny
+Day
+~
+You Can output aLoMsT anytihng HERE
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+21 net.egork.LackOfLogic
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.17
+22 February Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -150,4 +150,24 @@ public abstract class IntCollection {
 			result += iterator.value();
 		return result;
 	}
+
+	public void addAll(IntCollection values) {
+		for (IntIterator it = values.iterator(); it.isValid(); it.advance()) {
+			add(it.value());
+		}
+	}
+
+	public void removeAll(IntCollection values) {
+		for (IntIterator it = values.iterator(); it.isValid(); it.advance()) {
+			remove(it.value());
+		}
+	}
+
+	public void retainAll(IntCollection values) {
+		for (IntIterator it = iterator(); it.isValid(); it.advance()) {
+			if (!values.contains(it.value())) {
+				remove(it.value());
+			}
+		}
+	}
 }
