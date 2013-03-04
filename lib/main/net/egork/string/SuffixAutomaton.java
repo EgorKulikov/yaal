@@ -16,8 +16,9 @@ public class SuffixAutomaton {
     public final int[] label;
     public int size;
     public int last;
+	public int edgeSize;
 
-    public SuffixAutomaton(final CharSequence s) {
+	public SuffixAutomaton(final CharSequence s) {
         this(new IntList() {
             @Override
             public int get(int index) {
@@ -50,7 +51,7 @@ public class SuffixAutomaton {
         Arrays.fill(first, -1);
         link[0] = -1;
         size = 1;
-        int edgeSize = 0;
+        edgeSize = 0;
         last = 0;
         for (int i = 0; i < s.size(); i++) {
             int c = s.get(i);
