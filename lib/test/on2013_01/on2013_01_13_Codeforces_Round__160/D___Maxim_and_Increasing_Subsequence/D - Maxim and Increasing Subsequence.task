@@ -1,0 +1,32 @@
+36 D - Maxim and Increasing Subsequence
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+26 3 3 5 2
+3 2 1
+1 2 3
+2 3 1
+
+6 2
+3
+3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+87 on2013_01.on2013_01_13_Codeforces_Round__160.D___Maxim_and_Increasing_Subsequence.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.13
+21 Codeforces Round #160
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

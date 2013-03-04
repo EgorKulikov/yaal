@@ -1,0 +1,41 @@
+15 B - Two Strings
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+8 abab
+ab
+
+4 Yes
+
+1
+1
+12 abacaba
+aba
+
+3 No
+
+1
+2
+7 abc
+ba
+
+3 No
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+66 on2012_09.on2012_09_16_Codeforces_Round__138.B___Two_Strings.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.16
+21 Codeforces Round #138
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

@@ -1,0 +1,65 @@
+12 F - TorCoder
+6 SINGLE
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+5
+0
+20 7 2
+aabcbaa
+1 3
+5 7
+
+8 abacaba
+
+1
+1
+16 3 2
+abc
+1 2
+2 3
+
+4 abc
+
+1
+2
+21 8 2
+aaaabbbb
+1 8
+1 4
+
+9 abbabbaa
+
+1
+3
+43 17 4
+aaaaabbbbccccdddd
+1 17
+1 4
+10 13
+6 10
+
+18 abbaccdadcddcbbaa
+
+1
+4
+27 17 1
+abbaccddacddcbbaa
+6 10
+18 abbaccdadcddcbbaa
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.16
+46 Codeforces Round #145 (Div. 1, ACM-ICPC Rules)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

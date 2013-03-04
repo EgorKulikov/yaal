@@ -1,0 +1,39 @@
+35 1354 - Palindrome. Again Palindrome
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+3 No
+
+4 NoN
+
+1
+1
+7 OnLine
+
+12 OnLineniLnO
+
+1
+2
+9 AbabaAab
+
+12 AbabaAababA
+
+1
+14 main/net/egork
+15 -Xmx16M -Xss16M
+4 Main
+77 on2012_12.on2012_12_26_Volume_4._1354___Palindrome__Again_Palindrome.Task1354
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.26
+8 Volume 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

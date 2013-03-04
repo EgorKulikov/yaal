@@ -1,0 +1,28 @@
+23 1935 - Tears of Drowned
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+9 3
+5 10 3
+
+3 28
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+66 on2012_12.on2012_12_26_Volume_10._1935___Tears_of_Drowned.Task1935
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.26
+9 Volume 10
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

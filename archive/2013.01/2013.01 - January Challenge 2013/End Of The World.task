@@ -1,0 +1,35 @@
+16 End Of The World
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+33 2
+3
+2 6 4
+4 8 9
+7 9 4
+2
+8 4
+15 4
+
+6 20
+13
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.EndOfTheWorld
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.01
+22 January Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

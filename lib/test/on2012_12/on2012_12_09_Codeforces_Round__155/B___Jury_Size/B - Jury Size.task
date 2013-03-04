@@ -1,0 +1,44 @@
+13 B - Jury Size
+6 SINGLE
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+3
+0
+20 2
+5 23 1 2
+3 13 2 3
+
+2 2
+
+1
+1
+29 3
+12 9 2 1
+12 8 1 3
+12 8 2 2
+
+2 3
+
+1
+2
+12 1
+1 10 1 13
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+64 on2012_12.on2012_12_09_Codeforces_Round__155.B___Jury_Size.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.09
+21 Codeforces Round #155
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

@@ -1,0 +1,47 @@
+5 TaskI
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+95 5 6 10
+0 2
+1 2
+5 2
+2 2
+3 2
+4 2
+5 2 10
+0 0
+5 10
+2 2 5
+0 1
+2 2
+10 3 18
+0 2
+6 4
+10 0
+2 2 1
+0 0
+2 1
+33 S
+S 0 0 0 5
+N
+S 2 2 2 2 2 1 1 1
+N
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+70 on2012_09.on2012_09_16_Latin_America___Brazil_Sub_Regional.TaskI.TaskI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.16
+35 Latin America - Brazil Sub Regional
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

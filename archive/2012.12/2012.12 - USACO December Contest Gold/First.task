@@ -1,0 +1,53 @@
+5 First
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+3
+0
+20 4
+omm
+moo
+mom
+ommnom
+9 2
+omm
+mom
+1
+1
+10 2
+aba
+abc
+
+10 2
+aba
+abc
+
+1
+2
+15 4
+abc
+b
+ac
+aba
+
+11 3
+b
+ac
+aba
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.First
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.17
+27 USACO December Contest Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

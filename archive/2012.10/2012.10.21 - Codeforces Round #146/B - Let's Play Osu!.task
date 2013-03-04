@@ -1,0 +1,41 @@
+19 B - Let's Play Osu!
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+14 3
+0.5 0.5 0.5
+
+18 2.750000000000000
+
+1
+1
+18 4
+0.7 0.2 0.1 0.9
+
+18 2.489200000000000
+
+1
+2
+12 5
+1 1 1 1 1
+
+19 25.000000000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2012.10.21
+30 Codeforces Round #146 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

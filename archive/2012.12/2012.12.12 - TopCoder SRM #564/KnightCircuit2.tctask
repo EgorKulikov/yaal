@@ -1,0 +1,32 @@
+14 KnightCircuit2
+7 maxSize
+3 int
+2
+3 int
+1 w
+3 int
+1 h
+3
+0
+2
+int 1
+int 1
+int 1
+1
+1
+2
+int 15
+int 2
+int 8
+1
+2
+2
+int 100
+int 100
+int 10000
+1
+10 2012.12.12
+22 Single Round Match 564
+1
+20 net.egork.KCTestCase
+24 net.egork.KnightCircuit2

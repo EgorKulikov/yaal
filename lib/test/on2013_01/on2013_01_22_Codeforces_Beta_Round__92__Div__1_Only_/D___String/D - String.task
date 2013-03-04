@@ -1,0 +1,39 @@
+10 D - String
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+5 aaaa
+
+3 20
+
+1
+1
+7 abcdef
+
+3 21
+
+1
+2
+16 abacabadabacaba
+
+4 188
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+79 on2013_01.on2013_01_22_Codeforces_Beta_Round__92__Div__1_Only_.D___String.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.22
+39 Codeforces Beta Round #92 (Div. 1 Only)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

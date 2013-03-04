@@ -1,0 +1,190 @@
+12 ICPCBalloons
+14 minRepaintings
+3 int
+3
+5 int[]
+12 balloonCount
+16 java.lang.String
+11 balloonSize
+5 int[]
+11 maxAccepted
+6
+0
+3
+int[] 1
+100
+String
+1 L
+int[] 5
+1
+2
+3
+4
+5
+int 10
+1
+1
+3
+int[] 1
+100
+String
+1 M
+int[] 5
+10
+20
+30
+40
+50
+int -1
+1
+2
+3
+int[] 9
+5
+6
+1
+5
+6
+1
+5
+6
+1
+String
+9 MLMMLMMLM
+int[] 6
+7
+7
+4
+4
+7
+7
+int 6
+1
+3
+3
+int[] 2
+100
+100
+String
+2 ML
+int[] 3
+50
+51
+51
+int -1
+1
+4
+3
+int[] 15
+8
+5
+1
+4
+1
+1
+3
+1
+3
+3
+5
+4
+5
+6
+9
+String
+15 MMMLLLMMLLMLMLM
+int[] 15
+3
+5
+3
+3
+5
+6
+4
+6
+4
+2
+3
+7
+1
+5
+2
+int 5
+1
+5
+3
+int[] 50
+1
+18
+4
+7
+19
+7
+7
+1
+4
+8
+10
+5
+14
+13
+8
+22
+6
+3
+13
+5
+3
+4
+2
+1
+3
+15
+19
+4
+5
+9
+4
+11
+2
+7
+12
+20
+11
+26
+22
+7
+2
+10
+9
+20
+13
+20
+2
+9
+11
+9
+String
+50 LLMLLLLMLLLLLLLLLLLLMLLLLLLLLLLMMLMLLLMLLLLLLLLMLL
+int[] 15
+44
+59
+29
+53
+16
+23
+13
+14
+29
+42
+13
+15
+66
+4
+47
+int 210
+1
+10 2012.11.20
+22 Single Round Match 561
+0
+22 net.egork.ICPCBalloons
