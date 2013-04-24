@@ -1,0 +1,51 @@
+10 FruitTrees
+7 maxDist
+3 int
+3
+3 int
+5 apple
+3 int
+4 kiwi
+3 int
+5 grape
+5
+0
+3
+int 1
+int 5
+int 8
+int 0
+1
+1
+3
+int 3
+int 3
+int 6
+int 1
+1
+2
+3
+int 40
+int 30
+int 20
+int 5
+1
+3
+3
+int 899
+int 1073
+int 1147
+int 14
+1
+4
+3
+int 2000
+int 2000
+int 2000
+int 666
+1
+10 2013.04.20
+28 2013 TopCoder Open Algorithm
+0
+20 net.egork.FruitTrees
+1
