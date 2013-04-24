@@ -96,6 +96,16 @@ public class MiscUtils {
 		return result;
 	}
 
+	public static String buildIP(int mask) {
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < 4; i++) {
+			if (i != 0)
+				result.append('.');
+			result.append(mask >> (24 - 8 * i) & 255);
+		}
+		return result.toString();
+	}
+
 	public static long binarySearch(long from, long to, Function<Long, Boolean> function) {
 		while (from < to) {
 			long argument = from + (to - from) / 2;

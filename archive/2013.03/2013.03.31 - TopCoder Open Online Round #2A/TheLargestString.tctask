@@ -1,0 +1,59 @@
+16 TheLargestString
+4 find
+16 java.lang.String
+2
+16 java.lang.String
+1 s
+16 java.lang.String
+1 t
+5
+0
+2
+String
+2 ab
+String
+2 zy
+String
+2 by
+1
+1
+2
+String
+7 abacaba
+String
+7 zzzaaaa
+String
+6 cbaaaa
+1
+2
+2
+String
+1 x
+String
+1 x
+String
+2 xx
+1
+3
+2
+String
+25 abbabbabbababaaaabbababab
+String
+25 bababbaabbbababbbbababaab
+String
+22 bbbbbbbbbbbbbbbbbbaaab
+1
+4
+2
+String
+4 zzzz
+String
+4 azzz
+String
+6 zzzzzz
+1
+10 2013.03.31
+28 2013 TopCoder Open Algorithm
+0
+26 net.egork.TheLargestString
+1
