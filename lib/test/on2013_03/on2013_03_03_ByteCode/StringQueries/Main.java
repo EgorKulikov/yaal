@@ -1,4 +1,4 @@
-package on2013_02.on2013_02_09_OpenCup_Saratov_GP.TaskA;
+package on2013_03.on2013_03_03_ByteCode.StringQueries;
 
 import net.egork.chelper.tester.NewTester;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
 public class Main {
 	@Test
 	public void test() throws Exception {
-		if (!NewTester.test("lib/test/on2013_02/on2013_02_09_OpenCup_Saratov_GP/TaskA/TaskA.task"))
+		if (!NewTester.test("lib/test/on2013_03/on2013_03_03_ByteCode/StringQueries/StringQueries.task"))
 			Assert.fail();
 	}
 }
