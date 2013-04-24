@@ -40,6 +40,11 @@ public class ArrayUtils {
 			fill(row, value);
 	}
 
+	public static void fill(double[][][][] array, double value) {
+		for (double[][][] row : array)
+			fill(row, value);
+	}
+
 	public static void fill(long[][][] array, long value) {
 		for (long[][] row : array)
 			fill(row, value);

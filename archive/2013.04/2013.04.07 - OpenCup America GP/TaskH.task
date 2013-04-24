@@ -1,0 +1,73 @@
+5 TaskH
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+200 if A then
+    checkpoint
+    if ~A then
+         checkpoint
+    fi
+else  
+    checkpoint
+fi
+if (A&B)|(~A&~B) then
+    checkpoint
+fi
+if A|~A then checkpoint fi
+if B then
+    if ~A then checkpoint fi
+fi
+-1
+1
+1
+200 if Z then
+    checkpoint
+    if ~Z then
+         checkpoint
+    fi
+else  
+    checkpoint
+fi
+if (Z&B)|(~Z&~B) then
+    checkpoint
+fi
+if Z|~Z then checkpoint fi
+if B then
+    if ~Z then checkpoint fi
+fi
+-1
+1
+2
+32 checkpoint
+checkpoint
+checkpoint
+-1
+1
+3
+54 if A|B&C then
+checkpoint
+fi
+if ~~A then
+checkpoint
+fi
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.07
+18 OpenCup America GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
