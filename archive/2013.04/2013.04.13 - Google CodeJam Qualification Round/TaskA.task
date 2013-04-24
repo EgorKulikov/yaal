@@ -1,0 +1,59 @@
+5 TaskA
+12 MULTI_NUMBER
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+1
+0
+126 6
+XXXT
+....
+OO..
+....
+
+XOXT
+XXOO
+OXOX
+XXOO
+
+XOX.
+OX..
+....
+....
+
+OOXX
+OXXX
+OX.T
+O..O
+
+XXXO
+..O.
+.O..
+T...
+
+OXXX
+XO..
+..O.
+...O
+105 Case #1: X won
+Case #2: Draw
+Case #3: Game has not completed
+Case #4: O won
+Case #5: O won
+Case #6: O won
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.13
+34 Google CodeJam Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

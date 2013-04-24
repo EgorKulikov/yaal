@@ -1,0 +1,40 @@
+5 TaskF
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+427 2
+6
+4 10 10 0 10 15 0 15 15 0 15 10 0
+4 10 10 0 10 15 0 10 15 20 10 10 20
+4 10 15 0 15 15 0 15 15 20 10 15 20
+4 15 15 0 15 10 0 15 10 20 15 15 20
+4 10 10 0 15 10 0 15 10 20 10 10 20
+4 10 10 20 10 15 20 15 15 20 15 10 20
+6
+4 0 0 0 0 25 0 25 25 0 25 0 0
+4 0 0 0 0 25 0 0 25 0.5 0 0 0.5
+4 0 25 0 25 25 0 25 25 0.5 0 25 0.5
+4 25 25 0 25 0 0 25 0 0.5 25 25 0.5
+4 25 0 0 0 0 0 0 0 0.5 25 0 0.5
+4 0 0 0.5 0 25 0.5 25 25 0.5 25 0 0.5
+0
+7 812.500
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.07
+18 OpenCup America GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

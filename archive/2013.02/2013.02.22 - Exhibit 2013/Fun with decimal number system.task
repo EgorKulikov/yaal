@@ -1,0 +1,36 @@
+30 Fun with decimal number system
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+24 5
+3
+13
+45
+64
+1000000000
+
+36 6
+444
+4456
+4664
+5446456455646565564
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+36 net.egork.FunWithDecimalNumberSystem
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.22
+12 Exhibit 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

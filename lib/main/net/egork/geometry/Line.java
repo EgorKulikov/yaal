@@ -8,6 +8,12 @@ public class Line {
 	public final double b;
 	public final double c;
 
+	public Line(Point p, double angle) {
+		a = Math.sin(angle);
+		b = -Math.cos(angle);
+		c = -p.x * a - p.y * b;
+	}
+
 	public Line(double a, double b, double c) {
 		double h = GeometryUtils.fastHypot(a, b);
 		/*if (a < -GeometryUtils.epsilon) {

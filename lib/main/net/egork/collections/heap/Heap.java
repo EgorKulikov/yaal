@@ -53,15 +53,23 @@ public class Heap {
 	}
 
 	public void shiftUp(int index) {
-		if (index < 0 || index >= size)
-			throw new IllegalArgumentException();
+//		if (index < 0 || index >= size)
+//			throw new IllegalArgumentException();
+		int value = elements[index];
 		while (index != 0) {
 			int parent = (index - 1) >>> 1;
-			if (comparator.compare(elements[parent], elements[index]) <= 0)
+			int parentValue = elements[parent];
+			if (comparator.compare(parentValue, value) <= 0) {
+				elements[index] = value;
+				at[value] = index;
 				return;
-			swap(parent, index);
+			}
+			elements[index] = parentValue;
+			at[parentValue] = index;
 			index = parent;
 		}
+		elements[0] = value;
+		at[value] = 0;
 	}
 
 	public void shiftDown(int index) {

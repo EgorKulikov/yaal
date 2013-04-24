@@ -1,0 +1,56 @@
+24 CharuAndCoinDistribution
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+7 2
+
+1
+
+2
+5 4
+10
+
+1
+1
+54 20
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+34 net.egork.CharuAndCoinDistribution
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.03.03
+8 ByteCode
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

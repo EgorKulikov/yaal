@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 /**
  * @author egorku@yandex-team.ru
  */
-public abstract class IntList extends IntCollection {
+public abstract class IntList extends IntCollection implements Comparable<IntList> {
 	private static final int INSERTION_THRESHOLD = 8;
 
 	public abstract int get(int index);
@@ -83,7 +83,7 @@ public abstract class IntList extends IntCollection {
 		return false;
 	}
 
-	private void inPlaceReverse() {
+	public void inPlaceReverse() {
 		for (int i = 0, j = size() - 1; i < j; i++, j--)
 			swap(i, j);
 	}
@@ -194,7 +194,57 @@ public abstract class IntList extends IntCollection {
         throw new UnsupportedOperationException();
     }
 
-    private class SubList extends IntList {
+	public int hashCode() {
+		int hashCode = 1;
+		for (IntIterator i = iterator(); i.isValid(); i.advance())
+			hashCode = 31 * hashCode + i.value();
+		return hashCode;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof IntList))
+			return false;
+		IntList list = (IntList)obj;
+		if (list.size() != size())
+			return false;
+		IntIterator i = iterator();
+		IntIterator j = list.iterator();
+		while (i.isValid()) {
+			if (i.value() != j.value())
+				return false;
+			i.advance();
+			j.advance();
+		}
+		return true;
+	}
+
+	public int compareTo(IntList o) {
+		IntIterator i = iterator();
+		IntIterator j = o.iterator();
+		while (true) {
+			if (i.isValid()) {
+				if (j.isValid()) {
+					if (i.value() != j.value()) {
+						if (i.value() < j.value())
+							return -1;
+						else
+							return 1;
+					}
+				} else
+					return 1;
+			} else {
+				if (j.isValid())
+					return -1;
+				else
+					return 0;
+			}
+			i.advance();
+			j.advance();
+		}
+	}
+
+	private class SubList extends IntList {
         private final int to;
         private final int from;
         private int size;
