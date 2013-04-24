@@ -1,0 +1,35 @@
+5 TaskC
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+46 2
+250 250
+250 750
+3
+250 250
+500 500
+250 750
+0
+
+11 500
+603.55
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-2
+0
+10 2013.04.07
+18 OpenCup America GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,51 @@
+5 TaskI
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+85 ABABABcABABAbAbab
+3
+0 2
+1 6
+0 7
+SheSellsSeashellsByTheSeaShore
+4
+8 22
+1 20
+8 25
+0 1
+*
+13 4
+0
+5
+3
+4
+1
+0
+1
+1
+12 aaa
+1
+0 1
+*
+
+2 2
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+53 on2013_04.on2013_04_07_OpenCup_America_GP.TaskI.TaskI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.07
+18 OpenCup America GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
