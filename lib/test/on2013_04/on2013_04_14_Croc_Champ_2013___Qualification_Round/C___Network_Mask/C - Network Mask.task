@@ -1,0 +1,49 @@
+16 C - Network Mask
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+44 5 3
+0.0.0.1
+0.1.1.2
+0.0.2.1
+0.1.1.0
+0.0.2.3
+
+13 255.255.254.0
+1
+1
+44 5 2
+0.0.0.1
+0.1.1.2
+0.0.2.1
+0.1.1.0
+0.0.2.3
+
+11 255.255.0.0
+1
+2
+22 2 1
+255.0.0.1
+0.0.0.2
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+83 on2013_04.on2013_04_14_Croc_Champ_2013___Qualification_Round.C___Network_Mask.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.14
+37 Croc Champ 2013 - Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

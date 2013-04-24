@@ -4,6 +4,8 @@ import net.egork.collections.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.numbers.IntegerUtils;
 
+import java.util.Arrays;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -119,4 +121,37 @@ public class StringUtils {
         }
         return result;
     }
+
+	public static int[][] buildPrefixAutomaton(String s) {
+		SuffixAutomaton automaton = new SuffixAutomaton(s);
+		boolean[] isPrefix = new boolean[automaton.size];
+		isPrefix[0] = true;
+		int current = 0;
+		for (int i = 0; i < s.length(); i++) {
+			current = automaton.to[automaton.findEdge(current, s.charAt(i))];
+			isPrefix[current] = true;
+		}
+		int[] lastPrefix = new int[automaton.size];
+		Arrays.fill(lastPrefix, -1);
+		for (int i = 1; i < automaton.size; i++)
+			lastPrefix[i] = calculateLastPrefix(isPrefix, automaton.link, automaton.link[i], lastPrefix);
+		int[][] result = new int[s.length() + 1][26];
+		result[0][s.charAt(0) - 'a'] = 1;
+		current = 0;
+		for (int i = 1; i <= s.length(); i++) {
+			current = automaton.to[automaton.findEdge(current, s.charAt(i - 1))];
+			System.arraycopy(result[lastPrefix[current]], 0, result[i], 0, 26);
+			if (i != s.length())
+				result[i][s.charAt(i) - 'a'] = i + 1;
+		}
+		return result;
+	}
+
+	private static int calculateLastPrefix(boolean[] prefix, int[] link, int vertex, int[] lastPrefix) {
+		if (prefix[vertex])
+			return vertex;
+		if (lastPrefix[vertex] != -1)
+			return lastPrefix[vertex];
+		return lastPrefix[vertex] = calculateLastPrefix(prefix, link, link[vertex], lastPrefix);
+	}
 }

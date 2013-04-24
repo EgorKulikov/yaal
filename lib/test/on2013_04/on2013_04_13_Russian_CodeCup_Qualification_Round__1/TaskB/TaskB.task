@@ -1,0 +1,38 @@
+5 TaskB
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+25 2
+4
+3 9 5 5
+6
+1 1 1 1 1 1
+4 1
+15
+1
+1
+20 1
+8
+5 5 5 5 6 6 6 6
+
+3 70
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+73 on2013_04.on2013_04_13_Russian_CodeCup_Qualification_Round__1.TaskB.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.13
+38 Russian CodeCup Qualification Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
