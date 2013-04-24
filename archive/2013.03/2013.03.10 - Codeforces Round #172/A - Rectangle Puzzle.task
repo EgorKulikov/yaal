@@ -1,0 +1,33 @@
+20 A - Rectangle Puzzle
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+7 1 1 45
+
+12 0.828427125
+
+1
+1
+7 6 4 30
+
+13 19.668384925
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2013.03.10
+21 Codeforces Round #172
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

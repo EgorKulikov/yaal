@@ -8,8 +8,10 @@ public class Counter<K> extends EHashMap<K, Long> {
 		super();
 	}
 
-	public void add(K key) {
-		put(key, get(key) + 1);
+	public long add(K key) {
+		long result = get(key);
+		put(key, result + 1);
+		return result + 1;
 	}
 
 	public void add(K key, long delta) {
