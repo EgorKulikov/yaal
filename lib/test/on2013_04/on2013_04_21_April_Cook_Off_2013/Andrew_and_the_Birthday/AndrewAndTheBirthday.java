@@ -2,7 +2,7 @@ package on2013_04.on2013_04_21_April_Cook_Off_2013.Andrew_and_the_Birthday;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;

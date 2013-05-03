@@ -2,8 +2,7 @@ package on2012_12.on2012_12_05_December_Challenge_2012.Sereja_and_Data_Structure
 
 
 
-import net.egork.collections.ArrayUtils;
-import net.egork.collections.comparators.IntComparator;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.InputReader;
