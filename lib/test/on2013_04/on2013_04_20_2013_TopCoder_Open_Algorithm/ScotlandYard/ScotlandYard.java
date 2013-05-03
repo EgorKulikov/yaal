@@ -2,7 +2,7 @@ package on2013_04.on2013_04_20_2013_TopCoder_Open_Algorithm.ScotlandYard;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class ScotlandYard {
 	int[][] answer;

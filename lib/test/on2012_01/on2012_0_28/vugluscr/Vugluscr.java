@@ -2,7 +2,7 @@ package on2012_01.on2012_0_28.vugluscr;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

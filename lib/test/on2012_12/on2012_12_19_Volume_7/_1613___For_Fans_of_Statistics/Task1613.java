@@ -2,7 +2,7 @@ package on2012_12.on2012_12_19_Volume_7._1613___For_Fans_of_Statistics;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

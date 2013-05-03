@@ -2,7 +2,7 @@ package on2013_03.on2013_03_10_Codeforces_Round__172.B___Maximum_Xor_Secondary;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

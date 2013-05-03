@@ -2,7 +2,7 @@ package on2012_08.on2012_7_3.blockgame;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

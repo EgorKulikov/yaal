@@ -2,7 +2,7 @@ package on2012_01.on2012_0_16.loyal;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 

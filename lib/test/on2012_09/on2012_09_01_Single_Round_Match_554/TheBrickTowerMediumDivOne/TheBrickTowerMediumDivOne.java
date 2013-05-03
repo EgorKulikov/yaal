@@ -2,7 +2,7 @@ package on2012_09.on2012_09_01_Single_Round_Match_554.TheBrickTowerMediumDivOne;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 
 public class TheBrickTowerMediumDivOne {

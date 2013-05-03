@@ -2,7 +2,7 @@ package on2012_11.on2012_11_10_.TaskE;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.graph.Edge;
 import net.egork.graph.Graph;

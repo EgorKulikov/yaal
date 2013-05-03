@@ -2,7 +2,7 @@ package on2012_12.on2012_12_29_Volume_7._1635___Mnemonics_and_Palindromes;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 

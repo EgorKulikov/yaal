@@ -2,7 +2,7 @@ package on2012_08.on2012_08_SnarkNews_Summer_Series__6.report;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;

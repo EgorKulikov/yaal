@@ -2,7 +2,7 @@ package on2013_01.on2013_01_22_Codeforces_Round__163.D___BerDonalds;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;

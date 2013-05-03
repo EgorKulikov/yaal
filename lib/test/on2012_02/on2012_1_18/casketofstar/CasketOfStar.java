@@ -2,7 +2,7 @@ package on2012_02.on2012_1_18.casketofstar;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class CasketOfStar {
 	private int[][] answer;

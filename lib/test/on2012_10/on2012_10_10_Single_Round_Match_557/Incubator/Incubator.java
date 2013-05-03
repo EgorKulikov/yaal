@@ -2,7 +2,7 @@ package on2012_10.on2012_10_10_Single_Round_Match_557.Incubator;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 import java.util.HashMap;
 import java.util.Map;

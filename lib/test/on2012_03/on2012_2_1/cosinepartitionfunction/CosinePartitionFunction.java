@@ -2,7 +2,7 @@ package on2012_03.on2012_2_1.cosinepartitionfunction;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 

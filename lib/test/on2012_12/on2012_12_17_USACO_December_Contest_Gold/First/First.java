@@ -2,7 +2,7 @@ package on2012_12.on2012_12_17_USACO_December_Contest_Gold.First;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

@@ -2,7 +2,7 @@ package on2011_11.on2011_10_10.morecaterpillars;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

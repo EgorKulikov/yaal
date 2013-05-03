@@ -2,7 +2,7 @@ package on2012_05.on2012_4_8.taskb;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.Pair;
 import net.egork.geometry.GeometryUtils;
 import net.egork.io.IOUtils;

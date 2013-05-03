@@ -2,7 +2,7 @@ package on2012_06.on2012_5_17.giftsatolympics;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;

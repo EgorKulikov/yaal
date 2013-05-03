@@ -2,7 +2,7 @@ package on2012_10.on2012_10_16_Codeforces_Round__145__Div__1__ACM_ICPC_Rules_.B_
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

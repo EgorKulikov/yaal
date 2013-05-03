@@ -2,7 +2,7 @@ package on2012_12.on2012_12_29_Volume_2._1179___Numbers_in_Text;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 

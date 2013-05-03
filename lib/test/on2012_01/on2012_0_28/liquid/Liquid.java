@@ -2,7 +2,7 @@ package on2012_01.on2012_0_28.liquid;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
 import net.egork.collections.sequence.Array;

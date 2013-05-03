@@ -2,7 +2,7 @@ package on2013_02.on2013_02_02_Facebook_Hacker_Cup_Online_Round__1.CardGame;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;

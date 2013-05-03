@@ -2,7 +2,7 @@ package on2012_08.on2012_08_SnarkNews_Summer_Series__6.rollout;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;
