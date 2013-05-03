@@ -2,7 +2,7 @@ package on2013_01.on2013_01_13_Codeforces_Round__160.B___Maxim_and_Restaurant;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.InputReader;

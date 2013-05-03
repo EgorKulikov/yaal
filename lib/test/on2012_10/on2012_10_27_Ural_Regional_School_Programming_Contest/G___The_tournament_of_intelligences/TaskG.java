@@ -2,7 +2,7 @@ package on2012_10.on2012_10_27_Ural_Regional_School_Programming_Contest.G___The_
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

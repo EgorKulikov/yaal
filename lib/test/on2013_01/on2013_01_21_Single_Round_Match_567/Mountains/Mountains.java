@@ -2,7 +2,7 @@ package on2013_01.on2013_01_21_Single_Round_Match_567.Mountains;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class Mountains {
     private static final long MOD = (long) (1e9 + 9);

@@ -2,7 +2,7 @@ package on2013_01.on2013_01_22_Codeforces_Beta_Round__92__Div__1_Only_.D___Strin
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.string.SuffixAutomaton;
 import net.egork.utils.io.InputReader;

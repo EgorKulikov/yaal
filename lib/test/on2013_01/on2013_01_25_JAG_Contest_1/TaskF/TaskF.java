@@ -2,7 +2,7 @@ package on2013_01.on2013_01_25_JAG_Contest_1.TaskF;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.heap.Heap;
 import net.egork.graph.GraphUtils;

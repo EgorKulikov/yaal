@@ -2,7 +2,7 @@ package on2013_02.on2013_02_16_Bayan_FunKoders.Problem15;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

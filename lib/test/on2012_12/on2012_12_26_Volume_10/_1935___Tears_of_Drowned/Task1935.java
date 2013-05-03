@@ -2,7 +2,7 @@ package on2012_12.on2012_12_26_Volume_10._1935___Tears_of_Drowned;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.intcollection.IntArray;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

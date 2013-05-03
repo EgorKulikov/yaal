@@ -2,7 +2,7 @@ package on2012_09.on2012_09_16_Latin_America___Brazil_Sub_Regional.TaskI;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 

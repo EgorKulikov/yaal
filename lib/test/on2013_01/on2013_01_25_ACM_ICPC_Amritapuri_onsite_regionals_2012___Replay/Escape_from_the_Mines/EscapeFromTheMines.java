@@ -2,7 +2,7 @@ package on2013_01.on2013_01_25_ACM_ICPC_Amritapuri_onsite_regionals_2012___Repla
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.intervaltree.LongIntervalTree;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

@@ -2,7 +2,7 @@ package on2013_01.on2013_01_19_SnarkNews_Winter_Series_Round__3.Race;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

@@ -2,7 +2,7 @@ package on2012_07.on2012_6_4.littleelephantandbubblesort;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.intervaltree.SumIntervalTree;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

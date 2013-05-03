@@ -2,7 +2,7 @@ package on2013_03.on2013_03_24_March_Cook_off_2013.Traveling_Plan;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;

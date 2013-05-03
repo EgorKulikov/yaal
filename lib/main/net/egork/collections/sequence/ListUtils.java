@@ -1,6 +1,6 @@
 package net.egork.collections.sequence;
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
 import net.egork.collections.filter.Filter;

@@ -2,7 +2,7 @@ package on2012_10.on2012_10_19_Single_Round_Match_558.Ear;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.string.StringUtils;
 
 import java.util.Arrays;

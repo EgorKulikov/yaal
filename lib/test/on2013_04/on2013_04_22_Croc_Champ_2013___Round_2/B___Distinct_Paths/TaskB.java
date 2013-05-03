@@ -2,7 +2,7 @@ package on2013_04.on2013_04_22_Croc_Champ_2013___Round_2.B___Distinct_Paths;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.set.EHashSet;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;

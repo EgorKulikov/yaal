@@ -2,7 +2,7 @@ package on2012_02.on2012_1_25.ellysstring;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.string.StringUtils;
 
 public class EllysString {

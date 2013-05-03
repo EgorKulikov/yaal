@@ -2,7 +2,7 @@ package on2012_12.on2012_12_27_Volume_7._1603___Erudite;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;

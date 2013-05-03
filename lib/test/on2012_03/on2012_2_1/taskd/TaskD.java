@@ -2,7 +2,7 @@ package on2012_03.on2012_2_1.taskd;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.numbers.IntegerUtils;

@@ -2,7 +2,7 @@ package on2013_02.on2013_02_16_Bayan_Contest_Final.TheWearyButcher;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.geometry.Line;
 import net.egork.geometry.Point;
 import net.egork.geometry.Segment;

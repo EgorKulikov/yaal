@@ -2,7 +2,7 @@ package on2013_01.on2013_01_24_Arab_Collegiate_Programming_Contest_2012.TaskA;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;

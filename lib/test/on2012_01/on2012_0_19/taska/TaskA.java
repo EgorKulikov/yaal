@@ -2,7 +2,7 @@ package on2012_01.on2012_0_19.taska;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

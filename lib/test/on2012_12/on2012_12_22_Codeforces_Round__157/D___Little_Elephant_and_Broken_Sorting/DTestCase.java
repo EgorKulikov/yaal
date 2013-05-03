@@ -4,7 +4,7 @@ package on2012_12.on2012_12_22_Codeforces_Round__157.D___Little_Elephant_and_Bro
 
 import net.egork.chelper.task.Test;
 import net.egork.chelper.tester.TestProvider;
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.OutputWriter;
 
 import java.io.StringWriter;

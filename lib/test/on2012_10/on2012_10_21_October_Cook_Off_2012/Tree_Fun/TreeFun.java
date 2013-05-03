@@ -2,7 +2,7 @@ package on2012_10.on2012_10_21_October_Cook_Off_2012.Tree_Fun;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.intervaltree.LCA;
 import net.egork.graph.GraphUtils;

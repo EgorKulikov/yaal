@@ -2,7 +2,7 @@ package on2012_10.on2012_10_21_October_Cook_Off_2012.Buying_Sweets;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
