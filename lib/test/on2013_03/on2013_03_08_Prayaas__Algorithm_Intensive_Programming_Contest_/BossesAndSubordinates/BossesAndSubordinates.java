@@ -2,7 +2,7 @@ package on2013_03.on2013_03_08_Prayaas__Algorithm_Intensive_Programming_Contest_
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.map.EHashMap;
 import net.egork.utils.io.InputReader;

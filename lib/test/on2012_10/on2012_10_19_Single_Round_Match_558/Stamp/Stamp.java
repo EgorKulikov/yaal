@@ -2,7 +2,7 @@ package on2012_10.on2012_10_19_Single_Round_Match_558.Stamp;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class Stamp {
 	public int getMinimumCost(String desiredColor, int stampCost, int pushCost) {

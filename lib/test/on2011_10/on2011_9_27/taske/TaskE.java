@@ -1,7 +1,7 @@
 package on2011_10.on2011_9_27.taske;
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.graph.Graph;
 import net.egork.graph.MaxFlow;
 import net.egork.io.IOUtils;

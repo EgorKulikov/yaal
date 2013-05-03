@@ -2,7 +2,7 @@ package on2012_12.on2012_12_09_Codeforces_Round__155.E___Dormitory;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;

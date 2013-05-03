@@ -2,7 +2,7 @@ package on2013_01.on2013_01_09_SnarkNews_Winter_Series_Round__1.Parking;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.intcollection.IntArrayList;
 import net.egork.collections.intcollection.IntList;
 import net.egork.io.IOUtils;

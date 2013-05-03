@@ -2,7 +2,7 @@ package on2013_03.on2013_03_24_March_Cook_off_2013.Bishops;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.map.EHashMap;
 import net.egork.collections.set.TreapSet;

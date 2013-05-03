@@ -2,7 +2,7 @@ package on2013_02.on2013_02_22_Exhibit_2013.The_scholars_party;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

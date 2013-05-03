@@ -2,7 +2,7 @@ package on2013_01.on2013_01_25_JAG_Contest_1.TaskE;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 

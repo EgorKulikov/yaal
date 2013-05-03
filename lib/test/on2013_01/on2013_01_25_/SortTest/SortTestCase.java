@@ -4,7 +4,7 @@ package on2013_01.on2013_01_25_.SortTest;
 
 import net.egork.chelper.task.Test;
 import net.egork.chelper.tester.TestCase;
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.OutputWriter;
 
 import java.io.StringWriter;

@@ -2,7 +2,7 @@ package on2012_10.on2012_10_28_.TaskD;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;

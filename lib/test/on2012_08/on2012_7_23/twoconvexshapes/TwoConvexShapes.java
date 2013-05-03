@@ -2,7 +2,7 @@ package on2012_08.on2012_7_23.twoconvexshapes;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class TwoConvexShapes {
 	long[][] result;

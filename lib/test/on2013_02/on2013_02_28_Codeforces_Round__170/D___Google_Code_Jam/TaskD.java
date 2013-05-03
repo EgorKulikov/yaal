@@ -2,7 +2,7 @@ package on2013_02.on2013_02_28_Codeforces_Round__170.D___Google_Code_Jam;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

@@ -1,0 +1,32 @@
+5 TaskA
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+58 1
+vsync 10
+640 480 10000000
+2
+Off vsync
+Resolution 320 240
+23 Slideshow
+So-so
+Perfect
+1
+14 main/net/egork
+15 -Xmx64m -Xss64m
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.05.03
+17 Ural Championship
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

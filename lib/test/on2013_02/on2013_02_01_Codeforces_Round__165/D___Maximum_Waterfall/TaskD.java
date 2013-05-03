@@ -2,7 +2,7 @@ package on2013_02.on2013_02_01_Codeforces_Round__165.D___Maximum_Waterfall;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

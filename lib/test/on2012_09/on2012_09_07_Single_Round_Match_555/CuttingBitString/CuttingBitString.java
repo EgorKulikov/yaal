@@ -2,7 +2,7 @@ package on2012_09.on2012_09_07_Single_Round_Match_555.CuttingBitString;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class CuttingBitString {
 	private int[][] answer;

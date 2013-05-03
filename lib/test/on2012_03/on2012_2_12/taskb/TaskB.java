@@ -2,7 +2,7 @@ package on2012_03.on2012_2_12.taskb;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

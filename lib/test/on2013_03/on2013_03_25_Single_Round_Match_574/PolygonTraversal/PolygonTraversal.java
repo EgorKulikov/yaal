@@ -2,7 +2,7 @@ package on2013_03.on2013_03_25_Single_Round_Match_574.PolygonTraversal;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class PolygonTraversal {
 	long[][] answer;

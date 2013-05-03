@@ -2,7 +2,7 @@ package on2013_03.on2013_03_23_Codeforces_Round__176.D___Tourists;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.Pair;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

@@ -2,7 +2,7 @@ package on2012_08.on2012_7_17.divide;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.geometry.GeometryUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
