@@ -2,7 +2,7 @@ package on2012_07.on2012_6_14.elevenmultiples;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 
 public class ElevenMultiples {

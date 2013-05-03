@@ -2,7 +2,7 @@ package on2013_01.on2013_01_16_Codeforces_Round__161.B___Squares;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

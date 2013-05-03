@@ -17,4 +17,5 @@ public interface Edge<V> {
 	public int getReverseID();
 	public Edge<V> getReverseEdge();
 	public int getID();
+	public void setRemoved(boolean isRemoved);
 }

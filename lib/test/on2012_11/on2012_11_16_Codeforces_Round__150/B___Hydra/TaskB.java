@@ -2,7 +2,7 @@ package on2012_11.on2012_11_16_Codeforces_Round__150.B___Hydra;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.sequence.Array;
 import net.egork.graph.GraphUtils;

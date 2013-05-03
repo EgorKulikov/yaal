@@ -2,7 +2,7 @@ package on2012_11.on2012_11_10_Single_Round_Match_560.DrawingPointsDivOne;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class DrawingPointsDivOne {
 	public int maxSteps(int[] x, int[] y) {

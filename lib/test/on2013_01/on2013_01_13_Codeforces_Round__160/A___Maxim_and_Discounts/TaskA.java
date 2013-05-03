@@ -2,7 +2,7 @@ package on2013_01.on2013_01_13_Codeforces_Round__160.A___Maxim_and_Discounts;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.intcollection.IntArray;
 import net.egork.io.IOUtils;

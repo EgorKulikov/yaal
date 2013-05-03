@@ -2,7 +2,7 @@ package on2011_12.on2011_11_25.taskc;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.ListUtils;
 import net.egork.io.IOUtils;

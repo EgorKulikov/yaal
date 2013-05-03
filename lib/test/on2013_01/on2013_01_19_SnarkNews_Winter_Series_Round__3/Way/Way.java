@@ -2,7 +2,7 @@ package on2013_01.on2013_01_19_SnarkNews_Winter_Series_Round__3.Way;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;

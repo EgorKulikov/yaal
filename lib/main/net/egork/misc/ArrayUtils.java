@@ -1,4 +1,4 @@
-package net.egork.collections;
+package net.egork.misc;
 
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.map.EHashMap;

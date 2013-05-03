@@ -2,7 +2,7 @@ package on2012_12.on2012_12_17_USACO_December_Contest_Gold.RunAway;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.set.TreapSet;
 import net.egork.graph.GraphUtils;

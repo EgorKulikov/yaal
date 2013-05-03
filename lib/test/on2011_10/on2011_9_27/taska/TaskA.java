@@ -2,7 +2,7 @@ package on2011_10.on2011_9_27.taska;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import java.io.PrintWriter;

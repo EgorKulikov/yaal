@@ -2,7 +2,7 @@ package on2013_01.on2013_01_14_SnarkNews_Winter_Series_Round__2.Drunk;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

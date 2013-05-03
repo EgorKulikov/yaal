@@ -2,7 +2,7 @@ package on2012_11.on2012_11_16_Codeforces_Round__150.C___Colorado_Potato_Beetle;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

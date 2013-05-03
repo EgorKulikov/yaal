@@ -2,7 +2,7 @@ package on2012_02.on2012_1_22.dengklekbuildingroads;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 
 public class DengklekBuildingRoads {
 	long[][][][] result;

@@ -2,7 +2,7 @@ package on2012_07.on2012_6_7.kingdomandcities;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 
 import java.util.Arrays;

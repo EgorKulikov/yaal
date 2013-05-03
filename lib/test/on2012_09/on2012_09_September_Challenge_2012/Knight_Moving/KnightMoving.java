@@ -2,7 +2,7 @@ package on2012_09.on2012_09_September_Challenge_2012.Knight_Moving;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.InputReader;

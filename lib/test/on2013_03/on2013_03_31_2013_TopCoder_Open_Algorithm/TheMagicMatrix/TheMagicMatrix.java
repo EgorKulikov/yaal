@@ -2,7 +2,7 @@ package on2013_03.on2013_03_31_2013_TopCoder_Open_Algorithm.TheMagicMatrix;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 
 import java.util.Arrays;

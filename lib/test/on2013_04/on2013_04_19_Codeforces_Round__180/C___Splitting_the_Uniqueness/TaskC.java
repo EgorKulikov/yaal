@@ -2,7 +2,7 @@ package on2013_04.on2013_04_19_Codeforces_Round__180.C___Splitting_the_Uniquenes
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.set.EHashSet;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

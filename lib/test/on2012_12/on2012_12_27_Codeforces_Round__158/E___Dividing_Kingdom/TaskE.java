@@ -2,7 +2,7 @@ package on2012_12.on2012_12_27_Codeforces_Round__158.E___Dividing_Kingdom;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.set.PersistentSet;
 import net.egork.collections.set.PersistentTreapSet;

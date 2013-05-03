@@ -2,7 +2,7 @@ package on2012_09.on2012_09_23_September_Cook_Off_2012.Coal_Scam;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.io.IOUtils;

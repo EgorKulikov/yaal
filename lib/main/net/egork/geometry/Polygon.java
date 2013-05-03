@@ -84,7 +84,7 @@ public class Polygon {
             totalAngle += GeometryUtils.canonicAngle(Math.atan2(vertices[i].y - point.y, vertices[i].x - point.x) -
                     Math.atan2(vertices[i - 1].y - point.y, vertices[i - 1].x - point.x));
         }
-        return Math.abs(Math.abs(totalAngle) - 2 * Math.PI) < GeometryUtils.epsilon;
+        return Math.abs(totalAngle) > Math.PI;
     }
 
 	public static double triangleSquare(Point a, Point b, Point c) {

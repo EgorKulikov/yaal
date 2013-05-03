@@ -2,7 +2,7 @@ package on2012_08.on2012_08_31_Codeforces_Round__136__Div__1_.A___Little_Elephan
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

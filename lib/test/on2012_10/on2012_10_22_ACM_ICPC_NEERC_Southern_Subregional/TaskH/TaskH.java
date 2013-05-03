@@ -2,7 +2,7 @@ package on2012_10.on2012_10_22_ACM_ICPC_NEERC_Southern_Subregional.TaskH;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

@@ -2,7 +2,7 @@ package on2013_01.on2013_01_12_Single_Round_Match_566.FencingPenguins;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.geometry.Point;
 import net.egork.geometry.Segment;
 
