@@ -2,7 +2,7 @@ package on2012_11.on2012_11_01_November_Challenge_2012.Candy_Collecting_Game;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

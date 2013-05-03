@@ -2,7 +2,7 @@ package on2012_11.on2012_11_04_OpenCup_Eastern_Europe_GP.TaskB;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;

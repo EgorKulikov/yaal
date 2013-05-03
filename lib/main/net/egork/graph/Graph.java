@@ -133,12 +133,20 @@ public class Graph<V> {
 	}
 
 	public void removeVertexByID(int id) {
+		removeAllEdgesByID(id);
+		map.remove(vertices[id]);
+		vertices[id] = null;
+	}
+
+	public void removeAllEdges(V vertex) {
+		removeAllEdgesByID(resolve(vertex));
+	}
+
+	public void removeAllEdgesByID(int id) {
 		for (Edge<V> edge : getInboundByID(id))
 			removeEdge(edge);
 		for (Edge<V> edge : getOutboundByID(id))
 			removeEdge(edge);
-		map.remove(vertices[id]);
-		vertices[id] = null;
 	}
 
 	public void removeEdge(Edge<V> edge) {
@@ -147,7 +155,7 @@ public class Graph<V> {
 
 	private void removeEdgeByID(int id) {
 		removed[id] = true;
-		edges[id] = null;
+//		edges[id] = null;
 	}
 
 	public Iterable<Edge<V>> getOutbound(V vertex) {
@@ -322,6 +330,18 @@ public class Graph<V> {
 		public int getID() {
 			return id;
 		}
+
+		public void setRemoved(boolean isRemoved) {
+			if (removed[id] == isRemoved)
+				return;
+			removed[id] = isRemoved;
+//			if (!isRemoved) {
+//				nextInbound[id] = firstInbound[getDestinationID()];
+//				firstInbound[getDestinationID()] = id;
+//				nextOutbound[id] = firstOutbound[getSourceID()];
+//				firstOutbound[getSourceID()] = id;
+//			}
+		}
 	}
 
 	private class EdgeIterator implements Iterator<Edge<V>> {
@@ -331,7 +351,7 @@ public class Graph<V> {
 
 		public EdgeIterator(int id, int[] first, int[] next) {
 			this.next = next;
-			first[id] = edgeID = nextEdge(first[id]);
+			edgeID = nextEdge(first[id]);
 		}
 
 		private int nextEdge(int id) {
@@ -348,7 +368,7 @@ public class Graph<V> {
 			if (edgeID == -1)
 				throw new NoSuchElementException();
 			lastID = edgeID;
-			edgeID = next[lastID] = nextEdge(next[lastID]);
+			edgeID = nextEdge(next[lastID]);
 			return edges[lastID];
 		}
 

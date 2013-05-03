@@ -2,7 +2,7 @@ package on2012_09.on2012_09_10_Russian_CodeCup_Finals.A_____________;
 
 
 
-import net.egork.collections.ArrayUtils;
+import net.egork.misc.ArrayUtils;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
