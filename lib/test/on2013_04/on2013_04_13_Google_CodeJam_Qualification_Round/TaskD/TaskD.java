@@ -27,7 +27,7 @@ public class TaskD {
 		boolean[] can = new boolean[1 << count];
 		boolean[] good = new boolean[1 << count];
 		can[0] = true;
-		Graph<Integer> graph = new Graph<Integer>();
+		Graph graph = new Graph(1 << count);
 		for (int i = 0; i < (1 << count); i++) {
 			if (!can[i])
 				continue;
@@ -54,14 +54,14 @@ public class TaskD {
 		for (int i = (1 << count) - 1; i >= 0; i--) {
 			if (!good[i])
 				continue;
-			for (Edge<Integer> edge : graph.getInbound(i))
+			for (Edge edge : graph.inbound(i))
 				good[edge.getSource()] = true;
 		}
 		out.print("Case #" + testNumber + ":");
 		int state = 0;
 		for (int i = 0; i < count; i++) {
 			int to = Integer.MAX_VALUE;
-			for (Edge<Integer> edge : graph.getOutbound(state)) {
+			for (Edge edge : graph.outbound(state)) {
 				if (can[edge.getDestination()] && good[edge.getDestination()])
 					to = Math.min(to, edge.getDestination());
 			}

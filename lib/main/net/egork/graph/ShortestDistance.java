@@ -3,6 +3,8 @@ package net.egork.graph;
 import net.egork.collections.Pair;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.heap.Heap;
+import net.egork.collections.intcollection.IntArrayList;
+import net.egork.collections.intcollection.IntList;
 import net.egork.numbers.IntegerUtils;
 
 import java.util.*;
@@ -11,71 +13,35 @@ import java.util.*;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class ShortestDistance {
-	public static<V> Pair<Map<V, Long>, Map<V, Edge<V>>> dijkstraAlgorithm(Graph<V> graph, V source) {
-		Pair<long[], int[]> result = dijkstraAlgorithmByID(graph, graph.resolve(source));
-		Map<V, Long> distance = new HashMap<V, Long>();
-		Map<V, Edge<V>> last = new HashMap<V, Edge<V>>();
-		for (int i = graph.getVertexCount() - 1; i >= 0; i--) {
-			if (result.second[i] != -1) {
-				distance.put(graph.getVertex(i), result.first[i]);
-				last.put(graph.getVertex(i), graph.getEdge(result.second[i]));
-			}
-		}
-		distance.put(source, 0L);
-		return Pair.makePair(distance, last);
-	}
-
-	public static<V> Pair<Long, List<Edge<V>>> dijkstraAlgorithm(Graph<V> graph, V source, V destination) {
-		int sourceID = graph.resolve(source);
-		int destinationID = graph.resolve(destination);
-		if (sourceID == destinationID)
-			return Pair.makePair(0L, Collections.<Edge<V>>emptyList());
-		Pair<long[], int[]> result = dijkstraAlgorithmByID(graph, sourceID);
-		if (result.second[destinationID] == -1)
-			return null;
-		List<Edge<V>> path = new ArrayList<Edge<V>>();
-		int id = destinationID;
-		while (id != sourceID) {
-			path.add(graph.getEdge(result.second[id]));
-			id = graph.from[result.second[id]];
-		}
-		Collections.reverse(path);
-		return Pair.makePair(result.first[destinationID], path);
-	}
-
-	public static<V> Pair<long[], int[]> dijkstraAlgorithmByID(Graph<V> graph, int sourceID) {
-		int vertexCount = graph.getVertexCount();
+	public static Pair<long[], int[]> dijkstraAlgorithm(Graph graph, int source) {
+		int vertexCount = graph.vertexCount();
 		final long[] distance = new long[vertexCount];
 		int[] last = new int[vertexCount];
 		Arrays.fill(distance, Long.MAX_VALUE);
 		Arrays.fill(last, -1);
-		distance[sourceID] = 0;
+		distance[source] = 0;
 		if (graph.isSparse()) {
 			Heap heap = new Heap(vertexCount, new IntComparator() {
 				public int compare(int first, int second) {
 					return IntegerUtils.longCompare(distance[first], distance[second]);
 				}
 			}, vertexCount);
-			heap.add(sourceID);
+			heap.add(source);
 			while (!heap.isEmpty()) {
 				int current = heap.poll();
-				int edgeID = graph.firstOutbound[current];
-				while (edgeID != -1) {
-					if (graph.removed[edgeID]) {
-						edgeID = graph.nextOutbound[edgeID];
-						continue;
-					}
-					int next = graph.to[edgeID];
-					long total = graph.weight[edgeID] + distance[current];
+				int id = graph.firstOutbound(current);
+				while (id != -1) {
+					int next = graph.destination(id);
+					long total = graph.weight(id) + distance[current];
 					if (distance[next] > total) {
 						distance[next] = total;
 						if (heap.getIndex(next) == -1)
 							heap.add(next);
 						else
 							heap.shiftUp(heap.getIndex(next));
-						last[next] = edgeID;
+						last[next] = id;
 					}
-					edgeID = graph.nextOutbound[edgeID];
+					id = graph.nextOutbound(id);
 				}
 			}
 		} else {
@@ -92,26 +58,36 @@ public class ShortestDistance {
 				if (index == -1)
 					break;
 				visited[index] = true;
-				int edgeID = graph.firstOutbound[index];
-				while (edgeID != -1) {
-					if (graph.removed[edgeID]) {
-						edgeID = graph.nextOutbound[edgeID];
-						continue;
+				int id = graph.firstOutbound(index);
+				while (id != -1) {
+					int next = graph.destination(id);
+					if (!visited[next]) {
+						long total = graph.weight(id) + length;
+						if (distance[next] > total) {
+							distance[next] = total;
+							last[next] = id;
+						}
 					}
-					int next = graph.to[edgeID];
-					if (visited[next]) {
-						edgeID = graph.nextOutbound[edgeID];
-						continue;
-					}
-					long total = graph.weight[edgeID] + length;
-					if (distance[next] > total) {
-						distance[next] = total;
-						last[next] = edgeID;
-					}
-					edgeID = graph.nextOutbound[edgeID];
+					id = graph.nextOutbound(id);
 				}
 			}
 		}
 		return Pair.makePair(distance, last);
+	}
+
+	public static Pair<Long, IntList> dijkstraAlgorithm(Graph graph, int source, int destination) {
+		if (source == destination)
+			return Pair.makePair(0L, (IntList)new IntArrayList());
+		Pair<long[], int[]> result = dijkstraAlgorithm(graph, source);
+		if (result.second[destination] == -1)
+			return null;
+		IntList path = new IntArrayList();
+		int id = destination;
+		while (id != source) {
+			path.add(result.second[id]);
+			id = graph.source(result.second[id]);
+		}
+		path.inPlaceReverse();
+		return Pair.makePair(result.first[destination], path);
 	}
 }

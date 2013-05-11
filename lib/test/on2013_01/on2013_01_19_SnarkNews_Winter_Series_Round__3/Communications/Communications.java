@@ -26,7 +26,7 @@ public class Communications {
 			for (int j = 1; j < vertexCount; j++)
 				islands[i][j] = new Segment(points[j - 1], points[j]);
 		}
-		Graph<Integer> graph = new BidirectionalGraph<Integer>();
+		Graph graph = new BidirectionalGraph(count);
 		for (int i = 0; i < count; i++) {
 			for (int j = 0; j < i; j++) {
 				double distance = Double.POSITIVE_INFINITY;
