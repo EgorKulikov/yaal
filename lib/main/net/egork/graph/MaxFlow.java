@@ -5,87 +5,83 @@ import java.util.Arrays;
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)
  */
-public class MaxFlow<V> {
-	private final Graph<V> graph;
-	private int sourceID;
-	private int destinationID;
+public class MaxFlow {
+	private final Graph graph;
+	private int source;
+	private int destination;
 	private int[] queue;
 	private int[] distance;
 	private int[] nextEdge;
 
-	private MaxFlow(Graph<V> graph, V source, V destination) {
+	private MaxFlow(Graph graph, int source, int destination) {
 		this.graph = graph;
-		sourceID = graph.resolve(source);
-		destinationID = graph.resolve(destination);
-		int vertexCount = graph.getVertexCount();
+		this.source = source;
+		this.destination = destination;
+		int vertexCount = graph.vertexCount();
 		queue = new int[vertexCount];
 		distance = new int[vertexCount];
 		nextEdge = new int[vertexCount];
 	}
 
-	public static<V> long dinic(Graph<V> graph, V source, V destination) {
-		return new MaxFlow<V>(graph, source, destination).dinic();
+	public static long dinic(Graph graph, int source, int destination) {
+		return new MaxFlow(graph, source, destination).dinic();
 	}
 
 	private long dinic() {
 		long totalFlow = 0;
 		while (true) {
 			edgeDistances();
-			if (distance[destinationID] == -1)
+			if (distance[destination] == -1)
 				break;
 			Arrays.fill(nextEdge, -2);
-			totalFlow += dinicImpl(sourceID, Long.MAX_VALUE);
+			totalFlow += dinicImpl(source, Long.MAX_VALUE);
 		}
 		return totalFlow;
 	}
 
 	private void edgeDistances() {
 		Arrays.fill(distance, -1);
-		distance[sourceID] = 0;
+		distance[source] = 0;
 		int size = 1;
-		queue[0] = sourceID;
+		queue[0] = source;
 		for (int i = 0; i < size; i++) {
 			int current = queue[i];
-			int edgeID = graph.firstOutbound[current];
-			while (edgeID != -1) {
-				if (graph.removed[edgeID] || graph.capacity[edgeID] == 0) {
-					edgeID = graph.nextOutbound[edgeID];
-					continue;
+			int id = graph.firstOutbound(current);
+			while (id != -1) {
+				if (graph.capacity(id) != 0) {
+					int next = graph.destination(id);
+					if (distance[next] == -1) {
+						distance[next] = distance[current] + 1;
+						queue[size++] = next;
+					}
 				}
-				int next = graph.to[edgeID];
-				if (distance[next] == -1) {
-					distance[next] = distance[current] + 1;
-					queue[size++] = next;
-				}
-				edgeID = graph.nextOutbound[edgeID];
+				id = graph.nextOutbound(id);
 			}
 		}
 	}
 
-	private long dinicImpl(int sourceID, long flow) {
-		if (sourceID == destinationID)
+	private long dinicImpl(int source, long flow) {
+		if (source == destination)
 			return flow;
-		if (flow == 0 || distance[sourceID] == distance[destinationID])
+		if (flow == 0 || distance[source] == distance[destination])
 			return 0;
-		int edgeID = nextEdge[sourceID];
-		if (edgeID == -2)
-			nextEdge[sourceID] = edgeID = graph.firstOutbound[sourceID];
+		int id = nextEdge[source];
+		if (id == -2)
+			nextEdge[source] = id = graph.firstOutbound(source);
 		long totalPushed = 0;
-		while (edgeID != -1) {
-			int nextDestinationID = graph.to[edgeID];
-			if (graph.removed[edgeID] || graph.capacity[edgeID] == 0 || distance[nextDestinationID] != distance[sourceID] + 1) {
-				nextEdge[sourceID] = edgeID = graph.nextOutbound[edgeID];
-				continue;
+		while (id != -1) {
+			int nextDestinationID = graph.destination(id);
+			if (graph.capacity(id) != 0 && distance[nextDestinationID] == distance[source] + 1) {
+				long pushed = dinicImpl(nextDestinationID, Math.min(flow, graph.capacity(id)));
+				if (pushed != 0) {
+					graph.pushFlow(id, pushed);
+					flow -= pushed;
+					totalPushed += pushed;
+					if (flow == 0)
+						return totalPushed;
+				}
 			}
-			long pushed = dinicImpl(nextDestinationID, Math.min(flow, graph.capacity[edgeID]));
-			if (pushed != 0) {
-				graph.edges[edgeID].pushFlow(pushed);
-				flow -= pushed;
-				totalPushed += pushed;
-				if (flow == 0)
-					return totalPushed;
-			}
-			nextEdge[sourceID] = edgeID = graph.nextOutbound[edgeID];
+			nextEdge[source] = id = graph.nextOutbound(id);
 		}
 		return totalPushed;
 	}

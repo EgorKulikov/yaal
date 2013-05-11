@@ -10,10 +10,10 @@ import java.util.Arrays;
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)
  */
-public class MinCostFlow<V> {
-	private final Graph<V> graph;
-	private final int sourceID;
-	private final int destinationID;
+public class MinCostFlow {
+	private final Graph graph;
+	private final int source;
+	private final int destination;
 	private final long[] phi;
 	private final long[] dijkstraResult;
 	private final int[] lastEdge;
@@ -22,11 +22,11 @@ public class MinCostFlow<V> {
 	private final int[] visited;
 	private int visitIndex;
 
-	public MinCostFlow(Graph<V> graph, V source, V destination, boolean hasNegativeEdges) {
+	public MinCostFlow(Graph graph, int source, int destination, boolean hasNegativeEdges) {
 		this.graph = graph;
-		this.sourceID = graph.resolve(source);
-		this.destinationID = graph.resolve(destination);
-		vertexCount = graph.getVertexCount();
+		this.source = source;
+		this.destination = destination;
+		vertexCount = graph.vertexCount();
 		phi = new long[vertexCount];
 		if (hasNegativeEdges)
 			fordBellman();
@@ -47,11 +47,11 @@ public class MinCostFlow<V> {
 
 	private void fordBellman() {
 		Arrays.fill(phi, Long.MAX_VALUE);
-		phi[sourceID] = 0;
+		phi[source] = 0;
 		boolean[] inQueue = new boolean[vertexCount];
 		int[] queue = new int[vertexCount + 1];
-		queue[0] = sourceID;
-		inQueue[sourceID] = true;
+		queue[0] = source;
+		inQueue[source] = true;
 		int stepCount = 0;
 		int head = 0;
 		int end = 1;
@@ -61,11 +61,11 @@ public class MinCostFlow<V> {
 			if (head == queue.length)
 				head = 0;
 			inQueue[vertex] = false;
-			int edgeID = graph.firstOutbound[vertex];
+			int edgeID = graph.firstOutbound(vertex);
 			while (edgeID != -1) {
-				long total = phi[vertex] + graph.weight[edgeID];
-				int destination = graph.to[edgeID];
-				if (!graph.removed[edgeID] && graph.capacity[edgeID] != 0 && phi[destination] > total) {
+				long total = phi[vertex] + graph.weight(edgeID);
+				int destination = graph.destination(edgeID);
+				if (graph.capacity(edgeID) != 0 && phi[destination] > total) {
 					phi[destination] = total;
 					if (!inQueue[destination]) {
 						queue[end++] = destination;
@@ -74,7 +74,7 @@ public class MinCostFlow<V> {
 							end = 0;
 					}
 				}
-				edgeID = graph.nextOutbound[edgeID];
+				edgeID = graph.nextOutbound(edgeID);
 			}
 			if (++stepCount > maxSteps)
 				throw new IllegalArgumentException("Graph contains negative cycle");
@@ -93,29 +93,29 @@ public class MinCostFlow<V> {
 				dijkstraAlgorithm();
 			else
 				dijkstraAlgorithmFull();
-			if (lastEdge[destinationID] == -1)
+			if (lastEdge[destination] == -1)
 				return Pair.makePair(cost, flow);
 			for (int i = 0; i < dijkstraResult.length; i++) {
 				if (dijkstraResult[i] != Long.MAX_VALUE)
 					phi[i] += dijkstraResult[i];
 			}
-			int vertex = destinationID;
+			int vertex = destination;
 			long currentFlow = maxFlow;
 			long currentCost = 0;
-			while (vertex != sourceID) {
+			while (vertex != source) {
 				int edgeID = lastEdge[vertex];
-				currentFlow = Math.min(currentFlow, graph.capacity[edgeID]);
-				currentCost += graph.weight[edgeID];
-				vertex = graph.from[edgeID];
+				currentFlow = Math.min(currentFlow, graph.capacity(edgeID));
+				currentCost += graph.weight(edgeID);
+				vertex = graph.source(edgeID);
 			}
 			maxFlow -= currentFlow;
 			cost += currentCost * currentFlow;
 			flow += currentFlow;
-			vertex = destinationID;
-			while (vertex != sourceID) {
+			vertex = destination;
+			while (vertex != source) {
 				int edgeID = lastEdge[vertex];
-				graph.edges[edgeID].pushFlow(currentFlow);
-				vertex = graph.from[edgeID];
+				graph.pushFlow(edgeID, currentFlow);
+				vertex = graph.source(edgeID);
 			}
 		}
 		return Pair.makePair(cost, flow);
@@ -124,27 +124,25 @@ public class MinCostFlow<V> {
 	private void dijkstraAlgorithm() {
 		Arrays.fill(dijkstraResult, Long.MAX_VALUE);
 		Arrays.fill(lastEdge, -1);
-		dijkstraResult[sourceID] = 0;
-		heap.add(sourceID);
+		dijkstraResult[source] = 0;
+		heap.add(source);
 		while (!heap.isEmpty()) {
 			int current = heap.poll();
-			int edgeID = graph.firstOutbound[current];
+			int edgeID = graph.firstOutbound(current);
 			while (edgeID != -1) {
-				if (graph.capacity[edgeID] == 0 || graph.removed[edgeID]) {
-					edgeID = graph.nextOutbound[edgeID];
-					continue;
+				if (graph.capacity(edgeID) != 0) {
+					int next = graph.destination(edgeID);
+					long total = graph.weight(edgeID) - phi[next] + phi[current] + dijkstraResult[current];
+					if (dijkstraResult[next] > total) {
+						dijkstraResult[next] = total;
+						if (heap.getIndex(next) == -1)
+							heap.add(next);
+						else
+							heap.shiftUp(heap.getIndex(next));
+						lastEdge[next] = edgeID;
+					}
 				}
-				int next = graph.to[edgeID];
-				long total = graph.weight[edgeID] - phi[next] + phi[current] + dijkstraResult[current];
-				if (dijkstraResult[next] > total) {
-					dijkstraResult[next] = total;
-					if (heap.getIndex(next) == -1)
-						heap.add(next);
-					else
-						heap.shiftUp(heap.getIndex(next));
-					lastEdge[next] = edgeID;
-				}
-				edgeID = graph.nextOutbound[edgeID];
+				edgeID = graph.nextOutbound(edgeID);
 			}
 		}
 	}
@@ -152,8 +150,8 @@ public class MinCostFlow<V> {
 	private void dijkstraAlgorithmFull() {
 		visitIndex++;
 		Arrays.fill(dijkstraResult, Long.MAX_VALUE);
-		lastEdge[destinationID] = -1;
-		dijkstraResult[sourceID] = 0;
+		lastEdge[destination] = -1;
+		dijkstraResult[source] = 0;
 		for (int i = 0; i < vertexCount; i++) {
 			int index = -1;
 			long length = Long.MAX_VALUE;
@@ -167,23 +165,19 @@ public class MinCostFlow<V> {
 				return;
 			}
 			visited[index] = visitIndex;
-			int edgeID = graph.firstOutbound[index];
+			int edgeID = graph.firstOutbound(index);
 			while (edgeID != -1) {
-				if (graph.capacity[edgeID] == 0 || graph.removed[edgeID]) {
-					edgeID = graph.nextOutbound[edgeID];
-					continue;
+				if (graph.capacity(edgeID) != 0) {
+					int next = graph.destination(edgeID);
+					if (visited[next] != visitIndex) {
+						long total = graph.weight(edgeID) - phi[next] + phi[index] + length;
+						if (dijkstraResult[next] > total) {
+							dijkstraResult[next] = total;
+							lastEdge[next] = edgeID;
+						}
+					}
 				}
-				int next = graph.to[edgeID];
-				if (visited[next] == visitIndex) {
-					edgeID = graph.nextOutbound[edgeID];
-					continue;
-				}
-				long total = graph.weight[edgeID] - phi[next] + phi[index] + length;
-				if (dijkstraResult[next] > total) {
-					dijkstraResult[next] = total;
-					lastEdge[next] = edgeID;
-				}
-				edgeID = graph.nextOutbound[edgeID];
+				edgeID = graph.nextOutbound(edgeID);
 			}
 		}
 	}

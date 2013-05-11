@@ -62,16 +62,16 @@ public class Joe {
             out.printLine(Math.hypot(x0 - x1, y0 - y1));
             return;
         }
-        Graph<Integer> graph = new BidirectionalGraph<Integer>();
+        Graph graph = new BidirectionalGraph(points.length + 2);
         graph.addWeightedEdge(0, points.length - 1, distance(points[0], points[points.length - 1]));
         for (int i = 1; i < points.length; i++)
             graph.addWeightedEdge(i, i - 1, distance(points[i], points[i - 1]));
-        addEdges(graph, points, x0, y0, -1);
-        addEdges(graph, points, x1, y1, -2);
-        out.printLine(ShortestDistance.dijkstraAlgorithm(graph, -1, -2).first / 1e9);
+        addEdges(graph, points, x0, y0, points.length);
+        addEdges(graph, points, x1, y1, points.length + 1);
+        out.printLine(ShortestDistance.dijkstraAlgorithm(graph, points.length, points.length + 1).first / 1e9);
     }
 
-    private void addEdges(Graph<Integer> graph, Point[] points, int x, int y, int id) {
+    private void addEdges(Graph graph, Point[] points, int x, int y, int id) {
         int nearest = 0;
         Point point = new Point(x, y);
         for (int i = 0; i < points.length; i++) {
