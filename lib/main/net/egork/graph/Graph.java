@@ -5,50 +5,66 @@ import java.util.*;
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)
  */
-public class Graph<V> {
+public class Graph {
+	public static final int REMOVED_BIT = 0;
+
 	protected int vertexCount;
 	protected int edgeCount;
 
-	protected Map<V, Integer> map = new HashMap<V, Integer>();
+	private int[] firstOutbound;
+	private int[] firstInbound;
 
-	public V[] vertices;
-	public int[] firstOutbound;
-	public int[] firstInbound;
+	private Edge[] edges;
+	private int[] nextInbound;
+	private int[] nextOutbound;
+	private int[] from;
+	private int[] to;
+	private long[] weight;
+	private long[] capacity;
+	private int[] reverseEdge;
+	private int[] flags;
 
-	public Edge<V>[] edges;
-	public int[] nextInbound;
-	public int[] nextOutbound;
-	public int[] from;
-	public int[] to;
-	public long[] weight;
-	public long[] capacity;
-	public int[] reverseEdge;
-	public boolean[] removed;
-
-	public Graph() {
-		this(10);
+	public Graph(int vertexCount) {
+		this(vertexCount, vertexCount);
 	}
 
-	public Graph(int vertexCapacity) {
-		this(vertexCapacity, vertexCapacity);
-	}
+	public Graph(int vertexCount, int edgeCapacity) {
+		this.vertexCount = vertexCount;
+		firstOutbound = new int[vertexCount];
+		Arrays.fill(firstOutbound, -1);
 
-	public Graph(int vertexCapacity, int edgeCapacity) {
-		//noinspection unchecked
-		vertices = (V[]) new Object[vertexCapacity];
-		firstOutbound = new int[vertexCapacity];
-		firstInbound = new int[vertexCapacity];
-
-		//noinspection unchecked
-		edges = new Edge[edgeCapacity];
 		from = new int[edgeCapacity];
 		to = new int[edgeCapacity];
-		nextInbound = new int[edgeCapacity];
 		nextOutbound = new int[edgeCapacity];
-		weight = new long[edgeCapacity];
-		capacity = new long[edgeCapacity];
-		reverseEdge = new int[edgeCapacity];
-		removed = new boolean[edgeCapacity];
+		flags = new int[edgeCapacity];
+	}
+
+	public static Graph createGraph(int vertexCount, int[] from, int[] to) {
+		Graph graph = new Graph(vertexCount, from.length);
+		for (int i = 0; i < from.length; i++)
+			graph.addSimpleEdge(from[i], to[i]);
+		return graph;
+	}
+
+	public static Graph createWeightedGraph(int vertexCount, int[] from, int[] to, long[] weight) {
+		Graph graph = new Graph(vertexCount, from.length);
+		for (int i = 0; i < from.length; i++)
+			graph.addWeightedEdge(from[i], to[i], weight[i]);
+		return graph;
+	}
+
+	public static Graph createFlowGraph(int vertexCount, int[] from, int[] to, long[] capacity) {
+		Graph graph = new Graph(vertexCount, from.length * 2);
+		for (int i = 0; i < from.length; i++)
+			graph.addFlowEdge(from[i], to[i], capacity[i]);
+		return graph;
+	}
+
+	public static Graph createFlowWeightedGraph(int vertexCount, int[] from, int[] to, long[] weight, long[] capacity) {
+		Graph graph = new Graph(vertexCount, from.length * 2);
+		for (int i = 0; i < from.length; i++)
+			graph.addFlowWeightedEdge(from[i], to[i], weight[i], capacity[i]);
+		return graph;
 	}
 
 	public int addEdge(int fromID, int toID, long weight, long capacity, int reverseEdge) {
@@ -58,35 +74,48 @@ public class Graph<V> {
 		else
 			nextOutbound[edgeCount] = -1;
 		firstOutbound[fromID] = edgeCount;
-		if (firstInbound[toID] != -1)
-			nextInbound[edgeCount] = firstInbound[toID];
-		else
-			nextInbound[edgeCount] = -1;
-		firstInbound[toID] = edgeCount;
+		if (firstInbound != null) {
+			if (firstInbound[toID] != -1)
+				nextInbound[edgeCount] = firstInbound[toID];
+			else
+				nextInbound[edgeCount] = -1;
+			firstInbound[toID] = edgeCount;
+		}
 		this.from[edgeCount] = fromID;
 		this.to[edgeCount] = toID;
-		this.weight[edgeCount] = weight;
-		this.capacity[edgeCount] = capacity;
-		this.reverseEdge[edgeCount] = reverseEdge;
-		edges[edgeCount] = createEdge(edgeCount);
+		if (capacity != 0) {
+			if (this.capacity == null)
+				this.capacity = new long[from.length];
+			this.capacity[edgeCount] = capacity;
+		}
+		if (weight != 0) {
+			if (this.weight == null)
+				this.weight = new long[from.length];
+			this.weight[edgeCount] = weight;
+		}
+		if (reverseEdge != -1) {
+			if (this.reverseEdge == null) {
+				this.reverseEdge = new int[from.length];
+				Arrays.fill(this.reverseEdge, 0, edgeCount, -1);
+			}
+			this.reverseEdge[edgeCount] = reverseEdge;
+		}
+		if (edges != null)
+			edges[edgeCount] = createEdge(edgeCount);
 		return edgeCount++;
 	}
 
-	protected GraphEdge createEdge(int id) {
+	protected final GraphEdge createEdge(int id) {
 		return new GraphEdge(id);
 	}
 
-	public Edge<V> addFlowWeightedEdge(V from, V to, long weight, long capacity) {
-		int fromID = resolveOrAdd(from);
-		int toID = resolveOrAdd(to);
+	public final int addFlowWeightedEdge(int from, int to, long weight, long capacity) {
 		if (capacity == 0) {
-			int result = addEdge(fromID, toID, weight, 0, -1);
-			return edges[result];
+			return addEdge(from, to, weight, 0, -1);
 		} else {
 			int lastEdgeCount = edgeCount;
-			addEdge(toID, fromID, -weight, 0, lastEdgeCount + entriesPerEdge());
-			int result = addEdge(fromID, toID, weight, capacity, lastEdgeCount);
-			return edges[result];
+			addEdge(to, from, -weight, 0, lastEdgeCount + entriesPerEdge());
+			return addEdge(from, to, weight, capacity, lastEdgeCount);
 		}
 	}
 
@@ -94,136 +123,231 @@ public class Graph<V> {
 		return 1;
 	}
 
-	public Edge<V> addFlowEdge(V from, V to, long capacity) {
+	public final int addFlowEdge(int from, int to, long capacity) {
 		return addFlowWeightedEdge(from, to, 0, capacity);
 	}
 
-	public Edge<V> addWeightedEdge(V from, V to, long weight) {
+	public final int addWeightedEdge(int from, int to, long weight) {
 		return addFlowWeightedEdge(from, to, weight, 0);
 	}
 
-	public Edge<V> addSimpleEdge(V from, V to) {
-		return addWeightedEdge(from, to, 1);
+	public final int addSimpleEdge(int from, int to) {
+		return addWeightedEdge(from, to, 0);
 	}
 
-	public int getVertexCount() {
+	public final int vertexCount() {
 		return vertexCount;
 	}
 
-	public int getEdgeCount() {
+	public final int edgeCount() {
 		return edgeCount;
 	}
 
-	public int resolve(V vertex) {
-		if (map.containsKey(vertex))
-			return map.get(vertex);
-		throw new IllegalArgumentException();
+	protected final int edgeCapacity() {
+		return from.length;
 	}
 
-	public V getVertex(int id) {
-		return vertices[id];
-	}
-
-	public Edge<V> getEdge(int id) {
+	public final Edge edge(int id) {
+		initEdges();
 		return edges[id];
 	}
 
-	public void removeVertex(V vertex) {
-		removeVertexByID(resolve(vertex));
+	public final int firstOutbound(int vertex) {
+		int id = firstOutbound[vertex];
+		while (id != -1 && isRemoved(id))
+			id = nextOutbound[id];
+		return id;
 	}
 
-	public void removeVertexByID(int id) {
-		removeAllEdgesByID(id);
-		map.remove(vertices[id]);
-		vertices[id] = null;
+	public final int nextOutbound(int id) {
+		id = nextOutbound[id];
+		while (id != -1 && isRemoved(id))
+			id = nextOutbound[id];
+		return id;
 	}
 
-	public void removeAllEdges(V vertex) {
-		removeAllEdgesByID(resolve(vertex));
+	public final int firstInbound(int vertex) {
+		initInbound();
+		int id = firstInbound[vertex];
+		while (id != -1 && isRemoved(id))
+			id = nextInbound[id];
+		return id;
 	}
 
-	public void removeAllEdgesByID(int id) {
-		for (Edge<V> edge : getInboundByID(id))
-			removeEdge(edge);
-		for (Edge<V> edge : getOutboundByID(id))
-			removeEdge(edge);
+	public final int nextInbound(int id) {
+		initInbound();
+		id = nextInbound[id];
+		while (id != -1 && isRemoved(id))
+			id = nextInbound[id];
+		return id;
 	}
 
-	public void removeEdge(Edge<V> edge) {
-		removeEdgeByID(edge.getID());
+	public final int source(int id) {
+		return from[id];
 	}
 
-	private void removeEdgeByID(int id) {
-		removed[id] = true;
-//		edges[id] = null;
+	public final int destination(int id) {
+		return to[id];
 	}
 
-	public Iterable<Edge<V>> getOutbound(V vertex) {
-		return getOutboundByID(resolve(vertex));
+	public final long weight(int id) {
+		if (weight == null)
+			return 0;
+		return weight[id];
 	}
 
-	public Iterable<Edge<V>> getOutboundByID(final int id) {
-		return new Iterable<Edge<V>>() {
-			public Iterator<Edge<V>> iterator() {
+	public final long capacity(int id) {
+		if (capacity == null)
+			return 0;
+		return capacity[id];
+	}
+
+	public final long flow(int id) {
+		if (reverseEdge == null)
+			return 0;
+		return capacity[reverseEdge[id]];
+	}
+
+	public final void pushFlow(int id, long flow) {
+		if (flow == 0)
+			return;
+		if (flow > 0) {
+			if (capacity(id) < flow)
+				throw new IllegalArgumentException("Not enough capacity");
+		} else {
+			if (flow(id) < -flow)
+				throw new IllegalArgumentException("Not enough capacity");
+		}
+		capacity[id] -= flow;
+		capacity[reverseEdge[id]] += flow;
+	}
+
+	public int transposed(int id) {
+		return -1;
+	}
+
+	public final int reverse(int id) {
+		if (reverseEdge == null)
+			return -1;
+		return reverseEdge[id];
+	}
+
+	public final void addVertices(int count) {
+		ensureVertexCapacity(vertexCount + count);
+		Arrays.fill(firstOutbound, vertexCount, vertexCount + count, -1);
+		if (firstInbound != null)
+			Arrays.fill(firstInbound, vertexCount, vertexCount + count, -1);
+		vertexCount += count;
+	}
+
+	protected final void initEdges() {
+		if (edges == null) {
+			edges = new Edge[from.length];
+			for (int i = 0; i < edgeCount; i++)
+				edges[i] = createEdge(i);
+		}
+	}
+
+	public final void removeVertex(int vertex) {
+		int id = firstOutbound[vertex];
+		while (id != -1) {
+			removeEdge(id);
+			id = nextOutbound[id];
+		}
+		initInbound();
+		id = firstInbound[vertex];
+		while (id != -1) {
+			removeEdge(id);
+			id = nextInbound[id];
+		}
+	}
+
+	private void initInbound() {
+		if (firstInbound == null) {
+			firstInbound = new int[firstOutbound.length];
+			Arrays.fill(firstInbound, 0, vertexCount, -1);
+			nextInbound = new int[from.length];
+			for (int i = 0; i < edgeCount; i++) {
+				nextInbound[i] = firstInbound[to[i]];
+				firstInbound[to[i]] = i;
+			}
+		}
+	}
+
+	public final boolean flag(int id, int bit) {
+		return (flags[id] >> bit & 1) != 0;
+	}
+
+	public final void setFlag(int id, int bit) {
+		flags[id] |= 1 << bit;
+	}
+
+	public final void removeFlag(int id, int bit) {
+		flags[id] &= -1 - (1 << bit);
+	}
+
+	public final void removeEdge(int id) {
+		setFlag(id, REMOVED_BIT);
+	}
+
+	public final void restoreEdge(int id) {
+		removeFlag(id, REMOVED_BIT);
+	}
+
+	public final boolean isRemoved(int id) {
+		return flag(id, REMOVED_BIT);
+	}
+
+	public final Iterable<Edge> outbound(final int id) {
+		initEdges();
+		return new Iterable<Edge>() {
+			public Iterator<Edge> iterator() {
 				return new EdgeIterator(id, firstOutbound, nextOutbound);
 			}
 		};
 	}
 
-	public Iterable<Edge<V>> getInbound(V vertex) {
-		return getInboundByID(resolve(vertex));
-	}
-
-	public Iterable<Edge<V>> getInboundByID(final int id) {
-		return new Iterable<Edge<V>>() {
-			public Iterator<Edge<V>> iterator() {
+	public final Iterable<Edge> inbound(final int id) {
+		initEdges();
+		initInbound();
+		return new Iterable<Edge>() {
+			public Iterator<Edge> iterator() {
 				return new EdgeIterator(id, firstInbound, nextInbound);
 			}
 		};
 	}
 
-	private int resolveOrAdd(V vertex) {
-		if (map.containsKey(vertex))
-			return map.get(vertex);
-		ensureVertexCapacity(vertexCount + 1);
-		map.put(vertex, vertexCount);
-		vertices[vertexCount] = vertex;
-		firstInbound[vertexCount] = firstOutbound[vertexCount] = -1;
-		return vertexCount++;
-	}
-
 	protected void ensureEdgeCapacity(int size) {
 		if (from.length < size) {
 			int newSize = Math.max(size, 2 * from.length);
-			edges = resize(edges, newSize);
+			if (edges != null)
+				edges = resize(edges, newSize);
 			from = resize(from, newSize);
 			to = resize(to, newSize);
-			nextInbound = resize(nextInbound, newSize);
 			nextOutbound = resize(nextOutbound, newSize);
-			weight = resize(weight, newSize);
-			capacity = resize(capacity, newSize);
-			reverseEdge = resize(reverseEdge, newSize);
-			removed = resize(removed, newSize);
+			if (nextInbound != null)
+				nextInbound = resize(nextInbound, newSize);
+			if (weight != null)
+				weight = resize(weight, newSize);
+			if (capacity != null)
+				capacity = resize(capacity, newSize);
+			if (reverseEdge != null)
+				reverseEdge = resize(reverseEdge, newSize);
+			flags = resize(flags, newSize);
 		}
 	}
 
-	protected void ensureVertexCapacity(int size) {
-		if (firstInbound.length < size) {
-			int newSize = Math.max(size, 2 * firstInbound.length);
-			vertices = resize(vertices, newSize);
-			firstInbound = resize(firstInbound, newSize);
+	private void ensureVertexCapacity(int size) {
+		if (firstOutbound.length < size) {
+			int newSize = Math.max(size, 2 * from.length);
 			firstOutbound = resize(firstOutbound, newSize);
+			if (firstInbound != null)
+				firstInbound = resize(firstInbound, newSize);
 		}
 	}
 
-	protected int[] resize(int[] array, int size) {
+	protected final int[] resize(int[] array, int size) {
 		int[] newArray = new int[size];
-		System.arraycopy(array, 0, newArray, 0, array.length);
-		return newArray;
-	}
-
-	protected boolean[] resize(boolean[] array, int size) {
-		boolean[] newArray = new boolean[size];
 		System.arraycopy(array, 0, newArray, 0, array.length);
 		return newArray;
 	}
@@ -234,117 +358,97 @@ public class Graph<V> {
 		return newArray;
 	}
 
-	private Edge<V>[] resize(Edge<V>[] array, int size) {
-		@SuppressWarnings("unchecked")
-		Edge<V>[] newArray = new Edge[size];
+	private Edge[] resize(Edge[] array, int size) {
+		Edge[] newArray = new Edge[size];
 		System.arraycopy(array, 0, newArray, 0, array.length);
 		return newArray;
 	}
 
-	private V[] resize(V[] array, int size) {
-		@SuppressWarnings("unchecked")
-		V[] newArray = (V[]) new Object[size];
-		System.arraycopy(array, 0, newArray, 0, array.length);
-		return newArray;
-	}
-
-	public boolean isSparse() {
+	public final boolean isSparse() {
 		return vertexCount == 0 || edgeCount * 20 / vertexCount <= vertexCount;
 	}
 
-	public Collection<? extends V> vertices() {
-		return Arrays.asList(vertices).subList(0, vertexCount);
-	}
-
-	public int addVertex(V vertex) {
-		return resolveOrAdd(vertex);
-	}
-
-	protected class GraphEdge implements Edge<V> {
+	protected class GraphEdge implements Edge {
 		protected int id;
 
 		protected GraphEdge(int id) {
 			this.id = id;
 		}
 
-		public V getSource() {
-			return vertices[from[id]];
+		public int getSource() {
+			return source(id);
 		}
 
-		public V getDestination() {
-			return vertices[to[id]];
-		}
-
-		public int getSourceID() {
-			return from[id];
-		}
-
-		public int getDestinationID() {
-			return to[id];
+		public int getDestination() {
+			return destination(id);
 		}
 
 		public long getWeight() {
-			return weight[id];
+			return weight(id);
 		}
 
 		public long getCapacity() {
-			return capacity[id];
+			return capacity(id);
 		}
 
 		public long getFlow() {
-			return capacity[reverseEdge[id]];
+			return flow(id);
 		}
 
 		public void pushFlow(long flow) {
-			if (flow == 0)
-				return;
-			if (flow > 0) {
-				if (capacity[id] < flow)
-					throw new IllegalArgumentException("Not enough capacity");
-			} else {
-				if (capacity[reverseEdge[id]] < -flow)
-					throw new IllegalArgumentException("Not enough capacity");
-			}
-			capacity[id] -= flow;
-			capacity[reverseEdge[id]] += flow;
+			Graph.this.pushFlow(id, flow);
+		}
+
+		public boolean getFlag(int bit) {
+			return flag(id, bit);
+		}
+
+		public void setFlag(int bit) {
+			Graph.this.setFlag(id, bit);
+		}
+
+		public void removeFlag(int bit) {
+			Graph.this.removeFlag(id, bit);
 		}
 
 		public int getTransposedID() {
-			return -1;
+			return transposed(id);
 		}
 
-		public Edge<V> getTransposedEdge() {
-			return null;
+		public Edge getTransposedEdge() {
+			int reverseID = getTransposedID();
+			if (reverseID == -1)
+				return null;
+			initEdges();
+			return edge(reverseID);
 		}
 
 		public int getReverseID() {
-			return reverseEdge[id];
+			return reverse(id);
 		}
 
-		public Edge<V> getReverseEdge() {
-			if (reverseEdge[id] == -1)
+		public Edge getReverseEdge() {
+			int reverseID = getReverseID();
+			if (reverseID == -1)
 				return null;
-			return edges[reverseEdge[id]];
+			initEdges();
+			return edge(reverseID);
 		}
 
 		public int getID() {
 			return id;
 		}
 
-		public void setRemoved(boolean isRemoved) {
-			if (removed[id] == isRemoved)
-				return;
-			removed[id] = isRemoved;
-//			if (!isRemoved) {
-//				nextInbound[id] = firstInbound[getDestinationID()];
-//				firstInbound[getDestinationID()] = id;
-//				nextOutbound[id] = firstOutbound[getSourceID()];
-//				firstOutbound[getSourceID()] = id;
-//			}
+		public void remove() {
+			removeEdge(id);
+		}
+
+		public void restore() {
+			restoreEdge(id);
 		}
 	}
 
-	private class EdgeIterator implements Iterator<Edge<V>> {
+	public class EdgeIterator implements Iterator<Edge> {
 		private int edgeID;
 		private final int[] next;
 		private int lastID = -1;
@@ -355,7 +459,7 @@ public class Graph<V> {
 		}
 
 		private int nextEdge(int id) {
-			while (id != -1 && removed[id])
+			while (id != -1 && isRemoved(id))
 				id = next[id];
 			return id;
 		}
@@ -364,7 +468,7 @@ public class Graph<V> {
 			return edgeID != -1;
 		}
 
-		public Edge<V> next() {
+		public Edge next() {
 			if (edgeID == -1)
 				throw new NoSuchElementException();
 			lastID = edgeID;
@@ -375,8 +479,9 @@ public class Graph<V> {
 		public void remove() {
 			if (lastID == -1)
 				throw new IllegalStateException();
-			removeEdgeByID(lastID);
+			removeEdge(lastID);
 			lastID = -1;
 		}
 	}
+
 }
