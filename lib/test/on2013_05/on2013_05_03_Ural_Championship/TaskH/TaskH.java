@@ -57,7 +57,7 @@ public class TaskH {
 		int[] order = ArrayUtils.createOrder(dx.length - 1);
 		IntComparator comparator = new IntComparator() {
 			public int compare(int first, int second) {
-				int value = Long.compare(dxfinal[first] * dyfinal[second], dyfinal[first] * dxfinal[second]);
+				int value = IntegerUtils.longCompare(dxfinal[first] * dyfinal[second], dyfinal[first] * dxfinal[second]);
 				if (value != 0)
 					return value;
 				return from[first] - from[second];
