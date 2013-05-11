@@ -34,7 +34,7 @@ public class TaskE {
 	}
 
 	private boolean canDo(int[][] favorite, int[] quantity, int middle) {
-		Graph<Integer> graph = new Graph<Integer>();
+		Graph graph = new Graph(favorite.length + quantity.length + 2);
 		int source = favorite.length + quantity.length;
 		int sink = source + 1;
 		for (int i = 0; i < favorite.length; i++) {
