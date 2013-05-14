@@ -1,0 +1,39 @@
+11 B - QR code
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+4 1 1
+
+2 0
+
+1
+1
+4 3 7
+
+2 0
+
+1
+2
+6 13 10
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.01
+28 April Fools Day Contest 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

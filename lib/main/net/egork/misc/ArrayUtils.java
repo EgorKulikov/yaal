@@ -1,6 +1,7 @@
 package net.egork.misc;
 
 import net.egork.collections.comparators.IntComparator;
+import net.egork.collections.intcollection.IntArray;
 import net.egork.collections.map.EHashMap;
 
 import java.util.Arrays;
@@ -165,9 +166,10 @@ public class ArrayUtils {
 	}
 
 	public static int[] sort(int[] array, int from, int to, IntComparator comparator) {
-		ensureCapacityInt(to - from);
-		System.arraycopy(array, from, tempInt, 0, to - from);
-		sortImpl(array, from, to, tempInt, 0, to - from, comparator);
+		new IntArray(array).subList(from, to).inPlaceSort(comparator);
+//		ensureCapacityInt(to - from);
+//		System.arraycopy(array, from, tempInt, 0, to - from);
+//		sortImpl(array, from, to, tempInt, 0, to - from, comparator);
 		return array;
 	}
 
