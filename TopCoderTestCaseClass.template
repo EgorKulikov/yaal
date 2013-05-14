@@ -1,0 +1,18 @@
+package %package%;
+
+import net.egork.chelper.task.NewTopCoderTest;
+import net.egork.chelper.tester.TestCase;
+
+import java.util.*;
+
+public class %TestCaseClass% {
+    @TestCase
+    public Collection<NewTopCoderTest> createTests() {
+		List<NewTopCoderTest> tests = new ArrayList<NewTopCoderTest>();
+        return tests;
+    }
+
+	private NewTopCoderTest createTest(Object answer, Object...arguments) {
+		return new NewTopCoderTest(arguments, answer);
+	}
+}

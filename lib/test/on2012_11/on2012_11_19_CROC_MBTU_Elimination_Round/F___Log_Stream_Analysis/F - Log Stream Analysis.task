@@ -1,0 +1,50 @@
+23 F - Log Stream Analysis
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+242 60 3
+2012-03-16 16:15:25: Disk size is
+2012-03-16 16:15:25: Network failute
+2012-03-16 16:16:29: Cant write varlog
+2012-03-16 16:16:42: Unable to start process
+2012-03-16 16:16:43: Disk size is too small
+2012-03-16 16:16:53: Timeout detected
+
+20 2012-03-16 16:16:43
+
+1
+1
+101 1 2
+2012-03-16 23:59:59:Disk size
+2012-03-17 00:00:00: Network
+2012-03-17 00:00:01:Cant write varlog
+
+3 -1
+
+1
+2
+127 2 2
+2012-03-16 23:59:59:Disk size is too sm
+2012-03-17 00:00:00:Network failute dete
+2012-03-17 00:00:01:Cant write varlogmysq
+
+20 2012-03-17 00:00:00
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+80 on2012_11.on2012_11_19_CROC_MBTU_Elimination_Round.F___Log_Stream_Analysis.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.19
+27 CROC-MBTU Elimination Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

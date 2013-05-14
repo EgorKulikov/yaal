@@ -1,0 +1,65 @@
+5 TaskJ
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 3 1
+1
+2
+
+6 3
+2
+3
+
+1
+1
+8 3 2
+1
+1
+
+6 2
+2
+2
+
+1
+2
+23 10 4
+1
+1
+2
+3
+3
+4
+4
+4
+5
+
+20 2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskJ
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.03
+14 OpenCup Onsite
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,41 @@
+17 A - LCM Challenge
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+2 9
+
+4 504
+
+1
+1
+2 7
+
+4 210
+
+1
+2
+1 2
+1 2
+1
+3
+8 1000000
+
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+77 on2012_10.on2012_10_21_Codeforces_Round__146__Div__1_.A___LCM_Challenge.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.21
+30 Codeforces Round #146 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

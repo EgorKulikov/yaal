@@ -1,0 +1,36 @@
+10 Palindrome
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+14 5
+1
+2
+3
+4
+100
+
+25 26
+52
+728
+1404
+508533804
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+20 net.egork.Palindrome
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.03.24
+19 March Cook-off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

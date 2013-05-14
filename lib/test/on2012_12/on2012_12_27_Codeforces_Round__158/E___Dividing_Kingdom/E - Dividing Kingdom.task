@@ -1,0 +1,79 @@
+20 E - Dividing Kingdom
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+56 9
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3
+1 1 1 1 1 1 1 1 1
+
+52 1.5000000000 2.5000000000
+1.5000000000 2.5000000000
+
+1
+1
+95 15
+4 4
+-1 -3
+1 5
+3 -4
+-4 4
+-1 1
+3 -3
+-4 -5
+-3 3
+3 2
+4 1
+-4 2
+-2 -5
+-3 4
+-1 4
+2 1 2 1 2 1 3 2 1
+
+54 -1.5000000000 1.5000000000
+-2.5000000000 2.5000000000
+
+1
+2
+80 10
+-2 10
+6 0
+-16 -6
+-4 13
+-4 -2
+-17 -10
+9 15
+18 16
+-5 2
+10 -5
+2 1 1 1 1 1 1 1 1
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+71 on2012_12.on2012_12_27_Codeforces_Round__158.E___Dividing_Kingdom.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-6
+1
+80 on2012_12.on2012_12_27_Codeforces_Round__158.E___Dividing_Kingdom.TaskETestCase0
+10 2012.12.27
+21 Codeforces Round #158
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

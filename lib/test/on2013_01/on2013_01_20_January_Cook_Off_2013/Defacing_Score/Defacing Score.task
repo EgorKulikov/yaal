@@ -1,0 +1,60 @@
+14 Defacing Score
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+104 12
+25 100
+77 100
+0 100
+8 13
+8 24
+0 0
+19 38
+89375 9247529
+804276 2857282
+0 20130120
+3284709 20130120
+1 6
+
+57 89
+100
+100
+8
+18
+0
+38
+9189999
+2809898
+20130120
+19889989
+4
+
+1
+1
+12 2
+0 99
+0 89
+
+6 98
+89
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+73 on2013_01.on2013_01_20_January_Cook_Off_2013.Defacing_Score.DefacingScore
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+82 on2013_01.on2013_01_20_January_Cook_Off_2013.Defacing_Score.DefacingScoreTestCase0
+10 2013.01.20
+21 January Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

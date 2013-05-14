@@ -1,0 +1,35 @@
+10 Chef World
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+6 2
+3
+4
+
+6 18
+44
+
+1
+1
+4 1
+2
+
+1 5
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+19 net.egork.ChefWorld
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2012.09
+24 September Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

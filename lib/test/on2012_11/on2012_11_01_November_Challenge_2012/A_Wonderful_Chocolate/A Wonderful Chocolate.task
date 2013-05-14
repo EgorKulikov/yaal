@@ -1,0 +1,32 @@
+21 A Wonderful Chocolate
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+4 2 2
+
+3 14
+
+1
+1
+4 3 3
+
+4 322
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+88 on2012_11.on2012_11_01_November_Challenge_2012.A_Wonderful_Chocolate.AWonderfulChocolate
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.01
+23 November Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

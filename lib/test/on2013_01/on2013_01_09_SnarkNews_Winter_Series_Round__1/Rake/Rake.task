@@ -1,0 +1,36 @@
+4 Rake
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+12 2 5
+3 5
+1 5
+
+1 1
+1
+1
+19 3 3
+5 10
+5 10
+5 10
+
+2 15
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+65 on2013_01.on2013_01_09_SnarkNews_Winter_Series_Round__1.Rake.Rake
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.09
+32 SnarkNews Winter Series Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

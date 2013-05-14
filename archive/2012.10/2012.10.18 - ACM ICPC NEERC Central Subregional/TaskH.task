@@ -1,0 +1,30 @@
+5 TaskH
+6 SINGLE
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+1
+0
+25 5 3
+1 2 3 2 1
+1 5
+1 3
+2 4
+5 3
+3
+2
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.18
+34 ACM ICPC NEERC Central Subregional
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

@@ -1,0 +1,49 @@
+15 TheDivisionGame
+21 countWinningIntervals
+4 long
+2
+3 int
+1 L
+3 int
+1 R
+6
+0
+2
+int 9
+int 10
+long 2
+1
+1
+2
+int 2
+int 5
+long 9
+1
+2
+2
+int 2
+int 6
+long 13
+1
+3
+2
+int 2
+int 100
+long 4345
+1
+4
+2
+int 12566125
+int 12567777
+long 1313432
+1
+5
+2
+int 1000000000
+int 1001000000
+-1
+1
+10 2012.12.20
+22 Single Round Match 565
+0
+25 net.egork.TheDivisionGame

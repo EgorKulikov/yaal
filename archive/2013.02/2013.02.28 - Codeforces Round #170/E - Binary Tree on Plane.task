@@ -1,0 +1,40 @@
+24 E - Binary Tree on Plane
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+14 3
+0 0
+1 0
+2 1
+
+18 3.650281539872885
+
+1
+1
+18 4
+0 0
+1 0
+2 1
+2 0
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+3 1e6
+0
+10 2013.02.28
+21 Codeforces Round #170
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
