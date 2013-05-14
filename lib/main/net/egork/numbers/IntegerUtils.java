@@ -374,4 +374,9 @@ public class IntegerUtils {
 			result = result * i % mod;
 		return result * BigInteger.valueOf(factorial(m, mod)).modInverse(BigInteger.valueOf(mod)).longValue() % mod;
 	}
+
+	public static boolean isSquare(long number) {
+		long sqrt = Math.round(Math.sqrt(number));
+		return sqrt * sqrt == number;
+	}
 }

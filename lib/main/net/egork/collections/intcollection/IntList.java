@@ -9,6 +9,7 @@ import java.util.NoSuchElementException;
  */
 public abstract class IntList extends IntCollection implements Comparable<IntList> {
 	private static final int INSERTION_THRESHOLD = 8;
+	private static IntList EMPTY_LIST;
 
 	public abstract int get(int index);
 	public abstract void set(int index, int value);
@@ -242,6 +243,12 @@ public abstract class IntList extends IntCollection implements Comparable<IntLis
 			i.advance();
 			j.advance();
 		}
+	}
+
+	public static IntList emptyList() {
+		if (EMPTY_LIST == null)
+			EMPTY_LIST = new IntArray(new int[0]);
+		return EMPTY_LIST;
 	}
 
 	private class SubList extends IntList {

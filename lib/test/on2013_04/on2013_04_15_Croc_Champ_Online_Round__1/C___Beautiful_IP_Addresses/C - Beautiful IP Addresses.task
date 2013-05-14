@@ -1,0 +1,58 @@
+26 C - Beautiful IP Addresses
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+14 6
+0 1 2 9 8 7
+
+92 6
+78.190.209.187
+79.180.208.197
+87.190.209.178
+89.170.207.198
+97.180.208.179
+98.170.207.189
+
+1
+1
+4 1
+4
+
+163 16
+4.4.4.4
+4.4.4.44
+4.4.44.4
+4.4.44.44
+4.44.4.4
+4.44.4.44
+4.44.44.4
+4.44.44.44
+44.4.4.4
+44.4.4.44
+44.4.44.4
+44.4.44.44
+44.44.4.4
+44.44.4.44
+44.44.44.4
+44.44.44.44
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+82 on2013_04.on2013_04_15_Croc_Champ_Online_Round__1.C___Beautiful_IP_Addresses.TaskC
+89 on2013_04.on2013_04_15_Croc_Champ_Online_Round__1.C___Beautiful_IP_Addresses.TaskCChecker
+0 
+1
+90 on2013_04.on2013_04_15_Croc_Champ_Online_Round__1.C___Beautiful_IP_Addresses.TaskCTestCase
+10 2013.04.15
+26 Croc Champ Online Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

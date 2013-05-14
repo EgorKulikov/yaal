@@ -5,11 +5,13 @@ package net.egork.collections.iss;
  */
 public class RecursiveIndependentSetSystem implements IndependentSetSystem {
 	private final int[] color;
+	private final int[] rank;
 	private int setCount;
 	private Listener listener;
 
 	public RecursiveIndependentSetSystem(int size) {
 		color = new int[size];
+		rank = new int[size];
 		for (int i = 0; i < size; i++)
 			color[i] = i;
 		setCount = size;
@@ -17,6 +19,7 @@ public class RecursiveIndependentSetSystem implements IndependentSetSystem {
 
 	public RecursiveIndependentSetSystem(RecursiveIndependentSetSystem other) {
 		color = other.color.clone();
+		rank = other.rank.clone();
 		setCount = other.setCount;
 	}
 
@@ -25,6 +28,12 @@ public class RecursiveIndependentSetSystem implements IndependentSetSystem {
 		second = get(second);
 		if (first == second)
 			return false;
+		if (rank[first] < rank[second]) {
+			int temp = first;
+			first = second;
+			second = temp;
+		} else if (rank[first] == rank[second])
+			rank[first]++;
 		setCount--;
 		color[second] = first;
 		if (listener != null)

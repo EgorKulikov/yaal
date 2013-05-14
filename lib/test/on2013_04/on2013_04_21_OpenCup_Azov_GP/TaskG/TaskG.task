@@ -1,0 +1,32 @@
+5 TaskG
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+24 4 3
+10 8 6 0
+1 2
+2 3
+2 4
+12 10
+2
+4 3
+3 1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+50 on2013_04.on2013_04_21_OpenCup_Azov_GP.TaskG.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.21
+15 OpenCup Azov GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

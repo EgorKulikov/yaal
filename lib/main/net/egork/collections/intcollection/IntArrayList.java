@@ -40,7 +40,7 @@ public class IntArrayList extends IntList {
 		array[size++] = value;
 	}
 
-	private void ensureCapacity(int newCapacity) {
+	public void ensureCapacity(int newCapacity) {
 		if (newCapacity > array.length) {
 			int[] newArray = new int[Math.max(newCapacity, array.length << 1)];
 			System.arraycopy(array, 0, newArray, 0, size);

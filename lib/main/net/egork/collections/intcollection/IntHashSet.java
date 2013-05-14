@@ -8,9 +8,11 @@ import java.util.Random;
 /**
  * @author egorku@yandex-team.ru
  */
-public class IntHashSet extends IntCollection {
+public class IntHashSet extends IntSet {
 	private static final Random RND = new Random();
 	private static final int[] SHIFTS = new int[4];
+	private static final byte PRESENT_MASK = 1;
+	private static final byte REMOVED_MASK = 2;
 
 	static {
 		for (int i = 0; i < 4; i++)
@@ -19,7 +21,7 @@ public class IntHashSet extends IntCollection {
 
 	private int size;
 	private int[] values;
-	private boolean[] present;
+	private byte[] present;
 	private int step;
 
 	public IntHashSet() {
@@ -28,7 +30,7 @@ public class IntHashSet extends IntCollection {
 
 	public IntHashSet(int capacity) {
 		values = new int[capacity];
-		present = new boolean[capacity];
+		present = new byte[capacity];
 		initStep(capacity);
 	}
 
@@ -55,7 +57,7 @@ public class IntHashSet extends IntCollection {
 				if (position >= values.length)
 					throw new NoSuchElementException();
 				position++;
-				while (position < values.length && !present[position])
+				while (position < values.length && (present[position] & PRESENT_MASK) == 0)
 					position++;
 			}
 
@@ -74,14 +76,14 @@ public class IntHashSet extends IntCollection {
 	public void add(int value) {
 		ensureCapacity(2 * (size + 1));
 		int current = getHash(value);
-		while (present[current]) {
+		while ((present[current] & PRESENT_MASK) != 0) {
 			if (values[current] == value)
 				return;
 			current += step;
 			if (current >= values.length)
 				current -= values.length;
 		}
-		present[current] = true;
+		present[current] = PRESENT_MASK;
 		values[current] = value;
 		size++;
 	}
@@ -101,12 +103,12 @@ public class IntHashSet extends IntCollection {
 			capacity = Math.max(capacity, 2 * values.length);
 			initStep(capacity);
 			int[] oldValues = values;
-			boolean[] oldPresent = present;
+			byte[] oldPresent = present;
 			values = new int[capacity];
-			present = new boolean[capacity];
+			present = new byte[capacity];
 			size = 0;
 			for (int i = 0; i < oldValues.length; i++) {
-				if (oldPresent[i])
+				if ((oldPresent[i] & PRESENT_MASK) == PRESENT_MASK)
 					add(oldValues[i]);
 			}
 		}
@@ -114,49 +116,31 @@ public class IntHashSet extends IntCollection {
 
 	@Override
 	public void remove(int value) {
-		int base = getHash(value);
-		int current = base;
-		int free = -1;
-		while (present[current]) {
-			if (values[current] == value) {
-				free = current;
-				break;
-			}
-			current += step;
-			if (current >= values.length)
-				current -= values.length;
-		}
-		if (free == -1)
-			return;
-		size--;
-		present[free] = false;
-		current += step;
-		if (current >= values.length)
-			current -= values.length;
-		while (present[current]) {
-			int key = base;
-			int desired = getHash(values[current]);
-			boolean found = free == desired;
-			if (!found) {
-				while (key != free) {
-					if (key == desired) {
-						found = true;
-						break;
-					}
-					key += step;
-					if (key >= values.length)
-						key -= values.length;
-				}
-			}
-			if (found) {
-				present[current] = false;
-				present[free] = true;
-				values[free] = values[current];
-				free = current;
+		int current = getHash(value);
+		while (present[current] != 0) {
+			if (values[current] == value && (present[current] & PRESENT_MASK) != 0) {
+				present[current] = REMOVED_MASK;
+				size--;
+				return;
 			}
 			current += step;
 			if (current >= values.length)
 				current -= values.length;
 		}
 	}
+
+	@Override
+	public boolean contains(int value) {
+		int current = getHash(value);
+		while (present[current] != 0) {
+			if (values[current] == value && (present[current] & PRESENT_MASK) != 0)
+				return true;
+			current += step;
+			if (current >= values.length)
+				current -= values.length;
+		}
+		return false;
+	}
+
+
 }
