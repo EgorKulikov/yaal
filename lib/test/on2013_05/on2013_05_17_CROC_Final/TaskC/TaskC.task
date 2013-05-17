@@ -1,0 +1,34 @@
+5 TaskC
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+19 5 3
+8 4 3 2 2
+3 2 2
+1 2
+1
+1
+36 10 6
+1 1 1 1 1 1 1 1 1 1
+0 0 0 0 0 0
+1 6
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+45 on2013_05.on2013_05_17_CROC_Final.TaskC.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+53 on2013_05.on2013_05_17_CROC_Final.TaskC.TaskCTestCase
+10 2013.05.17
+10 CROC Final
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
