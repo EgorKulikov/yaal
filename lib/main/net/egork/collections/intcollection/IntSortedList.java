@@ -30,13 +30,6 @@ public abstract class IntSortedList extends IntList {
 	}
 
 	@Override
-	public IntSortedList sort(IntComparator comparator) {
-		if (comparator == this.comparator)
-			return this;
-		return super.sort(comparator);
-	}
-
-	@Override
 	public boolean contains(int value) {
 		int index = lowerBound(value);
 		return index != size() && get(index) == value;
