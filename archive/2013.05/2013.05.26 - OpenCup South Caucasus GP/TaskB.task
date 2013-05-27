@@ -1,0 +1,59 @@
+5 TaskB
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+9
+0
+5 1 3 2
+1 1
+1
+1
+10 333 334 33
+1 3
+1
+2
+6 0 10 0
+1 2
+1
+3
+8 1 130 12
+2 12
+1
+4
+8 1 111 11
+1 4
+1
+5
+8 1 100 0
+
+2 11
+1
+6
+6 0 0 0
+
+1 1
+1
+7
+9 1 1000 1	
+3 301
+1
+8
+10 1 9999 111
+2 19
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.05.26
+25 OpenCup South Caucasus GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
