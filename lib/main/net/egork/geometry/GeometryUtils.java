@@ -66,7 +66,7 @@ public class GeometryUtils {
 		return Math.sqrt(p * (p - first) * (p - second) * (p - third));
 	}
 
-	public static double canonicAngle(double angle) {
+	public static double canonicalAngle(double angle) {
 		while (angle > Math.PI)
 			angle -= 2 * Math.PI;
 		while (angle < -Math.PI)

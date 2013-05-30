@@ -1,10 +1,8 @@
 package net.egork.misc;
 
 import net.egork.collections.function.Function;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import net.egork.collections.intcollection.IntArrayList;
+import net.egork.collections.intcollection.IntList;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -41,25 +39,25 @@ public class MiscUtils {
 		return row >= 0 && row < rowCount && column >= 0 && column < columnCount;
 	}
 
-	public static List<Integer> getPath(int[] last, int destination) {
-		List<Integer> path = new ArrayList<Integer>();
+	public static IntList getPath(int[] last, int destination) {
+		IntList path = new IntArrayList();
 		while (destination != -1) {
 			path.add(destination);
 			destination = last[destination];
 		}
-		Collections.reverse(path);
+		path.inPlaceReverse();
 		return path;
 	}
 
-	public static List<Integer> getPath(int[][] lastIndex, int[][] lastPathNumber, int destination, int pathNumber) {
-		List<Integer> path = new ArrayList<Integer>();
+	public static IntList getPath(int[][] lastIndex, int[][] lastPathNumber, int destination, int pathNumber) {
+		IntList path = new IntArrayList();
 		while (destination != -1 || pathNumber != 0) {
 			path.add(destination);
 			int nextDestination = lastIndex[destination][pathNumber];
 			pathNumber = lastPathNumber[destination][pathNumber];
 			destination = nextDestination;
 		}
-		Collections.reverse(path);
+		path.inPlaceReverse();
 		return path;
 	}
 

@@ -2,11 +2,9 @@ package net.egork.misc;
 
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.intcollection.IntArray;
-import net.egork.collections.map.EHashMap;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Map;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -368,7 +366,7 @@ public class ArrayUtils {
 		return result;
 	}
 
-	public static void compress(int[]...arrays) {
+	public static int[] compress(int[]...arrays) {
 		int totalLength = 0;
 		for (int[] array : arrays)
 			totalLength += array.length;
@@ -380,12 +378,10 @@ public class ArrayUtils {
 		}
 		sort(all, IntComparator.DEFAULT);
 		all = unique(all);
-		Map<Integer, Integer> map = new EHashMap<Integer, Integer>();
-		for (int i = 0; i < all.length; i++)
-			map.put(all[i], i);
 		for (int[] array : arrays) {
 			for (int i = 0; i < array.length; i++)
-				array[i] = map.get(array[i]);
+				array[i] = Arrays.binarySearch(all, array[i]);
 		}
+		return all;
 	}
 }
