@@ -1,0 +1,32 @@
+15 B - Many Prizes
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 B-(small|large).*[.]in
+6 CUSTOM
+5 b.out
+1
+-1
+14 3
+3 4
+3 5
+3 3
+
+39 Case #1: 0 6
+Case #2: 2 6
+Case #3: 0 4
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.01
+28 Google Code Jam Round 2 2013
+0
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
