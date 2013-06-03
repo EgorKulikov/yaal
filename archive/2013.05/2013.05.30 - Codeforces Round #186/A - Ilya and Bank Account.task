@@ -1,0 +1,39 @@
+25 A - Ilya and Bank Account
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+5 2230
+
+5 2230
+
+1
+1
+4 -10
+
+2 0
+
+1
+2
+8 -100003
+
+7 -10000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.05.30
+21 Codeforces Round #186
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
