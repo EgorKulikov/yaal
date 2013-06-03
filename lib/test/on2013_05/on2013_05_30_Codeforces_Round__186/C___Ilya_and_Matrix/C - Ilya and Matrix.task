@@ -1,0 +1,35 @@
+19 C - Ilya and Matrix
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+5 1
+13
+
+3 13
+
+1
+1
+10 4
+1 2 3 4
+
+3 14
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+70 on2013_05.on2013_05_30_Codeforces_Round__186.C___Ilya_and_Matrix.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.05.30
+21 Codeforces Round #186
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

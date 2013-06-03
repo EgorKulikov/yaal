@@ -3,7 +3,7 @@ package net.egork.string;
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
-public class PrefixTree {
+public class Trie {
 	private Node root = new Node();
 
 	public void add(CharSequence word) {
