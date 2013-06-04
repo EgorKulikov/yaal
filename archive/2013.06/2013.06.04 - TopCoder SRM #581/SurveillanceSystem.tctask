@@ -1,0 +1,85 @@
+18 SurveillanceSystem
+16 getContainerInfo
+16 java.lang.String
+3
+16 java.lang.String
+10 containers
+5 int[]
+7 reports
+3 int
+1 L
+5
+0
+3
+String
+6 -X--XX
+int[] 2
+1
+2
+int 3
+String
+6 ??++++
+1
+1
+3
+String
+7 -XXXXX-
+int[] 1
+2
+int 3
+String
+7 ???-???
+1
+2
+3
+String
+11 ------X-XX-
+int[] 4
+3
+0
+2
+0
+int 5
+String
+11 ++++++++++?
+1
+3
+3
+String
+12 -XXXXX---X--
+int[] 4
+2
+1
+0
+1
+int 3
+String
+12 ???-??++++??
+1
+4
+3
+String
+36 -XX--X-XX-X-X--X---XX-X---XXXX-----X
+int[] 13
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+int 7
+String
+36 ???++++?++++++++++++++++++++??????--
+1
+10 2013.06.04
+22 Single Round Match 581
+0
+28 net.egork.SurveillanceSystem
+1
