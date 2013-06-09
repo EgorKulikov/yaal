@@ -15,6 +15,11 @@ public class IntArrayList extends IntList {
 		array = new int[capacity];
 	}
 
+	public IntArrayList(IntList list) {
+		this(list.size());
+		addAll(list);
+	}
+
 	@Override
 	public int get(int index) {
 		if (index >= size)
