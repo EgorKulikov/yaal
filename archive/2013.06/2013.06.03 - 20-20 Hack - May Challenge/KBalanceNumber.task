@@ -1,0 +1,30 @@
+14 KBalanceNumber
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+6 9 23 1
+2 42
+1
+1
+41 123456789123456789 987654321987654321 12
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+24 net.egork.KBalanceNumber
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.03
+26 20-20 Hack - May Challenge
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

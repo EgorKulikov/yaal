@@ -384,4 +384,15 @@ public class ArrayUtils {
 		}
 		return all;
 	}
+
+	public static int minElement(int[] array) {
+		return array[minPosition(array)];
+	}
+
+	public static long[] partialSums(int[] array) {
+		long[] result = new long[array.length + 1];
+		for (int i = 0; i < array.length; i++)
+			result[i + 1] = result[i] + array[i];
+		return result;
+	}
 }

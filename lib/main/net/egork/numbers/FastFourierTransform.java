@@ -65,7 +65,11 @@ public class FastFourierTransform {
 		for (int i = 0; i < b.length; i++)
 			bReal[i] = b[i];
 		fft(aReal, aImaginary, false);
-		fft(bReal, bImaginary, false);
+		if (a == b) {
+			System.arraycopy(aReal, 0, bReal, 0, aReal.length);
+			System.arraycopy(aImaginary, 0, bImaginary, 0, aImaginary.length);
+		} else
+			fft(bReal, bImaginary, false);
 		for (int i = 0; i < resultSize; i++) {
 			double real = aReal[i] * bReal[i] - aImaginary[i] * bImaginary[i];
 			aImaginary[i] = aImaginary[i] * bReal[i] + bImaginary[i] * aReal[i];

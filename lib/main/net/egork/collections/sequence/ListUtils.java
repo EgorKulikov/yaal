@@ -62,7 +62,6 @@ public class ListUtils {
 	public static<T extends Comparable<T>> long countUnorderedPairs(final List<T> sequence) {
 		long result = 0;
 		NavigableSet<T> set = new TreapSet<T>();
-		int index = 0;
 		for (T element : sequence) {
 			result += set.tailSet(element).size();
 			set.add(element);
