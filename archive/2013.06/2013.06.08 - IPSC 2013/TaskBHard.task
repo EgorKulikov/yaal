@@ -1,0 +1,27 @@
+9 TaskBHard
+12 MULTI_NUMBER
+6 CUSTOM
+5 b2.in
+6 CUSTOM
+6 b2.out
+1
+0
+4 1
+5
+
+2 10
+1
+14 main/net/egork
+17 -Xmx4096m -Xss64m
+4 Main
+19 net.egork.TaskBHard
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.08
+9 IPSC 2013
+0
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

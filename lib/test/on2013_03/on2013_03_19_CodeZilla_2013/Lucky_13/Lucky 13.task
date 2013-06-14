@@ -1,0 +1,46 @@
+8 Lucky 13
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+125 15 17
+
+I 1 50
+I 2 100
+I 3 10
+I 5 501
+I 4 30
+I 8 10
+R 7 20
+I 6 120
+I 14 30
+R 12 11
+I 10 10
+I 11 10
+I 13 10
+Q
+I 9 17
+I 12 10
+Q
+
+10 9 0
+13 10
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+52 on2013_03.on2013_03_19_CodeZilla_2013.Lucky_13.Lucky
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.03.19
+14 CodeZilla 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

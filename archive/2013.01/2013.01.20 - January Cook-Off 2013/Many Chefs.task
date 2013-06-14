@@ -1,0 +1,43 @@
+10 Many Chefs
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+64 5
+????CIELIS???E?
+????CIELISOUR???F
+T?KEITE?SY
+????????
+???C???
+
+62 CHEFCIELISACHEF
+CHEFCIELISOURCHEF
+TAKEITEASY
+CHEFCHEF
+AAACHEF
+
+1
+1
+10 1
+???????
+
+8 AAACHEF
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+19 net.egork.ManyChefs
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.20
+21 January Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,22 @@
+8 SortTest
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+0
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+41 on2013_01.on2013_01_25_.SortTest.SortTest
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+45 on2013_01.on2013_01_25_.SortTest.SortTestCase
+10 2013.01.25
+0 
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,39 @@
+10 C - Ladder
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+44 8 6
+1 2 1 3 3 5 2 1
+1 3
+2 3
+2 4
+8 8
+1 4
+5 8
+
+22 Yes
+Yes
+No
+Yes
+No
+Yes
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.03.04
+21 Codeforces Round #171
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,59 @@
+16 Chef of the Year
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+44 1 3
+Leibniz Germany
+Leibniz
+Leibniz
+Leibniz
+
+16 Germany
+Leibniz
+
+1
+1
+117 4 5
+Ramanujan India
+Torricelli Italy
+Gauss Germany
+Lagrange Italy
+Ramanujan
+Torricelli
+Torricelli
+Ramanujan
+Lagrange
+
+16 Italy
+Ramanujan
+
+1
+2
+47 2 2
+Newton England
+Euclid Greece
+Newton
+Euclid
+
+15 England
+Euclid
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.ChefOfTheYear
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.01
+22 January Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

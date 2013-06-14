@@ -1,0 +1,34 @@
+17 Dividing Products
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+22 4
+2 0
+3 27
+5 24
+10 45
+
+16 0
+5
+486
+2349595
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+77 on2013_01.on2013_01_January_Challenge_2013.Dividing_Products.DividingProducts
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.01
+22 January Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

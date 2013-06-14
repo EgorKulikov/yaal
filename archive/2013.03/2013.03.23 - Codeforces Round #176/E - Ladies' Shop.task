@@ -1,0 +1,47 @@
+16 E - Ladies' Shop
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+18 6 10
+5 6 7 8 9 10
+
+17 YES
+5
+5 6 7 8 9 
+
+1
+1
+7 1 10
+1
+
+3 NO
+
+1
+2
+7 1 10
+6
+
+9 YES
+1
+6 
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskETestCase
+10 2013.03.23
+21 Codeforces Round #176
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

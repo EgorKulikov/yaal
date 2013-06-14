@@ -1,0 +1,32 @@
+15 Levy Conjecture
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+9 3
+2
+7
+11
+
+6 0
+1
+2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+24 net.egork.LevyConjecture
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.04
+20 April Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,32 @@
+13 Approximately
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+9 3
+0
+6
+20
+
+34 3
+3.141592
+3.14159265301190260407
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.Approximately
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.03
+20 March Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

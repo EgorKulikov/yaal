@@ -1,0 +1,87 @@
+18 FoxAndMountainEasy
+8 possible
+16 java.lang.String
+4
+3 int
+1 n
+3 int
+2 h0
+3 int
+2 hn
+16 java.lang.String
+7 history
+7
+0
+4
+int 4
+int 0
+int 4
+String
+2 UU
+String
+3 YES
+1
+1
+4
+int 4
+int 0
+int 4
+String
+1 D
+String
+2 NO
+1
+2
+4
+int 4
+int 100000
+int 100000
+String
+3 DDU
+String
+3 YES
+1
+3
+4
+int 4
+int 0
+int 0
+String
+3 DDU
+String
+2 NO
+1
+4
+4
+int 20
+int 20
+int 20
+String
+10 UDUDUDUDUD
+String
+3 YES
+1
+5
+4
+int 20
+int 0
+int 0
+String
+10 UUUUUUUUUU
+String
+3 YES
+1
+6
+4
+int 20
+int 0
+int 0
+String
+11 UUUUUUUUUUU
+String
+2 NO
+1
+10 2012.10.10
+22 Single Round Match 557
+0
+28 net.egork.FoxAndMountainEasy

@@ -1,0 +1,28 @@
+10 Restaurant
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+9 2
+2 2
+6 9
+3 1
+6
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+71 on2013_06.on2013_06_03_20_20_Hack___May_Challenge.Restaurant.Restaurant
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.03
+26 20-20 Hack - May Challenge
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

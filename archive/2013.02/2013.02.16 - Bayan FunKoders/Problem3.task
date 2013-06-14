@@ -1,0 +1,51 @@
+8 Problem3
+12 MULTI_NUMBER
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+14 3
+aAb
+abc
+acba
+107 Aab
+Aba
+aAb
+abA
+bAa
+baA
+abc
+acb
+bac
+bca
+cab
+cba
+aabc
+aacb
+abac
+abca
+acab
+acba
+baac
+baca
+bcaa
+caab
+caba
+cbaa
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+18 net.egork.Problem3
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.16
+15 Bayan FunKoders
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

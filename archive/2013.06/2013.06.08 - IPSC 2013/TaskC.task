@@ -1,0 +1,25 @@
+5 TaskC
+6 SINGLE
+8 STANDARD
+9 input.txt
+6 CUSTOM
+5 c.out
+1
+0
+0 
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.08
+9 IPSC 2013
+0
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

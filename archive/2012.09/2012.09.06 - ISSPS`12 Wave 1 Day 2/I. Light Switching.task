@@ -1,0 +1,30 @@
+18 I. Light Switching
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+33 4 5
+0 1 2
+0 2 4
+1 2 3
+0 2 4
+1 1 4
+3 1
+2
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.06
+21 ISSPS`12 Wave 1 Day 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

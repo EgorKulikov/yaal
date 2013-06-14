@@ -1,0 +1,36 @@
+25 Little Elephant and Music
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+30 2
+3
+1 2
+2 2
+3 2
+3
+2 3
+1 2
+2 4
+
+6 12
+16
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+32 net.egork.LittleElephantAndMusic
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.04
+20 April Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

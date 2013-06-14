@@ -1,0 +1,69 @@
+5 TaskF
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+10 2
+1 0
+0 1
+
+17 1.4142135624
+2 1
+
+1
+1
+20 3
+1 1 1
+1 1 1
+1 1 1
+
+34 1.6349751825
+1 12
+2 8
+4 6
+5 8
+8 2
+
+1
+2
+52 5
+0 1 2 3 4
+5 6 7 8 9
+1 2 3 2 1
+0 0 0 0 0
+0 0 0 0 1
+
+93 1.8589994382
+0 125
+1 379
+2 232
+4 186
+5 200
+8 27
+9 111
+10 98
+13 21
+16 50
+17 37
+18 6
+20 7
+25 6
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+60 on2013_05.on2013_05_26_OpenCup_South_Caucasus_GP.TaskF.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-8
+0
+10 2013.05.26
+25 OpenCup South Caucasus GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

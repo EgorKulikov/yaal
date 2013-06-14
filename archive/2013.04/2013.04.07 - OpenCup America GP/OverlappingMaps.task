@@ -1,0 +1,28 @@
+15 OverlappingMaps
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+50 100 100 50 50 25 0
+100 100 50 50 25 45
+0 0 0 0 0 0
+25 66.667 66.667
+45.59 70.53
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+25 net.egork.OverlappingMaps
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-2
+0
+10 2013.04.07
+18 OpenCup America GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

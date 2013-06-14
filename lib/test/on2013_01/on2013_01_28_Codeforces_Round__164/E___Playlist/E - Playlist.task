@@ -1,0 +1,40 @@
+12 E - Playlist
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+23 3
+150 20
+150 50
+100 50
+
+14 537.500000000
+
+1
+1
+29 4
+300 0
+300 50
+240 50
+360 80
+
+15 2121.000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+63 on2013_01.on2013_01_28_Codeforces_Round__164.E___Playlist.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2013.01.28
+21 Codeforces Round #164
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

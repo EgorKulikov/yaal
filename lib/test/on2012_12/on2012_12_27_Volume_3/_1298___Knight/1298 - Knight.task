@@ -1,0 +1,86 @@
+13 1298 - Knight
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+9
+0
+2 3
+
+11 IMPOSSIBLE
+
+1
+1
+2 5
+
+75 a1
+c2
+e3
+d5
+b4
+a2
+c3
+d1
+b2
+a4
+c5
+e4
+d2
+b1
+a3
+b5
+d4
+e2
+c1
+b3
+a5
+c4
+e5
+d3
+e1
+
+1
+2
+1 1
+2 a1
+1
+3
+1 2
+11 IMPOSSIBLE
+
+1
+4
+1 4
+-1
+1
+5
+1 5
+-1
+1
+6
+1 6
+-1
+1
+7
+1 7
+-1
+1
+8
+1 8
+-1
+1
+14 main/net/egork
+15 -Xmx16M -Xss16M
+4 Main
+55 on2012_12.on2012_12_27_Volume_3._1298___Knight.Task1298
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.27
+8 Volume 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

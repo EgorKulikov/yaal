@@ -1,0 +1,45 @@
+18 Hotel Balifornia 2
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+51 3
+1 2
+0 0
+314 0
+5 3
+3 0
+31 1
+314 0
+2 3
+0 0
+1 0
+2 2
+
+47 0 31
+0 31415
+4 31
+4 314
+2 3141
+0 3
+1 3
+0 31415
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+25 net.egork.HotelBalifornia
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.17
+22 February Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

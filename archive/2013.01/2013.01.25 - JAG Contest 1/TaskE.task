@@ -1,0 +1,39 @@
+5 TaskE
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+20 SA SK
+DA CA
+SQ SJ ST
+1 1
+1
+1
+20 SA HA
+D2 C3
+H4 S5 DA
+22 0.34444444444444444198
+1
+2
+20 HA D9
+H6 C9
+H3 H4 H5
+22 0.63030303030303025391
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-6
+0
+10 2013.01.25
+13 JAG Contest 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

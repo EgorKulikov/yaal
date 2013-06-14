@@ -1,0 +1,34 @@
+13 Kingdom Unity
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+32 1
+7 6 5
+0 1
+1 2
+3 4
+2 4
+2 6
+5 2
+
+3 15
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+22 net.egork.KingdomUnity
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.04
+20 April Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

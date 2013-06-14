@@ -1,0 +1,36 @@
+11 Magic Board
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+70 3 6
+RowQuery 1
+ColSet 1 1
+RowQuery 1
+ColQuery 1
+RowSet 1 0
+ColQuery 1
+
+8 3
+2
+0
+1
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+20 net.egork.MagicBoard
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.05
+23 February 2013 Challenge
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

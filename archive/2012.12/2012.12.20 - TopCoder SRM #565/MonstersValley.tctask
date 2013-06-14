@@ -1,0 +1,83 @@
+14 MonstersValley
+12 minimumPrice
+3 int
+2
+6 long[]
+5 dread
+5 int[]
+5 price
+4
+0
+2
+long[] 3
+8
+5
+10
+int[] 3
+1
+1
+2
+int 2
+1
+1
+2
+long[] 4
+1
+2
+4
+1000000000
+int[] 4
+1
+1
+1
+2
+int 5
+1
+2
+2
+long[] 6
+200
+107
+105
+206
+307
+400
+int[] 6
+1
+2
+1
+1
+1
+2
+int 2
+1
+3
+2
+long[] 10
+5216
+12512
+613
+1256
+66
+17202
+30000
+23512
+2125
+33333
+int[] 10
+2
+2
+1
+1
+1
+1
+2
+1
+2
+1
+int 5
+1
+10 2012.12.20
+22 Single Round Match 565
+0
+24 net.egork.MonstersValley

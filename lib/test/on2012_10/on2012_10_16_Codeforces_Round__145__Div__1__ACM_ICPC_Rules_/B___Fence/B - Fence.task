@@ -1,0 +1,44 @@
+9 B - Fence
+6 SINGLE
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+3
+0
+14 4
+5 7
+3 3 4 1
+
+2 3
+
+1
+1
+12 3
+2 3
+1 3 1
+
+2 2
+
+1
+2
+12 3
+3 3
+2 2 2
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+85 on2012_10.on2012_10_16_Codeforces_Round__145__Div__1__ACM_ICPC_Rules_.B___Fence.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.16
+46 Codeforces Round #145 (Div. 1, ACM-ICPC Rules)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

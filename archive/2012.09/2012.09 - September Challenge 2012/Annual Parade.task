@@ -1,0 +1,37 @@
+13 Annual Parade
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+43 6 5 3
+1 3 2
+2 3 2
+3 4 2
+4 5 2
+4 6 2
+1
+5
+10
+
+8 6
+21
+32
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+22 net.egork.AnnualParade
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+20 net.egork.APTestCase
+7 2012.09
+24 September Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

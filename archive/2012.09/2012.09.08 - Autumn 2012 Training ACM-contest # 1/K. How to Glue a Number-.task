@@ -1,0 +1,31 @@
+24 K. How to Glue a Number?
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+16 3
+2 17
+1 5
+3 21
+
+40 Case #1: 471
+Case #2: 18
+Case #3: 33726
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskK
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.08
+36 Autumn 2012 Training ACM-contest # 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

@@ -1,0 +1,38 @@
+13 C. Arithmetic
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+6 1+1*2
+
+2 4
+
+1
+1
+6 2*9*4
+
+3 72
+
+1
+2
+2 5
+
+2 5
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.08
+36 Autumn 2012 Training ACM-contest # 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

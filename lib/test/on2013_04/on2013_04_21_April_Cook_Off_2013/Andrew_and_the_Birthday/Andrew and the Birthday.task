@@ -1,0 +1,32 @@
+23 Andrew and the Birthday
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+22 2
+2 2
+0 0
+4 7
+0 1 1 0
+
+24 1.500000000
+2.285714286
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+87 on2013_04.on2013_04_21_April_Cook_Off_2013.Andrew_and_the_Birthday.AndrewAndTheBirthday
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-6
+0
+10 2013.04.21
+19 April Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

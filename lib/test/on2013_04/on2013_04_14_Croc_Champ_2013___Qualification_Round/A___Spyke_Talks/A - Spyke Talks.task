@@ -1,0 +1,42 @@
+15 A - Spyke Talks
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+15 6
+0 1 7 1 7 10
+
+2 2
+
+1
+1
+8 3
+1 1 1
+
+3 -1
+
+1
+2
+4 1
+0
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+82 on2013_04.on2013_04_14_Croc_Champ_2013___Qualification_Round.A___Spyke_Talks.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.14
+37 Croc Champ 2013 - Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

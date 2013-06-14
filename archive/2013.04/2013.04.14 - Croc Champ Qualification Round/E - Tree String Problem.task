@@ -1,0 +1,47 @@
+23 E - Tree String Problem
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+46 7
+1 ab
+5 bacaba
+1 abacaba
+2 aca
+5 ba
+2 ba
+aba
+
+2 6
+
+1
+1
+49 7
+1 ab
+5 bacaba
+1 abacaba
+2 aca
+5 ba
+2 ba
+bacaba
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.14
+37 Croc Champ 2013 - Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

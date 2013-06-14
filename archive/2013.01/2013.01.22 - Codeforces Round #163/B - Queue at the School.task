@@ -1,0 +1,42 @@
+23 B - Queue at the School
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+10 5 1
+BGGBG
+
+6 GBGGB
+
+1
+1
+10 5 2
+BGGBG
+
+6 GGBGB
+
+1
+2
+9 4 1
+GGGB
+
+5 GGGB
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.22
+21 Codeforces Round #163
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

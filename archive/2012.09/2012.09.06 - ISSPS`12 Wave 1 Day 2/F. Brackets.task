@@ -1,0 +1,36 @@
+11 F. Brackets
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+15 ()
+5
+0
+0
+1
+1
+0
+
+10 -
++
+-
++
+-
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.06
+21 ISSPS`12 Wave 1 Day 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
