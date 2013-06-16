@@ -57,13 +57,13 @@ public class Polygon {
         List<Point> up = new ArrayList<Point>();
         List<Point> down = new ArrayList<Point>();
         for (Point point : points) {
-            if (point == left || point == right || over(left, point, right)) {
-                while (up.size() >= 2 && !over(up.get(up.size() - 2), up.get(up.size() - 1), point))
+            if (point == left || point == right || !under(left, point, right)) {
+                while (up.size() >= 2 && under(up.get(up.size() - 2), up.get(up.size() - 1), point))
                     up.remove(up.size() - 1);
                 up.add(point);
             }
-            if (point == left || point == right || under(left, point, right)) {
-                while (down.size() >= 2 && !under(down.get(down.size() - 2), down.get(down.size() - 1), point))
+            if (point == left || point == right || !over(left, point, right)) {
+                while (down.size() >= 2 && over(down.get(down.size() - 2), down.get(down.size() - 1), point))
                     down.remove(down.size() - 1);
                 down.add(point);
             }

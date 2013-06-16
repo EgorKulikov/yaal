@@ -1,0 +1,47 @@
+32 G1 - Good Substrings (30 points)
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+22 aaab
+2
+aa 0 0
+aab 1 1
+
+2 3
+
+1
+1
+41 ltntlnen
+3
+n 0 0
+ttlneenl 1 4
+lelllt 1 1
+
+2 2
+
+1
+2
+4 a
+0
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+16 net.egork.TaskG1
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.12
+13 ABBYY Cup 3.0
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
