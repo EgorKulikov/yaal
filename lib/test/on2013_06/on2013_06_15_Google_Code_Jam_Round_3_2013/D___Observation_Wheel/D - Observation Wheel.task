@@ -1,0 +1,36 @@
+21 D - Observation Wheel
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 D-(small|large).*[.]in
+6 CUSTOM
+5 d.out
+1
+-1
+30 5
+.X.
+X.X.
+.XX.
+X..XX.
+.XX..X
+
+130 Case #1: 4.66666666666667
+Case #2: 6.00000000000000
+Case #3: 5.75000000000000
+Case #4: 13.4722222222222
+Case #5: 13.5277777777778
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+79 on2013_06.on2013_06_15_Google_Code_Jam_Round_3_2013.D___Observation_Wheel.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2013.06.15
+28 Google Code Jam Round 3 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
