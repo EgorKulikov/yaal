@@ -1,0 +1,40 @@
+16 F - Колесо
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+10 4
+1
+2
+3
+4
+
+21 1.5
+2.25
+2.75
+3.4375
+
+1
+1
+6 1
+120
+
+-1
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+73 on2013_06.on2013_06_16_Russian_CodeCup_2013_Online_Round.F_________.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-9
+0
+10 2013.06.16
+33 Russian CodeCup 2013 Online Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
