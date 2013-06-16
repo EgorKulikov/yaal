@@ -1,0 +1,32 @@
+16 C - Кеплер
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+14 3
+1 1
+4 4
+3 2
+
+6 0
+0
+1
+
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.16
+33 Russian CodeCup 2013 Online Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
