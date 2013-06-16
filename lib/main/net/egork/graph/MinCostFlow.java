@@ -172,7 +172,7 @@ public class MinCostFlow {
 					if (visited[next] != visitIndex) {
 						long total = graph.weight(edgeID) - phi[next] + phi[index] + length;
 						if (dijkstraResult[next] > total) {
-							dijkstraResult[next] = total;
+								dijkstraResult[next] = total;
 							lastEdge[next] = edgeID;
 						}
 					}
