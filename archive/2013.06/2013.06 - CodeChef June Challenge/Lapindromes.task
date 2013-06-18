@@ -1,0 +1,38 @@
+11 Lapindromes
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+38 6
+gaga
+abcde
+rotor
+xyzxy
+abbaab
+ababc
+
+21 YES
+NO
+YES
+YES
+NO
+NO
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+21 net.egork.Lapindromes
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.07
+19 June Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

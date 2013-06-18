@@ -43,7 +43,7 @@ public class IntHashSet extends IntSet {
 	@Override
 	public IntIterator iterator() {
 		return new IntIterator() {
-			private int position = -1;
+			private int position = size == 0 ? values.length : -1;
 
 			public int value() throws NoSuchElementException {
 				if (position == -1)

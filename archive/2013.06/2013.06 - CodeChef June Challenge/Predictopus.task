@@ -1,0 +1,28 @@
+11 Predictopus
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+8 1
+0.510
+
+6 10098
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+21 net.egork.Predictopus
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2013.06.07
+19 June Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
