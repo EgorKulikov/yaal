@@ -1,0 +1,58 @@
+11 C - Balance
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+19 2 10 1
+1 9
+5 5
+1 2
+
+8 1
+2 1 4
+
+1
+1
+15 2 10 0
+5 2
+4 2
+
+3 NO
+
+1
+2
+15 2 10 0
+4 2
+4 2
+
+2 0
+
+1
+3
+53 7 7 5
+6 3 0 7 0 7 7
+4 5 7 7 7 0 0
+1 2
+4 3
+4 5
+4 6
+4 7
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+62 on2013_06.on2013_06_14_Codeforces_Round__188.C___Balance.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.14
+21 Codeforces Round #188
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
