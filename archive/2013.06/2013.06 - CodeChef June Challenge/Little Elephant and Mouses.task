@@ -1,0 +1,40 @@
+26 Little Elephant and Mouses
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+110 2
+3 9
+001000001
+111111010
+100100100
+7 9
+010101110
+110110111
+010011111
+100100000
+000010100
+011011000
+000100101
+
+5 9
+10
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+33 net.egork.LittleElephantAndMouses
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.07
+19 June Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
