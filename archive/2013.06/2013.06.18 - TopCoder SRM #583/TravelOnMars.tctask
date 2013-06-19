@@ -1,0 +1,79 @@
+12 TravelOnMars
+8 minTimes
+3 int
+3
+5 int[]
+5 range
+3 int
+9 startCity
+3 int
+7 endCity
+4
+0
+3
+int[] 6
+2
+1
+1
+1
+1
+1
+int 1
+int 4
+int 2
+1
+1
+3
+int[] 6
+2
+1
+1
+1
+1
+1
+int 4
+int 1
+int 3
+1
+2
+3
+int[] 8
+2
+1
+1
+2
+1
+2
+1
+1
+int 2
+int 6
+int 3
+1
+3
+3
+int[] 15
+3
+2
+1
+1
+3
+1
+2
+2
+1
+1
+2
+2
+2
+2
+3
+int 6
+int 13
+int 4
+1
+10 2013.06.18
+22 Single Round Match 583
+0
+22 net.egork.TravelOnMars
+1
