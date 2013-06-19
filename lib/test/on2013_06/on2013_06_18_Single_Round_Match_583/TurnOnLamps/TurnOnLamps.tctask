@@ -1,0 +1,148 @@
+11 TurnOnLamps
+8 minimize
+3 int
+3
+5 int[]
+5 roads
+16 java.lang.String
+9 initState
+16 java.lang.String
+11 isImportant
+6
+0
+3
+int[] 4
+0
+0
+1
+1
+String
+4 0001
+String
+4 0111
+int 1
+1
+1
+3
+int[] 4
+0
+0
+1
+1
+String
+4 0000
+String
+4 0111
+int 2
+1
+2
+3
+int[] 6
+0
+0
+1
+1
+4
+4
+String
+6 000100
+String
+6 111111
+int 2
+1
+3
+3
+int[] 6
+0
+0
+1
+1
+4
+4
+String
+6 100100
+String
+6 011101
+int 2
+1
+4
+3
+int[] 9
+0
+0
+2
+2
+3
+1
+6
+3
+1
+String
+9 010001110
+String
+9 000110100
+int 1
+1
+5
+3
+int[] 49
+0
+0
+1
+2
+4
+4
+6
+1
+2
+5
+2
+8
+8
+3
+6
+4
+14
+7
+18
+14
+11
+7
+1
+12
+7
+5
+18
+23
+0
+14
+11
+10
+2
+2
+6
+1
+30
+11
+9
+12
+5
+35
+25
+11
+23
+17
+14
+45
+15
+String
+49 0000000000010000000000000010000010100000000000000
+String
+49 1010111111111011011111000110111111111111111110111
+int 14
+1
+10 2013.06.18
+22 Single Round Match 583
+0
+69 on2013_06.on2013_06_18_Single_Round_Match_583.TurnOnLamps.TurnOnLamps
+1
