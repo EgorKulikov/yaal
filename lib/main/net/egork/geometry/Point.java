@@ -63,6 +63,10 @@ public class Point {
 		return GeometryUtils.fastHypot(x, y);
 	}
 
+	public double angle() {
+		return Math.atan2(y, x);
+	}
+
 	public static Point readPoint(InputReader in) {
 		double x = in.readDouble();
 		double y = in.readDouble();

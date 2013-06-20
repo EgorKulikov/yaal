@@ -1,0 +1,27 @@
+23 A. Polar angle of point
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+4 2 3
+
+9 0.982794
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.19
+33 9 Round Spiral. Round 3. Step 10.
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

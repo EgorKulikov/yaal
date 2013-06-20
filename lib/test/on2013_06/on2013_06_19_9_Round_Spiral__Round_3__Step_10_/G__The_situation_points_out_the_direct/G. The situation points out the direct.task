@@ -1,0 +1,27 @@
+38 G. The situation points out the direct
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+16 0 0 2 4 2 -1 -1
+
+4 YES
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+101 on2013_06.on2013_06_19_9_Round_Spiral__Round_3__Step_10_.G__The_situation_points_out_the_direct.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.19
+33 9 Round Spiral. Round 3. Step 10.
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
