@@ -73,4 +73,12 @@ public class GeometryUtils {
 			angle += 2 * Math.PI;
 		return angle;
 	}
+
+	public static double positiveAngle(double angle) {
+		while (angle > 2 * Math.PI - GeometryUtils.epsilon)
+			angle -= 2 * Math.PI;
+		while (angle < -GeometryUtils.epsilon)
+			angle += 2 * Math.PI;
+		return angle;
+	}
 }
