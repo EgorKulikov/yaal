@@ -98,4 +98,13 @@ public class Segment {
 			return intersect;
 		return null;
 	}
+
+	public double distance(Segment other) {
+		Line line = line();
+		Line otherLine = other.line();
+		Point p = line == null || otherLine == null ? null : line.intersect(otherLine);
+		if (p != null && contains(p, true) && other.contains(p, true))
+			return 0;
+		return Math.min(Math.min(other.distance(a), other.distance(b)), Math.min(distance(other.a), distance(other.b)));
+	}
 }
