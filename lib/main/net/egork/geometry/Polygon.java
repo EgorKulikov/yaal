@@ -10,6 +10,7 @@ import java.util.List;
  */
 public class Polygon {
 	public final Point[] vertices;
+	private Segment[] sides;
 
 	public Polygon(Point...vertices) {
 		this.vertices = vertices.clone();
@@ -77,7 +78,15 @@ public class Polygon {
         return new Polygon(result);
     }
 
-    public boolean contains(Point point) {
+	public boolean contains(Point point) {
+		return contains(point, false);
+	}
+
+    public boolean contains(Point point, boolean strict) {
+		for (Segment segment : sides()) {
+			if (segment.contains(point, true))
+				return !strict;
+		}
         double totalAngle = GeometryUtils.canonicalAngle(Math.atan2(vertices[0].y - point.y, vertices[0].x - point.x) -
 			Math.atan2(vertices[vertices.length - 1].y - point.y, vertices[vertices.length - 1].x - point.x));
         for (int i = 1; i < vertices.length; i++) {
@@ -86,6 +95,16 @@ public class Polygon {
         }
         return Math.abs(totalAngle) > Math.PI;
     }
+
+	public Segment[] sides() {
+		if (sides == null) {
+			sides = new Segment[vertices.length];
+			for (int i = 0; i < vertices.length - 1; i++)
+				sides[i] = new Segment(vertices[i], vertices[i + 1]);
+			sides[sides.length - 1] = new Segment(vertices[vertices.length - 1], vertices[0]);
+		}
+		return sides;
+	}
 
 	public static double triangleSquare(Point a, Point b, Point c) {
 		return Math.abs((a.x - b.x) * (a.y + b.y) + (b.x - c.x) * (b.y + c.y) + (c.x - a.x) * (c.y + a.y)) / 2;
