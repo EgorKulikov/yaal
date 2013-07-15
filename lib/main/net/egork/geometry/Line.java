@@ -70,7 +70,7 @@ public class Line {
 		Line line = (Line) o;
 
 		if (!parallel(line)) return false;
-		if (Math.abs(a * line.c - c * line.a) > GeometryUtils.epsilon) return false;
+		if (Math.abs(a * line.c - c * line.a) > GeometryUtils.epsilon || Math.abs(b * line.c - c * line.b) > GeometryUtils.epsilon) return false;
 
 		return true;
 	}
