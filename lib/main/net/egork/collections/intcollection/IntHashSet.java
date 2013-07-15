@@ -23,14 +23,17 @@ public class IntHashSet extends IntSet {
 	private int[] values;
 	private byte[] present;
 	private int step;
+	private int ratio;
 
 	public IntHashSet() {
 		this(3);
 	}
 
+
 	public IntHashSet(int capacity) {
 		values = new int[capacity];
 		present = new byte[capacity];
+		ratio = capacity;
 		initStep(capacity);
 	}
 
@@ -74,7 +77,7 @@ public class IntHashSet extends IntSet {
 
 	@Override
 	public void add(int value) {
-		ensureCapacity(2 * (size + 1));
+		ensureCapacity((size + 1) * ratio);
 		int current = getHash(value);
 		while ((present[current] & PRESENT_MASK) != 0) {
 			if (values[current] == value)
@@ -101,16 +104,26 @@ public class IntHashSet extends IntSet {
 	private void ensureCapacity(int capacity) {
 		if (values.length < capacity) {
 			capacity = Math.max(capacity, 2 * values.length);
-			initStep(capacity);
-			int[] oldValues = values;
-			byte[] oldPresent = present;
-			values = new int[capacity];
-			present = new byte[capacity];
-			size = 0;
-			for (int i = 0; i < oldValues.length; i++) {
-				if ((oldPresent[i] & PRESENT_MASK) == PRESENT_MASK)
-					add(oldValues[i]);
-			}
+			rebuild(capacity);
+		}
+	}
+
+	private void squish() {
+		if (values.length > size * ratio * 2 + 10) {
+			rebuild(size * ratio + 3);
+		}
+	}
+
+	private void rebuild(int capacity) {
+		initStep(capacity);
+		int[] oldValues = values;
+		byte[] oldPresent = present;
+		values = new int[capacity];
+		present = new byte[capacity];
+		size = 0;
+		for (int i = 0; i < oldValues.length; i++) {
+			if ((oldPresent[i] & PRESENT_MASK) == PRESENT_MASK)
+				add(oldValues[i]);
 		}
 	}
 
@@ -121,6 +134,7 @@ public class IntHashSet extends IntSet {
 			if (values[current] == value && (present[current] & PRESENT_MASK) != 0) {
 				present[current] = REMOVED_MASK;
 				size--;
+				squish();
 				return;
 			}
 			current += step;

@@ -42,9 +42,9 @@ public class SuffixAutomaton {
 
     public SuffixAutomaton(IntList s) {
         int count = s.size();
-        length = new int[2 * count];
-        link = new int[2 * count];
-        first = new int[2 * count];
+        length = new int[2 * count + 1];
+        link = new int[2 * count + 1];
+        first = new int[2 * count + 1];
         next = new int[4 * count];
         label = new int[4 * count];
         to = new int[4 * count];

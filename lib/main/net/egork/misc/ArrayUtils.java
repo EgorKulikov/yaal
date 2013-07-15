@@ -395,4 +395,18 @@ public class ArrayUtils {
 			result[i + 1] = result[i] + array[i];
 		return result;
 	}
+
+	public static void orderBy(int[] base, int[]... arrays) {
+		int[] order = ArrayUtils.order(base);
+		order(order, base);
+		for (int[] array : arrays)
+			order(order, array);
+	}
+
+	public static void order(int[] order, int[] array) {
+		ensureCapacityInt(order.length);
+		for (int i = 0; i < order.length; i++)
+			tempInt[i] = array[order[i]];
+		System.arraycopy(tempInt, 0, array, 0, array.length);
+	}
 }

@@ -1,0 +1,30 @@
+26 The Probability Of Winning
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+18 2
+2 2 1 2
+2 3 4 1
+
+8 0.5
+0.4
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+33 net.egork.TheProbabilityOfWinning
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-6
+0
+7 2013.07
+19 July Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

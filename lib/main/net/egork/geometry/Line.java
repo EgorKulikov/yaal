@@ -61,4 +61,17 @@ public class Line {
 	public double distance(Point center) {
 		return Math.abs(value(center));
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		Line line = (Line) o;
+
+		if (!parallel(line)) return false;
+		if (Math.abs(a * line.c - c * line.a) > GeometryUtils.epsilon) return false;
+
+		return true;
+	}
 }
