@@ -1,0 +1,32 @@
+11 F. ЛКОИ
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+36 5 3 2
+0 0 1
+1 1 0
+1 0 0
+1 1 0
+1 1 0
+
+4 3 2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+70 on2013_06.on2013_06_21_9_Round_Spiral__Round_3__Step_12_.F______.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.21
+33 9 Round Spiral. Round 3. Step 12.
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

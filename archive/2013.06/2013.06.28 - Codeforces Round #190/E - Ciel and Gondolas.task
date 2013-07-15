@@ -1,0 +1,55 @@
+21 E - Ciel and Gondolas
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+54 5 2
+0 0 1 1 1
+0 0 1 1 1
+1 1 0 0 0
+1 1 0 0 0
+1 1 0 0 0
+
+2 0
+
+1
+1
+132 8 3
+0 1 1 1 1 1 1 1
+1 0 1 1 1 1 1 1
+1 1 0 1 1 1 1 1
+1 1 1 0 1 1 1 1
+1 1 1 1 0 1 1 1
+1 1 1 1 1 0 1 1
+1 1 1 1 1 1 0 1
+1 1 1 1 1 1 1 0
+
+2 7
+
+1
+2
+22 3 2
+0 2 0
+2 0 3
+0 3 0
+
+2 2
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.28
+21 Codeforces Round #190
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

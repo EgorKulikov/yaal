@@ -1,0 +1,57 @@
+17 B - Ciel and Duel
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+37 2 3
+ATK 2000
+DEF 1700
+2500
+2500
+2500
+
+5 3000
+
+1
+1
+42 3 4
+ATK 10
+ATK 100
+ATK 1000
+1
+11
+101
+1001
+
+4 992
+
+1
+2
+24 2 4
+DEF 0
+ATK 0
+0
+0
+1
+1
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.28
+21 Codeforces Round #190
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

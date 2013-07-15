@@ -1,0 +1,47 @@
+15 C. Клумба
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+14 0 0 2
+1
+0 0 1
+
+2 1
+
+1
+1
+21 0 1 10
+2
+0 0 1
+2 3 3
+
+8 5.82843
+
+1
+2
+21 0 1 10
+2
+0 0 1
+0 4 7
+
+3 10
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+72 on2013_06.on2013_06_21_9_Round_Spiral__Round_3__Step_12_.C________.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-5
+0
+10 2013.06.21
+33 9 Round Spiral. Round 3. Step 12.
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
