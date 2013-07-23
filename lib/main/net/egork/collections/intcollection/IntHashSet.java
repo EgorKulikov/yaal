@@ -31,6 +31,7 @@ public class IntHashSet extends IntSet {
 
 
 	public IntHashSet(int capacity) {
+		capacity = Math.max(capacity, 1);
 		values = new int[capacity];
 		present = new byte[capacity];
 		ratio = capacity;

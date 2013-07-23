@@ -409,4 +409,11 @@ public class ArrayUtils {
 			tempInt[i] = array[order[i]];
 		System.arraycopy(tempInt, 0, array, 0, array.length);
 	}
+
+	public static long[] asLong(int[] array) {
+		long[] result = new long[array.length];
+		for (int i = 0; i < array.length; i++)
+			result[i] = array[i];
+		return result;
+	}
 }
