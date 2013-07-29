@@ -1,0 +1,35 @@
+21 B - Psychos in a Line
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+24 10
+10 9 7 8 6 5 3 4 2 1
+
+2 2
+
+1
+1
+14 6
+1 2 3 4 5 6
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.23
+21 Codeforces Round #189
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

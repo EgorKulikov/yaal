@@ -1,0 +1,29 @@
+25 Lyra and the Alethiometer
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+5 06454
+4 6454
+1
+1
+8 C0D3C43F
+4 3943
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+32 net.egork.LyraAndTheAlethiometer
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.23
+18 June Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
