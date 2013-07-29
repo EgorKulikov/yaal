@@ -379,4 +379,19 @@ public class IntegerUtils {
 		long sqrt = Math.round(Math.sqrt(number));
 		return sqrt * sqrt == number;
 	}
+
+	public static long findCommon(long aRemainder, long aMod, long bRemainder, long bMod) {
+		long modGCD = gcd(aMod, bMod);
+		long gcdRemainder = aRemainder % modGCD;
+		if (gcdRemainder != bRemainder % modGCD)
+			return -1;
+		aMod /= modGCD;
+		aRemainder /= modGCD;
+		bMod /= modGCD;
+		bRemainder /= modGCD;
+		long aReverse = BigInteger.valueOf(aMod).modInverse(BigInteger.valueOf(bMod)).longValue();
+		long bReverse = BigInteger.valueOf(bMod).modInverse(BigInteger.valueOf(aMod)).longValue();
+		long mod = aMod * bMod;
+		return (bReverse * aRemainder % mod * bMod + aReverse * bRemainder % mod * aMod) % mod * modGCD + gcdRemainder;
+	}
 }
