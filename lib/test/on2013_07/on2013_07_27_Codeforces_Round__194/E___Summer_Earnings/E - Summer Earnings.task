@@ -1,0 +1,44 @@
+19 E - Summer Earnings
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+14 3
+0 1
+1 0
+1 1
+
+23 0.50000000000000000000
+
+1
+1
+38 7
+2 -3
+-2 -3
+3 0
+-3 -1
+1 -2
+2 -2
+-1 0
+
+23 1.58113883008418980000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+70 on2013_07.on2013_07_27_Codeforces_Round__194.E___Summer_Earnings.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+1
+78 on2013_07.on2013_07_27_Codeforces_Round__194.E___Summer_Earnings.TaskETestCase
+10 2013.07.27
+21 Codeforces Round #194
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

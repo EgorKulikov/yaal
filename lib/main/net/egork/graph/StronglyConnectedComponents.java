@@ -1,10 +1,10 @@
 package net.egork.graph;
 
 import net.egork.collections.Pair;
-import net.egork.collections.set.EHashSet;
+import net.egork.collections.intcollection.IntHashSet;
+import net.egork.collections.intcollection.IntSet;
 
 import java.util.Arrays;
-import java.util.Set;
 
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)
@@ -16,7 +16,7 @@ public class StronglyConnectedComponents<V> {
 	private int index = 0;
 	private int vertexCount;
 	private int[] condensed;
-	private Set<Integer> next;
+	private IntSet next;
 
 	private StronglyConnectedComponents(Graph graph) {
 		this.graph = graph;
@@ -40,10 +40,10 @@ public class StronglyConnectedComponents<V> {
 		index = 0;
 		for (int i = vertexCount - 1; i >= 0; i--) {
 			if (!visited[order[i]]) {
-				next = new EHashSet<Integer>();
+				next = new IntHashSet();
 				secondDFS(order[i]);
 				result.addVertices(1);
-				for (int set : next)
+				for (int set : next.toArray())
 					result.addSimpleEdge(set, index);
 				index++;
 			}

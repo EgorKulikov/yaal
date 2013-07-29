@@ -1,0 +1,35 @@
+14 Party Planning
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+26 3
+4
+2 3 4 1
+3
+2 1 2
+2
+2 1
+
+6 7
+5
+3
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.PartyPlanning
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.23
+18 June Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

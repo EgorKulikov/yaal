@@ -130,4 +130,27 @@ public class StringUtils {
 		}
 		return result;
 	}
+
+	public static boolean contains(final String s, final String target) {
+		int[] z = zAlgorithm(new CharSequence() {
+			public int length() {
+				return s.length() + target.length();
+			}
+
+			public char charAt(int index) {
+				if (index < target.length())
+					return target.charAt(index);
+				return s.charAt(index - target.length());
+			}
+
+			public CharSequence subSequence(int start, int end) {
+				throw new UnsupportedOperationException();
+			}
+		});
+		for (int i = target.length(); i < z.length; i++) {
+			if (z[i] >= target.length())
+				return true;
+		}
+		return false;
+	}
 }
