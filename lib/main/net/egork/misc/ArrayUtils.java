@@ -164,10 +164,10 @@ public class ArrayUtils {
 	}
 
 	public static int[] sort(int[] array, int from, int to, IntComparator comparator) {
-		new IntArray(array).subList(from, to).inPlaceSort(comparator);
-//		ensureCapacityInt(to - from);
-//		System.arraycopy(array, from, tempInt, 0, to - from);
-//		sortImpl(array, from, to, tempInt, 0, to - from, comparator);
+		if (from == 0 && to == array.length)
+			new IntArray(array).inPlaceSort(comparator);
+		else
+			new IntArray(array).subList(from, to).inPlaceSort(comparator);
 		return array;
 	}
 

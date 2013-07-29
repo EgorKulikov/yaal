@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
  * @author egorku@yandex-team.ru
  */
 public abstract class IntList extends IntCollection implements Comparable<IntList> {
-	private static final int INSERTION_THRESHOLD = 8;
+	private static final int INSERTION_THRESHOLD = 16;
 	private static IntList EMPTY_LIST;
 
 	public abstract int get(int index);
@@ -106,7 +106,7 @@ public abstract class IntList extends IntCollection implements Comparable<IntLis
 	}
 
 	public IntSortedList inPlaceSort(IntComparator comparator) {
-		quickSort(0, size() - 1, size(), comparator);
+		quickSort(0, size() - 1, (Integer.bitCount(Integer.highestOneBit(size()) - 1) * 5) >> 1, comparator);
 		return new IntSortedArray(this, comparator);
 	}
 
@@ -119,7 +119,7 @@ public abstract class IntList extends IntCollection implements Comparable<IntLis
 			heapSort(from, to, comparator);
 			return;
 		}
-		remaining >>= 1;
+		remaining--;
 		int pivotIndex = (from + to) >> 1;
 		int pivot = get(pivotIndex);
 		swap(pivotIndex, to);

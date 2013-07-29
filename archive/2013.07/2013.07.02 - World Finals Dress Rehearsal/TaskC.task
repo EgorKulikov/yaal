@@ -1,0 +1,33 @@
+5 TaskC
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+27 0 0
+364 686
+360 682
+0 1
+1 0
+58 Case 1: 0
+Case 2: 1
+Case 3: 5
+Case 4: 239075
+Case 5: 11679
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.07.02
+28 World Finals Dress Rehearsal
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
