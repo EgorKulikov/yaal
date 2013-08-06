@@ -1,0 +1,63 @@
+25 D - Rectangles and Square
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+74 9
+0 0 1 9
+1 0 9 1
+1 8 9 9
+8 1 9 8
+2 2 3 6
+3 2 7 3
+2 6 7 7
+5 3 7 6
+3 3 5 6
+
+16 YES 5
+5 6 7 8 9
+
+1
+1
+34 4
+0 0 1 9
+1 0 9 1
+1 8 9 9
+8 1 9 8
+
+3 NO
+
+1
+2
+10 1
+0 0 1 1
+
+8 YES 1
+1
+
+1
+3
+22 1
+2999 2999 3000 3000
+
+8 YES 1
+1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+81 on2013_08.on2013_08_03_MemSQL_start_c_up_Round__2.D___Rectangles_and_Square.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.08.03
+26 MemSQL start[c]up Round #2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

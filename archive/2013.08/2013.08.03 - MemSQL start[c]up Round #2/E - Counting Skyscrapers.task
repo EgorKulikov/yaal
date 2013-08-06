@@ -1,0 +1,67 @@
+24 E - Counting Skyscrapers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+7
+0
+10 Alice
+3 1
+
+12 3.500000000
+
+1
+1
+9 Bob
+2 30
+
+2 2
+
+1
+2
+14 Alice
+2572 10
+
+15 3439.031415943
+
+1
+3
+9 Bob
+10 0
+
+3 10
+
+1
+4
+9 Bob
+3 30
+
+-1
+1
+5
+9 Bob
+4 30
+
+-1
+1
+6
+12 Bob
+3439 10
+
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2013.08.03
+26 MemSQL start[c]up Round #2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
