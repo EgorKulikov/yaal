@@ -1,0 +1,61 @@
+16 FlippingBitsDiv1
+6 getmin
+3 int
+2
+18 java.lang.String[]
+1 S
+3 int
+1 M
+6
+0
+2
+String[] 1
+8 00111000
+int 1
+int 2
+1
+1
+2
+String[] 1
+12 101100001101
+int 3
+int 2
+1
+2
+2
+String[] 1
+8 11111111
+int 4
+int 0
+1
+3
+2
+String[] 1
+10 1101001000
+int 8
+int 1
+1
+4
+2
+String[] 6
+1 1
+2 10
+2 11
+3 100
+3 101
+3 110
+int 5
+int 4
+1
+5
+2
+String[] 1
+49 1001011000101010001111111110111011011100110001001
+int 2
+int 16
+1
+10 2013.08.27
+22 Single Round Match 589
+0
+26 net.egork.FlippingBitsDiv1
+1
