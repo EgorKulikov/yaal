@@ -77,6 +77,33 @@ public class Matrix {
 		return result;
 	}
 
+	public static long[] sumPowers(long[] matrix, long exponent, long mod, int side) {
+		long[] result = new long[matrix.length];
+		long[] power = new long[matrix.length];
+		long[] temp = new long[matrix.length];
+		long[] temp2 = new long[matrix.length];
+		sumPowers(matrix, result, power, temp, temp2, exponent + 1, mod, side);
+		return result;
+	}
+
+	private static void sumPowers(long[] matrix, long[] result, long[] power, long[] temp, long[] temp2, long exponent, long mod, int side) {
+		if (exponent == 0) {
+			for (int i = 0; i < matrix.length; i += side + 1)
+				power[i] = 1 % mod;
+			return;
+		}
+		if ((exponent & 1) == 0) {
+			sumPowers(matrix, result, temp, power, temp2, exponent >> 1, mod, side);
+			multiply(temp2, result, temp, mod, side);
+			add(result, temp2, mod, side);
+			multiply(power, temp, temp, mod, side);
+		} else {
+			sumPowers(matrix, result, temp, power, temp2, exponent - 1, mod, side);
+			add(result, temp, mod, side);
+			multiply(power, temp, matrix, mod, side);
+		}
+	}
+
 	public static long[][] convert(long[] matrix, int side) {
 		long[][] result = new long[side][side];
 		for (int i = 0; i < side; i++) {
@@ -118,6 +145,16 @@ public class Matrix {
 		}
 		for (int i = 0; i < c.length; i++)
 			c[i] %= mod;
+	}
+
+	public static void add(long[] c, long[] a, long mod, int side) {
+		for (int i = 0; i < side; i++) {
+			for (int j = 0; j < side; j++) {
+				c[i * side + j] += a[i * side + j];
+				if (c[i * side + j] >= mod)
+					c[i * side + j] -= mod;
+			}
+		}
 	}
 
 	public static long[] fastPower(long[] matrix, long exponent, long mod, int side) {
