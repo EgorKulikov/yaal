@@ -1,0 +1,40 @@
+5 TaskA
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+46 4
+8 -3
+1 1
+2 2 9 -3
+2 0 8 -3
+0 0 9 -3
+0 2 9 -3
+7 1.41421
+1
+1
+42 3
+2 12
+1 4
+3 14 2 -8
+15 92 2 22
+65 35 6 12
+2 -1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-2
+0
+10 2013.08.24
+32 SnarkNews Summer Series Round #4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

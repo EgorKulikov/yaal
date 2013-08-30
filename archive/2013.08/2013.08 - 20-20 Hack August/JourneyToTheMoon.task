@@ -1,0 +1,27 @@
+16 JourneyToTheMoon
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+11 4 2
+0 1
+2 3
+1 4
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+26 net.egork.JourneyToTheMoon
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.08
+17 20-20 Hack August
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
