@@ -1,0 +1,45 @@
+39 E - Vasily the Bear and Painting Square
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+4 0 0
+
+2 1
+
+1
+1
+4 0 1
+
+2 8
+
+1
+2
+4 0 2
+
+3 32
+
+1
+3
+4 1 1
+
+3 32
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+90 on2013_08.on2013_08_09_Codeforces_Round__195.E___Vasily_the_Bear_and_Painting_Square.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.08.09
+21 Codeforces Round #195
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

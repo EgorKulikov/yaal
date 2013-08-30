@@ -1,0 +1,37 @@
+32 C - Vasily the Bear and Sequence
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+12 5
+1 2 3 4 5
+
+6 2
+4 5
+
+1
+1
+8 3
+1 2 4
+
+4 1
+4
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.08.09
+21 Codeforces Round #195
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
