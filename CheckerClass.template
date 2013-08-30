@@ -19,7 +19,11 @@ public class %CheckerClass% implements Checker {
         else
             expected = new %InputClass%(new StringBufferInputStream(expectedOutput));
         %InputClass% actual = new %InputClass%(new StringBufferInputStream(actualOutput));
-        return check(in, expected, actual);
+		try {
+			return check(in, expected, actual);
+		} catch (InputMismatchException e) {
+			return new Verdict(Verdict.VerdictType.PE, e.getMessage());
+		}
     }
 
     public Verdict check(%InputClass% in, %InputClass% expected, %InputClass% actual) {

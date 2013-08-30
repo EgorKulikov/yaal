@@ -1,0 +1,37 @@
+5 TaskD
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+28 10 3
+1 1 1
+1 10 100
+10 10 11
+7 1
+100
+2
+1
+1
+72 1000000000000 2
+1 1234 412412314
+100000000000 999999999999 1000000000010
+17 1234
+900000000006
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.08.19
+23 Yandex.Algorithm Finals
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,38 @@
+6 Ticket
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+81 5 2 3
+CALIFORNIA 10
+HAWAII 8
+NEWYORK 12
+NEWYORK
+NEWYORK
+CALIFORNIA
+NEWYORK
+HAWAII
+14 49.2
+1
+1
+2
+1
+1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+16 net.egork.Ticket
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-3
+0
+10 2013.08.06
+17 20-20 Hack August
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

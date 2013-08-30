@@ -1,0 +1,63 @@
+22 Prime Distance On Tree
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+18 5
+1 2
+2 3
+3 4
+4 5
+
+4 0.5
+
+1
+1
+34 9
+1 2
+1 3
+1 4
+1 5
+2 6
+3 7
+4 8
+5 9
+
+34 0.61111111111111111111111111111111
+1
+2
+26 7
+1 2
+1 3
+2 4
+2 5
+3 6
+3 7
+
+34 0.52380952380952380952380952380952
+1
+3
+6 2
+1 2
+
+2 0
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+84 on2013_08.on2013_08_August_Challenge_2013.Prime_Distance_On_Tree.PrimeDistanceOnTree
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-6
+1
+92 on2013_08.on2013_08_August_Challenge_2013.Prime_Distance_On_Tree.PrimeDistanceOnTreeTestCase
+7 2013.08
+21 August Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

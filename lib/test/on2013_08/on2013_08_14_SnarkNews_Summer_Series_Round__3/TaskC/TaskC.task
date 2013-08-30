@@ -1,0 +1,47 @@
+5 TaskC
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+256 9 27
+...........................
+.MMMMMMM..MMMMMMM..M......M
+.M.....M..M........MM....MM
+.M.....M..M........M.M..M.M
+.MMMMMMM..M........M..MM..M
+.M..T..M..M........M...S..M
+.M.....M..M........M......M
+.M.....M..MMMMMMM..M......M
+...........................
+2 16
+1
+1
+256 9 27
+...........................
+.MMMMMMM..MMMMMMM..M......M
+.M.....M..M........MM....MM
+.M..T..M..M........M.M..M.M
+.MMMMMMM..M........M..MM..M
+.M.....M..M........M...S..M
+.M.....M..M........M......M
+.M.....M..MMMMMMM..M......M
+...........................
+10 Impossible
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+67 on2013_08.on2013_08_14_SnarkNews_Summer_Series_Round__3.TaskC.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.08.14
+32 SnarkNews Summer Series Round #3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

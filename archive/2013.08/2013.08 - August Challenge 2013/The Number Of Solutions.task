@@ -1,0 +1,30 @@
+23 The Number Of Solutions
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+22 2
+2 2 3 5
+1 2013 3 31
+
+4 4
+1
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+30 net.egork.TheNumberOfSolutions
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.08
+21 August Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
