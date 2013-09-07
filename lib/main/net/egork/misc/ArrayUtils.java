@@ -416,4 +416,13 @@ public class ArrayUtils {
 			result[i] = array[i];
 		return result;
 	}
+
+	public static int count(int[] array, int value) {
+		int result = 0;
+		for (int i : array) {
+			if (i == value)
+				result++;
+		}
+		return result;
+	}
 }

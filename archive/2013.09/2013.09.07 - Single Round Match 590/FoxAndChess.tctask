@@ -1,0 +1,68 @@
+11 FoxAndChess
+10 ableToMove
+16 java.lang.String
+2
+16 java.lang.String
+5 begin
+16 java.lang.String
+6 target
+6
+0
+2
+String
+4 R...
+String
+4 ..R.
+String
+8 Possible
+1
+1
+2
+String
+4 ..R.
+String
+4 R...
+String
+10 Impossible
+1
+2
+2
+String
+7 .L.R.R.
+String
+7 L...R.R
+String
+8 Possible
+1
+3
+2
+String
+5 .L.R.
+String
+5 .R.L.
+String
+10 Impossible
+1
+4
+2
+String
+18 LRLLRLRLLRLLRLRLRL
+String
+18 LRLLRLRLLRLLRLRLRL
+String
+8 Possible
+1
+5
+2
+String
+1 L
+String
+1 .
+String
+10 Impossible
+1
+10 2013.09.07
+22 Single Round Match 590
+0
+21 net.egork.FoxAndChess
+1
