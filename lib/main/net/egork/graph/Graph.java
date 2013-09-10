@@ -67,6 +67,13 @@ public class Graph {
 		return graph;
 	}
 
+	public static Graph createTree(int[] parent) {
+		Graph graph = new Graph(parent.length + 1, parent.length);
+		for (int i = 0; i < parent.length; i++)
+			graph.addSimpleEdge(parent[i], i + 1);
+		return graph;
+	}
+
 	public int addEdge(int fromID, int toID, long weight, long capacity, int reverseEdge) {
 		ensureEdgeCapacity(edgeCount + 1);
 		if (firstOutbound[fromID] != -1)

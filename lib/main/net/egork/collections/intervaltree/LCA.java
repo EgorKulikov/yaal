@@ -39,8 +39,7 @@ public class LCA {
 				last[graph[vertex][index[vertex]++]] = vertex;
 			}
 		}
-//		calculate(0, -1, 0);
-		lcaTree = new ArrayBasedLongIntervalTree(order) {
+		lcaTree = new ArrayBasedIntervalTree(order) {
 			@Override
 			protected long joinValue(long left, long right) {
 				if (left == -1)
