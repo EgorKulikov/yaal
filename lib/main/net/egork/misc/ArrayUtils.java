@@ -425,4 +425,20 @@ public class ArrayUtils {
 		}
 		return result;
 	}
+
+	public static int[] merge(int[] first, int[] second) {
+		int[] result = new int[first.length + second.length];
+		int firstIndex = 0;
+		int secondIndex = 0;
+		int index = 0;
+		while (firstIndex < first.length && secondIndex < second.length) {
+			if (first[firstIndex] < second[secondIndex])
+				result[index++] = first[firstIndex++];
+			else
+				result[index++] = second[secondIndex++];
+		}
+		System.arraycopy(first, firstIndex, result, index, first.length - firstIndex);
+		System.arraycopy(second, secondIndex, result, index, second.length - secondIndex);
+		return result;
+	}
 }
