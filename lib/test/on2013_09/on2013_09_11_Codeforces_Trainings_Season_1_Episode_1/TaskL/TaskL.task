@@ -1,0 +1,31 @@
+5 TaskL
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+45 30 40 10
+12.619429 8.163332 3
+10 10 3
+10 10 1
+24 26.033
+7.000
+8.000
+9.798
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+74 on2013_09.on2013_09_11_Codeforces_Trainings_Season_1_Episode_1.TaskL.TaskL
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.11
+39 Codeforces Trainings Season 1 Episode 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

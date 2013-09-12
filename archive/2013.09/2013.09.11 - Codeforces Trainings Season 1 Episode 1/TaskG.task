@@ -1,0 +1,47 @@
+5 TaskG
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+386 10
+3 65 5 66 5 65 6
+3 65 123 66 123 65 124
+3 122 176 123 176 122 177
+3 56 23 57 23 56 24
+3 11 49 12 49 11 50
+3 167 111 168 111 167 112
+3 57 123 58 123 57 124
+3 130 6 131 6 130 7
+3 100 85 101 85 100 86
+3 11 28 12 28 11 29
+10
+159 165 -131 -177
+-153 -192 -197 158
+-77 -86 -98 30
+-177 59 146 63
+192 -117 92 43
+121 -67 -62 -134
+41 -81 130 196
+95 -185 -89 154
+-163 -179 93 175
+113 41 -92 -28
+
+10 BCGEJFIHDA
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+15 net.egork.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.11
+39 Codeforces Trainings Season 1 Episode 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
