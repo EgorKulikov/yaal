@@ -54,7 +54,7 @@ public class TaskD {
 		private final int shift;
 
 		protected ZigzagIntervalTree(int[] array, int z, int shift) {
-			super(array.length);
+			super(array.length, false);
 			this.array = array;
 			this.z = z;
 			this.shift = shift - 2 * z + 2;
