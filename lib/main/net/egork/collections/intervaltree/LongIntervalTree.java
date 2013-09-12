@@ -34,6 +34,7 @@ public abstract class LongIntervalTree extends IntervalTree {
 	@Override
 	protected void initAfter(int root, int left, int right, int middle) {
 		value[root] = joinValue(value[2 * root + 1], value[2 * root + 2]);
+		delta[root] = neutralDelta();
 	}
 
 	@Override
@@ -43,11 +44,12 @@ public abstract class LongIntervalTree extends IntervalTree {
 	@Override
 	protected void initLeaf(int root, int index) {
 		value[root] = initValue(index);
+		delta[root] = neutralDelta();
 	}
 
 	@Override
 	protected void updatePostProcess(int root, int left, int right, int from, int to, long delta, int middle) {
-		//To change body of implemented methods use File | Settings | File Templates.
+		value[root] = joinValue(value[2 * root + 1], value[2 * root + 2]);
 	}
 
 	@Override

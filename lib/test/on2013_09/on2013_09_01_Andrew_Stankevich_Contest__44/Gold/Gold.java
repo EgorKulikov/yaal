@@ -63,7 +63,7 @@ public class Gold {
 			f[x[i]] = i;
 		}
 		SpecialIntervalTree tree = new SpecialIntervalTree(yy.length);
-		tree.init();
+//		tree.init();
 		for (int i = 0; i < y.length; i++) {
 			if (color[i] == first) {
 				tree.update(y[i], yy.length - 1, 1);
@@ -122,7 +122,7 @@ public class Gold {
 			f[y[i]] = i;
 		}
 		SpecialIntervalTree tree = new SpecialIntervalTree(yy.length);
-		tree.init();
+//		tree.init();
 		for (int i = 0; i < y.length; i++) {
 			if (color[i] == first) {
 				tree.update(y[i], yy.length - 1, 1);
