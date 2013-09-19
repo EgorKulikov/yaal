@@ -19,6 +19,10 @@ public class OutputWriter {
 		this.writer = new PrintWriter(writer);
 	}
 
+	public void print(char[] array) {
+		writer.print(array);
+	}
+
 	public void print(Object...objects) {
 		for (int i = 0; i < objects.length; i++) {
 			if (i != 0)

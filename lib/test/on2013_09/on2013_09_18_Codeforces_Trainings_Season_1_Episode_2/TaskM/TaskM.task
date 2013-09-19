@@ -1,0 +1,43 @@
+5 TaskM
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+15 1 5
+1 4
+1 2 3 4
+8 11.00000
+1
+1
+8 0 4
+2 2
+
+9 16.00000
+
+1
+2
+16 1 5
+1 1
+2 2
+3 3
+
+9 25.00000
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+74 on2013_09.on2013_09_18_Codeforces_Trainings_Season_1_Episode_2.TaskM.TaskM
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.18
+39 Codeforces Trainings Season 1 Episode 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
