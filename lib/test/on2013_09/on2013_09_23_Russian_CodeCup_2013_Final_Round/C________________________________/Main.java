@@ -8,7 +8,7 @@ import org.junit.Test;
 public class Main {
 	@Test
 	public void test() throws Exception {
-		if (!NewTester.test("lib/test/on2013_09/on2013_09_23_Russian_CodeCup_2013_Final_Round/C________________________________/C - Быстрая-пребыстрая сортировка.task"))
+		if (!NewTester.test("lib/test/on2013_09/on2013_09_23_Russian_CodeCup_2013_Final_Round/C________________________________/C.task"))
 			Assert.fail();
 	}
 }
