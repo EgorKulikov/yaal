@@ -86,6 +86,10 @@ public class OutputWriter {
 		writer.print(i);
 	}
 
+	public void printLine(char i) {
+		writer.println(i);
+	}
+
 	public void printLine(char[] array) {
 		writer.println(array);
 	}
@@ -100,5 +104,21 @@ public class OutputWriter {
 
 	public void flush() {
 		writer.flush();
+	}
+
+	public void print(long i) {
+		writer.print(i);
+	}
+
+	public void printLine(long i) {
+		writer.println(i);
+	}
+
+	public void print(int i) {
+		writer.print(i);
+	}
+
+	public void printLine(int i) {
+		writer.println(i);
 	}
 }

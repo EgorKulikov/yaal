@@ -47,7 +47,7 @@ public class BidirectionalGraph extends Graph {
 	public int addEdge(int fromID, int toID, long weight, long capacity, int reverseEdge) {
 		int lastEdgeCount = edgeCount;
 		super.addEdge(fromID, toID, weight, capacity, reverseEdge);
-		super.addEdge(toID, fromID, weight, capacity, reverseEdge);
+		super.addEdge(toID, fromID, weight, capacity, reverseEdge == -1 ? -1 : reverseEdge + 1);
 		this.transposedEdge[lastEdgeCount] = lastEdgeCount + 1;
 		this.transposedEdge[lastEdgeCount + 1] = lastEdgeCount;
 		return lastEdgeCount;
