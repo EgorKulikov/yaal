@@ -1,0 +1,35 @@
+60 C - Быстрая-пребыстрая сортировка
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+38 3
+9
+1 2 6 7 5 3 4 8 9
+4
+4 3 2 1
+2
+1 2
+
+6 1
+2
+0
+
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+95 on2013_09.on2013_09_23_Russian_CodeCup_2013_Final_Round.C________________________________.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.23
+32 Russian CodeCup 2013 Final Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

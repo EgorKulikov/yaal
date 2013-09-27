@@ -47,6 +47,8 @@ public class IntegerUtils {
 
 	public static boolean[] generatePrimalityTable(int upTo) {
 		boolean[] isPrime = new boolean[upTo];
+		if (upTo < 2)
+			return isPrime;
 		Arrays.fill(isPrime, true);
 		isPrime[0] = isPrime[1] = false;
 		for (int i = 2; i * i < upTo; i++) {
@@ -393,5 +395,17 @@ public class IntegerUtils {
 		long bReverse = BigInteger.valueOf(bMod).modInverse(BigInteger.valueOf(aMod)).longValue();
 		long mod = aMod * bMod;
 		return (bReverse * aRemainder % mod * bMod + aReverse * bRemainder % mod * aMod) % mod * modGCD + gcdRemainder;
+	}
+
+	public static long[] generatePowers(long base, long maxValue) {
+		if (maxValue <= 0)
+			return new long[0];
+		int size = 1;
+		long current = 1;
+		while (maxValue / base >= current) {
+			current *= base;
+			size++;
+		}
+		return generatePowers(base, size, Long.MAX_VALUE);
 	}
 }
