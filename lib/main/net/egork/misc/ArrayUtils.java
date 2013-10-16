@@ -441,4 +441,8 @@ public class ArrayUtils {
 		System.arraycopy(second, secondIndex, result, index, second.length - secondIndex);
 		return result;
 	}
+
+	public static boolean nextPermutation(int[] array) {
+		return new IntArray(array).nextPermutation();
+	}
 }

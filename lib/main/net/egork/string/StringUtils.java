@@ -124,7 +124,7 @@ public class StringUtils {
 		int[][] result = new int[s.length() + 1][26];
 		result[0][s.charAt(0) - 'a'] = 1;
 		for (int i = 1; i <= s.length(); i++) {
-			System.arraycopy(result[prefixFunction[i]], 0, result[i], 0, 26);
+			System.arraycopy(result[prefixFunction[i - 1]], 0, result[i], 0, 26);
 			if (i != s.length())
 				result[i][s.charAt(i) - 'a'] = i + 1;
 		}
