@@ -109,4 +109,11 @@ public class Polygon {
 	public static double triangleSquare(Point a, Point b, Point c) {
 		return Math.abs((a.x - b.x) * (a.y + b.y) + (b.x - c.x) * (b.y + c.y) + (c.x - a.x) * (c.y + a.y)) / 2;
 	}
+
+	public double perimeter() {
+		double result = vertices[0].distance(vertices[vertices.length - 1]);
+		for (int i = 1; i < vertices.length; i++)
+			result += vertices[i].distance(vertices[i - 1]);
+		return result;
+	}
 }

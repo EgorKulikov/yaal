@@ -1,0 +1,46 @@
+17 D - Robot Control
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+32 4 6
+1 2
+2 1
+1 3
+3 1
+2 4
+3 4
+1 4
+
+2 1
+
+1
+1
+28 4 5
+1 2
+2 1
+1 3
+2 4
+3 4
+1 4
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+68 on2013_09.on2013_09_20_Codeforces_Round__201.D___Robot_Control.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.20
+21 Codeforces Round #201
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,36 @@
+28 B - Lucky Common Subsequence
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+35 AJKEQSLOBSROFGZ
+OVGURWZLWVLUXTH
+OZ
+
+3 ORZ
+1
+1
+7 AA
+A
+A
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.20
+21 Codeforces Round #201
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
