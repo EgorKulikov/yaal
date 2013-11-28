@@ -1,0 +1,38 @@
+5 Mafia
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+49 5
+ZDSSS
+DISKE
+ESJJJ
+ECEEE
+VVVVV
+DISC
+DISK
+DISP
+0
+
+26 1,2 4,2
+2,1 2,4
+Not found
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+48 on2013_10.on2013_10_16_Cryptoss_2013.Mafia.Mafia
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.16
+13 Cryptoss 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

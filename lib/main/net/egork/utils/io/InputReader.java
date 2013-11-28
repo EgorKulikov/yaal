@@ -99,7 +99,8 @@ public class InputReader {
 			c = read();
 		StringBuilder res = new StringBuilder();
 		do {
-			res.appendCodePoint(c);
+			if (Character.isValidCodePoint(c))
+				res.appendCodePoint(c);
 			c = read();
 		} while (!isSpaceChar(c));
 		return res.toString();

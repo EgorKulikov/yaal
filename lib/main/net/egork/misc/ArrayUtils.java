@@ -44,6 +44,11 @@ public class ArrayUtils {
 			fill(row, value);
 	}
 
+	public static void fill(double[][][][][] array, double value) {
+		for (double[][][][] row : array)
+			fill(row, value);
+	}
+
 	public static void fill(long[][][] array, long value) {
 		for (long[][] row : array)
 			fill(row, value);
@@ -444,5 +449,25 @@ public class ArrayUtils {
 
 	public static boolean nextPermutation(int[] array) {
 		return new IntArray(array).nextPermutation();
+	}
+
+	public static <V>void reverse(V[] array) {
+		for (int i = 0, j = array.length - 1; i < j; i++, j--) {
+			V temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+	}
+
+	public static IntComparator compareBy(final int[]...arrays) {
+		return new IntComparator() {
+			public int compare(int first, int second) {
+				for (int[] array : arrays) {
+					if (array[first] != array[second])
+						return Integer.compare(array[first], array[second]);
+				}
+				return 0;
+			}
+		};
 	}
 }

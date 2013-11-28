@@ -1,0 +1,40 @@
+5 TaskD
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+136 2
+300 400
+3
+0 0 300 200
+0 200 200 400
+200 200 300 400
+300 300
+5
+0 0 200 100
+200 0 300 200
+0 100 100 300
+100 200 300 300
+100 200 300 300
+
+12 60000
+90000
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.16
+39 Codeforces Trainings Season 1 Episode 6
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
