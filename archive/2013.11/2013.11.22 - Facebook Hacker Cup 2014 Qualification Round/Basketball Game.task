@@ -1,0 +1,67 @@
+15 Basketball Game
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+24 basketball.*game.*[.]txt
+6 CUSTOM
+18 basketballgame.out
+1
+0
+441 5
+6 3 2
+Wai 99 131
+Weiyan 81 155
+Lin 80 100
+Purav 86 198
+Slawek 80 192
+Meihong 44 109
+7 93 2
+Paul 82 189
+Kittipat 62 126
+Thomas 17 228
+Fabien 57 233
+Yifei 65 138
+Liang 92 100
+Victor 53 124
+6 62 3
+Meihong 33 192
+Duc 62 162
+Wai 70 148
+Fabien 19 120
+Bhuwan 48 176
+Vlad 30 225
+8 59 3
+Anil 38 180
+Song 7 187
+David 65 159
+Lin 45 121
+Ranjeeth 39 183
+Torbjorn 26 181
+Clifton 57 158
+Phil 3 183
+4 72 1
+Anh 2 187
+Erling 69 226
+Purav 0 199
+Zejia 29 163
+
+181 Case #1: Purav Slawek Wai Weiyan
+Case #2: Fabien Kittipat Liang Paul
+Case #3: Bhuwan Duc Fabien Meihong Vlad Wai
+Case #4: Anil Lin Phil Ranjeeth Song Torbjorn
+Case #5: Erling Zejia
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+24 net.egork.BasketballGame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.11.22
+44 Facebook Hacker Cup 2014 Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

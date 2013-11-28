@@ -1,0 +1,58 @@
+15 Square Detector
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+24 square.*detector.*[.]txt
+6 CUSTOM
+18 squaredetector.out
+1
+-1
+132 5
+4
+..##
+..##
+....
+....
+4
+..##
+..##
+#...
+....
+4
+####
+#..#
+#..#
+####
+5
+#####
+#####
+#####
+#####
+.....
+5
+#####
+#####
+#####
+#####
+#####
+
+62 Case #1: YES
+Case #2: NO
+Case #3: NO
+Case #4: NO
+Case #5: YES
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+24 net.egork.SquareDetector
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.11.22
+44 Facebook Hacker Cup 2014 Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

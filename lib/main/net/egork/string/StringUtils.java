@@ -120,13 +120,18 @@ public class StringUtils {
     }
 
 	public static int[][] buildPrefixAutomaton(CharSequence s) {
+		return buildPrefixAutomaton(s, 'a', 'z');
+	}
+
+	public static int[][] buildPrefixAutomaton(CharSequence s, char from, char to) {
 		int[] prefixFunction = prefixFunction(s);
-		int[][] result = new int[s.length() + 1][26];
-		result[0][s.charAt(0) - 'a'] = 1;
+		int length = to - from + 1;
+		int[][] result = new int[s.length() + 1][length];
+		result[0][s.charAt(0) - from] = 1;
 		for (int i = 1; i <= s.length(); i++) {
-			System.arraycopy(result[prefixFunction[i - 1]], 0, result[i], 0, 26);
+			System.arraycopy(result[prefixFunction[i - 1]], 0, result[i], 0, length);
 			if (i != s.length())
-				result[i][s.charAt(i) - 'a'] = i + 1;
+				result[i][s.charAt(i) - from] = i + 1;
 		}
 		return result;
 	}

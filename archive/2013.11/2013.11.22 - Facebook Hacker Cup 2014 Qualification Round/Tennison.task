@@ -1,0 +1,37 @@
+8 Tennison
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+16 tennison.*[.]txt
+6 CUSTOM
+12 tennison.out
+1
+-1
+224 5
+1 0.800 0.100 0.500 0.500 0.500 0.500 0.500
+2 0.600 0.200 0.500 0.100 1.000 0.100 1.000
+1 1.000 0.000 1.000 1.000 1.000 1.000 1.000
+25 0.984 0.222 0.993 0.336 0.207 0.084 0.478
+58 0.472 0.182 0.418 0.097 0.569 0.816 0.711
+
+90 Case #1: 0.450000
+Case #2: 0.352000
+Case #3: 1.000000
+Case #4: 0.999956
+Case #5: 0.000000
+
+1
+14 main/net/egork
+9 -Xmx4096M
+4 Main
+18 net.egork.Tennison
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+26 net.egork.TennisonTestCase
+10 2013.11.22
+44 Facebook Hacker Cup 2014 Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
