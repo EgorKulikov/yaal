@@ -72,4 +72,10 @@ public class Point {
 		double y = in.readDouble();
 		return new Point(x, y);
 	}
+
+	public Point rotate(double angle) {
+		double nx = x * Math.cos(angle) - y * Math.sin(angle);
+		double ny = y * Math.cos(angle) + x * Math.sin(angle);
+		return new Point(nx, ny);
+	}
 }
