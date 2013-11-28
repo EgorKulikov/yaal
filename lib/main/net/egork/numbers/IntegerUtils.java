@@ -157,6 +157,10 @@ public class IntegerUtils {
 		return (a - trueMod(a, b)) / b;
 	}
 
+	public static long trueDivide(long a, long b) {
+		return (a - trueMod(a, b)) / b;
+	}
+
 	public static int trueMod(int a, int b) {
 		a %= b;
 		a += b;

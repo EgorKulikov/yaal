@@ -1,0 +1,39 @@
+23 B - Sereja ans Anagrams
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+22 5 3 1
+1 2 3 2 1
+1 2 3
+
+6 2
+1 3
+
+1
+1
+24 6 3 2
+1 3 2 2 3 1
+1 2 3
+
+6 2
+1 2
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+83 on2013_11.on2013_11_26_Codeforces_Round__215__Div__1_.B___Sereja_ans_Anagrams.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.11.26
+30 Codeforces Round #215 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

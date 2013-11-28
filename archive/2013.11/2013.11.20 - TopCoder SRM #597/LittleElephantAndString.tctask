@@ -1,0 +1,62 @@
+23 LittleElephantAndString
+9 getNumber
+3 int
+2
+16 java.lang.String
+1 A
+16 java.lang.String
+1 B
+6
+0
+2
+String
+3 ABC
+String
+3 CBA
+int 2
+1
+1
+2
+String
+1 A
+String
+1 B
+int -1
+1
+2
+2
+String
+6 AAABBB
+String
+6 BBBAAA
+int 3
+1
+3
+2
+String
+26 ABCDEFGHIJKLMNOPQRSTUVWXYZ
+String
+26 ZYXWVUTSRQPONMLKJIHGFEDCBA
+int 25
+1
+4
+2
+String
+1 A
+String
+1 A
+int 0
+1
+5
+2
+String
+5 DCABA
+String
+5 DACBA
+int 2
+1
+10 2013.11.20
+22 Single Round Match 597
+0
+33 net.egork.LittleElephantAndString
+1

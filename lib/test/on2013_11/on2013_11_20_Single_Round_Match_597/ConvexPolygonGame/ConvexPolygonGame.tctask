@@ -1,0 +1,98 @@
+17 ConvexPolygonGame
+6 winner
+16 java.lang.String
+2
+5 int[]
+1 X
+5 int[]
+1 Y
+6
+0
+2
+int[] 3
+0
+1
+0
+int[] 3
+0
+0
+1
+String
+5 Petya
+1
+1
+2
+int[] 3
+0
+4
+2
+int[] 3
+0
+0
+2
+String
+5 Masha
+1
+2
+2
+int[] 4
+0
+100
+100
+0
+int[] 4
+0
+0
+100
+100
+String
+5 Masha
+1
+3
+2
+int[] 4
+0
+50
+100
+50
+int[] 4
+0
+-1
+0
+1
+String
+5 Petya
+1
+4
+2
+int[] 4
+-100000
+100000
+100000
+-100000
+int[] 4
+-1
+-1
+1
+1
+String
+5 Masha
+1
+5
+2
+int[] 3
+0
+2
+4
+int[] 3
+0
+0
+2
+String
+5 Masha
+1
+10 2013.11.20
+22 Single Round Match 597
+0
+81 on2013_11.on2013_11_20_Single_Round_Match_597.ConvexPolygonGame.ConvexPolygonGame
+1
