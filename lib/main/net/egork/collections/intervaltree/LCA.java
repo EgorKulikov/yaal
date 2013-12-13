@@ -1,5 +1,7 @@
 package net.egork.collections.intervaltree;
 
+import net.egork.graph.Graph;
+
 import java.util.Arrays;
 
 /**
@@ -8,18 +10,20 @@ import java.util.Arrays;
 public class LCA {
 	private final long[] order;
 	private final int[] position;
-	private final int[][] graph;
+	private final Graph graph;
 	private final LongIntervalTree lcaTree;
 	private final int[] level;
 
-	public LCA(int[][] graph) {
+	public LCA(Graph graph) {
 		this.graph = graph;
-		order = new long[2 * graph.length - 1];
-		position = new int[graph.length];
-		level = new int[graph.length];
-		int[] index = new int[graph.length];
-		int[] last = new int[graph.length];
-		int[] stack = new int[graph.length];
+		order = new long[2 * graph.vertexCount() - 1];
+		position = new int[graph.vertexCount()];
+		level = new int[graph.vertexCount()];
+		int[] index = new int[graph.vertexCount()];
+		for (int i = 0; i < index.length; i++)
+			index[i] = graph.firstOutbound(i);
+		int[] last = new int[graph.vertexCount()];
+		int[] stack = new int[graph.vertexCount()];
 		int size = 1;
 		int j = 0;
 		last[0] = -1;
@@ -31,12 +35,13 @@ public class LCA {
 			order[j++] = vertex;
 			if (last[vertex] != -1)
 				level[vertex] = level[last[vertex]] + 1;
-			while (index[vertex] < graph[vertex].length && last[vertex] == graph[vertex][index[vertex]])
-				index[vertex]++;
-			if (index[vertex] < graph[vertex].length) {
+			while (index[vertex] != -1 && last[vertex] == graph.destination(index[vertex]))
+				index[vertex] = graph.nextOutbound(index[vertex]);
+			if (index[vertex] != -1) {
 				stack[size++] = vertex;
-				stack[size++] = graph[vertex][index[vertex]];
-				last[graph[vertex][index[vertex]++]] = vertex;
+				stack[size++] = graph.destination(index[vertex]);
+				last[graph.destination(index[vertex])] = vertex;
+				index[vertex] = graph.nextOutbound(index[vertex]);
 			}
 		}
 		lcaTree = new ArrayBasedIntervalTree(order) {
@@ -95,9 +100,10 @@ public class LCA {
 			level[vertex] = level[last] + 1;
 		position[vertex] = currentPosition;
 		order[currentPosition++] = vertex;
-		for (int i : graph[vertex]) {
-			if (i != last) {
-				currentPosition = calculate(i, vertex, currentPosition);
+		for (int i = graph.firstOutbound(vertex); i != -1; i = graph.nextOutbound(i)) {
+			int to = graph.destination(i);
+			if (to != last) {
+				currentPosition = calculate(to, vertex, currentPosition);
 				order[currentPosition++] = vertex;
 			}
 		}

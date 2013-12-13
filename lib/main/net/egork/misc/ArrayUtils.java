@@ -11,6 +11,7 @@ import java.util.Comparator;
  */
 public class ArrayUtils {
 	private static int[] tempInt = new int[0];
+	private static long[] tempLong = new long[0];
 
 	public static Integer[] generateOrder(int size) {
 		Integer[] order = new Integer[size];
@@ -181,6 +182,13 @@ public class ArrayUtils {
 			return;
 		size = Math.max(size, tempInt.length << 1);
 		tempInt = new int[size];
+	}
+
+	private static void ensureCapacityLong(int size) {
+		if (tempLong.length >= size)
+			return;
+		size = Math.max(size, tempLong.length << 1);
+		tempLong = new long[size];
 	}
 
 	private static void sortImpl(int[] array, int from, int to, int[] temp, int fromTemp, int toTemp, IntComparator comparator) {
@@ -408,11 +416,25 @@ public class ArrayUtils {
 			order(order, array);
 	}
 
+	public static void orderBy(long[] base, long[]... arrays) {
+		int[] order = ArrayUtils.order(base);
+		order(order, base);
+		for (long[] array : arrays)
+			order(order, array);
+	}
+
 	public static void order(int[] order, int[] array) {
 		ensureCapacityInt(order.length);
 		for (int i = 0; i < order.length; i++)
 			tempInt[i] = array[order[i]];
 		System.arraycopy(tempInt, 0, array, 0, array.length);
+	}
+
+	public static void order(int[] order, long[] array) {
+		ensureCapacityLong(order.length);
+		for (int i = 0; i < order.length; i++)
+			tempLong[i] = array[order[i]];
+		System.arraycopy(tempLong, 0, array, 0, array.length);
 	}
 
 	public static long[] asLong(int[] array) {
@@ -469,5 +491,27 @@ public class ArrayUtils {
 				return 0;
 			}
 		};
+	}
+
+	public static long minElement(long[] array) {
+		return array[minPosition(array)];
+	}
+
+	public static int minPosition(long[] array) {
+		return minPosition(array, 0, array.length);
+	}
+
+	public static int minPosition(long[] array, int from, int to) {
+		if (from >= to)
+			return -1;
+		long min = array[from];
+		int result = from;
+		for (int i = from + 1; i < to; i++) {
+			if (array[i] < min) {
+				min = array[i];
+				result = i;
+			}
+		}
+		return result;
 	}
 }

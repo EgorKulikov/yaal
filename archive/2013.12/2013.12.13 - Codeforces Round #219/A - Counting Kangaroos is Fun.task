@@ -1,0 +1,49 @@
+29 A - Counting Kangaroos is Fun
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+18 8
+2
+5
+7
+6
+9
+8
+4
+2
+
+2 5
+
+1
+1
+18 8
+9
+1
+6
+2
+6
+5
+8
+3
+
+2 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.13
+21 Codeforces Round #219
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

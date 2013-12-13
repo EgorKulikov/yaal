@@ -1,0 +1,51 @@
+10 Cube Cakes
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+59 3
+2 40
+abcdefgh
+abcdefgh
+2 100
+abcdefgh
+ccccccch
+1 100
+a
+b
+
+11 2 1
+1 2
+-1
+
+1
+1
+33 2
+1 0
+a
+b
+2 13
+abcdefgh
+aaaaaaaa
+
+8 1 1
+1 1
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+19 net.egork.CubeCakes
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.10
+23 December Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
