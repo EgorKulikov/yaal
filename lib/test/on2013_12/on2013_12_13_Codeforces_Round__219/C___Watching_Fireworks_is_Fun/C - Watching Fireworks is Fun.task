@@ -1,0 +1,39 @@
+29 C - Watching Fireworks is Fun
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+28 50 3 1
+49 1 1
+26 1 4
+6 1 10
+
+4 -31
+
+1
+1
+25 10 2 1
+1 1000 4
+9 1000 4
+
+5 1992
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+80 on2013_12.on2013_12_13_Codeforces_Round__219.C___Watching_Fireworks_is_Fun.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+88 on2013_12.on2013_12_13_Codeforces_Round__219.C___Watching_Fireworks_is_Fun.TaskCTestCase
+10 2013.12.13
+21 Codeforces Round #219
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
