@@ -1,0 +1,35 @@
+26 Problem 2. Optimal Milking
+6 SINGLE
+6 CUSTOM
+10 optmilk.in
+6 CUSTOM
+11 optmilk.out
+1
+-1
+27 5 3
+1
+2
+3
+4
+5
+5 2
+2 7
+1 10
+
+3 32
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+17 net.egork.Optmilk
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.13
+33 USACO 2013 December Contest, Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
