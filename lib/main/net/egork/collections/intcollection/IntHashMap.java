@@ -5,10 +5,7 @@ import net.egork.numbers.IntegerUtils;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
-/**
- * @author egorku@yandex-team.ru
- */
-public class IntHashSet extends IntSet {
+public class IntHashMap extends IntSet {
 	private static final Random RND = new Random();
 	private static final int[] SHIFTS = new int[4];
 	private static final byte PRESENT_MASK = 1;
@@ -20,20 +17,22 @@ public class IntHashSet extends IntSet {
 	}
 
 	private int size;
+	private int[] keys;
 	private int[] values;
 	private byte[] present;
 	private int step;
 	private int ratio;
 
-	public IntHashSet() {
+	public IntHashMap() {
 		this(3);
 	}
 
 
-	public IntHashSet(int capacity) {
+	public IntHashMap(int capacity) {
 		capacity = Math.max(capacity, 1);
-		values = new int[capacity];
+		keys = new int[capacity];
 		present = new byte[capacity];
+		values = new int[capacity];
 		ratio = 2;
 		initStep(capacity);
 	}
@@ -47,26 +46,26 @@ public class IntHashSet extends IntSet {
 	@Override
 	public IntIterator iterator() {
 		return new IntIterator() {
-			private int position = size == 0 ? values.length : -1;
+			private int position = size == 0 ? keys.length : -1;
 
 			public int value() throws NoSuchElementException {
 				if (position == -1)
 					advance();
-				if (position >= values.length)
+				if (position >= keys.length)
 					throw new NoSuchElementException();
-				return values[position];
+				return keys[position];
 			}
 
 			public void advance() throws NoSuchElementException {
-				if (position >= values.length)
+				if (position >= keys.length)
 					throw new NoSuchElementException();
 				position++;
-				while (position < values.length && (present[position] & PRESENT_MASK) == 0)
+				while (position < keys.length && (present[position] & PRESENT_MASK) == 0)
 					position++;
 			}
 
 			public boolean isValid() {
-				return position < values.length;
+				return position < keys.length;
 			}
 		};
 	}
@@ -78,53 +77,62 @@ public class IntHashSet extends IntSet {
 
 	@Override
 	public void add(int value) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void put(int key, int value) {
 		ensureCapacity((size + 1) * ratio);
-		int current = getHash(value);
+		int current = getHash(key);
 		while ((present[current] & PRESENT_MASK) != 0) {
-			if (values[current] == value)
+			if (keys[current] == key) {
+				values[current] = value;
 				return;
+			}
 			current += step;
-			if (current >= values.length)
-				current -= values.length;
+			if (current >= keys.length)
+				current -= keys.length;
 		}
 		present[current] = PRESENT_MASK;
+		keys[current] = key;
 		values[current] = value;
 		size++;
 	}
 
-	private int getHash(int value) {
-		int result = value;
+	private int getHash(int key) {
+		int result = key;
 		for (int i : SHIFTS)
-			result ^= value >> i;
-		result %= values.length;
+			result ^= key >> i;
+		result %= keys.length;
 		if (result < 0)
-			result += values.length;
+			result += keys.length;
 		return result;
 	}
 
 	private void ensureCapacity(int capacity) {
-		if (values.length < capacity) {
-			capacity = Math.max(capacity * 2, values.length);
+		if (keys.length < capacity) {
+			capacity = Math.max(capacity * 2, keys.length);
 			rebuild(capacity);
 		}
 	}
 
 	private void squish() {
-		if (values.length > size * ratio * 2 + 10) {
+		if (keys.length > size * ratio * 2 + 10) {
 			rebuild(size * ratio + 3);
 		}
 	}
 
 	private void rebuild(int capacity) {
 		initStep(capacity);
-		int[] oldValues = values;
+		int[] oldKeys = keys;
 		byte[] oldPresent = present;
-		values = new int[capacity];
+		int[] oldValues = values;
+		keys = new int[capacity];
 		present = new byte[capacity];
+		values = new int[capacity];
 		size = 0;
-		for (int i = 0; i < oldValues.length; i++) {
+		for (int i = 0; i < oldKeys.length; i++) {
 			if ((oldPresent[i] & PRESENT_MASK) == PRESENT_MASK)
-				add(oldValues[i]);
+				put(oldKeys[i], oldValues[i]);
 		}
 	}
 
@@ -132,28 +140,40 @@ public class IntHashSet extends IntSet {
 	public void remove(int value) {
 		int current = getHash(value);
 		while (present[current] != 0) {
-			if (values[current] == value && (present[current] & PRESENT_MASK) != 0) {
+			if (keys[current] == value && (present[current] & PRESENT_MASK) != 0) {
 				present[current] = REMOVED_MASK;
 				size--;
 				squish();
 				return;
 			}
 			current += step;
-			if (current >= values.length)
-				current -= values.length;
+			if (current >= keys.length)
+				current -= keys.length;
 		}
 	}
 
 	@Override
-	public boolean contains(int value) {
-		int current = getHash(value);
+	public boolean contains(int key) {
+		int current = getHash(key);
 		while (present[current] != 0) {
-			if (values[current] == value && (present[current] & PRESENT_MASK) != 0)
+			if (keys[current] == key && (present[current] & PRESENT_MASK) != 0)
 				return true;
 			current += step;
-			if (current >= values.length)
-				current -= values.length;
+			if (current >= keys.length)
+				current -= keys.length;
 		}
 		return false;
+	}
+
+	public int get(int key) {
+		int current = getHash(key);
+		while (present[current] != 0) {
+			if (keys[current] == key && (present[current] & PRESENT_MASK) != 0)
+				return values[current];
+			current += step;
+			if (current >= keys.length)
+				current -= keys.length;
+		}
+		throw new NoSuchElementException();
 	}
 }

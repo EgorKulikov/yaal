@@ -1,0 +1,33 @@
+22 A - Divisible by Seven
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+5 1689
+
+5 1869
+
+1
+1
+6 18906
+
+6 18690
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+73 on2013_12.on2013_12_24_Codeforces_Round__221.A___Divisible_by_Seven.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.24
+21 Codeforces Round #221
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
