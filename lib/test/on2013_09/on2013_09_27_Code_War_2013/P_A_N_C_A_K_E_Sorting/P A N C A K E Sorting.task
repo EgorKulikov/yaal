@@ -1,0 +1,38 @@
+21 P A N C A K E Sorting
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+62 4
+3 2
+d s l 
+7 5
+u e q n f m g 
+2 2
+a y
+9 4
+t j l a z i b y g
+
+10 2
+NP
+1
+NP
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+73 on2013_09.on2013_09_27_Code_War_2013.P_A_N_C_A_K_E_Sorting.PANCAKESorting
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.27
+13 Code War 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

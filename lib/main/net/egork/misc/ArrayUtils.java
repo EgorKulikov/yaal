@@ -125,6 +125,16 @@ public class ArrayUtils {
 			fill(subArray, value);
 	}
 
+	public static void fill(int[][][][][][] array, int value) {
+		for (int[][][][][] subArray : array)
+			fill(subArray, value);
+	}
+
+	public static void fill(int[][][][][][][] array, int value) {
+		for (int[][][][][][] subArray : array)
+			fill(subArray, value);
+	}
+
 	public static Integer[] order(int size, Comparator<Integer> comparator) {
 		Integer[] order = generateOrder(size);
 		Arrays.sort(order, comparator);
@@ -148,6 +158,11 @@ public class ArrayUtils {
 
 	public static void fill(byte[][][] array, byte value) {
 		for (byte[][] row : array)
+			fill(row, value);
+	}
+
+	public static void fill(byte[][][][] array, byte value) {
+		for (byte[][][] row : array)
 			fill(row, value);
 	}
 
@@ -447,6 +462,15 @@ public class ArrayUtils {
 	public static int count(int[] array, int value) {
 		int result = 0;
 		for (int i : array) {
+			if (i == value)
+				result++;
+		}
+		return result;
+	}
+
+	public static int count(boolean[] array, boolean value) {
+		int result = 0;
+		for (boolean i : array) {
 			if (i == value)
 				result++;
 		}

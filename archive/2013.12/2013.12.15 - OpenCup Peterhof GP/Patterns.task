@@ -1,0 +1,59 @@
+8 Patterns
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+6
+0
+4 a
+a
+
+1 a
+1
+1
+4 a
+b
+
+10 Impossible
+1
+2
+4 *
+b
+
+1 b
+1
+3
+18 h*ervro*t
+her*vrot
+13 herervrovrot
+
+1
+4
+20 h*er*vrot
+hervr*o*t
+
+13 hervroervrot
+
+1
+5
+18 hervrot
+*her*rot*
+
+8 hervrot
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+18 net.egork.Patterns
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.15
+19 OpenCup Peterhof GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

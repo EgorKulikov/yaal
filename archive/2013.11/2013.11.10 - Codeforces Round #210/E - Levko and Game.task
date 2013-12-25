@@ -1,0 +1,56 @@
+18 E - Levko and Game
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+42 4 1 3
+1 3 4
+3 2 2
+1 2 1 3
+2 4 1 3
+3 4 1 3
+
+10 WIN
+1 1 3 
+1
+1
+42 4 1 3
+1 3 4
+3 2 2
+1 2 1 3
+2 4 1 3
+3 4 1 2
+
+11 DRAW
+1 1 2 
+1
+2
+52 5 4 2
+1 2 5
+1 3 3
+1 4 4
+2 3 2
+2 4 3
+3 5 1 5
+4 5 4 7
+
+5 LOSE
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.11.10
+21 Codeforces Round #210
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

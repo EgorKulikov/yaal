@@ -1,0 +1,110 @@
+13 FoxAndFencing
+9 WhoCanWin
+16 java.lang.String
+5
+3 int
+4 mov1
+3 int
+4 mov2
+3 int
+4 rng1
+3 int
+4 rng2
+3 int
+1 d
+9
+0
+5
+int 1
+int 58
+int 1
+int 58
+int 2
+String
+4 Ciel
+1
+1
+5
+int 2
+int 1
+int 1
+int 100
+int 50
+String
+4 Liss
+1
+2
+5
+int 2
+int 1
+int 1
+int 100
+int 150
+String
+4 Draw
+1
+3
+5
+int 100
+int 100
+int 100
+int 100
+int 100000000
+String
+4 Draw
+1
+4
+5
+int 100
+int 1
+int 100
+int 1
+int 100000000
+String
+4 Ciel
+1
+5
+5
+int 100
+int 1
+int 100
+int 250
+int 100000000
+String
+4 Draw
+1
+6
+5
+int 100
+int 1
+int 100
+int 150
+int 100000000
+String
+4 Ciel
+1
+7
+5
+int 100
+int 50
+int 100
+int 1
+int 100000000
+String
+4 Ciel
+1
+8
+5
+int 100
+int 150
+int 100
+int 1
+int 100000000
+String
+4 Draw
+1
+10 2013.11.29
+22 Single Round Match 598
+0
+23 net.egork.FoxAndFencing
+1

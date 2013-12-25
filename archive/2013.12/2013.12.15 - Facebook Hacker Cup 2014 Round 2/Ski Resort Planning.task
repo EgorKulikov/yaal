@@ -1,0 +1,48 @@
+19 Ski Resort Planning
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+29 ski.*resort.*planning.*[.]txt
+6 CUSTOM
+21 skiresortplanning.out
+2
+0
+38 5
+4
+0 0 1
+6
+0 0 0 2 2
+2
+0
+3
+0 0
+3
+0 1
+
+56 Case #1: 2
+Case #2: 20
+Case #3: 1
+Case #4: 2
+Case #5: 1
+
+1
+1
+12 1
+5
+0 1 1 0
+
+-1
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+27 net.egork.SkiResortPlanning
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.15
+32 Facebook Hacker Cup 2014 Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

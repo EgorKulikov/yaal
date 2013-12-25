@@ -1,0 +1,37 @@
+5 TaskF
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+31 7 1090901 4 87650 0901 109 090 
+9 7 10 3 4
+
+1
+1
+39 10 5821052680 4 210526 2105 582 105268 
+8 8 6 3 9
+
+1
+2
+11 3 001 1 11
+
+2 4
+
+1
+14 main/net/egork
+15 -Xmx32m -Xss32m
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.28
+13 COCI Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

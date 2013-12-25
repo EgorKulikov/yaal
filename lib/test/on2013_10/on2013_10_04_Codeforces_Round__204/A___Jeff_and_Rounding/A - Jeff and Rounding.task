@@ -1,0 +1,35 @@
+21 A - Jeff and Rounding
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+38 3
+0.000 0.500 0.750 1.000 2.000 3.000
+
+6 0.250
+
+1
+1
+55 3
+4469.000 6526.000 4864.000 9356.383 7490.000 995.896
+
+6 0.279
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+72 on2013_10.on2013_10_04_Codeforces_Round__204.A___Jeff_and_Rounding.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.04
+21 Codeforces Round #204
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

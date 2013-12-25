@@ -1,0 +1,46 @@
+11 Magic Pairs
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 .*magic.*pairs.*[.]txt
+6 CUSTOM
+14 magicpairs.out
+1
+-1
+133 5
+8 6
+0 0 1 3 5
+0 1 0 4 5
+5 5
+2 5 2 5 7
+2 9 3 2 7
+12 11
+2 5 2 5 7
+2 9 3 2 7
+10 10
+0 1 0 1 11
+0 0 1 1 11
+10 10
+0 1 0 1 11
+0 0 1 10 11
+
+56 Case #1: 3
+Case #2: 3
+Case #3: 6
+Case #4: 10
+Case #5: 1
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+20 net.egork.MagicPairs
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.15
+32 Facebook Hacker Cup 2014 Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

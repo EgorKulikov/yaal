@@ -1,0 +1,36 @@
+5 TaskA
+6 SINGLE
+6 CUSTOM
+16 bag-repacking.in
+6 CUSTOM
+17 bag-repacking.out
+2
+0
+22 5
+0 1 0 3 1
+2 3 0 3 3
+
+-1
+1
+1
+10 2
+2 0
+2 0
+
+2 0
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.15
+19 OpenCup Peterhof GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

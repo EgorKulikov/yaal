@@ -1,0 +1,50 @@
+15 Hold'em Numbers
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+25 hold.*em.*numbers.*[.]txt
+6 CUSTOM
+18 hold'emnumbers.out
+2
+0
+57 5
+8 1
+7 8
+8 1
+1 2
+8 1
+7 4
+11 2
+6 9
+9 6
+12 3
+6 9
+11 5
+9 6
+
+58 Case #1: B
+Case #2: F
+Case #3: B
+Case #4: BB
+Case #5: FBF
+
+1
+1
+8 1
+100 0
+
+-1
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+85 on2013_12.on2013_12_15_Facebook_Hacker_Cup_2014_Round_2.Hold_em_Numbers.HoldemNumbers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.15
+32 Facebook Hacker Cup 2014 Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

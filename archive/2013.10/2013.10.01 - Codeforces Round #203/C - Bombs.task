@@ -1,0 +1,62 @@
+9 C - Bombs
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+12 2
+1 1
+-1 -1
+
+59 12
+1 1 R
+1 1 U
+2
+1 1 L
+1 1 D
+3
+1 1 L
+1 1 D
+2
+1 1 R
+1 1 U
+3
+
+1
+1
+14 3
+5 0
+0 5
+1 0
+
+51 12
+1 1 R
+2
+1 1 L
+3
+1 5 R
+2
+1 5 L
+3
+1 5 U
+2
+1 5 D
+3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.01
+21 Codeforces Round #203
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

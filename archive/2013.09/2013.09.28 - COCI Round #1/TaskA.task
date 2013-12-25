@@ -1,0 +1,33 @@
+5 TaskA
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+158 18 babic keksic boric bukic sarmic balic kruzic hrenovkic beslic boksic krafnic pecivic klavirkovic kukumaric sunkic kolacic kovacic prijestolonasljednikovic
+
+3 bk
+
+1
+1
+42 6 michael jordan lebron james kobe bryant
+
+8 PREDAJA
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.28
+13 COCI Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

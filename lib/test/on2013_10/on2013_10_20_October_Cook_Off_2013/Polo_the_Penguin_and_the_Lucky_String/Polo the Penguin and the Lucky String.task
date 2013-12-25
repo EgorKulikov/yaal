@@ -1,0 +1,32 @@
+37 Polo the Penguin and the Lucky String
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+23 2
+4
+4747
+10
+4447477747
+
+7 4
+  20
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+114 on2013_10.on2013_10_20_October_Cook_Off_2013.Polo_the_Penguin_and_the_Lucky_String.PoloThePenguinAndTheLuckyString
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.20
+21 October Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

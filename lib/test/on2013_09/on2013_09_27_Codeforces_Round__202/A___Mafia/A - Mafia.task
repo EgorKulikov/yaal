@@ -1,0 +1,35 @@
+9 A - Mafia
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+8 3
+3 2 2
+
+2 4
+
+1
+1
+10 4
+2 2 2 2
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+60 on2013_09.on2013_09_27_Codeforces_Round__202.A___Mafia.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.27
+21 Codeforces Round #202
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

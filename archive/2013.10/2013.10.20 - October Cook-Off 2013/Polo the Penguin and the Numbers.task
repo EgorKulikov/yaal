@@ -1,0 +1,28 @@
+32 Polo the Penguin and the Numbers
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+7 1
+9 12
+
+3 75
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+37 net.egork.PoloThePenguinAndTheNumbers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.20
+21 October Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
