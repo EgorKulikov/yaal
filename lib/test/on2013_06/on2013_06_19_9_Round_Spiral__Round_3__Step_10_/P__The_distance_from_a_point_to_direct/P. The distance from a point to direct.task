@@ -1,0 +1,27 @@
+38 P. The distance from a point to direct
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+11 1 1 1 1 -1
+
+9 0.707107
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+101 on2013_06.on2013_06_19_9_Round_Spiral__Round_3__Step_10_.P__The_distance_from_a_point_to_direct.TaskP
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.19
+33 9 Round Spiral. Round 3. Step 10.
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

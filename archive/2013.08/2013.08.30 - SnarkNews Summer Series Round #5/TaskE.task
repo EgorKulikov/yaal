@@ -1,0 +1,36 @@
+5 TaskE
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+123 2
+0 10
+0.00 0.25
+0.50 0.00
+4
+11 122 52 66
+0.00 1.00 0.51 0.76
+0.36 0.00 0.92 0.67
+0.98 0.72 0.00 0.33
+0.27 0.74 0.72 0.00
+0
+23 5.00 5.00
+119.60 187.15
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-2
+0
+10 2013.08.30
+32 SnarkNews Summer Series Round #5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,50 @@
+20 D - Looking for Owls
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+25 1 2
+3 2 3 -2
+0 0 2
+6 0 2
+
+2 1
+
+1
+1
+43 3 2
+0 0 0 1
+0 -1 0 1
+0 -1 0 0
+2 0 1
+-2 0 1
+
+2 3
+
+1
+2
+30 1 2
+-1 0 1 0
+-100 0 1
+100 0 1
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+71 on2013_10.on2013_10_01_Codeforces_Round__203.D___Looking_for_Owls.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.01
+21 Codeforces Round #203
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

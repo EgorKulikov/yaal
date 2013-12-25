@@ -1,0 +1,75 @@
+9 Incubator
+15 maxMagicalGirls
+3 int
+1
+18 java.lang.String[]
+4 love
+7
+0
+1
+String[] 2
+2 NY
+2 NN
+int 1
+1
+1
+1
+String[] 3
+3 NYN
+3 NNY
+3 NNN
+int 1
+1
+2
+1
+String[] 5
+5 NNYNN
+5 NNYNN
+5 NNNYY
+5 NNNNN
+5 NNNNN
+int 2
+1
+3
+1
+String[] 5
+5 NNNNN
+5 NYNNN
+5 NYNYN
+5 YNYNN
+5 NNNNN
+int 2
+1
+4
+1
+String[] 5
+5 NNNNN
+5 NNNNN
+5 NNNNN
+5 NNNNN
+5 NNNNN
+int 5
+1
+5
+1
+String[] 8
+8 NNYNNNNN
+8 NNNYNNNN
+8 NNNNYNNN
+8 NNYNNNNN
+8 NNNNNYYN
+8 NNNYNNNY
+8 NNNNNNNN
+8 NNNNNNNN
+int 2
+1
+6
+1
+String[] 1
+1 Y
+int 0
+1
+10 2012.10.10
+22 Single Round Match 557
+0
+65 on2012_10.on2012_10_10_Single_Round_Match_557.Incubator.Incubator

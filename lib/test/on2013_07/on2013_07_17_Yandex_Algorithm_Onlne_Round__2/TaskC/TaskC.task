@@ -1,0 +1,43 @@
+5 TaskC
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+17 4
+0 0
+0 1
+1 1
+2 0
+4 0.75
+1
+1
+42 10
+9 6
+5 7
+9 2
+4 6
+3 2
+2 1
+0 8
+7 3
+4 8
+1 1
+14 9.066666666667
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+66 on2013_07.on2013_07_17_Yandex_Algorithm_Onlne_Round__2.TaskC.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2013.07.17
+31 Yandex.Algorithm Onlne Round #2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

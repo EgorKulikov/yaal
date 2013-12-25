@@ -1,0 +1,76 @@
+10 BitwiseAnd
+11 lexSmallest
+6 long[]
+2
+6 long[]
+6 subset
+3 int
+1 N
+6
+0
+2
+long[] 2
+14
+20
+int 3
+long[] 3
+14
+18
+20
+1
+1
+2
+long[] 3
+11
+17
+20
+int 4
+long[] 0
+1
+2
+2
+long[] 2
+99
+157
+int 4
+long[] 4
+99
+157
+262
+296
+1
+3
+2
+long[] 1
+1152921504606846975
+int 3
+long[] 0
+1
+4
+2
+long[] 0
+int 5
+long[] 5
+15
+113
+402
+676
+840
+1
+5
+2
+long[] 6
+1
+3
+5
+7
+9
+11
+int 6
+long[] 0
+1
+10 2013.11.01
+22 Single Round Match 596
+0
+20 net.egork.BitwiseAnd
+1

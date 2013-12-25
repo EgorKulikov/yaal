@@ -1,0 +1,39 @@
+9 Jam Board
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+85 9 2 10
+WADAEAFAG
+VAGAD
+LAFAHAGAE
+VAKAK
+LAJAKAKAJ
+LAKAIAGAB
+LABABACAB
+RAKAK
+LAJAKAKAJ
+
+18 ON
+ON
+OFF
+OFF
+OFF
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+18 net.egork.JamBoard
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.02
+23 November Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

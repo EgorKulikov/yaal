@@ -1,0 +1,32 @@
+37 Dual core processor and the scheduler
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+18 2
+5
+2 3 4 6 8
+1
+6
+
+4 1
+6
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+42 net.egork.DualCoreProcessorAndTheScheduler
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.22
+12 Exhibit 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

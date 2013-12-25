@@ -1,0 +1,46 @@
+5 TaskD
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+81 8 8 2
+ABZ
+CACACACA
+BCBCBCBC
+CBCACBCA
+BCBCBCAC
+CACACBCB
+ACACBCBC
+CBCACACA
+BCBCBCBC
+3 5/9
+1
+1
+121 7 15 3
+QW
+ZAAAABBBBCCCCLS
+WWQOWOOOOOOWZLK
+ZOOOWOWWOWWWJMV
+ZQOOOOWIIIIIZNV
+ZQQOQWOQJWJJZOZ
+ZPPPQWWXWAAAJSS
+SNSSSECONDROUND
+4 8/12
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.08.12
+32 SnarkNews Summer Series Round #2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

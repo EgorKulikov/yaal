@@ -1,0 +1,82 @@
+13 MagicMolecule
+13 maxMagicPower
+3 int
+2
+5 int[]
+10 magicPower
+18 java.lang.String[]
+9 magicBond
+4
+0
+2
+int[] 3
+1
+2
+3
+String[] 3
+3 NYY
+3 YNN
+3 YNN
+int 4
+1
+1
+2
+int[] 4
+1
+1
+1
+1
+String[] 4
+4 NNYY
+4 NNYY
+4 YYNN
+4 YYNN
+int -1
+1
+2
+2
+int[] 6
+86
+15
+100
+93
+53
+50
+String[] 6
+6 NYYYYN
+6 YNNNNY
+6 YNNYYN
+6 YNYNYN
+6 YNYYNY
+6 NYNNYN
+int 332
+1
+3
+2
+int[] 9
+3969
+9430
+7242
+8549
+8190
+8368
+3704
+9740
+1691
+String[] 9
+9 NYYYYYYYY
+9 YNYYYYYYY
+9 YYNYYYYYY
+9 YYYNYYYYY
+9 YYYYNYYYY
+9 YYYYYNYYY
+9 YYYYYYNNY
+9 YYYYYYNNY
+9 YYYYYYYYN
+int 57179
+1
+10 2013.02.19
+22 Single Round Match 571
+0
+23 net.egork.MagicMolecule
+1

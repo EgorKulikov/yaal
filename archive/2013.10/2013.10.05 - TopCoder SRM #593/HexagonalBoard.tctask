@@ -1,0 +1,50 @@
+14 HexagonalBoard
+9 minColors
+3 int
+1
+18 java.lang.String[]
+5 board
+4
+0
+1
+String[] 3
+3 ---
+3 ---
+3 ---
+int 0
+1
+1
+1
+String[] 4
+4 -X--
+4 ---X
+4 ----
+4 -X--
+int 1
+1
+2
+1
+String[] 4
+4 XXXX
+4 ---X
+4 ---X
+4 ---X
+int 2
+1
+3
+1
+String[] 7
+7 XX-XX--
+7 -XX-XXX
+7 X-XX--X
+7 X--X-X-
+7 XX-X-XX
+7 -X-XX-X
+7 -XX-XX-
+int 3
+1
+10 2013.10.05
+22 Single Round Match 593
+0
+24 net.egork.HexagonalBoard
+1

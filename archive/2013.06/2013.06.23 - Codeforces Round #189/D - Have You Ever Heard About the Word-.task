@@ -1,0 +1,40 @@
+39 D - Have You Ever Heard About the Word?
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 abccabc
+
+4 abc
+
+1
+1
+10 aaaabaaab
+
+3 ab
+
+1
+2
+22 birdbirdbirdistheword
+
+14 birdistheword
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskDTestCase
+10 2013.06.23
+21 Codeforces Round #189
+0
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

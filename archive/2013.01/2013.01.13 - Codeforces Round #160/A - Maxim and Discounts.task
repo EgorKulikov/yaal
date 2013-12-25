@@ -1,0 +1,48 @@
+23 A - Maxim and Discounts
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+20 1
+2
+4
+50 50 100 100
+
+4 200
+
+1
+1
+23 2
+2 3
+5
+50 50 50 50 50
+
+4 150
+
+1
+2
+20 1
+1
+7
+1 1 1 1 1 1 1
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.13
+21 Codeforces Round #160
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

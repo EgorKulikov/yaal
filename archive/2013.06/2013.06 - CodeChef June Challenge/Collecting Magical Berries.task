@@ -1,0 +1,36 @@
+26 Collecting Magical Berries
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+71 8
+2 1 1 2 1 2 2 2 5
+change 2 2
+query 1 8
+query 5 7
+query 3 3
+query 4 4
+
+15 2065880
+90
+1
+1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+34 net.egork.CollectingMagicalBerries
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.07
+19 June Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

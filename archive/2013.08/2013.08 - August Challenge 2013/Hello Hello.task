@@ -1,0 +1,41 @@
+11 Hello Hello
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+117 4
+1.00 200 1
+1 0.50 28
+1.00 200 2
+1 0.75 40
+3 0.60 100
+1.00 50 2
+1 0.75 40
+3 0.60 100
+1.00 100 2
+3 0.50 10
+2 0.10 20
+
+8 1
+2
+0
+2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+20 net.egork.HelloHello
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.08
+21 August Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

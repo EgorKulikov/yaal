@@ -1,0 +1,43 @@
+18 C - Choosing Balls
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+43 6 3
+1 -2 3 4 0 -1
+1 2 1 2 1 1
+5 1
+-2 1
+1 0
+
+7 20
+9
+4
+
+1
+1
+27 4 1
+-3 6 -1 2
+1 2 3 1
+1 -1
+
+2 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+69 on2013_01.on2013_01_20_Codeforces_Round__162.C___Choosing_Balls.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.20
+21 Codeforces Round #162
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

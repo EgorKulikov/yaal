@@ -1,0 +1,47 @@
+5 TaskG
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+78 3
+3
+09:00 15:00 3
+10:00 12:00 2
+11:00 20:00 3
+2
+11:30 13:00 3
+12:30 14:00 3
+0
+
+26 2
+10:00 14:00
+11:00 20:00
+
+1
+1
+20 2
+1
+00:01 00:02 2
+0
+
+14 1
+00:01 00:02
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+74 on2013_09.on2013_09_25_Codeforces_Trainings_Season_1_Episode_3.TaskG.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.25
+39 Codeforces Trainings Season 1 Episode 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

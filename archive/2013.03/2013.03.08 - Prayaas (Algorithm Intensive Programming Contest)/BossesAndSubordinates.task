@@ -1,0 +1,69 @@
+21 BossesAndSubordinates
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+221 2
+
+3 3
+
+AAAAA6 1700000 14323
+
+AAAAA8 1900000 41412
+
+AAAAA7 1800000 15221
+
+AAAAA6
+
+AAAAA8
+
+AAAAA7
+
+4 4
+
+AAAAB2 1832001 12234
+
+AAAAB3 1745201 15002
+
+AAAAB4 1883410 18745
+
+AAAAB1 1921313 24834
+
+AAAAB4
+
+AAAAB2
+
+AAAAB3
+
+AAAAB1
+58 AAAAA7 0
+
+0 2
+
+AAAAA8 1
+
+AAAAB1 2
+
+AAAAB4 0
+
+AAAAB4 0
+
+0 3
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+31 net.egork.BossesAndSubordinates
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.03.08
+49 Prayaas (Algorithm Intensive Programming Contest)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

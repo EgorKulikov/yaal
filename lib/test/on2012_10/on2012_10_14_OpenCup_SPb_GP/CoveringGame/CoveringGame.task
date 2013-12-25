@@ -1,0 +1,27 @@
+12 CoveringGame
+6 SINGLE
+6 CUSTOM
+16 covering-game.in
+6 CUSTOM
+17 covering-game.out
+1
+0
+8 6
+llbrbb
+9 No
+Yes
+No
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+63 on2012_10.on2012_10_14_OpenCup_SPb_GP.CoveringGame.CoveringGame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.14
+14 OpenCup SPb GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

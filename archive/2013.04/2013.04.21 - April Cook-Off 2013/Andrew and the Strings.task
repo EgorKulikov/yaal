@@ -1,0 +1,38 @@
+22 Andrew and the Strings
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+34 3
+3 2
+aba
+abb
+3 2
+abc
+def
+1 1
+a
+a
+
+8 14
+13
+1
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+29 net.egork.AndrewAndTheStrings
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.21
+19 April Cook-Off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

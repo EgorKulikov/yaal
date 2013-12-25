@@ -1,0 +1,29 @@
+5 TaskP
+9 MULTI_EOF
+12 LOCAL_REGEXP
+7 p.[.]in
+6 CUSTOM
+5 p.out
+1
+0
+7 1
+46
+41
+7 2
+47
+42
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskP
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.07
+9 IPSC 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

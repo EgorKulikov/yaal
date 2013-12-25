@@ -1,0 +1,27 @@
+38 H. The distance from a point to direct
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+12 1 1 0 0 2 0
+
+9 1.000000
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.19
+33 9 Round Spiral. Round 3. Step 10.
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

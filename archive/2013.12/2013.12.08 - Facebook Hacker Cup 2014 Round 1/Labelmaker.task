@@ -1,0 +1,43 @@
+10 Labelmaker
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+18 labelmaker.*[.]txt
+6 CUSTOM
+14 labelmaker.out
+2
+0
+117 5
+EHT 34
+ABCEFKO 4296473
+ACEHKMPRTU 4125383079316
+CDEGHIKLOSUWY 8333092520403744490
+ADEFHNOPSUVY 3365973428406169086
+
+109 Case #1: THE
+Case #2: FACEBOOK
+Case #3: HACKERCUPTEAM
+Case #4: WISHESYOUGOODLUCK
+Case #5: ANDHOPESYOUHAVEFUN
+
+1
+1
+6 1
+A 5
+
+15 Case #1: AAAAA
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+20 net.egork.Labelmaker
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.08
+32 Facebook Hacker Cup 2014 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

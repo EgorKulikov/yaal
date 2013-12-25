@@ -1,0 +1,36 @@
+5 TaskC
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+16 3
+4 18
+3 18
+3 12
+-1
+0
+1
+14 2
+12 24
+27 36
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskCTestCase
+10 2013.08.20
+23 Yandex.Algorithm Finals
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

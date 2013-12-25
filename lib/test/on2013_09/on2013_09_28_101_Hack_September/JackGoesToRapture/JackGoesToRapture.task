@@ -1,0 +1,30 @@
+17 JackGoesToRapture
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+41 5 5
+1 2 60
+3 5 70 
+1 4 120
+4 5 150
+2 3 80
+2 80
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+77 on2013_09.on2013_09_28_101_Hack_September.JackGoesToRapture.JackGoesToRapture
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.28
+18 101 Hack September
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

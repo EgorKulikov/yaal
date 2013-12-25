@@ -1,0 +1,26 @@
+22 1179 - Numbers in Text
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+15 01234B56789
+AZA
+4 11 4
+1
+14 main/net/egork
+15 -Xmx16M -Xss16M
+4 Main
+64 on2012_12.on2012_12_29_Volume_2._1179___Numbers_in_Text.Task1179
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.29
+8 Volume 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,41 @@
+9 Problem15
+12 MULTI_NUMBER
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+40 1
+8
+1 2
+16 3
+11 2
+20 3
+3 5
+26 4
+7 1
+22 4
+36 3 5
+26 4
+22 4
+16 3
+20 3
+1 2
+11 2
+7 1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+58 on2013_02.on2013_02_16_Bayan_FunKoders.Problem15.Problem15
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.02.16
+15 Bayan FunKoders
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

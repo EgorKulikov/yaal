@@ -1,0 +1,45 @@
+8 A - SMSC
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+10 2
+1 1
+2 1
+
+4 3 1
+
+1
+1
+13 1
+1000000 10
+
+11 1000010 10
+
+1
+2
+14 3
+3 3
+4 3
+5 3
+
+5 12 7
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.04.15
+26 Croc Champ Online Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

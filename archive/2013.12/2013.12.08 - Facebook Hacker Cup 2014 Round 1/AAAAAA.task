@@ -1,0 +1,54 @@
+6 AAAAAA
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+14 aaaaaa.*[.]txt
+6 CUSTOM
+10 aaaaaa.out
+1
+-1
+133 5
+5 5
+.....
+.....
+.....
+.....
+.....
+1 10
+..........
+5 5
+...#.
+...#.
+...#.
+...#.
+.....
+3 3
+..#
+#.#
+...
+3 8
+........
+#.#.#.#.
+#.#.#.#.
+
+59 Case #1: 17
+Case #2: 10
+Case #3: 17
+Case #4: 5
+Case #5: 10
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+16 net.egork.AAAAAA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+24 net.egork.AAAAAATestCase
+10 2013.12.08
+32 Facebook Hacker Cup 2014 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

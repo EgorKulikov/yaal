@@ -1,0 +1,30 @@
+16 A Test of Series
+9 MULTI_EOF
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+7 5
+99
+0
+
+24 5
+218922995834555169026
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.ATestOfSeries
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.16
+13 Cryptoss 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

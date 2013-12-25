@@ -1,0 +1,40 @@
+10 B'day Gift
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+9 3
+1 
+1
+2
+
+4 2.0
+
+1
+1
+11 4
+1 
+2
+2
+2
+
+4 3.5
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+18 net.egork.BdayGift
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.11.22
+19 20-20 Hack November
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

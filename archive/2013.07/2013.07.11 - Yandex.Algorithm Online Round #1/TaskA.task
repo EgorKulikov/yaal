@@ -1,0 +1,41 @@
+5 TaskA
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+21 5
+2 6
+2 6
+2 5
+2 2
+1 2
+21 7
+A 1
+B 5
+A 2
+A 3
+A 4
+1
+1
+5 1
+1 1
+5 1
+B 1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.07.11
+32 Yandex.Algorithm Online Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

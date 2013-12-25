@@ -1,0 +1,24 @@
+8 GoForWin
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+5 20 10
+3 3/4
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+18 net.egork.GoForWin
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2012.09
+26 SnarkNews Summer Series #5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

@@ -1,0 +1,45 @@
+17 Galactik Football
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+39 6 6
+1 2
+2 3
+1 3
+4 5
+5 6
+4 6
+1
+3
+5
+2
+4
+6
+1 3
+1
+1
+15 3 1
+2 3
+1
+-1
+-1
+2 -1
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.GalactikFootball
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.07
+19 July Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,29 @@
+5 Digit
+6 SINGLE
+6 CUSTOM
+19 digit-statistics.in
+6 CUSTOM
+20 digit-statistics.out
+2
+0
+3 5 2
+37 1 1 1 1 0 0 0 1 0
+0 0 2 0 1 0 1 0 1 0
+1
+1
+10 10000000 5
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.Digit
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.10.14
+14 OpenCup SPb GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

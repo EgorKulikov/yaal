@@ -1,0 +1,46 @@
+39 The Punctuation Corrector: What is it ?
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+378 10  
+This restaurant is known for ??? emphasis on spicy cooking.  
+Golfing has lost ??? appeal.  
+??? become very difficult to find parking in the downtown areas.  
+This shop recently moved from ??? former location near the bus terminus.  
+Every dog has ??? day.  
+Guess ??? shape.
+The jury has reached ??? decision.  
+Stop ??? momentum!  
+??? time to go.
+??? lying over there.
+
+376 This restaurant is known for its emphasis on spicy cooking.  
+Golfing has lost its appeal.  
+It's become very difficult to find parking in the downtown areas.  
+This shop recently moved from its former location near the bus terminus.  
+Every dog has its day.  
+Guess its shape.
+The jury has reached its decision.  
+Stop its momentum!  
+It's time to go.
+It's lying over there.
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+41 net.egork.ThePunctuationCorrectorWhatIsIt
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.11.22
+19 20-20 Hack November
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

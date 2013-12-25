@@ -1,0 +1,28 @@
+9 TaskBEasy
+12 MULTI_NUMBER
+6 CUSTOM
+5 b1.in
+6 CUSTOM
+5 b.out
+1
+0
+4 1
+5
+
+3 10
+
+1
+14 main/net/egork
+18 -Xmx10240m -Xss64m
+4 Main
+19 net.egork.TaskBEasy
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.08
+9 IPSC 2013
+0
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,35 @@
+14 1603 - Erudite
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+50 abra
+adac
+babr
+arca
+3
+abracadabra
+ababaab
+ababaaba
+43 abracadabra: YES
+ababaab: YES
+ababaaba: NO
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+56 on2012_12.on2012_12_27_Volume_7._1603___Erudite.Task1603
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.27
+8 Volume 7
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

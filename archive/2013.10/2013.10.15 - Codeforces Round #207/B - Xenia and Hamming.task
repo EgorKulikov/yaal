@@ -1,0 +1,46 @@
+21 B - Xenia and Hamming
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+20 100 10
+a
+aaaaaaaaaa
+
+2 0
+
+1
+1
+20 1 1
+abacaba
+abzczzz
+
+2 4
+
+1
+2
+11 2 3
+rzr
+az
+
+2 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskBTestCase
+10 2013.10.15
+21 Codeforces Round #207
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,28 @@
+13 Khefu and GCD
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+4 1
+3
+
+2 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+62 on2013_09.on2013_09_27_Code_War_2013.Khefu_and_GCD.KhefuAndGCD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.27
+13 Code War 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

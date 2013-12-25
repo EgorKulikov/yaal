@@ -1,0 +1,42 @@
+23 A - Stones on the Table
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+6 3
+RRG
+
+2 1
+
+1
+1
+8 5
+RRRRR
+
+2 4
+
+1
+2
+7 4
+BRBG
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.22
+21 Codeforces Round #163
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

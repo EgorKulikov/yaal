@@ -1,0 +1,29 @@
+5 TaskJ
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+14 4 3
+10 3
+100 5
+8 5
+14
+124
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+15 net.egork.TaskJ
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.11
+39 Codeforces Trainings Season 1 Episode 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

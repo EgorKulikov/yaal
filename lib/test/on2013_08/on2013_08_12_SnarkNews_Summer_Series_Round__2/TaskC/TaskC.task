@@ -1,0 +1,41 @@
+5 TaskC
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+23 1 1.1
+0.5 0.5
+0.25 0.25
+4 1.32
+1
+1
+103 5 4.2
+0.21 0.61
+0.83 0.5
+0.77 0.19
+0.45 0.40
+0.32 0.38
+0.05 0.07
+0.91 0.88
+0.39 0.06
+0.27 0.59
+0.81 0.4
+4 0.28
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+67 on2013_08.on2013_08_12_SnarkNews_Summer_Series_Round__2.TaskC.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-2
+0
+10 2013.08.12
+32 SnarkNews Summer Series Round #2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

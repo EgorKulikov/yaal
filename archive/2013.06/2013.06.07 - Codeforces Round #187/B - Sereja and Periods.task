@@ -1,0 +1,37 @@
+22 B - Sereja and Periods
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+14 10 3
+abab
+bab
+
+2 3
+
+1
+1
+14 10 1
+ababa
+ab
+
+3 20
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.06.07
+21 Codeforces Round #187
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

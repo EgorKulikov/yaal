@@ -1,0 +1,45 @@
+10 A - Domino
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+10 2
+4 2
+6 4
+
+2 0
+
+1
+1
+6 1
+2 3
+
+3 -1
+
+1
+2
+14 3
+1 4
+2 3
+4 4
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.10
+21 Codeforces Round #205
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

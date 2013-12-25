@@ -1,0 +1,52 @@
+5 TaskJ
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+15 3 1
+ACM
+IBM
+ICM
+4 ICM
+
+1
+1
+21 5 2
+iwzwz
+iziwi
+zwizi
+6 iwiwi
+
+1
+2
+9 1 0
+A
+B
+C
+2 -1
+1
+3
+37 10 5
+jLRNlNyGWx
+yyLnlyyGDA
+yLRnvyyGDA
+11 AARAlNyGDA
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskJ
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.25
+13 JAG Contest 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

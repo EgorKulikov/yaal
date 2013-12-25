@@ -1,0 +1,41 @@
+7 Seating
+12 MULTI_NUMBER
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+67 5
+icpc
+pcic
+snws
+snss
+hijklmn
+lmnhijk
+ckbrainfu
+kcufniarb
+aaa
+aaaa
+
+18 YES
+NO
+YES
+YES
+NO
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+71 on2013_01.on2013_01_19_SnarkNews_Winter_Series_Round__3.Seating.Seating
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.01.19
+32 SnarkNews Winter Series Round #3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

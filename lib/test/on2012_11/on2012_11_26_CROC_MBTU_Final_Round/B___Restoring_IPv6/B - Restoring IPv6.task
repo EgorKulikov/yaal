@@ -1,0 +1,37 @@
+18 B - Restoring IPv6
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+145 6
+a56f:d3:0:0124:01:f19a:1000:00
+a56f:00d3:0000:0124:0001::
+a56f::0124:0001:0000:1234:0ff0
+a56f:0000::0000:0001:0000:1234:0ff0
+::
+0ea::4d:f4:6:0
+
+240 a56f:00d3:0000:0124:0001:f19a:1000:0000
+a56f:00d3:0000:0124:0001:0000:0000:0000
+a56f:0000:0000:0124:0001:0000:1234:0ff0
+a56f:0000:0000:0000:0001:0000:1234:0ff0
+0000:0000:0000:0000:0000:0000:0000:0000
+00ea:0000:0000:0000:004d:00f4:0006:0000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+69 on2012_11.on2012_11_26_CROC_MBTU_Final_Round.B___Restoring_IPv6.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.26
+21 CROC-MBTU Final Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

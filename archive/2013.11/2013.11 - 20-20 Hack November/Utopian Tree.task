@@ -1,0 +1,39 @@
+12 Utopian Tree
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+6 2
+0
+1
+
+4 1
+2
+
+1
+1
+6 2
+3
+4
+
+4 6
+7
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+21 net.egork.UtopianTree
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.11.22
+19 20-20 Hack November
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

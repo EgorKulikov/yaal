@@ -1,0 +1,50 @@
+5 TaskC
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+336 11 29
+.............................
+]O[...[][]....[][]....IOI....
+.I...........................
+..I...]O[...........[][].....
+.I....[+]............I......I
+I......I.............I......O
+.I.....I..]O[....[O].I......]
+..I....I...]]....[[..I.I+I..I
+.I....]I[...]]..[[...I.I.I..[
+..O...[I].....++.....I.I.I..I
+*****************************
+
+3 6 2
+1
+1
+21 3 5
+.....
+[][].
+*****
+3 1 0
+1
+2
+8 1 4
+****
+4 0 0
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.08.24
+32 SnarkNews Summer Series Round #4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

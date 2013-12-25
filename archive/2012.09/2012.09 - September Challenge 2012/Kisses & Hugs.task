@@ -1,0 +1,29 @@
+13 Kisses & Hugs
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+7 3
+1
+2
+3
+5 2
+4
+6
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.KissesAmpHugs
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.03
+24 September Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

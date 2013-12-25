@@ -1,0 +1,39 @@
+7 Meeting
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+40 3
+4 2 4
+1 1 3 0
+2 1 2 1 2
+0 1 1 1
+0 0 0
+
+3 4 2
+1
+1
+17 2
+9 9
+9 9 9
+9 9 
+
+-1
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+17 net.egork.Meeting
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.15
+19 OpenCup Peterhof GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

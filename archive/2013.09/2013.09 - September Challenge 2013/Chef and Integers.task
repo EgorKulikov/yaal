@@ -1,0 +1,29 @@
+17 Chef and Integers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+13 3
+-1 -2 -3
+2
+
+2 5
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+25 net.egork.ChefAndIntegers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.09
+24 September Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

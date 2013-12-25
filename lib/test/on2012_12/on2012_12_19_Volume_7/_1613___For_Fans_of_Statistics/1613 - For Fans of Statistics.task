@@ -1,0 +1,33 @@
+29 1613 - For Fans of Statistics
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+100 5
+1234567 666666 3141593 666666 4343434
+5
+1 5 3141593
+1 5 578202
+2 4 666666
+4 4 7135610
+1 1 1234567
+
+6 10101
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+71 on2012_12.on2012_12_19_Volume_7._1613___For_Fans_of_Statistics.Task1613
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.12.19
+8 Volume 7
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

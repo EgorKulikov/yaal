@@ -1,0 +1,37 @@
+14 Merciless Chef
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+40 4
+1 0
+2 0
+2 2
+1 2
+4
+1 2 1
+2 2
+1 0 1
+2 0
+
+4 1
+1
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.MercilessChef
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.09
+24 September Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

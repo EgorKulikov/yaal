@@ -1,0 +1,35 @@
+18 Subtraction Game 2
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+33 3
+4
+2 3 5 7
+4
+3 4 8 16
+3
+6 10 15
+
+7 11
+7
+1
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.SubtractionGame2
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.05.19
+17 May Cook-off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

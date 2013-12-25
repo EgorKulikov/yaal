@@ -1,0 +1,28 @@
+7 Graphon
+9 MULTI_EOF
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+37 3 3
+101 100 2
+102 100 5
+102 101 3
+0 0
+11 100 101 102
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+17 net.egork.Graphon
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.09.03
+26 SnarkNews Summer Series #5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

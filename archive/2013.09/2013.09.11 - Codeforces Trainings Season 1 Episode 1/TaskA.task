@@ -1,0 +1,54 @@
+5 TaskA
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+185 10
+Alphonzo Bernardo 32
+Alphonzo Park 57
+Alphonzo Eduardo 43
+Bernardo Park 19
+Bernardo Clemenzi 82
+Clemenzi Park 65
+Clemenzi Herb 90
+Clemenzi Eduardo 109
+Park Herb 24
+Herb Eduardo 79
+3
+
+24 Total miles driven: 183
+
+1
+1
+185 10
+Alphonzo Bernardo 32
+Alphonzo Park 57
+Alphonzo Eduardo 43
+Bernardo Park 19
+Bernardo Clemenzi 82
+Clemenzi Park 65
+Clemenzi Herb 90
+Clemenzi Eduardo 109
+Park Herb 24
+Herb Eduardo 79
+1
+
+23 Total miles driven: 255
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.11
+39 Codeforces Trainings Season 1 Episode 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

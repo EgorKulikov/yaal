@@ -1,0 +1,34 @@
+110 Divisible numbers             <span class="acm-challenge-balloon-large" style="background-color: null"></span>
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+2 1
+
+2 1
+
+1
+1
+2 9
+
+2 1
+
+1
+14 main/net/egork
+9 -Xmx4096M
+8 Solution
+87 net.egork.DivisibleNumbersSpanClassacmchallengeballoonlargeStylebackgroundcolorNullspan
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+95 net.egork.DivisibleNumbersSpanClassacmchallengeballoonlargeStylebackgroundcolorNullspanTestCase
+10 2013.12.21
+22 2020 Hack World Finals
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

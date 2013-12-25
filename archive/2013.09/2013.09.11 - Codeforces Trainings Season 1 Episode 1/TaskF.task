@@ -1,0 +1,41 @@
+5 TaskF
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+77 5
+4 4
+0 0 0 0
+3 3
+0 -1 L
+3 4
+0 -1 L
+3 5
+0 -1 L
+10 20
++1 0 0 -1 L L 0 +3 -7 0
+
+81 Bet for. 0.9375
+Bet against. 0.0000
+Push. 0.5000
+Bet for. 0.7500
+Bet for. 0.8954
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.11
+39 Codeforces Trainings Season 1 Episode 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

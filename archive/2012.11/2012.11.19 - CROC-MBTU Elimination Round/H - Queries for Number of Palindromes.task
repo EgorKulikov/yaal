@@ -1,0 +1,36 @@
+37 H - Queries for Number of Palindromes
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+29 caaaba
+5
+1 1
+1 4
+2 3
+4 6
+4 5
+
+10 1
+7
+3
+4
+2
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.19
+27 CROC-MBTU Elimination Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

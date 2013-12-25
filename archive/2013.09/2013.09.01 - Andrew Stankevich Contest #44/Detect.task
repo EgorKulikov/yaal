@@ -1,0 +1,44 @@
+6 Detect
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+772 10
+ c<( {  ldulm ca};   p   itno, loerWdd"!oi t">fsntrielH ) % ", si#inn)("    
+ ! dtn"or   #iis np "Woo ,%  )lfn) {clr m>t(ud;  tl<idsec la,    H} (i "ne"i
+l s,tdio( n)p l     {     };ud ,tirnlroWc <slH"etn # o ema %inic " >f"(i"!)d
+i e nirr ai )pi(; d cnt ,l o s"n  {"W,l>!"  m Htt  <o  }("uil#s %)nd c fodle
+H   ";niorWloidtldue"!)d      { n ()le" >  plm ,t,rn aio s"ini#cs <c(%ft   }
+lWcu#  eniaf(eo dn   !>) "dtisd oni %n tr l"  lt,i)mc H(; <} p" s,"r  {  ilo
+idtolrWa> n  <csm o " s,ledur it itn%"f(i#cnlH el ,o    )"d!  "{) (n ;}  pi 
+lttdnri an" l#  "ms    o p>{i   i ct r %o)osi ,nfHni!d  "u;l (l cd" W}e(<),e
+iencsc< !d ""ileW{ olo rldu#  };  ) n  (s ,"tin "(f%   ptHrntoidl),  ami  > 
+nnod)plo{c #"  n%(elcu ", t d t,s") ( iims nWl ;iiadt!  r  rf }i   H> e "o<l
+64 block
+random
+block
+random
+block
+random
+block
+random
+block
+random
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+16 net.egork.Detect
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.01
+29 Andrew Stankevich Contest #44
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

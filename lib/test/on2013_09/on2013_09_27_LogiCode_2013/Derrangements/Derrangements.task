@@ -1,0 +1,32 @@
+13 Derrangements
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+19 3
+2 0
+3 3
+9962 491
+
+14 2
+2
+989784389
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+64 on2013_09.on2013_09_27_LogiCode_2013.Derrangements.Derrangements
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.27
+13 LogiCode 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

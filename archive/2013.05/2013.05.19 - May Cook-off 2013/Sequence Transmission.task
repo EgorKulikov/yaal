@@ -1,0 +1,38 @@
+21 Sequence Transmission
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+70 4
+6 10
+4 4 4 4 4 4
+6 3
+4 4 4 4 4 4
+5 8
+1 1 1 1 128
+7 4
+4 5 6 7 8 9 10
+
+9 32
+4
+0
+3
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+30 net.egork.SequenceTransmission
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.05.19
+17 May Cook-off 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

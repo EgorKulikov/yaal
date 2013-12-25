@@ -1,0 +1,31 @@
+5 TaskD
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+20 2 1 5 10 100 100 11
+
+2 10
+1
+1
+24 3 2 1 65 5 23 2 99 10 2 
+4 164
+
+1
+14 main/net/egork
+15 -Xmx32m -Xss32m
+4 Main
+48 on2013_09.on2013_09_28_COCI_Round__1.TaskD.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.09.28
+13 COCI Round #1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

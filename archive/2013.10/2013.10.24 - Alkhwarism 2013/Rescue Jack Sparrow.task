@@ -1,0 +1,38 @@
+19 Rescue Jack Sparrow
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+82 1
+6 10000
+20 30 15 5 40 15
+8 1 4
+1 2 1
+2 3 7
+3 4 4
+4 5 10
+6 5 3
+6 1 2
+2 5 5
+3 6 9
+
+3 20
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+27 net.egork.RescueJackSparrow
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.24
+15 Alkhwarism 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

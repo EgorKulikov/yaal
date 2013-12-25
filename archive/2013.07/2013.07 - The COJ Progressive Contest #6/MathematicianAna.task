@@ -1,0 +1,34 @@
+16 MathematicianAna
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+14 2
+7
+10
+11
+19
+0
+22 2
+210
+210
+2310
+9699690
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+26 net.egork.MathematicianAna
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.07.01
+30 The COJ Progressive Contest #6
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

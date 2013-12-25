@@ -1,0 +1,38 @@
+28 C - Number Transformation II
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+14 3
+3 4 5
+30 17
+
+2 6
+
+1
+1
+17 3
+5 6 7
+1000 200
+
+4 206
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+79 on2013_09.on2013_09_20_Codeforces_Round__201.C___Number_Transformation_II.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+87 on2013_09.on2013_09_20_Codeforces_Round__201.C___Number_Transformation_II.TaskCTestCase
+10 2013.09.20
+21 Codeforces Round #201
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,40 @@
+11 CAO Stage-1
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+80 2
+5 5
+^^^^^
+^^^^^
+^^^^#
+^^^^^
+^^^^^
+5 7
+^^#^^^^
+^^#^#^#
+#^^^^^^
+^^#^^#^
+^^^^^^^
+
+4 0
+1
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+19 net.egork.CAOStage1
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2013.09
+24 September Challenge 2013
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

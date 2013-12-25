@@ -1,0 +1,36 @@
+15 E - Wrong Floyd
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+10 3 2 2
+1 2
+
+8 1 3
+2 3
+
+1
+1
+10 3 3 2
+1 2
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+66 on2013_10.on2013_10_01_Codeforces_Round__203.E___Wrong_Floyd.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.10.01
+21 Codeforces Round #203
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

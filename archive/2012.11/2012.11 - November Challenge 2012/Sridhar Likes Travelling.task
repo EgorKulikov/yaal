@@ -1,0 +1,35 @@
+24 Sridhar Likes Travelling
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+76 1
+5
+Warsaw Kiev 120$
+Madrid Paris 100$
+Munich Warsaw 150$
+Paris Munich 200$
+
+77 Madrid Paris 100$
+Paris Munich 200$
+Munich Warsaw 150$
+Warsaw Kiev 120$
+570$
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+32 net.egork.SridharLikesTravelling
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2012.11.01
+23 November Challenge 2012
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0

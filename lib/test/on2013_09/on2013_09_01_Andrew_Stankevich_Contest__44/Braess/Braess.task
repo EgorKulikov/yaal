@@ -1,0 +1,32 @@
+6 Braess
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+22 2
+40 0 0 45
+0 45 40 0
+
+12 65
+80
+65
+80
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+66 on2013_09.on2013_09_01_Andrew_Stankevich_Contest__44.Braess.Braess
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2013.09.01
+29 Andrew Stankevich Contest #44
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
