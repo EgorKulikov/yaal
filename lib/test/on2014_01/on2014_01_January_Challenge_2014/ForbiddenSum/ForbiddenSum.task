@@ -1,0 +1,38 @@
+12 ForbiddenSum
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+35 5
+1 2 4 9 10
+5
+1 1
+1 2
+1 3
+1 4
+1 5
+
+10 2
+4
+8
+8
+8
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+68 on2014_01.on2014_01_January_Challenge_2014.ForbiddenSum.ForbiddenSum
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.01
+22 January Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

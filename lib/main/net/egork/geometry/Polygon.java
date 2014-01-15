@@ -34,7 +34,7 @@ public class Polygon {
 		return new Point(sx / vertices.length, sy / vertices.length);
 	}
 
-    private static boolean over(Point a, Point b, Point c) {
+    public static boolean over(Point a, Point b, Point c) {
         return a.x * (b.y - c.y) + b.x * (c.y - a.y) + c.x * (a.y - b.y) < -GeometryUtils.epsilon;
     }
 

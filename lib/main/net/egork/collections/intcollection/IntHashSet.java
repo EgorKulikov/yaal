@@ -78,7 +78,7 @@ public class IntHashSet extends IntSet {
 
 	@Override
 	public void add(int value) {
-		ensureCapacity((size + 1) * ratio);
+		ensureCapacity((size + 1) * ratio + 2);
 		int current = getHash(value);
 		while ((present[current] & PRESENT_MASK) != 0) {
 			if (values[current] == value)
