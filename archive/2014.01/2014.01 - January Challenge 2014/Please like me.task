@@ -1,0 +1,30 @@
+14 Please like me
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+19 2
+5 1 5 1
+10 2 2 2
+
+35 ALIVE AND KICKING
+DEAD AND ROTTING
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+22 net.egork.PleaseLikeMe
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.01
+22 January Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

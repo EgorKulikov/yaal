@@ -1,0 +1,52 @@
+16 Sereja and Graph
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+54 3
+2 2
+1 2
+1 2
+3 2
+1 2
+2 3
+4 6
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
+
+11 YES
+NO
+YES
+
+1
+1
+16 1
+3
+1 2
+2 3
+3 1
+
+3 NO
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+24 net.egork.SerejaAndGraph
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.01
+22 January Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
