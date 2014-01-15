@@ -501,6 +501,10 @@ public class ArrayUtils {
 		return minPosition(array, 0, array.length);
 	}
 
+	public static int maxPosition(long[] array) {
+		return maxPosition(array, 0, array.length);
+	}
+
 	public static int minPosition(long[] array, int from, int to) {
 		if (from >= to)
 			return -1;
@@ -509,6 +513,20 @@ public class ArrayUtils {
 		for (int i = from + 1; i < to; i++) {
 			if (array[i] < min) {
 				min = array[i];
+				result = i;
+			}
+		}
+		return result;
+	}
+
+	public static int maxPosition(long[] array, int from, int to) {
+		if (from >= to)
+			return -1;
+		long max = array[from];
+		int result = from;
+		for (int i = from + 1; i < to; i++) {
+			if (array[i] > max) {
+				max = array[i];
 				result = i;
 			}
 		}

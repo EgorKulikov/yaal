@@ -1,0 +1,39 @@
+11 D - User ID
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+12 3
+5
+14
+2013
+
+14 5
+2 7
+3 11 61
+
+1
+1
+4 1
+8
+
+4 2 4
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+59 on2014_01.on2014_01_14_SNWS_2014__Round_2.D___User_ID.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.01.14
+18 SNWS 2014, Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

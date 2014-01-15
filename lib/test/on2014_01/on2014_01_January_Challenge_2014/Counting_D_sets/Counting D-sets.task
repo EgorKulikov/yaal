@@ -1,0 +1,34 @@
+15 Counting D-sets
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+23 5
+1 10
+2 1
+2 10
+3 1
+3 3
+29 512
+9
+498134775
+217
+548890725
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+72 on2014_01.on2014_01_January_Challenge_2014.Counting_D_sets.CountingDsets
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.01
+22 January Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

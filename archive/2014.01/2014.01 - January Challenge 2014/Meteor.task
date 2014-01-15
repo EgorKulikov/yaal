@@ -1,0 +1,40 @@
+6 Meteor
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+44 4 5 5
+2 1
+3 2
+1 3
+2 4
+1 4
+4
+1 1
+3 4
+2 3
+1 4
+
+8 2
+6
+3
+6
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+16 net.egork.Meteor
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.01
+22 January Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
