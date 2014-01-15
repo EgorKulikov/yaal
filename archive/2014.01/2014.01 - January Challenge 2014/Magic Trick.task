@@ -1,0 +1,36 @@
+11 Magic Trick
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+47 2
+3
+1 1 1
+2 3 1000
+ARM
+4
+1 2 3 4
+0 1 1000
+AMAM
+
+14 3 3 9
+1 2 3 4
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+20 net.egork.MagicTrick
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.01
+22 January Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

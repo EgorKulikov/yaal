@@ -1,0 +1,48 @@
+9 E - Radio
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+123 3
+4
+10
+10 10
+0 0 20140
+20 0 50
+0 20 1000
+20 20 50
+4
+100
+10 10
+0 0 19000
+20 0 50
+0 20 1000
+20 20 50
+2
+0
+1 11
+1 9 1
+1 1 1001
+
+6 1
+0
+2
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.01.14
+18 SNWS 2014, Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

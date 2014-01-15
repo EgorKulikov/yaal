@@ -81,7 +81,7 @@ public class IntHashMap extends IntSet {
 	}
 
 	public void put(int key, int value) {
-		ensureCapacity((size + 1) * ratio);
+		ensureCapacity((size + 1) * ratio + 2);
 		int current = getHash(key);
 		while ((present[current] & PRESENT_MASK) != 0) {
 			if (keys[current] == key) {
