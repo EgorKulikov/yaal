@@ -1,0 +1,35 @@
+22 Problem 1. Cow Curling
+6 SINGLE
+6 CUSTOM
+10 curling.in
+6 CUSTOM
+11 curling.out
+1
+-1
+38 4
+0 0
+0 2
+2 0
+2 2
+1 1
+1 10
+-10 3
+10 3
+
+4 1 2
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+17 net.egork.Curling
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.01.10
+32 USACO 2014 January Contest, Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
