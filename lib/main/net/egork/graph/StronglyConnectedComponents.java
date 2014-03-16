@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)
  */
-public class StronglyConnectedComponents<V> {
+public class StronglyConnectedComponents {
 	private final Graph graph;
 	private int[] order;
 	private boolean[] visited;

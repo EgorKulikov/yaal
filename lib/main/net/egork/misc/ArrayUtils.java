@@ -468,6 +468,15 @@ public class ArrayUtils {
 		return result;
 	}
 
+	public static int count(char[] array, char value) {
+		int result = 0;
+		for (char i : array) {
+			if (i == value)
+				result++;
+		}
+		return result;
+	}
+
 	public static int count(boolean[] array, boolean value) {
 		int result = 0;
 		for (boolean i : array) {

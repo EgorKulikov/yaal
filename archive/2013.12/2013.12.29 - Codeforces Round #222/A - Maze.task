@@ -1,0 +1,47 @@
+8 A - Maze
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+21 3 4 2
+#..#
+..#.
+#...
+
+15 #.X#
+X.#.
+#...
+
+1
+1
+31 5 4 5
+#...
+#.#.
+.#..
+...#
+.#.#
+
+25 #XXX
+#X#.
+X#..
+...#
+.#.#
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2013.12.29
+21 Codeforces Round #222
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,38 @@
+30 D - Beautiful Pairs of Numbers
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+26 6
+1 1
+2 1
+2 2
+3 1
+3 2
+3 3
+
+12 1
+3
+0
+6
+2
+0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+90 on2014_03.on2014_03_16_Codeforces_Round__236__Div__1_.D___Beautiful_Pairs_of_Numbers.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.03.16
+30 Codeforces Round #236 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

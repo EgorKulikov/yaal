@@ -1,0 +1,44 @@
+16 E1 - Three Trees
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+22 2 2 3
+1 2
+1 2
+1 2
+2 3
+
+3 56
+
+1
+1
+34 5 1 4
+1 2
+2 5
+3 4
+4 2
+1 2
+1 3
+1 4
+
+4 151
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+61 on2014_02.on2014_02_16_Rockethon_2014.E1___Three_Trees.TaskE1
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.02.16
+14 Rockethon 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

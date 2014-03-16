@@ -1,0 +1,41 @@
+23 C - Sereja and Brackets
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+47 ())(())(())(
+7
+1 1
+2 3
+1 2
+1 12
+8 12
+5 11
+2 10
+
+15 0
+0
+2
+10
+4
+6
+6
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+83 on2014_01.on2014_01_12_Codeforces_Round__223__Div__1_.C___Sereja_and_Brackets.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.01.12
+30 Codeforces Round #223 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
