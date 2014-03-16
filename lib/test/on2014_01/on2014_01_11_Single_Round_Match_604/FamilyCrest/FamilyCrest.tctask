@@ -1,0 +1,279 @@
+11 FamilyCrest
+13 canBeInfinite
+16 java.lang.String
+4
+5 int[]
+1 A
+5 int[]
+1 B
+5 int[]
+1 C
+5 int[]
+1 D
+8
+0
+4
+int[] 1
+0
+int[] 1
+0
+int[] 1
+0
+int[] 1
+1
+String
+8 Infinite
+1
+1
+4
+int[] 4
+0
+1
+1
+0
+int[] 4
+0
+0
+1
+1
+int[] 4
+1
+1
+0
+0
+int[] 4
+0
+1
+1
+0
+String
+6 Finite
+1
+2
+4
+int[] 4
+0
+1
+2
+3
+int[] 4
+0
+3
+0
+3
+int[] 4
+1
+2
+3
+4
+int[] 4
+3
+0
+3
+0
+String
+8 Infinite
+1
+3
+4
+int[] 7
+0
+1
+2
+3
+-1
+-3
+-1
+int[] 7
+0
+3
+0
+3
+3
+2
+1
+int[] 7
+1
+2
+3
+4
+-3
+-1
+-3
+int[] 7
+3
+0
+3
+0
+2
+1
+0
+String
+6 Finite
+1
+4
+4
+int[] 7
+0
+2
+4
+6
+-1
+-2
+-1
+int[] 7
+0
+1
+0
+1
+3
+2
+1
+int[] 7
+2
+4
+6
+8
+-2
+-1
+-2
+int[] 7
+1
+0
+1
+0
+2
+1
+0
+String
+8 Infinite
+1
+5
+4
+int[] 14
+0
+0
+0
+2
+3
+3
+4
+5
+6
+7
+9
+9
+9
+9
+int[] 14
+0
+2
+1
+0
+0
+2
+0
+0
+2
+0
+0
+2
+1
+0
+int[] 14
+0
+1
+1
+2
+3
+4
+4
+5
+8
+7
+9
+10
+10
+10
+int[] 14
+2
+2
+1
+2
+2
+0
+2
+2
+2
+2
+2
+2
+1
+0
+String
+6 Finite
+1
+6
+4
+int[] 6
+-6
+-3
+3
+-6
+-3
+3
+int[] 6
+1
+2
+-2
+-1
+-2
+2
+int[] 6
+-3
+3
+6
+-3
+3
+6
+int[] 6
+2
+-2
+-1
+-2
+2
+1
+String
+6 Finite
+1
+7
+4
+int[] 4
+-1
+-2
+0
+1
+int[] 4
+0
+0
+0
+0
+int[] 4
+1
+0
+2
+-1
+int[] 4
+0
+0
+0
+0
+String
+8 Infinite
+1
+10 2014.01.11
+22 Single Round Match 604
+0
+69 on2014_01.on2014_01_11_Single_Round_Match_604.FamilyCrest.FamilyCrest
+1
+4 256M

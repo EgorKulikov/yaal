@@ -1,0 +1,29 @@
+23 E - Sereja and Dividing
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 5
+1 2 3 4 1
+
+18 1.238750000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+83 on2014_01.on2014_01_12_Codeforces_Round__223__Div__1_.E___Sereja_and_Dividing.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+1
+91 on2014_01.on2014_01_12_Codeforces_Round__223__Div__1_.E___Sereja_and_Dividing.TaskETestCase
+10 2014.01.12
+30 Codeforces Round #223 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
