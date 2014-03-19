@@ -1,0 +1,47 @@
+18 A - Blocked Points
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+5
+0
+2 1
+
+2 4
+
+1
+1
+2 2
+
+2 8
+
+1
+2
+2 3
+
+3 16
+
+1
+3
+1 4
+-1
+1
+4
+1 5
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.02.18
+30 Codeforces Round #230 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,32 @@
+23 Problem 1. The Lazy Cow
+6 SINGLE
+6 CUSTOM
+7 lazy.in
+6 CUSTOM
+8 lazy.out
+1
+0
+28 4 3
+7 8 6
+3 0 0
+4 6 0
+1 4 2
+
+2 8
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+14 net.egork.Lazy
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+22 net.egork.LazyTestCase
+10 2014.03.11
+30 USACO 2014 March Contest, Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

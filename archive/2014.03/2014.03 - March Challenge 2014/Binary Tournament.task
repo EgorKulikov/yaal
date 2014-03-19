@@ -1,0 +1,37 @@
+17 Binary Tournament
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+2 1
+
+4 2
+2
+
+1
+1
+2 2
+
+10 0
+8
+16
+24
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.BinaryTournament
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.03.07
+20 March Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,44 @@
+17 D - Space Tourist
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+15 4 100
+1 2 7 8
+
+
+2 1
+
+1
+1
+17 5 1000
+5 5 5 5 5
+
+2 5
+
+1
+2
+12 3 200
+2 2 3
+
+2 2
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskDTestCase
+10 2014.01.31
+18 SNWS 2014, Round 5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -31,6 +31,8 @@ public abstract class IntervalTree {
 	protected abstract long emptySegmentResult();
 
 	public void init() {
+		if (size == 0)
+			return;
 		init(0, 0, size - 1);
 	}
 

@@ -1,0 +1,31 @@
+20 Sereja and Sorting 2
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+14 6
+2 1 5 4 3 2
+
+10 2
+3 6
+1 2
+
+0
+14 main/net/egork
+7 -Xmx64M
+4 Main
+27 net.egork.SerejaAndSorting2
+34 net.egork.SerejaAndSorting2Checker
+0 
+1
+35 net.egork.SerejaAndSorting2TestCase
+10 2014.03.11
+20 March Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

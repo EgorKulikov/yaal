@@ -5,6 +5,7 @@ import net.egork.chelper.checkers.Checker;
 import %InputClassFQN%;
 
 import java.io.StringBufferInputStream;
+import java.util.InputMismatchException;
 
 
 public class %CheckerClass% implements Checker {

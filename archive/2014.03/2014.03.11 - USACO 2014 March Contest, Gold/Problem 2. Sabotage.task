@@ -1,0 +1,33 @@
+19 Problem 2. Sabotage
+6 SINGLE
+6 CUSTOM
+11 sabotage.in
+6 CUSTOM
+12 sabotage.out
+1
+0
+12 5
+5
+1
+7
+8
+2
+
+6 2.667
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+18 net.egork.Sabotage
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+26 net.egork.SabotageTestCase
+10 2014.03.11
+30 USACO 2014 March Contest, Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

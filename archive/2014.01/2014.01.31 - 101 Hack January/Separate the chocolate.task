@@ -1,0 +1,46 @@
+22 Separate the chocolate
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+12 2 2 4
+UU
+UU
+
+3 12
+
+1
+1
+11 1 4 2
+UUUU
+
+2 6
+
+1
+2
+14 4 1 4
+T
+U
+U
+D
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+30 net.egork.SeparateTheChocolate
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.01.31
+16 101 Hack January
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
