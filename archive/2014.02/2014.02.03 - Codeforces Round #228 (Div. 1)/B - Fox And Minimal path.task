@@ -1,0 +1,47 @@
+24 B - Fox And Minimal path
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+1 2
+21 4
+NNYY
+NNYY
+YYNN
+YYNN
+1
+1
+1 9
+73 8
+NNYYYNNN
+NNNNNYYY
+YNNNNYYY
+YNNNNYYY
+YNNNNYYY
+NYYYYNNN
+NYYYYNNN
+NYYYYNNN
+1
+2
+1 1
+7 2
+NY
+YN
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.02.03
+30 Codeforces Round #228 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

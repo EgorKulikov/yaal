@@ -1,0 +1,33 @@
+16 A - Milking cows
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+10 4
+0 0 1 0
+
+1 1
+1
+1
+12 5
+1 0 1 0 1
+
+1 3
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.01.20
+30 Codeforces Round #225 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

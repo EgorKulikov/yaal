@@ -115,8 +115,18 @@ public class ArrayUtils {
 			fill(subArray, value);
 	}
 
+	public static void fill(short[][][] array, short value) {
+		for (short[][] subArray : array)
+			fill(subArray, value);
+	}
+
 	public static void fill(int[][][][] array, int value) {
 		for (int[][][] subArray : array)
+			fill(subArray, value);
+	}
+
+	public static void fill(short[][][][] array, short value) {
+		for (short[][][] subArray : array)
 			fill(subArray, value);
 	}
 
@@ -125,13 +135,28 @@ public class ArrayUtils {
 			fill(subArray, value);
 	}
 
+	public static void fill(short[][][][][] array, short value) {
+		for (short[][][][] subArray : array)
+			fill(subArray, value);
+	}
+
 	public static void fill(int[][][][][][] array, int value) {
 		for (int[][][][][] subArray : array)
 			fill(subArray, value);
 	}
 
+	public static void fill(short[][][][][][] array, short value) {
+		for (short[][][][][] subArray : array)
+			fill(subArray, value);
+	}
+
 	public static void fill(int[][][][][][][] array, int value) {
 		for (int[][][][][][] subArray : array)
+			fill(subArray, value);
+	}
+
+	public static void fill(short[][][][][][][] array, short value) {
+		for (short[][][][][][] subArray : array)
 			fill(subArray, value);
 	}
 

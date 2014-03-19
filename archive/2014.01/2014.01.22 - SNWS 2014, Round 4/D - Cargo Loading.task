@@ -1,0 +1,35 @@
+17 D - Cargo Loading
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+52 3 2
+10000
+20200
+30000000000
+30000000001
+30000000002
+
+14 1485198
+-1
+-1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskDTestCase
+10 2014.01.22
+18 SNWS 2014, Round 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

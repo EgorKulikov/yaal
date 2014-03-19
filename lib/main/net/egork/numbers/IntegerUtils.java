@@ -36,10 +36,10 @@ public class IntegerUtils {
     }
 
     public static int[] generatePrimes(int upTo) {
-		boolean[] isPrime = generatePrimalityTable(upTo);
+		int[] isPrime = generateBitPrimalityTable(upTo);
 		IntList primes = new IntArrayList();
 		for (int i = 0; i < upTo; i++) {
-			if (isPrime[i])
+			if ((isPrime[i >> 5] >>> (i & 31) & 1) == 1)
 				primes.add(i);
 		}
 		return primes.toArray();
@@ -55,6 +55,21 @@ public class IntegerUtils {
 			if (isPrime[i]) {
 				for (int j = i * i; j < upTo; j += i)
 					isPrime[j] = false;
+			}
+		}
+		return isPrime;
+	}
+
+	public static int[] generateBitPrimalityTable(int upTo) {
+		int[] isPrime = new int[(upTo + 31) >> 5];
+		if (upTo < 2)
+			return isPrime;
+		Arrays.fill(isPrime, -1);
+		isPrime[0] &= -4;
+		for (int i = 2; i * i < upTo; i++) {
+			if ((isPrime[i >> 5] >>> (i & 31) & 1) == 1) {
+				for (int j = i * i; j < upTo; j += i)
+					isPrime[j >> 5] &= -1 - (1 << (j & 31));
 			}
 		}
 		return isPrime;

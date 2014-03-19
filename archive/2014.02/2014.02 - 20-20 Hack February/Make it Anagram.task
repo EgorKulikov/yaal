@@ -1,0 +1,28 @@
+15 Make it Anagram
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+8 cde
+abc
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+23 net.egork.MakeItAnagram
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.02.19
+19 20-20 Hack February
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

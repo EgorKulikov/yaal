@@ -1,0 +1,38 @@
+20 A Story with Strings
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+26 adsyufsfdsfdsf
+fdyusgfdfyu
+4 fd
+2
+1
+1
+24 adsyufsfdsfdsf
+bbbbbbbbb
+1 0
+1
+2
+13 abcdef
+defabc
+5 def
+3
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+27 net.egork.AStoryWithStrings
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.03.07
+20 March Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

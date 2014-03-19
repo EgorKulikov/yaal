@@ -1,0 +1,42 @@
+48 A - On Number of Decompositions into Multipliers
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+5 1
+15
+
+2 1
+
+1
+1
+8 3
+1 1 2
+
+2 3
+
+1
+2
+6 2
+5 7
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+108 on2014_02.on2014_02_26_Codeforces_Round__232__Div__1_.A___On_Number_of_Decompositions_into_Multipliers.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.02.26
+30 Codeforces Round #232 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

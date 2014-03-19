@@ -1,0 +1,38 @@
+16 F - Square Shell
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 3
+1
+2
+6
+
+19 1.000
+2.500
+47.500
+
+1
+1
+5 1
+50
+
+-1
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-3
+0
+10 2014.01.22
+18 SNWS 2014, Round 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,36 @@
+27 Problem 3. Counting Friends
+6 SINGLE
+6 CUSTOM
+9 fcount.in
+6 CUSTOM
+10 fcount.out
+1
+0
+12 4
+1
+2
+2
+1
+3
+
+8 3
+1
+4
+5
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+16 net.egork.Fcount
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+24 net.egork.FcountTestCase
+10 2014.03.11
+30 USACO 2014 March Contest, Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

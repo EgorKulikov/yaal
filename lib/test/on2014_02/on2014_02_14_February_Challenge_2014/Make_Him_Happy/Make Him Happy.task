@@ -1,0 +1,31 @@
+14 Make Him Happy
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+13 5 5
+2 4 3 2 1
+1 2
+1
+1
+13 5 5
+2 4 9 2 5
+2 -1
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+74 on2014_02.on2014_02_14_February_Challenge_2014.Make_Him_Happy.MakeHimHappy
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.02.14
+23 February Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
