@@ -1,0 +1,30 @@
+23 OnceUponATimeInTimeLand
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+59 2
+10 1
+1 2 -3 -5 4 6 -3 2 -1 2
+10 2
+1 2 -3 -5 4 6 -3 2 -1 2
+5 12
+10
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+33 net.egork.OnceUponATimeInTimeLand
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.03.29
+14 IndiaHacks2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

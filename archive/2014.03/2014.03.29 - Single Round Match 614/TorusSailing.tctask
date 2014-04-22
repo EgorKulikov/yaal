@@ -1,0 +1,51 @@
+12 TorusSailing
+12 expectedTime
+6 double
+4
+3 int
+1 N
+3 int
+1 M
+3 int
+5 goalX
+3 int
+5 goalY
+4
+0
+4
+int 2
+int 2
+int 1
+int 1
+double 4.0
+1
+1
+4
+int 3
+int 3
+int 0
+int 2
+double 8.0
+1
+2
+4
+int 7
+int 10
+int 3
+int 2
+double 51.80060107964037
+1
+3
+4
+int 100
+int 100
+int 99
+int 99
+double 9992.616372325532
+1
+10 2014.03.29
+22 Single Round Match 614
+0
+22 net.egork.TorusSailing
+1
+4 256M

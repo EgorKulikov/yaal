@@ -11,10 +11,14 @@ public class LCA {
 	private final long[] order;
 	private final int[] position;
 	private final Graph graph;
-	private final LongIntervalTree lcaTree;
+	private final IntervalTree lcaTree;
 	private final int[] level;
 
 	public LCA(Graph graph) {
+		this(graph, 0);
+	}
+
+	public LCA(Graph graph, int root) {
 		this.graph = graph;
 		order = new long[2 * graph.vertexCount() - 1];
 		position = new int[graph.vertexCount()];
@@ -24,9 +28,10 @@ public class LCA {
 			index[i] = graph.firstOutbound(i);
 		int[] last = new int[graph.vertexCount()];
 		int[] stack = new int[graph.vertexCount()];
+		stack[0] = root;
 		int size = 1;
 		int j = 0;
-		last[0] = -1;
+		last[root] = -1;
 		Arrays.fill(position, -1);
 		while (size > 0) {
 			int vertex = stack[--size];
@@ -44,7 +49,7 @@ public class LCA {
 				index[vertex] = graph.nextOutbound(index[vertex]);
 			}
 		}
-		lcaTree = new ArrayBasedIntervalTree(order) {
+		lcaTree = new ReadOnlyIntervalTree(order) {
 			@Override
 			protected long joinValue(long left, long right) {
 				if (left == -1)
@@ -57,23 +62,8 @@ public class LCA {
 			}
 
 			@Override
-			protected long joinDelta(long was, long delta) {
-				return was;
-			}
-
-			@Override
-			protected long accumulate(long value, long delta, int length) {
-				return value;
-			}
-
-			@Override
 			protected long neutralValue() {
 				return -1;
-			}
-
-			@Override
-			protected long neutralDelta() {
-				return 0;
 			}
 		};
 		lcaTree.init();

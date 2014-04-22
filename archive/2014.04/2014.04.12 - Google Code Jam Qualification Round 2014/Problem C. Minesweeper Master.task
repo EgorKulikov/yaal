@@ -1,0 +1,54 @@
+29 Problem C. Minesweeper Master
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+9 C-.*[.]in
+6 CUSTOM
+5 c.out
+1
+0
+35 5
+5 5 23
+3 1 1
+2 2 1
+4 7 3
+10 10 82
+214 Case #1:
+Impossible
+Case #2:
+c
+.
+*
+Case #3:
+Impossible
+Case #4:
+......*
+.c....*
+.......
+..*....
+Case #5:
+**********
+**********
+**********
+****....**
+***.....**
+***.c...**
+***....***
+**********
+**********
+**********
+1
+14 main/net/egork
+17 -Xmx4096m -Xss64m
+4 Main
+15 net.egork.TaskC
+22 net.egork.TaskCChecker
+0 
+1
+23 net.egork.TaskCTestCase
+10 2014.04.12
+40 Google Code Jam Qualification Round 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

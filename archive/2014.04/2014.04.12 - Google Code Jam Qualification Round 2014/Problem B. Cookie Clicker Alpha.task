@@ -1,0 +1,33 @@
+31 Problem B. Cookie Clicker Alpha
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+9 B-.*[.]in
+6 CUSTOM
+5 b.out
+1
+0
+74 4
+30.0 1.0 2.0
+30.0 2.0 100.0
+30.50000 3.14159 1999.19990
+500.0 4.0 2000.0
+80 Case #1: 1.0000000
+Case #2: 39.1666667
+Case #3: 63.9680013
+Case #4: 526.1904762
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2014.04.12
+40 Google Code Jam Qualification Round 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
