@@ -56,6 +56,8 @@ public abstract class MultiplicativeFunction {
 	public long[] calculateUpTo(int upTo) {
 		int[] divisor = IntegerUtils.generateDivisorTable(upTo);
 		long[] result = new long[upTo];
+		if (upTo <= 1)
+			return result;
 		result[1] = 1;
 		for (int i = 2; i < upTo; i++) {
 			int iDivided = i;

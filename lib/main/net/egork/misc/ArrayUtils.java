@@ -3,6 +3,7 @@ package net.egork.misc;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.intcollection.IntArray;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -363,10 +364,6 @@ public class ArrayUtils {
 		}
 	}
 
-	public static long maxElement(long[] array) {
-		return maxElement(array, 0, array.length);
-	}
-
 	private static long maxElement(long[] array, int from, int to) {
 		long result = Long.MIN_VALUE;
 		for (int i = from; i < to; i++)
@@ -555,6 +552,10 @@ public class ArrayUtils {
 		return array[minPosition(array)];
 	}
 
+	public static long maxElement(long[] array) {
+		return array[maxPosition(array)];
+	}
+
 	public static int minPosition(long[] array) {
 		return minPosition(array, 0, array.length);
 	}
@@ -589,5 +590,42 @@ public class ArrayUtils {
 			}
 		}
 		return result;
+	}
+
+	public static int[] createArray(int count, int value) {
+		int[] array = new int[count];
+		Arrays.fill(array, value);
+		return array;
+	}
+
+	public static long[] createArray(int count, long value) {
+		long[] array = new long[count];
+		Arrays.fill(array, value);
+		return array;
+	}
+
+	public static double[] createArray(int count, double value) {
+		double[] array = new double[count];
+		Arrays.fill(array, value);
+		return array;
+	}
+
+	public static boolean[] createArray(int count, boolean value) {
+		boolean[] array = new boolean[count];
+		Arrays.fill(array, value);
+		return array;
+	}
+
+	public static char[] createArray(int count, char value) {
+		char[] array = new char[count];
+		Arrays.fill(array, value);
+		return array;
+	}
+
+	public static<T> T[] createArray(int count, T value) {
+		@SuppressWarnings("unchecked")
+		T[] array = (T[]) Array.newInstance(value.getClass(), count);
+		Arrays.fill(array, value);
+		return array;
 	}
 }

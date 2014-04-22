@@ -1,0 +1,39 @@
+12 A - Start Up
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+4 AHA
+
+4 YES
+
+1
+1
+2 Z
+
+3 NO
+
+1
+2
+3 XO
+
+3 NO
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.04.22
+51 Coder-Strike 2014 - Finals (online edition, Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

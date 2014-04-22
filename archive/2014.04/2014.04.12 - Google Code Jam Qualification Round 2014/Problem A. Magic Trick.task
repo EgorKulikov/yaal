@@ -1,0 +1,58 @@
+22 Problem A. Magic Trick
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+9 A-.*[.]in
+6 CUSTOM
+5 a.out
+1
+0
+248 3
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+3
+1 2 5 4
+3 11 6 15
+9 10 7 12
+13 14 8 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+3
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+
+61 Case #1: 7
+Case #2: Bad magician!
+Case #3: Volunteer cheated!
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.04.12
+40 Google Code Jam Qualification Round 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

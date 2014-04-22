@@ -1,0 +1,39 @@
+20 B - Mashmokh and ACM
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+4 3 2
+
+2 5
+
+1
+1
+4 6 4
+
+3 39
+
+1
+2
+4 2 1
+
+2 2
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+80 on2014_04.on2014_04_06_Codeforces_Round__240__Div__1_.B___Mashmokh_and_ACM.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.04.06
+30 Codeforces Round #240 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

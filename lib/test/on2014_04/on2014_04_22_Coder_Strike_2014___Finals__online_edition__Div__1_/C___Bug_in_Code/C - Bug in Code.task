@@ -1,0 +1,45 @@
+15 C - Bug in Code
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+20 4 2
+2 3
+1 4
+1 4
+2 1
+
+2 6
+
+1
+1
+36 8 6
+5 6
+5 7
+5 8
+6 2
+2 1
+7 3
+1 3
+1 4
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+96 on2014_04.on2014_04_22_Coder_Strike_2014___Finals__online_edition__Div__1_.C___Bug_in_Code.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.04.22
+51 Coder-Strike 2014 - Finals (online edition, Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
