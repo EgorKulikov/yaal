@@ -1,0 +1,32 @@
+23 The Love-Letter Mystery
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+17 3
+abc
+abcba
+abcd
+
+6 2
+0
+4
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+30 net.egork.TheLoveLetterMystery
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.05.20
+26 Weekly Challenges - Week 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
