@@ -1,0 +1,39 @@
+33 C - Видимость бумаг
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+14 3
+2 2
+1 4
+5 1
+
+10 Well done
+
+1
+1
+14 3
+2 2
+1 4
+5 2
+
+25 Invisible paper detected
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+95 on2014_05.on2014_05_23_Yandex_Algorithm_2014__Qualification__Test_run.C__________________.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.05.23
+46 Yandex.Algorithm 2014, Qualification, Test run
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

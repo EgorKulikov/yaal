@@ -1,0 +1,43 @@
+13 A stones game
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+18 5
+1
+10
+6
+8
+123456
+
+14 1
+7
+2
+7
+32768
+
+1
+1
+13 1
+1000000000
+
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+21 net.egork.AStonesGame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+29 net.egork.AStonesGameTestCase
+10 2014.05.23
+26 Weekly Challenges - Week 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
