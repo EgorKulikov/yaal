@@ -1,0 +1,36 @@
+14 A - (facepalm)
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 yesyes)
+
+7 yesyes)
+1
+1
+69 (Impossible) is (nothing). Impossible itself says: I m possible ;)))
+
+89 <S>(Impossible)</S> is <S>(nothing)</S>. Impossible itself says: I m possible <S>;)</S>))
+1
+2
+97 What is the value of (1+1/2+1/3+1/5+1/7+1/11+...)? Not so interesting, y'know (at least for me).
+
+103 What is the value of (1+1/2+1/3+1/5+1/7+1/11+..<S>.)</S>? Not so interesting, y'know (at least for me).
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.05.23
+46 Yandex.Algorithm 2014, Qualification, Test run
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
