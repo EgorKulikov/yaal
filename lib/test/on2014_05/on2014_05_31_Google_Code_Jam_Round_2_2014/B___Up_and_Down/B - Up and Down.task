@@ -1,0 +1,31 @@
+15 B - Up and Down
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 B-(small|large).*[.]in
+6 CUSTOM
+5 b.out
+1
+0
+23 2
+3
+1 2 3
+5
+1 8 10 3 7
+
+21 Case #1: 0
+Case #2: 1
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+73 on2014_05.on2014_05_31_Google_Code_Jam_Round_2_2014.B___Up_and_Down.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.05.31
+28 Google Code Jam Round 2 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

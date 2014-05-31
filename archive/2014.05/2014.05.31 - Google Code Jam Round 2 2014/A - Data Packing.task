@@ -1,0 +1,34 @@
+16 A - Data Packing
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 A-(small|large).*[.]in
+6 CUSTOM
+5 a.out
+1
+0
+56 3
+3 100
+10 20 70
+4 100
+30 40 60 70
+5 100
+10 20 30 40 60
+
+32 Case #1: 2
+Case #2: 2
+Case #3: 3
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.05.31
+28 Google Code Jam Round 2 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

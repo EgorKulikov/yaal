@@ -1,0 +1,36 @@
+24 C - Don't Break The Nile
+6 SINGLE
+12 LOCAL_REGEXP
+22 C-(small|large).*[.]in
+6 CUSTOM
+5 c.out
+1
+0
+62 2
+3 3 2
+2 0 2 0
+0 2 0 2
+5 6 4
+1 0 1 0
+3 1 3 3
+0 2 1 3
+1 5 2 5
+
+21 Case #1: 1
+Case #2: 2
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskCTestCase
+10 2014.05.31
+28 Google Code Jam Round 2 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
