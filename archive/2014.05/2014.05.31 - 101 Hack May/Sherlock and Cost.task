@@ -1,0 +1,29 @@
+17 Sherlock and Cost
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+17 1
+5
+10 1 10 1 10
+
+3 36
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+25 net.egork.SherlockAndCost
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.05.31
+12 101 Hack May
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

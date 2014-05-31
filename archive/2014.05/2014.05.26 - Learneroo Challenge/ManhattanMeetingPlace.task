@@ -1,0 +1,35 @@
+21 ManhattanMeetingPlace
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+82 3
+6
+0 2 2 7 7 5
+10
+0 2 4 4 9 3 3 1 6 8
+18
+1 11 2 10 4 11 1 7 3 4 4 7 6 5 8 3 10 4
+
+12 2 5
+4 3
+4 7
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+31 net.egork.ManhattanMeetingPlace
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.05.26
+19 Learneroo Challenge
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
