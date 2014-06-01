@@ -1,0 +1,59 @@
+21 A - The Child and Toy
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+28 4 3
+10 20 30 40
+1 4
+1 2
+2 3
+
+3 40
+
+1
+1
+36 4 4
+100 100 100 100
+1 2
+2 3
+2 4
+3 4
+
+4 400
+
+1
+2
+66 7 10
+40 10 20 10 20 80 40
+1 5
+4 7
+4 5
+5 2
+5 7
+6 4
+1 6
+1 3
+4 3
+1 4
+
+4 160
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+81 on2014_06.on2014_06_01_Codeforces_Round__250__Div__1_.A___The_Child_and_Toy.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.01
+30 Codeforces Round #250 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
