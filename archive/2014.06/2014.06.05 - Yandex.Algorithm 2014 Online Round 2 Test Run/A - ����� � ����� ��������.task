@@ -1,0 +1,35 @@
+45 A - Циклы с общей вершиной
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 2 3
+3 3
+
+2 2
+
+1
+1
+8 2 3
+6 9
+
+2 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.05
+45 Yandex.Algorithm 2014 Online Round 2 Test Run
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

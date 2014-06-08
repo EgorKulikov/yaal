@@ -1,0 +1,72 @@
+12 UniformBoard
+8 getBoard
+3 int
+2
+18 java.lang.String[]
+5 board
+3 int
+1 K
+6
+0
+2
+String[] 2
+2 AP
+2 .A
+int 0
+int 1
+1
+1
+2
+String[] 2
+2 AP
+2 .A
+int 1
+int 2
+1
+2
+2
+String[] 3
+3 PPP
+3 APA
+3 A.P
+int 2
+int 3
+1
+3
+2
+String[] 3
+3 AAA
+3 PPP
+3 AAA
+int 10
+int 3
+1
+4
+2
+String[] 1
+1 .
+int 1000
+int 0
+1
+5
+2
+String[] 10
+10 PPAAPA..AP
+10 PPA.APAP..
+10 ..P.AA.PPP
+10 P.P..APAA.
+10 P.P..P.APA
+10 PPA..AP.AA
+10 APP..AAPAA
+10 P.P.AP...P
+10 .P.A.PAPPA
+10 ..PAPAP..P
+int 10
+int 15
+1
+10 2014.06.05
+22 Single Round Match 623
+0
+22 net.egork.UniformBoard
+1
+4 256M

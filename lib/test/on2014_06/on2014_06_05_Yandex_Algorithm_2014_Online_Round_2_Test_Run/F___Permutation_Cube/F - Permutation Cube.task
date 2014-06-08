@@ -1,0 +1,39 @@
+20 F - Permutation Cube
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+20 3
+1 2 3
+3 1 2
+2 1 3
+
+2 6
+
+1
+1
+20 3
+1 3 2
+2 3 1
+3 1 2
+
+2 6
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+95 on2014_06.on2014_06_05_Yandex_Algorithm_2014_Online_Round_2_Test_Run.F___Permutation_Cube.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.05
+45 Yandex.Algorithm 2014 Online Round 2 Test Run
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
