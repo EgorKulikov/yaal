@@ -1,0 +1,41 @@
+20 RoyAndAlphaBetaTrees
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+47 4
+1
+1 1
+1
+2
+1 1
+1 2
+3
+1 1
+1 2 3
+5
+1 1
+1 2 3 4 5
+8 1
+0
+6
+54
+1
+14 main/net/egork
+7 -Xmx64M
+8 Solution
+91 on2014_06.on2014_06_06_Weekly_Challenges___Week_4.RoyAndAlphaBetaTrees.RoyAndAlphaBetaTrees
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+99 on2014_06.on2014_06_06_Weekly_Challenges___Week_4.RoyAndAlphaBetaTrees.RoyAndAlphaBetaTreesTestCase
+10 2014.06.06
+26 Weekly Challenges - Week 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
