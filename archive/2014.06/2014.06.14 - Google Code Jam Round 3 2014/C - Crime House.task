@@ -1,0 +1,75 @@
+15 C - Crime House
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 C-(small|large).*[.]in
+6 CUSTOM
+5 c.out
+2
+0
+129 5
+3
+E 5
+L 0
+E 5
+2
+L 1
+L 1
+4
+L 1
+E 0
+E 0
+L 1
+7
+L 2
+E 0
+E 1
+E 2
+E 0
+E 3
+L 4
+13
+L 4
+L 1
+L 2
+E 0
+L 1
+E 0
+L 2
+E 0
+L 2
+E 0
+E 0
+L 1
+L 4
+
+63 Case #1: 1
+Case #2: CRIME TIME
+Case #3: 1
+Case #4: 4
+Case #5: 0
+1
+1
+20 1
+4
+E 1
+L 0
+E 0
+L 1
+
+11 Case #1: 0
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.14
+28 Google Code Jam Round 3 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

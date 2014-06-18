@@ -27,7 +27,7 @@ public class CompositeStringHash extends AbstractStringHash {
             secondFirst = 0;
             secondSecond = 0;
         } else {
-            long value = second.hash(from - first.length(), to - first.length());
+            long value = second.hash(Math.max(0, from - first.length()), to - first.length());
             secondFirst = value >>> 32;
             secondSecond = value & ((1L << 32) - 1);
         }
@@ -35,7 +35,7 @@ public class CompositeStringHash extends AbstractStringHash {
             firstFirst = 0;
             firstSecond = 0;
         } else {
-            long value = first.hash(from, to);
+            long value = first.hash(from, Math.min(to, second.length()));
             firstFirst = value >>> 32;
             firstSecond = value & ((1L << 32) - 1);
         }

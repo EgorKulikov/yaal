@@ -1,0 +1,40 @@
+27 A - Разбор задач
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+62 3
+3 3 60 20
+110
+011
+101
+2 2 60 20
+11
+00
+3 3 60 20
+101
+010
+101
+
+12 200
+120
+220
+
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.08
+29 RCC-2014 Отборочный
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

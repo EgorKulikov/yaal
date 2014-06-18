@@ -20,6 +20,8 @@ public class SubstringStringHash extends AbstractStringHash {
 
 
 	public long hash(int from, int to) {
+		if (to + this.from > this.to)
+			throw new IndexOutOfBoundsException();
 		return base.hash(from + this.from, to + this.from);
 	}
 

@@ -1,0 +1,35 @@
+12 B - Last Hit
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 B-(small|large).*[.]in
+6 CUSTOM
+5 b.out
+1
+0
+62 2
+20 40 3
+100 100
+20 100
+60 100
+20 60 3
+80 100
+80 200
+120 300
+
+25 Case #1: 300
+Case #2: 500
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+70 on2014_06.on2014_06_14_Google_Code_Jam_Round_3_2014.B___Last_Hit.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.14
+28 Google Code Jam Round 3 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

@@ -1,0 +1,58 @@
+22 B - Om Nom and Spiders
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+5
+0
+18 3 3 4
+...
+R.L
+R.U
+
+6 0 2 2 
+1
+1
+12 2 2 2
+..
+RL
+
+4 1 1 
+1
+2
+12 2 2 2
+..
+LR
+
+4 0 0 
+1
+3
+21 3 4 8
+....
+RRLL
+UUUU
+
+8 1 3 3 1 
+1
+4
+12 2 2 2
+..
+UU
+
+4 0 0 
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.13
+20 Zepto Code Rush 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
