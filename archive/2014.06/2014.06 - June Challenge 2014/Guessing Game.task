@@ -1,0 +1,32 @@
+13 Guessing Game
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+14 3
+1 1
+1 2
+2 3
+
+12 0/1
+1/2
+1/2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+22 net.egork.GuessingGame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.06
+19 June Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,37 @@
+7 Two Two
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+35 5
+2222222
+24256
+65536
+023223
+33579
+
+10 7
+4
+1
+4
+0
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+64 on2014_06.on2014_06_09_Weekly_Challenges___Week_4.Two_Two.TwoTwo
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+72 on2014_06.on2014_06_09_Weekly_Challenges___Week_4.Two_Two.TwoTwoTestCase
+10 2014.06.09
+26 Weekly Challenges - Week 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

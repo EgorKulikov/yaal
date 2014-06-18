@@ -1,0 +1,36 @@
+46 C - Лабораторная по физике
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+45 3 2 30 50 4
+2 3 5
+5 10
+40 1
+45 1
+140 3
+170 4
+
+15 YES
+NO
+YES
+YES
+
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+75 on2014_06.on2014_06_08_RCC_2014___________.C_________________________.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.08
+29 RCC-2014 Отборочный
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

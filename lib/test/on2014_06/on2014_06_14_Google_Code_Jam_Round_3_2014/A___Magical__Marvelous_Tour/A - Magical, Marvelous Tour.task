@@ -1,0 +1,41 @@
+27 A - Magical, Marvelous Tour
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+22 A-(small|large).*[.]in
+6 CUSTOM
+5 a.out
+1
+0
+149 8
+1 1 1 1 1
+10 17 1 7 1
+2 100 100 200 1
+20 17 3 23 100
+10 999999 999999 1000000 1000000
+2 1 1 1 1
+3 1 99 100 1
+999999 1000000 999999 1000000 1000000
+
+175 Case #1: 0.0000000000
+Case #2: 0.6111111111
+Case #3: 0.0098039216
+Case #4: 0.6471920290
+Case #5: 0.6000006000
+Case #6: 0.5000000000
+Case #7: 0.0291262136
+Case #8: 0.6666666667
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+85 on2014_06.on2014_06_14_Google_Code_Jam_Round_3_2014.A___Magical__Marvelous_Tour.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2014.06.14
+28 Google Code Jam Round 3 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1

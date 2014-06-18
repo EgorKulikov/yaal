@@ -1,0 +1,71 @@
+10 D - Willow
+6 SINGLE
+12 LOCAL_REGEXP
+22 D-(small|large).*[.]in
+6 CUSTOM
+5 d.out
+1
+0
+111 3
+3
+1000
+200
+1000
+2
+3
+8
+8
+0
+8
+0
+0
+0
+0
+10
+2
+5
+4
+5
+6
+7
+8
+10
+150
+200
+0
+5000
+0
+100
+0
+0
+0
+10000
+10
+3
+8
+5
+8
+7
+8
+9
+10
+
+38 Case #1: 200
+Case #2: -2
+Case #3: 5100
+1
+14 main/net/egork
+9 -Xmx8192M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskDTestCase
+10 2014.06.14
+28 Google Code Jam Round 3 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+1
