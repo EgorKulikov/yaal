@@ -99,4 +99,8 @@ public class Rational implements Comparable<Rational> {
 	public Rational multiply(Rational other) {
 		return new Rational(numerator * other.numerator, other.denominator * denominator);
 	}
+
+	public double value() {
+		return (double)numerator / denominator;
+	}
 }
