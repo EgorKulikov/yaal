@@ -1,0 +1,32 @@
+16 Count Substrings
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+17 2
+4
+1111
+5
+10001
+
+5 10
+3
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+25 net.egork.CountSubstrings
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.07
+19 July Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

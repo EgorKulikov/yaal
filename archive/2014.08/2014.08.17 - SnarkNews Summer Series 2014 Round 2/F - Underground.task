@@ -1,0 +1,37 @@
+15 F - Underground
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+115 3
+1 5 1 1 5
+5 2 0 1 2 3 5 5 10 4 15
+3 4 2 1 4
+3 1 0 2 2 3 5
+3 2 0 3 10 4 11
+1 4 2 1 4
+3 1 0 2 2 4 15
+3 2 0 3 1 4 2
+
+6 8
+9
+5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.17
+36 SnarkNews Summer Series 2014 Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

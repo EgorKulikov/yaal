@@ -1,0 +1,36 @@
+21 AlternatingCharacters
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+36 5
+AAAA
+BBBBB
+ABABABAB
+BABABA
+AAABBB
+
+10 3
+4
+0
+0
+4
+
+1
+14 main/net/egork
+7 -Xmx64M
+8 Solution
+31 net.egork.AlternatingCharacters
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.09
+27 Weekly Challenges - Week 10
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,36 @@
+17 Dynamic Summation
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+52 4
+1 2
+2 3
+3 4
+4
+U 3 2 2 2
+U 2 3 2 2
+R 1 2 8
+R 4 3 9
+
+4 2
+3
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+84 on2014_07.on2014_07_06_Weekly_Challenges___Week_6.Dynamic_Summation.DynamicSummation
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.06
+26 Weekly Challenges - Week 6
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

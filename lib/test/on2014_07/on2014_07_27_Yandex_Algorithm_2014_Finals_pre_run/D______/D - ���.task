@@ -1,0 +1,35 @@
+10 D - НЛО
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 3
+1 2 3
+
+2 3
+
+1
+1
+8 3
+1 2 2
+
+2 2
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+73 on2014_07.on2014_07_27_Yandex_Algorithm_2014_Finals_pre_run.D______.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.27
+36 Yandex.Algorithm 2014 Finals pre-run
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

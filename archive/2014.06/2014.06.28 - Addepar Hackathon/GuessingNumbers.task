@@ -1,0 +1,31 @@
+15 GuessingNumbers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+58 5 1
+0.20000000 0.30000000 0.40000000 0.10000000 0.00000000
+10 0.40000000
+1
+1
+58 5 3
+0.20000000 0.30000000 0.40000000 0.10000000 0.00000000
+1 1
+1
+14 main/net/egork
+17 -Xmx4096m -Xss64m
+8 Solution
+25 net.egork.GuessingNumbers
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-6
+0
+10 2014.06.28
+17 Addepar Hackathon
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,31 @@
+6 Cipher
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+14 7 4
+1110100110
+7 1001010
+1
+1
+11 6 2
+1110001
+6 101111
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+16 net.egork.Cipher
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.10
+27 Weekly Challenges - Week 10
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

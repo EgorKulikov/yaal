@@ -1,0 +1,42 @@
+9 A - Mafia
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+12 2 1 1
+A 1 2
+
+2 2
+
+1
+1
+6 3 2 0
+
+2 3
+
+1
+2
+18 4 2 2
+A 2 3
+D 2 4
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+75 on2014_08.on2014_08_24_SnarkNews_Summer_Series_2014_Round_4.A___Mafia.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.24
+36 SnarkNews Summer Series 2014 Round 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

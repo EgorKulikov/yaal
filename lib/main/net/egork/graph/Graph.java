@@ -20,7 +20,7 @@ public class Graph {
 	private int[] from;
 	private int[] to;
 	private long[] weight;
-	private long[] capacity;
+	public long[] capacity;
 	private int[] reverseEdge;
 	private int[] flags;
 

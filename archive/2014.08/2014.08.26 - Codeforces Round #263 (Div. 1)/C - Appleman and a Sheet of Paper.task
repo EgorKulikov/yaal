@@ -1,0 +1,51 @@
+33 C - Appleman and a Sheet of Paper
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+24 7 4
+1 3
+1 2
+2 0 1
+2 1 2
+
+4 4
+3
+
+1
+1
+51 10 9
+2 2 9
+1 1
+2 0 1
+1 8
+2 0 8
+1 2
+2 1 3
+1 4
+2 2 4
+
+11 7
+2
+10
+4
+5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.26
+30 Codeforces Round #263 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

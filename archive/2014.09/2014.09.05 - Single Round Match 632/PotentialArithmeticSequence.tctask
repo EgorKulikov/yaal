@@ -1,0 +1,87 @@
+27 PotentialArithmeticSequence
+20 numberOfSubsequences
+3 int
+1
+5 int[]
+1 d
+5
+0
+1
+int[] 7
+0
+1
+0
+2
+0
+1
+0
+int 28
+1
+1
+1
+int[] 7
+0
+0
+0
+0
+0
+0
+0
+int 7
+1
+2
+1
+int[] 7
+0
+0
+0
+0
+1
+1
+1
+int 8
+1
+3
+1
+int[] 5
+0
+100
+0
+2
+0
+int 11
+1
+4
+1
+int[] 23
+1
+11
+3
+0
+1
+0
+1
+0
+1
+0
+1
+0
+3
+0
+2
+0
+0
+0
+0
+1
+2
+3
+20
+int 49
+1
+10 2014.09.05
+22 Single Round Match 632
+0
+37 net.egork.PotentialArithmeticSequence
+1
+4 256M

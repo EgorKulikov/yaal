@@ -1,0 +1,38 @@
+10 F - Zeroes
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+19 3
+0 20
+31 1009
+1 9
+
+8 3
+207
+0
+
+1
+1
+12 1
+0 1000000
+
+-1
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.13
+36 SnarkNews Summer Series 2014 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

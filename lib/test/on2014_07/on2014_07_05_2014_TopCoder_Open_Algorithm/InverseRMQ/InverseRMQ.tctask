@@ -1,0 +1,142 @@
+10 InverseRMQ
+8 possible
+16 java.lang.String
+4
+3 int
+1 n
+5 int[]
+1 A
+5 int[]
+1 B
+5 int[]
+3 ans
+6
+0
+4
+int 5
+int[] 3
+1
+2
+4
+int[] 3
+2
+4
+5
+int[] 3
+3
+4
+5
+String
+8 Possible
+1
+1
+4
+int 3
+int[] 3
+1
+2
+3
+int[] 3
+1
+2
+3
+int[] 3
+3
+3
+3
+String
+10 Impossible
+1
+2
+4
+int 600
+int[] 6
+1
+101
+201
+301
+401
+501
+int[] 6
+100
+200
+300
+400
+500
+600
+int[] 6
+100
+200
+300
+400
+500
+600
+String
+8 Possible
+1
+3
+4
+int 1000000000
+int[] 2
+1234
+1234
+int[] 2
+5678
+5678
+int[] 2
+10000
+20000
+String
+10 Impossible
+1
+4
+4
+int 8
+int[] 8
+1
+2
+3
+4
+5
+6
+7
+8
+int[] 8
+1
+2
+3
+4
+5
+6
+7
+8
+int[] 8
+4
+8
+2
+5
+6
+3
+7
+1
+String
+8 Possible
+1
+5
+4
+int 1000000000
+int[] 1
+1
+int[] 1
+1000000000
+int[] 1
+19911120
+String
+10 Impossible
+1
+10 2014.07.05
+28 2014 TopCoder Open Algorithm
+0
+73 on2014_07.on2014_07_05_2014_TopCoder_Open_Algorithm.InverseRMQ.InverseRMQ
+1
+4 256M

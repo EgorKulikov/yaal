@@ -1,0 +1,34 @@
+9 Best spot
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+51 3 3
+19 19 -12
+5 8 -14
+-12 -11 9
+2 2
+-18 -12
+-10 -7
+
+8 937
+2 2
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+18 net.egork.BestSpot
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.04
+26 Weekly Challenges - Week 6
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,67 @@
+20 CircuitsConstruction
+18 maximizeResistance
+3 int
+2
+16 java.lang.String
+7 circuit
+5 int[]
+10 conductors
+4
+0
+2
+String
+5 BXBXX
+int[] 3
+8
+2
+3
+int 8
+1
+1
+2
+String
+9 AAXXAXAXX
+int[] 5
+1
+1
+2
+8
+10
+int 22
+1
+2
+2
+String
+5 AXBXX
+int[] 3
+8
+2
+3
+int 11
+1
+3
+2
+String
+25 BAAXBXXBXAXXBBAXXBXXAAXXX
+int[] 13
+17
+7
+21
+102
+56
+72
+88
+15
+9
+192
+16
+8
+30
+int 454
+1
+10 2014.07.22
+22 Single Round Match 628
+0
+87 on2014_07.on2014_07_22_Single_Round_Match_628.CircuitsConstruction.CircuitsConstruction
+1
+4 256M

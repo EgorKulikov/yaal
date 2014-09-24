@@ -1,0 +1,49 @@
+13 C - Elections
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+22 5
+1 2
+1 2
+1 2
+2 1
+0 0
+
+2 3
+
+1
+1
+18 4
+1 2
+1 2
+2 1
+0 0
+
+2 2
+
+1
+2
+11 1
+100000 0
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.10
+31 MemSQL Start[c]UP 2.0 - Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

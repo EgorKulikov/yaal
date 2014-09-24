@@ -1,0 +1,46 @@
+33 B - Строчная задача
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 3
+a
+b
+c
+
+2 4
+
+1
+1
+10 2
+aab
+aba
+
+2 2
+
+1
+2
+9 2
+aa
+aaa
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.27
+36 Yandex.Algorithm 2014 Finals pre-run
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

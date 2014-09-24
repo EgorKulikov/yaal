@@ -1,0 +1,32 @@
+8 G - Avia
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+47 4
+3
+3 3 12 7 1
+5 0 6 9 2
+9 0 10 9 1
+4 4 11 5 1
+
+2 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+74 on2014_08.on2014_08_13_SnarkNews_Summer_Series_2014_Round_1.G___Avia.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.13
+36 SnarkNews Summer Series 2014 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,56 @@
+21 D - DZY Loves Strings
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+37 xudyhduxyz
+3
+xyz xyz
+dyh xyz
+dzy xyz
+
+7 3
+8
+-1
+
+1
+1
+25 abcabd
+3
+a c
+ab abc
+ab d
+
+6 2
+3
+3
+
+1
+2
+29 baabcabaaa
+2
+abca baa
+aa aba
+
+4 6
+4
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskDTestCase
+10 2014.07.06
+30 Codeforces Round #254 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

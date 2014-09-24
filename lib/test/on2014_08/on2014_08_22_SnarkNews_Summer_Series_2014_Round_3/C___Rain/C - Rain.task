@@ -1,0 +1,36 @@
+8 C - Rain
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+47 1
+5 3 2
+3 14
+10 7
+5 9
+14 8
+12 4
+3 12
+11 7
+6 13
+
+12 7.211102551
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+74 on2014_08.on2014_08_22_SnarkNews_Summer_Series_2014_Round_3.C___Rain.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2014.08.22
+36 SnarkNews Summer Series 2014 Round 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

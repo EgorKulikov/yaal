@@ -1,0 +1,28 @@
+17 Chef and sequence
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 4 2
+1 2 1 4
+
+10 -5 -2 1 4
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+81 on2014_09.on2014_09_06_September_Challenge_2014.Chef_and_sequence.ChefAndSequence
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.06
+24 September Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

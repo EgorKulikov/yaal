@@ -1,0 +1,26 @@
+7 Jumping
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+5 4 10
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+64 on2014_08.on2014_08_30_Petr_Mitrichev_Contest_12.Jumping.Jumping
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.30
+25 Petr Mitrichev Contest 12
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

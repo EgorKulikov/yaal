@@ -1,0 +1,42 @@
+12 A - Bytelink
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 2 1
+2 1
+
+4 1 1
+
+1
+1
+10 3 2
+1 2 2
+
+6 1 2 0
+
+1
+2
+11 3 10
+1 1 1
+
+6 3 0 0
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+79 on2014_08.on2014_08_31_SnarkNews_Summer_Series_2014__Round_5.A___Bytelink.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.31
+37 SnarkNews Summer Series 2014, Round 5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

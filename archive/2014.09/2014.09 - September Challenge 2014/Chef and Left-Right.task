@@ -1,0 +1,34 @@
+19 Chef and Left-Right
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+17 4
+lrl
+rll
+r
+lllr
+
+11 10
+14
+4
+13
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.ChefAndLeftRight
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.09
+24 September Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,29 @@
+5 Robot
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+17 4
+4 2
+0 2
+4 0
+3 4
+1 7
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+62 on2014_09.on2014_09_12_Weekly_Challenges___Week_10.Robot.Robot
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.12
+27 Weekly Challenges - Week 10
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
