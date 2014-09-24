@@ -1,0 +1,34 @@
+18 ConsistentSalaries
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+48 4 4 
+1 1 3 
+40 30 20 10 
+4 20 
+4 -20 
+2 15 
+1 30
+19 BAD 
+GOOD 
+BAD 
+BAD
+1
+14 main/net/egork
+17 -Xmx4096m -Xss64m
+8 Solution
+28 net.egork.ConsistentSalaries
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.28
+17 Addepar Hackathon
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

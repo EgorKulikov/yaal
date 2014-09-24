@@ -1,0 +1,30 @@
+19 A - Tramway Burgers
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+22 2
+5 2 2 4 1
+4 4 4 4 4
+
+11 1200
+30484
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+85 on2014_08.on2014_08_21_SnarkNews_Summer_Series_2014_Round_3.A___Tramway_Burgers.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.21
+36 SnarkNews Summer Series 2014 Round 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

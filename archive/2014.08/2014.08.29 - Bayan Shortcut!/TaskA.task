@@ -1,0 +1,40 @@
+5 TaskA
+12 MULTI_NUMBER
+6 CUSTOM
+4 6.in
+6 CUSTOM
+5 a.out
+1
+0
+48 4
+
+qwerty
+
+%normal%pass%
+
+!hElLo123!
+
+!hElLo123*
+61 Case #1:
+weak
+Case #2:
+normal
+Case #3:
+normal
+Case #4:
+strong
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.29
+15 Bayan Shortcut!
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

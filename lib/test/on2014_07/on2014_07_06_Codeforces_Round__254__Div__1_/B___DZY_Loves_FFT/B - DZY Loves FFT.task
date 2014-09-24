@@ -1,0 +1,50 @@
+17 B - DZY Loves FFT
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+6 3 1 1
+
+6 1
+3
+2
+
+1
+1
+6 5 4 2
+
+10 2
+2
+4
+5
+5
+
+1
+2
+6 5 4 3
+
+10 5
+5
+5
+5
+4
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+77 on2014_07.on2014_07_06_Codeforces_Round__254__Div__1_.B___DZY_Loves_FFT.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+85 on2014_07.on2014_07_06_Codeforces_Round__254__Div__1_.B___DZY_Loves_FFT.TaskBTestCase
+10 2014.07.06
+30 Codeforces Round #254 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

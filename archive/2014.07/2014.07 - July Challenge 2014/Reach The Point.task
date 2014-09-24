@@ -1,0 +1,30 @@
+15 Reach The Point
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+10 2
+3 3
+3 4
+
+4 6
+7
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+23 net.egork.ReachThePoint
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2014.07
+19 July Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

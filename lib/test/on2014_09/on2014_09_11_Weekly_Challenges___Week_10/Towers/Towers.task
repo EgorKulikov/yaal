@@ -1,0 +1,39 @@
+6 Towers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+6 10
+1
+1
+1 2
+1
+1
+7 5
+2
+2 3
+1 4
+1
+2
+8 19
+2
+4 5
+1 8
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+8 Solution
+64 on2014_09.on2014_09_11_Weekly_Challenges___Week_10.Towers.Towers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.11
+27 Weekly Challenges - Week 10
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

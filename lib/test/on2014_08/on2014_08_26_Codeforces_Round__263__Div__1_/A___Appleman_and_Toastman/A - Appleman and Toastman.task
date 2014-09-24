@@ -1,0 +1,35 @@
+25 A - Appleman and Toastman
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+8 3
+3 1 5
+
+3 26
+
+1
+1
+5 1
+10
+
+3 10
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+85 on2014_08.on2014_08_26_Codeforces_Round__263__Div__1_.A___Appleman_and_Toastman.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.26
+30 Codeforces Round #263 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

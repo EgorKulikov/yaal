@@ -1,0 +1,37 @@
+26 Chef and Rainbow Array - 2
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+2 10
+1 0
+1
+1
+2 13
+1 1
+1
+2
+2 14
+1 1
+1
+3
+2 16
+1 7
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+95 on2014_09.on2014_09_06_September_Challenge_2014.Chef_and_Rainbow_Array___2.ChefAndRainbowArray2
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.06
+24 September Challenge 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

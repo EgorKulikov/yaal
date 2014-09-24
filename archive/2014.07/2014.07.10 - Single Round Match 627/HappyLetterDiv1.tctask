@@ -1,0 +1,48 @@
+15 HappyLetterDiv1
+15 getHappyLetters
+16 java.lang.String
+1
+16 java.lang.String
+7 letters
+5
+0
+1
+String
+9 aabbacccc
+String
+3 abc
+1
+1
+1
+String
+11 aaaaaaaccdd
+String
+1 a
+1
+2
+1
+String
+9 ddabccadb
+String
+4 abcd
+1
+3
+1
+String
+6 aaabbb
+String
+0 
+1
+4
+1
+String
+12 rdokcogscosn
+String
+3 cos
+1
+10 2014.07.10
+22 Single Round Match 627
+0
+25 net.egork.HappyLetterDiv1
+1
+4 256M

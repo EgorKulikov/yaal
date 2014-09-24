@@ -1,0 +1,32 @@
+11 B - Customs
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+23 5 5 3 4
+3B
+3A
+1E
+3E
+4B
+
+3 88
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+77 on2014_08.on2014_08_17_SnarkNews_Summer_Series_2014_Round_2.B___Customs.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.17
+36 SnarkNews Summer Series 2014 Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

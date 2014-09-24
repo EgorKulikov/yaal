@@ -1,0 +1,25 @@
+14 SpecialNumbers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+1 4
+1 7
+1
+14 main/net/egork
+17 -Xmx4096m -Xss64m
+8 Solution
+70 on2014_06.on2014_06_28_Addepar_Hackathon.SpecialNumbers.SpecialNumbers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.06.28
+17 Addepar Hackathon
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

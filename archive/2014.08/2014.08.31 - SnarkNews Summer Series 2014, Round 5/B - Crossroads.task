@@ -1,0 +1,32 @@
+14 B - Crossroads
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+36 3
+1111111111
+000111111011100
+111111
+
+10 NO
+NO
+YES
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.31
+37 SnarkNews Summer Series 2014, Round 5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

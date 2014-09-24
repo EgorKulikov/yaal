@@ -413,7 +413,9 @@ public class IntegerUtils {
 		long aReverse = BigInteger.valueOf(aMod).modInverse(BigInteger.valueOf(bMod)).longValue();
 		long bReverse = BigInteger.valueOf(bMod).modInverse(BigInteger.valueOf(aMod)).longValue();
 		long mod = aMod * bMod;
-		return (bReverse * aRemainder % mod * bMod + aReverse * bRemainder % mod * aMod) % mod * modGCD + gcdRemainder;
+		return BigInteger.valueOf(bReverse * aRemainder % mod).multiply(BigInteger.valueOf(bMod)).add(
+				BigInteger.valueOf(aReverse * bRemainder % mod).multiply(BigInteger.valueOf(aMod))
+				).mod(BigInteger.valueOf(mod)).longValue() * modGCD + gcdRemainder;
 	}
 
 	public static long[] generatePowers(long base, long maxValue) {

@@ -1,0 +1,47 @@
+22 E - DZY Loves Planting
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+28 4
+1 2 1
+2 3 2
+3 4 3
+1
+1
+1
+1
+
+2 2
+
+1
+1
+28 4
+1 2 1
+2 3 2
+3 4 3
+4
+4
+4
+4
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+82 on2014_07.on2014_07_06_Codeforces_Round__254__Div__1_.E___DZY_Loves_Planting.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.06
+30 Codeforces Round #254 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,32 @@
+17 B - Optimal Trick
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+14 3
+2 1
+4 3
+9 3
+
+6 2
+4
+6
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.24
+36 SnarkNews Summer Series 2014 Round 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,37 @@
+20 B - Distributed Join
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+14 2 2
+2 6
+3 100
+
+3 11
+
+1
+1
+16 2 3
+10 10
+1 1 1
+
+2 6
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+81 on2014_08.on2014_08_10_MemSQL_Start_c_UP_2_0___Round_2.B___Distributed_Join.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.08.10
+31 MemSQL Start[c]UP 2.0 - Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

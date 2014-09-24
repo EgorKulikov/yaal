@@ -1,0 +1,32 @@
+13 ACM ICPC Team
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+28 4 5
+10101
+11100
+11010
+00101
+
+4 5
+2
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+21 net.egork.ACMICPCTeam
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.07.01
+26 Weekly Challenges - Week 6
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

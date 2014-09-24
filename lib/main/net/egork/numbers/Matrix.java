@@ -139,8 +139,12 @@ public class Matrix {
 		Arrays.fill(c, 0);
 		for (int i = 0; i < side; i++) {
 			for (int j = 0; j < side; j++) {
-				for (int k = 0; k < side; k++)
-					c[i * side + k] += a[i * side + j] * b[j * side + k] % mod;
+				for (int k = 0; k < side; k++) {
+					c[i * side + k] += a[i * side + j] * b[j * side + k];
+					if ((j & 3) == 3) {
+						c[i * side + k] %= mod;
+					}
+				}
 			}
 		}
 		for (int i = 0; i < c.length; i++)
