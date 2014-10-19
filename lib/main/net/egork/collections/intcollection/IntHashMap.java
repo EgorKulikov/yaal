@@ -17,6 +17,7 @@ public class IntHashMap extends IntSet {
 	}
 
 	private int size;
+	private int realSize;
 	private int[] keys;
 	private int[] values;
 	private byte[] present;
@@ -81,16 +82,24 @@ public class IntHashMap extends IntSet {
 	}
 
 	public void put(int key, int value) {
-		ensureCapacity((size + 1) * ratio + 2);
+		ensureCapacity((realSize + 1) * ratio + 2);
 		int current = getHash(key);
-		while ((present[current] & PRESENT_MASK) != 0) {
-			if (keys[current] == key) {
+		while (present[current] != 0) {
+			if ((present[current] & PRESENT_MASK) != 0 && keys[current] == key) {
 				values[current] = value;
 				return;
 			}
 			current += step;
+			if (current >= values.length)
+				current -= values.length;
+		}
+		while ((present[current] & PRESENT_MASK) != 0) {
+			current += step;
 			if (current >= keys.length)
 				current -= keys.length;
+		}
+		if (present[current] == 0) {
+			realSize++;
 		}
 		present[current] = PRESENT_MASK;
 		keys[current] = key;
@@ -130,6 +139,7 @@ public class IntHashMap extends IntSet {
 		present = new byte[capacity];
 		values = new int[capacity];
 		size = 0;
+		realSize = 0;
 		for (int i = 0; i < oldKeys.length; i++) {
 			if ((oldPresent[i] & PRESENT_MASK) == PRESENT_MASK)
 				put(oldKeys[i], oldValues[i]);

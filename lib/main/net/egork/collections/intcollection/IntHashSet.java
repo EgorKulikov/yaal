@@ -20,6 +20,7 @@ public class IntHashSet extends IntSet {
 	}
 
 	private int size;
+	private int realSize;
 	private int[] values;
 	private byte[] present;
 	private int step;
@@ -78,14 +79,23 @@ public class IntHashSet extends IntSet {
 
 	@Override
 	public void add(int value) {
-		ensureCapacity((size + 1) * ratio + 2);
+		ensureCapacity((realSize + 1) * ratio + 2);
 		int current = getHash(value);
-		while ((present[current] & PRESENT_MASK) != 0) {
-			if (values[current] == value)
+		while (present[current] != 0) {
+			if ((present[current] & PRESENT_MASK) != 0 && values[current] == value) {
 				return;
+			}
 			current += step;
 			if (current >= values.length)
 				current -= values.length;
+		}
+		while ((present[current] & PRESENT_MASK) != 0) {
+			current += step;
+			if (current >= values.length)
+				current -= values.length;
+		}
+		if (present[current] == 0) {
+			realSize++;
 		}
 		present[current] = PRESENT_MASK;
 		values[current] = value;
@@ -122,6 +132,7 @@ public class IntHashSet extends IntSet {
 		values = new int[capacity];
 		present = new byte[capacity];
 		size = 0;
+		realSize = 0;
 		for (int i = 0; i < oldValues.length; i++) {
 			if ((oldPresent[i] & PRESENT_MASK) == PRESENT_MASK)
 				add(oldValues[i]);
