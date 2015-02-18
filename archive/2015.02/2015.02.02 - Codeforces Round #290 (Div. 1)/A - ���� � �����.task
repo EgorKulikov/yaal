@@ -1,0 +1,75 @@
+26 A - Лиса и имена
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+24 3
+rivest
+shamir
+adleman
+
+27 bcdefghijklmnopqrsatuvwxyz
+
+1
+1
+100 10
+tourist
+petr
+wjmzbmr
+yeputons
+vepifanov
+scottwu
+oooooooooooooooo
+subscriber
+rowdark
+tankengineer
+
+11 Impossible
+
+1
+2
+113 10
+petr
+egor
+endagorion
+feferivan
+ilovetanyaromanova
+kostka
+dmitriyh
+maratsnowbear
+bredorjaguarturnik
+cgyforever
+
+27 aghjlnopefikdmbcqrstuvwxyz
+
+1
+3
+92 7
+car
+care
+careful
+carefully
+becarefuldontforgetsomething
+otherwiseyouwillbehacked
+goodluck
+
+27 acbdefhijklmnogpqrstuvwxyz
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.02.02
+30 Codeforces Round #290 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
