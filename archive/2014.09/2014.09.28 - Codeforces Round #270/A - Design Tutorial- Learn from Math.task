@@ -1,0 +1,45 @@
+36 A - Design Tutorial: Learn from Math
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+3 12
+
+4 4 8
+
+1
+1
+3 15
+
+4 6 9
+
+1
+2
+3 23
+
+5 8 15
+
+1
+3
+8 1000000
+
+14 500000 500000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.28
+21 Codeforces Round #270
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

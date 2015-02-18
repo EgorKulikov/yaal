@@ -1,0 +1,32 @@
+22 C - International Race
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+33 6
+2 4 3
+4 3 2
+5 4 2
+4 6 -1
+6 1 4
+
+2 6
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.10
+37 SnarkNews Winter Series 2015, Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

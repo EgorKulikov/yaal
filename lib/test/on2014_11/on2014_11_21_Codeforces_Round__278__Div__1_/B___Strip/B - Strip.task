@@ -1,0 +1,35 @@
+9 B - Strip
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+20 7 2 2
+1 3 1 2 4 1 2
+
+2 3
+
+1
+1
+26 7 2 2
+1 100 1 100 1 100 1
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+69 on2014_11.on2014_11_21_Codeforces_Round__278__Div__1_.B___Strip.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.11.21
+30 Codeforces Round #278 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

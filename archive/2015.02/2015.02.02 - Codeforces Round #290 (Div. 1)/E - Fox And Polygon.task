@@ -1,0 +1,62 @@
+19 E - Fox And Polygon
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+10 4
+1 3
+2 4
+
+6 1
+1 3
+
+1
+1
+26 6
+2 6
+3 6
+4 6
+6 2
+5 2
+4 2
+
+10 2
+6 3
+6 4
+
+1
+2
+42 8
+7 1
+2 7
+7 3
+6 3
+4 6
+6 1
+6 2
+6 3
+6 4
+6 8
+
+13 3
+7 3
+7 2
+7 1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.02.02
+30 Codeforces Round #290 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

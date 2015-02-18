@@ -1,0 +1,37 @@
+8 Marathon
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+63 5 5
+-4 4
+-5 -3
+-1 5
+-3 4
+0 5
+Q 1 5
+U 4 0 1
+U 4 -1 1
+Q 2 4
+Q 1 4
+6 11
+8
+8
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+18 net.egork.Marathon
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.12.15
+33 USACO 2014 December Contest, Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,42 @@
+6 Towers
+12 MULTI_NUMBER
+6 CUSTOM
+5 D.txt
+6 CUSTOM
+5 d.out
+1
+0
+25 4
+
+1 1
+
+2 2
+
+1 10
+
+10 10
+
+69 Case #1:
+5 1
+Case #2:
+30 16
+Case #3:
+140 512
+Case #4:
+2870 951047217
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+16 net.egork.Towers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.19
+22 Bayan Elimination 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

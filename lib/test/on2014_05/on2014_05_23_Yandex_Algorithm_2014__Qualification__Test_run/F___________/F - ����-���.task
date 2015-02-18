@@ -7,9 +7,9 @@
 3
 0
 6 2
-a b
+x b
 
-2 a
+2 x
 
 1
 1
@@ -23,15 +23,15 @@ teamc teamd
 1
 2
 30 8
-a b
+x b
 c d
 e f
 h g
-a c
+x c
 e h
-a e
+x e
 
-2 a
+2 x
 
 1
 14 main/net/egork

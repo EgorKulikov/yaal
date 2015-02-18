@@ -1,0 +1,42 @@
+12 All Critical
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+21 all.*critical.*[.]txt
+6 CUSTOM
+15 allcritical.out
+2
+0
+32 5
+0.1
+0.12
+0.123
+0.1234
+0.12345
+
+90 Case #1: 34.64694
+Case #2: 28.64398
+Case #3: 27.91171
+Case #4: 27.81676
+Case #5: 27.80493
+
+1
+1
+8 2
+1
+0.01
+-1
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+21 net.egork.AllCritical
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-5
+0
+10 2015.01.25
+32 Facebook Hacker Cup 2015 Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

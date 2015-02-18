@@ -1,0 +1,35 @@
+23 D - Dreamoon and Binary
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+4 101
+
+4 1
+6
+
+1
+1
+6 11010
+
+4 3
+5
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+83 on2014_10.on2014_10_12_Codeforces_Round__272__Div__1_.D___Dreamoon_and_Binary.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.12
+30 Codeforces Round #272 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

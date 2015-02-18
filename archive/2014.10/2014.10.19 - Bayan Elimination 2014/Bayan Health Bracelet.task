@@ -1,0 +1,42 @@
+21 Bayan Health Bracelet
+12 MULTI_NUMBER
+6 CUSTOM
+5 B.txt
+6 CUSTOM
+5 b.out
+1
+0
+60 4
+
+33 25 680922 0
+
+30 58 7 432
+
+36 155 0 467
+
+35 40 9 28801
+
+72 Case #1:
+NOTHING
+Case #2:
+EMERGENCY
+Case #3:
+NIGHTMARE
+Case #4:
+WAKE-UP
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+29 net.egork.BayanHealthBracelet
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.19
+22 Bayan Elimination 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

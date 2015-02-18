@@ -1,0 +1,37 @@
+15 JimAndTheOrders
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+13 3
+1 3
+2 3
+3 3
+5 1 2 3
+1
+1
+21 5
+8 1
+4 2
+5 6
+3 1
+4 3
+9 4 2 5 1 3
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+76 on2014_09.on2014_09_27_101_Hack_September_14.JimAndTheOrders.JimAndTheOrders
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.27
+21 101 Hack September'14
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

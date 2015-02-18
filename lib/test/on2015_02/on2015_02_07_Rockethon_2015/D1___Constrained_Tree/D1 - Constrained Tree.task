@@ -1,0 +1,37 @@
+21 D1 - Constrained Tree
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+23 3 2
+1 2 LEFT
+1 3 RIGHT
+
+6 2 1 3
+
+1
+1
+23 3 2
+1 2 RIGHT
+1 3 LEFT
+
+11 IMPOSSIBLE
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+66 on2015_02.on2015_02_07_Rockethon_2015.D1___Constrained_Tree.TaskD1
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.02.07
+14 Rockethon 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

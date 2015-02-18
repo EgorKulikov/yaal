@@ -1,0 +1,65 @@
+40 D - Design Tutorial: Inverse the Problem
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+5
+0
+20 3
+0 2 7
+2 0 9
+7 9 0
+
+4 YES
+
+1
+1
+20 3
+1 2 7
+2 0 9
+7 9 0
+
+3 NO
+
+1
+2
+20 3
+0 2 2
+7 0 9
+7 9 0
+
+3 NO
+
+1
+3
+20 3
+0 1 1
+1 0 1
+1 1 0
+
+3 NO
+
+1
+4
+10 2
+0 0
+0 0
+
+3 NO
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+91 on2014_09.on2014_09_28_Codeforces_Round__270.D___Design_Tutorial__Inverse_the_Problem.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.09.28
+21 Codeforces Round #270
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

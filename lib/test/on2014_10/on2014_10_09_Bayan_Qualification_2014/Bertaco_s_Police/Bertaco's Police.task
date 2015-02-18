@@ -1,0 +1,30 @@
+16 Bertaco's Police
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+9 \\d*[.]in
+6 CUSTOM
+5 x.out
+1
+0
+13 2
+12345
+4808
+
+11 54321
+8084
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+79 on2014_10.on2014_10_09_Bayan_Qualification_2014.Bertaco_s_Police.BertacosPolice
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.09
+24 Bayan Qualification 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

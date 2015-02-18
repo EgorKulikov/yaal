@@ -1,0 +1,33 @@
+22 A - Future Expeditions
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+37 1
+5 2 3
+31 37 41
+73 79
+4
+15 25 35 55
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+89 on2015_02.on2015_02_06_SnarkNews_Winter_Series_2015__Round_5.A___Future_Expeditions.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+97 on2015_02.on2015_02_06_SnarkNews_Winter_Series_2015__Round_5.A___Future_Expeditions.TaskATestCase
+10 2015.02.06
+37 SnarkNews Winter Series 2015, Round 5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

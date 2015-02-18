@@ -1,0 +1,32 @@
+7 CANnHAN
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+80 iAmTheProjectHead
+i#am#the#project#head
+IAmTheProjectHead
+i#Am#the#project#head
+
+53 i#am#the#project#head
+iAmTheProjectHead
+Error!
+Error!
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+17 net.egork.CANnHAN
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.12.26
+13 Sudo Code 2.0
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

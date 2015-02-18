@@ -206,6 +206,10 @@ public class ArrayUtils {
 		return order;
 	}
 
+	public static int[] sort(int[] array) {
+		return sort(array, IntComparator.DEFAULT);
+	}
+
 	public static int[] sort(int[] array, IntComparator comparator) {
 		return sort(array, 0, array.length, comparator);
 	}
@@ -490,6 +494,16 @@ public class ArrayUtils {
 		return result;
 	}
 
+	public static int count(long[] array, long value) {
+		int result = 0;
+		for (long i : array) {
+			if (i == value) {
+				result++;
+			}
+		}
+		return result;
+	}
+
 	public static int count(char[] array, char value) {
 		int result = 0;
 		for (char i : array) {
@@ -651,5 +665,27 @@ public class ArrayUtils {
 			}
 		}
 		return result;
+	}
+
+	public static int[][] transpose(int[][] array) {
+		if (array.length == 0) {
+			return new int[0][0];
+		}
+		int[][] result = new int[array[0].length][array.length];
+		for (int i = 0; i < array.length; i++) {
+			for (int j = 0; j < array[i].length; j++) {
+				result[j][i] = array[i][j];
+			}
+		}
+		return result;
+	}
+
+	public static int find(int[] array, int value) {
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] == value) {
+				return i;
+			}
+		}
+		return -1;
 	}
 }

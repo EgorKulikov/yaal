@@ -1,0 +1,60 @@
+12 Autocomplete
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+20 autocomplete.*[.]txt
+6 CUSTOM
+16 autocomplete.out
+1
+0
+112 5
+5
+hi
+hello
+lol
+hills
+hill
+5
+a
+aa
+aaa
+aaaa
+aaaaa
+5
+aaaaa
+aaaa
+aaa
+aa
+a
+6
+to
+be
+or
+not
+two
+bee
+3
+having
+fun
+yet
+
+58 Case #1: 11
+Case #2: 15
+Case #3: 11
+Case #4: 9
+Case #5: 3
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+22 net.egork.Autocomplete
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.18
+32 Facebook Hacker Cup 2015 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

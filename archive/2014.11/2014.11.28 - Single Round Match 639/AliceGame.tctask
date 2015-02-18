@@ -1,0 +1,46 @@
+9 AliceGame
+16 findMinimumValue
+4 long
+2
+4 long
+1 x
+4 long
+1 y
+5
+0
+2
+long 8
+long 17
+long 2
+1
+1
+2
+long 17
+long 8
+long 3
+1
+2
+2
+long 0
+long 0
+long 0
+1
+3
+2
+long 9
+long 9
+long -1
+1
+4
+2
+long 500000
+long 500000
+long 294
+1
+10 2014.11.28
+22 Single Round Match 639
+1
+27 net.egork.AliceGameTestCase
+19 net.egork.AliceGame
+0
+4 256M

@@ -1,0 +1,37 @@
+26 Extraterrestrial Rotations
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+9 \\d*[.]in
+6 CUSTOM
+5 c.out
+1
+0
+86 2
+Front Up Down Left Right Back
+2
+Z 4
+X 4
+Front Up Down Left Right Back
+3
+Z 1
+X 1
+Y 1
+
+60 Front Up Down Left Right Back
+Down Back Front Right Left Up
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+35 net.egork.ExtraterrestrialRotations
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.09
+24 Bayan Qualification 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

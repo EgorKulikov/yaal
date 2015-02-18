@@ -1,0 +1,36 @@
+21 B - Dreamoon and Sets
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+4 1 1
+
+10 5
+1 2 3 5
+
+1
+1
+4 2 2
+
+24 22
+2 4 6 22
+14 18 10 16
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.12
+30 Codeforces Round #272 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

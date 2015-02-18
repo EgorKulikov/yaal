@@ -1,0 +1,35 @@
+18 E1 - Subarray Cuts
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+14 5 3
+5 2 4 3 1
+
+3 12
+
+1
+1
+12 4 2
+7 4 3 7
+
+2 8
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+16 net.egork.TaskE1
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.02.07
+14 Rockethon 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

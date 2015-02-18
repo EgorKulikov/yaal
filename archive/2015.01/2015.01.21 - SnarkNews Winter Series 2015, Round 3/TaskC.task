@@ -1,0 +1,33 @@
+5 TaskC
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+130 2
+4 22 0 0
+2 30 -12 0 0 12
+4 10 -8 -8 -6 -6 -6 6 8 8
+4 10 -3 -8 -1 -6 -1 6 -3 8
+4 6 -6 0 -2 0 0 1 10 4
+1 10 15 -2
+2 0 -100 0 100 0
+7 7.89
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-2
+0
+10 2015.01.21
+37 SnarkNews Winter Series 2015, Round 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

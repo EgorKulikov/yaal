@@ -129,6 +129,23 @@ public class Heap {
 		return result;
 	}
 
+	public int remove(int element) {
+		int index = getIndex(element);
+		if (index == -1)
+			throw new IndexOutOfBoundsException();
+		int result = elements[index];
+		at[result] = -1;
+		if (index == size - 1) {
+			size--;
+			return result;
+		}
+		elements[index] = elements[--size];
+		at[elements[index]] = index;
+		shiftDown(index);
+		shiftUp(index);
+		return result;
+	}
+
     public void clear() {
         size = 0;
 		Arrays.fill(at, -1);

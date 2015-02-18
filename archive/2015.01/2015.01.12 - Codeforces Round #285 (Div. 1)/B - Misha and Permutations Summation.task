@@ -1,0 +1,46 @@
+36 B - Misha and Permutations Summation
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+10 2
+0 1
+0 1
+
+4 0 1
+
+1
+1
+10 2
+0 1
+1 0
+
+4 1 0
+
+1
+2
+14 3
+1 2 0
+2 1 0
+
+6 1 0 2
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskBTestCase
+10 2015.01.12
+30 Codeforces Round #285 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

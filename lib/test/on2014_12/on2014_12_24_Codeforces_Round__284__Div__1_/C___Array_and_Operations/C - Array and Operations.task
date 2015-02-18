@@ -1,0 +1,49 @@
+24 C - Array and Operations
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+18 3 2
+8 3 8
+1 2
+2 3
+
+2 0
+
+1
+1
+19 3 2
+8 12 8
+1 2
+2 3
+
+2 2
+
+1
+2
+27 4 3
+12 96 56 7
+1 2
+2 3
+3 4
+
+2 7
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+84 on2014_12.on2014_12_24_Codeforces_Round__284__Div__1_.C___Array_and_Operations.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.12.24
+30 Codeforces Round #284 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

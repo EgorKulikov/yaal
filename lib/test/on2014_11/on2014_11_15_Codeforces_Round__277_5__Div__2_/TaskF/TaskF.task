@@ -1,0 +1,27 @@
+5 TaskF
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+14 4 1 1000
+0110
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+67 on2014_11.on2014_11_15_Codeforces_Round__277_5__Div__2_.TaskF.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.11.15
+32 Codeforces Round #277.5 (Div. 2)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

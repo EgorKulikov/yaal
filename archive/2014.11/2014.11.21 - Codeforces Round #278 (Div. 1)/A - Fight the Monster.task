@@ -1,0 +1,37 @@
+21 A - Fight the Monster
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+24 1 2 1
+1 100 1
+1 100 100
+
+3 99
+
+1
+1
+24 100 100 100
+1 1 1
+1 1 1
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.11.21
+30 Codeforces Round #278 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

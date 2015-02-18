@@ -1,0 +1,46 @@
+10 Laser Maze
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+19 laser.*maze.*[.]txt
+6 CUSTOM
+13 lasermaze.out
+1
+0
+88 5
+2 5
+##^##
+S...G
+2 5
+##v##
+S...G
+1 5
+S..G<
+1 6
+S...G<
+5 5
+S....
+.....
+.>v..
+.^<..
+....G
+64 Case #1: 6
+Case #2: 4
+Case #3: 3
+Case #4: impossible
+Case #5: 8
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+88 on2015_01.on2015_01_09_Facebook_Hacker_Cup_2015_Qualification_Round.Laser_Maze.LaserMaze
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.09
+44 Facebook Hacker Cup 2015 Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

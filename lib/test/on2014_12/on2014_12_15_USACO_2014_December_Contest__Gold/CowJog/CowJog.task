@@ -1,0 +1,30 @@
+6 CowJog
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+23 5 3
+0 1
+1 2
+2 3
+3 2
+6 1
+1 3
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+70 on2014_12.on2014_12_15_USACO_2014_December_Contest__Gold.CowJog.CowJog
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.12.15
+33 USACO 2014 December Contest, Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
