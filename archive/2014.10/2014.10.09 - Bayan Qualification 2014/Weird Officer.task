@@ -1,0 +1,32 @@
+13 Weird Officer
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+9 \\d*[.]in
+6 CUSTOM
+5 b.out
+1
+0
+23 3
+saeed
+mohammad
+shadi
+
+20 PESAR
+PESAR
+DOKHTAR
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+22 net.egork.WeirdOfficer
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.09
+24 Bayan Qualification 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

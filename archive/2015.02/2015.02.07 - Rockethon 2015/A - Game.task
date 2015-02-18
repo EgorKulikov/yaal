@@ -1,0 +1,33 @@
+8 A - Game
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+8 2 2 1 2
+
+7 Second
+
+1
+1
+8 2 1 1 1
+
+6 First
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.02.07
+14 Rockethon 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

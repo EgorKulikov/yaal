@@ -1,0 +1,39 @@
+24 C - Second price auction
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+15 3
+4 7
+8 10
+5 5
+
+13 5.7500000000
+
+1
+1
+14 3
+2 5
+3 4
+1 6
+
+13 3.5000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2015.02.07
+14 Rockethon 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,74 @@
+14 ConnectingGame
+7 isValid
+16 java.lang.String
+1
+18 java.lang.String[]
+5 board
+6
+0
+1
+String[] 2
+3 AAB
+3 CCD
+String
+7 invalid
+1
+1
+1
+String[] 2
+2 AA
+2 BB
+String
+5 valid
+1
+2
+1
+String[] 3
+3 iii
+3 iwi
+3 iii
+String
+5 valid
+1
+3
+1
+String[] 3
+7 SSnukee
+7 SKnuthe
+7 SSSothe
+String
+7 invalid
+1
+4
+1
+String[] 3
+5 rng58
+5 rnggn
+5 rnnnn
+String
+5 valid
+1
+5
+1
+String[] 12
+10 ggssGGGGGG
+10 ggssspGGGG
+10 ggsssppGGG
+10 ggWsspGGGG
+10 gggsspGGiG
+10 g7ssspGGGG
+10 gggsseKK33
+10 gggssssK33
+10 gHgsssHA33
+10 HHHHHHHHHH
+10 HHHHHHHHH6
+10 HHHHHHHHb6
+String
+7 invalid
+1
+10 2014.10.23
+22 Single Round Match 637
+0
+24 net.egork.ConnectingGame
+0
+4 256M

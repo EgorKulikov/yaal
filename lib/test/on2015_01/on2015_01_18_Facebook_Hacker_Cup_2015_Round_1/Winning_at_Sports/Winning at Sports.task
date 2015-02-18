@@ -1,0 +1,36 @@
+17 Winning at Sports
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+27 winning.*at.*sports.*[.]txt
+6 CUSTOM
+19 winningatsports.out
+1
+0
+28 5
+2-1
+3-1
+3-2
+10-5
+1000-500
+
+84 Case #1: 1 1
+Case #2: 2 1
+Case #3: 2 2
+Case #4: 1001 42
+Case #5: 70047606 591137401
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+89 on2015_01.on2015_01_18_Facebook_Hacker_Cup_2015_Round_1.Winning_at_Sports.WinningAtSports
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.18
+32 Facebook Hacker Cup 2015 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

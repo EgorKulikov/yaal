@@ -1,0 +1,54 @@
+12 Grid History
+12 MULTI_NUMBER
+6 CUSTOM
+5 C.txt
+6 CUSTOM
+5 c.out
+2
+0
+52 3
+
+2 2
+4 11
+7 12
+
+2 2
+4 7
+10 8
+
+2 3
+2 13 11
+17 18 8
+
+37 Case #1:
+YES
+Case #2:
+NO
+Case #3:
+NO
+
+1
+1
+26 1
+2 3
+1 200 101
+300 401 2
+
+12 Case #1:
+NO
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+21 net.egork.GridHistory
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.10.19
+22 Bayan Elimination 2014
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

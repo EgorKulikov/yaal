@@ -1,0 +1,35 @@
+16 D - Kindergarten
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+12 5
+1 2 3 1 2
+
+2 3
+
+1
+1
+8 3
+3 3 3
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+76 on2014_11.on2014_11_05_Codeforces_Round__276__Div__1_.D___Kindergarten.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.11.05
+30 Codeforces Round #276 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,90 @@
+21 New Year's Resolution
+12 MULTI_NUMBER
+12 LOCAL_REGEXP
+32 new.*year.*s.*resolution.*[.]txt
+6 CUSTOM
+23 newyear'sresolution.out
+1
+0
+594 5
+100 100 100
+1
+100 100 100
+100 100 100
+3
+10 10 40
+10 30 10
+10 60 50
+100 100 100
+5
+40 70 30
+30 10 40
+20 20 50
+10 50 90
+40 10 20
+292 264 512
+20
+909 302 261
+705 597 823
+291 51 126
+28 697 57
+593 31 826
+311 256 57
+292 14 47
+29 730 716
+12 529 146
+768 16 439
+37 472 15
+350 192 34
+163 468 238
+69 173 10
+203 72 690
+424 875 213
+223 593 292
+151 46 10
+88 90 16
+773 653 711
+991 827 352
+20
+29 560 929
+139 681 102
+144 853 10
+84 729 80
+218 20 67
+140 80 901
+428 20 500
+520 970 128
+422 419 30
+413 101 192
+467 448 501
+32 939 684
+34 20 38
+251 317 132
+588 437 10
+648 21 79
+391 25 14
+499 22 24
+854 77 361
+405 25 20
+
+63 Case #1: yes
+Case #2: no
+Case #3: yes
+Case #4: no
+Case #5: yes
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+28 net.egork.NewYearsResolution
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.09
+44 Facebook Hacker Cup 2015 Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

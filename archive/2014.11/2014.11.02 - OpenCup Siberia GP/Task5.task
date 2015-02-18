@@ -1,0 +1,43 @@
+5 Task5
+6 SINGLE
+6 CUSTOM
+9 input.txt
+6 CUSTOM
+10 output.txt
+2
+0
+64 300 300 300
+4
+300 300 1 2
+100 200 1 4
+300 200 1 1
+300 300 2 3 1
+
+12 200 100 300
+
+1
+1
+64 300 300 300
+4
+300 300 2 2 3
+100 200 1 4
+300 200 1 4
+300 300 1 1
+
+12 200 300 300
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+15 net.egork.Task5
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.11.02
+18 OpenCup Siberia GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

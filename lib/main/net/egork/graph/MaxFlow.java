@@ -13,7 +13,7 @@ public class MaxFlow {
 	private int[] distance;
 	private int[] nextEdge;
 
-	private MaxFlow(Graph graph, int source, int destination) {
+	public MaxFlow(Graph graph, int source, int destination) {
 		this.graph = graph;
 		this.source = source;
 		this.destination = destination;
@@ -27,7 +27,7 @@ public class MaxFlow {
 		return new MaxFlow(graph, source, destination).dinic();
 	}
 
-	private long dinic() {
+	public long dinic() {
 		long totalFlow = 0;
 		while (true) {
 			edgeDistances();

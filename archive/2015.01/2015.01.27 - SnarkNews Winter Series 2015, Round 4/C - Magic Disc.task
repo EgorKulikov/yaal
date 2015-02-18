@@ -1,0 +1,58 @@
+14 C - Magic Disc
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+15 1
+2 3
+-1 0
+1 0
+
+7 0.4244
+
+0
+1
+17 1
+2 15
+-3 -4
+3 4
+
+7 0.4244
+
+0
+2
+18 1
+3 3
+0 0
+2 0
+1 2
+
+-1
+0
+3
+26 1
+4 5
+-2 -2
+2 2
+-2 2
+2 -2
+
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-4
+0
+10 2015.01.27
+37 SnarkNews Winter Series 2015, Round 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

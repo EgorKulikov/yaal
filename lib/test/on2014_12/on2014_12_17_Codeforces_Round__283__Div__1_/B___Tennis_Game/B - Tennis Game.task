@@ -1,0 +1,57 @@
+15 B - Tennis Game
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+12 5
+1 2 1 2 1
+
+10 2
+1 3
+3 1
+
+1
+1
+10 4
+1 1 1 1
+
+14 3
+1 4
+2 2
+4 1
+
+1
+2
+10 4
+1 2 1 2
+
+2 0
+
+1
+3
+18 8
+2 1 2 1 1 1 1 1
+
+14 3
+1 6
+2 3
+6 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+75 on2014_12.on2014_12_17_Codeforces_Round__283__Div__1_.B___Tennis_Game.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2014.12.17
+30 Codeforces Round #283 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

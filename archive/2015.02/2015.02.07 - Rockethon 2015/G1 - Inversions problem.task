@@ -1,0 +1,35 @@
+23 G1 - Inversions problem
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+10 3 1
+1 2 3
+
+18 0.833333333333333
+
+1
+1
+10 3 4
+1 3 2
+
+18 1.458333333333334
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+16 net.egork.TaskG1
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2015.02.07
+14 Rockethon 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

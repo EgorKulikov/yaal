@@ -1,0 +1,54 @@
+18 B - Name That Tune
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+14 2 2
+50 2
+10 1
+
+12 1.500000000
+
+1
+1
+14 2 2
+0 2
+100 2
+
+12 1.000000000
+
+1
+2
+19 3 3
+50 3
+50 2
+25 2
+
+12 1.687500000
+
+1
+3
+12 2 2
+0 2
+0 2
+
+12 1.000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2014.12.24
+30 Codeforces Round #284 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

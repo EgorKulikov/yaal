@@ -1,0 +1,28 @@
+11 F - The Sum
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 5
+1 3 2 4 9
+
+4 135
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+78 on2015_01.on2015_01_10_SnarkNews_Winter_Series_2015__Round_1.F___The_Sum.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.10
+37 SnarkNews Winter Series 2015, Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

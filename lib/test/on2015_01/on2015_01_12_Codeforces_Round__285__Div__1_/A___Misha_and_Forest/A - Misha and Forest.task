@@ -1,0 +1,41 @@
+20 A - Misha and Forest
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+14 3
+2 3
+1 0
+1 0
+
+10 2
+1 0
+2 0
+
+1
+1
+10 2
+1 1
+1 0
+
+6 1
+0 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+80 on2015_01.on2015_01_12_Codeforces_Round__285__Div__1_.A___Misha_and_Forest.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.01.12
+30 Codeforces Round #285 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
