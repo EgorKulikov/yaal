@@ -1,0 +1,38 @@
+18 Chef and Notebooks
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+58 3
+3 1 2 2
+3 4
+2 2    
+3 1 2 2
+2 3
+2 3    
+3 1 2 2
+1 1
+1 2
+
+34 LuckyChef
+UnluckyChef
+UnluckyChef
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.ChefAndNotebooks
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.03.06
+20 March Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

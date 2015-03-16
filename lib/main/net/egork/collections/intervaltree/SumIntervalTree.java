@@ -4,11 +4,28 @@ package net.egork.collections.intervaltree;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class SumIntervalTree extends LongIntervalTree {
+	private final long[] array;
+
     public SumIntervalTree(int size) {
         super(size);
+		array = null;
     }
 
-    @Override
+	public SumIntervalTree(long[] array) {
+    	super(array.length, false);
+		this.array = array;
+		init();
+ 	}
+
+	@Override
+	protected long initValue(int index) {
+		if (array == null) {
+			return 0;
+		}
+		return array[index];
+	}
+
+	@Override
     protected long joinValue(long left, long right) {
         return left + right;
     }
