@@ -1,0 +1,37 @@
+17 Chef and Problems
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+40 7 7 5
+4 5 6 6 5 7 4
+6 6
+5 6
+3 5
+3 7
+1 7
+
+10 0
+0
+1
+1
+6
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+25 net.egork.ChefAndProblems
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.03.12
+20 March Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
