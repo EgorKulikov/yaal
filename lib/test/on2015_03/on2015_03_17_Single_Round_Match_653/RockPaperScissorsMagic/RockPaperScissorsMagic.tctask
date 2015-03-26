@@ -1,0 +1,126 @@
+22 RockPaperScissorsMagic
+5 count
+3 int
+4
+3 int
+3 win
+3 int
+4 lose
+3 int
+3 tie
+5 int[]
+4 card
+6
+0
+4
+int 2
+int 0
+int 1
+int[] 3
+0
+1
+2
+int 3
+1
+1
+4
+int 2
+int 0
+int 1
+int[] 3
+0
+0
+0
+int 6
+1
+2
+4
+int 0
+int 0
+int 0
+int[] 6
+1
+0
+2
+2
+2
+0
+int 729
+1
+3
+4
+int 514
+int 451
+int 145
+int[] 14
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+2
+2
+2
+int 0
+1
+4
+4
+int 3
+int 6
+int 9
+int[] 18
+0
+0
+0
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+int 2336040
+1
+5
+4
+int 514
+int 451
+int 145
+int[] 15
+0
+0
+0
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+int 116100
+1
+10 2015.03.17
+22 Single Round Match 653
+0
+91 on2015_03.on2015_03_17_Single_Round_Match_653.RockPaperScissorsMagic.RockPaperScissorsMagic
+0
+4 256M

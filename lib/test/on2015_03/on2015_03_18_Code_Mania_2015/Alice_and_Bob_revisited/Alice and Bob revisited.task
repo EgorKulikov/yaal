@@ -1,0 +1,28 @@
+23 Alice and Bob revisited
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+6 1
+2 2
+
+4 Bob
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+83 on2015_03.on2015_03_18_Code_Mania_2015.Alice_and_Bob_revisited.AliceAndBobRevisited
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.03.18
+15 Code Mania 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

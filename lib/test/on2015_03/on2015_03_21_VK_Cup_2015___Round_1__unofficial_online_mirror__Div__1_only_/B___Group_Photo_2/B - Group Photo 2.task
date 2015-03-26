@@ -1,0 +1,46 @@
+17 B - Group Photo 2
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+17 3
+10 1
+20 2
+30 3
+
+4 180
+
+1
+1
+14 3
+3 1
+2 2
+4 3
+
+3 21
+
+1
+2
+7 1
+5 10
+
+3 50
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+108 on2015_03.on2015_03_21_VK_Cup_2015___Round_1__unofficial_online_mirror__Div__1_only_.B___Group_Photo_2.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.03.21
+61 VK Cup 2015 - Round 1 (unofficial online mirror, Div. 1 only)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

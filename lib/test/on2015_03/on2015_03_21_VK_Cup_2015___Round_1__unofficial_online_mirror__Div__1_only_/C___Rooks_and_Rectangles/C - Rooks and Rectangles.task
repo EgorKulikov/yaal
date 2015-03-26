@@ -1,0 +1,35 @@
+24 C - Rooks and Rectangles
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+44 4 3 3 3
+1 1
+3 2
+2 3
+2 3 2 3
+2 1 3 3
+1 2 2 3
+
+11 YES
+YES
+NO
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+115 on2015_03.on2015_03_21_VK_Cup_2015___Round_1__unofficial_online_mirror__Div__1_only_.C___Rooks_and_Rectangles.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.03.21
+61 VK Cup 2015 - Round 1 (unofficial online mirror, Div. 1 only)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
