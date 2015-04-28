@@ -1,0 +1,33 @@
+17 D - Ominous Omino
+6 SINGLE
+12 LOCAL_REGEXP
+22 D-(small|large).*[.]in
+6 CUSTOM
+5 d.out
+1
+0
+26 4
+2 2 2
+2 1 3
+4 4 1
+3 2 3
+
+67 Case #1: GABRIEL
+Case #2: RICHARD
+Case #3: RICHARD
+Case #4: GABRIEL
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+87 on2015_04.on2015_04_11_Google_Code_Jam_Qualification_Round_2015.D___Ominous_Omino.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.04.11
+40 Google Code Jam Qualification Round 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

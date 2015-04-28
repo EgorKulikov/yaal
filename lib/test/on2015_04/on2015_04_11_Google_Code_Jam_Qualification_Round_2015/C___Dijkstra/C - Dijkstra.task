@@ -1,0 +1,40 @@
+12 C - Dijkstra
+6 SINGLE
+12 LOCAL_REGEXP
+22 C-(small|large).*[.]in
+6 CUSTOM
+5 c.out
+1
+0
+42 5
+2 1
+ik
+3 1
+ijk
+3 1
+kji
+2 6
+ji
+1 10000
+i
+
+61 Case #1: NO
+Case #2: YES
+Case #3: NO
+Case #4: YES
+Case #5: NO
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+82 on2015_04.on2015_04_11_Google_Code_Jam_Qualification_Round_2015.C___Dijkstra.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.04.11
+40 Google Code Jam Qualification Round 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

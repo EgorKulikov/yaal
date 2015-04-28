@@ -360,6 +360,14 @@ public class ArrayUtils {
 		}
 	}
 
+	public static void reverse(long[] array) {
+		for (int i = 0, j = array.length - 1; i < j; i++, j--) {
+			long temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+	}
+
 	public static void reverse(char[] array) {
 		for (int i = 0, j = array.length - 1; i < j; i++, j--) {
 			char temp = array[i];

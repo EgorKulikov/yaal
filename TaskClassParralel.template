@@ -1,0 +1,25 @@
+package %package%;
+
+import %InputClassFQN%;
+import %OutputClassFQN%;
+import net.egork.concurrency.Scheduler;
+import net.egork.concurrency.Task;
+
+public class %TaskClass% {
+    public void solve(int testNumber, %InputClass% in, %OutputClass% out) {
+        Scheduler scheduler = new Scheduler(in, out, () -> new Task() {
+            @Override
+            public void read(InputReader in) {
+            }
+
+            @Override
+            public void solve() {
+            }
+
+            @Override
+            public void write(OutputWriter out, int testNumber) {
+                out.printLine("Case #" + testNumber + ":");
+            }
+        }, 4);
+    }
+}

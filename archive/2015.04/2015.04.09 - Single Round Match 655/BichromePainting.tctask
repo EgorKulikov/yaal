@@ -1,0 +1,83 @@
+16 BichromePainting
+14 isThatPossible
+16 java.lang.String
+2
+18 java.lang.String[]
+5 board
+3 int
+1 k
+6
+0
+2
+String[] 4
+4 BBBW
+4 BWWW
+4 BWWW
+4 WWWW
+int 3
+String
+8 Possible
+1
+1
+2
+String[] 2
+2 BW
+2 WB
+int 2
+String
+10 Impossible
+1
+2
+2
+String[] 6
+6 BWBWBB
+6 WBWBBB
+6 BWBWBB
+6 WBWBBB
+6 BBBBBB
+6 BBBBBB
+int 2
+String
+8 Possible
+1
+3
+2
+String[] 6
+6 BWBWBB
+6 WBWBWB
+6 BWBWBB
+6 WBWBWB
+6 BWBWBB
+6 BBBBBB
+int 2
+String
+10 Impossible
+1
+4
+2
+String[] 6
+6 BWBWBB
+6 WBWBWB
+6 BWBWBB
+6 WBWBWB
+6 BWBWBB
+6 BBBBBB
+int 1
+String
+8 Possible
+1
+5
+2
+String[] 2
+2 BB
+2 BB
+int 2
+String
+8 Possible
+1
+10 2015.04.09
+22 Single Round Match 655
+0
+26 net.egork.BichromePainting
+0
+4 256M

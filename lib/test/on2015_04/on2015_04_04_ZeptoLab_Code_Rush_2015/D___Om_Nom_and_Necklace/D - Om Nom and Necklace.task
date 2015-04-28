@@ -1,0 +1,40 @@
+23 D - Om Nom and Necklace
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+12 7 2
+bcabcab
+
+7 0000011
+1
+1
+27 21 2
+ababaababaababaababaa
+
+21 000110000111111000011
+1
+2
+16 10 1
+qwertyuiop
+
+11 1111111111
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+76 on2015_04.on2015_04_04_ZeptoLab_Code_Rush_2015.D___Om_Nom_and_Necklace.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.04.04
+23 ZeptoLab Code Rush 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
