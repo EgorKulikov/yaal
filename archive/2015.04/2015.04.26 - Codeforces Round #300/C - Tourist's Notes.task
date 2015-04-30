@@ -1,0 +1,38 @@
+19 C - Tourist's Notes
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+12 8 2
+2 0
+7 0
+
+2 2
+
+1
+1
+16 8 3
+2 0
+7 0
+8 3
+
+11 IMPOSSIBLE
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.04.26
+21 Codeforces Round #300
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

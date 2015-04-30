@@ -1,0 +1,35 @@
+19 F - A Heap of Heaps
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+12 5
+1 5 4 3 2
+
+8 3 2 1 0
+
+1
+1
+14 6
+2 2 2 2 2 2
+
+10 0 0 0 0 0
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+70 on2015_04.on2015_04_26_Codeforces_Round__300.F___A_Heap_of_Heaps.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.04.26
+21 Codeforces Round #300
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
