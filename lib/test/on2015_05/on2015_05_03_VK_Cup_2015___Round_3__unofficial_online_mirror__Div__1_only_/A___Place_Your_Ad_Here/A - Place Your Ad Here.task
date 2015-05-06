@@ -1,0 +1,41 @@
+22 A - Place Your Ad Here
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+30 2 3
+7 9
+1 4
+2 8 2
+0 4 1
+8 9 3
+
+6 4
+2 1
+
+1
+1
+15 1 1
+0 0
+1 1 10
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+113 on2015_05.on2015_05_03_VK_Cup_2015___Round_3__unofficial_online_mirror__Div__1_only_.A___Place_Your_Ad_Here.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.03
+61 VK Cup 2015 - Round 3 (unofficial online mirror, Div. 1 only)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

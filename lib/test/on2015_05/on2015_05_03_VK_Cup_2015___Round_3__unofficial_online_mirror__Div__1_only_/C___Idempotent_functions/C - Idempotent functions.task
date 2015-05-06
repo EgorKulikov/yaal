@@ -1,0 +1,42 @@
+24 C - Idempotent functions
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+10 4
+1 2 2 4
+
+2 1
+
+1
+1
+8 3
+2 3 3
+
+2 2
+
+1
+2
+8 3
+2 3 1
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+115 on2015_05.on2015_05_03_VK_Cup_2015___Round_3__unofficial_online_mirror__Div__1_only_.C___Idempotent_functions.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.03
+61 VK Cup 2015 - Round 3 (unofficial online mirror, Div. 1 only)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

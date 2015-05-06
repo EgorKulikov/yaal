@@ -1,0 +1,44 @@
+15 E - Two Knights
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+20 4 4
+1 2
+2 1
+1 1
+2 2
+
+26 2
+1 1 2 2
+3 2 3 4
+1 3 1 3
+
+1
+1
+20 4 4
+1 2
+2 1
+1 1
+3 2
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.03
+29 Yandex.Algorithm.2015 Warm-Up
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

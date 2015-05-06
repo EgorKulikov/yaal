@@ -1,0 +1,38 @@
+14 F - Tournament
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+28 8
+21 72 16 83 51 32 64 45
+2
+
+20 YES
+5 8 7 6 1 4 3 2
+
+1
+1
+28 8
+22 71 82 14 55 38 69 40
+3
+
+3 NO
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+73 on2015_05.on2015_05_04_Yandex_Algorithm_2015_Warm_Up.F___Tournament.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.04
+29 Yandex.Algorithm.2015 Warm-Up
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

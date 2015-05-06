@@ -1,0 +1,49 @@
+27 B - Disassemble of The Cube
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+60 2
+2
+
+PQ
+PQ
+
+QQ
+QP
+
+3
+
+XXX
+YYY
+XXX
+
+XXX
+XYX
+XXX
+
+XYX
+XYX
+XYX
+
+7 No
+Yes
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+86 on2015_05.on2015_05_04_Yandex_Algorithm_2015_Warm_Up.B___Disassemble_of_The_Cube.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.04
+29 Yandex.Algorithm.2015 Warm-Up
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
