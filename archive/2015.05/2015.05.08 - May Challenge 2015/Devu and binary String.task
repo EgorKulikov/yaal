@@ -1,0 +1,38 @@
+22 Devu and binary String
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+25 3
+2 1
+11
+2 2
+11
+4 1
+1001
+
+17 1
+10
+0
+11
+2
+1010
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+29 net.egork.DevuAndBinaryString
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.08
+18 May Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

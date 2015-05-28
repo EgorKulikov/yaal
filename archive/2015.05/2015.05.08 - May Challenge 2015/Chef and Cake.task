@@ -1,32 +1,29 @@
-33 D - Конструктор пил
+13 Chef and Cake
 6 SINGLE
 8 STANDARD
 9 input.txt
 8 STANDARD
 10 output.txt
-2
+1
 0
-2 4
+47 4 2 1
+1 1 1 1 1 1 1 1 1 100 1 
+1 1 1 3 1 1 1 2
 
-2 5
+6 13 13
 
-1
-1
-5 5000
-
--1
 1
 14 main/net/egork
-16 -Xmx256M -Xss64M
+7 -Xmx64M
 4 Main
-68 on2014_06.on2014_06_08_RCC_2014___________.D__________________.TaskD
+21 net.egork.ChefAndCake
 39 net.egork.chelper.checkers.TokenChecker
 0 
 0
-10 2014.06.08
-29 RCC-2014 Отборочный
+10 2015.05.08
+18 May Challenge 2015
 1
 30 net.egork.utils.io.InputReader
 31 net.egork.utils.io.OutputWriter
 0
-1
+0
