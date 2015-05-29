@@ -1,0 +1,32 @@
+23 Chef and Prime Divisors
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+20 3
+120 75
+128 16
+7 8
+
+11 Yes
+Yes
+No
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+86 on2015_05.on2015_05_08_May_Challenge_2015.Chef_and_Prime_Divisors.ChefAndPrimeDivisors
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.08
+18 May Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
