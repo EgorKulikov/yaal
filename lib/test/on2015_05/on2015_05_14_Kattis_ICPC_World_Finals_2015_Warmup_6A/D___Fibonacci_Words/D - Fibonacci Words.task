@@ -1,0 +1,40 @@
+19 D - Fibonacci Words
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+39 6
+10
+7
+10
+6
+01
+6
+101
+96
+10110101101101
+
+68 Case 1: 5
+Case 2: 8
+Case 3: 4
+Case 4: 4
+Case 5: 7540113804746346428
+
+1
+14 main/net/egork
+16 -Xmx1024M -Xss8M
+4 Main
+88 on2015_05.on2015_05_14_Kattis_ICPC_World_Finals_2015_Warmup_6A.D___Fibonacci_Words.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.14
+39 Kattis ICPC World Finals 2015 Warmup 6A
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

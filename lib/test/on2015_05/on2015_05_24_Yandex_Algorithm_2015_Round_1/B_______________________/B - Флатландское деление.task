@@ -1,0 +1,40 @@
+43 B - Флатландское деление
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+22 3
+0 0 1
+10 0 1
+0 10 1
+
+2 1
+
+1
+1
+31 4
+0 0 10
+10 0 5
+0 10 4
+10 10 2
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+83 on2015_05.on2015_05_24_Yandex_Algorithm_2015_Round_1.B_______________________.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.24
+29 Yandex.Algorithm.2015 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

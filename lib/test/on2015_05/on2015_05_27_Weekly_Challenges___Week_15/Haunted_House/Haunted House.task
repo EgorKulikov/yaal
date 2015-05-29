@@ -1,0 +1,33 @@
+13 Haunted House
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+26 6
+1 2
+1 4
+0 3
+0 1
+3 4
+0 2
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+77 on2015_05.on2015_05_27_Weekly_Challenges___Week_15.Haunted_House.HauntedHouse
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.27
+27 Weekly Challenges - Week 15
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
