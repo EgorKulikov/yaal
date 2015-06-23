@@ -1,0 +1,33 @@
+19 B - Vanya and Books
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+3 13
+
+3 17
+
+1
+1
+2 4
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+79 on2015_06.on2015_06_18_Codeforces_Round__308__Div__2_.B___Vanya_and_Books.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.18
+30 Codeforces Round #308 (Div. 2)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

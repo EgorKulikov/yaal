@@ -2,107 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d974b4d0-f59c-4394-8a40-e0328c570b87" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/A - Cutting Banner.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/B - Quasi Binary.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/C - Tourist's Notes.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/Contest Strategy.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Contest_Strategy/Contest Strategy.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/ContestStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Contest_Strategy/ContestStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/D - Weird Chess.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/E - Demiurges Play Again.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/E___Demiurges_Play_Again/E - Demiurges Play Again.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/F - A Heap of Heaps.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/F___A_Heap_of_Heaps/F - A Heap of Heaps.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/Grand Tour.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Grand_Tour/Grand Tour.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/GrandTour.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Grand_Tour/GrandTour.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/H - Summer Dichotomy.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/H___Summer_Dichotomy/H - Summer Dichotomy.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/Introduction to Topology.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Introduction_to_Topology/Introduction to Topology.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/IntroductionToTopology.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Introduction_to_Topology/IntroductionToTopology.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/E___Demiurges_Play_Again/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/F___A_Heap_of_Heaps/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/H___Summer_Dichotomy/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/PolynomialGCD/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/RookGraph/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Contest_Strategy/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Grand_Tour/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Introduction_to_Topology/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.28 - Single Round Match 657/PolynomialGCD.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/PolynomialGCD/PolynomialGCD.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.28 - Single Round Match 657/PolynomialGCD.tctask" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/PolynomialGCD/PolynomialGCD.tctask" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.28 - Single Round Match 657/PolynomialGCDTestCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/PolynomialGCD/PolynomialGCDTestCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.28 - Single Round Match 657/ProblemSets.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.28 - Single Round Match 657/ProblemSets.tctask" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/Rat Race.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/RatRace.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.28 - Single Round Match 657/RookGraph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/RookGraph/RookGraph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.28 - Single Round Match 657/RookGraph.tctask" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/RookGraph/RookGraph.tctask" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.28 - Single Round Match 657/RookGraphTestCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/RookGraph/RookGraphTestCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/TaskA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/TaskB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/TaskC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/TaskD.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/TaskE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/E___Demiurges_Play_Again/TaskE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/TaskF.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/F___A_Heap_of_Heaps/TaskF.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.26 - Codeforces Round #300/TaskH.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/H___Summer_Dichotomy/TaskH.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/Twisty Tuple.task" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.04/2015.04.29 - 101 Hack April'15/TwistyTuple.java" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_05\on2014_05_23_Yandex_Algorithm_2014__Qualification__Test_run\C__________________\C - ��������� �����.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_05\on2014_05_23_Yandex_Algorithm_2014__Qualification__Test_run\C__________________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_05\on2014_05_23_Yandex_Algorithm_2014__Qualification__Test_run\C__________________\TaskC.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_05\on2014_05_23_Yandex_Algorithm_2014__Qualification__Test_run\F___________\F - ����-���.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_05\on2014_05_23_Yandex_Algorithm_2014__Qualification__Test_run\F___________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_05\on2014_05_23_Yandex_Algorithm_2014__Qualification__Test_run\F___________\TaskF.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_01_Yandex_Algorithm_2014_Round_1_Test_Run\A____________________\A - �������� ��������.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_01_Yandex_Algorithm_2014_Round_1_Test_Run\A____________________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_01_Yandex_Algorithm_2014_Round_1_Test_Run\A____________________\TaskA.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_01_Yandex_Algorithm_2014_Round_1_Test_Run\F___________________\F - ��������� ������.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_01_Yandex_Algorithm_2014_Round_1_Test_Run\F___________________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_01_Yandex_Algorithm_2014_Round_1_Test_Run\F___________________\TaskF.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_01_Yandex_Algorithm_2014_Round_1_Test_Run\F___________________\TaskFTestCase.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_05_Yandex_Algorithm_2014_Online_Round_2_Test_Run\B__________\B - �������.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_05_Yandex_Algorithm_2014_Online_Round_2_Test_Run\B__________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_05_Yandex_Algorithm_2014_Online_Round_2_Test_Run\B__________\TaskB.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_05_Yandex_Algorithm_2014_Online_Round_2_Test_Run\F___Permutation_Cube\F - Permutation Cube.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_05_Yandex_Algorithm_2014_Online_Round_2_Test_Run\F___Permutation_Cube\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_05_Yandex_Algorithm_2014_Online_Round_2_Test_Run\F___Permutation_Cube\TaskF.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\A_______________\A - ������ �����.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\A_______________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\A_______________\TaskA.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\C_________________________\C - ������������ �� ������.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\C_________________________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\C_________________________\TaskC.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\D__________________\D - ����������� ���.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\D__________________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_08_RCC_2014___________\D__________________\TaskD.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_13_Yandex_Algorithm_2014_Round_3_Test_Run\C____________\C - ���������.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_13_Yandex_Algorithm_2014_Round_3_Test_Run\C____________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_13_Yandex_Algorithm_2014_Round_3_Test_Run\C____________\TaskC.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_13_Yandex_Algorithm_2014_Round_3_Test_Run\D__________________\D - ���� ����������.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_13_Yandex_Algorithm_2014_Round_3_Test_Run\D__________________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_06\on2014_06_13_Yandex_Algorithm_2014_Round_3_Test_Run\D__________________\TaskD.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_07\on2014_07_27_Yandex_Algorithm_2014_Finals_pre_run\C________\C - �����.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_07\on2014_07_27_Yandex_Algorithm_2014_Finals_pre_run\C________\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_07\on2014_07_27_Yandex_Algorithm_2014_Finals_pre_run\C________\TaskC.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_07\on2014_07_27_Yandex_Algorithm_2014_Finals_pre_run\D______\D - ���.task" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_07\on2014_07_27_Yandex_Algorithm_2014_Finals_pre_run\D______\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\proj\yaal\lib\test\on2014_07\on2014_07_27_Yandex_Algorithm_2014_Finals_pre_run\D______\TaskD.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chelper.properties" afterPath="$PROJECT_DIR$/chelper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/A - Vanya and Table.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/Anticommutative implication.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Anticommutative_implication/Anticommutative implication.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/AnticommutativeImplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Anticommutative_implication/AnticommutativeImplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/B - Vanya and Books.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/B___Vanya_and_Books/B - Vanya and Books.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/C - Vanya and Scales.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/Chef and His Friend.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/Chef and Memory Limit.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/Chef and Polygons.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Chef_and_Polygons/Chef and Polygons.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/Chef and String.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Chef_and_String/Chef and String.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/ChefAndHisFriend.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/ChefAndMemoryLimit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/ChefAndPolygons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Chef_and_Polygons/ChefAndPolygons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/ChefAndString.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Chef_and_String/ChefAndString.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/ChefAndTrees.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/ChefAndTrees/ChefAndTrees.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/ChefAndTrees.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/ChefAndTrees/ChefAndTrees.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.04 - Single Round Match 660/Coversta.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_04_Single_Round_Match_660/Coversta/Coversta.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.04 - Single Round Match 660/Coversta.tctask" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_04_Single_Round_Match_660/Coversta/Coversta.tctask" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.04 - Single Round Match 660/CoverstaTestCase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_04_Single_Round_Match_660/Coversta/CoverstaTestCase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/D - Vanya and Triangles.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/D___Vanya_and_Triangles/D - Vanya and Triangles.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/net/egork/DumbSolution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/E - Vanya and Brackets.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/E___Vanya_and_Brackets/E - Vanya and Brackets.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/LexNext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/LexNext/LexNext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/LexNext.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/LexNext/LexNext.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_04_Single_Round_Match_660/Coversta/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Chef_and_String/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Steady_tables/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/ChefAndTrees/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/LexNext/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/PalindromicQueries/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/B___Vanya_and_Books/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/D___Vanya_and_Triangles/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/E___Vanya_and_Brackets/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Anticommutative_implication/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Chef_and_Polygons/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/PalindromicQueries.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/PalindromicQueries/PalindromicQueries.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/PalindromicQueries.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/PalindromicQueries/PalindromicQueries.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.04 - Single Round Match 660/Privateparty.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.04 - Single Round Match 660/Privateparty.tctask" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/net/egork/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/Steady tables.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Steady_tables/Steady tables.task" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/SteadyTables.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Steady_tables/SteadyTables.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/TaskA.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/TaskB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/B___Vanya_and_Books/TaskB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/TaskC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/TaskD.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/D___Vanya_and_Triangles/TaskD.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/archive/2015.06/2015.06.18 - Codeforces Round #308 (Div. 2)/TaskE.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/E___Vanya_and_Brackets/TaskE.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/Tests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/main/net/egork/string/CompositeStringHash.java" afterPath="$PROJECT_DIR$/lib/main/net/egork/string/CompositeStringHash.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/main/net/egork/string/StringUtils.java" afterPath="$PROJECT_DIR$/lib/main/net/egork/string/StringUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/main.iml" afterPath="$PROJECT_DIR$/main/main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="504fd17b-4883-4c04-b591-c04a5f28acfc" name="nfc" comment="Project" />
@@ -198,58 +173,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TaskE.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/E___Demiurges_Play_Again/TaskE.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskF.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/F___A_Heap_of_Heaps/TaskF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskH.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_26_Codeforces_Round__300/H___Summer_Dichotomy/TaskH.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PolynomialGCD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/PolynomialGCD/PolynomialGCD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RookGraph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_28_Single_Round_Match_657/RookGraph/RookGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContestStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Contest_Strategy/ContestStrategy.java">
+      <file leaf-file-name="SteadyTables.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Steady_tables/SteadyTables.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
@@ -258,27 +183,104 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrandTour.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Grand_Tour/GrandTour.java">
+      <file leaf-file-name="ChefAndTrees.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/ChefAndTrees/ChefAndTrees.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntroductionToTopology.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Introduction_to_Topology/IntroductionToTopology.java">
+      <file leaf-file-name="LexNext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/LexNext/LexNext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8237822">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PalindromicQueries.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/PalindromicQueries/PalindromicQueries.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/B___Vanya_and_Books/TaskB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskD.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/D___Vanya_and_Triangles/TaskD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskE.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/E___Vanya_and_Brackets/TaskE.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnticommutativeImplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Anticommutative_implication/AnticommutativeImplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChefAndPolygons.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Chef_and_Polygons/ChefAndPolygons.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chef and His Friend.task" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/Chef and His Friend.task">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58949625">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -304,45 +306,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main/net/egork/TaskETestCase.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/AquaparkPuzzle.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/JanuszTheBusinessman.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/JanuszTheBusinessmanTestCase.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/ArmyTeleportation.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Homework.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Autocomplete.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/CorporateGifting.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/WinningAtSports.java" />
-        <option value="$PROJECT_DIR$/TaskClass.template" />
-        <option value="$PROJECT_DIR$/main/net/egork/BuildingTowersEasy.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/CtuRobots.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/ConvenientBlock.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/LazySort.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/AllCritical.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/AutocompleteStrikesBack.java" />
-        <option value="$PROJECT_DIR$/test/Main.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/FoxSocks.java" />
-        <option value="$PROJECT_DIR$/lib/main/net/egork/misc/ArrayUtils.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskATestCase.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskB1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskD1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskE1.java" />
-        <option value="$PROJECT_DIR$/lib/main/net/egork/graph/MaxFlow.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskG1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskF1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Task.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaroFillingAStringDiv1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TheKingsRoadsDiv1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/LegendOfAdlez.java" />
-        <option value="$PROJECT_DIR$/lib/test/on2012_09/on2012_09_September_Challenge_2012/Lights/Lights.task" />
-        <option value="$PROJECT_DIR$/lib/test/on2012_10/on2012_10_21_October_Cook_Off_2012/Tennis_Tournament/Tennis Tournament.task" />
-        <option value="$PROJECT_DIR$/lib/test/on2014_11/on2014_11_21_Codeforces_Round__278__Div__1_/C___Prefix_Product_Sequence/C - Prefix Product Sequence.task" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskA.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskB.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskC.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskD.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskE.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskF.java" />
         <option value="$PROJECT_DIR$/main/net/egork/TaskH.java" />
         <option value="$PROJECT_DIR$/main/net/egork/TaskG.java" />
         <option value="$PROJECT_DIR$/main/net/egork/PolynomialGCD.java" />
@@ -355,11 +318,57 @@
         <option value="$PROJECT_DIR$/main/net/egork/ContestStrategy.java" />
         <option value="$PROJECT_DIR$/main/net/egork/GrandTour.java" />
         <option value="$PROJECT_DIR$/main/net/egork/IntroductionToTopology.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Coversta.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Morphling.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/CoverstaTestCase.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Privateparty.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/DumbSolution.java" />
+        <option value="$PROJECT_DIR$/test/TeamOk.java" />
+        <option value="$PROJECT_DIR$/test/Main.java" />
+        <option value="$PROJECT_DIR$/test/TeamOnm.java" />
+        <option value="$PROJECT_DIR$/test/TeamOnmlogn.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TeamTestCase.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Team.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Solution.java" />
+        <option value="$PROJECT_DIR$/main/Tests.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ChefAndMemoryLimit.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ChefAndPolygons.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/SteadyTables.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ChefAndHisFriend.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ChefAndString.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/AnticommutativeImplication.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/AnotherFibonacci.java" />
+        <option value="$PROJECT_DIR$/main/SandwichSolution.java" />
+        <option value="$PROJECT_DIR$/main/majority.java" />
+        <option value="$PROJECT_DIR$/main/MajoritySolution.java" />
+        <option value="$PROJECT_DIR$/main/message.java" />
+        <option value="$PROJECT_DIR$/main/Main.java" />
+        <option value="$PROJECT_DIR$/main/shhhh.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ChefAndTrees.java" />
+        <option value="$PROJECT_DIR$/lib/main/net/egork/string/SimpleStringHash.java" />
+        <option value="$PROJECT_DIR$/lib/main/net/egork/string/CompositeStringHash.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/PalindromicQueries.java" />
+        <option value="$PROJECT_DIR$/lib/main/net/egork/string/StringUtils.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/LexNext.java" />
+        <option value="$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/PalindromicQueries.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskA.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskB.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskC.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskD.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskE.java" />
+        <option value="$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/PalindromicQueries/PalindromicQueries.java" />
       </list>
     </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState />
@@ -372,10 +381,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
-    <option name="y" value="-9" />
-    <option name="width" value="1859" />
-    <option name="height" value="1098" />
+    <option name="x" value="1334" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -426,15 +435,25 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="algo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -453,6 +472,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -471,41 +508,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04" />
+              <option name="myItemId" value="on2015_06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04_29_101_Hack_April_15" />
+              <option name="myItemId" value="on2015_06_June_Challenge_2015" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Introduction_to_Topology" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04_29_101_Hack_April_15" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Grand_Tour" />
+              <option name="myItemId" value="Chef_and_Polygons" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,41 +534,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04" />
+              <option name="myItemId" value="on2015_06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04_29_101_Hack_April_15" />
+              <option name="myItemId" value="on2015_06_June_Challenge_2015" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Contest_Strategy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04_28_Single_Round_Match_657" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RookGraph" />
+              <option name="myItemId" value="Anticommutative_implication" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,37 +560,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04" />
+              <option name="myItemId" value="on2015_06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04_28_Single_Round_Match_657" />
+              <option name="myItemId" value="on2015_06_18_Codeforces_Round__308__Div__2_" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PolynomialGCD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04_26_Codeforces_Round__300" />
+              <option name="myItemId" value="E___Vanya_and_Brackets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,39 +586,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2015_04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="on2015_06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="on2015_06_18_Codeforces_Round__308__Div__2_" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2014_11" />
+              <option name="myItemId" value="D___Vanya_and_Triangles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -673,33 +612,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2014_11" />
+              <option name="myItemId" value="on2015_06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2014_11_21_Codeforces_Round__278__Div__1_" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="on2015_06_18_Codeforces_Round__308__Div__2_" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2014_11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on2014_11_15_Codeforces_Round__277_5__Div__2_" />
+              <option name="myItemId" value="B___Vanya_and_Books" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -717,7 +638,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2014_07" />
+              <option name="myItemId" value="on2015_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PalindromicQueries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -735,7 +664,151 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="on2014_06" />
+              <option name="myItemId" value="on2015_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LexNext" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChefAndTrees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06_09_June_Challenge_2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Steady_tables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06_09_June_Challenge_2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chef_and_String" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_06_04_Single_Round_Match_660" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Coversta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="on2015_05" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -763,6 +836,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="string" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="archive" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -777,29 +980,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2015.04" />
+              <option name="myItemId" value="2015.06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2015.04.29 - 101 Hack April'15" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="archive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2015.04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2015.04.28 - Single Round Match 657" />
+              <option name="myItemId" value="2015.06.18 - Codeforces Round #308 (Div. 2)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -813,11 +998,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2015.04" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2015.04.26 - Codeforces Round #300" />
+              <option name="myItemId" value="2015.06" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -842,7 +1023,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -850,7 +1031,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TaskClass.template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dcj" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="algo" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -874,7 +1055,7 @@
     <property name="extract.method.default.visibility" value="protected" />
     <property name="SearchEverywhereHistoryKey" value="Number&#9;PSI&#9;JAVA://java.lang.Number" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="ReadonlyStatusHandler">
@@ -899,11 +1080,11 @@
       <recent name="net.egork.numbers.Numbers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\proj\yaal\archive\2015.06\2015.06 - June Challenge 2015" />
       <recent name="C:\proj\algo\archive\2014.07\2014.07 - Weekly Challenges - Week 6" />
       <recent name="C:\proj\algo\archive\2014.07\2014.07 - July Challenge 2014" />
       <recent name="C:\proj\algo\archive\2014.08\2014.08.21 - SnarkNews Summer Series 2014 Round 3" />
       <recent name="C:\proj\algo\archive\2014.08\2014.08 - Weekly Challenges - Week 9" />
-      <recent name="C:\proj\algo\archive\2014.09\2014.09 - Weekly Challenges - Week 10" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="net.egork.string" />
@@ -921,11 +1102,26 @@
       <recent name="net.egork" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="net.egork.collections.intervaltree" />
       <recent name="" />
+      <recent name="net.egork.collections.intervaltree" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Library test">
+  <component name="RunManager" selected="JUnit.All in lib">
+    <configuration default="false" name="Tests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="4" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="main" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="on2014_06 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -956,6 +1152,42 @@
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="message" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="message" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="main" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="lib" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1098,13 +1330,24 @@
       <taskConf />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="Team" type="Task" factoryName="Task">
+      <taskConf>main/net/egork/Team.task</taskConf>
+      <method />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Library test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.on2014_06 in lib" />
+      <item index="1" class="java.lang.String" itemvalue="Task.Team" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Tests" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.on2014_06 in lib" />
+      <item index="4" class="java.lang.String" itemvalue="Application.message" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in lib" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.on2014_06 in lib" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in lib" />
+        <item index="1" class="java.lang.String" itemvalue="Application.message" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Tests" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.on2014_06 in lib" />
       </list>
     </recent_temporary>
   </component>
@@ -1544,26 +1787,26 @@
     <option name="totallyTimeSpent" value="902775000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="-9" width="1859" height="1098" extended-state="6" />
+    <frame x="1334" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2297155" sideWeight="0.3271915" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2289282" sideWeight="0.3271915" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2297155" sideWeight="0.67280847" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21517672" sideWeight="0.67280847" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992464" sideWeight="0.6700935" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32455215" sideWeight="0.32870865" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32665965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29610115" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25293133" sideWeight="0.5229456" order="0" side_tool="false" content_ui="combo" x="-476" y="120" width="473" height="1041" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34068358" sideWeight="0.5229456" order="0" side_tool="false" content_ui="combo" x="-476" y="120" width="473" height="1041" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2488889" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32774985" sideWeight="0.7652081" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32910696" sideWeight="0.7652081" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1582,7 +1825,7 @@
       <window_info id="Kotlin" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45100105" sideWeight="0.32960597" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4505723" sideWeight="0.32960597" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1667,9 +1910,6 @@
     <breakpoint-manager>
       <breakpoints>
         <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
-        </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="93" />
         </breakpoint>
@@ -1677,7 +1917,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="374" />
+      <option name="time" value="411" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TopCoderTask">
@@ -1687,38 +1927,47 @@
         <watch expression="answer[vertex][keys]" language="JAVA" custom="" />
         <watch expression="value" language="JAVA" custom="" />
         <watch expression="components" language="JAVA" custom="" />
+        <watch expression="base" language="JAVA" custom="" />
+        <watch expression="current" language="JAVA" custom="" />
       </configuration>
       <configuration name="Task">
-        <watch expression="first" language="JAVA" custom="" />
-        <watch expression="second" language="JAVA" custom="" />
-      </configuration>
-      <configuration name="JUnit">
-        <watch expression="first" language="JAVA" custom="" />
-        <watch expression="second" language="JAVA" custom="" />
-      </configuration>
-      <configuration name="Application">
-        <watch expression="current" language="JAVA" custom="" />
+        <watch expression="answer" language="JAVA" custom="" />
+        <watch expression="onLine" language="JAVA" custom="" />
         <watch expression="qty" language="JAVA" custom="" />
-        <watch expression="s" language="JAVA" custom="" />
-        <watch expression="o" language="JAVA" custom="" />
         <watch expression="a" language="JAVA" custom="" />
         <watch expression="b" language="JAVA" custom="" />
         <watch expression="c" language="JAVA" custom="" />
-        <watch expression="d" language="JAVA" custom="" />
-        <watch expression="get(0, 5)" language="JAVA" custom="" />
-        <watch expression="socks[0]" language="JAVA" custom="" />
+        <watch expression="partial[(lft + 1) &gt;&gt; 1]" language="JAVA" custom="" />
+        <watch expression="i" language="JAVA" custom="" />
+        <watch expression="j" language="JAVA" custom="" />
+        <watch expression="partial[(i + 1) &gt;&gt; 1] - partial[(j + 1) &gt;&gt; 1]" language="JAVA" custom="" />
+        <watch expression="partial" language="JAVA" custom="" />
+        <watch expression="middle" language="JAVA" custom="" />
+        <watch expression="rht2" language="JAVA" custom="" />
+        <watch expression="lft2" language="JAVA" custom="" />
+      </configuration>
+      <configuration name="JUnit">
         <watch expression="answer" language="JAVA" custom="" />
-        <watch expression="getOddity(0, 5)" language="JAVA" custom="" />
-        <watch expression="length[at]" language="JAVA" custom="" />
+        <watch expression="onLine" language="JAVA" custom="" />
+        <watch expression="qty" language="JAVA" custom="" />
+        <watch expression="a" language="JAVA" custom="" />
+        <watch expression="b" language="JAVA" custom="" />
+        <watch expression="c" language="JAVA" custom="" />
+        <watch expression="partial[(lft + 1) &gt;&gt; 1]" language="JAVA" custom="" />
         <watch expression="i" language="JAVA" custom="" />
-        <watch expression="length[i]" language="JAVA" custom="" />
-        <watch expression="at" language="JAVA" custom="" />
-        <watch expression="length[at]" language="JAVA" custom="" />
-        <watch expression="prefix[i][at]" language="JAVA" custom="" />
-        <watch expression="prefix[at][i]" language="JAVA" custom="" />
-        <watch expression="words" language="JAVA" custom="" />
-        <watch expression="prefix" language="JAVA" custom="" />
-        <watch expression="i" language="JAVA" custom="" />
+        <watch expression="j" language="JAVA" custom="" />
+        <watch expression="partial[(i + 1) &gt;&gt; 1] - partial[(j + 1) &gt;&gt; 1]" language="JAVA" custom="" />
+        <watch expression="partial" language="JAVA" custom="" />
+        <watch expression="middle" language="JAVA" custom="" />
+        <watch expression="rht2" language="JAVA" custom="" />
+        <watch expression="lft2" language="JAVA" custom="" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="minPrefix" language="JAVA" custom="" />
+        <watch expression="minSuffix" language="JAVA" custom="" />
+        <watch expression="sum" language="JAVA" custom="" />
+        <watch expression="best" language="JAVA" custom="" />
+        <watch expression="answer" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -1727,216 +1976,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/test/on2015_01/on2015_01_09_Facebook_Hacker_Cup_2015_Qualification_Round/Laser_Maze/LaserMaze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2015_01/on2015_01_02_Single_Round_Match_644/OkonomiyakiParty/OkonomiyakiParty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_27_Single_Round_Match_643/TheKingsArmyDiv1/TheKingsArmyDiv1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_26_Sudo_Code_2_0/ProblemsWithArray/ProblemsWithArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_26_Sudo_Code_2_0/Puzzle/Puzzle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_26_Sudo_Code_2_0/ShyamAndFreechargeCredits/ShyamAndFreechargeCredits.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_24_Codeforces_Round__284__Div__1_/A___Crazy_Town/TaskA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_24_Codeforces_Round__284__Div__1_/C___Array_and_Operations/TaskC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_24_Codeforces_Round__284__Div__1_/E___Stairs_and_Lines/TaskE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_17_Codeforces_Round__283__Div__1_/B___Tennis_Game/TaskB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_15_USACO_2014_December_Contest__Gold/CowJog/CowJog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_15_USACO_2014_December_Contest__Gold/Guard/Guard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_15_USACO_2014_December_Contest__Gold/Marathon/Marathon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_13_Codeforces_Round__282__Div__1_/B___Obsessive_String/TaskB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_13_Codeforces_Round__282__Div__1_/D___Birthday/TaskD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_11_Single_Round_Match_641/ShufflingCardsDiv1/ShufflingCardsDiv1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_12/on2014_12_11_Single_Round_Match_641/TrianglesContainOrigin/TrianglesContainOrigin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_02_OpenCup_Siberia_GP/Task2/Task2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_02_OpenCup_Siberia_GP/Task3/Task3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_02_OpenCup_Siberia_GP/Task5/Task5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_02_OpenCup_Siberia_GP/Task80/Task8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_05_Codeforces_Round__276__Div__1_/A___Bits/TaskA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_05_Codeforces_Round__276__Div__1_/B___Maximum_Value/TaskB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_05_Codeforces_Round__276__Div__1_/D___Kindergarten/TaskD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_15_Codeforces_Round__277_5__Div__2_/TaskB/TaskB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_15_Codeforces_Round__277_5__Div__2_/TaskD/TaskD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_15_Codeforces_Round__277_5__Div__2_/TaskE/TaskE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_15_Codeforces_Round__277_5__Div__2_/TaskF/TaskF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_21_Codeforces_Round__278__Div__1_/B___Strip/TaskB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_21_Codeforces_Round__278__Div__1_/C___Prefix_Product_Sequence/TaskC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/test/on2014_11/on2014_11_28_Single_Round_Match_639/BoardFolding/BoardFolding.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1983,12 +2022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#153#154#0" expanded="false" />
-            <element signature="e#182#183#0" expanded="false" />
-            <element signature="e#220#221#0" expanded="false" />
-            <element signature="e#257#258#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1996,7 +2029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2004,7 +2036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2012,7 +2043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2020,7 +2050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2028,7 +2057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2036,7 +2064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2044,7 +2071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2052,7 +2078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2060,14 +2085,288 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/test/on2015_04/on2015_04_29_101_Hack_April_15/Introduction_to_Topology/IntroductionToTopology.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8237822">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.7936726">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/DumbSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CheckerClass.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TeamTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="47" selection-start-line="108" selection-start-column="47" selection-end-line="108" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/string/SuffixAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="147" column="27" selection-start-line="147" selection-start-column="27" selection-end-line="147" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/collections/map/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/string/SubstringStringHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/string/AbstractStringHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/string/SimpleStringHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/string/StringHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/string/CompositeStringHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.32">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/string/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2483#2484#0" expanded="false" />
+            <element signature="e#2573#2574#0" expanded="false" />
+            <element signature="e#3502#3503#0" expanded="false" />
+            <element signature="e#3549#3550#0" expanded="false" />
+            <element signature="e#4146#4147#0" expanded="false" />
+            <element signature="e#4192#4193#0" expanded="false" />
+            <element signature="e#4404#4405#0" expanded="false" />
+            <element signature="e#4456#4457#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/PalindromicQueries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/2015.06/2015.06.12 - CodeChef Snackdown 2015 - Online Elimination Round/ChefAndTrees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/numbers/IntegerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_04_Single_Round_Match_660/Coversta/Coversta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Chef_and_String/ChefAndString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_09_June_Challenge_2015/Steady_tables/SteadyTables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/ChefAndTrees/ChefAndTrees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/LexNext/LexNext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round/PalindromicQueries/PalindromicQueries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/B___Vanya_and_Books/TaskB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/D___Vanya_and_Triangles/TaskD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_18_Codeforces_Round__308__Div__2_/E___Vanya_and_Brackets/TaskE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Anticommutative_implication/AnticommutativeImplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_06/on2015_06_June_Challenge_2015/Chef_and_Polygons/ChefAndPolygons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archive/2015.06/2015.06 - June Challenge 2015/Chef and His Friend.task">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58949625">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -2129,7 +2428,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>main</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

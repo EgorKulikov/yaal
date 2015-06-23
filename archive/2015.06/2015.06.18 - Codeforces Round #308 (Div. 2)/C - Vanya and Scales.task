@@ -1,0 +1,39 @@
+20 C - Vanya and Scales
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+4 3 7
+
+4 YES
+
+1
+1
+7 100 99
+
+4 YES
+
+1
+2
+7 100 50
+
+3 NO
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.18
+30 Codeforces Round #308 (Div. 2)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

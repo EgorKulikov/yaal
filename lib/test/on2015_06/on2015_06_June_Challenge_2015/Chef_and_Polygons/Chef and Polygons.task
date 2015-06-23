@@ -1,0 +1,34 @@
+17 Chef and Polygons
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+75 1
+3
+6
+-2 2 -1 1 2 2 2 -1 1 -2 -2 -2
+3
+-1 -1 1 -1 1 1
+4
+3 3 -3 3 -3 -3 3 -3
+
+6 1 0 2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+73 on2015_06.on2015_06_June_Challenge_2015.Chef_and_Polygons.ChefAndPolygons
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2015.06
+19 June Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

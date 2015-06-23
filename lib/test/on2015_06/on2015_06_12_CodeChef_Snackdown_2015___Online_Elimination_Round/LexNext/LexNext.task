@@ -1,0 +1,33 @@
+7 LexNext
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+22 abcb
+4
+1 1
+1 2
+2 3
+2 2
+8 2
+2
+-1
+3
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+89 on2015_06.on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Round.LexNext.LexNext
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.12
+50 CodeChef Snackdown 2015 : Online Elimination Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
