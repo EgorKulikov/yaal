@@ -33,9 +33,9 @@ public class Rational implements Comparable<Rational> {
 	}
 
 	public int compareTo(Rational other) {
-//		return IntegerUtils.longCompare(numerator * other.denominator, denominator * other.numerator);
-		return BigInteger.valueOf(numerator).multiply(BigInteger.valueOf(other.denominator)).compareTo(
-			BigInteger.valueOf(other.numerator).multiply(BigInteger.valueOf(denominator)));
+		return IntegerUtils.longCompare(numerator * other.denominator, denominator * other.numerator);
+//		return BigInteger.valueOf(numerator).multiply(BigInteger.valueOf(other.denominator)).compareTo(
+//			BigInteger.valueOf(other.numerator).multiply(BigInteger.valueOf(denominator)));
 	}
 
 	public Rational add(Rational other) {

@@ -1,0 +1,67 @@
+23 D - Vanya and Triangles
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+5
+0
+18 4
+0 0
+1 1
+2 0
+2 2
+
+2 3
+
+1
+1
+14 3
+0 0
+1 1
+2 0
+
+2 1
+
+1
+2
+6 1
+1 1
+
+2 0
+
+1
+3
+22 5
+0 0
+1 0
+2 0
+3 0
+0 1
+
+2 6
+
+1
+4
+14 3
+0 0
+1 1
+2 2
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+83 on2015_06.on2015_06_18_Codeforces_Round__308__Div__2_.D___Vanya_and_Triangles.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.18
+30 Codeforces Round #308 (Div. 2)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

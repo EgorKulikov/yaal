@@ -1,9 +1,5 @@
 package net.egork.string;
 
-import net.egork.collections.comparators.IntComparator;
-import net.egork.misc.ArrayUtils;
-import net.egork.numbers.IntegerUtils;
-
 import java.util.Arrays;
 
 /**
@@ -84,43 +80,6 @@ public class StringUtils {
 		return p;
 	}
 
-    public static int[] suffixArray(CharSequence s) {
-        int length = s.length();
-        int[] result = new int[length];
-        for (int i = 0; i < length; i++)
-            result[i] = length - i - 1;
-        final long[] type = new long[length];
-        for (int i = 0; i < length; i++)
-            type[i] = s.charAt(i);
-        final long[] nextType = new long[length];
-        int curLength = 1;
-        ArrayUtils.sort(result, new IntComparator() {
-            public int compare(int first, int second) {
-                return IntegerUtils.longCompare(type[first], type[second]);
-            }
-        });
-        while (curLength < length) {
-            for (int i = 0; i < length; i++)
-                nextType[i] = (type[i] << 32) + (i + curLength < length ? type[i + curLength] : -1);
-            ArrayUtils.sort(result, new IntComparator() {
-                public int compare(int first, int second) {
-                    return IntegerUtils.longCompare(nextType[first], nextType[second]);
-                }
-            });
-            long currentType = nextType[result[0]];
-            long currentIndex = 0;
-            for (int i = 0; i < length; i++) {
-                if (nextType[result[i]] != currentType) {
-                    currentIndex++;
-                    currentType = nextType[result[i]];
-                }
-                type[result[i]] = currentIndex;
-            }
-            curLength <<= 1;
-        }
-        return result;
-    }
-
 	public static int[][] buildPrefixAutomaton(CharSequence s) {
 		return buildPrefixAutomaton(s, 'a', 'z');
 	}
@@ -161,7 +120,7 @@ public class StringUtils {
 		return false;
 	}
 
-	public static int[] suffixArray(String s) {
+	public static int[] suffixArray(CharSequence s) {
 		int length = s.length();
 		int[] position = new int[length];
 		int[] count = new int[Math.max(256, length)];
@@ -189,7 +148,7 @@ public class StringUtils {
 			Arrays.fill(count, 0);
 			for (int i = 0; i < length; ++i)
 				count[order[nextPosition[i]]]++;
-			for (int i = 1; i < currentClass; ++i)
+			for (int i = 1; i <= currentClass; ++i)
 				count[i] += count[i - 1];
 			for (int i = length - 1; i >= 0; --i)
 				position[--count[order[nextPosition[i]]]] = nextPosition[i];

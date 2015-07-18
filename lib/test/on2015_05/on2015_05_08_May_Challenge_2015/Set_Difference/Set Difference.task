@@ -1,0 +1,35 @@
+14 Set Difference
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+26 3
+2
+1 2
+3
+1 2 3
+4
+1 2 3 4
+
+8 1
+6 
+23
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+70 on2015_05.on2015_05_08_May_Challenge_2015.Set_Difference.SetDifference
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.05.08
+18 May Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

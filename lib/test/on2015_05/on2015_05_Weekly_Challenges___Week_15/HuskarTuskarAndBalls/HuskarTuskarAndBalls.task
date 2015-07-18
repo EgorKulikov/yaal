@@ -1,0 +1,31 @@
+20 HuskarTuskarAndBalls
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+17 6 1
+4
+1
+1
+3
+3
+3 6
+3 2 1
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+89 on2015_05.on2015_05_Weekly_Challenges___Week_15.HuskarTuskarAndBalls.HuskarTuskarAndBalls
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+7 2015.05
+27 Weekly Challenges - Week 15
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
