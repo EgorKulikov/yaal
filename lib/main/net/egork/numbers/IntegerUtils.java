@@ -265,7 +265,7 @@ public class IntegerUtils {
 	}
 
 	public static long lcm(long a, long b) {
-		return a / gcd(a, b) * b;
+		return (a / gcd(a, b)) * b;
 	}
 
 	public static long[] generateFibonacci(long upTo) {
@@ -410,12 +410,13 @@ public class IntegerUtils {
 		aRemainder /= modGCD;
 		bMod /= modGCD;
 		bRemainder /= modGCD;
-		long aReverse = BigInteger.valueOf(aMod).modInverse(BigInteger.valueOf(bMod)).longValue();
-		long bReverse = BigInteger.valueOf(bMod).modInverse(BigInteger.valueOf(aMod)).longValue();
-		long mod = aMod * bMod;
-		return BigInteger.valueOf(bReverse * aRemainder % mod).multiply(BigInteger.valueOf(bMod)).add(
-				BigInteger.valueOf(aReverse * bRemainder % mod).multiply(BigInteger.valueOf(aMod))
-				).mod(BigInteger.valueOf(mod)).longValue() * modGCD + gcdRemainder;
+		BigInteger aReverse = BigInteger.valueOf(aMod).modInverse(BigInteger.valueOf(bMod));
+		BigInteger bReverse = BigInteger.valueOf(bMod).modInverse(BigInteger.valueOf(aMod));
+		BigInteger mod = BigInteger.valueOf(aMod * bMod);
+//		return (bReverse * aRemainder % aMod * bMod + aReverse * bRemainder % bMod * aMod) % mod * modGCD + gcdRemainder;
+		return bReverse.multiply(BigInteger.valueOf(aRemainder)).mod(mod).multiply(BigInteger.valueOf(bMod)).add(
+				aReverse.multiply(BigInteger.valueOf(bRemainder)).mod(mod).multiply(BigInteger.valueOf(aMod))
+				).mod(mod).longValue() * modGCD + gcdRemainder;
 	}
 
 	public static long[] generatePowers(long base, long maxValue) {

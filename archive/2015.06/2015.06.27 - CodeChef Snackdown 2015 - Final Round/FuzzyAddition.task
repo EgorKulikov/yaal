@@ -1,0 +1,53 @@
+13 FuzzyAddition
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+33 7
+99999
+99999
+800001
+1
+100
+1000
+5
+74 99999
+199998
+999999
+499999.5
+500049.495
+500548.94495
+500551.44218723624875
+0
+1
+23 10
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+
+-1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+23 net.egork.FuzzyAddition
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2015.06.27
+37 CodeChef Snackdown 2015 : Final Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

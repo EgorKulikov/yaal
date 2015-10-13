@@ -109,6 +109,13 @@ public class IntTreapArray extends IntList {
 		}
 	}
 
+	public void putBack(int from, int to) {
+		IntPair first = split(root, to + 1, 0);
+		IntPair second = split(first.first, from, 0);
+		int right = merge(second.first, first.second);
+		root = merge(second.second, right);
+	}
+
 	public void add(int value) {
 		insert(count, value);
 	}

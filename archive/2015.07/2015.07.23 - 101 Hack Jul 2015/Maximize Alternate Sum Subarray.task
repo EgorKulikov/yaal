@@ -1,0 +1,39 @@
+31 Maximize Alternate Sum Subarray
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+71 10
+-6 -900 -7 5 -2 -7 -4 3 3 3
+6
+U 3 -7
+Q 1 3
+Q 8 10
+Q 6 8
+Q 3 3
+Q 4 8
+
+13 894
+3
+3
+-7
+7
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+38 net.egork.MaximizeAlternateSumSubarray
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.23
+17 101 Hack Jul 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

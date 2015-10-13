@@ -1,5 +1,6 @@
 package net.egork.misc;
 
+import net.egork.collections.FenwickTree;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.intcollection.IntArray;
 
@@ -695,5 +696,15 @@ public class ArrayUtils {
 			}
 		}
 		return -1;
+	}
+
+	public static boolean getOddity(int[] p) {
+		FenwickTree tree = new FenwickTree(p.length);
+		long total = 0;
+		for (int i : p) {
+			total += i - tree.get(0, i);
+			tree.add(i, 1);
+		}
+		return total % 2 == 1;
 	}
 }

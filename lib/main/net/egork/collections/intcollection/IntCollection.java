@@ -109,11 +109,66 @@ public abstract class IntCollection {
 					}
 
 					public void advance() throws NoSuchElementException {
-						iterator().advance();
+						iterator.advance();
 					}
 
 					public boolean isValid() {
-						return iterator().isValid();
+						return iterator.isValid();
+					}
+				};
+			}
+
+			@Override
+			public int size() {
+				return IntCollection.this.size();
+			}
+
+			@Override
+			public void add(int value) {
+				throw new UnsupportedOperationException();
+			}
+
+			@Override
+			public void remove(int value) {
+				throw new UnsupportedOperationException();
+			}
+		};
+	}
+
+	public IntList qty(int bound) {
+		int[] result = new int[bound];
+		for (IntIterator iterator = iterator(); iterator.isValid(); iterator.advance()) {
+			result[iterator.value()]++;
+		}
+		return new IntArray(result);
+	}
+
+	public IntList qty() {
+		return qty(max() + 1);
+	}
+
+	public IntCollection join(IntCollection other, IntBiFunction f) {
+		return new IntCollection() {
+			@Override
+			public IntIterator iterator() {
+				IntIterator thisIterator = IntCollection.this.iterator();
+				IntIterator otherIterator = other.iterator();
+
+				return new IntIterator() {
+					@Override
+					public int value() throws NoSuchElementException {
+						return f.value(thisIterator.value(), otherIterator.value());
+					}
+
+					@Override
+					public void advance() throws NoSuchElementException {
+						thisIterator.advance();
+						otherIterator.advance();
+					}
+
+					@Override
+					public boolean isValid() {
+						return thisIterator.isValid();
 					}
 				};
 			}
@@ -169,5 +224,20 @@ public abstract class IntCollection {
 				remove(it.value());
 			}
 		}
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		boolean first = true;
+		for (IntIterator iterator = iterator(); iterator.isValid(); iterator.advance()) {
+			if (first) {
+				first = false;
+			} else {
+				builder.append(' ');
+			}
+			builder.append(iterator.value());
+		}
+		return builder.toString();
 	}
 }

@@ -1,0 +1,34 @@
+17 Chef and insomnia
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+10 3 2
+5 3 1
+
+2 4
+
+1
+1
+27 10 1
+3 2 10 2 1 10 10 5 5 7
+2 26
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+78 on2015_08.on2015_08_07_August_Challenge_2015.Chef_and_insomnia.ChefAndInsomnia
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+86 on2015_08.on2015_08_07_August_Challenge_2015.Chef_and_insomnia.ChefAndInsomniaTestCase
+10 2015.08.07
+21 August Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

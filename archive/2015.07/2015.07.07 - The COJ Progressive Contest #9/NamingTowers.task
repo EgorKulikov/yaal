@@ -1,0 +1,28 @@
+12 NamingTowers
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+8 2
+AMA
+ZX
+6 YES
+NO
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+22 net.egork.NamingTowers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.07
+30 The COJ Progressive Contest #9
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,30 @@
+25 SavingTheKingdomOfCarlosI
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+23 4
+1 -1
+1 1
+-1 1
+-1 -1
+1
+4 6.00
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+105 on2015_07.on2015_07_08_The_COJ_Progressive_Contest__9.SavingTheKingdomOfCarlosI.SavingTheKingdomOfCarlosI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.08
+30 The COJ Progressive Contest #9
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

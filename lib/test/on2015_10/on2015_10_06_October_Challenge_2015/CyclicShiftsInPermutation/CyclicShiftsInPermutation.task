@@ -1,0 +1,55 @@
+25 CyclicShiftsInPermutation
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+37 2
+4 2
+2 4 3 1
+1 2 4 3
+3 3
+1 2 3
+1 3 2
+5 2
+-1
+
+1
+1
+22 1
+4 2
+1 2 3 4
+4 3 2 1
+
+3 24
+
+1
+2
+42 2
+4 3
+1 2 3 4
+2 1 3 4
+4 3
+1 2 3 4
+4 3 2 1
+
+6 -1
+12
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+97 on2015_10.on2015_10_06_October_Challenge_2015.CyclicShiftsInPermutation.CyclicShiftsInPermutation
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.06
+22 October Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,36 @@
+5 Task8
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+28 6 20
+2 5
+1 5
+2 6
+3 3
+4 4
+1 5
+1 3
+1
+1
+8 1 10
+1 8
+10 Impossible
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+61 on2015_10.on2015_10_04_Grand_Prix_of_Eurasia_2015.Task8.Task8
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.04
+26 Grand Prix of Eurasia-2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

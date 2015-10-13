@@ -1,0 +1,33 @@
+20 B - Орнамент
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+54 5 5
+1 1 0 1 1
+1 0 1 1 0
+0 1 0 1 1
+1 1 0 1 0
+1 1 0 1 1
+
+6 1 2 2
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+54 on2015_08.on2015_08_10_SNSS_2015_R2.B___________.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+62 on2015_08.on2015_08_10_SNSS_2015_R2.B___________.TaskBTestCase
+10 2015.08.10
+12 SNSS 2015 R2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,31 @@
+12 DevuAndChuru
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+39 3 5
+1 2 3
+> 1 D
+< 2 C
+= 3 D
+> 4 C
+< 5 D
+5 DCDDC
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+70 on2015_08.on2015_08_07_August_Challenge_2015.DevuAndChuru.DevuAndChuru
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.07
+21 August Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
