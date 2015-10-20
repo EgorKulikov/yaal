@@ -1,8 +1,8 @@
 package net.egork.misc;
 
 import net.egork.collections.FenwickTree;
-import net.egork.collections.comparators.IntComparator;
-import net.egork.collections.intcollection.IntArray;
+import net.egork.generated.collections.comparator.IntComparator;
+import net.egork.generated.collections.list.IntArray;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -217,9 +217,9 @@ public class ArrayUtils {
 
 	public static int[] sort(int[] array, int from, int to, IntComparator comparator) {
 		if (from == 0 && to == array.length)
-			new IntArray(array).inPlaceSort(comparator);
+			new IntArray(array).sort(comparator);
 		else
-			new IntArray(array).subList(from, to).inPlaceSort(comparator);
+			new IntArray(array).subList(from, to).sort(comparator);
 		return array;
 	}
 

@@ -1,11 +1,10 @@
 package on2015_04.on2015_04_11_Google_Code_Jam_Qualification_Round_2015.A___Standing_Ovation;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 

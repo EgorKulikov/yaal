@@ -2,12 +2,9 @@ package on2015_03.on2015_03_21_VK_Cup_2015___Round_1__unofficial_online_mirror__
 
 
 
-import net.egork.collections.comparators.IntComparator;
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.ReadOnlyIntervalTree;
 import net.egork.misc.ArrayUtils;
-import net.egork.string.SimpleStringHash;
-import net.egork.string.StringHash;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 

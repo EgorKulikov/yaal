@@ -1,9 +1,8 @@
 package on2015_01.on2015_01_18_Facebook_Hacker_Cup_2015_Round_1.Corporate_Gifting;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;

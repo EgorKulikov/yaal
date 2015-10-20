@@ -1,9 +1,8 @@
 package on2015_10.on2015_10_04_Grand_Prix_of_Eurasia_2015.Task3;
 
 
-
 import net.egork.collections.Pair;
-import net.egork.collections.intcollection.IntPair;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.Graph;
 import net.egork.graph.StronglyConnectedComponents;
 import net.egork.io.IOUtils;
@@ -39,14 +38,14 @@ public class Task3 {
             }
         }
         Pair<int[], Graph> pair = StronglyConnectedComponents.kosaraju(graph);
-        Set<IntPair> strict = new HashSet<>();
+        Set<IntIntPair> strict = new HashSet<>();
         for (int i = 0; i < at; i++) {
             if (type[edge[i]] == 1) {
                 if (pair.first[lValue[edge[i]] - 1] == pair.first[rValue[edge[i]] - 1]) {
                     out.printLine("NO");
                     return;
                 }
-                strict.add(new IntPair(pair.first[lValue[edge[i]] - 1], pair.first[rValue[edge[i]] - 1]));
+                strict.add(new IntIntPair(pair.first[lValue[edge[i]] - 1], pair.first[rValue[edge[i]] - 1]));
             }
         }
         int[] minVal = new int[pair.second.vertexCount()];
@@ -63,7 +62,7 @@ public class Task3 {
             for (int j = pair.second.firstInbound(i); j != -1; j = pair.second.nextInbound(j)) {
                 int from = pair.second.source(j);
                 int delta = 0;
-                if (strict.contains(new IntPair(from, i))) {
+                if (strict.contains(new IntIntPair(from, i))) {
                     delta = 1;
                 }
                 minVal[i] = Math.max(minVal[i], minVal[from] + delta);

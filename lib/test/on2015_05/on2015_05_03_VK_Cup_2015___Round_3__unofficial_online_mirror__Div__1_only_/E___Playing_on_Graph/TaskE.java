@@ -1,16 +1,11 @@
 package on2015_05.on2015_05_03_VK_Cup_2015___Round_3__unofficial_online_mirror__Div__1_only_.E___Playing_on_Graph;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.misc.ArrayUtils;
-import net.egork.numbers.Rational;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
-
-import javax.print.attribute.standard.Media;
-import java.util.Random;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

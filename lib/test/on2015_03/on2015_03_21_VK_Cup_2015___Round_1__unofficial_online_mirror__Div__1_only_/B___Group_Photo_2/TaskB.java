@@ -1,10 +1,8 @@
 package on2015_03.on2015_03_21_VK_Cup_2015___Round_1__unofficial_online_mirror__Div__1_only_.B___Group_Photo_2;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
-import net.egork.collections.sequence.Array;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
@@ -57,7 +55,7 @@ public class TaskB {
 			if (!good || numRotated - rotatedDelta.size() > count / 2) {
 				continue;
 			}
-			rotatedDelta.inPlaceSort();
+			rotatedDelta.sort();
 			for (int j = 0; j < numRotated - count / 2; j++) {
 				sum += rotatedDelta.get(j);
 			}

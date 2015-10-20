@@ -1,6 +1,6 @@
 package net.egork.string;
 
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntList;
 
 import java.util.Arrays;
 
@@ -30,12 +30,18 @@ public class SuffixAutomaton {
             }
 
             @Override
-            public int size() {
-                return s.length();
+            public void addAt(int index, int value) {
+                throw new UnsupportedOperationException();
             }
 
-            public void add(int value) {
+            @Override
+            public void removeAt(int index) {
                 throw new UnsupportedOperationException();
+            }
+
+            @Override
+            public int size() {
+                return s.length();
             }
         });
     }

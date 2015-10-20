@@ -1,9 +1,8 @@
 package on2015_07.on2015_07_09_Week_of_Code__formerly_Weekly_Challenges____16.Sprinklers;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.utils.io.InputReader;

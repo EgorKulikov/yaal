@@ -1,6 +1,6 @@
 package net.egork.collections;
 
-import net.egork.collections.comparators.IntComparator;
+import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.misc.ArrayUtils;
 
 /**

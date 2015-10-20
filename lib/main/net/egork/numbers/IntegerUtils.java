@@ -1,8 +1,8 @@
 package net.egork.numbers;
 
 import net.egork.collections.Pair;
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

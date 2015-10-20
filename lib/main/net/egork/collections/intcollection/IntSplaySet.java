@@ -1,6 +1,8 @@
 package net.egork.collections.intcollection;
 
-import net.egork.collections.comparators.IntComparator;
+import net.egork.generated.collections.comparator.IntComparator;
+import net.egork.generated.collections.iterator.IntIterator;
+import net.egork.generated.collections.set.IntSet;
 
 import java.util.Arrays;
 import java.util.NoSuchElementException;
@@ -8,7 +10,7 @@ import java.util.NoSuchElementException;
 /**
  * @author egor@egork.net
  */
-public class IntSplaySet extends IntSet {
+public class IntSplaySet implements IntSet {
 	protected int[] value;
 	protected int[] left;
 	protected int[] right;
@@ -49,10 +51,10 @@ public class IntSplaySet extends IntSet {
 	}
 
 	@Override
-	public IntIterator iterator() {
+	public IntIterator intIterator() {
 		return new IntIterator() {
 			private boolean first = true;
-			private boolean exhausted = false;
+			private boolean exhausted = root == -1;
 
 			@Override
 			public int value() throws NoSuchElementException {
@@ -68,21 +70,27 @@ public class IntSplaySet extends IntSet {
 			}
 
 			@Override
-			public void advance() throws NoSuchElementException {
+			public boolean advance() throws NoSuchElementException {
 				if (root == -1 || exhausted) {
 					throw new NoSuchElementException();
 				}
 				int next = leftmost(right[root]);
 				if (next == -1) {
 					exhausted = true;
-					return;
+					return false;
 				}
 				splay(next);
+				return true;
 			}
 
 			@Override
 			public boolean isValid() {
 				return !exhausted;
+			}
+
+			@Override
+			public void remove() throws NoSuchElementException {
+				throw new UnsupportedOperationException();
 			}
 		};
 	}
@@ -256,12 +264,14 @@ public class IntSplaySet extends IntSet {
 	}
 
 	@Override
-	public void remove(int value) {
+	public boolean remove(int value) {
 		if (contains(value)) {
 			behead(left[root]);
 			behead(right[root]);
 			merge(left[root], right[root]);
+			return true;
 		}
+		return false;
 	}
 
 	@Override

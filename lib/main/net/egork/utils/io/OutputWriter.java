@@ -1,9 +1,10 @@
 package net.egork.utils.io;
 
-import net.egork.collections.intcollection.IntCollection;
-import net.egork.collections.intcollection.IntIterator;
-
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.Writer;
 
 /**
  * @author Egor Kulikov (egor@egork.net)
@@ -47,17 +48,6 @@ public class OutputWriter {
         }
     }
 
-    public void print(IntCollection collection) {
-		boolean first = true;
-		for (IntIterator iterator = collection.iterator(); iterator.isValid(); iterator.advance()) {
-			if (first)
-				first = false;
-			else
-				writer.print(' ');
-			writer.print(iterator.value());
-		}
-	}
-
 	public void printLine(int[] array) {
         print(array);
         writer.println();
@@ -67,11 +57,6 @@ public class OutputWriter {
         print(array);
         writer.println();
     }
-
-    public void printLine(IntCollection collection) {
-		print(collection);
-		writer.println();
-	}
 
 	public void printLine() {
 		writer.println();

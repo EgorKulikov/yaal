@@ -1,8 +1,7 @@
 package on2015_06.on2015_06_04_Single_Round_Match_660.Coversta;
 
 
-
-import net.egork.collections.intcollection.IntPair;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.misc.MiscUtils;
 
 import java.util.Arrays;
@@ -29,14 +28,14 @@ public class Coversta {
                 }
             }
         }
-        IntPair[] order = new IntPair[rowCount * columnCount];
+        IntIntPair[] order = new IntIntPair[rowCount * columnCount];
         for (int i = 0; i < order.length; i++) {
-            order[i] = new IntPair(i / columnCount, i % columnCount);
+            order[i] = new IntIntPair(i / columnCount, i % columnCount);
         }
         Arrays.sort(order, (f, s) -> base[s.first][s.second] - base[f.first][f.second]);
         int answer = 0;
-        for (IntPair first : order) {
-            for (IntPair second : order) {
+        for (IntIntPair first : order) {
+            for (IntIntPair second : order) {
                 int current = base[first.first][first.second] + base[second.first][second.second];
                 boolean intersect = false;
                 for (int i = 0; i < x.length; i++) {

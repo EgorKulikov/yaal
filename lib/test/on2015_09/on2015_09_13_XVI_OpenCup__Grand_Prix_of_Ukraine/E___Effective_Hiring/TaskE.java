@@ -1,8 +1,7 @@
 package on2015_09.on2015_09_13_XVI_OpenCup__Grand_Prix_of_Ukraine.E___Effective_Hiring;
 
 
-
-import net.egork.collections.comparators.IntComparator;
+import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;

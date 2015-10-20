@@ -1,12 +1,9 @@
 package on2015_02.on2015_02_28_Single_Round_Match_651.FoxConnection3;
 
 
-
-import net.egork.collections.intcollection.IntPair;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.misc.MiscUtils;
-import net.egork.numbers.IntegerUtils;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,16 +11,16 @@ public class FoxConnection3 {
 	long[] result;
 
     public long minimalSteps(int[] x, int[] y) {
-		IntPair[] array = new IntPair[x.length];
-		array[0] = new IntPair(0, 0);
+		IntIntPair[] array = new IntIntPair[x.length];
+		array[0] = new IntIntPair(0, 0);
 		result = new long[1 << x.length];
-		Set<IntPair> in = new HashSet<>();
+		Set<IntIntPair> in = new HashSet<>();
 		in.add(array[0]);
 		long answer = go(x, y, array, in, new HashSet<>());
 		return answer;
 	}
 
-	private long go(int[] x, int[] y, IntPair[] array, Set<IntPair> in, Set<IntPair> out) {
+	private long go(int[] x, int[] y, IntIntPair[] array, Set<IntIntPair> in, Set<IntIntPair> out) {
 		long answer = Long.MAX_VALUE;
 		if (in.size() == x.length) {
 			int maxX = 0;
@@ -60,10 +57,10 @@ public class FoxConnection3 {
 			}
 			return answer;
 		}
-		Set<IntPair> curOut = new HashSet<>();
+		Set<IntIntPair> curOut = new HashSet<>();
 		for (int i = 0; i < in.size(); i++) {
 			for (int j = 0; j < 4; j++) {
-				IntPair current = new IntPair(array[i].first + MiscUtils.DX4[j],
+				IntIntPair current = new IntIntPair(array[i].first + MiscUtils.DX4[j],
 					array[i].second + MiscUtils.DY4[j]);
 				if (in.contains(current) || out.contains(current) || current.first < 0 || current.first == 0 && current.second < 0) {
 					continue;

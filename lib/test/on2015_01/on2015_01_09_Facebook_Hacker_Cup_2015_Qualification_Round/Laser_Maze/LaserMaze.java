@@ -1,9 +1,8 @@
 package on2015_01.on2015_01_09_Facebook_Hacker_Cup_2015_Qualification_Round.Laser_Maze;
 
 
-
 import net.egork.collections.Pair;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
 import net.egork.io.IOUtils;

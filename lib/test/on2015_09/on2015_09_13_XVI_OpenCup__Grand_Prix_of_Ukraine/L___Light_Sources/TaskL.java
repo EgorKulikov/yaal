@@ -1,8 +1,7 @@
 package on2015_09.on2015_09_13_XVI_OpenCup__Grand_Prix_of_Ukraine.L___Light_Sources;
 
 
-
-import net.egork.collections.comparators.IntComparator;
+import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.geometry.Line;
 import net.egork.geometry.Point;
 import net.egork.misc.ArrayUtils;

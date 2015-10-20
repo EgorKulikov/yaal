@@ -1,9 +1,8 @@
 package on2015_10.on2015_10_04_Grand_Prix_of_Eurasia_2015._10___Civilization;
 
 
-
 import net.egork.collections.Pair;
-import net.egork.collections.intcollection.IntPair;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.Graph;
 import net.egork.graph.MinCostFlow;
 import net.egork.io.IOUtils;
@@ -35,23 +34,23 @@ public class Task10 {
         int[] xm = new int[m];
         int[] ym = new int[m];
         IOUtils.readIntArrays(in, xm, ym);
-        Set<IntPair> forbidden = new HashSet<>();
+        Set<IntIntPair> forbidden = new HashSet<>();
         for (int i = 0; i < n; i++) {
-            forbidden.add(new IntPair(xn[i], yn[i]));
+            forbidden.add(new IntIntPair(xn[i], yn[i]));
         }
         for (int i = 0; i < m; i++) {
-            forbidden.add(new IntPair(xm[i], ym[i]));
+            forbidden.add(new IntIntPair(xm[i], ym[i]));
         }
-        Set<IntPair>[] reachable = new Set[c];
+        Set<IntIntPair>[] reachable = new Set[c];
         for (int i = 0; i < c; i++) {
             reachable[i] = new HashSet<>();
             go(v[i] - 1, xc[i], yc[i], w, h, forbidden, reachable[i]);
         }
         int killed = -1;
-        IntPair[] destination = new IntPair[c];
+        IntIntPair[] destination = new IntIntPair[c];
         int[] shoot = new int[c];
         for (int i = 0; i < (1 << n); i++) {
-            Set<IntPair> targets = new HashSet<>();
+            Set<IntIntPair> targets = new HashSet<>();
             for (int j = 0; j < n; j++) {
                 if ((i >> j & 1) == 1) {
                     for (int k = xn[j] - 2; k <= xn[j] + 2; k++) {
@@ -59,7 +58,7 @@ public class Task10 {
                             if (!MiscUtils.isValidCell(k, l, w, h)) {
                                 continue;
                             }
-                            IntPair cell = new IntPair(k, l);
+                            IntIntPair cell = new IntIntPair(k, l);
                             if (distance(cell.first, cell.second, xn[j], yn[j]) > 2) {
                                 continue;
                             }
@@ -68,7 +67,7 @@ public class Task10 {
                     }
                 }
             }
-            IntPair[] targArr = targets.toArray(new IntPair[0]);
+            IntIntPair[] targArr = targets.toArray(new IntIntPair[0]);
             Graph graph = new Graph(c + 2 * targets.size() + n + 2);
             int source = c + 2 * targets.size() + n;
             int sink = source + 1;
@@ -103,7 +102,7 @@ public class Task10 {
             if (current > killed) {
                 killed = current;
                 for (int j = 0; j < c; j++) {
-                    destination[j] = new IntPair(xc[j], yc[j]);
+                    destination[j] = new IntIntPair(xc[j], yc[j]);
                     shoot[j] = 0;
                     for (int k = graph.firstOutbound(j); k != -1; k = graph.nextOutbound(k)) {
                         if (graph.destination(k) != source && graph.flow(k) > 0) {
@@ -137,8 +136,8 @@ public class Task10 {
         return Math.max(Math.abs(x1 - x2), Math.abs(y1 - y2));
     }
 
-    private void go(int moves, int x, int y, int w, int h, Set<IntPair> forbidden, Set<IntPair> reachable) {
-        IntPair key = new IntPair(x, y);
+    private void go(int moves, int x, int y, int w, int h, Set<IntIntPair> forbidden, Set<IntIntPair> reachable) {
+        IntIntPair key = new IntIntPair(x, y);
         if (forbidden.contains(key)) {
             return;
         }

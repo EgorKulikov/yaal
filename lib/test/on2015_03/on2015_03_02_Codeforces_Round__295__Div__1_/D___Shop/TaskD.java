@@ -1,11 +1,10 @@
 package on2015_03.on2015_03_02_Codeforces_Round__295__Div__1_.D___Shop;
 
 
-
-import net.egork.collections.comparators.IntComparator;
-import net.egork.collections.heap.Heap;
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.collections.intcollection.Heap;
+import net.egork.generated.collections.comparator.IntComparator;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.Rational;
@@ -54,7 +53,7 @@ public class TaskD {
 			if (lists[i] == null) {
 				addOrder[i] = new int[0];
 			} else {
-				lists[i].inPlaceSort(comparator);
+				lists[i].sort(comparator);
 				addOrder[i] = lists[i].toArray();
 			}
 		}
@@ -88,7 +87,7 @@ public class TaskD {
 				}
 			}
 		}
-		answer.inPlaceSort((first, second) -> type[first - 1] - type[second - 1]);
+		answer.sort((first, second) -> type[first - 1] - type[second - 1]);
 		out.printLine(answer.size());
 		out.printLine(answer);
 	}

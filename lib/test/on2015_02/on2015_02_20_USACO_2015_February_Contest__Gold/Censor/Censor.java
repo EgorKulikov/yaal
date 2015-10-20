@@ -1,25 +1,17 @@
 package on2015_02.on2015_02_20_USACO_2015_February_Contest__Gold.Censor;
 
 
-
-import net.egork.collections.comparators.IntComparator;
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
-import net.egork.collections.intcollection.IntPair;
 import net.egork.collections.map.Indexer;
+import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
-import net.egork.string.StringUtils;
 import net.egork.string.SuffixAutomaton;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
 
 public class Censor {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

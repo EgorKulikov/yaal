@@ -1,9 +1,8 @@
 package on2015_08.on2015_08_06_Yandex_Algorithm_2015_Online_Finals.C_____________________;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.utils.io.InputReader;

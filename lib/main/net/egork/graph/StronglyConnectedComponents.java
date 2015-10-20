@@ -1,8 +1,8 @@
 package net.egork.graph;
 
 import net.egork.collections.Pair;
-import net.egork.collections.intcollection.IntHashSet;
-import net.egork.collections.intcollection.IntSet;
+import net.egork.generated.collections.set.IntHashSet;
+import net.egork.generated.collections.set.IntSet;
 
 import java.util.Arrays;
 

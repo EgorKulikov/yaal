@@ -2,7 +2,6 @@ package on2015_01.on2015_01_21_SnarkNews_Winter_Series_2015__Round_3.TaskB;
 
 
 
-import net.egork.collections.intcollection.IntList;
 import net.egork.graph.Graph;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

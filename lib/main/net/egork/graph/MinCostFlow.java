@@ -1,8 +1,8 @@
 package net.egork.graph;
 
 import net.egork.collections.Pair;
-import net.egork.collections.comparators.IntComparator;
-import net.egork.collections.heap.Heap;
+import net.egork.collections.intcollection.Heap;
+import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.numbers.IntegerUtils;
 
 import java.util.Arrays;

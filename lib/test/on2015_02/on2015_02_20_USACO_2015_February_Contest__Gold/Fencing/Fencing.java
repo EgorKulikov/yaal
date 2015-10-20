@@ -1,9 +1,7 @@
 package on2015_02.on2015_02_20_USACO_2015_February_Contest__Gold.Fencing;
 
 
-
-import net.egork.collections.intcollection.IntPair;
-import net.egork.geometry.Point;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 
@@ -12,20 +10,20 @@ import java.util.List;
 
 public class Fencing {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
-		List<IntPair> points = new ArrayList<>();
+		List<IntIntPair> points = new ArrayList<>();
 		int count = in.readInt();
 		int queryCount = in.readInt();
 		for (int i = 0; i < count; i++) {
 			int x = in.readInt();
 			int y = in.readInt();
-			points.add(new IntPair(x, y));
+			points.add(new IntIntPair(x, y));
 		}
 		for (int i = 0; i < queryCount; i++) {
 			int type = in.readInt();
 			if (type == 1) {
 				int x = in.readInt();
 				int y = in.readInt();
-				points.add(new IntPair(x, y));
+				points.add(new IntIntPair(x, y));
 			} else {
 				long a = in.readInt();
 				long b = in.readInt();

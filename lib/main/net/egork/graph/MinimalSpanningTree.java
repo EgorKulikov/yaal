@@ -1,10 +1,10 @@
 package net.egork.graph;
 
-import net.egork.collections.comparators.IntComparator;
-import net.egork.collections.intcollection.IntHashSet;
-import net.egork.collections.intcollection.IntSet;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
+import net.egork.generated.collections.comparator.IntComparator;
+import net.egork.generated.collections.set.IntHashSet;
+import net.egork.generated.collections.set.IntSet;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 

@@ -1,5 +1,8 @@
 package net.egork.collections.intcollection;
 
+import net.egork.generated.collections.list.IntArray;
+import net.egork.generated.collections.list.IntList;
+
 /**
  * @author egor@egork.net
  */
