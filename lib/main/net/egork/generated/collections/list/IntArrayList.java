@@ -24,6 +24,9 @@ public class IntArrayList extends IntAbstractStream implements IntList {
 
     public IntArrayList(IntStream c) {
         this();
+        if (c instanceof IntCollection) {
+            ensureCapacity(((IntCollection)c).size());
+        }
         addAll(c);
     }
 

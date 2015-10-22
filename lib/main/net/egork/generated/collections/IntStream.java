@@ -9,8 +9,10 @@ import net.egork.generated.collections.list.*;
 import net.egork.generated.collections.comparator.*;
 
 public interface IntStream extends Iterable<Integer>, Comparable<IntStream> {
+	//abstract
 	public IntIterator intIterator();
 
+	//base
 	default public Iterator<Integer> iterator() {
 		return new Iterator<Integer>() {
 			private IntIterator it = intIterator();
@@ -33,6 +35,34 @@ public interface IntStream extends Iterable<Integer>, Comparable<IntStream> {
 		return intIterator().value();
 	}
 
+	default public IntCollection compute() {
+		return new IntArrayList(this);
+	}
+
+	default public int compareTo(IntStream c) {
+		IntIterator it = intIterator();
+		IntIterator jt = c.intIterator();
+		while (it.isValid() && jt.isValid()) {
+			int i = it.value();
+			int j = jt.value();
+			if (i < j) {
+				return -1;
+			} else if (i > j) {
+				return 1;
+			}
+			it.advance();
+			jt.advance();
+		}
+		if (it.isValid()) {
+			return 1;
+		}
+		if (jt.isValid()) {
+			return -1;
+		}
+		return 0;
+	}
+
+	//algorithms
 	default public void forEach(IntTask task) {
 		for (IntIterator it = intIterator(); it.isValid(); it.advance()) {
 			task.process(it.value());
@@ -129,10 +159,50 @@ public interface IntStream extends Iterable<Integer>, Comparable<IntStream> {
 		return result;
 	}
 
-	default public IntCollection compute() {
-		return new IntArrayList(this);
+	default public int[] qty(int bound) {
+		int[] result = new int[bound];
+		for (IntIterator it = intIterator(); it.isValid(); it.advance()) {
+			result[(int)it.value()]++;
+		}
+		return result;
 	}
 
+	default public int[] qty() {
+		return qty((int)(max() + 1));
+	}
+
+	default public boolean allOf(IntFilter f) {
+		for (IntIterator it = intIterator(); it.isValid(); it.advance()) {
+			if (!f.accept(it.value())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	default public boolean anyOf(IntFilter f) {
+		for (IntIterator it = intIterator(); it.isValid(); it.advance()) {
+			if (f.accept(it.value())) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	default public boolean noneOf(IntFilter f) {
+		for (IntIterator it = intIterator(); it.isValid(); it.advance()) {
+			if (f.accept(it.value())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	default boolean isPermutationOf(IntStream s) {
+		return new IntArrayList(this).sort().equals(new IntArrayList(s).sort());
+	}
+
+	//views
     default public IntStream union(IntStream other) {
         return () -> new IntIterator() {
             private IntIterator first = IntStream.this.intIterator();
@@ -170,41 +240,6 @@ public interface IntStream extends Iterable<Integer>, Comparable<IntStream> {
             }
         };
     }
-
-	default public int[] qty(int bound) {
-		int[] result = new int[bound];
-		for (IntIterator it = intIterator(); it.isValid(); it.advance()) {
-			result[(int)it.value()]++;
-		}
-		return result;
-	}
-
-	default public int[] qty() {
-		return qty((int)(max() + 1));
-	}
-
-	default public int compareTo(IntStream c) {
-		IntIterator it = intIterator();
-		IntIterator jt = c.intIterator();
-		while (it.isValid() && jt.isValid()) {
-			int i = it.value();
-			int j = jt.value();
-			if (i < j) {
-				return -1;
-			} else if (i > j) {
-				return 1;
-			}
-			it.advance();
-			jt.advance();
-		}
-		if (it.isValid()) {
-			return 1;
-		}
-		if (jt.isValid()) {
-			return -1;
-		}
-		return 0;
-	}
 
 	default public IntStream filter(IntFilter f) {
 		return () -> new IntIterator() {

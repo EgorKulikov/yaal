@@ -9,8 +9,10 @@ import net.egork.generated.collections.list.*;
 import net.egork.generated.collections.comparator.*;
 
 public interface DoubleStream extends Iterable<Double>, Comparable<DoubleStream> {
+	//abstract
 	public DoubleIterator doubleIterator();
 
+	//base
 	default public Iterator<Double> iterator() {
 		return new Iterator<Double>() {
 			private DoubleIterator it = doubleIterator();
@@ -33,6 +35,34 @@ public interface DoubleStream extends Iterable<Double>, Comparable<DoubleStream>
 		return doubleIterator().value();
 	}
 
+	default public DoubleCollection compute() {
+		return new DoubleArrayList(this);
+	}
+
+	default public int compareTo(DoubleStream c) {
+		DoubleIterator it = doubleIterator();
+		DoubleIterator jt = c.doubleIterator();
+		while (it.isValid() && jt.isValid()) {
+			double i = it.value();
+			double j = jt.value();
+			if (i < j) {
+				return -1;
+			} else if (i > j) {
+				return 1;
+			}
+			it.advance();
+			jt.advance();
+		}
+		if (it.isValid()) {
+			return 1;
+		}
+		if (jt.isValid()) {
+			return -1;
+		}
+		return 0;
+	}
+
+	//algorithms
 	default public void forEach(DoubleTask task) {
 		for (DoubleIterator it = doubleIterator(); it.isValid(); it.advance()) {
 			task.process(it.value());
@@ -129,10 +159,50 @@ public interface DoubleStream extends Iterable<Double>, Comparable<DoubleStream>
 		return result;
 	}
 
-	default public DoubleCollection compute() {
-		return new DoubleArrayList(this);
+	default public int[] qty(int bound) {
+		int[] result = new int[bound];
+		for (DoubleIterator it = doubleIterator(); it.isValid(); it.advance()) {
+			result[(int)it.value()]++;
+		}
+		return result;
 	}
 
+	default public int[] qty() {
+		return qty((int)(max() + 1));
+	}
+
+	default public boolean allOf(DoubleFilter f) {
+		for (DoubleIterator it = doubleIterator(); it.isValid(); it.advance()) {
+			if (!f.accept(it.value())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	default public boolean anyOf(DoubleFilter f) {
+		for (DoubleIterator it = doubleIterator(); it.isValid(); it.advance()) {
+			if (f.accept(it.value())) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	default public boolean noneOf(DoubleFilter f) {
+		for (DoubleIterator it = doubleIterator(); it.isValid(); it.advance()) {
+			if (f.accept(it.value())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	default boolean isPermutationOf(DoubleStream s) {
+		return new DoubleArrayList(this).sort().equals(new DoubleArrayList(s).sort());
+	}
+
+	//views
     default public DoubleStream union(DoubleStream other) {
         return () -> new DoubleIterator() {
             private DoubleIterator first = DoubleStream.this.doubleIterator();
@@ -170,41 +240,6 @@ public interface DoubleStream extends Iterable<Double>, Comparable<DoubleStream>
             }
         };
     }
-
-	default public int[] qty(int bound) {
-		int[] result = new int[bound];
-		for (DoubleIterator it = doubleIterator(); it.isValid(); it.advance()) {
-			result[(int)it.value()]++;
-		}
-		return result;
-	}
-
-	default public int[] qty() {
-		return qty((int)(max() + 1));
-	}
-
-	default public int compareTo(DoubleStream c) {
-		DoubleIterator it = doubleIterator();
-		DoubleIterator jt = c.doubleIterator();
-		while (it.isValid() && jt.isValid()) {
-			double i = it.value();
-			double j = jt.value();
-			if (i < j) {
-				return -1;
-			} else if (i > j) {
-				return 1;
-			}
-			it.advance();
-			jt.advance();
-		}
-		if (it.isValid()) {
-			return 1;
-		}
-		if (jt.isValid()) {
-			return -1;
-		}
-		return 0;
-	}
 
 	default public DoubleStream filter(DoubleFilter f) {
 		return () -> new DoubleIterator() {

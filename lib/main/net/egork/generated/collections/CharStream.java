@@ -9,8 +9,10 @@ import net.egork.generated.collections.list.*;
 import net.egork.generated.collections.comparator.*;
 
 public interface CharStream extends Iterable<Character>, Comparable<CharStream> {
+	//abstract
 	public CharIterator charIterator();
 
+	//base
 	default public Iterator<Character> iterator() {
 		return new Iterator<Character>() {
 			private CharIterator it = charIterator();
@@ -33,6 +35,34 @@ public interface CharStream extends Iterable<Character>, Comparable<CharStream> 
 		return charIterator().value();
 	}
 
+	default public CharCollection compute() {
+		return new CharArrayList(this);
+	}
+
+	default public int compareTo(CharStream c) {
+		CharIterator it = charIterator();
+		CharIterator jt = c.charIterator();
+		while (it.isValid() && jt.isValid()) {
+			char i = it.value();
+			char j = jt.value();
+			if (i < j) {
+				return -1;
+			} else if (i > j) {
+				return 1;
+			}
+			it.advance();
+			jt.advance();
+		}
+		if (it.isValid()) {
+			return 1;
+		}
+		if (jt.isValid()) {
+			return -1;
+		}
+		return 0;
+	}
+
+	//algorithms
 	default public void forEach(CharTask task) {
 		for (CharIterator it = charIterator(); it.isValid(); it.advance()) {
 			task.process(it.value());
@@ -129,10 +159,50 @@ public interface CharStream extends Iterable<Character>, Comparable<CharStream> 
 		return result;
 	}
 
-	default public CharCollection compute() {
-		return new CharArrayList(this);
+	default public int[] qty(int bound) {
+		int[] result = new int[bound];
+		for (CharIterator it = charIterator(); it.isValid(); it.advance()) {
+			result[(int)it.value()]++;
+		}
+		return result;
 	}
 
+	default public int[] qty() {
+		return qty((int)(max() + 1));
+	}
+
+	default public boolean allOf(CharFilter f) {
+		for (CharIterator it = charIterator(); it.isValid(); it.advance()) {
+			if (!f.accept(it.value())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	default public boolean anyOf(CharFilter f) {
+		for (CharIterator it = charIterator(); it.isValid(); it.advance()) {
+			if (f.accept(it.value())) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	default public boolean noneOf(CharFilter f) {
+		for (CharIterator it = charIterator(); it.isValid(); it.advance()) {
+			if (f.accept(it.value())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	default boolean isPermutationOf(CharStream s) {
+		return new CharArrayList(this).sort().equals(new CharArrayList(s).sort());
+	}
+
+	//views
     default public CharStream union(CharStream other) {
         return () -> new CharIterator() {
             private CharIterator first = CharStream.this.charIterator();
@@ -170,41 +240,6 @@ public interface CharStream extends Iterable<Character>, Comparable<CharStream> 
             }
         };
     }
-
-	default public int[] qty(int bound) {
-		int[] result = new int[bound];
-		for (CharIterator it = charIterator(); it.isValid(); it.advance()) {
-			result[(int)it.value()]++;
-		}
-		return result;
-	}
-
-	default public int[] qty() {
-		return qty((int)(max() + 1));
-	}
-
-	default public int compareTo(CharStream c) {
-		CharIterator it = charIterator();
-		CharIterator jt = c.charIterator();
-		while (it.isValid() && jt.isValid()) {
-			char i = it.value();
-			char j = jt.value();
-			if (i < j) {
-				return -1;
-			} else if (i > j) {
-				return 1;
-			}
-			it.advance();
-			jt.advance();
-		}
-		if (it.isValid()) {
-			return 1;
-		}
-		if (jt.isValid()) {
-			return -1;
-		}
-		return 0;
-	}
 
 	default public CharStream filter(CharFilter f) {
 		return () -> new CharIterator() {

@@ -3,6 +3,7 @@ package net.egork.generated.collections;
 import net.egork.generated.collections.iterator.*;
 
 public abstract class LongAbstractStream implements LongStream {
+	//base
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();

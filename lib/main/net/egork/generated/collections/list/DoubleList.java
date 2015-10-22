@@ -12,11 +12,13 @@ import net.egork.generated.collections.comparator.*;
 public interface DoubleList extends DoubleReversableCollection {
     public static final DoubleList EMPTY = new DoubleArray(new double[0]);
 
+    //abstract
     public abstract double get(int index);
     public abstract void set(int index, double value);
     public abstract void addAt(int index, double value);
     public abstract void removeAt(int index);
 
+    //base
     default public double first() {
         return get(0);
     }
@@ -106,6 +108,7 @@ public interface DoubleList extends DoubleReversableCollection {
         removeAt(0);
     }
 
+    //algorithms
 	default public int minIndex() {
 		double result = Double.POSITIVE_INFINITY;
 	    int size = size();
@@ -162,12 +165,14 @@ public interface DoubleList extends DoubleReversableCollection {
 		return at;
 	}
 
-	default public void sort() {
+	default public DoubleList sort() {
 		sort(DoubleComparator.DEFAULT);
+		return this;
 	}
 
-	default public void sort(DoubleComparator comparator) {
+	default public DoubleList sort(DoubleComparator comparator) {
 	    Sorter.sort(this, comparator);
+	    return this;
 	}
 
 	default public int find(double value) {
@@ -237,6 +242,192 @@ public interface DoubleList extends DoubleReversableCollection {
 	    }
 	}
 
+	default DoubleList unique() {
+	    double last = Double.MIN_NORMAL;
+	    DoubleList result = new DoubleArrayList();
+	    int size = size();
+	    for (int i = 0; i < size; i++) {
+	        double current = get(i);
+	        if (current != last) {
+	            result.add(current);
+	            last = current;
+	        }
+	    }
+	    return result;
+	}
+
+	default int mismatch(DoubleList l) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (get(i) != l.get(i)) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(DoubleList l, DoubleDoublePredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(IntList l, DoubleIntPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(LongList l, DoubleLongPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(CharList l, DoubleCharPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+    default DoubleList fill(double value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            set(i, value);
+        }
+        return this;
+    }
+
+    default DoubleList fill(IntToDoubleFunction f) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            set(i, f.value(i));
+        }
+        return this;
+    }
+
+    default DoubleList replace(double sample, double value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (get(i) == sample) {
+                set(i, value);
+            }
+        }
+        return this;
+    }
+
+    default DoubleList replace(DoubleFilter f, double value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (f.accept(get(i))) {
+                set(i, value);
+            }
+        }
+        return this;
+    }
+
+    default int binarySearch(DoubleFilter f) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (f.accept(get(middle))) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int moreOrEqual(double value) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (value <= get(middle)) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int moreOrEqual(double value, DoubleComparator c) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (c.compare(value, get(middle)) <= 0) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int more(double value) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (value < get(middle)) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int more(double value, DoubleComparator c) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (c.compare(value, get(middle)) < 0) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    //views
 	default public DoubleList subList(final int from, final int to) {
 	    return new DoubleList() {
     	    private final int shift;
@@ -280,19 +471,5 @@ public interface DoubleList extends DoubleReversableCollection {
                 return new DoubleArrayList(this);
             }
 	    };
-	}
-
-	default DoubleList unique() {
-	    double last = Double.MIN_NORMAL;
-	    DoubleList result = new DoubleArrayList();
-	    int size = size();
-	    for (int i = 0; i < size; i++) {
-	        double current = get(i);
-	        if (current != last) {
-	            result.add(current);
-	            last = current;
-	        }
-	    }
-	    return result;
 	}
 }

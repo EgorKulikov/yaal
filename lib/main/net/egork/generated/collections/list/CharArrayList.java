@@ -24,6 +24,9 @@ public class CharArrayList extends CharAbstractStream implements CharList {
 
     public CharArrayList(CharStream c) {
         this();
+        if (c instanceof CharCollection) {
+            ensureCapacity(((CharCollection)c).size());
+        }
         addAll(c);
     }
 

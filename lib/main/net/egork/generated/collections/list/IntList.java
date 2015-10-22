@@ -12,11 +12,13 @@ import net.egork.generated.collections.comparator.*;
 public interface IntList extends IntReversableCollection {
     public static final IntList EMPTY = new IntArray(new int[0]);
 
+    //abstract
     public abstract int get(int index);
     public abstract void set(int index, int value);
     public abstract void addAt(int index, int value);
     public abstract void removeAt(int index);
 
+    //base
     default public int first() {
         return get(0);
     }
@@ -106,6 +108,7 @@ public interface IntList extends IntReversableCollection {
         removeAt(0);
     }
 
+    //algorithms
 	default public int minIndex() {
 		int result = Integer.MAX_VALUE;
 	    int size = size();
@@ -162,12 +165,14 @@ public interface IntList extends IntReversableCollection {
 		return at;
 	}
 
-	default public void sort() {
+	default public IntList sort() {
 		sort(IntComparator.DEFAULT);
+		return this;
 	}
 
-	default public void sort(IntComparator comparator) {
+	default public IntList sort(IntComparator comparator) {
 	    Sorter.sort(this, comparator);
+	    return this;
 	}
 
 	default public int find(int value) {
@@ -237,6 +242,192 @@ public interface IntList extends IntReversableCollection {
 	    }
 	}
 
+	default IntList unique() {
+	    int last = Integer.MIN_VALUE;
+	    IntList result = new IntArrayList();
+	    int size = size();
+	    for (int i = 0; i < size; i++) {
+	        int current = get(i);
+	        if (current != last) {
+	            result.add(current);
+	            last = current;
+	        }
+	    }
+	    return result;
+	}
+
+	default int mismatch(IntList l) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (get(i) != l.get(i)) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(DoubleList l, IntDoublePredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(IntList l, IntIntPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(LongList l, IntLongPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(CharList l, IntCharPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+    default IntList fill(int value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            set(i, value);
+        }
+        return this;
+    }
+
+    default IntList fill(IntToIntFunction f) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            set(i, f.value(i));
+        }
+        return this;
+    }
+
+    default IntList replace(int sample, int value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (get(i) == sample) {
+                set(i, value);
+            }
+        }
+        return this;
+    }
+
+    default IntList replace(IntFilter f, int value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (f.accept(get(i))) {
+                set(i, value);
+            }
+        }
+        return this;
+    }
+
+    default int binarySearch(IntFilter f) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (f.accept(get(middle))) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int moreOrEqual(int value) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (value <= get(middle)) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int moreOrEqual(int value, IntComparator c) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (c.compare(value, get(middle)) <= 0) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int more(int value) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (value < get(middle)) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int more(int value, IntComparator c) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (c.compare(value, get(middle)) < 0) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    //views
 	default public IntList subList(final int from, final int to) {
 	    return new IntList() {
     	    private final int shift;
@@ -280,19 +471,5 @@ public interface IntList extends IntReversableCollection {
                 return new IntArrayList(this);
             }
 	    };
-	}
-
-	default IntList unique() {
-	    int last = Integer.MIN_VALUE;
-	    IntList result = new IntArrayList();
-	    int size = size();
-	    for (int i = 0; i < size; i++) {
-	        int current = get(i);
-	        if (current != last) {
-	            result.add(current);
-	            last = current;
-	        }
-	    }
-	    return result;
 	}
 }

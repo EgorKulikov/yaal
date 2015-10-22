@@ -9,8 +9,10 @@ import net.egork.generated.collections.list.*;
 import net.egork.generated.collections.comparator.*;
 
 public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
+	//abstract
 	public LongIterator longIterator();
 
+	//base
 	default public Iterator<Long> iterator() {
 		return new Iterator<Long>() {
 			private LongIterator it = longIterator();
@@ -33,6 +35,34 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
 		return longIterator().value();
 	}
 
+	default public LongCollection compute() {
+		return new LongArrayList(this);
+	}
+
+	default public int compareTo(LongStream c) {
+		LongIterator it = longIterator();
+		LongIterator jt = c.longIterator();
+		while (it.isValid() && jt.isValid()) {
+			long i = it.value();
+			long j = jt.value();
+			if (i < j) {
+				return -1;
+			} else if (i > j) {
+				return 1;
+			}
+			it.advance();
+			jt.advance();
+		}
+		if (it.isValid()) {
+			return 1;
+		}
+		if (jt.isValid()) {
+			return -1;
+		}
+		return 0;
+	}
+
+	//algorithms
 	default public void forEach(LongTask task) {
 		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
 			task.process(it.value());
@@ -129,10 +159,50 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
 		return result;
 	}
 
-	default public LongCollection compute() {
-		return new LongArrayList(this);
+	default public int[] qty(int bound) {
+		int[] result = new int[bound];
+		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+			result[(int)it.value()]++;
+		}
+		return result;
 	}
 
+	default public int[] qty() {
+		return qty((int)(max() + 1));
+	}
+
+	default public boolean allOf(LongFilter f) {
+		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+			if (!f.accept(it.value())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	default public boolean anyOf(LongFilter f) {
+		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+			if (f.accept(it.value())) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	default public boolean noneOf(LongFilter f) {
+		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+			if (f.accept(it.value())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	default boolean isPermutationOf(LongStream s) {
+		return new LongArrayList(this).sort().equals(new LongArrayList(s).sort());
+	}
+
+	//views
     default public LongStream union(LongStream other) {
         return () -> new LongIterator() {
             private LongIterator first = LongStream.this.longIterator();
@@ -170,41 +240,6 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
             }
         };
     }
-
-	default public int[] qty(int bound) {
-		int[] result = new int[bound];
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			result[(int)it.value()]++;
-		}
-		return result;
-	}
-
-	default public int[] qty() {
-		return qty((int)(max() + 1));
-	}
-
-	default public int compareTo(LongStream c) {
-		LongIterator it = longIterator();
-		LongIterator jt = c.longIterator();
-		while (it.isValid() && jt.isValid()) {
-			long i = it.value();
-			long j = jt.value();
-			if (i < j) {
-				return -1;
-			} else if (i > j) {
-				return 1;
-			}
-			it.advance();
-			jt.advance();
-		}
-		if (it.isValid()) {
-			return 1;
-		}
-		if (jt.isValid()) {
-			return -1;
-		}
-		return 0;
-	}
 
 	default public LongStream filter(LongFilter f) {
 		return () -> new LongIterator() {

@@ -12,11 +12,13 @@ import net.egork.generated.collections.comparator.*;
 public interface LongList extends LongReversableCollection {
     public static final LongList EMPTY = new LongArray(new long[0]);
 
+    //abstract
     public abstract long get(int index);
     public abstract void set(int index, long value);
     public abstract void addAt(int index, long value);
     public abstract void removeAt(int index);
 
+    //base
     default public long first() {
         return get(0);
     }
@@ -106,6 +108,7 @@ public interface LongList extends LongReversableCollection {
         removeAt(0);
     }
 
+    //algorithms
 	default public int minIndex() {
 		long result = Long.MAX_VALUE;
 	    int size = size();
@@ -162,12 +165,14 @@ public interface LongList extends LongReversableCollection {
 		return at;
 	}
 
-	default public void sort() {
+	default public LongList sort() {
 		sort(LongComparator.DEFAULT);
+		return this;
 	}
 
-	default public void sort(LongComparator comparator) {
+	default public LongList sort(LongComparator comparator) {
 	    Sorter.sort(this, comparator);
+	    return this;
 	}
 
 	default public int find(long value) {
@@ -237,6 +242,192 @@ public interface LongList extends LongReversableCollection {
 	    }
 	}
 
+	default LongList unique() {
+	    long last = Long.MIN_VALUE;
+	    LongList result = new LongArrayList();
+	    int size = size();
+	    for (int i = 0; i < size; i++) {
+	        long current = get(i);
+	        if (current != last) {
+	            result.add(current);
+	            last = current;
+	        }
+	    }
+	    return result;
+	}
+
+	default int mismatch(LongList l) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (get(i) != l.get(i)) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(DoubleList l, LongDoublePredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(IntList l, LongIntPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(LongList l, LongLongPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(CharList l, LongCharPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+    default LongList fill(long value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            set(i, value);
+        }
+        return this;
+    }
+
+    default LongList fill(IntToLongFunction f) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            set(i, f.value(i));
+        }
+        return this;
+    }
+
+    default LongList replace(long sample, long value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (get(i) == sample) {
+                set(i, value);
+            }
+        }
+        return this;
+    }
+
+    default LongList replace(LongFilter f, long value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (f.accept(get(i))) {
+                set(i, value);
+            }
+        }
+        return this;
+    }
+
+    default int binarySearch(LongFilter f) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (f.accept(get(middle))) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int moreOrEqual(long value) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (value <= get(middle)) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int moreOrEqual(long value, LongComparator c) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (c.compare(value, get(middle)) <= 0) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int more(long value) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (value < get(middle)) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int more(long value, LongComparator c) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (c.compare(value, get(middle)) < 0) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    //views
 	default public LongList subList(final int from, final int to) {
 	    return new LongList() {
     	    private final int shift;
@@ -280,19 +471,5 @@ public interface LongList extends LongReversableCollection {
                 return new LongArrayList(this);
             }
 	    };
-	}
-
-	default LongList unique() {
-	    long last = Long.MIN_VALUE;
-	    LongList result = new LongArrayList();
-	    int size = size();
-	    for (int i = 0; i < size; i++) {
-	        long current = get(i);
-	        if (current != last) {
-	            result.add(current);
-	            last = current;
-	        }
-	    }
-	    return result;
 	}
 }

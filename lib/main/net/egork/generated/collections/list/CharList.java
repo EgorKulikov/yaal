@@ -12,11 +12,13 @@ import net.egork.generated.collections.comparator.*;
 public interface CharList extends CharReversableCollection {
     public static final CharList EMPTY = new CharArray(new char[0]);
 
+    //abstract
     public abstract char get(int index);
     public abstract void set(int index, char value);
     public abstract void addAt(int index, char value);
     public abstract void removeAt(int index);
 
+    //base
     default public char first() {
         return get(0);
     }
@@ -106,6 +108,7 @@ public interface CharList extends CharReversableCollection {
         removeAt(0);
     }
 
+    //algorithms
 	default public int minIndex() {
 		char result = Character.MAX_VALUE;
 	    int size = size();
@@ -162,12 +165,14 @@ public interface CharList extends CharReversableCollection {
 		return at;
 	}
 
-	default public void sort() {
+	default public CharList sort() {
 		sort(CharComparator.DEFAULT);
+		return this;
 	}
 
-	default public void sort(CharComparator comparator) {
+	default public CharList sort(CharComparator comparator) {
 	    Sorter.sort(this, comparator);
+	    return this;
 	}
 
 	default public int find(char value) {
@@ -237,6 +242,192 @@ public interface CharList extends CharReversableCollection {
 	    }
 	}
 
+	default CharList unique() {
+	    char last = Character.MAX_VALUE;
+	    CharList result = new CharArrayList();
+	    int size = size();
+	    for (int i = 0; i < size; i++) {
+	        char current = get(i);
+	        if (current != last) {
+	            result.add(current);
+	            last = current;
+	        }
+	    }
+	    return result;
+	}
+
+	default int mismatch(CharList l) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (get(i) != l.get(i)) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(DoubleList l, CharDoublePredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(IntList l, CharIntPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(LongList l, CharLongPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+	default int mismatch(CharList l, CharCharPredicate p) {
+	    int size = Math.min(size(), l.size());
+	    for (int i = 0; i < size; i++) {
+	        if (!p.value(get(i), l.get(i))) {
+	            return i;
+	        }
+	    }
+	    if (size() != l.size()) {
+	        return size;
+	    }
+	    return -1;
+	}
+
+    default CharList fill(char value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            set(i, value);
+        }
+        return this;
+    }
+
+    default CharList fill(IntToCharFunction f) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            set(i, f.value(i));
+        }
+        return this;
+    }
+
+    default CharList replace(char sample, char value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (get(i) == sample) {
+                set(i, value);
+            }
+        }
+        return this;
+    }
+
+    default CharList replace(CharFilter f, char value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (f.accept(get(i))) {
+                set(i, value);
+            }
+        }
+        return this;
+    }
+
+    default int binarySearch(CharFilter f) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (f.accept(get(middle))) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int moreOrEqual(char value) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (value <= get(middle)) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int moreOrEqual(char value, CharComparator c) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (c.compare(value, get(middle)) <= 0) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int more(char value) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (value < get(middle)) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    default int more(char value, CharComparator c) {
+        int left = 0;
+        int right = size();
+        while (left < right) {
+            int middle = (left + right) >> 1;
+            if (c.compare(value, get(middle)) < 0) {
+                right = middle;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return left;
+    }
+
+    //views
 	default public CharList subList(final int from, final int to) {
 	    return new CharList() {
     	    private final int shift;
@@ -280,19 +471,5 @@ public interface CharList extends CharReversableCollection {
                 return new CharArrayList(this);
             }
 	    };
-	}
-
-	default CharList unique() {
-	    char last = Character.MAX_VALUE;
-	    CharList result = new CharArrayList();
-	    int size = size();
-	    for (int i = 0; i < size; i++) {
-	        char current = get(i);
-	        if (current != last) {
-	            result.add(current);
-	            last = current;
-	        }
-	    }
-	    return result;
 	}
 }

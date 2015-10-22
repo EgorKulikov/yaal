@@ -12,8 +12,10 @@ import net.egork.generated.collections.comparator.*;
  * @author Egor Kulikov
  */
 public interface CharCollection extends CharStream {
+	//abstract
 	public int size();
 
+	//base
 	default public boolean isEmpty() {
 		return size() == 0;
 	}
@@ -42,24 +44,27 @@ public interface CharCollection extends CharStream {
 		return array;
 	}
 
-	default public void addAll(CharStream values) {
+	default public CharCollection addAll(CharStream values) {
 		for (CharIterator it = values.charIterator(); it.isValid(); it.advance()) {
 			add(it.value());
 		}
+		return this;
 	}
 
-	default public void removeAll(CharStream values) {
+	default public CharCollection removeAll(CharStream values) {
 		for (CharIterator it = values.charIterator(); it.isValid(); it.advance()) {
 			remove(it.value());
 		}
+		return this;
 	}
 
-	default public void retainAll(CharCollection values) {
+	default public CharCollection retainAll(CharCollection values) {
 		for (CharIterator it = charIterator(); it.isValid(); it.advance()) {
 			if (!values.contains(it.value())) {
 				it.remove();
 			}
 		}
+		return this;
 	}
 
 	default public CharCollection compute() {

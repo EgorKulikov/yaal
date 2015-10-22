@@ -12,8 +12,10 @@ import net.egork.generated.collections.comparator.*;
  * @author Egor Kulikov
  */
 public interface IntCollection extends IntStream {
+	//abstract
 	public int size();
 
+	//base
 	default public boolean isEmpty() {
 		return size() == 0;
 	}
@@ -42,24 +44,27 @@ public interface IntCollection extends IntStream {
 		return array;
 	}
 
-	default public void addAll(IntStream values) {
+	default public IntCollection addAll(IntStream values) {
 		for (IntIterator it = values.intIterator(); it.isValid(); it.advance()) {
 			add(it.value());
 		}
+		return this;
 	}
 
-	default public void removeAll(IntStream values) {
+	default public IntCollection removeAll(IntStream values) {
 		for (IntIterator it = values.intIterator(); it.isValid(); it.advance()) {
 			remove(it.value());
 		}
+		return this;
 	}
 
-	default public void retainAll(IntCollection values) {
+	default public IntCollection retainAll(IntCollection values) {
 		for (IntIterator it = intIterator(); it.isValid(); it.advance()) {
 			if (!values.contains(it.value())) {
 				it.remove();
 			}
 		}
+		return this;
 	}
 
 	default public IntCollection compute() {

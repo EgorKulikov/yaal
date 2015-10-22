@@ -24,6 +24,9 @@ public class LongArrayList extends LongAbstractStream implements LongList {
 
     public LongArrayList(LongStream c) {
         this();
+        if (c instanceof LongCollection) {
+            ensureCapacity(((LongCollection)c).size());
+        }
         addAll(c);
     }
 
