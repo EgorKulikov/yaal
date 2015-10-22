@@ -52,7 +52,7 @@ public class DoubleArrayQueue implements DoubleQueue {
         return result;
     }
 
-    public double first() {
+    public double peek() {
         if (from == to) {
             throw new NoSuchElementException();
         }

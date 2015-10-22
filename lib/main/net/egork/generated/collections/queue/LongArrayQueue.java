@@ -52,7 +52,7 @@ public class LongArrayQueue implements LongQueue {
         return result;
     }
 
-    public long first() {
+    public long peek() {
         if (from == to) {
             throw new NoSuchElementException();
         }

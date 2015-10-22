@@ -1,5 +1,8 @@
 package net.egork.graph;
 
+import net.egork.generated.collections.queue.IntArrayQueue;
+import net.egork.generated.collections.queue.IntQueue;
+
 import java.util.Arrays;
 
 /**
@@ -9,7 +12,7 @@ public class MaxFlow {
 	private final Graph graph;
 	private int source;
 	private int destination;
-	private int[] queue;
+	private IntQueue queue;
 	private int[] distance;
 	private int[] nextEdge;
 
@@ -18,7 +21,7 @@ public class MaxFlow {
 		this.source = source;
 		this.destination = destination;
 		int vertexCount = graph.vertexCount();
-		queue = new int[vertexCount];
+		queue = new IntArrayQueue(vertexCount);
 		distance = new int[vertexCount];
 		nextEdge = new int[vertexCount];
 	}
@@ -42,17 +45,16 @@ public class MaxFlow {
 	private void edgeDistances() {
 		Arrays.fill(distance, -1);
 		distance[source] = 0;
-		int size = 1;
-		queue[0] = source;
-		for (int i = 0; i < size; i++) {
-			int current = queue[i];
+		queue.add(source);
+		while (!queue.isEmpty()) {
+			int current = queue.poll();
 			int id = graph.firstOutbound(current);
 			while (id != -1) {
 				if (graph.capacity(id) != 0) {
 					int next = graph.destination(id);
 					if (distance[next] == -1) {
 						distance[next] = distance[current] + 1;
-						queue[size++] = next;
+						queue.add(next);
 					}
 				}
 				id = graph.nextOutbound(id);

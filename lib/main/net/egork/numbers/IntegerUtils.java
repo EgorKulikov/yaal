@@ -1,8 +1,10 @@
 package net.egork.numbers;
 
-import net.egork.collections.Pair;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
+import net.egork.generated.collections.list.LongArrayList;
+import net.egork.generated.collections.list.LongList;
+import net.egork.generated.collections.pair.LongIntPair;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -204,8 +206,8 @@ public class IntegerUtils {
 		return result % mod;
 	}
 
-	public static List<Pair<Long, Integer>> factorize(long number) {
-		List<Pair<Long, Integer>> result = new ArrayList<Pair<Long, Integer>>();
+	public static List<LongIntPair> factorize(long number) {
+		List<LongIntPair> result = new ArrayList<>();
 		for (long i = 2; i * i <= number; i++) {
 			if (number % i == 0) {
 				int power = 0;
@@ -213,22 +215,20 @@ public class IntegerUtils {
 					power++;
 					number /= i;
 				} while (number % i == 0);
-				result.add(Pair.makePair(i, power));
+				result.add(LongIntPair.makePair(i, power));
 			}
 		}
 		if (number != 1)
-			result.add(Pair.makePair(number, 1));
+			result.add(LongIntPair.makePair(number, 1));
 		return result;
 	}
 
-	public static List<Long> getDivisors(long number) {
-		List<Pair<Long, Integer>> primeDivisors = factorize(number);
-		return getDivisorsImpl(primeDivisors, 0, 1, new ArrayList<Long>());
+	public static LongList getDivisors(long number) {
+		List<LongIntPair> primeDivisors = factorize(number);
+		return getDivisorsImpl(primeDivisors, 0, 1, new LongArrayList());
 	}
 
-	private static List<Long> getDivisorsImpl(List<Pair<Long, Integer>> primeDivisors, int index, long current,
-		List<Long> result)
-	{
+	private static LongList getDivisorsImpl(List<LongIntPair> primeDivisors, int index, long current, LongList result) {
 		if (index == primeDivisors.size()) {
 			result.add(current);
 			return result;
@@ -413,7 +413,6 @@ public class IntegerUtils {
 		BigInteger aReverse = BigInteger.valueOf(aMod).modInverse(BigInteger.valueOf(bMod));
 		BigInteger bReverse = BigInteger.valueOf(bMod).modInverse(BigInteger.valueOf(aMod));
 		BigInteger mod = BigInteger.valueOf(aMod * bMod);
-//		return (bReverse * aRemainder % aMod * bMod + aReverse * bRemainder % bMod * aMod) % mod * modGCD + gcdRemainder;
 		return bReverse.multiply(BigInteger.valueOf(aRemainder)).mod(mod).multiply(BigInteger.valueOf(bMod)).add(
 				aReverse.multiply(BigInteger.valueOf(bRemainder)).mod(mod).multiply(BigInteger.valueOf(aMod))
 				).mod(mod).longValue() * modGCD + gcdRemainder;

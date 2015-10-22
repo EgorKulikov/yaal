@@ -52,7 +52,7 @@ public class IntArrayQueue implements IntQueue {
         return result;
     }
 
-    public int first() {
+    public int peek() {
         if (from == to) {
             throw new NoSuchElementException();
         }

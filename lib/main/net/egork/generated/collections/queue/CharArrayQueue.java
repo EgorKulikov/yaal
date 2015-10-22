@@ -52,7 +52,7 @@ public class CharArrayQueue implements CharQueue {
         return result;
     }
 
-    public char first() {
+    public char peek() {
         if (from == to) {
             throw new NoSuchElementException();
         }

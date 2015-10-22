@@ -1,14 +1,14 @@
 package net.egork.generated.collections.list;
 
-import java.util.Arrays;
-
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.iterator.*;
+import net.egork.generated.collections.IntAbstractStream;
 
 public class IntArray extends IntAbstractStream implements IntList {
     private int[] data;
 
     public IntArray(int[] arr) {
+        if (arr == null) {
+            throw new NullPointerException();
+        }
         data = arr;
     }
 
