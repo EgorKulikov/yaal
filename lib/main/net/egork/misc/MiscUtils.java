@@ -1,8 +1,8 @@
 package net.egork.misc;
 
 import net.egork.collections.function.Function;
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

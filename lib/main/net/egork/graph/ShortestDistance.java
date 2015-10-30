@@ -1,13 +1,13 @@
 package net.egork.graph;
 
 import net.egork.collections.Pair;
-import net.egork.collections.comparators.IntComparator;
-import net.egork.collections.heap.Heap;
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.collections.intcollection.Heap;
+import net.egork.generated.collections.comparator.IntComparator;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.numbers.IntegerUtils;
 
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -77,7 +77,7 @@ public class ShortestDistance {
 
 	public static Pair<Long, IntList> dijkstraAlgorithm(Graph graph, int source, int destination) {
 		if (source == destination)
-			return Pair.makePair(0L, (IntList)new IntArrayList());
+			return Pair.makePair(0L, new IntArrayList());
 		Pair<long[], int[]> result = dijkstraAlgorithm(graph, source);
 		if (result.second[destination] == -1)
 			return null;

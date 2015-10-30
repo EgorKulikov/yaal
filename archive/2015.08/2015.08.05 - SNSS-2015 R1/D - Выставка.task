@@ -1,0 +1,39 @@
+20 D - Выставка
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+21 2
+3 4
+pqra
+qqrb
+rrsc
+
+-1
+1
+1
+21 3
+3 4
+pqra
+qqrb
+rrsc
+
+-1
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.05
+12 SNSS-2015 R1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

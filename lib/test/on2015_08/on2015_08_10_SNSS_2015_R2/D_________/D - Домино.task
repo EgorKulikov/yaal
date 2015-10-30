@@ -1,0 +1,48 @@
+16 D - Домино
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+18 3 13
+2 5
+10 5
+6 3
+
+2 2
+
+1
+1
+26 5 7
+10 3
+8 9
+14 5
+4 3
+6 1
+
+2 4
+
+1
+2
+11 1 47
+90 81
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+52 on2015_08.on2015_08_10_SNSS_2015_R2.D_________.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.10
+12 SNSS 2015 R2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

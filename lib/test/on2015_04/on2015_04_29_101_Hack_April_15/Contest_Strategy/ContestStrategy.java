@@ -1,8 +1,7 @@
 package on2015_04.on2015_04_29_101_Hack_April_15.Contest_Strategy;
 
 
-
-import net.egork.collections.comparators.IntComparator;
+import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;

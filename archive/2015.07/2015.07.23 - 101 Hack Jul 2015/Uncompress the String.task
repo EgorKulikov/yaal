@@ -1,0 +1,32 @@
+21 Uncompress the String
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+22 ab2cd3
+2
+a 1 10
+d 5 8
+
+4 4
+1
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+29 net.egork.UncompressTheString
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+37 net.egork.UncompressTheStringTestCase
+10 2015.07.23
+17 101 Hack Jul 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

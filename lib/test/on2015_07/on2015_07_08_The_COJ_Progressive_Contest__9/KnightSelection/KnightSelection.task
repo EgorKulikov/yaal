@@ -1,0 +1,25 @@
+15 KnightSelection
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+2 10
+1 2
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+85 on2015_07.on2015_07_08_The_COJ_Progressive_Contest__9.KnightSelection.KnightSelection
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.08
+30 The COJ Progressive Contest #9
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

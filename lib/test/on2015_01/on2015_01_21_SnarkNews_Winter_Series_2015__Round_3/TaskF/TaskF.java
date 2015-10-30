@@ -2,8 +2,6 @@ package on2015_01.on2015_01_21_SnarkNews_Winter_Series_2015__Round_3.TaskF;
 
 
 
-import net.egork.collections.comparators.IntComparator;
-import net.egork.collections.heap.Heap;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;

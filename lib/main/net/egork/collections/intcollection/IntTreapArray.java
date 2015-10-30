@@ -1,12 +1,15 @@
 package net.egork.collections.intcollection;
 
+import net.egork.generated.collections.list.IntList;
+import net.egork.generated.collections.pair.IntIntPair;
+
 import java.util.Arrays;
 import java.util.Random;
 
 /**
  * @author egor@egork.net
  */
-public class IntTreapArray extends IntList {
+public class IntTreapArray implements IntList {
 	private int[] left;
 	private int[] right;
 	private long[] priority;
@@ -24,7 +27,7 @@ public class IntTreapArray extends IntList {
 	public IntTreapArray(int[] array) {
 		createArrays(array.length);
 		for (int i = 0; i < array.length; i++)
-			insert(i, array[i]);
+			add(array[i]);
 	}
 
 	private void createArrays(int count) {
@@ -71,7 +74,7 @@ public class IntTreapArray extends IntList {
 		}
 	}
 
-	public void remove(int at) {
+	public void removeAt(int at) {
 		root = remove(root, at);
 		count--;
 	}
@@ -109,38 +112,41 @@ public class IntTreapArray extends IntList {
 		}
 	}
 
-	public void add(int value) {
-		insert(count, value);
+	public void putBack(int from, int to) {
+		IntIntPair first = split(root, to + 1, 0);
+		IntIntPair second = split(first.first, from, 0);
+		int right = merge(second.first, first.second);
+		root = merge(second.second, right);
 	}
 
-	public void insert(int at, int value) {
+	public void addAt(int at, int value) {
 		ensureCapacity(last + 1);
 		this.value[last] = value;
 		priority[last] = random.nextLong();
 		left[last] = -1;
 		right[last] = -1;
 		size[last] = 1;
-		IntPair result = split(root, at, 0);
+		IntIntPair result = split(root, at, 0);
 		root = merge(result.first, last);
 		root = merge(root, result.second);
 		count++;
 		last++;
 	}
 
-	private IntPair split(int root, int key, int toAdd) {
+	private IntIntPair split(int root, int key, int toAdd) {
 		if (root == -1)
-			return new IntPair(-1, -1);
+			return new IntIntPair(-1, -1);
 		int curKey = toAdd + size(left[root]);
 		if (key <= curKey) {
-			IntPair result = split(left[root], key, toAdd);
+			IntIntPair result = split(left[root], key, toAdd);
 			left[root] = result.second;
 			updateSize(root);
-			return new IntPair(result.first, root);
+			return new IntIntPair(result.first, root);
 		} else {
-			IntPair result = split(right[root], key, curKey + 1);
+			IntIntPair result = split(right[root], key, curKey + 1);
 			right[root] = result.first;
 			updateSize(root);
-			return new IntPair(root, result.second);
+			return new IntIntPair(root, result.second);
 		}
 	}
 

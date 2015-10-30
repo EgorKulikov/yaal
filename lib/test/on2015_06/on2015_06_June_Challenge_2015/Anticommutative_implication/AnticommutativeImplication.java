@@ -1,17 +1,15 @@
 package on2015_06.on2015_06_June_Challenge_2015.Anticommutative_implication;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
-import net.egork.collections.intcollection.IntPair;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class AnticommutativeImplication {
@@ -20,7 +18,7 @@ public class AnticommutativeImplication {
         int[][] a = IOUtils.readIntTable(in, size, size);
         int[] color = new int[size];
         int[] queue = new int[size];
-        List<IntPair> values = new ArrayList<>();
+        List<IntIntPair> values = new ArrayList<>();
         List<IntList> indices = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             if (color[i] != 0) {
@@ -54,7 +52,7 @@ public class AnticommutativeImplication {
                     }
                 }
             }
-            values.add(new IntPair(ones, zeroes));
+            values.add(new IntIntPair(ones, zeroes));
             indices.add(list);
         }
         int[][] best = new int[values.size() + 1][size + 1];
@@ -63,7 +61,7 @@ public class AnticommutativeImplication {
 		ArrayUtils.fill(best, Integer.MIN_VALUE);
 		best[0][0] = 0;
         for (int i = 0; i < values.size(); i++) {
-			IntPair current = values.get(i);
+			IntIntPair current = values.get(i);
 			for (int j = 0; j <= total; j++) {
 				if (best[i][j] != Integer.MIN_VALUE) {
 					int value = best[i][j] + j * current.second + (total - j) * current.first;

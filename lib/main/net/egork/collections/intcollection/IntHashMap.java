@@ -5,7 +5,7 @@ import net.egork.numbers.IntegerUtils;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
-public class IntHashMap extends IntSet {
+public class IntHashMap {
 	private static final Random RND = new Random();
 	private static final int[] SHIFTS = new int[4];
 	private static final byte PRESENT_MASK = 1;
@@ -44,39 +44,10 @@ public class IntHashMap extends IntSet {
 			step++;
 	}
 
-	@Override
-	public IntIterator iterator() {
-		return new IntIterator() {
-			private int position = size == 0 ? keys.length : -1;
-
-			public int value() throws NoSuchElementException {
-				if (position == -1)
-					advance();
-				if (position >= keys.length)
-					throw new NoSuchElementException();
-				return keys[position];
-			}
-
-			public void advance() throws NoSuchElementException {
-				if (position >= keys.length)
-					throw new NoSuchElementException();
-				position++;
-				while (position < keys.length && (present[position] & PRESENT_MASK) == 0)
-					position++;
-			}
-
-			public boolean isValid() {
-				return position < keys.length;
-			}
-		};
-	}
-
-	@Override
 	public int size() {
 		return size;
 	}
 
-	@Override
 	public void add(int value) {
 		throw new UnsupportedOperationException();
 	}
@@ -146,7 +117,6 @@ public class IntHashMap extends IntSet {
 		}
 	}
 
-	@Override
 	public void remove(int value) {
 		int current = getHash(value);
 		while (present[current] != 0) {
@@ -162,7 +132,6 @@ public class IntHashMap extends IntSet {
 		}
 	}
 
-	@Override
 	public boolean contains(int key) {
 		int current = getHash(key);
 		while (present[current] != 0) {

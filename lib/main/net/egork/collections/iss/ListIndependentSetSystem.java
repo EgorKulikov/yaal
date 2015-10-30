@@ -1,21 +1,21 @@
 package net.egork.collections.iss;
 
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntIterator;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.function.IntTask;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class ListIndependentSetSystem implements IndependentSetSystem {
-	private final IntArrayList[] lists;
+	private final IntList[] lists;
 	private int[] parent;
 	private int setCount;
 	private Listener listener;
 
 	public ListIndependentSetSystem(int size) {
 		//noinspection unchecked
-		lists = new IntArrayList[size];
+		lists = new IntList[size];
 		parent = new int[size];
 		for (int i = 0; i < size; i++)
 			parent[i] = i;
@@ -36,14 +36,12 @@ public class ListIndependentSetSystem implements IndependentSetSystem {
 		}
 		if (lists[first] == null)
 			lists[first] = new IntArrayList();
-		lists[first].ensureCapacity(firstSize + secondSize - 1);
 		lists[first].add(second);
 		parent[second] = first;
 		if (lists[second] != null) {
-			for (IntIterator iterator = lists[second].iterator(); iterator.isValid(); iterator.advance()) {
-				lists[first].add(iterator.value());
-				parent[iterator.value()] = first;
-			}
+			lists[first].addAll(lists[second]);
+			final int finalFirst = first;
+			lists[second].forEach((IntTask)i -> parent[i] = finalFirst);
 		}
 		lists[second] = null;
 		if (listener != null)
@@ -67,6 +65,14 @@ public class ListIndependentSetSystem implements IndependentSetSystem {
 	public IntList getChildren(int vertex) {
 		if (parent[vertex] != vertex)
 			throw new IllegalArgumentException();
-		return lists[vertex] == null ? IntList.emptyList() : lists[vertex];
+		return lists[vertex] == null ? IntList.EMPTY : lists[vertex];
+	}
+
+	public int getSize(int vertex) {
+		vertex = parent[vertex];
+		if (lists[vertex] == null) {
+			return 1;
+		}
+		return lists[vertex].size() + 1;
 	}
 }

@@ -1,0 +1,30 @@
+26 F - Эсхатология
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 1
+3 3
+3 2 2
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+57 on2015_08.on2015_08_10_SNSS_2015_R2.F______________.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+65 on2015_08.on2015_08_10_SNSS_2015_R2.F______________.TaskFTestCase
+10 2015.08.10
+12 SNSS 2015 R2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

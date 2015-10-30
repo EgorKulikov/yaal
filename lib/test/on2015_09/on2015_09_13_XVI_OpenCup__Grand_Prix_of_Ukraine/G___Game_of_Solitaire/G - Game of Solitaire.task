@@ -1,0 +1,27 @@
+21 G - Game of Solitaire
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+4 6 4
+
+2 2
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+85 on2015_09.on2015_09_13_XVI_OpenCup__Grand_Prix_of_Ukraine.G___Game_of_Solitaire.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.13
+34 XVI OpenCup. Grand Prix of Ukraine
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

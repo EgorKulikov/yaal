@@ -1,0 +1,35 @@
+27 Addition and Multiplication
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+55 4 6
+1 2 3 4
+4 1 4
+1 1 3 10
+2 2 4 2
+4 1 4
+3 1 3 2
+4 2 4
+
+8 10
+69
+12
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+96 on2015_07.on2015_07_03_July_Challenge_2015.Addition_and_Multiplication.AdditionAndMultiplication
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.03
+19 July Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

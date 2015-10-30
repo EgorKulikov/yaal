@@ -1,0 +1,35 @@
+39 4 - Как измерить океан?
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+13 10 1
+2 8 200
+
+15 240.0000000000
+
+1
+1
+13 30 1
+2 8 200
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+80 on2015_10.on2015_10_04_Grand_Prix_of_Eurasia_2015._4______________________.Task4
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-5
+0
+10 2015.10.04
+26 Grand Prix of Eurasia-2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

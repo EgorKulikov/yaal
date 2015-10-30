@@ -1,11 +1,14 @@
 package net.egork.misc;
 
-import net.egork.collections.comparators.IntComparator;
-import net.egork.collections.intcollection.IntArray;
+import net.egork.collections.FenwickTree;
+import net.egork.collections.intcollection.Range;
+import net.egork.generated.collections.comparator.IntComparator;
+import net.egork.generated.collections.list.CharArray;
+import net.egork.generated.collections.list.IntArray;
+import net.egork.generated.collections.list.LongArray;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -13,13 +16,6 @@ import java.util.Comparator;
 public class ArrayUtils {
 	private static int[] tempInt = new int[0];
 	private static long[] tempLong = new long[0];
-
-	public static Integer[] generateOrder(int size) {
-		Integer[] order = new Integer[size];
-		for (int i = 0; i < size; i++)
-			order[i] = i;
-		return order;
-	}
 
     public static void fill(short[][] array, short value) {
         for (short[] row : array)
@@ -92,23 +88,11 @@ public class ArrayUtils {
     }
 
     public static long sumArray(int[] array) {
-		long result = 0;
-		for (int element : array)
-			result += element;
-		return result;
+		return new IntArray(array).sum();
 	}
 
 	public static int[] range(int from, int to) {
-		int[] result = new int[Math.max(from, to) - Math.min(from, to) + 1];
-		int index = 0;
-		if (to > from) {
-			for (int i = from; i <= to; i++)
-				result[index++] = i;
-		} else {
-			for (int i = from; i >= to; i--)
-				result[index++] = i;
-		}
-		return result;
+		return Range.range(from, to).toArray();
 	}
 
 	public static void fill(int[][][] array, int value) {
@@ -161,12 +145,6 @@ public class ArrayUtils {
 			fill(subArray, value);
 	}
 
-	public static Integer[] order(int size, Comparator<Integer> comparator) {
-		Integer[] order = generateOrder(size);
-		Arrays.sort(order, comparator);
-		return order;
-	}
-
 	public static <T> void fill(T[][] array, T value) {
 		for (T[] row : array)
 			Arrays.fill(row, value);
@@ -200,10 +178,7 @@ public class ArrayUtils {
 	}
 
 	public static int[] createOrder(int size) {
-		int[] order = new int[size];
-		for (int i = 0; i < size; i++)
-			order[i] = i;
-		return order;
+		return range(0, size);
 	}
 
 	public static int[] sort(int[] array) {
@@ -216,9 +191,9 @@ public class ArrayUtils {
 
 	public static int[] sort(int[] array, int from, int to, IntComparator comparator) {
 		if (from == 0 && to == array.length)
-			new IntArray(array).inPlaceSort(comparator);
+			new IntArray(array).sort(comparator);
 		else
-			new IntArray(array).subList(from, to).inPlaceSort(comparator);
+			new IntArray(array).subList(from, to).sort(comparator);
 		return array;
 	}
 
@@ -234,28 +209,6 @@ public class ArrayUtils {
 			return;
 		size = Math.max(size, tempLong.length << 1);
 		tempLong = new long[size];
-	}
-
-	private static void sortImpl(int[] array, int from, int to, int[] temp, int fromTemp, int toTemp, IntComparator comparator) {
-		if (to - from <= 1)
-			return;
-		int middle = (to - from) >> 1;
-		int tempMiddle = fromTemp + middle;
-		sortImpl(temp, fromTemp, tempMiddle, array, from, from + middle, comparator);
-		sortImpl(temp, tempMiddle, toTemp, array, from + middle, to, comparator);
-		int index = from;
-		int index1 = fromTemp;
-		int index2 = tempMiddle;
-		while (index1 < tempMiddle && index2 < toTemp) {
-			if (comparator.compare(temp[index1], temp[index2]) <= 0)
-				array[index++] = temp[index1++];
-			else
-				array[index++] = temp[index2++];
-		}
-		if (index1 != tempMiddle)
-			System.arraycopy(temp, index1, array, index, tempMiddle - index1);
-		if (index2 != toTemp)
-			System.arraycopy(temp, index2, array, index, toTemp - index2);
 	}
 
 	public static int[] order(final int[] array) {
@@ -283,58 +236,19 @@ public class ArrayUtils {
 	}
 
 	public static int[] unique(int[] array) {
-		return unique(array, 0, array.length);
-	}
-
-	public static int[] unique(int[] array, int from, int to) {
-		if (from == to)
-			return new int[0];
-		int count = 1;
-		for (int i = from + 1; i < to; i++) {
-			if (array[i] != array[i - 1])
-				count++;
-		}
-		int[] result = new int[count];
-		result[0] = array[from];
-		int index = 1;
-		for (int i = from + 1; i < to; i++) {
-			if (array[i] != array[i - 1])
-				result[index++] = array[i];
-		}
-		return result;
+		return new IntArray(array).unique().toArray();
 	}
 
     public static char[] unique(char[] array) {
-        return unique(array, 0, array.length);
-    }
-
-    public static char[] unique(char[] array, int from, int to) {
-        if (from == to)
-            return new char[0];
-        int count = 1;
-        for (int i = from + 1; i < to; i++) {
-            if (array[i] != array[i - 1])
-                count++;
-        }
-        char[] result = new char[count];
-        result[0] = array[from];
-        int index = 1;
-        for (int i = from + 1; i < to; i++) {
-            if (array[i] != array[i - 1])
-                result[index++] = array[i];
-        }
-        return result;
+        return new CharArray(array).unique().toArray();
     }
 
     public static int maxElement(int[] array) {
-		return maxElement(array, 0, array.length);
+		return new IntArray(array).max();
 	}
 
 	public static int maxElement(int[] array, int from, int to) {
-		int result = Integer.MIN_VALUE;
-		for (int i = from; i < to; i++)
-			result = Math.max(result, array[i]);
-		return result;
+		return new IntArray(array).subList(from, to).max();
 	}
 
 	public static int[] order(final double[] array) {
@@ -353,70 +267,31 @@ public class ArrayUtils {
 	}
 
 	public static void reverse(int[] array) {
-		for (int i = 0, j = array.length - 1; i < j; i++, j--) {
-			int temp = array[i];
-			array[i] = array[j];
-			array[j] = temp;
-		}
+		new IntArray(array).inPlaceReverse();
 	}
 
 	public static void reverse(long[] array) {
-		for (int i = 0, j = array.length - 1; i < j; i++, j--) {
-			long temp = array[i];
-			array[i] = array[j];
-			array[j] = temp;
-		}
+		new LongArray(array).inPlaceReverse();
 	}
 
 	public static void reverse(char[] array) {
-		for (int i = 0, j = array.length - 1; i < j; i++, j--) {
-			char temp = array[i];
-			array[i] = array[j];
-			array[j] = temp;
-		}
-	}
-
-	private static long maxElement(long[] array, int from, int to) {
-		long result = Long.MIN_VALUE;
-		for (int i = from; i < to; i++)
-			result = Math.max(result, array[i]);
-		return result;
+		new CharArray(array).inPlaceReverse();
 	}
 
 	public static int minPosition(int[] array) {
-		return minPosition(array, 0, array.length);
+		return new IntArray(array).minIndex();
 	}
 
 	public static int maxPosition(int[] array) {
-		return maxPosition(array, 0, array.length);
+		return new IntArray(array).maxIndex();
 	}
 
 	public static int minPosition(int[] array, int from, int to) {
-        if (from >= to)
-            return -1;
-        int min = array[from];
-        int result = from;
-        for (int i = from + 1; i < to; i++) {
-            if (array[i] < min) {
-                min = array[i];
-                result = i;
-            }
-        }
-        return result;
+		return new IntArray(array).subList(from, to).minIndex() + from;
     }
 
 	public static int maxPosition(int[] array, int from, int to) {
-		if (from >= to)
-			return -1;
-		int max = array[from];
-		int result = from;
-		for (int i = from + 1; i < to; i++) {
-			if (array[i] > max) {
-				max = array[i];
-				result = i;
-			}
-		}
-		return result;
+		return new IntArray(array).subList(from, to).maxIndex() + from;
 	}
 
 	public static int[] multiplyPermutations(int[] first, int[] second) {
@@ -448,7 +323,7 @@ public class ArrayUtils {
 	}
 
 	public static int minElement(int[] array) {
-		return array[minPosition(array)];
+		return new IntArray(array).min();
 	}
 
 	public static long[] partialSums(int[] array) {
@@ -494,31 +369,15 @@ public class ArrayUtils {
 	}
 
 	public static int count(int[] array, int value) {
-		int result = 0;
-		for (int i : array) {
-			if (i == value)
-				result++;
-		}
-		return result;
+		return new IntArray(array).count(value);
 	}
 
 	public static int count(long[] array, long value) {
-		int result = 0;
-		for (long i : array) {
-			if (i == value) {
-				result++;
-			}
-		}
-		return result;
+		return new LongArray(array).count(value);
 	}
 
 	public static int count(char[] array, char value) {
-		int result = 0;
-		for (char i : array) {
-			if (i == value)
-				result++;
-		}
-		return result;
+		return new CharArray(array).count(value);
 	}
 
 	public static int count(boolean[] array, boolean value) {
@@ -571,47 +430,19 @@ public class ArrayUtils {
 	}
 
 	public static long minElement(long[] array) {
-		return array[minPosition(array)];
+		return new LongArray(array).min();
 	}
 
 	public static long maxElement(long[] array) {
-		return array[maxPosition(array)];
-	}
-
-	public static int minPosition(long[] array) {
-		return minPosition(array, 0, array.length);
+		return new LongArray(array).max();
 	}
 
 	public static int maxPosition(long[] array) {
-		return maxPosition(array, 0, array.length);
-	}
-
-	public static int minPosition(long[] array, int from, int to) {
-		if (from >= to)
-			return -1;
-		long min = array[from];
-		int result = from;
-		for (int i = from + 1; i < to; i++) {
-			if (array[i] < min) {
-				min = array[i];
-				result = i;
-			}
-		}
-		return result;
+		return new LongArray(array).maxIndex();
 	}
 
 	public static int maxPosition(long[] array, int from, int to) {
-		if (from >= to)
-			return -1;
-		long max = array[from];
-		int result = from;
-		for (int i = from + 1; i < to; i++) {
-			if (array[i] > max) {
-				max = array[i];
-				result = i;
-			}
-		}
-		return result;
+		return new LongArray(array).subList(from, to).maxIndex() + from;
 	}
 
 	public static int[] createArray(int count, int value) {
@@ -689,11 +520,16 @@ public class ArrayUtils {
 	}
 
 	public static int find(int[] array, int value) {
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] == value) {
-				return i;
-			}
+		return new IntArray(array).find(value);
+	}
+
+	public static boolean getOddity(int[] p) {
+		FenwickTree tree = new FenwickTree(p.length);
+		long total = 0;
+		for (int i : p) {
+			total += i - tree.get(0, i);
+			tree.add(i, 1);
 		}
-		return -1;
+		return total % 2 == 1;
 	}
 }

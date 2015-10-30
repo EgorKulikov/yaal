@@ -1,7 +1,5 @@
 package net.egork.numbers;
 
-import java.math.BigInteger;
-
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -106,5 +104,12 @@ public class Rational implements Comparable<Rational> {
 
 	public double value() {
 		return (double)numerator / denominator;
+	}
+
+	public Rational abs() {
+		if (numerator >= 0) {
+			return this;
+		}
+		return new Rational(-numerator, denominator);
 	}
 }

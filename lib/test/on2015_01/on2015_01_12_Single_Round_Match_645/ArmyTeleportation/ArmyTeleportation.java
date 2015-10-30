@@ -1,8 +1,7 @@
 package on2015_01.on2015_01_12_Single_Round_Match_645.ArmyTeleportation;
 
 
-
-import net.egork.collections.comparators.IntComparator;
+import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 

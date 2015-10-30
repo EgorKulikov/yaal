@@ -2,7 +2,7 @@ package on2015_03.on2015_03_09_Single_Round_Match_652.MaliciousPath;
 
 
 
-import net.egork.collections.heap.Heap;
+import net.egork.collections.intcollection.Heap;
 import net.egork.graph.Graph;
 import net.egork.misc.ArrayUtils;
 

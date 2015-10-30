@@ -1,8 +1,7 @@
 package on2015_01.on2015_01_14_SnarkNews_Winter_Series_2015__Round_2.D___Defending_Caravans;
 
 
-
-import net.egork.collections.comparators.IntComparator;
+import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
 import net.egork.io.IOUtils;

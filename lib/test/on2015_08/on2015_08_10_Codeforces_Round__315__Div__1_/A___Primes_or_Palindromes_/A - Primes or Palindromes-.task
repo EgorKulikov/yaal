@@ -1,0 +1,44 @@
+26 A - Primes or Palindromes?
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+4 1 1
+
+3 40
+
+1
+1
+5 1 42
+
+2 1
+
+1
+2
+4 6 4
+
+4 172
+
+1
+3
+5 42 1
+
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+86 on2015_08.on2015_08_10_Codeforces_Round__315__Div__1_.A___Primes_or_Palindromes_.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.10
+30 Codeforces Round #315 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,8 +1,7 @@
 package on2015_04.on2015_04_28_Single_Round_Match_657.RookGraph;
 
 
-
-import net.egork.collections.intcollection.IntPair;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 
@@ -10,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RookGraph {
-    List<IntPair> components = new ArrayList<>();
+    List<IntIntPair> components = new ArrayList<>();
     long[] factorial;
     long[] reverse;
     private static final int MOD = (int) (1e9 + 7);
@@ -96,7 +95,7 @@ public class RookGraph {
                     }
                 }
             }
-            components.add(new IntPair(nRow, nColumn));
+            components.add(new IntIntPair(nRow, nColumn));
         }
         result = new long[components.size() + 1][N + 1][N + 1];
         ArrayUtils.fill(result, -1);

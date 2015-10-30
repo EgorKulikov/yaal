@@ -1,0 +1,41 @@
+53 E - Путешествие гроссмейстера
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+34 7 3 3
+1 2 3 2
+3 2 4 4
+1 3 8 6
+1 3
+
+2 7
+
+1
+1
+34 6 3 3
+1 2 3 2
+3 2 4 4
+1 3 8 6
+1 3
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+71 on2015_08.on2015_08_05_SNSS_2015_R1.E____________________________.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.05
+12 SNSS-2015 R1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

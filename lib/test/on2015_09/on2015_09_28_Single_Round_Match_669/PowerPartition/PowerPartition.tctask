@@ -1,0 +1,64 @@
+14 PowerPartition
+5 count
+3 int
+2
+3 int
+1 M
+4 long
+1 X
+8
+0
+2
+int 2
+long 4
+int 4
+1
+1
+2
+int 17
+long 1
+int 1
+1
+2
+2
+int 1000
+long 1000000007
+int 500501002
+1
+3
+2
+int 841
+long 765346961765346961
+int 89045497
+1
+4
+2
+int 2
+long 1000000000000000000
+-1
+1
+5
+2
+int 3
+long 1000000000000000000
+-1
+1
+6
+2
+int 4
+long 1000000000000000000
+-1
+1
+7
+2
+int 1000
+long 1000000000000000000
+-1
+1
+10 2015.09.28
+22 Single Round Match 669
+1
+83 on2015_09.on2015_09_28_Single_Round_Match_669.PowerPartition.PowerPartitionTestCase
+75 on2015_09.on2015_09_28_Single_Round_Match_669.PowerPartition.PowerPartition
+0
+4 256M

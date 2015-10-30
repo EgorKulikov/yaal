@@ -1,8 +1,7 @@
 package on2015_04.on2015_04_04_ZeptoLab_Code_Rush_2015.D___Om_Nom_and_Necklace;
 
 
-
-import net.egork.collections.intcollection.IntPair;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.string.StringUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
@@ -17,7 +16,7 @@ public class TaskD {
         int repeats = in.readInt();
         String s = in.readString();
         int[] z = StringUtils.zAlgorithm(s);
-        List<IntPair> valid = new ArrayList<>();
+        List<IntIntPair> valid = new ArrayList<>();
         int lastBegin = -1;
         int lastEnd = -1;
         int at = 0;
@@ -28,7 +27,7 @@ public class TaskD {
                 int nEnd = Math.min((repeats + 1) * i, z[i] + i);
                 if (nBegin > lastEnd) {
                     if (lastBegin != -1) {
-                        valid.add(new IntPair(lastBegin, lastEnd));
+                        valid.add(new IntIntPair(lastBegin, lastEnd));
                     }
                     lastBegin = nBegin;
                     lastEnd = nEnd;

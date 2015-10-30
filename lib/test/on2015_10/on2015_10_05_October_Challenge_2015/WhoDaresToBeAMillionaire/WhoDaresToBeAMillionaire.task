@@ -1,0 +1,40 @@
+24 WhoDaresToBeAMillionaire
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+111 3
+5
+ABCDE
+EBCDA
+0 10 20 30 40 50
+4
+CHEF
+QUIZ
+4 3 2 1 0
+8
+ABBABAAB
+ABABABAB
+100 100 100 100 100 100 100 100 100
+
+8 30
+4
+100
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+95 on2015_10.on2015_10_05_October_Challenge_2015.WhoDaresToBeAMillionaire.WhoDaresToBeAMillionaire
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.05
+22 October Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

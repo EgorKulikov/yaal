@@ -1,9 +1,8 @@
 package on2015_01.on2015_01_10_SnarkNews_Winter_Series_2015__Round_1.F___The_Sum;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.io.IOUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;

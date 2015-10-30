@@ -1,0 +1,34 @@
+10 MasterChef
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+58 1
+5 10 5
+10 -2 -5 7 -10
+1 1 5
+2 4 10
+4 4 12
+3 4 10
+1 5 15
+
+2 5
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+64 on2015_07.on2015_07_03_July_Challenge_2015.MasterChef.MasterChef
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.03
+19 July Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

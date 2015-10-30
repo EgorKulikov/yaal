@@ -1,14 +1,11 @@
 package on2015_04.on2015_04_17_Single_Round_Match_656.ForkliftTruckOperator;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
 import net.egork.misc.ArrayUtils;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ForkliftTruckOperator {
     int[] sng;
