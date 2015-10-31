@@ -1,0 +1,28 @@
+36 F - Clique in the Divisibility Graph
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+22 8
+3 4 6 8 10 18 21 24
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+101 on2015_07.on2015_07_30_VK_Cup_2015___Finals__online_mirror.F___Clique_in_the_Divisibility_Graph.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.30
+35 VK Cup 2015 - Finals, online mirror
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

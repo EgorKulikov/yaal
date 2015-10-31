@@ -1,0 +1,37 @@
+16 B - Казино
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+23 5
+11
+13
+7
+15
+8
+3
+2
+9
+3
+
+3 48
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+57 on2015_08.on2015_08_18_SNSS_2015_Round_3.B_________.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+65 on2015_08.on2015_08_18_SNSS_2015_Round_3.B_________.TaskBTestCase
+10 2015.08.18
+17 SNSS-2015 Round 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

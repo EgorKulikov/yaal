@@ -2,8 +2,6 @@ package on2015_05.on2015_05_24_Yandex_Algorithm_2015_Round_1.B__________________
 
 
 
-import net.egork.collections.intcollection.IntPair;
-import net.egork.geometry.Point;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;

@@ -1,0 +1,39 @@
+15 Travel Profiles
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+211 4
+1 70 wifi pool restaurant bathtub kitchenette
+2 80 pool spa restaurant air-conditioning bathtub wifi
+3 60 restaurant air-conditioning wifi
+4 50 kitchenette
+4
+65 wifi
+50 wifi
+100 pool restaurant
+80 kitchenette
+
+11 3
+
+2 1
+1 4
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+75 on2015_09.on2015_09_05_Booking_com_Hackathon.Travel_Profiles.TravelProfiles
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.05
+21 Booking.com Hackathon
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

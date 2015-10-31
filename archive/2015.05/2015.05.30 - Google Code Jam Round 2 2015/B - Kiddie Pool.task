@@ -1,0 +1,50 @@
+15 B - Kiddie Pool
+6 SINGLE
+12 LOCAL_REGEXP
+22 B-(small|large).*[.]in
+6 CUSTOM
+5 b.out
+1
+0
+316 6
+1 10.0000 50.0000
+0.2000 50.0000
+2 30.0000 65.4321
+0.0001 50.0000
+100.0000 99.9000
+2 5.0000 99.9000
+30.0000 99.8999
+20.0000 99.7000
+2 0.0001 77.2831
+0.0001 97.3911
+0.0001 57.1751
+2 100.0000 75.6127
+70.0263 75.6127
+27.0364 27.7990
+4 5000.0000 75.0000
+10.0000 30.0000
+20.0000 50.0000
+300.0000 95.0000
+40.0000 2.0000
+
+129 Case #1: 50.0000000
+Case #2: 207221.843687375
+Case #3: IMPOSSIBLE
+Case #4: 0.500000000
+Case #5: 1.428034895
+Case #6: 18.975332068
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2015.05.30
+28 Google Code Jam Round 2 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

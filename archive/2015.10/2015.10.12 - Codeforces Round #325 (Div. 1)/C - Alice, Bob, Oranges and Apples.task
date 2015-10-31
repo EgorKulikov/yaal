@@ -1,0 +1,40 @@
+34 C - Alice, Bob, Oranges and Apples
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+4 1 4
+
+3 3B
+
+1
+1
+4 2 2
+
+11 Impossible
+
+1
+2
+4 3 2
+
+5 1A1B
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+22 net.egork.TaskCChecker
+0 
+1
+23 net.egork.TaskCTestCase
+10 2015.10.12
+30 Codeforces Round #325 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

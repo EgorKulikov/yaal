@@ -1,0 +1,42 @@
+13 Line Segments
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+18 4
+2 5
+1 4
+1 6
+3 8
+
+2 3
+
+1
+1
+25 5
+5 8
+3 7
+4 10
+12 15
+1 7
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+69 on2015_06.on2015_06_20_EpicCode_CodeSprint.Line_Segments.LineSegments
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.20
+19 EpicCode CodeSprint
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

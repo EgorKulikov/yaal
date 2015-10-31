@@ -1,0 +1,42 @@
+25 C - Weakness and Poorness
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 3
+1 2 3
+
+18 1.000000000000000
+
+1
+1
+10 4
+1 2 3 4
+
+18 2.000000000000000
+
+1
+2
+24 10
+1 10 2 9 3 8 4 7 5 6
+
+18 4.500000000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2015.09.16
+51 Codeforces Round #320 (Div. 1) [Bayan Thanks-Round]
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

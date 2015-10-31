@@ -1,0 +1,43 @@
+18 Squares and Points
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+26 3 2 2
+2 3
+2 2
+4 0
+3 3
+5 1
+
+2 2
+
+1
+1
+26 2 3 1
+0 0
+1 1
+2 3
+3 0
+0 4
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+76 on2015_08.on2015_08_20_101_Hack_Aug_2015.Squares_and_Points.SquaresAndPoints
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.20
+17 101 Hack Aug 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

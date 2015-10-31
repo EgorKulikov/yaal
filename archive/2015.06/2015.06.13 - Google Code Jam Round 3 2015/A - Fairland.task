@@ -1,0 +1,37 @@
+12 A - Fairland
+6 SINGLE
+12 LOCAL_REGEXP
+22 A-(small|large).*[.]in
+6 CUSTOM
+5 a.out
+1
+0
+107 3
+1 395
+18 246 615815 60
+73 228 14618 195
+6 5
+10 1 3 17
+5 2 7 19
+10 13
+28 931 601463 36
+231 539 556432 258
+
+32 Case #1: 1
+Case #2: 3
+Case #3: 5
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.13
+28 Google Code Jam Round 3 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

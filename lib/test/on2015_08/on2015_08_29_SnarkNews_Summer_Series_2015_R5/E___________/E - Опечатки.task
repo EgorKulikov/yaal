@@ -1,0 +1,35 @@
+20 E - Опечатки
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 1
+99999
+
+2 1
+
+1
+1
+25 5
+246 426 624 6240 -4062
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+73 on2015_08.on2015_08_29_SnarkNews_Summer_Series_2015_R5.E___________.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.29
+31 SnarkNews Summer Series 2015 R5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

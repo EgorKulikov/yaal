@@ -1,0 +1,38 @@
+34 A - Игра со строками
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+38 4
+2 2
+10
+4 2
+0000
+5 2
+01010
+5 2
+10101
+
+8 2
+1
+0
+1
+
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+75 on2015_06.on2015_06_14_RCC_2015_________________.A___________________.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.14
+40 RCC 2015 Отборочный раунд
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

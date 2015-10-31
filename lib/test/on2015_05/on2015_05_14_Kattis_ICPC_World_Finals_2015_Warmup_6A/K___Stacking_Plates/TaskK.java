@@ -1,18 +1,20 @@
 package on2015_05.on2015_05_14_Kattis_ICPC_World_Finals_2015_Warmup_6A.K___Stacking_Plates;
 
 
-
-import net.egork.collections.intcollection.IntArrayList;
-import net.egork.collections.intcollection.IntList;
-import net.egork.collections.intcollection.IntPair;
 import net.egork.collections.map.EHashMap;
-import net.egork.collections.set.EHashSet;
+import net.egork.generated.collections.list.IntArrayList;
+import net.egork.generated.collections.list.IntList;
+import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Map;
+import java.util.NavigableSet;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class TaskK {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -34,16 +36,16 @@ public class TaskK {
                 if (!where.containsKey(i)) {
                     where.put(i, new IntArrayList());
                     where.get(i).add(j);
-                } else if (where.get(i).back() != j) {
+                } else if (where.get(i).last() != j) {
                     where.get(i).add(j);
                 }
             }
         }
-        Map<IntPair, IntList> good = new TreeMap<>();
+        Map<IntIntPair, IntList> good = new TreeMap<>();
         int last = -1;
         for (int i : all) {
             if (last != -1) {
-                good.put(new IntPair(last, i), new IntArrayList());
+                good.put(new IntIntPair(last, i), new IntArrayList());
             }
             last = i;
         }
@@ -53,7 +55,7 @@ public class TaskK {
             for (int j = 1; j < stack.length; j++) {
                 if (stack[j] != stack[j - 1]) {
                     answer += 2;
-                    IntPair pair = new IntPair(stack[j - 1], stack[j]);
+                    IntIntPair pair = new IntIntPair(stack[j - 1], stack[j]);
                     if (good.containsKey(pair)) {
                         good.get(pair).add(i);
                     }
@@ -62,7 +64,7 @@ public class TaskK {
         }
         int[] current = new int[count + 1];
         int[] next = new int[count + 1];
-        for (Map.Entry<IntPair, IntList> entry : good.entrySet()) {
+        for (Map.Entry<IntIntPair, IntList> entry : good.entrySet()) {
             Arrays.fill(next, 0);
             int max = -1;
             int at = -1;

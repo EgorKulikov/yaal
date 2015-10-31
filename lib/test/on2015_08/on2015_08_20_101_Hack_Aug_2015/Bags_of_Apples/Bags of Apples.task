@@ -1,0 +1,35 @@
+14 Bags of Apples
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+10 4
+2 2 1 2
+
+2 6
+
+1
+1
+12 5
+3 6 9 9 3
+
+3 30
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+68 on2015_08.on2015_08_20_101_Hack_Aug_2015.Bags_of_Apples.BagsOfApples
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.20
+17 101 Hack Aug 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,35 @@
+21 Facilities Extraction
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+242 5
+wifi
+swimming pool
+garden
+beach
+tennis court
+Our hotel is a very luxurious one, we are committed to provide the best holiday, you can always relax on our private beach, we provide four amazing tennis courts. WIFI is available in all areas.
+
+24 beach
+tennis court
+wifi
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+87 on2015_09.on2015_09_05_Booking_com_Hackathon.Facilities_Extraction.FacilitiesExtraction
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.05
+21 Booking.com Hackathon
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

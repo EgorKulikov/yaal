@@ -1,0 +1,47 @@
+18 Nearby Attractions
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+355 10
+1 52.378281 4.900070
+2 52.373634 4.890289
+3 52.375737 4.896547
+4 52.372995 4.893096
+5 52.376237 4.902860
+6 52.367066 4.893381
+7 52.366537 4.911348
+14 52.368832 4.892744
+15 52.357895 4.892835
+35 52.342497 4.855094
+5
+52.379141 4.880590 metro 80
+52.358835 4.893867 foot 60
+52.375859 4.886006 foot 30
+52.371700 4.899070 metro 30
+52.364055 4.898446 foot 60
+
+114 2 4 3 1 14 5 6 15 7 35
+15 6 14 7 4 2 3 5 1 35
+2 4 3 14 1 6 5 7 15
+4 3 14 5 2 6 1 7 15 35
+6 14 15 7 4 2 3 5 1 35  
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+81 on2015_09.on2015_09_05_Booking_com_Hackathon.Nearby_Attractions.NearbyAttractions
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.05
+21 Booking.com Hackathon
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

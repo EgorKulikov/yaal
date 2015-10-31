@@ -1,0 +1,36 @@
+20 Similar Destinations
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+322 4
+london:theatre,museums,monuments,food,parks,architecture,nightlife
+amsterdam:museums,shopping,architecture,nightlife,cycling,food,walking
+berlin:monuments,nightlife,food,architecture,city_trip
+paris:shopping,food,monuments,architecture,gourmet,walking,museums
+barcelona:architecture,shopping,beach,food,tapas,nightlife 
+
+270 amsterdam,paris:architecture,food,museums,shopping,walking
+amsterdam,barcelona:architecture,food,nightlife,shopping
+amsterdam,london:architecture,food,museums,nightlife
+berlin,london:architecture,food,monuments,nightlife
+london,paris:architecture,food,monuments,museums
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+85 on2015_09.on2015_09_05_Booking_com_Hackathon.Similar_Destinations.SimilarDestinations
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.05
+21 Booking.com Hackathon
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

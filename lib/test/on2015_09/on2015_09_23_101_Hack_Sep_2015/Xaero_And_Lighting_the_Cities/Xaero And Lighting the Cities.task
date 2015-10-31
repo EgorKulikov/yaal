@@ -1,0 +1,36 @@
+29 Xaero And Lighting the Cities
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+34 2
+3
+0 0 0
+1 2
+2 3
+3
+1 0 0
+1 2
+2 3
+
+4 1
+1
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+96 on2015_09.on2015_09_23_101_Hack_Sep_2015.Xaero_And_Lighting_the_Cities.XaeroAndLightingTheCities
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.23
+17 101 Hack Sep 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,35 @@
+50 B - Обобщённые римские числа
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+34 IVXLCDM
+YANDEXALGORITHM2015ROUND3
+
+6 MDLXI
+
+1
+1
+41 xXjJeEvVmMDdlLnNqQAaZzYy
+add.extra?(Y/n)
+
+7 Yandex
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.06
+29 Yandex.Algorithm.2015 Round 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

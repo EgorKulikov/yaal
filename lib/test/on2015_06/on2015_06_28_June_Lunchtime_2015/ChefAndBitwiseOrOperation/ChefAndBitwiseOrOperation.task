@@ -1,0 +1,36 @@
+25 ChefAndBitwiseOrOperation
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+71 4
+3 2
+1 2 2
+4 3
+1 2 3 4
+2 2 
+1 2
+11 4
+66 152 7 89 42 28 222 69 10 54 99
+10 5
+10
+3
+704
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+94 on2015_06.on2015_06_28_June_Lunchtime_2015.ChefAndBitwiseOrOperation.ChefAndBitwiseOrOperation
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.28
+19 June Lunchtime 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

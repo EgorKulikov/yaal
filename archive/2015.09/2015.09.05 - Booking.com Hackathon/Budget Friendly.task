@@ -1,0 +1,35 @@
+15 Budget Friendly
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+53 2 50
+3
+10 7.8
+15 6.4
+12 8.111
+3
+25 7.8
+19 6.4
+50 8.1
+
+6 15.91
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+24 net.egork.BudgetFriendly
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.05
+21 Booking.com Hackathon
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

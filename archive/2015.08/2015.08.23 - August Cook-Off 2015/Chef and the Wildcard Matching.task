@@ -1,0 +1,32 @@
+30 Chef and the Wildcard Matching
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+26 2
+s?or?
+sco??
+stor?
+sco??
+
+7 Yes
+No
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+36 net.egork.ChefAndTheWildcardMatching
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.23
+20 August Cook-Off 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

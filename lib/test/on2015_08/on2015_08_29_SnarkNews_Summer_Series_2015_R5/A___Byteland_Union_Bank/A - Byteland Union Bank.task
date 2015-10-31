@@ -1,0 +1,43 @@
+23 A - Byteland Union Bank
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+97 10
+1 2 3 4 5 6 -2 -3 -4 -5
+9
+3 4 8
+ 
+1 7 10 2
+3 7 10
+ 
+2 2 -2
+3 1 6
+ 
+2 3 2
+2 5 -7
+1 2 8 4
+3 3 10
+12 10
+-6
+15
+20
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+84 on2015_08.on2015_08_29_SnarkNews_Summer_Series_2015_R5.A___Byteland_Union_Bank.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.29
+31 SnarkNews Summer Series 2015 R5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

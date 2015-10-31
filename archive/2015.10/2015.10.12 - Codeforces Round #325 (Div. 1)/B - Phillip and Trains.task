@@ -1,0 +1,51 @@
+22 B - Phillip and Trains
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+114 2
+16 4
+...AAAAA........
+s.BBB......CCCCC
+........DDDDD...
+16 4
+...AAAAA........
+s.BBB....CCCCC..
+.......DDDDD....
+
+7 YES
+NO
+
+1
+1
+78 2
+10 4
+s.ZZ......
+.....AAABB
+.YYYYYY...
+10 4
+s.ZZ......
+....AAAABB
+.YYYYYY...
+
+7 YES
+NO
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.12
+30 Codeforces Round #325 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

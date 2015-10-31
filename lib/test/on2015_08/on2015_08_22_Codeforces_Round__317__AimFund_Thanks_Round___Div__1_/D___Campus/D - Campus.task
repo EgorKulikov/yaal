@@ -1,0 +1,58 @@
+10 D - Campus
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+34 2 7
+A 1
+Q 1
+U 1 2
+A 1
+Z 1
+Q 1
+Q 2
+
+6 1
+0
+2
+
+1
+1
+57 5 12
+U 1 2
+M 4 5
+A 1
+Q 1
+A 3
+A 4
+Q 3
+Q 4
+Z 4
+Q 4
+A 5
+Q 5
+
+10 2
+1
+1
+0
+1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+93 on2015_08.on2015_08_22_Codeforces_Round__317__AimFund_Thanks_Round___Div__1_.D___Campus.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.22
+53 Codeforces Round #317 [AimFund Thanks-Round] (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

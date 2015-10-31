@@ -1,0 +1,49 @@
+28 A - Переобучение
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 1
+1 1 0
+
+4 1
+1 
+1
+1
+40 5
+2 2 2 2 3
+0 2 2 4 5
+0 0 0
+1 1 0
+0 1 0
+
+6 2
+2 4
+1
+2
+32 4
+4 4 1 2
+0 3 1 3
+0 2 1 4
+0 1 0
+
+10 4
+1 2 3 4 
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+63 on2015_08.on2015_08_18_SNSS_2015_Round_3.A_______________.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.18
+17 SNSS-2015 Round 3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

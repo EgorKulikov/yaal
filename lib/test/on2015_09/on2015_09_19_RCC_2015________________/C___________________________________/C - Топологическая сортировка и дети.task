@@ -1,0 +1,36 @@
+65 C - Топологическая сортировка и дети
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+42 2
+4 2
+1 2
+4 3
+0 4 0 0
+4 2
+2 1
+3 4
+0 2 0 0
+
+17 1 4 3 2 
+4 2 1 3
+
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+90 on2015_09.on2015_09_19_RCC_2015________________.C___________________________________.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.19
+38 RCC 2015 Финальный раунд
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

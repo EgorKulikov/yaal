@@ -1,0 +1,31 @@
+22 C - Двигатели
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+21 1
+1 2
+50 6
+50 4
+50 2
+
+8 1 25008
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.29
+31 SnarkNews Summer Series 2015 R5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

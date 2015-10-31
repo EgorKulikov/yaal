@@ -1,0 +1,49 @@
+13 D - LCS Again
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+8 3 3
+aaa
+
+2 6
+
+1
+1
+8 3 3
+aab
+
+3 11
+
+1
+2
+6 1 2
+a
+
+2 1
+
+1
+3
+16 10 9
+abacadefgh
+
+4 789
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.16
+51 Codeforces Round #320 (Div. 1) [Bayan Thanks-Round]
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

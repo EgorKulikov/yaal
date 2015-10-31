@@ -1,0 +1,30 @@
+37 E - Спутниковая связь
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+23 2
+1 1
+5 5
+0 3
+-2 9 3 2
+
+17 1.666666666666667
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+63 on2015_08.on2015_08_22_SNSS_2015_R4.E____________________.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-5
+0
+10 2015.08.22
+12 SNSS 2015 R4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

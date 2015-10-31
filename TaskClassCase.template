@@ -4,7 +4,7 @@ import %InputClassFQN%;
 import %OutputClassFQN%;
 
 public class %TaskClass% {
-    public void solve(int testNumber, %InputClass% in, %OutputClass% out) {
-        out.printLine("Case #" + testNumber + ":");
-    }
+	public void solve(int testNumber, %InputClass% in, %OutputClass% out) {
+		out.printLine("Case #" + testNumber + ":");
+	}
 }

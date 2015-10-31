@@ -1,0 +1,40 @@
+11 Bus Company
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+18 2 4 1
+1 4 2
+2 3 5
+
+2 5
+
+1
+1
+36 5 5 2
+1 2 2
+1 3 5
+1 4 3
+4 5 1
+2 4 4
+
+3 12
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+63 on2015_08.on2015_08_20_101_Hack_Aug_2015.Bus_Company.BusCompany
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.20
+17 101 Hack Aug 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

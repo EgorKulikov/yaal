@@ -1,0 +1,31 @@
+46 D - Очень Секретный Объект
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+18 10
+3
+0 3
+4 6
+5 10
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+68 on2015_08.on2015_08_22_SNSS_2015_R4.D_________________________.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.22
+12 SNSS 2015 R4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

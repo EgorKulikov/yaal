@@ -1,0 +1,59 @@
+25 D - Lizard Era: Beginning
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+20 3
+1 0 0
+0 1 0
+0 0 1
+
+9 LW
+MW
+MW
+
+1
+1
+52 7
+0 8 9
+5 9 -2
+6 -8 -7
+9 4 5
+-4 -9 9
+-4 5 2
+-6 8 -7
+
+21 LM
+MW
+LM
+LW
+MW
+LM
+LW
+
+1
+2
+14 2
+1 0 0
+1 1 0
+
+11 Impossible
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.12
+30 Codeforces Round #325 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

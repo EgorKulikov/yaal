@@ -1,0 +1,49 @@
+37 A - Сгибание ленточки
+12 MULTI_NUMBER
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+45 3
+1
+R
+1
+1
+2
+LR
+3
+1 2 3
+3
+LRL
+7
+1 2 3 4 5 6 7
+
+22 D
+U
+D
+D
+D
+U
+U
+D
+D
+D
+U
+
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.09.19
+38 RCC 2015 Финальный раунд
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

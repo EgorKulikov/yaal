@@ -1,0 +1,37 @@
+11 ChefAndSets
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+74 7 8
+UNION 1 2
+UNION 8 3
+GET 4 1
+UNION 4 5
+GET 10 2
+GET 9 3
+GET 9 2
+GET 9 1
+9 4
+5
+3
+2
+1
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+66 on2015_06.on2015_06_28_June_Lunchtime_2015.ChefAndSets.ChefAndSets
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.28
+19 June Lunchtime 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

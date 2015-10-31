@@ -74,4 +74,8 @@ public class Line {
 
 		return true;
 	}
+
+	public double angle() {
+		return Math.atan2(-a, b);
+	}
 }

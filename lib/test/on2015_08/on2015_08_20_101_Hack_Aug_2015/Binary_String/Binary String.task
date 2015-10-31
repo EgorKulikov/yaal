@@ -1,0 +1,35 @@
+13 Binary String
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+13 5 1 10
+01010
+
+6 11000
+
+1
+1
+13 6 2 3
+000111
+
+7 110001
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+67 on2015_08.on2015_08_20_101_Hack_Aug_2015.Binary_String.BinaryString
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.20
+17 101 Hack Aug 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

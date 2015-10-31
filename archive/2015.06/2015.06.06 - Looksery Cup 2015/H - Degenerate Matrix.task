@@ -1,0 +1,41 @@
+21 H - Degenerate Matrix
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 1 2
+3 4
+
+13 0.2000000000
+
+1
+1
+8 1 0
+0 1
+
+13 0.5000000000
+
+1
+2
+9 2 1
+1 -1
+
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2015.06.06
+17 Looksery Cup 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

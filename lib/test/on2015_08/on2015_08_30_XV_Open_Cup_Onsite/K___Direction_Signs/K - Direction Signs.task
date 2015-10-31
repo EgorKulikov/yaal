@@ -1,0 +1,31 @@
+19 K - Direction Signs
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+16 3 2
+2 2
+2 3
+3 2
+
+6 2
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+67 on2015_08.on2015_08_30_XV_Open_Cup_Onsite.K___Direction_Signs.TaskK
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.08.30
+18 XV Open Cup Onsite
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

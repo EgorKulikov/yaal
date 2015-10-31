@@ -1,0 +1,35 @@
+25 D - Restructuring Company
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+40 8 6
+3 2 5
+1 2 5
+3 2 5
+2 4 7
+2 1 2
+3 1 7
+
+11 NO
+YES
+YES
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.07.30
+35 VK Cup 2015 - Finals, online mirror
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

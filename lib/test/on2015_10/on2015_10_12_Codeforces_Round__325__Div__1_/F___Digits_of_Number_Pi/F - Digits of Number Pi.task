@@ -1,0 +1,45 @@
+23 F - Digits of Number Pi
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+9 02
+10
+19
+
+2 2
+
+1
+1
+16 023456789
+10
+19
+
+2 9
+
+1
+2
+18 31415926535
+10
+29
+
+3 20
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+83 on2015_10.on2015_10_12_Codeforces_Round__325__Div__1_.F___Digits_of_Number_Pi.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.12
+30 Codeforces Round #325 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,37 @@
+5 TaskI
+12 MULTI_NUMBER
+6 CUSTOM
+5 i2.in
+6 CUSTOM
+6 i2.out
+1
+0
+48 3
+
+2 2
+1 2 1 1
+1 2 3 0
+
+2 2
+1 2 1 0
+1 2 1 0
+
+2 0
+20 1 0.333333333334
+0
+0
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+39 on2015_06.on2015_06_20_IPSC.TaskI.TaskI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.06.20
+4 IPSC
+0
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
