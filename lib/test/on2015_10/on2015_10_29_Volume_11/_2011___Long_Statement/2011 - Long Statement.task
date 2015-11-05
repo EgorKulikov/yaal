@@ -1,0 +1,28 @@
+21 2011 - Long Statement
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+14 6
+1 2 2 3 3 3
+
+4 Yes
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+64 on2015_10.on2015_10_29_Volume_11._2011___Long_Statement.Task2011
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.29
+9 Volume 11
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -10,7 +10,7 @@ public interface LongIterator {
 	/**
 	 * Returns true if next call to isValid will return true
 	 */
-	public boolean advance() throws NoSuchElementException;
+	public boolean advance();
 	public boolean isValid();
-	public void remove() throws NoSuchElementException;
+	public void remove();
 }

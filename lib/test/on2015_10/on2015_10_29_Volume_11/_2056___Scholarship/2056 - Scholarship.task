@@ -1,0 +1,39 @@
+18 2056 - Scholarship
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+8 3
+5
+5
+4
+
+5 High
+
+1
+1
+8 3
+3
+3
+3
+
+5 None
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+61 on2015_10.on2015_10_29_Volume_11._2056___Scholarship.Task2056
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.29
+9 Volume 11
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -18,15 +18,13 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
 			private LongIterator it = longIterator();
 
 			public boolean hasNext() {
-				return it.advance();
+				return it.isValid();
 			}
 
 			public Long next() {
-				return it.value();
-			}
-
-			public void remove() {
-				it.remove();
+				long result = it.value();
+				it.advance();
+				return result;
 			}
 		};
 	}
@@ -198,8 +196,44 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
 		return true;
 	}
 
-	default boolean isPermutationOf(LongStream s) {
-		return new LongArrayList(this).sort().equals(new LongArrayList(s).sort());
+	default public long reduce(LongLongToLongFunction f) {
+		LongIterator it = longIterator();
+		if (!it.isValid()) {
+			return Long.MIN_VALUE;
+		}
+		long result = it.value();
+		while (it.advance()) {
+			result = f.value(result, it.value());
+		}
+		return result;
+	}
+
+		default public double reduce(double initial, DoubleLongToDoubleFunction f) {
+		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+			initial = f.value(initial, it.value());
+		}
+		return initial;
+	}
+
+	default public int reduce(int initial, IntLongToIntFunction f) {
+		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+			initial = f.value(initial, it.value());
+		}
+		return initial;
+	}
+
+	default public long reduce(long initial, LongLongToLongFunction f) {
+		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+			initial = f.value(initial, it.value());
+		}
+		return initial;
+	}
+
+	default public char reduce(char initial, CharLongToCharFunction f) {
+		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+			initial = f.value(initial, it.value());
+		}
+		return initial;
 	}
 
 	//views
@@ -359,6 +393,390 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
 
             public void remove() {
                 it.remove();
+            }
+        };
+	}
+
+		default public DoubleStream join(DoubleStream other, LongDoubleToDoubleFunction f) {
+		return () -> new DoubleIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private DoubleIterator jt = other.doubleIterator();
+
+            public double value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public IntStream join(DoubleStream other, LongDoubleToIntFunction f) {
+		return () -> new IntIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private DoubleIterator jt = other.doubleIterator();
+
+            public int value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public LongStream join(DoubleStream other, LongDoubleToLongFunction f) {
+		return () -> new LongIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private DoubleIterator jt = other.doubleIterator();
+
+            public long value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public CharStream join(DoubleStream other, LongDoubleToCharFunction f) {
+		return () -> new CharIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private DoubleIterator jt = other.doubleIterator();
+
+            public char value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public DoubleStream join(IntStream other, LongIntToDoubleFunction f) {
+		return () -> new DoubleIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private IntIterator jt = other.intIterator();
+
+            public double value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public IntStream join(IntStream other, LongIntToIntFunction f) {
+		return () -> new IntIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private IntIterator jt = other.intIterator();
+
+            public int value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public LongStream join(IntStream other, LongIntToLongFunction f) {
+		return () -> new LongIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private IntIterator jt = other.intIterator();
+
+            public long value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public CharStream join(IntStream other, LongIntToCharFunction f) {
+		return () -> new CharIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private IntIterator jt = other.intIterator();
+
+            public char value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public DoubleStream join(LongStream other, LongLongToDoubleFunction f) {
+		return () -> new DoubleIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private LongIterator jt = other.longIterator();
+
+            public double value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public IntStream join(LongStream other, LongLongToIntFunction f) {
+		return () -> new IntIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private LongIterator jt = other.longIterator();
+
+            public int value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public LongStream join(LongStream other, LongLongToLongFunction f) {
+		return () -> new LongIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private LongIterator jt = other.longIterator();
+
+            public long value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public CharStream join(LongStream other, LongLongToCharFunction f) {
+		return () -> new CharIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private LongIterator jt = other.longIterator();
+
+            public char value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public DoubleStream join(CharStream other, LongCharToDoubleFunction f) {
+		return () -> new DoubleIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private CharIterator jt = other.charIterator();
+
+            public double value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public IntStream join(CharStream other, LongCharToIntFunction f) {
+		return () -> new IntIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private CharIterator jt = other.charIterator();
+
+            public int value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public LongStream join(CharStream other, LongCharToLongFunction f) {
+		return () -> new LongIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private CharIterator jt = other.charIterator();
+
+            public long value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
+            }
+        };
+	}
+
+	default public CharStream join(CharStream other, LongCharToCharFunction f) {
+		return () -> new CharIterator() {
+            private LongIterator it = LongStream.this.longIterator();
+            private CharIterator jt = other.charIterator();
+
+            public char value() {
+                return f.value(it.value(), jt.value());
+            }
+
+            public boolean advance() {
+                return it.advance() && jt.advance();
+            }
+
+            public boolean isValid() {
+                return it.isValid() && jt.isValid();
+            }
+
+            public void remove() {
+                it.remove();
+                jt.remove();
             }
         };
 	}

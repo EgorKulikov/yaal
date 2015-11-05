@@ -1,0 +1,28 @@
+32 1991 - The battle near the swamp
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+12 4 5
+2 7 5 0
+
+4 2 8
+
+1
+14 main/net/egork
+15 -Xmx64M -Xss64M
+4 Main
+75 on2015_10.on2015_10_29_Volume_10._1991___The_battle_near_the_swamp.Task1991
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.10.29
+9 Volume 10
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

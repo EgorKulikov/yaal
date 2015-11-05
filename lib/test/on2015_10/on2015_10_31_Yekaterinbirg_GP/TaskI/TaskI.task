@@ -1,0 +1,34 @@
+5 TaskI
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+42 2 2 6
+4
+1 1 2
+1 2 1
+2 1 4
+2 2 2
+2
+1 1
+1 10
+2 25
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+51 on2015_10.on2015_10_31_Yekaterinbirg_GP.TaskI.TaskI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+59 on2015_10.on2015_10_31_Yekaterinbirg_GP.TaskI.TaskITestCase
+10 2015.10.31
+16 Yekaterinbirg GP
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
