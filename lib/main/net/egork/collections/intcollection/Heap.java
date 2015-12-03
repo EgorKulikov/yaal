@@ -133,8 +133,9 @@ public class Heap implements IntQueue {
 
 	public boolean remove(int element) {
 		int index = getIndex(element);
-		if (index == -1)
-			throw new IndexOutOfBoundsException();
+		if (index == -1) {
+			return false;
+		}
 		int result = elements[index];
 		at[result] = -1;
 		if (index == size - 1) {

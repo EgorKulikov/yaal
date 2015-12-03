@@ -1,0 +1,39 @@
+18 A - ASCII Addition
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+462 ....x.xxxxx.xxxxx.x...x.xxxxx.xxxxx.xxxxx.......xxxxx.xxxxx.xxxxx
+....x.....x.....x.x...x.x.....x.........x...x...x...x.x...x.x...x
+....x.....x.....x.x...x.x.....x.........x...x...x...x.x...x.x...x
+....x.xxxxx.xxxxx.xxxxx.xxxxx.xxxxx.....x.xxxxx.xxxxx.xxxxx.x...x
+....x.x.........x.....x.....x.x...x.....x...x...x...x.....x.x...x
+....x.x.........x.....x.....x.x...x.....x...x...x...x.....x.x...x
+....x.xxxxx.xxxxx.....x.xxxxx.xxxxx.....x.......xxxxx.xxxxx.xxxxx
+
+294 ....x.xxxxx.xxxxx.xxxxx.x...x.xxxxx.xxxxx
+....x.....x.....x.x.....x...x.x.........x
+....x.....x.....x.x.....x...x.x.........x
+....x.xxxxx.xxxxx.xxxxx.xxxxx.xxxxx.....x
+....x.x.........x.....x.....x.....x.....x
+....x.x.........x.....x.....x.....x.....x
+....x.xxxxx.xxxxx.xxxxx.....x.xxxxx.....x
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.11.22
+27 Grand Prix of Europe - 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

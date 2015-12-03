@@ -1,0 +1,38 @@
+21 G - Greenhouse Growth
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+22 6 5
+4 3 5 3 6 6
+BABAA
+
+12 5 5 6 6 6 6
+
+1
+1
+24 6 6
+7 6 6 8 10 6
+BAABAB
+
+14 9 9 9 10 10 9
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+78 on2015_11.on2015_11_22_Grand_Prix_of_Europe___2015.G___Greenhouse_Growth.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+86 on2015_11.on2015_11_22_Grand_Prix_of_Europe___2015.G___Greenhouse_Growth.TaskGTestCase
+10 2015.11.22
+27 Grand Prix of Europe - 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,32 @@
+14 Chef and cakes
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+14 3
+2 0
+2 1
+4 2
+
+14 No 1
+Yes
+No 2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+74 on2015_11.on2015_11_06_November_Challenge_2015.Chef_and_cakes.ChefAndCakes
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.11.06
+23 November Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

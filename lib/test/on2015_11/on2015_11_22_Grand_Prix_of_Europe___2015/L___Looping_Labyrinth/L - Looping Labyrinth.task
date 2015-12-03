@@ -1,0 +1,43 @@
+21 L - Looping Labyrinth
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+98 6 9
+..#####..
+..#...#..
+......#..
+..#####..
+..#......
+..#...#..
+5
+1 4
+5 4
+1 -5
+5 -5
+-1000000000 0
+
+18 yes
+no
+no
+yes
+yes
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+78 on2015_11.on2015_11_22_Grand_Prix_of_Europe___2015.L___Looping_Labyrinth.TaskL
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.11.22
+27 Grand Prix of Europe - 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

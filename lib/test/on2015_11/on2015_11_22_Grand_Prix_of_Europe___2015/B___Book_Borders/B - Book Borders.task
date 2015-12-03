@@ -1,0 +1,31 @@
+16 B - Book Borders
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+57 its a long way to the top if you wanna rock n roll
+13 16
+
+12 22
+12
+12
+15
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+73 on2015_11.on2015_11_22_Grand_Prix_of_Europe___2015.B___Book_Borders.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.11.22
+27 Grand Prix of Europe - 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
