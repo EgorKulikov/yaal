@@ -100,7 +100,7 @@ public class TreapSet<K> implements NavigableSet<K> {
 		K first = first();
 		if (first == null)
 			throw new NoSuchElementException();
-		root.erase(first);
+		root = root.erase(first); // если удаляем корень, ничего не удалится
 		return first;
 	}
 
@@ -108,7 +108,7 @@ public class TreapSet<K> implements NavigableSet<K> {
 		K last = last();
 		if (last == null)
 			throw new NoSuchElementException();
-		root.erase(last);
+		root = root.erase(last); // тоже самое
 		return last;
 	}
 
