@@ -1,5 +1,9 @@
 package %package%;
 
+import static net.egork.io.IOUtils.*;
+import static net.egork.misc.MiscUtils.*;
+import static net.egork.misc.ArrayUtils.*;
+
 public class %TaskClass% {
 	public %Signature% {
 		return %DefaultValue%;

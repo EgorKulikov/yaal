@@ -1,0 +1,46 @@
+9 D - Merge
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+18 4
+3 1 2 4
+3 1 2 4
+
+3 14
+
+1
+1
+45 10
+5 7 3 1 6 4 2 10 9 8
+2 8 9 1 5 6 10 4 3 7
+
+7 127224
+
+1
+2
+6 1
+1
+1
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+62 on2016_01.on2016_01_31_Grand_Prix_of_Asia_2016.D___Merge.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+70 on2016_01.on2016_01_31_Grand_Prix_of_Asia_2016.D___Merge.TaskDTestCase
+10 2016.01.31
+23 Grand Prix of Asia-2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

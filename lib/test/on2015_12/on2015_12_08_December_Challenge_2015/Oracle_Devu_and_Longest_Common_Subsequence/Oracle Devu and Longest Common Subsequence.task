@@ -1,0 +1,39 @@
+42 Oracle Devu and Longest Common Subsequence
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+35 3
+2
+ab
+ba
+2
+aa
+bb
+3
+aabb
+abab
+baab
+
+6 1
+0
+2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+127 on2015_12.on2015_12_08_December_Challenge_2015.Oracle_Devu_and_Longest_Common_Subsequence.OracleDevuAndLongestCommonSubsequence
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.08
+23 December Challenge 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

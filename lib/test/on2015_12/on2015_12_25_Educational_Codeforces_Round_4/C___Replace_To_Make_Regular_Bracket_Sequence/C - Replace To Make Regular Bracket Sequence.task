@@ -1,0 +1,36 @@
+44 C - Replace To Make Regular Bracket Sequence
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+7 [<}){}
+
+1 2
+1
+1
+7 {()}[]
+
+1 0
+1
+2
+3 ]]
+
+10 Impossible
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+104 on2015_12.on2015_12_25_Educational_Codeforces_Round_4.C___Replace_To_Make_Regular_Bracket_Sequence.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.25
+30 Educational Codeforces Round 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

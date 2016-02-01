@@ -1,0 +1,38 @@
+15 H - Random Walk
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+13 2 1000000007
+
+3 44
+
+1
+1
+16 2015 2000000000
+
+11 1892319232
+
+1
+2
+16 5000 1000000000
+
+-1
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+68 on2016_01.on2016_01_31_Grand_Prix_of_Asia_2016.H___Random_Walk.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.31
+23 Grand Prix of Asia-2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

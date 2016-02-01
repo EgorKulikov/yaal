@@ -1,0 +1,31 @@
+40 Problem 2. High Card Low Card (Platinum)
+6 SINGLE
+6 CUSTOM
+11 cardgame.in
+6 CUSTOM
+12 cardgame.out
+1
+0
+10 4
+1
+8
+4
+3
+
+2 3
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+110 on2015_12.on2015_12_14_USACO_2015_December_Contest__Platinum.Problem_2__High_Card_Low_Card__Platinum_.Cardgame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.14
+37 USACO 2015 December Contest, Platinum
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

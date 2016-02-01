@@ -1,0 +1,53 @@
+24 C - Equivalence Relation
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+43 5
+0101010101
+101010110101011
+0101
+0000
+111
+
+16 2
+3 1 4 5
+2 2 3
+
+1
+1
+91 10
+010110101101
+101101011010
+10001100
+1000110000
+010101
+110110
+11011011
+01010
+11011
+0101010
+32 5
+2 1 2
+2 3 4
+2 5 6
+2 7 8
+2 9 10
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.20
+22 Grand Prix of Peterhof
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

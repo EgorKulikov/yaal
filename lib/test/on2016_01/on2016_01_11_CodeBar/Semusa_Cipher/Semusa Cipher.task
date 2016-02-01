@@ -1,0 +1,32 @@
+13 Semusa Cipher
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+33 2
+5
+3 4 5 2 1
+6
+7 15 20 12 13 11
+
+27 5 1 4 2 3
+20 7 15 11 13 12
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+57 on2016_01.on2016_01_11_CodeBar.Semusa_Cipher.SemusaCipher
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.11
+7 CodeBar
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

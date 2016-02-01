@@ -1,0 +1,41 @@
+19 Problem 1. Max Flow
+6 SINGLE
+6 CUSTOM
+10 maxflow.in
+6 CUSTOM
+11 maxflow.out
+1
+0
+61 5 10
+3 4
+1 5
+4 2
+5 4
+5 4
+5 4
+3 5
+4 3
+4 3
+1 3
+3 5
+5 4
+1 5
+3 4
+
+2 9
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+88 on2015_12.on2015_12_14_USACO_2015_December_Contest__Platinum.Problem_1__Max_Flow.Maxflow
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.14
+37 USACO 2015 December Contest, Platinum
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

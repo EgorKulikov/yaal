@@ -1,0 +1,46 @@
+22 A - The Text Splitting
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+12 5 2 3
+Hello
+
+9 2
+He
+llo
+
+1
+1
+18 10 9 5
+Codeforces
+
+14 2
+Codef
+orces
+
+1
+2
+13 6 4 5
+Privet
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.25
+30 Educational Codeforces Round 4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

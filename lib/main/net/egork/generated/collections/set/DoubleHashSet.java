@@ -37,7 +37,7 @@ public class DoubleHashSet extends DoubleAbstractStream implements DoubleSet {
 
 
 	public DoubleHashSet(int capacity) {
-		capacity = Math.max(capacity, 1);
+		capacity = Math.max(capacity, 3);
 		values = new double[capacity];
 		present = new byte[capacity];
 		ratio = 2;

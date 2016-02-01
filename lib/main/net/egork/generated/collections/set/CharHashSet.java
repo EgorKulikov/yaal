@@ -37,7 +37,7 @@ public class CharHashSet extends CharAbstractStream implements CharSet {
 
 
 	public CharHashSet(int capacity) {
-		capacity = Math.max(capacity, 1);
+		capacity = Math.max(capacity, 3);
 		values = new char[capacity];
 		present = new byte[capacity];
 		ratio = 2;

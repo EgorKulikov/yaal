@@ -37,7 +37,7 @@ public class LongHashSet extends LongAbstractStream implements LongSet {
 
 
 	public LongHashSet(int capacity) {
-		capacity = Math.max(capacity, 1);
+		capacity = Math.max(capacity, 3);
 		values = new long[capacity];
 		present = new byte[capacity];
 		ratio = 2;

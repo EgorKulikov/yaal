@@ -1,0 +1,39 @@
+18 H - Second Maximum
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+15 3
+0 1
+0 1
+-1 0
+
+21 0.333333333333333333
+
+1
+1
+14 3
+0 1
+1 2
+2 3
+
+4 1.5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2015.12.20
+22 Grand Prix of Peterhof
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,5 +1,6 @@
 package net.egork.collections.intcollection;
 
+import net.egork.generated.collections.IntAbstractStream;
 import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.pair.IntIntPair;
 
@@ -9,7 +10,7 @@ import java.util.Random;
 /**
  * @author egor@egork.net
  */
-public class IntTreapArray implements IntList {
+public class IntTreapArray extends IntAbstractStream implements IntList {
 	private int[] left;
 	private int[] right;
 	private long[] priority;

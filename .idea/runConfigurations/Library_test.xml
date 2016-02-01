@@ -3,7 +3,7 @@
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     <module name="lib" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-    <option name="ALTERNATIVE_JRE_PATH" value="" />
+    <option name="ALTERNATIVE_JRE_PATH" />
     <option name="PACKAGE_NAME" value="" />
     <option name="MAIN_CLASS_NAME" value="" />
     <option name="METHOD_NAME" value="" />
@@ -17,6 +17,7 @@
       <value defaultName="moduleWithDependencies" />
     </option>
     <envs />
+    <fork_mode value="class" />
     <patterns />
     <RunnerSettings RunnerId="Cover" />
     <RunnerSettings RunnerId="Debug">

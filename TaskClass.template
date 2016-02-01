@@ -2,6 +2,11 @@ package %package%;
 
 import %InputClassFQN%;
 import %OutputClassFQN%;
+import static net.egork.io.IOUtils.*;
+import static net.egork.misc.MiscUtils.*;
+import static net.egork.misc.ArrayUtils.*;
+import static java.lang.Math.*;
+import static java.util.Arrays.*;
 
 public class %TaskClass% {
 	public void solve(int testNumber, %InputClass% in, %OutputClass% out) {

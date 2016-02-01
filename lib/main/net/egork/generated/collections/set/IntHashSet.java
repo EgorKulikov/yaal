@@ -37,7 +37,7 @@ public class IntHashSet extends IntAbstractStream implements IntSet {
 
 
 	public IntHashSet(int capacity) {
-		capacity = Math.max(capacity, 1);
+		capacity = Math.max(capacity, 3);
 		values = new int[capacity];
 		present = new byte[capacity];
 		ratio = 2;

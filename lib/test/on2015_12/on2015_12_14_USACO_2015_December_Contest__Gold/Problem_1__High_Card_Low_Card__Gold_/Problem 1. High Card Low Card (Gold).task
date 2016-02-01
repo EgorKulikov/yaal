@@ -1,0 +1,31 @@
+36 Problem 1. High Card Low Card (Gold)
+6 SINGLE
+6 CUSTOM
+11 cardgame.in
+6 CUSTOM
+12 cardgame.out
+1
+0
+10 4
+1
+8
+4
+3
+
+2 2
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+102 on2015_12.on2015_12_14_USACO_2015_December_Contest__Gold.Problem_1__High_Card_Low_Card__Gold_.Cardgame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.14
+33 USACO 2015 December Contest, Gold
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0
