@@ -8,5 +8,6 @@ public interface CharQueue extends CharCollection {
     }
 
     public char peek();
+
     public char poll();
 }

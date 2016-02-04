@@ -16,9 +16,9 @@ public class SuffixAutomaton {
     public final int[] label;
     public int size;
     public int last;
-	public int edgeSize;
+    public int edgeSize;
 
-	public SuffixAutomaton(final CharSequence s) {
+    public SuffixAutomaton(final CharSequence s) {
         this(new IntList() {
             @Override
             public int get(int index) {
@@ -71,9 +71,9 @@ public class SuffixAutomaton {
                 int index = findEdge(previous, c);
                 if (index != -1) {
                     int curLink = to[index];
-                    if (length[previous] + 1 == length[curLink])
+                    if (length[previous] + 1 == length[curLink]) {
                         link[current] = curLink;
-                    else {
+                    } else {
                         int clone = size++;
                         length[clone] = length[previous] + 1;
                         link[clone] = link[curLink];
@@ -87,8 +87,9 @@ public class SuffixAutomaton {
                         }
                         for (; previous != -1; previous = link[previous]) {
                             int edge = findEdge(previous, c);
-                            if (edge == -1 || to[edge] != curLink)
+                            if (edge == -1 || to[edge] != curLink) {
                                 break;
+                            }
                             to[edge] = clone;
                         }
                         link[current] = link[curLink] = clone;
@@ -107,8 +108,9 @@ public class SuffixAutomaton {
     public int findEdge(int vertex, int label) {
         int edge = first[vertex];
         while (edge != -1) {
-            if (this.label[edge] == label)
+            if (this.label[edge] == label) {
                 return edge;
+            }
             edge = next[edge];
         }
         return -1;

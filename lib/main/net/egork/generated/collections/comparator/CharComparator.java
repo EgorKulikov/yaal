@@ -14,7 +14,7 @@ public interface CharComparator {
         return 0;
     };
 
-	public static final CharComparator REVERSE = (first, second) -> {
+    public static final CharComparator REVERSE = (first, second) -> {
         if (first > second) {
             return -1;
         }
@@ -24,5 +24,5 @@ public interface CharComparator {
         return 0;
     };
 
-	public int compare(char first, char second);
+    public int compare(char first, char second);
 }

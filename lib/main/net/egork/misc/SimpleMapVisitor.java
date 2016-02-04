@@ -17,8 +17,9 @@ public abstract class SimpleMapVisitor extends MapVisitor {
 
     @Override
     protected void internalProcess(int row, int column, int fromRow, int fromColumn) {
-        if (processed[row][column])
+        if (processed[row][column]) {
             return;
+        }
         processed[row][column] = true;
         process(row, column, fromRow, fromColumn);
     }

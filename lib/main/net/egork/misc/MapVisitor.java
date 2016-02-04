@@ -33,8 +33,9 @@ public abstract class MapVisitor {
 
     public void processAll() {
         for (int i = 0; i < rowCount; i++) {
-            for (int j = 0; j < columnCount; j++)
+            for (int j = 0; j < columnCount; j++) {
                 process(i, j);
+            }
         }
     }
 
@@ -45,13 +46,15 @@ public abstract class MapVisitor {
         while (start != end) {
             int row = rowQueue[start];
             int column = columnQueue[start++];
-            if (start == rowQueue.length)
+            if (start == rowQueue.length) {
                 start = 0;
+            }
             for (int i = 0; i < dRow.length; i++) {
                 int nextRow = row + dRow[i];
                 int nextColumn = column + dColumn[i];
-                if (nextRow >= 0 && nextRow < rowCount && nextColumn >= 0 && nextColumn < columnCount)
+                if (nextRow >= 0 && nextRow < rowCount && nextColumn >= 0 && nextColumn < columnCount) {
                     internalProcess(nextRow, nextColumn, row, column);
+                }
             }
         }
     }
@@ -63,13 +66,15 @@ public abstract class MapVisitor {
     protected void add(int row, int column) {
         rowQueue[end] = row;
         columnQueue[end++] = column;
-        if (end == rowQueue.length)
+        if (end == rowQueue.length) {
             end = 0;
+        }
     }
 
     protected void addFront(int row, int column) {
-        if (--start == -1)
+        if (--start == -1) {
             start = rowQueue.length - 1;
+        }
         rowQueue[start] = row;
         columnQueue[start] = column;
     }

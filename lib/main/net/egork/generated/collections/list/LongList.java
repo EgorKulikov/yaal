@@ -1,6 +1,7 @@
 package net.egork.generated.collections.list;
 
 import java.util.NoSuchElementException;
+
 import net.egork.generated.collections.*;
 import net.egork.generated.collections.iterator.*;
 import net.egork.generated.collections.function.*;
@@ -14,8 +15,11 @@ public interface LongList extends LongReversableCollection {
 
     //abstract
     public abstract long get(int index);
+
     public abstract void set(int index, long value);
+
     public abstract void addAt(int index, long value);
+
     public abstract void removeAt(int index);
 
     //base
@@ -24,16 +28,16 @@ public interface LongList extends LongReversableCollection {
     }
 
     default public long last() {
-    	return get(size() - 1);
+        return get(size() - 1);
     }
 
     default public void swap(int first, int second) {
-    	if (first == second) {
-    		return;
-    	}
-		long temp = get(first);
-		set(first, get(second));
-		set(second, temp);
+        if (first == second) {
+            return;
+        }
+        long temp = get(first);
+        set(first, get(second));
+        set(second, temp);
     }
 
     default public LongIterator longIterator() {
@@ -95,7 +99,7 @@ public interface LongList extends LongReversableCollection {
         };
     }
 
-	@Override
+    @Override
     default public void add(long value) {
         addAt(size(), value);
     }
@@ -109,217 +113,217 @@ public interface LongList extends LongReversableCollection {
     }
 
     //algorithms
-	default public int minIndex() {
-		long result = Long.MAX_VALUE;
-	    int size = size();
-	    int at = -1;
-		for (int i = 0; i < size; i++) {
-			long current = get(i);
-			if (current < result) {
-				result = current;
-				at = i;
-			}
-		}
-		return at;
-	}
+    default public int minIndex() {
+        long result = Long.MAX_VALUE;
+        int size = size();
+        int at = -1;
+        for (int i = 0; i < size; i++) {
+            long current = get(i);
+            if (current < result) {
+                result = current;
+                at = i;
+            }
+        }
+        return at;
+    }
 
-	default public int minIndex(LongComparator comparator) {
-		long result = Long.MIN_VALUE;
-	    int size = size();
-	    int at = -1;
-		for (int i = 0; i < size; i++) {
-			long current = get(i);
-			if (result == Long.MIN_VALUE || comparator.compare(result, current) > 0) {
-				result = current;
-				at = i;
-			}
-		}
-		return at;
-	}
+    default public int minIndex(LongComparator comparator) {
+        long result = Long.MIN_VALUE;
+        int size = size();
+        int at = -1;
+        for (int i = 0; i < size; i++) {
+            long current = get(i);
+            if (result == Long.MIN_VALUE || comparator.compare(result, current) > 0) {
+                result = current;
+                at = i;
+            }
+        }
+        return at;
+    }
 
-	default public int maxIndex() {
-		long result = Long.MIN_VALUE;
-	    int size = size();
-	    int at = -1;
-		for (int i = 0; i < size; i++) {
-			long current = get(i);
-			if (current > result) {
-				result = current;
-				at = i;
-			}
-		}
-		return at;
-	}
+    default public int maxIndex() {
+        long result = Long.MIN_VALUE;
+        int size = size();
+        int at = -1;
+        for (int i = 0; i < size; i++) {
+            long current = get(i);
+            if (current > result) {
+                result = current;
+                at = i;
+            }
+        }
+        return at;
+    }
 
-	default public int maxIndex(LongComparator comparator) {
-		long result = Long.MIN_VALUE;
-	    int size = size();
-	    int at = -1;
-		for (int i = 0; i < size; i++) {
-			long current = get(i);
-			if (result == Long.MIN_VALUE || comparator.compare(result, current) < 0) {
-				result = current;
-				at = i;
-			}
-		}
-		return at;
-	}
+    default public int maxIndex(LongComparator comparator) {
+        long result = Long.MIN_VALUE;
+        int size = size();
+        int at = -1;
+        for (int i = 0; i < size; i++) {
+            long current = get(i);
+            if (result == Long.MIN_VALUE || comparator.compare(result, current) < 0) {
+                result = current;
+                at = i;
+            }
+        }
+        return at;
+    }
 
-	default public LongList sort() {
-		sort(LongComparator.DEFAULT);
-		return this;
-	}
+    default public LongList sort() {
+        sort(LongComparator.DEFAULT);
+        return this;
+    }
 
-	default public LongList sort(LongComparator comparator) {
-	    Sorter.sort(this, comparator);
-	    return this;
-	}
+    default public LongList sort(LongComparator comparator) {
+        Sorter.sort(this, comparator);
+        return this;
+    }
 
-	default public int find(long value) {
-	    int size = size();
-	    for (int i = 0; i < size; i++) {
-	        if (get(i) == value) {
-	            return i;
-	        }
-	    }
-	    return -1;
-	}
+    default public int find(long value) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (get(i) == value) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
-	default public int find(LongFilter filter) {
-	    int size = size();
-	    for (int i = 0; i < size; i++) {
-	        if (filter.accept(get(i))) {
-	            return i;
-	        }
-	    }
-	    return -1;
-	}
+    default public int find(LongFilter filter) {
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            if (filter.accept(get(i))) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
-	default public int findLast(long value) {
-	    for (int i = size() - 1; i >= 0; i--) {
-	        if (get(i) == value) {
-	            return i;
-	        }
-	    }
-	    return -1;
-	}
+    default public int findLast(long value) {
+        for (int i = size() - 1; i >= 0; i--) {
+            if (get(i) == value) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
-	default public int findLast(LongFilter filter) {
-	    for (int i = size() - 1; i >= 0; i--) {
-	        if (filter.accept(get(i))) {
-	            return i;
-	        }
-	    }
-	    return -1;
-	}
+    default public int findLast(LongFilter filter) {
+        for (int i = size() - 1; i >= 0; i--) {
+            if (filter.accept(get(i))) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
-	default public boolean nextPermutation() {
-		return nextPermutation(LongComparator.DEFAULT);
-	}
+    default public boolean nextPermutation() {
+        return nextPermutation(LongComparator.DEFAULT);
+    }
 
-	default public boolean nextPermutation(LongComparator comparator) {
-		int size = size();
-		long last = get(size - 1);
-		for (int i = size - 2; i >= 0; i--) {
-			long current = get(i);
-			if (comparator.compare(last, current) > 0) {
-				for (int j = size - 1; j > i; j--) {
-					if (comparator.compare(get(j), current) > 0) {
-						swap(i, j);
-						subList(i + 1, size).inPlaceReverse();
-						return true;
-					}
-				}
-			}
-			last = current;
-		}
-		return false;
-	}
+    default public boolean nextPermutation(LongComparator comparator) {
+        int size = size();
+        long last = get(size - 1);
+        for (int i = size - 2; i >= 0; i--) {
+            long current = get(i);
+            if (comparator.compare(last, current) > 0) {
+                for (int j = size - 1; j > i; j--) {
+                    if (comparator.compare(get(j), current) > 0) {
+                        swap(i, j);
+                        subList(i + 1, size).inPlaceReverse();
+                        return true;
+                    }
+                }
+            }
+            last = current;
+        }
+        return false;
+    }
 
-	default public void inPlaceReverse() {
-	    for (int i = 0, j = size() - 1; i < j; i++, j--) {
-	        swap(i, j);
-	    }
-	}
+    default public void inPlaceReverse() {
+        for (int i = 0, j = size() - 1; i < j; i++, j--) {
+            swap(i, j);
+        }
+    }
 
-	default LongList unique() {
-	    long last = Long.MIN_VALUE;
-	    LongList result = new LongArrayList();
-	    int size = size();
-	    for (int i = 0; i < size; i++) {
-	        long current = get(i);
-	        if (current != last) {
-	            result.add(current);
-	            last = current;
-	        }
-	    }
-	    return result;
-	}
+    default LongList unique() {
+        long last = Long.MIN_VALUE;
+        LongList result = new LongArrayList();
+        int size = size();
+        for (int i = 0; i < size; i++) {
+            long current = get(i);
+            if (current != last) {
+                result.add(current);
+                last = current;
+            }
+        }
+        return result;
+    }
 
-	default int mismatch(LongList l) {
-	    int size = Math.min(size(), l.size());
-	    for (int i = 0; i < size; i++) {
-	        if (get(i) != l.get(i)) {
-	            return i;
-	        }
-	    }
-	    if (size() != l.size()) {
-	        return size;
-	    }
-	    return -1;
-	}
+    default int mismatch(LongList l) {
+        int size = Math.min(size(), l.size());
+        for (int i = 0; i < size; i++) {
+            if (get(i) != l.get(i)) {
+                return i;
+            }
+        }
+        if (size() != l.size()) {
+            return size;
+        }
+        return -1;
+    }
 
-	default int mismatch(DoubleList l, LongDoublePredicate p) {
-	    int size = Math.min(size(), l.size());
-	    for (int i = 0; i < size; i++) {
-	        if (!p.value(get(i), l.get(i))) {
-	            return i;
-	        }
-	    }
-	    if (size() != l.size()) {
-	        return size;
-	    }
-	    return -1;
-	}
+    default int mismatch(DoubleList l, LongDoublePredicate p) {
+        int size = Math.min(size(), l.size());
+        for (int i = 0; i < size; i++) {
+            if (!p.value(get(i), l.get(i))) {
+                return i;
+            }
+        }
+        if (size() != l.size()) {
+            return size;
+        }
+        return -1;
+    }
 
-	default int mismatch(IntList l, LongIntPredicate p) {
-	    int size = Math.min(size(), l.size());
-	    for (int i = 0; i < size; i++) {
-	        if (!p.value(get(i), l.get(i))) {
-	            return i;
-	        }
-	    }
-	    if (size() != l.size()) {
-	        return size;
-	    }
-	    return -1;
-	}
+    default int mismatch(IntList l, LongIntPredicate p) {
+        int size = Math.min(size(), l.size());
+        for (int i = 0; i < size; i++) {
+            if (!p.value(get(i), l.get(i))) {
+                return i;
+            }
+        }
+        if (size() != l.size()) {
+            return size;
+        }
+        return -1;
+    }
 
-	default int mismatch(LongList l, LongLongPredicate p) {
-	    int size = Math.min(size(), l.size());
-	    for (int i = 0; i < size; i++) {
-	        if (!p.value(get(i), l.get(i))) {
-	            return i;
-	        }
-	    }
-	    if (size() != l.size()) {
-	        return size;
-	    }
-	    return -1;
-	}
+    default int mismatch(LongList l, LongLongPredicate p) {
+        int size = Math.min(size(), l.size());
+        for (int i = 0; i < size; i++) {
+            if (!p.value(get(i), l.get(i))) {
+                return i;
+            }
+        }
+        if (size() != l.size()) {
+            return size;
+        }
+        return -1;
+    }
 
-	default int mismatch(CharList l, LongCharPredicate p) {
-	    int size = Math.min(size(), l.size());
-	    for (int i = 0; i < size; i++) {
-	        if (!p.value(get(i), l.get(i))) {
-	            return i;
-	        }
-	    }
-	    if (size() != l.size()) {
-	        return size;
-	    }
-	    return -1;
-	}
+    default int mismatch(CharList l, LongCharPredicate p) {
+        int size = Math.min(size(), l.size());
+        for (int i = 0; i < size; i++) {
+            if (!p.value(get(i), l.get(i))) {
+                return i;
+            }
+        }
+        if (size() != l.size()) {
+            return size;
+        }
+        return -1;
+    }
 
     default LongList fill(long value) {
         int size = size();
@@ -428,18 +432,18 @@ public interface LongList extends LongReversableCollection {
     }
 
     //views
-	default public LongList subList(final int from, final int to) {
-	    return new LongList() {
-    	    private final int shift;
-	        private final int size;
+    default public LongList subList(final int from, final int to) {
+        return new LongList() {
+            private final int shift;
+            private final int size;
 
-	        {
-	            if (from < 0 || from > to || to > LongList.this.size()) {
-	                throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", size = " + size());
-	            }
-	            shift = from;
-	            size = to - from;
-	        }
+            {
+                if (from < 0 || from > to || to > LongList.this.size()) {
+                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", size = " + size());
+                }
+                shift = from;
+                size = to - from;
+            }
 
             public int size() {
                 return size;
@@ -470,6 +474,6 @@ public interface LongList extends LongReversableCollection {
             public LongList compute() {
                 return new LongArrayList(this);
             }
-	    };
-	}
+        };
+    }
 }

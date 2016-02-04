@@ -5,7 +5,7 @@ import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
 
 public class %TaskClass% {
-	public %Signature% {
-		return %DefaultValue%;
-	}
+    public %Signature% {
+        return %DefaultValue%;
+    }
 }

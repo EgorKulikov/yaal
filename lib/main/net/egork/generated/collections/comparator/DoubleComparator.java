@@ -14,7 +14,7 @@ public interface DoubleComparator {
         return 0;
     };
 
-	public static final DoubleComparator REVERSE = (first, second) -> {
+    public static final DoubleComparator REVERSE = (first, second) -> {
         if (first > second) {
             return -1;
         }
@@ -24,5 +24,5 @@ public interface DoubleComparator {
         return 0;
     };
 
-	public int compare(double first, double second);
+    public int compare(double first, double second);
 }

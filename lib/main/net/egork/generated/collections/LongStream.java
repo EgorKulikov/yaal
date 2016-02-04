@@ -9,234 +9,234 @@ import net.egork.generated.collections.list.*;
 import net.egork.generated.collections.comparator.*;
 
 public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
-	//abstract
-	public LongIterator longIterator();
+    //abstract
+    public LongIterator longIterator();
 
-	//base
-	default public Iterator<Long> iterator() {
-		return new Iterator<Long>() {
-			private LongIterator it = longIterator();
+    //base
+    default public Iterator<Long> iterator() {
+        return new Iterator<Long>() {
+            private LongIterator it = longIterator();
 
-			public boolean hasNext() {
-				return it.isValid();
-			}
+            public boolean hasNext() {
+                return it.isValid();
+            }
 
-			public Long next() {
-				long result = it.value();
-				it.advance();
-				return result;
-			}
-		};
-	}
+            public Long next() {
+                long result = it.value();
+                it.advance();
+                return result;
+            }
+        };
+    }
 
-	default public long first() {
-		return longIterator().value();
-	}
+    default public long first() {
+        return longIterator().value();
+    }
 
-	default public LongCollection compute() {
-		return new LongArrayList(this);
-	}
+    default public LongCollection compute() {
+        return new LongArrayList(this);
+    }
 
-	default public int compareTo(LongStream c) {
-		LongIterator it = longIterator();
-		LongIterator jt = c.longIterator();
-		while (it.isValid() && jt.isValid()) {
-			long i = it.value();
-			long j = jt.value();
-			if (i < j) {
-				return -1;
-			} else if (i > j) {
-				return 1;
-			}
-			it.advance();
-			jt.advance();
-		}
-		if (it.isValid()) {
-			return 1;
-		}
-		if (jt.isValid()) {
-			return -1;
-		}
-		return 0;
-	}
-
-	//algorithms
-	default public void forEach(LongTask task) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			task.process(it.value());
+    default public int compareTo(LongStream c) {
+        LongIterator it = longIterator();
+        LongIterator jt = c.longIterator();
+        while (it.isValid() && jt.isValid()) {
+            long i = it.value();
+            long j = jt.value();
+            if (i < j) {
+                return -1;
+            } else if (i > j) {
+                return 1;
+            }
+            it.advance();
+            jt.advance();
         }
-	}
+        if (it.isValid()) {
+            return 1;
+        }
+        if (jt.isValid()) {
+            return -1;
+        }
+        return 0;
+    }
 
-	default public boolean contains(long value) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			if (it.value() == value) {
-				return true;
+    //algorithms
+    default public void forEach(LongTask task) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            task.process(it.value());
+        }
+    }
+
+    default public boolean contains(long value) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            if (it.value() == value) {
+                return true;
             }
-		}
-		return false;
-	}
+        }
+        return false;
+    }
 
-	default public boolean contains(LongFilter filter) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			if (filter.accept(it.value())) {
-				return true;
+    default public boolean contains(LongFilter filter) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            if (filter.accept(it.value())) {
+                return true;
             }
-		}
-		return false;
-	}
+        }
+        return false;
+    }
 
-	default public int count(long value) {
-		int result = 0;
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			if (it.value() == value) {
-				result++;
+    default public int count(long value) {
+        int result = 0;
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            if (it.value() == value) {
+                result++;
             }
-		}
-		return result;
-	}
+        }
+        return result;
+    }
 
-	default public int count(LongFilter filter) {
-		int result = 0;
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			if (filter.accept(it.value())) {
-				result++;
+    default public int count(LongFilter filter) {
+        int result = 0;
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            if (filter.accept(it.value())) {
+                result++;
             }
-		}
-		return result;
-	}
+        }
+        return result;
+    }
 
-	default public long min() {
-		long result = Long.MAX_VALUE;
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			long current = it.value();
-			if (current < result) {
-				result = current;
-			}
-		}
-		return result;
-	}
+    default public long min() {
+        long result = Long.MAX_VALUE;
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            long current = it.value();
+            if (current < result) {
+                result = current;
+            }
+        }
+        return result;
+    }
 
-	default public long min(LongComparator comparator) {
-		long result = Long.MIN_VALUE;
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			long current = it.value();
-			if (result == Long.MIN_VALUE || comparator.compare(result, current) > 0) {
-				result = current;
-			}
-		}
-		return result;
-	}
+    default public long min(LongComparator comparator) {
+        long result = Long.MIN_VALUE;
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            long current = it.value();
+            if (result == Long.MIN_VALUE || comparator.compare(result, current) > 0) {
+                result = current;
+            }
+        }
+        return result;
+    }
 
-	default public long max() {
-		long result = Long.MIN_VALUE;
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			long current = it.value();
-			if (current > result) {
-				result = current;
-			}
-		}
-		return result;
-	}
+    default public long max() {
+        long result = Long.MIN_VALUE;
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            long current = it.value();
+            if (current > result) {
+                result = current;
+            }
+        }
+        return result;
+    }
 
-	default public long max(LongComparator comparator) {
-		long result = Long.MIN_VALUE;
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			long current = it.value();
-			if (result == Long.MIN_VALUE || comparator.compare(result, current) < 0) {
-				result = current;
-			}
-		}
-		return result;
-	}
+    default public long max(LongComparator comparator) {
+        long result = Long.MIN_VALUE;
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            long current = it.value();
+            if (result == Long.MIN_VALUE || comparator.compare(result, current) < 0) {
+                result = current;
+            }
+        }
+        return result;
+    }
 
-	default public long sum() {
-		long result = 0;
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			result += it.value();
-		}
-		return result;
-	}
+    default public long sum() {
+        long result = 0;
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            result += it.value();
+        }
+        return result;
+    }
 
-	default public int[] qty(int bound) {
-		int[] result = new int[bound];
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			result[(int)it.value()]++;
-		}
-		return result;
-	}
+    default public int[] qty(int bound) {
+        int[] result = new int[bound];
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            result[(int) it.value()]++;
+        }
+        return result;
+    }
 
-	default public int[] qty() {
-		return qty((int)(max() + 1));
-	}
+    default public int[] qty() {
+        return qty((int) (max() + 1));
+    }
 
-	default public boolean allOf(LongFilter f) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			if (!f.accept(it.value())) {
-				return false;
-			}
-		}
-		return true;
-	}
+    default public boolean allOf(LongFilter f) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            if (!f.accept(it.value())) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-	default public boolean anyOf(LongFilter f) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			if (f.accept(it.value())) {
-				return true;
-			}
-		}
-		return false;
-	}
+    default public boolean anyOf(LongFilter f) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            if (f.accept(it.value())) {
+                return true;
+            }
+        }
+        return false;
+    }
 
-	default public boolean noneOf(LongFilter f) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			if (f.accept(it.value())) {
-				return false;
-			}
-		}
-		return true;
-	}
+    default public boolean noneOf(LongFilter f) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            if (f.accept(it.value())) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-	default public long reduce(LongLongToLongFunction f) {
-		LongIterator it = longIterator();
-		if (!it.isValid()) {
-			return Long.MIN_VALUE;
-		}
-		long result = it.value();
-		while (it.advance()) {
-			result = f.value(result, it.value());
-		}
-		return result;
-	}
+    default public long reduce(LongLongToLongFunction f) {
+        LongIterator it = longIterator();
+        if (!it.isValid()) {
+            return Long.MIN_VALUE;
+        }
+        long result = it.value();
+        while (it.advance()) {
+            result = f.value(result, it.value());
+        }
+        return result;
+    }
 
-		default public double reduce(double initial, DoubleLongToDoubleFunction f) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			initial = f.value(initial, it.value());
-		}
-		return initial;
-	}
+    default public double reduce(double initial, DoubleLongToDoubleFunction f) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            initial = f.value(initial, it.value());
+        }
+        return initial;
+    }
 
-	default public int reduce(int initial, IntLongToIntFunction f) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			initial = f.value(initial, it.value());
-		}
-		return initial;
-	}
+    default public int reduce(int initial, IntLongToIntFunction f) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            initial = f.value(initial, it.value());
+        }
+        return initial;
+    }
 
-	default public long reduce(long initial, LongLongToLongFunction f) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			initial = f.value(initial, it.value());
-		}
-		return initial;
-	}
+    default public long reduce(long initial, LongLongToLongFunction f) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            initial = f.value(initial, it.value());
+        }
+        return initial;
+    }
 
-	default public char reduce(char initial, CharLongToCharFunction f) {
-		for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
-			initial = f.value(initial, it.value());
-		}
-		return initial;
-	}
+    default public char reduce(char initial, CharLongToCharFunction f) {
+        for (LongIterator it = longIterator(); it.isValid(); it.advance()) {
+            initial = f.value(initial, it.value());
+        }
+        return initial;
+    }
 
-	//views
+    //views
     default public LongStream union(LongStream other) {
         return () -> new LongIterator() {
             private LongIterator first = LongStream.this.longIterator();
@@ -275,29 +275,29 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
         };
     }
 
-	default public LongStream filter(LongFilter f) {
-		return () -> new LongIterator() {
-			private LongIterator it = LongStream.this.longIterator();
+    default public LongStream filter(LongFilter f) {
+        return () -> new LongIterator() {
+            private LongIterator it = LongStream.this.longIterator();
 
-			{
-				next();
-			}
+            {
+                next();
+            }
 
-			private void next() {
-				while (it.isValid() && !f.accept(it.value())) {
-					it.advance();
-				}
-			}
+            private void next() {
+                while (it.isValid() && !f.accept(it.value())) {
+                    it.advance();
+                }
+            }
 
-			public long value() {
-				return it.value();
-			}
+            public long value() {
+                return it.value();
+            }
 
-			public boolean advance() {
-				it.advance();
-				next();
-				return isValid();
-			}
+            public boolean advance() {
+                it.advance();
+                next();
+                return isValid();
+            }
 
             public boolean isValid() {
                 return it.isValid();
@@ -306,11 +306,11 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
             public void remove() {
                 it.remove();
             }
-		};
-	}
+        };
+    }
 
-		default public DoubleStream map(LongToDoubleFunction function) {
-		return () -> new DoubleIterator() {
+    default public DoubleStream map(LongToDoubleFunction function) {
+        return () -> new DoubleIterator() {
             private LongIterator it = LongStream.this.longIterator();
 
             public double value() {
@@ -329,10 +329,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 it.remove();
             }
         };
-	}
+    }
 
-	default public IntStream map(LongToIntFunction function) {
-		return () -> new IntIterator() {
+    default public IntStream map(LongToIntFunction function) {
+        return () -> new IntIterator() {
             private LongIterator it = LongStream.this.longIterator();
 
             public int value() {
@@ -351,10 +351,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 it.remove();
             }
         };
-	}
+    }
 
-	default public LongStream map(LongToLongFunction function) {
-		return () -> new LongIterator() {
+    default public LongStream map(LongToLongFunction function) {
+        return () -> new LongIterator() {
             private LongIterator it = LongStream.this.longIterator();
 
             public long value() {
@@ -373,10 +373,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 it.remove();
             }
         };
-	}
+    }
 
-	default public CharStream map(LongToCharFunction function) {
-		return () -> new CharIterator() {
+    default public CharStream map(LongToCharFunction function) {
+        return () -> new CharIterator() {
             private LongIterator it = LongStream.this.longIterator();
 
             public char value() {
@@ -395,10 +395,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 it.remove();
             }
         };
-	}
+    }
 
-		default public DoubleStream join(DoubleStream other, LongDoubleToDoubleFunction f) {
-		return () -> new DoubleIterator() {
+    default public DoubleStream join(DoubleStream other, LongDoubleToDoubleFunction f) {
+        return () -> new DoubleIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private DoubleIterator jt = other.doubleIterator();
 
@@ -419,10 +419,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public IntStream join(DoubleStream other, LongDoubleToIntFunction f) {
-		return () -> new IntIterator() {
+    default public IntStream join(DoubleStream other, LongDoubleToIntFunction f) {
+        return () -> new IntIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private DoubleIterator jt = other.doubleIterator();
 
@@ -443,10 +443,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public LongStream join(DoubleStream other, LongDoubleToLongFunction f) {
-		return () -> new LongIterator() {
+    default public LongStream join(DoubleStream other, LongDoubleToLongFunction f) {
+        return () -> new LongIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private DoubleIterator jt = other.doubleIterator();
 
@@ -467,10 +467,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public CharStream join(DoubleStream other, LongDoubleToCharFunction f) {
-		return () -> new CharIterator() {
+    default public CharStream join(DoubleStream other, LongDoubleToCharFunction f) {
+        return () -> new CharIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private DoubleIterator jt = other.doubleIterator();
 
@@ -491,10 +491,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public DoubleStream join(IntStream other, LongIntToDoubleFunction f) {
-		return () -> new DoubleIterator() {
+    default public DoubleStream join(IntStream other, LongIntToDoubleFunction f) {
+        return () -> new DoubleIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private IntIterator jt = other.intIterator();
 
@@ -515,10 +515,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public IntStream join(IntStream other, LongIntToIntFunction f) {
-		return () -> new IntIterator() {
+    default public IntStream join(IntStream other, LongIntToIntFunction f) {
+        return () -> new IntIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private IntIterator jt = other.intIterator();
 
@@ -539,10 +539,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public LongStream join(IntStream other, LongIntToLongFunction f) {
-		return () -> new LongIterator() {
+    default public LongStream join(IntStream other, LongIntToLongFunction f) {
+        return () -> new LongIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private IntIterator jt = other.intIterator();
 
@@ -563,10 +563,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public CharStream join(IntStream other, LongIntToCharFunction f) {
-		return () -> new CharIterator() {
+    default public CharStream join(IntStream other, LongIntToCharFunction f) {
+        return () -> new CharIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private IntIterator jt = other.intIterator();
 
@@ -587,10 +587,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public DoubleStream join(LongStream other, LongLongToDoubleFunction f) {
-		return () -> new DoubleIterator() {
+    default public DoubleStream join(LongStream other, LongLongToDoubleFunction f) {
+        return () -> new DoubleIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private LongIterator jt = other.longIterator();
 
@@ -611,10 +611,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public IntStream join(LongStream other, LongLongToIntFunction f) {
-		return () -> new IntIterator() {
+    default public IntStream join(LongStream other, LongLongToIntFunction f) {
+        return () -> new IntIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private LongIterator jt = other.longIterator();
 
@@ -635,10 +635,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public LongStream join(LongStream other, LongLongToLongFunction f) {
-		return () -> new LongIterator() {
+    default public LongStream join(LongStream other, LongLongToLongFunction f) {
+        return () -> new LongIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private LongIterator jt = other.longIterator();
 
@@ -659,10 +659,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public CharStream join(LongStream other, LongLongToCharFunction f) {
-		return () -> new CharIterator() {
+    default public CharStream join(LongStream other, LongLongToCharFunction f) {
+        return () -> new CharIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private LongIterator jt = other.longIterator();
 
@@ -683,10 +683,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public DoubleStream join(CharStream other, LongCharToDoubleFunction f) {
-		return () -> new DoubleIterator() {
+    default public DoubleStream join(CharStream other, LongCharToDoubleFunction f) {
+        return () -> new DoubleIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private CharIterator jt = other.charIterator();
 
@@ -707,10 +707,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public IntStream join(CharStream other, LongCharToIntFunction f) {
-		return () -> new IntIterator() {
+    default public IntStream join(CharStream other, LongCharToIntFunction f) {
+        return () -> new IntIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private CharIterator jt = other.charIterator();
 
@@ -731,10 +731,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public LongStream join(CharStream other, LongCharToLongFunction f) {
-		return () -> new LongIterator() {
+    default public LongStream join(CharStream other, LongCharToLongFunction f) {
+        return () -> new LongIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private CharIterator jt = other.charIterator();
 
@@ -755,10 +755,10 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 
-	default public CharStream join(CharStream other, LongCharToCharFunction f) {
-		return () -> new CharIterator() {
+    default public CharStream join(CharStream other, LongCharToCharFunction f) {
+        return () -> new CharIterator() {
             private LongIterator it = LongStream.this.longIterator();
             private CharIterator jt = other.charIterator();
 
@@ -779,5 +779,5 @@ public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
                 jt.remove();
             }
         };
-	}
+    }
 }

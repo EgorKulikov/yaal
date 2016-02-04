@@ -8,8 +8,8 @@ public abstract class ArrayBasedIntervalTree extends LongIntervalTree {
 
     protected ArrayBasedIntervalTree(long[] array) {
         super(array.length, false);
-		this.array = array;
-		init();
+        this.array = array;
+        init();
     }
 
     @Override

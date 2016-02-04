@@ -8,5 +8,6 @@ public interface IntQueue extends IntCollection {
     }
 
     public int peek();
+
     public int poll();
 }

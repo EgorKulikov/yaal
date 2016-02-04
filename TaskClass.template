@@ -9,6 +9,6 @@ import static java.lang.Math.*;
 import static java.util.Arrays.*;
 
 public class %TaskClass% {
-	public void solve(int testNumber, %InputClass% in, %OutputClass% out) {
-	}
+    public void solve(int testNumber, %InputClass% in, %OutputClass% out) {
+    }
 }

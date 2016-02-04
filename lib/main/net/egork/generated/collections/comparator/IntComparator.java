@@ -14,7 +14,7 @@ public interface IntComparator {
         return 0;
     };
 
-	public static final IntComparator REVERSE = (first, second) -> {
+    public static final IntComparator REVERSE = (first, second) -> {
         if (first > second) {
             return -1;
         }
@@ -24,5 +24,5 @@ public interface IntComparator {
         return 0;
     };
 
-	public int compare(int first, int second);
+    public int compare(int first, int second);
 }

@@ -8,5 +8,6 @@ public interface DoubleQueue extends DoubleCollection {
     }
 
     public double peek();
+
     public double poll();
 }

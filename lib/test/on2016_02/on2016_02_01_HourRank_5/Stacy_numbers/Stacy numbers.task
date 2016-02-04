@@ -1,0 +1,37 @@
+13 Stacy numbers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+21 5 5
+12012
+1
+4
+6
+8
+12
+
+15 0
+2
+12
+20
+2012
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+60 on2016_02.on2016_02_01_HourRank_5.Stacy_numbers.StacyNumbers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.01
+10 HourRank 5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

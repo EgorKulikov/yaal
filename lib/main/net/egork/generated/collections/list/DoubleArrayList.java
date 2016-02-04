@@ -25,7 +25,7 @@ public class DoubleArrayList extends DoubleAbstractStream implements DoubleList 
     public DoubleArrayList(DoubleStream c) {
         this();
         if (c instanceof DoubleCollection) {
-            ensureCapacity(((DoubleCollection)c).size());
+            ensureCapacity(((DoubleCollection) c).size());
         }
         addAll(c);
     }

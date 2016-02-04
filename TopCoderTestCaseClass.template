@@ -8,11 +8,11 @@ import java.util.*;
 public class %TestCaseClass% {
     @TestCase
     public Collection<NewTopCoderTest> createTests() {
-		List<NewTopCoderTest> tests = new ArrayList<NewTopCoderTest>();
+        List<NewTopCoderTest> tests = new ArrayList<NewTopCoderTest>();
         return tests;
     }
 
-	private NewTopCoderTest createTest(Object answer, Object...arguments) {
-		return new NewTopCoderTest(arguments, answer);
-	}
+    private NewTopCoderTest createTest(Object answer, Object...arguments) {
+        return new NewTopCoderTest(arguments, answer);
+    }
 }

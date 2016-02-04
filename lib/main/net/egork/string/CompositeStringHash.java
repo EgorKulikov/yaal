@@ -9,18 +9,19 @@ public class CompositeStringHash extends AbstractStringHash {
     private static long[] firstPower = new long[0];
     private static long[] secondPower = new long[0];
 
-	private final StringHash first;
-	private final StringHash second;
+    private final StringHash first;
+    private final StringHash second;
 
-	public CompositeStringHash(StringHash first, StringHash second) {
-		this.first = first;
-		this.second = second;
+    public CompositeStringHash(StringHash first, StringHash second) {
+        this.first = first;
+        this.second = second;
         ensureCapacity(first.length() + 1);
     }
 
     private void ensureCapacity(int length) {
-        if (firstPower.length >= length)
+        if (firstPower.length >= length) {
             return;
+        }
         length = Math.max(length + 1, firstPower.length << 1);
         long[] oldFirst = firstPower;
         long[] oldSecond = secondPower;
@@ -35,12 +36,12 @@ public class CompositeStringHash extends AbstractStringHash {
         }
     }
 
-	public long hash(int from, int to) {
+    public long hash(int from, int to) {
         long firstFirst;
         long firstSecond;
         long secondFirst;
         long secondSecond;
-		if (to <= first.length()) {
+        if (to <= first.length()) {
             secondFirst = 0;
             secondSecond = 0;
         } else {
@@ -48,7 +49,7 @@ public class CompositeStringHash extends AbstractStringHash {
             secondFirst = value >>> 32;
             secondSecond = value & ((1L << 32) - 1);
         }
-		if (from >= first.length()) {
+        if (from >= first.length()) {
             firstFirst = 0;
             firstSecond = 0;
         } else {
@@ -57,10 +58,10 @@ public class CompositeStringHash extends AbstractStringHash {
             firstSecond = value & ((1L << 32) - 1);
         }
         return (((firstFirst + secondFirst * firstPower[Math.max(0, first.length() - from)]) % FIRST_MOD) << 32) +
-            ((firstSecond + secondSecond * secondPower[Math.max(0, first.length() - from)]) % SECOND_MOD);
-	}
+                ((firstSecond + secondSecond * secondPower[Math.max(0, first.length() - from)]) % SECOND_MOD);
+    }
 
-	public int length() {
-		return first.length() + second.length();
-	}
+    public int length() {
+        return first.length() + second.length();
+    }
 }

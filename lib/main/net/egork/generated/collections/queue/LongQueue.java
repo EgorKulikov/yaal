@@ -8,5 +8,6 @@ public interface LongQueue extends LongCollection {
     }
 
     public long peek();
+
     public long poll();
 }

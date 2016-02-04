@@ -4,7 +4,8 @@ package net.egork.generated.collections.comparator;
  * @author Egor Kulikov
  */
 public class ReverseComparators {
-    private ReverseComparators() {}
+    private ReverseComparators() {
+    }
 
     public static DoubleComparator reverse(final DoubleComparator comparator) {
         return new DoubleComparator() {

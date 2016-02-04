@@ -14,7 +14,7 @@ public interface LongComparator {
         return 0;
     };
 
-	public static final LongComparator REVERSE = (first, second) -> {
+    public static final LongComparator REVERSE = (first, second) -> {
         if (first > second) {
             return -1;
         }
@@ -24,5 +24,5 @@ public interface LongComparator {
         return 0;
     };
 
-	public int compare(long first, long second);
+    public int compare(long first, long second);
 }
