@@ -1,0 +1,40 @@
+23 C - Freelancer's Dreams
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+20 3 20 20
+6 2
+1 3
+2 6
+
+18 5.000000000000000
+
+1
+1
+22 4 1 1
+2 3
+3 2
+2 3
+3 2
+
+18 0.400000000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+83 on2015_12.on2015_12_09_Codeforces_Round__335__Div__1_.C___Freelancer_s_Dreams.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2015.12.09
+30 Codeforces Round #335 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

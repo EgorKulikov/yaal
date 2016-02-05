@@ -93,7 +93,7 @@ public class Matrix {
     }
 
     private static void sumPowers(long[] matrix, long[] result, long[] power, long[] temp, long[] temp2, long exponent,
-            long mod, int side) {
+                                  long mod, int side) {
         if (exponent == 0) {
             for (int i = 0; i < matrix.length; i += side + 1) {
                 power[i] = 1 % mod;

@@ -1,0 +1,28 @@
+11 A - Bad Key
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+10 4
+4 1 4 8
+
+4 2 4
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+54 on2016_01.on2016_01_10_SNWS_2016__R1.A___Bad_Key.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.10
+13 SNWS 2016, R1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

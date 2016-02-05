@@ -1,9 +1,10 @@
 package net.egork.generated.collections.list;
 
-import java.util.Arrays;
+import net.egork.generated.collections.DoubleAbstractStream;
+import net.egork.generated.collections.DoubleCollection;
+import net.egork.generated.collections.DoubleStream;
 
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.iterator.*;
+import java.util.Arrays;
 
 public class DoubleArrayList extends DoubleAbstractStream implements DoubleList {
     private int size;

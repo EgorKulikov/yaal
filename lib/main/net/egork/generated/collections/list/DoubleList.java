@@ -1,11 +1,14 @@
 package net.egork.generated.collections.list;
 
-import java.util.NoSuchElementException;
-
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.iterator.*;
-import net.egork.generated.collections.function.*;
-import net.egork.generated.collections.comparator.*;
+import net.egork.generated.collections.DoubleReversableCollection;
+import net.egork.generated.collections.comparator.DoubleComparator;
+import net.egork.generated.collections.function.DoubleCharPredicate;
+import net.egork.generated.collections.function.DoubleDoublePredicate;
+import net.egork.generated.collections.function.DoubleFilter;
+import net.egork.generated.collections.function.DoubleIntPredicate;
+import net.egork.generated.collections.function.DoubleLongPredicate;
+import net.egork.generated.collections.function.IntToDoubleFunction;
+import net.egork.generated.collections.iterator.DoubleIterator;
 
 /**
  * @author Egor Kulikov

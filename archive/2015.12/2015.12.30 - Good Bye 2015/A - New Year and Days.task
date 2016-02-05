@@ -1,0 +1,33 @@
+21 A - New Year and Days
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+10 4 of week
+
+3 52
+
+1
+1
+12 30 of month
+
+3 11
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.30
+13 Good Bye 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

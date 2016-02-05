@@ -1,6 +1,6 @@
 package net.egork.generated.collections.set;
 
-import net.egork.generated.collections.*;
+import net.egork.generated.collections.IntCollection;
 
 public interface IntSet extends IntCollection {
     @Override

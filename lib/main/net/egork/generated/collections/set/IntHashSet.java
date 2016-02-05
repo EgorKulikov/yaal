@@ -1,10 +1,11 @@
 package net.egork.generated.collections.set;
 
+import net.egork.generated.collections.IntAbstractStream;
+import net.egork.generated.collections.IntCollection;
+import net.egork.generated.collections.hashing.IntHash;
+import net.egork.generated.collections.iterator.IntIterator;
+import net.egork.generated.collections.list.IntArray;
 import net.egork.numbers.IntegerUtils;
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.hashing.*;
-import net.egork.generated.collections.iterator.*;
-import net.egork.generated.collections.list.*;
 
 import java.util.NoSuchElementException;
 import java.util.Random;

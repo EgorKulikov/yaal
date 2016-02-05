@@ -1,0 +1,50 @@
+37 E - Exploring the Grand Canyon Online
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+52 4
+2 2
+6 2
+6 8
+2 8
+3
+1.00 1.00
+10.00 10.00
+2.00 9.00
+
+9 14.04329
+
+1
+1
+54 5
+1 1
+9 1
+9 9
+5 5
+1 9
+3
+0.00 0.00
+5.40 5.90
+5.90 0.00
+
+9 16.00809
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+80 on2016_01.on2016_01_16_SNWS_2016__R2.E___Exploring_the_Grand_Canyon_Online.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-5
+0
+10 2016.01.16
+13 SNWS 2016, R2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

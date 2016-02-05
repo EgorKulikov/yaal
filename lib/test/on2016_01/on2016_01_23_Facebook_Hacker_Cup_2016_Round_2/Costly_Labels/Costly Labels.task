@@ -1,0 +1,62 @@
+13 Costly Labels
+6 SINGLE
+12 LOCAL_REGEXP
+22 costly.*labels.*[.]txt
+6 CUSTOM
+16 costlylabels.out
+1
+0
+137 5
+1 1 1
+111
+3 1 8
+1
+2
+4
+1 2
+2 3
+3 2 10
+4 7
+8 9
+2 3
+1 2
+2 3
+4 2 99
+0 1
+0 1
+0 1
+0 0
+4 1
+2 4
+4 3
+4 3 99
+0 1 0
+0 1 0
+0 1 0
+0 0 0
+4 1
+2 4
+4 3
+
+60 Case #1: 111
+Case #2: 15
+Case #3: 15
+Case #4: 99
+Case #5: 1
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+82 on2016_01.on2016_01_23_Facebook_Hacker_Cup_2016_Round_2.Costly_Labels.CostlyLabels
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+90 on2016_01.on2016_01_23_Facebook_Hacker_Cup_2016_Round_2.Costly_Labels.CostlyLabelsTestCase
+10 2016.01.23
+32 Facebook Hacker Cup 2016 Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

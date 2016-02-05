@@ -1,0 +1,35 @@
+33 D - New Year and Ancient Prophecy
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+9 6
+123434
+
+2 8
+
+1
+1
+11 8
+20152016
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+76 on2015_12.on2015_12_30_Good_Bye_2015.D___New_Year_and_Ancient_Prophecy.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.30
+13 Good Bye 2015
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

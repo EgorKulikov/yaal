@@ -77,7 +77,7 @@ public abstract class LongIntervalTree extends IntervalTree {
 
     @Override
     protected long queryPostProcess(int root, int left, int right, int from, int to, int middle, long leftResult,
-            long rightResult) {
+                                    long rightResult) {
         return joinValue(leftResult, rightResult);
     }
 

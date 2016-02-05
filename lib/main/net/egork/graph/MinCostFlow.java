@@ -90,7 +90,7 @@ public class MinCostFlow {
     }
 
     public static Pair<Long, Long> minCostMaxFlow(Graph graph, int source, int destination, boolean hasNegativeEdges,
-            long maxFlow) {
+                                                  long maxFlow) {
         return new MinCostFlow(graph, source, destination, hasNegativeEdges).minCostMaxFlow(maxFlow);
     }
 

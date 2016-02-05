@@ -1,0 +1,56 @@
+17 E - Encrypted Map
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+14 2 2 3
+2 4
+2 4
+
+14 Multiple Maps
+
+1
+1
+16 2 3 2
+1 3
+3 1 0
+
+12 1 0 0
+2 1 0
+
+1
+2
+14 2 2 5
+3 4
+4 2
+
+13 Good Morning
+
+1
+3
+16 3 2 2
+3 1 0
+1 3
+
+12 1 2
+0 1
+0 0
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+60 on2016_01.on2016_01_31_SNWS_2016__R4.E___Encrypted_Map.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.31
+13 SNWS 2016, R4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

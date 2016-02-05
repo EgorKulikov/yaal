@@ -1,9 +1,10 @@
 package net.egork.generated.collections.list;
 
-import java.util.Arrays;
+import net.egork.generated.collections.LongAbstractStream;
+import net.egork.generated.collections.LongCollection;
+import net.egork.generated.collections.LongStream;
 
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.iterator.*;
+import java.util.Arrays;
 
 public class LongArrayList extends LongAbstractStream implements LongList {
     private int size;

@@ -1,9 +1,10 @@
 package net.egork.generated.collections.list;
 
-import java.util.Arrays;
+import net.egork.generated.collections.IntAbstractStream;
+import net.egork.generated.collections.IntCollection;
+import net.egork.generated.collections.IntStream;
 
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.iterator.*;
+import java.util.Arrays;
 
 public class IntArrayList extends IntAbstractStream implements IntList {
     private int size;

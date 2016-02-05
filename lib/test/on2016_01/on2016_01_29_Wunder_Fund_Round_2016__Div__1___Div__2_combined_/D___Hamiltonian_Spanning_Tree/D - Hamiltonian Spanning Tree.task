@@ -1,0 +1,41 @@
+29 D - Hamiltonian Spanning Tree
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+22 5 2 3
+1 2
+1 3
+3 4
+5 3
+
+2 9
+
+1
+1
+22 5 3 2
+1 2
+1 3
+3 4
+5 3
+
+2 8
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+108 on2016_01.on2016_01_29_Wunder_Fund_Round_2016__Div__1___Div__2_combined_.D___Hamiltonian_Spanning_Tree.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.29
+49 Wunder Fund Round 2016 (Div. 1 + Div. 2 combined)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

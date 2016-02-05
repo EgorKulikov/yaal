@@ -32,8 +32,8 @@ public class IntIntPair implements Comparable<IntIntPair> {
 
     @Override
     public int hashCode() {
-        int result = Integer.hashCode(first);
-        result = 31 * result + Integer.hashCode(second);
+        int result = first;
+        result = 31 * result + second;
         return result;
     }
 

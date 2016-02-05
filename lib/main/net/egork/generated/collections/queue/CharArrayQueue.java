@@ -1,7 +1,8 @@
 package net.egork.generated.collections.queue;
 
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.iterator.*;
+import net.egork.generated.collections.CharCollection;
+import net.egork.generated.collections.CharStream;
+import net.egork.generated.collections.iterator.CharIterator;
 
 import java.util.NoSuchElementException;
 

@@ -1,0 +1,46 @@
+20 Boomerang Decoration
+6 SINGLE
+12 LOCAL_REGEXP
+29 boomerang.*decoration.*[.]txt
+6 CUSTOM
+23 boomerangdecoration.out
+1
+0
+97 5
+3
+ABC
+ABC
+3
+ABC
+CBA
+3
+ABC
+BAC
+9
+FOXENRULE
+NOREAALLY
+19
+DOYOULIKEBOOMERANGS
+OOBOOOOVVBOOEAAAGGS
+
+55 Case #1: 0
+Case #2: 1
+Case #3: 2
+Case #4: 3
+Case #5: 4
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+29 net.egork.BoomerangDecoration
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.23
+32 Facebook Hacker Cup 2016 Round 2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

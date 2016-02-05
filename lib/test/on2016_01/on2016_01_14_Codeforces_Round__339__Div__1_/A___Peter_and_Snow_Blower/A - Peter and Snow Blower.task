@@ -1,0 +1,40 @@
+25 A - Peter and Snow Blower
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+19 3 0 0
+0 1
+-1 2
+1 2
+
+22 12.566370614359172464
+
+1
+1
+23 4 1 -1
+0 0
+1 2
+2 0
+1 1
+
+22 21.991148575128551812
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+85 on2016_01.on2016_01_14_Codeforces_Round__339__Div__1_.A___Peter_and_Snow_Blower.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.01.14
+30 Codeforces Round #339 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

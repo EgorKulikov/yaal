@@ -1,7 +1,5 @@
 package net.egork.string;
 
-import net.egork.numbers.IntegerUtils;
-
 /**
  * @author Egor Kulikov (egor@egork.net)
  */

@@ -1,0 +1,41 @@
+23 Coding Contest Creation
+6 SINGLE
+12 LOCAL_REGEXP
+33 coding.*contest.*creation.*[.]txt
+6 CUSTOM
+25 codingcontestcreation.out
+1
+0
+99 5
+4
+10 15 25 30
+4
+15 20 25 40
+3
+3 3 3
+8
+60 90 61 62 63 91 92 93
+11
+5 14 30 32 39 46 47 47 30 58 47
+
+55 Case #1: 0
+Case #2: 4
+Case #3: 9
+Case #4: 4
+Case #5: 9
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+31 net.egork.CodingContestCreation
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.16
+32 Facebook Hacker Cup 2016 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0
