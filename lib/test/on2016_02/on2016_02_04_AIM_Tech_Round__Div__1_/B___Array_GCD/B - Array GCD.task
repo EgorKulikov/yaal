@@ -1,0 +1,43 @@
+13 B - Array GCD
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+12 3 1 4
+4 2 3
+
+2 1
+
+1
+1
+18 5 3 2
+5 17 13 5 6
+
+2 8
+
+1
+2
+23 8 3 4
+3 7 5 4 3 12 9 4
+
+3 13
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+66 on2016_02.on2016_02_04_AIM_Tech_Round__Div__1_.B___Array_GCD.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+74 on2016_02.on2016_02_04_AIM_Tech_Round__Div__1_.B___Array_GCD.TaskBTestCase
+10 2016.02.04
+23 AIM Tech Round (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

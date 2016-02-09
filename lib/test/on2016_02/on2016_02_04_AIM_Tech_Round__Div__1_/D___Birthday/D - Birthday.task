@@ -1,0 +1,36 @@
+12 D - Birthday
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 2
+50 50
+
+13 5.0000000000
+
+1
+1
+14 4
+50 20 20 10
+
+14 39.2846263444
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+65 on2016_02.on2016_02_04_AIM_Tech_Round__Div__1_.D___Birthday.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+1
+73 on2016_02.on2016_02_04_AIM_Tech_Round__Div__1_.D___Birthday.TaskDTestCase
+10 2016.02.04
+23 AIM Tech Round (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

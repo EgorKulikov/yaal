@@ -1,0 +1,29 @@
+21 F - Find The Treasure
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 0 0
+1 0
+0 1
+
+24 0.292893219 0.292893219
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+64 on2016_02.on2016_02_03_SNWS_2016__R5.F___Find_The_Treasure.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.02.03
+13 SNWS 2016, R5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

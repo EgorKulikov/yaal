@@ -1,0 +1,47 @@
+20 A - Graph and String
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+8 2 1
+1 2
+
+7 Yes
+aa
+
+1
+1
+16 4 3
+1 2
+1 3
+1 4
+
+3 No
+
+1
+2
+12 3 2
+1 2
+2 3
+
+8 Yes
+abc
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+73 on2016_02.on2016_02_04_AIM_Tech_Round__Div__1_.A___Graph_and_String.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.04
+23 AIM Tech Round (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
