@@ -1,9 +1,6 @@
 package net.egork.generated.collections.list;
 
-import java.util.Arrays;
-
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.iterator.*;
+import net.egork.generated.collections.CharAbstractStream;
 
 public class CharArray extends CharAbstractStream implements CharList {
     private char[] data;

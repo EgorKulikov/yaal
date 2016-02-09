@@ -1,0 +1,32 @@
+14 Build a String
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+34 2
+9 4 5
+aabaacaba
+9 8 9
+bacbacacb
+
+6 26
+42
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+67 on2016_01.on2016_01_30_World_CodeSprint.Build_a_String.BuildAString
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.30
+16 World CodeSprint
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

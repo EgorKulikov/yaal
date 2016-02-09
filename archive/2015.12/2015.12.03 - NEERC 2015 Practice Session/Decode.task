@@ -1,0 +1,27 @@
+6 Decode
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+1
+0
+63 05262C5269143F314C2A69651A264B
+610728413B63072C52222169720B425E
+33 41434D2049435043204E454552432732
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+16 net.egork.Decode
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.03
+27 NEERC 2015 Practice Session
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

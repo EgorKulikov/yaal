@@ -34,7 +34,7 @@ public abstract class IntervalTree {
     protected abstract void updateFull(int root, int left, int right, int from, int to, long delta);
 
     protected abstract long queryPostProcess(int root, int left, int right, int from, int to, int middle,
-            long leftResult, long rightResult);
+                                             long leftResult, long rightResult);
 
     protected abstract void queryPreProcess(int root, int left, int right, int from, int to, int middle);
 

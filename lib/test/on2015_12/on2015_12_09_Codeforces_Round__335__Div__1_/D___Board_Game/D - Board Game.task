@@ -1,0 +1,40 @@
+14 D - Board Game
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+34 4
+0 0 3 4
+2 2 5 3
+4 1 1 7
+5 3 8 8
+
+8 3
+1 2 4
+
+1
+1
+36 2
+0 0 4 6
+5 1 1000000000 1000000000
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+74 on2015_12.on2015_12_09_Codeforces_Round__335__Div__1_.D___Board_Game.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.09
+30 Codeforces Round #335 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

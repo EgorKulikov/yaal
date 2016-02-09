@@ -1,0 +1,41 @@
+8 Yachtzee
+6 SINGLE
+12 LOCAL_REGEXP
+16 yachtzee.*[.]txt
+6 CUSTOM
+12 yachtzee.out
+1
+0
+84 5
+1 5 8
+2
+1 0 777777777
+7
+1 777777 7777777
+777777777
+2 9 20
+8 2
+5 40 140
+4 9 1 12 7
+
+111 Case #1: 1.166666667
+Case #2: 3.500000000
+Case #3: 4277777.000000000
+Case #4: 3.227272727
+Case #5: 4.400000000
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+18 net.egork.Yachtzee
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.01.16
+32 Facebook Hacker Cup 2016 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

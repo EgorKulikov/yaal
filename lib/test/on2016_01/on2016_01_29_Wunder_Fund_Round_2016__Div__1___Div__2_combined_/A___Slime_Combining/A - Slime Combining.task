@@ -1,0 +1,45 @@
+19 A - Slime Combining
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+2 1
+
+2 1
+
+1
+1
+2 2
+
+2 2
+
+1
+2
+2 3
+
+4 2 1
+
+1
+3
+2 8
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+98 on2016_01.on2016_01_29_Wunder_Fund_Round_2016__Div__1___Div__2_combined_.A___Slime_Combining.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.29
+49 Wunder Fund Round 2016 (Div. 1 + Div. 2 combined)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

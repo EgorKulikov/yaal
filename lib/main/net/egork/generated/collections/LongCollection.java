@@ -1,12 +1,6 @@
 package net.egork.generated.collections;
 
-import java.util.NoSuchElementException;
-import java.util.Iterator;
-
-import net.egork.generated.collections.iterator.*;
-import net.egork.generated.collections.list.*;
-import net.egork.generated.collections.function.*;
-import net.egork.generated.collections.comparator.*;
+import net.egork.generated.collections.iterator.LongIterator;
 
 /**
  * @author Egor Kulikov

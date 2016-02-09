@@ -2,7 +2,10 @@ package net.egork.collections.set;
 
 import net.egork.collections.map.EHashMap;
 
-import java.util.*;
+import java.util.AbstractSet;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * @author egor@egork.net

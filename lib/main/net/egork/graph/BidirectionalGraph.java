@@ -40,7 +40,7 @@ public class BidirectionalGraph extends Graph {
     }
 
     public static BidirectionalGraph createFlowWeightedGraph(int vertexCount, int[] from, int[] to, long[] weight,
-            long[] capacity) {
+                                                             long[] capacity) {
         BidirectionalGraph graph = new BidirectionalGraph(vertexCount, from.length * 2);
         for (int i = 0; i < from.length; i++) {
             graph.addFlowWeightedEdge(from[i], to[i], weight[i], capacity[i]);

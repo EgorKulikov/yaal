@@ -1,0 +1,43 @@
+4 Coin
+6 SINGLE
+7 TASK_ID
+9 input.txt
+7 TASK_ID
+10 output.txt
+2
+0
+31 5 3
+2 1 2 3 4
+<
+1 1 4
+=
+1 2 5
+=
+1 3
+1
+1
+51 6 4
+3 1 2 3 4 5 6
+<
+1 1 2
+=
+2 1 3 4 5
+<
+2 4 5 2 6
+>
+1 0
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+60 on2015_12.on2015_12_03_NEERC_2015_Practice_Session.Coin.Coin
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2015.12.03
+27 NEERC 2015 Practice Session
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

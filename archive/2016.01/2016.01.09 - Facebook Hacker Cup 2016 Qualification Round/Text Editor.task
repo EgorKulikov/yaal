@@ -1,0 +1,58 @@
+11 Text Editor
+6 SINGLE
+12 LOCAL_REGEXP
+20 text.*editor.*[.]txt
+6 CUSTOM
+14 texteditor.out
+1
+0
+119 5
+3 3
+x
+y
+z
+2 1
+loooong
+tiny
+4 3
+fff
+fffff
+ff
+ffff
+5 3
+a
+hair
+box
+awesome
+hail
+8 6
+fox
+of
+xfox
+foo
+foxxx
+off
+foff
+foox
+
+58 Case #1: 9
+Case #2: 9
+Case #3: 11
+Case #4: 15
+Case #5: 26
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+20 net.egork.TextEditor
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.09
+44 Facebook Hacker Cup 2016 Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

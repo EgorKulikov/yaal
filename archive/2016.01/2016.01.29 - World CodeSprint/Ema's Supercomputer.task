@@ -1,0 +1,44 @@
+19 Ema's Supercomputer
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+39 5 6
+GGGGGG
+GBBBGB
+GGGGGG
+GGBBGB
+GGGGGG
+
+2 5
+
+1
+1
+46 6 6
+BGBBGB
+GGGGGG
+BGBBGB
+GGGGGG
+BGBBGB
+BGBBGB
+
+3 25
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+27 net.egork.EmasSupercomputer
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.29
+16 World CodeSprint
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

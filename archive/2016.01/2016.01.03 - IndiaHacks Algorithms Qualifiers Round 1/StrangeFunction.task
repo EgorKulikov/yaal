@@ -1,0 +1,26 @@
+15 StrangeFunction
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+11 4 2
+4 3 1 7
+2 35
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+25 net.egork.StrangeFunction
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.03
+40 IndiaHacks Algorithms Qualifiers Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

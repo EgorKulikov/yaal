@@ -1,6 +1,6 @@
 package net.egork.generated.collections;
 
-import net.egork.generated.collections.iterator.*;
+import net.egork.generated.collections.iterator.DoubleIterator;
 
 public interface DoubleReversableCollection extends DoubleCollection {
     //abstract

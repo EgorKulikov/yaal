@@ -1,6 +1,6 @@
 package net.egork.generated.collections;
 
-import net.egork.generated.collections.iterator.*;
+import net.egork.generated.collections.iterator.IntIterator;
 
 public abstract class IntAbstractStream implements IntStream {
     //base

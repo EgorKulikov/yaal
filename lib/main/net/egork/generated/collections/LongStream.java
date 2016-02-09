@@ -1,12 +1,39 @@
 package net.egork.generated.collections;
 
-import java.util.NoSuchElementException;
-import java.util.Iterator;
+import net.egork.generated.collections.comparator.LongComparator;
+import net.egork.generated.collections.function.CharLongToCharFunction;
+import net.egork.generated.collections.function.DoubleLongToDoubleFunction;
+import net.egork.generated.collections.function.IntLongToIntFunction;
+import net.egork.generated.collections.function.LongCharToCharFunction;
+import net.egork.generated.collections.function.LongCharToDoubleFunction;
+import net.egork.generated.collections.function.LongCharToIntFunction;
+import net.egork.generated.collections.function.LongCharToLongFunction;
+import net.egork.generated.collections.function.LongDoubleToCharFunction;
+import net.egork.generated.collections.function.LongDoubleToDoubleFunction;
+import net.egork.generated.collections.function.LongDoubleToIntFunction;
+import net.egork.generated.collections.function.LongDoubleToLongFunction;
+import net.egork.generated.collections.function.LongFilter;
+import net.egork.generated.collections.function.LongIntToCharFunction;
+import net.egork.generated.collections.function.LongIntToDoubleFunction;
+import net.egork.generated.collections.function.LongIntToIntFunction;
+import net.egork.generated.collections.function.LongIntToLongFunction;
+import net.egork.generated.collections.function.LongLongToCharFunction;
+import net.egork.generated.collections.function.LongLongToDoubleFunction;
+import net.egork.generated.collections.function.LongLongToIntFunction;
+import net.egork.generated.collections.function.LongLongToLongFunction;
+import net.egork.generated.collections.function.LongTask;
+import net.egork.generated.collections.function.LongToCharFunction;
+import net.egork.generated.collections.function.LongToDoubleFunction;
+import net.egork.generated.collections.function.LongToIntFunction;
+import net.egork.generated.collections.function.LongToLongFunction;
+import net.egork.generated.collections.iterator.CharIterator;
+import net.egork.generated.collections.iterator.DoubleIterator;
+import net.egork.generated.collections.iterator.IntIterator;
+import net.egork.generated.collections.iterator.LongIterator;
+import net.egork.generated.collections.list.LongArrayList;
 
-import net.egork.generated.collections.iterator.*;
-import net.egork.generated.collections.function.*;
-import net.egork.generated.collections.list.*;
-import net.egork.generated.collections.comparator.*;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public interface LongStream extends Iterable<Long>, Comparable<LongStream> {
     //abstract

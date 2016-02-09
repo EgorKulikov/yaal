@@ -1,0 +1,39 @@
+12 A - Analysis
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+24 5 4
+4 4
+4 -4
+-4 -4
+-4 4
+
+4 Long
+1
+1
+24 3 4
+-7 7
+6 8
+8 -6
+-8 -8
+
+6 Middle
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+55 on2016_01.on2016_01_31_SNWS_2016__R4.A___Analysis.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.31
+13 SNWS 2016, R4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

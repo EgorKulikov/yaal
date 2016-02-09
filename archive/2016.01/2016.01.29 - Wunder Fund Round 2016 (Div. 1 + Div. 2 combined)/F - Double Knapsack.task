@@ -1,0 +1,43 @@
+19 F - Double Knapsack
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+54 10
+10 10 10 10 10 10 10 10 10 10
+10 9 8 7 6 5 4 3 2 1
+
+13 1
+2
+3
+5 8 10
+
+1
+1
+22 5
+4 4 3 3 3
+2 2 2 2 5
+
+12 2
+2 3
+2
+3 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.29
+49 Wunder Fund Round 2016 (Div. 1 + Div. 2 combined)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

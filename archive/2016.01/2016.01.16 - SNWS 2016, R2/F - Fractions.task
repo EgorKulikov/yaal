@@ -1,0 +1,32 @@
+13 F - Fractions
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+17 3
+18 7
+3 -4
+-3 4
+
+10 5.00
+-1
+1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-2
+0
+10 2016.01.16
+13 SNWS 2016, R2
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

@@ -1,0 +1,28 @@
+18 B - Communications
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+10 3 4
+0 2 4
+
+5 1.00
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-2
+0
+10 2016.01.10
+13 SNWS 2016, R1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

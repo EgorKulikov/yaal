@@ -1,0 +1,41 @@
+13 Laundro, Matt
+6 SINGLE
+12 LOCAL_REGEXP
+23 laundro.*.*matt.*[.]txt
+6 CUSTOM
+16 laundro,matt.out
+1
+0
+74 5
+1 1 1 34
+1200
+2 3 2 10
+100 10 1
+3 3 3 3
+1 2 3
+4 2 2 7
+5 8
+999 1 999 6
+3
+
+63 Case #1: 1234
+Case #2: 12
+Case #3: 5
+Case #4: 22
+Case #5: 3003
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+81 on2016_01.on2016_01_16_Facebook_Hacker_Cup_2016_Round_1.Laundro__Matt.LaundroMatt
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.16
+32 Facebook Hacker Cup 2016 Round 1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

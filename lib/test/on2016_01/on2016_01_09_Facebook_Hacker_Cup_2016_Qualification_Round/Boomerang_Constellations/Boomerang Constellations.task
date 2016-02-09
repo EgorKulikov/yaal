@@ -1,0 +1,58 @@
+24 Boomerang Constellations
+6 SINGLE
+12 LOCAL_REGEXP
+33 boomerang.*constellations.*[.]txt
+6 CUSTOM
+27 boomerangconstellations.out
+1
+0
+110 5
+3
+0 0
+0 1
+0 3
+5
+0 0
+0 1
+0 2
+0 3
+0 4
+4
+0 0
+0 100
+100 0
+100 100
+4
+0 0
+-3 4
+0 5
+-5 0
+6
+5 6
+6 5
+7 6
+6 7
+7 8
+8 7
+
+56 Case #1: 0
+Case #2: 4
+Case #3: 4
+Case #4: 3
+Case #5: 12
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+116 on2016_01.on2016_01_09_Facebook_Hacker_Cup_2016_Qualification_Round.Boomerang_Constellations.BoomerangConstellations
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.09
+44 Facebook Hacker Cup 2016 Qualification Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+1
+0

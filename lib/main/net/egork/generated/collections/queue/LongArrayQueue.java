@@ -1,7 +1,8 @@
 package net.egork.generated.collections.queue;
 
-import net.egork.generated.collections.*;
-import net.egork.generated.collections.iterator.*;
+import net.egork.generated.collections.LongCollection;
+import net.egork.generated.collections.LongStream;
+import net.egork.generated.collections.iterator.LongIterator;
 
 import java.util.NoSuchElementException;
 

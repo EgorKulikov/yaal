@@ -1,0 +1,32 @@
+8 F - Fire
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+34 3 2 2 3
+2 0
+1 1
+0 0 X
+2 0 Y
+1 1 X
+
+2 2
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+50 on2016_01.on2016_01_24_SNWS2016__R3.F___Fire.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.01.24
+12 SNWS2016, R3
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+0

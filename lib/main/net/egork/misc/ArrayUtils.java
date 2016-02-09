@@ -276,6 +276,10 @@ public class ArrayUtils {
         return new IntArray(array).unique().toArray();
     }
 
+    public static long[] unique(long[] array) {
+        return new LongArray(array).unique().toArray();
+    }
+
     public static char[] unique(char[] array) {
         return new CharArray(array).unique().toArray();
     }
@@ -362,6 +366,27 @@ public class ArrayUtils {
         return all;
     }
 
+    public static long[] compress(long[]... arrays) {
+        int totalLength = 0;
+        for (long[] array : arrays) {
+            totalLength += array.length;
+        }
+        long[] all = new long[totalLength];
+        int delta = 0;
+        for (long[] array : arrays) {
+            System.arraycopy(array, 0, all, delta, array.length);
+            delta += array.length;
+        }
+        new LongArray(all).sort();
+        all = unique(all);
+        for (long[] array : arrays) {
+            for (int i = 0; i < array.length; i++) {
+                array[i] = Arrays.binarySearch(all, array[i]);
+            }
+        }
+        return all;
+    }
+
     public static int minElement(int[] array) {
         return new IntArray(array).min();
     }
@@ -391,7 +416,7 @@ public class ArrayUtils {
     }
 
     public static void order(int[] order, int[] array) {
-        ensureCapacityInt(order.length);
+        int[] tempInt = new int[order.length];
         for (int i = 0; i < order.length; i++) {
             tempInt[i] = array[order[i]];
         }
@@ -399,7 +424,7 @@ public class ArrayUtils {
     }
 
     public static void order(int[] order, long[] array) {
-        ensureCapacityLong(order.length);
+        long[] tempLong = new long[order.length];
         for (int i = 0; i < order.length; i++) {
             tempLong[i] = array[order[i]];
         }
@@ -580,5 +605,11 @@ public class ArrayUtils {
             tree.add(i, 1);
         }
         return total % 2 == 1;
+    }
+
+    public static long[] concatenate(long[] arr1, long[] arr2) {
+        long[] result = Arrays.copyOf(arr1, arr1.length + arr2.length);
+        System.arraycopy(arr2, 0, result, arr1.length, arr2.length);
+        return result;
     }
 }

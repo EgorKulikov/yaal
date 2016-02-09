@@ -1,6 +1,15 @@
 package net.egork.collections.set;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NavigableSet;
+import java.util.NoSuchElementException;
+import java.util.Random;
+import java.util.SortedSet;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
@@ -34,7 +43,7 @@ public class TreapSet<K> implements NavigableSet<K> {
     }
 
     protected TreapSet(K from, K to, boolean fromInclusive, boolean toInclusive, Comparator<? super K> comparator,
-            Node root, Node nullNode) {
+                       Node root, Node nullNode) {
         this.comparator = comparator;
         this.from = from;
         this.to = to;
