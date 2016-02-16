@@ -1,0 +1,38 @@
+9 Weird Sum
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+57 6
+120
+121
+124
+125
+44761
+31415926535897932384626433832795
+
+35 6855
+6866
+7235
+7240
+2741
+382417086
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+65 on2016_02.on2016_02_09_February_Challenge_2016.Weird_Sum.WeirdSum
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.09
+23 February Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

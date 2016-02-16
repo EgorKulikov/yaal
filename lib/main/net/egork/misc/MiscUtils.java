@@ -1,6 +1,7 @@
 package net.egork.misc;
 
 import net.egork.collections.function.Function;
+import net.egork.generated.collections.function.LongFilter;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 
@@ -111,10 +112,10 @@ public class MiscUtils {
         return result.toString();
     }
 
-    public static long binarySearch(long from, long to, Function<Long, Boolean> function) {
+    public static long binarySearch(long from, long to, LongFilter function) {
         while (from < to) {
-            long argument = from + (to - from) / 2;
-            if (function.value(argument)) {
+            long argument = from + ((to - from) >> 1);
+            if (function.accept(argument)) {
                 to = argument;
             } else {
                 from = argument + 1;

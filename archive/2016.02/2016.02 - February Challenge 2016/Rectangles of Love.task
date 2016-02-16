@@ -1,0 +1,29 @@
+18 Rectangles of Love
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 1
+2 2 2
+1 2
+
+19 0.8888888888888888
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.RectanglesOfLove
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.02.09
+23 February Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
