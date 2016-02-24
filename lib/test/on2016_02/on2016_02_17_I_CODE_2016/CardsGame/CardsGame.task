@@ -1,0 +1,30 @@
+9 CardsGame
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+29 2
+infotrek
+ckfltiko
+abcd
+dcfa
+13 2N3J3S
+0N3J1S
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+54 on2016_02.on2016_02_17_I_CODE_2016.CardsGame.CardsGame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.17
+11 I-CODE 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

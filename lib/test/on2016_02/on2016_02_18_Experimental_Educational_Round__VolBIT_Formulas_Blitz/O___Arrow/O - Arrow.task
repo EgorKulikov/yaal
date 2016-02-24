@@ -1,0 +1,33 @@
+9 O - Arrow
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+16 8 8 0 2 8 3 4 5
+
+214 8.000000000000 11.000000000000
+4.000000000000 8.000000000000
+6.000000000000 8.000000000000
+6.000000000000 3.000000000000
+10.000000000000 3.000000000000
+10.000000000000 8.000000000000
+12.000000000000 8.000000000000
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+92 on2016_02.on2016_02_18_Experimental_Educational_Round__VolBIT_Formulas_Blitz.O___Arrow.TaskO
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-9
+0
+10 2016.02.18
+53 Experimental Educational Round: VolBIT Formulas Blitz
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

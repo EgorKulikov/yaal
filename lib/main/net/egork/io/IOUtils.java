@@ -1,6 +1,8 @@
 package net.egork.io;
 
 import net.egork.collections.Pair;
+import net.egork.generated.collections.pair.IntIntPair;
+import net.egork.generated.collections.pair.LongLongPair;
 import net.egork.utils.io.InputReader;
 import net.egork.utils.io.OutputWriter;
 
@@ -8,16 +10,16 @@ import net.egork.utils.io.OutputWriter;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class IOUtils {
-    public static Pair<Integer, Integer> readIntPair(InputReader in) {
+    public static IntIntPair readIntPair(InputReader in) {
         int first = in.readInt();
         int second = in.readInt();
-        return Pair.makePair(first, second);
+        return new IntIntPair(first, second);
     }
 
-    public static Pair<Long, Long> readLongPair(InputReader in) {
+    public static LongLongPair readLongPair(InputReader in) {
         long first = in.readLong();
         long second = in.readLong();
-        return Pair.makePair(first, second);
+        return new LongLongPair(first, second);
     }
 
     public static int[] readIntArray(InputReader in, int size) {
@@ -60,18 +62,16 @@ public class IOUtils {
         return array;
     }
 
-    public static Pair<Integer, Integer>[] readIntPairArray(InputReader in, int size) {
-        @SuppressWarnings({"unchecked"})
-        Pair<Integer, Integer>[] result = new Pair[size];
+    public static IntIntPair[] readIntPairArray(InputReader in, int size) {
+        IntIntPair[] result = new IntIntPair[size];
         for (int i = 0; i < size; i++) {
             result[i] = readIntPair(in);
         }
         return result;
     }
 
-    public static Pair<Long, Long>[] readLongPairArray(InputReader in, int size) {
-        @SuppressWarnings({"unchecked"})
-        Pair<Long, Long>[] result = new Pair[size];
+    public static LongLongPair[] readLongPairArray(InputReader in, int size) {
+        LongLongPair[] result = new LongLongPair[size];
         for (int i = 0; i < size; i++) {
             result[i] = readLongPair(in);
         }

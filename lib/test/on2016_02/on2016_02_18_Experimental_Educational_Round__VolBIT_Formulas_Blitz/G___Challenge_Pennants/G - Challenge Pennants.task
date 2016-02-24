@@ -1,0 +1,31 @@
+22 G - Challenge Pennants
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+2 2
+
+2 24
+1
+1
+4 500
+
+-1
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+105 on2016_02.on2016_02_18_Experimental_Educational_Round__VolBIT_Formulas_Blitz.G___Challenge_Pennants.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.18
+53 Experimental Educational Round: VolBIT Formulas Blitz
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

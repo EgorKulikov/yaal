@@ -1,0 +1,32 @@
+14 Monster String
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+20 3
+ABB
+aabbb
+chessie
+
+9 @0
+@1
+@0
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+60 on2016_02.on2016_02_18_Cresense.Monster_String.MonsterString
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.18
+8 Cresense
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

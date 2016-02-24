@@ -1,0 +1,31 @@
+18 P - Area of a Star
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+5 7 10
+
+16 108.395919545675
+1
+1
+12 999999999 1
+
+-1
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskP
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-7
+0
+10 2016.02.18
+53 Experimental Educational Round: VolBIT Formulas Blitz
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

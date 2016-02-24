@@ -62,7 +62,7 @@ public class GeometryUtils {
         return 4 * Math.PI * radius * radius * radius / 3;
     }
 
-    public static double triangleSquare(double first, double second, double third) {
+    public static double triangleArea(double first, double second, double third) {
         double p = (first + second + third) / 2;
         return Math.sqrt(p * (p - first) * (p - second) * (p - third));
     }

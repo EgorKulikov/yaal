@@ -1,0 +1,37 @@
+20 Visiting Attractions
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+45 43 31
+3
+90 39
+79 22
+11 0
+2
+60 26
+40 36
+1
+1 2
+
+6 2
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+110 on2016_02.on2016_02_20_Booking_com_Hack_a_Holiday__City_Break_Edition.Visiting_Attractions.VisitingAttractions
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.20
+46 Booking.com Hack a Holiday: City Break Edition
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,34 @@
+17 Counting Triplets
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+31 2
+4
+-2 0 1 3 
+2
+5
+1 2 3 0 -1
+2
+
+4 2
+2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+66 on2016_02.on2016_02_18_Cresense.Counting_Triplets.CountingTriplets
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.18
+8 Cresense
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

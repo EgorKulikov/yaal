@@ -1,0 +1,35 @@
+5 Rings
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+35 5 3 4
+0 2 1
+3 0 1
+3 2 0
+1 2 3
+0 1 3
+17 4
+0 0
+1 2
+2 1
+3 2
+0
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+15 net.egork.Rings
+22 net.egork.RingsChecker
+0 
+1
+23 net.egork.RingsTestCase
+10 2016.02.20
+18 February Clash '16
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

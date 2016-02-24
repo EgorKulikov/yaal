@@ -312,6 +312,14 @@ public class ArrayUtils {
         new IntArray(array).inPlaceReverse();
     }
 
+    public static void reverse(boolean[] array) {
+        for (int i = 0, j = array.length - 1; i < j; i++, j--) {
+            boolean temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+
     public static void reverse(long[] array) {
         new LongArray(array).inPlaceReverse();
     }

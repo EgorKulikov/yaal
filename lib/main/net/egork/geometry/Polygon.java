@@ -16,7 +16,7 @@ public class Polygon {
         this.vertices = vertices.clone();
     }
 
-    public double square() {
+    public double area() {
         double sum = 0;
         for (int i = 1; i < vertices.length; i++) {
             sum += (vertices[i].x - vertices[i - 1].x) * (vertices[i].y + vertices[i - 1].y);
@@ -115,7 +115,7 @@ public class Polygon {
         return sides;
     }
 
-    public static double triangleSquare(Point a, Point b, Point c) {
+    public static double triangleArea(Point a, Point b, Point c) {
         return Math.abs((a.x - b.x) * (a.y + b.y) + (b.x - c.x) * (b.y + c.y) + (c.x - a.x) * (c.y + a.y)) / 2;
     }
 

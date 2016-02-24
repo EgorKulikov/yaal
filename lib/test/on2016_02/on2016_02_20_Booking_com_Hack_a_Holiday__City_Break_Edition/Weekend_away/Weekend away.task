@@ -1,0 +1,34 @@
+12 Weekend away
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+42 1
+4 6
+1 2 2
+1 3 4
+1 4 8
+2 3 3
+2 4 3
+3 4 1
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+94 on2016_02.on2016_02_20_Booking_com_Hack_a_Holiday__City_Break_Edition.Weekend_away.WeekendAway
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.20
+46 Booking.com Hack a Holiday: City Break Edition
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

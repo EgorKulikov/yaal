@@ -77,9 +77,25 @@ public class Point {
         return new Point(x, y);
     }
 
+    public Point rotate(double angle, Point center) {
+        double dx = x - center.x;
+        double dy = y - center.y;
+        double nx = dx * Math.cos(angle) - dy * Math.sin(angle);
+        double ny = dy * Math.cos(angle) + dx * Math.sin(angle);
+        return new Point(center.x + nx, center.y + ny);
+    }
+
     public Point rotate(double angle) {
         double nx = x * Math.cos(angle) - y * Math.sin(angle);
         double ny = y * Math.cos(angle) + x * Math.sin(angle);
         return new Point(nx, ny);
+    }
+
+    public Point apply(Vector vector) {
+        return apply(vector, 1);
+    }
+
+    public Point apply(Vector vector, double ratio) {
+        return new Point(x + vector.x * ratio, y + vector.y * ratio);
     }
 }
