@@ -1,0 +1,35 @@
+19 D - Jerry's Protest
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+6 2
+1 2
+
+13 0.0000000000
+
+1
+1
+9 3
+1 2 10
+
+13 0.0740740741
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+89 on2016_02.on2016_02_13_8VC_Venture_Cup_2016___Elimination_Round.D___Jerry_s_Protest.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.02.13
+40 8VC Venture Cup 2016 - Elimination Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

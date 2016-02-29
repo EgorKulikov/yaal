@@ -46,10 +46,16 @@ public class RecursiveIndependentSetSystem implements IndependentSetSystem {
     }
 
     public int get(int index) {
-        if (color[index] == index) {
-            return index;
+        int start = index;
+        while (color[index] != index) {
+            index = color[index];
         }
-        return color[index] = get(color[index]);
+        while (start != index) {
+            int next = color[start];
+            color[start] = index;
+            start = next;
+        }
+        return index;
     }
 
     public int getSetCount() {

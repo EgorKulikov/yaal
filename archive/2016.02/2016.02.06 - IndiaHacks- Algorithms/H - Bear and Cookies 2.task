@@ -1,0 +1,42 @@
+22 H - Bear and Cookies 2
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+107 4
+3
+10 100 1000
+17 17 15
+3
+10 100 1000
+17 17 20
+5
+24 42 19 72 100
+10 9 9 9 10
+4
+3 1 4 2
+4574 75321 11 1435
+
+60 1100.0000000000
+1055.0000000000
+202.5000000000
+7.0000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+26 net.egork.HBearAndCookies2
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.02.07
+22 IndiaHacks: Algorithms
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

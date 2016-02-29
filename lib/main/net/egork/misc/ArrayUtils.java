@@ -14,9 +14,6 @@ import java.util.Arrays;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class ArrayUtils {
-    private static int[] tempInt = new int[0];
-    private static long[] tempLong = new long[0];
-
     public static void fill(short[][] array, short value) {
         for (short[] row : array) {
             Arrays.fill(row, value);
@@ -228,22 +225,6 @@ public class ArrayUtils {
         return array;
     }
 
-    private static void ensureCapacityInt(int size) {
-        if (tempInt.length >= size) {
-            return;
-        }
-        size = Math.max(size, tempInt.length << 1);
-        tempInt = new int[size];
-    }
-
-    private static void ensureCapacityLong(int size) {
-        if (tempLong.length >= size) {
-            return;
-        }
-        size = Math.max(size, tempLong.length << 1);
-        tempLong = new long[size];
-    }
-
     public static int[] order(final int[] array) {
         return sort(createOrder(array.length), new IntComparator() {
             public int compare(int first, int second) {
@@ -330,6 +311,10 @@ public class ArrayUtils {
 
     public static int minPosition(int[] array) {
         return new IntArray(array).minIndex();
+    }
+
+    public static int minPosition(long[] array) {
+        return new LongArray(array).minIndex();
     }
 
     public static int maxPosition(int[] array) {
@@ -617,6 +602,12 @@ public class ArrayUtils {
 
     public static long[] concatenate(long[] arr1, long[] arr2) {
         long[] result = Arrays.copyOf(arr1, arr1.length + arr2.length);
+        System.arraycopy(arr2, 0, result, arr1.length, arr2.length);
+        return result;
+    }
+
+    public static int[] concatenate(int[] arr1, int[] arr2) {
+        int[] result = Arrays.copyOf(arr1, arr1.length + arr2.length);
         System.arraycopy(arr2, 0, result, arr1.length, arr2.length);
         return result;
     }

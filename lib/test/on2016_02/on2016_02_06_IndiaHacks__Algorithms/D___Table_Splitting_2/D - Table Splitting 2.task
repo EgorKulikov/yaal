@@ -1,0 +1,50 @@
+21 D - Table Splitting 2
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+114 4
+3 4
+aaaa
+abba
+aaaa
+3 4
+aaac
+abba
+aaaa
+4 5
+xaaaa
+aabca
+abcca
+aaaaa
+6 6
+aaaaaa
+bbbbba
+baaaba
+babbba
+baaaaa
+bbbbbb
+
+14 NO
+YES
+NO
+YES
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+84 on2016_02.on2016_02_06_IndiaHacks__Algorithms.D___Table_Splitting_2.DTableSplitting2
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.06
+22 IndiaHacks: Algorithms
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

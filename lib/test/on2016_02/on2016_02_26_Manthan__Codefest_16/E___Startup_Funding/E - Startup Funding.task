@@ -1,0 +1,29 @@
+19 E - Startup Funding
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+22 3 2
+3 2 1
+300 200 300
+
+12 133.3333333
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+69 on2016_02.on2016_02_26_Manthan__Codefest_16.E___Startup_Funding.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.02.26
+20 Manthan, Codefest 16
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

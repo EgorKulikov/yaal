@@ -1,0 +1,51 @@
+11 G - Raffles
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+26 2 1 3
+4 5
+1 2
+1 1
+1 2
+2 1
+
+36 1.666666667
+1.333333333
+2.000000000
+
+1
+1
+40 3 20 5
+6 8 10
+6 6 6
+1 1
+1 2
+1 3
+2 3
+2 3
+
+65 12.000000000
+12.000000000
+11.769230769
+12.000000000
+12.000000000
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+81 on2016_02.on2016_02_13_8VC_Venture_Cup_2016___Elimination_Round.G___Raffles.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.02.13
+40 8VC Venture Cup 2016 - Elimination Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

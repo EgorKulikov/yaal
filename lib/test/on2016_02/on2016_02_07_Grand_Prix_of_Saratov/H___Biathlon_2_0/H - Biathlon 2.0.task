@@ -1,0 +1,43 @@
+16 H - Biathlon 2.0
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+28 3
+1 4
+4 1
+3 3
+3
+1 3
+3 1
+2 2
+
+8 7 7 12 
+
+1
+1
+48 1
+1000000000 1000000000
+1
+1000000000 1000000000
+
+21 2000000000000000000 
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+67 on2016_02.on2016_02_07_Grand_Prix_of_Saratov.H___Biathlon_2_0.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.07
+21 Grand Prix of Saratov
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

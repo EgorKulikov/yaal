@@ -1,0 +1,40 @@
+16 A - XOR Equation
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+4 9 5
+
+2 4
+
+1
+1
+4 3 3
+
+2 2
+
+1
+2
+4 5 2
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskATestCase
+10 2016.02.28
+34 8VC Venture Cup 2016 - Final Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

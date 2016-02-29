@@ -1,0 +1,35 @@
+21 E - Musical Sequences
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+56 3
+4 10 4
+1 3 3 7
+4 10 5
+1 3 3 7
+1 2 12345678987654321
+1
+
+6 6
+9
+1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+27 net.egork.EMusicalSequences
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.06
+22 IndiaHacks: Algorithms
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

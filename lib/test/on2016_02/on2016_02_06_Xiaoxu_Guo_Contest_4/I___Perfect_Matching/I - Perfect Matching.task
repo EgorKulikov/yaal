@@ -1,0 +1,44 @@
+20 I - Perfect Matching
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+20 4 4
+1 3
+1 4
+2 3
+2 4
+
+2 2
+
+1
+1
+28 4 6
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+70 on2016_02.on2016_02_06_Xiaoxu_Guo_Contest_4.I___Perfect_Matching.TaskI
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+78 on2016_02.on2016_02_06_Xiaoxu_Guo_Contest_4.I___Perfect_Matching.TaskITestCase
+10 2016.02.06
+20 Xiaoxu Guo Contest 4
+0
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

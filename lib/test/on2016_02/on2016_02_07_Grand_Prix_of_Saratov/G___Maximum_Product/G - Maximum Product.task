@@ -1,0 +1,33 @@
+19 G - Maximum Product
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+5 1 10
+
+2 9
+
+1
+1
+6 51 62
+
+3 59
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+70 on2016_02.on2016_02_07_Grand_Prix_of_Saratov.G___Maximum_Product.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.07
+21 Grand Prix of Saratov
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

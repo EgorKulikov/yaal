@@ -1,0 +1,36 @@
+21 C - Table Splitting 1
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+37 2
+3 4
+aaab
+acca
+baaa
+3 3
+aaa
+abb
+aaa
+
+4 2
+1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+26 net.egork.CTableSplitting1
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.06
+22 IndiaHacks: Algorithms
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

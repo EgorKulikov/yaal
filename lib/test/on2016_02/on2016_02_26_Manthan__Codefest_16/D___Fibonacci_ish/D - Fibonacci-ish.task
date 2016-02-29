@@ -1,0 +1,35 @@
+17 D - Fibonacci-ish
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+9 3
+1 2 -1
+
+2 3
+
+1
+1
+16 5
+28 35 7 14 21
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+67 on2016_02.on2016_02_26_Manthan__Codefest_16.D___Fibonacci_ish.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.26
+20 Manthan, Codefest 16
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
