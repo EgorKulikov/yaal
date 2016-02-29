@@ -1,0 +1,60 @@
+13 H - Hierarchy
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+140 8
+1
+10
+rab
+01:01:0001
+1
+1000000000
+tor
+02:01:0001
+-1
+10 1
+1
+10
+tur
+01:01:0001
+-1
+10 2
+-1
+1000000000 1
+1
+5
+bor
+99:99:9999
+1
+5
+rot
+99:99:9999
+
+76 rab rab
+rab tor
+tor Vacant
+tur tur
+tor Vacant
+Vacant Vacant
+bor bor
+bor bor
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+75 on2016_02.on2016_02_28_Grand_Prix_of_Bashkortostan_2016.H___Hierarchy.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.28
+32 Grand Prix of Bashkortostan-2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

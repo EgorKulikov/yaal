@@ -1,0 +1,54 @@
+15 M - Matrix, The
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+21 3 2 3 5
+1
+2
+16
+34
+35
+
+69 011
+011
+101
+
+011
+011
+110
+
+101
+111
+101
+
+111
+111
+111
+
+No such matrix.
+
+
+1
+1
+27 10 1 10 1
+12345678912345678
+0 
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskM
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.02.28
+32 Grand Prix of Bashkortostan-2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
