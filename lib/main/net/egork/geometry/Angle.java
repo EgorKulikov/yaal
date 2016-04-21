@@ -15,9 +15,12 @@ public class Angle {
     }
 
     public double value() {
-        double ab = a.distance(b);
-        double ao = a.distance(o);
-        double bo = b.distance(o);
-        return Math.acos((ao * ao + bo * bo - ab * ab) / (2 * ao * bo));
+        double x1 = a.x - o.x;
+        double y1 = a.y - o.y;
+        double x2 = b.x - o.x;
+        double y2 = b.y - o.y;
+        double scal = x1 * x2 + y1 * y2;
+        double vect = x1 * y2 - x2 * y1;
+        return Math.abs(Math.atan2(vect, scal));
     }
 }

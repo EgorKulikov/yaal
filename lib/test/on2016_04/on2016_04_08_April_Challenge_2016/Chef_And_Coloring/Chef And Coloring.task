@@ -1,0 +1,33 @@
+17 Chef And Coloring
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+19 3
+3
+RGR
+3
+RRR
+3
+RGB
+5 1
+0
+2
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+77 on2016_04.on2016_04_08_April_Challenge_2016.Chef_And_Coloring.ChefAndColoring
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.08
+20 April Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

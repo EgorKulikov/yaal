@@ -15,6 +15,8 @@ public class MiscUtils {
     public static final int[] DY8 = {-1, 0, 1, 1, 1, 0, -1, -1};
     public static final int[] DX_KNIGHT = {2, 1, -1, -2, -2, -1, 1, 2};
     public static final int[] DY_KNIGHT = {1, 2, 2, 1, -1, -2, -2, -1};
+    public static final int MOD9 = (int) (1e9 + 9);
+    public static final int MOD7 = (int) (1e9 + 7);
 
     private static final String[] ROMAN_TOKENS =
             {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};

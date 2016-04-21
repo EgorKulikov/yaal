@@ -1,0 +1,35 @@
+25 M - The Smallest Fraction
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+10 2
+1 2
+3 4
+
+3 3 2
+1
+1
+10 2
+2 3
+4 5
+
+3 4 1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+70 on2016_03.on2016_03_13_GP_of_Tatarstan.M___The_Smallest_Fraction.TaskM
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.03.13
+15 GP of Tatarstan
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

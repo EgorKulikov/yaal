@@ -1,0 +1,47 @@
+23 F - Cowslip Collections
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+16 3 3 2
+4
+6
+9
+8
+6
+
+5 5
+16
+
+1
+1
+18 4 1 2
+6
+5
+4
+3
+2
+1
+
+6 20
+21
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+82 on2016_03.on2016_03_18_CROC_2016___Elimination_Round.F___Cowslip_Collections.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+90 on2016_03.on2016_03_18_CROC_2016___Elimination_Round.F___Cowslip_Collections.TaskFTestCase
+10 2016.03.18
+29 CROC 2016 - Elimination Round
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

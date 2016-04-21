@@ -1,0 +1,47 @@
+18 Amazing Experiment
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+34 1
+6
+1 2 5
+1 5 6
+2 3 2
+2 4 1
+3 6 1
+
+12 8
+3
+1
+0
+0
+0
+
+1
+1
+10 1
+2
+1 2 1
+
+4 1
+0
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+80 on2016_04.on2016_04_08_April_Challenge_2016.Amazing_Experiment.AmazingExperiment
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.08
+20 April Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

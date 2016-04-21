@@ -109,4 +109,10 @@ public class OutputWriter {
     public void printLine(int i) {
         writer.println(i);
     }
+
+    public void separateLines(int[] array) {
+        for (int i : array) {
+            printLine(i);
+        }
+    }
 }

@@ -1,0 +1,34 @@
+18 A - Three Seamarks
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+20 1
+0 0 2 0 2 2 90 90
+
+26 1.0000000000 1.0000000000
+
+1
+1
+37 1
+34563 5345 2342 34563 6456 24 12 41
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+63 on2016_03.on2016_03_13_GP_of_Tatarstan.A___Three_Seamarks.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+1
+71 on2016_03.on2016_03_13_GP_of_Tatarstan.A___Three_Seamarks.TaskATestCase
+10 2016.03.13
+15 GP of Tatarstan
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

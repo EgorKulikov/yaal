@@ -1,0 +1,31 @@
+5 TaskJ
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+13 2 1 400 3 500
+19  2
+1  400
+  3   500
+1
+1
+20 7 4 1 5 20 13 25 234
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+63 on2016_03.on2016_03_20_Grand_Prix_of_Baltics___2016.TaskJ.TaskJ
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.03.20
+28 Grand Prix of Baltics - 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
