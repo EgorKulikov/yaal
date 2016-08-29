@@ -1,0 +1,35 @@
+19 Chef and Big Soccer
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+33 3
+3 2 2
+1 2 
+3 3 3
+1 1 1
+3 1 1
+3
+
+18 1 0 1
+0 2 0
+0 0 0
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.ChefAndBigSoccer
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.05.09
+18 May Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

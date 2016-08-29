@@ -1,0 +1,44 @@
+13 C - Chemistry
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+284 6 0 0 0
+1 2 0 -1.41421356236
+5 -2 0 -1.41421356236
+12 0 2 1.41421356236
+25 0 -2 1.41421356236
+6 0 0 0
+1 2 0 -1.41421356236
+5 -2 0 -1.41421356236
+25 0 2 1.41421356236
+12 0 -2 1.41421356236
+6 0 0 0
+1 2 0 -1.41421356236
+5 -2 0 -1.41421356236
+25 0 2 1.41421356236
+25 0 -2 1.41421356236
+0
+
+6 1
+2
+0
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+74 on2016_04.on2016_04_22_Vekua_Cup_2016_Personal_Pre_Run.C___Chemistry.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.22
+31 Vekua Cup 2016 Personal Pre-Run
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

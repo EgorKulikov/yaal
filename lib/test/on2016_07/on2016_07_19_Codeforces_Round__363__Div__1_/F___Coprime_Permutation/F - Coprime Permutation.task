@@ -1,0 +1,49 @@
+23 F - Coprime Permutation
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+4
+0
+10 4
+0 0 0 0
+
+2 4
+
+1
+1
+12 5
+0 0 1 2 0
+
+2 2
+
+1
+2
+14 6
+0 0 1 2 0 0
+
+2 0
+
+1
+3
+12 5
+5 3 4 2 1
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+83 on2016_07.on2016_07_19_Codeforces_Round__363__Div__1_.F___Coprime_Permutation.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.07.19
+30 Codeforces Round #363 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

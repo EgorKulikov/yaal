@@ -1,0 +1,42 @@
+13 Chef and math
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+27 5
+12 1
+13 1
+13 2
+13 3
+13 4
+
+10 0
+1
+1
+2
+4
+
+1
+1
+16 1
+1000000000 10
+
+-1
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+67 on2016_05.on2016_05_09_May_Challenge_2016.Chef_and_math.ChefAndMath
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.05.09
+18 May Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

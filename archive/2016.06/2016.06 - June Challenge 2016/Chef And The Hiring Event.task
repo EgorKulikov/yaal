@@ -1,0 +1,40 @@
+25 Chef And The Hiring Event
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+6 2
+2
+5
+
+4 2
+8
+
+1
+1
+20 5
+6
+7
+10
+235
+456747
+
+-1
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+31 net.egork.ChefAndTheHiringEvent
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.08
+19 June Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

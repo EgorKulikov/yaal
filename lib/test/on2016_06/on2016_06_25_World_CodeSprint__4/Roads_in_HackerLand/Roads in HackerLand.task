@@ -1,0 +1,33 @@
+19 Roads in HackerLand
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+40 5 6
+1 3 5
+4 5 0
+2 1 3
+3 2 1
+4 3 4
+4 2 2
+
+8 1000100
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+80 on2016_06.on2016_06_25_World_CodeSprint__4.Roads_in_HackerLand.RoadsInHackerLand
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.25
+19 World CodeSprint #4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

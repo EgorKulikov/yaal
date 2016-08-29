@@ -1,0 +1,33 @@
+14 B - Watermelon
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+55 6 1 2 1 0.6 12
+2 3.6
+4 3.8
+3 6.0
+-4 -8
+10.8 8.10
+2 2.4
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+56 on2016_08.on2016_08_22_SNSS_2016_R4.B___Watermelon.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.08.22
+12 SNSS-2016 R4
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

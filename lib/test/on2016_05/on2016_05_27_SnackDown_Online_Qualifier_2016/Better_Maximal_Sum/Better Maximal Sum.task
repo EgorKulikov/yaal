@@ -1,0 +1,32 @@
+18 Better Maximal Sum
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+24 2
+5
+1 -2 3 -2 5
+2
+-1 -2
+
+5 8
+-1
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+90 on2016_05.on2016_05_27_SnackDown_Online_Qualifier_2016.Better_Maximal_Sum.BetterMaximalSum
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.05.27
+31 SnackDown Online Qualifier 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

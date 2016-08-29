@@ -1,0 +1,35 @@
+45 D - Муниципальная реформа
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+21 8
+29 16 6 1 2 1 6 31
+
+3 32
+
+1
+1
+12 2
+5000 8000
+
+5 8000
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.08.11
+12 SNSS-2016 R1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

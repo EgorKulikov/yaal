@@ -1,0 +1,33 @@
+23 A - As Fast As Possible
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+11 5 10 1 2 5
+
+13 5.0000000000
+
+1
+1
+10 3 6 1 2 1
+
+13 4.7142857143
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2016.07.22
+30 Codeforces Round #364 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

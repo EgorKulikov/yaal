@@ -1,0 +1,30 @@
+30 A - &lt;&lt;Pizza Hull&gt;&gt;
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+4 3 1
+
+83 -1.0000000000 -1.0000000000
+3.0000000000 -1.0000000000
+-1.0000000000 2.0000000000
+
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-4
+0
+10 2016.08.11
+12 SNSS-2016 R1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

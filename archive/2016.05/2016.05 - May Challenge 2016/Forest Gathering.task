@@ -1,0 +1,30 @@
+16 Forest Gathering
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+20 3 74 51
+2 2
+5 7
+2 9
+
+2 7
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+25 net.egork.ForestGathering
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.05.06
+18 May Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

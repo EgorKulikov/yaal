@@ -42,6 +42,15 @@ public class OutputWriter {
         }
     }
 
+    public void print(double[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (i != 0) {
+                writer.print(' ');
+            }
+            writer.print(array[i]);
+        }
+    }
+
     public void print(long[] array) {
         for (int i = 0; i < array.length; i++) {
             if (i != 0) {
@@ -52,6 +61,11 @@ public class OutputWriter {
     }
 
     public void printLine(int[] array) {
+        print(array);
+        writer.println();
+    }
+
+    public void printLine(double[] array) {
         print(array);
         writer.println();
     }

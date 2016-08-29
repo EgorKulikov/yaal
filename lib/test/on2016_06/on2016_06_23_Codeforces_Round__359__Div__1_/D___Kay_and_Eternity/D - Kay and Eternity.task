@@ -1,0 +1,32 @@
+20 D - Kay and Eternity
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+1
+0
+24 5 3
+4 5
+4 6
+5 5
+5 6
+7 7
+
+12 10 8 1 4 0 
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+80 on2016_06.on2016_06_23_Codeforces_Round__359__Div__1_.D___Kay_and_Eternity.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.23
+30 Codeforces Round #359 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,28 @@
+19 One more weird game
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+6 1
+2 2
+
+2 4
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+26 net.egork.OneMoreWeirdGame
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.25
+19 June Lunchtime 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

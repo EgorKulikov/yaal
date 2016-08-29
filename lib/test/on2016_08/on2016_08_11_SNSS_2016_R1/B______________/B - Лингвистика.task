@@ -1,0 +1,40 @@
+26 B - Лингвистика
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+57 1
+4 5
+cat
+dog
+linguistics
+cccccc
+cccccc
+gin
+gui
+cccccc
+c
+
+8 1
+0
+2
+8
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+57 on2016_08.on2016_08_11_SNSS_2016_R1.B______________.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.08.11
+12 SNSS-2016 R1
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

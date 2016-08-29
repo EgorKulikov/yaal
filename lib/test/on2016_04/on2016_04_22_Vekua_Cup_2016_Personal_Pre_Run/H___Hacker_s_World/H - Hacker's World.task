@@ -1,0 +1,38 @@
+18 H - Hacker's World
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+66 4
+3 1 9
+2 1 6
+3 1 9
+3 2 3
+5 6 4
+2 2 2 2 2
+9 9 9
+9 8 7 6 5 4 3 2 1
+
+10 1
+0
+10
+60
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+79 on2016_04.on2016_04_22_Vekua_Cup_2016_Personal_Pre_Run.H___Hacker_s_World.TaskH
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.04.22
+31 Vekua Cup 2016 Personal Pre-Run
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,29 @@
+17 Square in numbers
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 1
+3
+21 11 6
+
+2 3
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+76 on2016_06.on2016_06_25_June_Lunchtime_2016.Square_in_numbers.SquareInNumbers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.25
+19 June Lunchtime 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

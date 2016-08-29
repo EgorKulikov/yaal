@@ -1,0 +1,34 @@
+38 Petro and Cycles (Approximate problem)
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+27 4 6
+1 2
+2 3
+3 4
+4 1
+1 3
+1 3
+13 2
+1 2 5
+3 6 4
+0
+14 main/net/egork
+9 -Xmx2048M
+4 Main
+42 net.egork.PetroAndCyclesApproximateProblem
+23 net.egork.CyclesChecker
+0 
+1
+50 net.egork.PetroAndCyclesApproximateProblemTestCase
+10 2016.08.26
+15 August Circuits
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -1,0 +1,36 @@
+10 Collisions
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+32 2
+4 3
+111
+100
+110
+000
+2 2
+10
+01
+
+4 4
+0
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+20 net.egork.Collisions
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.25
+19 June Lunchtime 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

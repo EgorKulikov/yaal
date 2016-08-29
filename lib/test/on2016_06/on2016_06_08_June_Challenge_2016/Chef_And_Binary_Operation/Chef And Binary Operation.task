@@ -1,0 +1,33 @@
+25 Chef And Binary Operation
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+20 2
+101
+010
+1111
+1010
+
+26 Lucky Chef
+2
+Unlucky Chef
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+91 on2016_06.on2016_06_08_June_Challenge_2016.Chef_And_Binary_Operation.ChefAndBinaryOperation
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.06.08
+19 June Challenge 2016
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

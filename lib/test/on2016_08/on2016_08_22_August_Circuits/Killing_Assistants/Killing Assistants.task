@@ -1,0 +1,32 @@
+18 Killing Assistants
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+14 3
+2 1
+8 5
+3 3
+
+15 9/17
+15/23
+1/1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+75 on2016_08.on2016_08_22_August_Circuits.Killing_Assistants.KillingAssistants
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.08.22
+15 August Circuits
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

@@ -4,6 +4,7 @@ import net.egork.collections.FenwickTree;
 import net.egork.collections.intcollection.Range;
 import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.generated.collections.list.CharArray;
+import net.egork.generated.collections.list.DoubleArray;
 import net.egork.generated.collections.list.IntArray;
 import net.egork.generated.collections.list.LongArray;
 
@@ -321,6 +322,10 @@ public class ArrayUtils {
         return new IntArray(array).maxIndex();
     }
 
+    public static int maxPosition(double[] array) {
+        return new DoubleArray(array).maxIndex();
+    }
+
     public static int minPosition(int[] array, int from, int to) {
         return new IntArray(array).subList(from, to).minIndex() + from;
     }
@@ -438,6 +443,10 @@ public class ArrayUtils {
 
     public static int count(long[] array, long value) {
         return new LongArray(array).count(value);
+    }
+
+    public static int count(double[] array, double value) {
+        return new DoubleArray(array).count(value);
     }
 
     public static int count(char[] array, char value) {
@@ -590,6 +599,10 @@ public class ArrayUtils {
         return new IntArray(array).find(value);
     }
 
+    public static int find(char[] array, char value) {
+        return new CharArray(array).find(value);
+    }
+
     public static boolean getOddity(int[] p) {
         FenwickTree tree = new FenwickTree(p.length);
         long total = 0;
@@ -602,6 +615,12 @@ public class ArrayUtils {
 
     public static long[] concatenate(long[] arr1, long[] arr2) {
         long[] result = Arrays.copyOf(arr1, arr1.length + arr2.length);
+        System.arraycopy(arr2, 0, result, arr1.length, arr2.length);
+        return result;
+    }
+
+    public static char[] concatenate(char[] arr1, char[] arr2) {
+        char[] result = Arrays.copyOf(arr1, arr1.length + arr2.length);
         System.arraycopy(arr2, 0, result, arr1.length, arr2.length);
         return result;
     }

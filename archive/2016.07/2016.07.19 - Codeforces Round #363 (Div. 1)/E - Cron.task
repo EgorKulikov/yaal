@@ -1,0 +1,51 @@
+8 E - Cron
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+86 -1 59 23 -1 -1 -1
+6
+1467372658
+1467417540
+1467417541
+1467417598
+1467417599
+1467417600
+
+66 1467417540
+1467417541
+1467417542
+1467417599
+1467503940
+1467503940
+
+1
+1
+48 0 0 12 6 3 7
+3
+1467372658
+1467460810
+1467547200
+
+33 1467460800
+1467547200
+1468065600
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.07.19
+30 Codeforces Round #363 (Div. 1)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1
