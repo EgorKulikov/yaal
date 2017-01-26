@@ -31,7 +31,7 @@ public class Heap implements IntQueue {
     public Heap(int capacity, IntComparator comparator, int maxElement) {
         this.comparator = comparator;
         elements = new int[capacity];
-        at = new int[maxElement];
+        at = new int[maxElement + 1];
         Arrays.fill(at, -1);
     }
 
