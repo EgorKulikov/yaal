@@ -1,0 +1,43 @@
+16 B - Jury Meeting
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+73 2 6 5
+1 1 0 5000
+3 2 0 5500
+2 2 0 6000
+15 0 2 9000
+9 0 1 7000
+8 0 2 6500
+
+6 24500
+
+1
+1
+50 2 4 5
+1 2 0 5000
+2 1 0 4500
+2 1 0 3000
+8 0 1 6000
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+111 on2017_09.on2017_09_06_Codeforces_Round__433__Div__1__based_on_Olympiad_of_Metropolises_.B___Jury_Meeting.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.09.06
+65 Codeforces Round #433 (Div. 1, based on Olympiad of Metropolises)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

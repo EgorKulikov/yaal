@@ -1,0 +1,43 @@
+11 C - Boredom
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+32 2 3
+1 2
+1 1 1 1
+1 1 1 2
+1 1 2 2
+
+6 1
+1
+1
+
+1
+1
+28 4 2
+1 3 2 4
+4 1 4 4
+1 1 2 3
+
+4 3
+5
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+106 on2017_09.on2017_09_06_Codeforces_Round__433__Div__1__based_on_Olympiad_of_Metropolises_.C___Boredom.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.09.06
+65 Codeforces Round #433 (Div. 1, based on Olympiad of Metropolises)
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

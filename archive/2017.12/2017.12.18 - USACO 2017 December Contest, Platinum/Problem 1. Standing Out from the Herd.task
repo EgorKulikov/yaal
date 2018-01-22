@@ -1,0 +1,41 @@
+37 Problem 1. Standing Out from the Herd
+6 SINGLE
+6 CUSTOM
+14 standingout.in
+6 CUSTOM
+15 standingout.out
+2
+0
+19 3
+amy
+tommy
+bessie
+
+8 3
+11
+19
+
+1
+1
+8 2
+ab
+ac
+
+4 2
+2
+
+1
+14 main/net/egork
+9 -Xmx1024M
+4 Main
+21 net.egork.Standingout
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.12.18
+37 USACO 2017 December Contest, Platinum
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

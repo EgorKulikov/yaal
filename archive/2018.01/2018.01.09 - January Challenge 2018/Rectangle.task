@@ -1,0 +1,32 @@
+9 Rectangle
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+26 3
+1 1 2 2
+3 2 2 3
+1 2 2 2
+
+11 YES
+YES
+NO
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+19 net.egork.Rectangle
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.01.09
+22 January Challenge 2018
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

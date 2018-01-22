@@ -1,0 +1,14 @@
+package on2017_09.on2017_09_06_Codeforces_Round__433__Div__1__based_on_Olympiad_of_Metropolises_.B___Jury_Meeting;
+
+import net.egork.chelper.tester.NewTester;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class Main {
+	@Test
+	public void test() throws Exception {
+		if (!NewTester.test("lib/test/on2017_09/on2017_09_06_Codeforces_Round__433__Div__1__based_on_Olympiad_of_Metropolises_/B___Jury_Meeting/B - Jury Meeting.task"))
+			Assert.fail();
+	}
+}

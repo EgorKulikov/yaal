@@ -1,0 +1,32 @@
+15 K-Concatenation
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+21 2
+2 3
+1 2
+3 2
+1 -2 1
+
+4 9
+2
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+24 net.egork.KConcatenation
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.01.09
+22 January Challenge 2018
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

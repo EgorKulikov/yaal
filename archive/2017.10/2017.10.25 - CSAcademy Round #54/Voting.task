@@ -1,0 +1,36 @@
+6 Voting
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+9 3 1
+0 1 2
+5 2 1 0
+1
+1
+9 3 3
+0 1 2
+6 0 1 2 
+1
+2
+13 5 0
+4 3 2 1 0
+10 4 3 2 1 0 
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+16 net.egork.Voting
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.10.25
+19 CSAcademy Round #54
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

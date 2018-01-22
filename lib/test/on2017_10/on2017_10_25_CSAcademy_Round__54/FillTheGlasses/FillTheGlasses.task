@@ -1,0 +1,36 @@
+14 FillTheGlasses
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+13 5 4
+1 2 3 2 1
+1 1
+1
+1
+19 4 3
+200 150 140 300
+1 5
+1
+2
+18 3 1
+1000 1000 1000
+2 10
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+72 on2017_10.on2017_10_25_CSAcademy_Round__54.FillTheGlasses.FillTheGlasses
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.10.25
+19 CSAcademy Round #54
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.utils.io.OutputWriter
+0
+1

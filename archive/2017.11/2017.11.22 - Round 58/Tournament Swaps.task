@@ -1,0 +1,40 @@
+16 Tournament Swaps
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+12 1
+2
+1 2 3 4
+
+9 0 1 1 2 
+
+1
+1
+38 2
+3
+1 6 8 7 5 2 3 4
+3
+1 8 2 7 3 6 4 5
+
+34 0 1 1 1 2 2 2 3 
+0 1 1 1 1 2 2 3 
+
+1
+14 main/net/egork
+8 -Xmx264M
+4 Main
+25 net.egork.TournamentSwaps
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.11.22
+8 Round 58
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

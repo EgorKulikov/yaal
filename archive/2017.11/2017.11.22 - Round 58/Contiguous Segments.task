@@ -1,0 +1,38 @@
+19 Contiguous Segments
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+16 3
+1 3
+6 9
+15 16
+
+2 9
+
+1
+1
+22 4
+2 7
+8 20
+35 49
+21 21
+2 17
+1
+14 main/net/egork
+8 -Xmx264M
+4 Main
+28 net.egork.ContiguousSegments
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.11.22
+8 Round 58
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

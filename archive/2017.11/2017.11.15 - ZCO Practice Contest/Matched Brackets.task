@@ -1,0 +1,30 @@
+16 Matched Brackets
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+44 20
+1 2 1 1 2 2 1 2 1 1 2 1 2 2 1 1 2 1 2 2
+
+
+9 2 4 6 9
+
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+25 net.egork.MatchedBrackets
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.11.15
+20 ZCO Practice Contest
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1

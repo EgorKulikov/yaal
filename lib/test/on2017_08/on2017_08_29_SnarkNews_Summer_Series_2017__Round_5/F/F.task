@@ -1,0 +1,39 @@
+1 F
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+7 xyxyab
+
+8 xyxya b
+
+1
+1
+9 abacabac
+
+9 abacabac
+
+1
+2
+7 pqrspq
+
+12 p q r s p q
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+68 on2017_08.on2017_08_29_SnarkNews_Summer_Series_2017__Round_5.F.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.08.29
+37 SnarkNews Summer Series 2017, Round 5
+1
+30 net.egork.utils.io.InputReader
+31 net.egork.io.OutputWriter
+0
+1
