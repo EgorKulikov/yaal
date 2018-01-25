@@ -34,6 +34,6 @@ H3 H4 H5
 13 JAG Contest 1
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 1

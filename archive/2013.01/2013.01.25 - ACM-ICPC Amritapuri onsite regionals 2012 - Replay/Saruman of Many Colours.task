@@ -25,6 +25,6 @@ rgg
 50 ACM-ICPC Amritapuri onsite regionals 2012 : Replay
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 1

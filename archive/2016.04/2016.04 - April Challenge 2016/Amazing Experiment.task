@@ -42,6 +42,6 @@
 20 April Challenge 2016
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 1

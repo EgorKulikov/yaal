@@ -28,6 +28,6 @@ Case #4: 526.1904762
 40 Google Code Jam Qualification Round 2014
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 1
 1

@@ -29,6 +29,6 @@ Case #4: 0
 29 Google Code Jam Round 1B 2015
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 1
 0

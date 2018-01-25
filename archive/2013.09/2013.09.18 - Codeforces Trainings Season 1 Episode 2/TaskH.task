@@ -23,6 +23,6 @@ Cake 2: 5000.000 5000.000
 39 Codeforces Trainings Season 1 Episode 2
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 1

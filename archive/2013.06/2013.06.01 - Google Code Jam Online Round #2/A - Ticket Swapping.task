@@ -33,6 +33,6 @@ Case #3: 10
 28 Google Code Jam Round 2 2013
 0
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 1
 1

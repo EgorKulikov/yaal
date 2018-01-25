@@ -24,6 +24,6 @@ RLRLRR
 12 SNSS-2016 R4
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 1

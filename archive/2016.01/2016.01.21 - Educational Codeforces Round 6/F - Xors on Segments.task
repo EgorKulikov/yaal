@@ -83,6 +83,6 @@
 30 Educational Codeforces Round 6
 0
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 0

@@ -65,6 +65,6 @@ C 6 2 1
 19 Bayan Contest Final
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 1
 1

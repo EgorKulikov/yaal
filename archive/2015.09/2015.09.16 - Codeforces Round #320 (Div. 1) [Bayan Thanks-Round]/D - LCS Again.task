@@ -44,6 +44,6 @@ abacadefgh
 51 Codeforces Round #320 (Div. 1) [Bayan Thanks-Round]
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 0

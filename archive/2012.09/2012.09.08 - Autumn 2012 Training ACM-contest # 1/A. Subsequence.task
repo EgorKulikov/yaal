@@ -42,5 +42,5 @@
 36 Autumn 2012 Training ACM-contest # 1
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0

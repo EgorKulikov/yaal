@@ -28,6 +28,6 @@ B
 33 9 Round Spiral. Round 3. Step 12.
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 1
 1

@@ -25,6 +25,6 @@ Case #3: 2
 34 Google CodeJam Qualification Round
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 1

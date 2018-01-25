@@ -29,6 +29,6 @@ Case #2: 4 5 3 7 6 2 8 1
 28 Google Code Jam Round 2 2013
 0
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 1
 1

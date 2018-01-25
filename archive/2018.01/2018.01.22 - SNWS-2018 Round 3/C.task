@@ -1,0 +1,32 @@
+1 C
+9 MULTI_EOF
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+33 4
+BWBW
+WBWB
+8
+BBBBWBWW
+BBWWBWBB
+0
+3 3
+9
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+11 net.egork.C
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.01.22
+17 SNWS-2018 Round 3
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

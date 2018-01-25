@@ -36,6 +36,6 @@ I successfully stopped a   print   job once  . AM I GOD?
 32 SnarkNews Winter Series Round #1
 1
 30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+31 net.egork.io.OutputWriter
 0
 1
