@@ -6,17 +6,16 @@ import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SelfDrivingBus {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int[] a = new int[n - 1];
 		int[] b = new int[n - 1];
-		IOUtils.readIntArrays(in, a, b);
+		in.readIntArrays(a, b);
 		MiscUtils.decreaseByOne(a, b);
 		Graph graph = BidirectionalGraph.createGraph(n, a, b);
 		long answer = 0;

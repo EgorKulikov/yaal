@@ -8,13 +8,11 @@ import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.geometry.GeometryUtils;
 import net.egork.geometry.Line;
 import net.egork.geometry.Point;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
 import static java.lang.Math.*;
 import static java.util.Arrays.*;
@@ -28,7 +26,7 @@ public class TaskK {
         int[] y1 = new int[n];
         int[] x2 = new int[n];
         int[] y2 = new int[n];
-        readIntArrays(in, x1, y1, x2, y2);
+        in.readIntArrays(x1, y1, x2, y2);
         double[][] distance = new double[2 * n][2 * n];
         fill(distance, Double.POSITIVE_INFINITY);
         for (int i = 0; i < n; i++) {

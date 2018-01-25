@@ -2,17 +2,16 @@ package on2015_05.on2015_05_27_Weekly_Challenges___Week_15.Haunted_House;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class HauntedHouse {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
         int[] low = new int[count];
         int[] high = new int[count];
-        IOUtils.readIntArrays(in, low, high);
+        in.readIntArrays(low, high);
         int[] delta = new int[ArrayUtils.maxElement(high) + 2];
         for (int i : low) {
             delta[i]++;

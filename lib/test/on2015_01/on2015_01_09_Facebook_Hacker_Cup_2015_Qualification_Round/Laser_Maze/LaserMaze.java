@@ -5,16 +5,15 @@ import net.egork.collections.Pair;
 import net.egork.generated.collections.list.IntList;
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class LaserMaze {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int rowCount = in.readInt();
 		int columnCount = in.readInt();
-		char[][] map = IOUtils.readTable(in, rowCount, columnCount);
+		char[][] map = in.readTable(rowCount, columnCount);
 		Graph graph = new Graph(4 * rowCount * columnCount);
 		int si = -1;
 		int sj = -1;

@@ -3,8 +3,8 @@ package on2015_10.on2015_10_05_October_Challenge_2015.RupsaAndEquilateralTriangl
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class RupsaAndEquilateralTriangle {
     boolean[] good = new boolean[5000001];

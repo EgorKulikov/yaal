@@ -4,13 +4,8 @@ package on2016_02.on2016_02_09_February_Challenge_2016.Call_Center_Schedule;
 
 import net.egork.graph.Graph;
 import net.egork.graph.MaxFlow;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class CallCenterSchedule {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,13 +13,13 @@ public class CallCenterSchedule {
         int d = in.readInt();
         int h = in.readInt();
         int n = in.readInt();
-        int[] l = readIntArray(in, p);
+        int[] l = in.readIntArray(p);
         int ltBegin = in.readInt() - 1;
         int ltEnd = in.readInt() - 1;
-        int[][] r = readIntTable(in, d, h);
+        int[][] r = in.readIntTable(d, h);
         int[][][] f = new int[p][][];
         for (int i = 0; i < p; i++) {
-            f[i] = readIntTable(in, d, h);
+            f[i] = in.readIntTable(d, h);
         }
         Graph graph = new Graph(p * (2 * d + 1) + d * h + 2);
         int source = graph.vertexCount() - 2;

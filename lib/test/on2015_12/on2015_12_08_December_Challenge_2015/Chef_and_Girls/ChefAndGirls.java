@@ -3,11 +3,10 @@ package on2015_12.on2015_12_08_December_Challenge_2015.Chef_and_Girls;
 
 
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -19,7 +18,7 @@ public class ChefAndGirls {
 		int[] to = new int[m];
 		int[] l = new int[m];
 		int[] r = new int[m];
-		IOUtils.readIntArrays(in, from, to, l, r);
+		in.readIntArrays(from, to, l, r);
 		MiscUtils.decreaseByOne(from, to, l, r);
 		Graph graph = Graph.createGraph(n, from, to);
 		int[][] cost = new int[32][32];

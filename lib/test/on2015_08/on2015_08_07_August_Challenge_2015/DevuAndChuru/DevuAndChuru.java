@@ -2,16 +2,15 @@ package on2015_08.on2015_08_07_August_Challenge_2015.DevuAndChuru;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class DevuAndChuru {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int m = in.readInt();
-        int[] a = IOUtils.readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         char[] c = new char[m];
         int[] k = new int[m];
         char[] x = new char[m];

@@ -4,8 +4,8 @@ package on2015_08.on2015_08_06_Yandex_Algorithm_2015_Online_Finals.E____________
 
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 

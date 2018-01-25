@@ -2,10 +2,9 @@ package on2015_08.on2015_08_10_SNSS_2015_R2.D_________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -15,7 +14,7 @@ public class TaskD {
         int k = in.readInt();
         int[] x = new int[n];
         int[] h = new int[n];
-        IOUtils.readIntArrays(in, x, h);
+        in.readIntArrays(x, h);
         ArrayUtils.orderBy(x, h);
         int at = -Arrays.binarySearch(x, k) - 2;
         int answer = 0;

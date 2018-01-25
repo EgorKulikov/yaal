@@ -2,10 +2,9 @@ package on2015_08.on2015_08_22_Codeforces_Round__317__AimFund_Thanks_Round___Div
 
 
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     long[][] answer;
@@ -16,7 +15,7 @@ public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int k = in.readInt();
-        a = IOUtils.readIntArray(in, n);
+        a = in.readIntArray(n);
         ArrayUtils.sort(a, IntComparator.DEFAULT);
         smallPart = n / k;
         bigPart = smallPart + 1;

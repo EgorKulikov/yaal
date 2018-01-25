@@ -5,11 +5,10 @@ package on2015_06.on2015_06_06_Yandex_Algorithm_2015_Round_3.F__________________
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -23,7 +22,7 @@ public class TaskF {
         int[] to = new int[edgeCount];
         int[] weight = new int[edgeCount];
         int[] cost = new int[edgeCount];
-        IOUtils.readIntArrays(in, from, to, weight, cost);
+        in.readIntArrays(from, to, weight, cost);
         MiscUtils.decreaseByOne(from, to);
         if (start == end) {
             out.printLine(0);

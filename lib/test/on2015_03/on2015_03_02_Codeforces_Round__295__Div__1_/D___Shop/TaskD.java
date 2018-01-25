@@ -5,11 +5,10 @@ import net.egork.collections.intcollection.Heap;
 import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.Rational;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -18,11 +17,11 @@ public class TaskD {
 		int size = in.readInt();
 		int count = in.readInt();
 		int can = in.readInt();
-		long[] values = IOUtils.readLongArray(in, size);
+		long[] values = in.readLongArray(size);
 		int[] type = new int[count];
 		int[] id = new int[count];
 		int[] by = new int[count];
-		IOUtils.readIntArrays(in, type, id, by);
+		in.readIntArrays(type, id, by);
 		MiscUtils.decreaseByOne(id);
 		int[] set = new int[size];
 		Arrays.fill(set, -1);

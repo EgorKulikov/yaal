@@ -4,19 +4,17 @@ package on2016_02.on2016_02_28_Grand_Prix_of_Bashkortostan_2016.D___dir__C;
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.ReadOnlyIntervalTree;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.ArrayUtils.*;
 import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int w = in.readInt();
-        int[] f = readIntArray(in, n);
+        int[] f = in.readIntArray(n);
         IntervalTree tree = new ReadOnlyIntervalTree(asLong(f)) {
             @Override
             protected long neutralValue() {

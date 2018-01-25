@@ -5,10 +5,9 @@ import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.pair.LongIntPair;
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class TaskF {
         int x = in.readInt();
         int y = in.readInt();
         int n = in.readInt();
-        int[] m = IOUtils.readIntArray(in, n);
+        int[] m = in.readIntArray(n);
         int g = IntegerUtils.gcd(x, y);
         x /= g;
         y /= g;

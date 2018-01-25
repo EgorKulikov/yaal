@@ -2,14 +2,9 @@ package on2016_02.on2016_02_07_Grand_Prix_of_Saratov.G___Maximum_Product;
 
 
 
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.numbers.NumberIterator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskG {
     long answer;

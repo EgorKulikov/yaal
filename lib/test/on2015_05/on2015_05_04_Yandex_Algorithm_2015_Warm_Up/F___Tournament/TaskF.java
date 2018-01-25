@@ -2,18 +2,17 @@ package on2015_05.on2015_05_04_Yandex_Algorithm_2015_Warm_Up.F___Tournament;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        int[] level = IOUtils.readIntArray(in, count);
+        int[] level = in.readIntArray(count);
         long index = in.readLong();
         int[] copy = level.clone();
         Arrays.sort(copy);

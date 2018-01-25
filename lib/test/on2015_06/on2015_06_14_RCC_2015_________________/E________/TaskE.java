@@ -3,9 +3,8 @@ package on2015_06.on2015_06_14_RCC_2015_________________.E________;
 
 import net.egork.collections.intcollection.Heap;
 import net.egork.collections.map.Counter;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Map;
 
@@ -16,7 +15,7 @@ public class TaskE {
         int count = in.readInt();
         int queryCount = in.readInt();
         in.readInt();
-        int[] trees = IOUtils.readIntArray(in, count);
+        int[] trees = in.readIntArray(count);
         Counter<Integer> chunks = new Counter<>();
         for (int i = 1; i < count; i++) {
             chunks.add(trees[i] - trees[i - 1]);

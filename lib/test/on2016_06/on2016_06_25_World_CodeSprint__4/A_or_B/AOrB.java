@@ -2,8 +2,8 @@ package on2016_06.on2016_06_25_World_CodeSprint__4.A_or_B;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Character.isDigit;
 import static java.lang.Math.max;

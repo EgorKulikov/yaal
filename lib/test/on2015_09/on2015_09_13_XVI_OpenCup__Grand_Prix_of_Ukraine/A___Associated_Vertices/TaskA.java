@@ -6,11 +6,10 @@ import net.egork.collections.Pair;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.graph.StronglyConnectedComponents;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,7 +17,7 @@ public class TaskA {
         int m = in.readInt();
         int[] x = new int[m];
         int[] y = new int[m];
-        IOUtils.readIntArrays(in, x, y);
+        in.readIntArrays(x, y);
         MiscUtils.decreaseByOne(x, y);
         Graph graph = Graph.createGraph(n, x, y);
         Pair<int[], Graph> kosaraju = StronglyConnectedComponents.kosaraju(graph);

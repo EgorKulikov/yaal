@@ -2,21 +2,20 @@ package on2016_08.on2016_08_22_SNSS_2016_R4.F___Merge;
 
 
 
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
 import java.util.Random;
 
 import static java.lang.Math.min;
-import static net.egork.io.IOUtils.readIntArray;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         int m = in.readInt();
-        int[] b = readIntArray(in, m);
+        int[] b = in.readIntArray(m);
         StringHash ah = new SimpleStringHash(a);
         StringHash bh = new SimpleStringHash(b);
         int ata = 0;

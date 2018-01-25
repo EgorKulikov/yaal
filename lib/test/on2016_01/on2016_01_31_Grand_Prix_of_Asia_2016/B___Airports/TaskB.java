@@ -4,23 +4,19 @@ package on2016_01.on2016_01_31_Grand_Prix_of_Asia_2016.B___Airports;
 
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
 
 public class TaskB {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int[] x = new int[n];
 		int[] y = new int[n];
-		readIntArrays(in, x, y);
+		in.readIntArrays(x, y);
 		int[] base = new int[4];
 		for (int i = 0; i < 2; i++) {
 			for (int j = 0; j < 2; j++) {

@@ -1,13 +1,17 @@
 package net.egork.string;
 
 import net.egork.generated.collections.list.IntList;
+import net.egork.generated.collections.pair.IntIntPair;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author egorku@yandex-team.ru
  */
 public class SuffixAutomaton {
+    private final boolean useMap;
     public final int[] length;
     public final int[] link;
     public final int[] first;
@@ -19,6 +23,10 @@ public class SuffixAutomaton {
     public int edgeSize;
 
     public SuffixAutomaton(final CharSequence s) {
+        this(s, false);
+    }
+
+    public SuffixAutomaton(final CharSequence s, boolean useMap) {
         this(new IntList() {
             @Override
             public int get(int index) {
@@ -43,10 +51,15 @@ public class SuffixAutomaton {
             public int size() {
                 return s.length();
             }
-        });
+        }, useMap);
     }
 
     public SuffixAutomaton(IntList s) {
+        this(s, false);
+    }
+
+    public SuffixAutomaton(IntList s, boolean useMap) {
+        this.useMap = useMap;
         int count = s.size();
         length = new int[2 * count + 1];
         link = new int[2 * count + 1];
@@ -82,6 +95,9 @@ public class SuffixAutomaton {
                             next[edgeSize] = first[clone];
                             first[clone] = edgeSize;
                             label[edgeSize] = label[linkEdge];
+                            if (useMap) {
+                                edges.put(new IntIntPair(clone, label[linkEdge]), edgeSize);
+                            }
                             to[edgeSize++] = to[linkEdge];
                             linkEdge = next[linkEdge];
                         }
@@ -99,13 +115,25 @@ public class SuffixAutomaton {
                 next[edgeSize] = first[previous];
                 first[previous] = edgeSize;
                 label[edgeSize] = c;
+                if (useMap) {
+                    edges.put(new IntIntPair(previous, c), edgeSize);
+                }
                 to[edgeSize++] = current;
             }
             last = current;
         }
     }
 
+    public Map<IntIntPair, Integer> edges = new HashMap<>();
+
     public int findEdge(int vertex, int label) {
+        if (useMap) {
+            Integer result = edges.get(new IntIntPair(vertex, label));
+            if (result == null) {
+                return -1;
+            }
+            return result;
+        }
         int edge = first[vertex];
         while (edge != -1) {
             if (this.label[edge] == label) {

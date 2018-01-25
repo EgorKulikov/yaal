@@ -3,18 +3,15 @@ package on2016_02.on2016_02_13_8VC_Venture_Cup_2016___Elimination_Round.D___Jerr
 
 
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         sort(a, IntComparator.DEFAULT);
         double[] diff = new double[5000];
         double quant = 2d / n / (n - 1);

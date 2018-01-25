@@ -2,10 +2,9 @@ package on2015_06.on2015_06_14_RCC_2015_________________.D____________________;
 
 
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Stack;
 
@@ -17,7 +16,7 @@ public class TaskD {
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        int[] priority = IOUtils.readIntArray(in, count);
+        int[] priority = in.readIntArray(count);
         Stack<IntIntPair> stack = new Stack<>();
         long answer = 1;
         for (int i = 0; i < count; i++) {

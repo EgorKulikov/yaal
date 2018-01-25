@@ -2,18 +2,17 @@ package on2016_01.on2016_01_31_Grand_Prix_of_Asia_2016.I___Robots;
 
 
 
-import net.egork.collections.Pair;
 import net.egork.graph.Graph;
-import net.egork.graph.GraphAlgorithms;
 import net.egork.graph.ShortestDistance;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import java.util.*;
-
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class TaskI {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

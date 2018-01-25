@@ -7,10 +7,9 @@ import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class GrandTour {
     LCA lca;
@@ -18,13 +17,13 @@ public class GrandTour {
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        int[] sightsee = IOUtils.readIntArray(in, count);
+        int[] sightsee = in.readIntArray(count);
         int[] from = new int[count];
         int[] to = new int[count];
         int[] cost = new int[count];
-        IOUtils.readIntArrays(in, from, to, cost);
+        in.readIntArrays(from, to, cost);
         int length = in.readInt();
-        int[] tour = IOUtils.readIntArray(in, length);
+        int[] tour = in.readIntArray(length);
         MiscUtils.decreaseByOne(from, to, tour);
         Graph graph = new BidirectionalGraph(count, count - 1);
         IndependentSetSystem setSystem = new RecursiveIndependentSetSystem(count);

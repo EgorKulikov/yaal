@@ -3,8 +3,8 @@ package on2016_01.on2016_01_11_CodeBar.Semusa_Modified_Cipher;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SemusaModifiedCipher {
 	long[] f = IntegerUtils.generateFibonacci(88, 26);

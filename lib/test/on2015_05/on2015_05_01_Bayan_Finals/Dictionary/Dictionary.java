@@ -2,10 +2,9 @@ package on2015_05.on2015_05_01_Bayan_Finals.Dictionary;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
 
@@ -23,7 +22,7 @@ public class Dictionary {
             public void read(InputReader in) {
                 count = in.readInt();
                 size = in.readInt();
-                words = IOUtils.readIntArray(in, count);
+                words = in.readIntArray(count);
             }
 
             @Override

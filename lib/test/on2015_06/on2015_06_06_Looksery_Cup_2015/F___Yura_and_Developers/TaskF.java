@@ -2,13 +2,11 @@ package on2015_06.on2015_06_06_Looksery_Cup_2015.F___Yura_and_Developers;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -16,7 +14,7 @@ public class TaskF {
 //        int count = 300000;
         int mod = in.readInt();
 //        int mod = 1000000;
-        int[] work = IOUtils.readIntArray(in, count);
+        int[] work = in.readIntArray(count);
 //        Random random = new Random(239);
 //        int[] work = new int[count];
 //        for (int i = 0; i < count; i++) {

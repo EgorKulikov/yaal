@@ -2,19 +2,13 @@ package on2016_02.on2016_02_09_February_Challenge_2016.Weird_Sum;
 
 
 
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.numbers.IntegerUtils;
 import net.egork.numbers.Interpolation;
 import net.egork.numbers.MultiplicativeFunction;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
 import java.math.BigInteger;
-
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class WeirdSum {
     static final long MOD = 998244353;

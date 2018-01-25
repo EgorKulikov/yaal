@@ -7,22 +7,15 @@ import net.egork.collections.set.EHashSet;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Set;
-
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         Set<IntIntPair> processed = new EHashSet<>();
         IntHashMap qty = new IntHashMap();
         for (int i : a) {

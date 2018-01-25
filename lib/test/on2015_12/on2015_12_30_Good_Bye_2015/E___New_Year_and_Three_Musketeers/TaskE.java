@@ -2,10 +2,9 @@ package on2015_12.on2015_12_30_Good_Bye_2015.E___New_Year_and_Three_Musketeers;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 import java.util.NavigableSet;
@@ -14,8 +13,8 @@ import java.util.TreeSet;
 public class TaskE {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		int[] aa = IOUtils.readIntArray(in, 3);
-		int[] t = Arrays.copyOf(IOUtils.readIntArray(in, n), n + 1);
+		int[] aa = in.readIntArray(3);
+		int[] t = Arrays.copyOf(in.readIntArray(n), n + 1);
 		NavigableSet<Integer> bad = new TreeSet<>((x, y) -> t[x] != t[y] ? t[x] - t[y] : x - y);
 		for (int i = 0; i < n; i++) {
 			bad.add(i);

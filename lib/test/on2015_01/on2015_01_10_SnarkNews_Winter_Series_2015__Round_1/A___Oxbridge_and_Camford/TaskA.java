@@ -3,8 +3,8 @@ package on2015_01.on2015_01_10_SnarkNews_Winter_Series_2015__Round_1.A___Oxbridg
 
 
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
 	double[][] min = new double[11][401];

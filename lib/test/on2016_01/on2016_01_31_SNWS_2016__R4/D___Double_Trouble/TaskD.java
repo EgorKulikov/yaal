@@ -4,11 +4,10 @@ package on2016_01.on2016_01_31_SNWS_2016__R4.D___Double_Trouble;
 
 import net.egork.collections.Pair;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -17,7 +16,7 @@ public class TaskD {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int m = in.readInt();
-		char[][] map = IOUtils.readTable(in, n, m);
+		char[][] map = in.readTable(n, m);
 		IntIntPair first = null;
 		IntIntPair second = null;
 		for (int i = 0; i < n; i++) {

@@ -4,20 +4,16 @@ package on2016_02.on2016_02_20_Booking_com_Hack_a_Holiday__City_Break_Edition.Ha
 
 import net.egork.generated.collections.set.IntHashSet;
 import net.egork.generated.collections.set.IntSet;
-import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class HappinessScore {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] s = readIntArray(in, n);
+        int[] s = in.readIntArray(n);
         boolean[] isPrime = IntegerUtils.generatePrimalityTable((int) (sumArray(s) + 1));
         IntSet set = new IntHashSet();
         for (int i = 1; i < (1 << n); i++) {

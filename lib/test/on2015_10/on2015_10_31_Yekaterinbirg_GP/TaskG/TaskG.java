@@ -3,8 +3,8 @@ package on2015_10.on2015_10_31_Yekaterinbirg_GP.TaskG;
 
 
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskG {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

@@ -4,20 +4,19 @@ package on2016_06.on2016_06_25_World_CodeSprint__4.Gridland_Provinces;
 
 import net.egork.generated.collections.set.LongHashSet;
 import net.egork.generated.collections.set.LongSet;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.string.CompositeStringHash;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.string.SubstringStringHash;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readStringArray;
 import static net.egork.string.StringUtils.reverse;
 
 public class GridlandProvinces {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        String[] s = readStringArray(in, 2);
+        String[] s = in.readStringArray(2);
         LongSet set = new LongHashSet();
         addAll(n, s, set);
         for (int i = 0; i < 2; i++) {

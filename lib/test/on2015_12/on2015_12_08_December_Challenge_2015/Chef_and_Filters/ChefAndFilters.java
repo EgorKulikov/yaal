@@ -5,8 +5,8 @@ package on2015_12.on2015_12_08_December_Challenge_2015.Chef_and_Filters;
 import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class ChefAndFilters {
 	private static final long MOD = (long) (1e9 + 7);

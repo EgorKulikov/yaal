@@ -3,15 +3,14 @@ package on2015_08.on2015_08_07_August_Challenge_2015.Chef_and_insomnia;
 
 
 import net.egork.collections.intcollection.IntHashMap;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class ChefAndInsomnia {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int k = in.readInt();
-        int[] a = IOUtils.readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         long answer = 0;
         int to = n - 1;
         IntHashMap pos = new IntHashMap();

@@ -5,8 +5,8 @@ package on2015_08.on2015_08_10_Codeforces_Round__315__Div__1_.A___Primes_or_Pali
 import net.egork.numbers.IntegerUtils;
 import net.egork.numbers.Rational;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

@@ -2,16 +2,15 @@ package on2015_04.on2015_04_04_ZeptoLab_Code_Rush_2015.E___Transmitting_Levels;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
         int queryCount = in.readInt();
-        int[] sizes = IOUtils.readIntArray(in, count);
+        int[] sizes = in.readIntArray(count);
         long[] partial = ArrayUtils.partialSums(sizes);
         int[] result = new int[count];
         long[] remaining = new long[count];

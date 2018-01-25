@@ -2,8 +2,8 @@ package on2016_04.on2016_04_22_Vekua_Cup_2016_Personal_Pre_Run.C___Chemistry;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.*;
 import static java.util.Arrays.copyOf;

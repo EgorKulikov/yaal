@@ -3,12 +3,9 @@ package on2015_06.on2015_06_20_IPSC.TaskI;
 
 
 import net.egork.graph.Graph;
-import net.egork.graph.ShortestDistance;
-import net.egork.io.IOUtils;
-import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,7 +26,7 @@ public class TaskI {
         int[] to = new int[edgeCount];
         int[] distance = new int[edgeCount];
         int[] ascent = new int[edgeCount];
-        IOUtils.readIntArrays(in, from, to, distance, ascent);
+        in.readIntArrays(from, to, distance, ascent);
         MiscUtils.decreaseByOne(from, to);
         fromStart = new long[count];
         fromEnd = new long[count];

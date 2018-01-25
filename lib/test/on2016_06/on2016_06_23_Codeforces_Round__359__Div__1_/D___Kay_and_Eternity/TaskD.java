@@ -2,15 +2,14 @@ package on2016_06.on2016_06_23_Codeforces_Round__359__Div__1_.D___Kay_and_Eterni
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
 import static java.lang.Integer.MIN_VALUE;
 import static java.util.Arrays.sort;
-import static net.egork.io.IOUtils.readIntArrays;
 import static net.egork.misc.ArrayUtils.orderBy;
 
 public class TaskD {
@@ -19,7 +18,7 @@ public class TaskD {
         int k = in.readInt();
         int[] x = new int[n];
         int[] y = new int[n];
-        readIntArrays(in, x, y);
+        in.readIntArrays(x, y);
         orderBy(x, y);
         Event[] horizontal = new Event[n * 2];
         for (int i = 0; i < n; i++) {

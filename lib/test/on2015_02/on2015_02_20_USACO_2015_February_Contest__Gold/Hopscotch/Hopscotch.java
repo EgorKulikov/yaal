@@ -3,9 +3,8 @@ package on2015_02.on2015_02_20_USACO_2015_February_Contest__Gold.Hopscotch;
 
 
 import net.egork.collections.intcollection.IntHashMap;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Hopscotch {
 	private static final int MOD = (int) (1e9 + 7);
@@ -16,7 +15,7 @@ public class Hopscotch {
 		int rowCount = in.readInt();
 		int columnCount = in.readInt();
 		in.readInt();
-		int[][] map = IOUtils.readIntTable(in, rowCount, columnCount);
+		int[][] map = in.readIntTable(rowCount, columnCount);
 		qty = new int[columnCount * 4];
 		exact = new IntHashMap[columnCount * 4];
 		for (int i = 0; i < columnCount * 4; i++) {

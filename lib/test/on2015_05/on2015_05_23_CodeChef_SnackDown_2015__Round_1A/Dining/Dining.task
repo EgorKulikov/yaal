@@ -24,7 +24,7 @@
 10 2015.05.23
 33 CodeChef SnackDown 2015, Round 1A
 1
-30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
 0
 0

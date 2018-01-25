@@ -2,19 +2,18 @@ package on2015_08.on2015_08_23_August_Cook_Off_2015.Chef_and_the_Cards;
 
 
 import net.egork.collections.intcollection.Heap;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
 public class ChefAndTheCards {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		int[] a = IOUtils.readIntArray(in, n);
-		int[] b = IOUtils.readIntArray(in, n);
+		int[] a = in.readIntArray(n);
+		int[] b = in.readIntArray(n);
 		MiscUtils.decreaseByOne(a, b);
 		ArrayUtils.orderBy(b, a);
 		int answer = 0;

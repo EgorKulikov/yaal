@@ -5,10 +5,9 @@ import net.egork.collections.Pair;
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.Graph;
 import net.egork.graph.StronglyConnectedComponents;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -23,7 +22,7 @@ public class Task3 {
         int[] lValue = new int[n];
         int[] rType = new int[n];
         int[] rValue = new int[n];
-        IOUtils.readIntArrays(in, type, lType, lValue, rType, rValue);
+        in.readIntArrays(type, lType, lValue, rType, rValue);
         Graph graph = new Graph(k);
         int[] edge = new int[n];
         int at = 0;

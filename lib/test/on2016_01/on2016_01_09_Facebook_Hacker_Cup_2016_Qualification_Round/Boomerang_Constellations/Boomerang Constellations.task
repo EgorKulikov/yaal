@@ -52,7 +52,7 @@ Case #5: 12
 10 2016.01.09
 44 Facebook Hacker Cup 2016 Qualification Round
 1
-30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
 1
 0

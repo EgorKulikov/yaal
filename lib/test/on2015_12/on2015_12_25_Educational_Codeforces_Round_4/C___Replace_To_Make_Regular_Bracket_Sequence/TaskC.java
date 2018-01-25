@@ -4,8 +4,8 @@ package on2015_12.on2015_12_25_Educational_Codeforces_Round_4.C___Replace_To_Mak
 
 import net.egork.generated.collections.list.CharArrayList;
 import net.egork.generated.collections.list.CharList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

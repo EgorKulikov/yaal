@@ -3,10 +3,9 @@ package on2015_12.on2015_12_25_Educational_Codeforces_Round_4.D___The_Union_of_k
 
 
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,7 +17,7 @@ public class TaskD {
 		int k = in.readInt();
 		int[] l = new int[n];
 		int[] r = new int[n];
-		IOUtils.readIntArrays(in, l, r);
+		in.readIntArrays(l, r);
 		int[] at = new int[2 * n];
 		int[] delta = new int[2 * n];
 		System.arraycopy(l, 0, at, 0, n);

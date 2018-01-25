@@ -3,15 +3,14 @@ package on2015_10.on2015_10_04_Grand_Prix_of_Eurasia_2015.A___________;
 
 
 import net.egork.collections.map.Indexer;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         n = 1 << n;
-        String[] names = IOUtils.readStringArray(in, n);
+        String[] names = in.readStringArray(n);
         String results = in.readString();
         Indexer<String> indexer = new Indexer<>();
         int[] team = new int[2 * n - 1];

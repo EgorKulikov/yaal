@@ -7,8 +7,8 @@ import net.egork.geometry.Circle;
 import net.egork.geometry.Line;
 import net.egork.geometry.Point;
 import net.egork.geometry.Segment;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -2,11 +2,10 @@ package on2015_08.on2015_08_10_SNSS_2015_R2.F______________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
     private static final long MOD = (long) (1e9 + 9);
@@ -17,7 +16,7 @@ public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int m = in.readInt();
-        int[] x = IOUtils.readIntArray(in, n);
+        int[] x = in.readIntArray(n);
         for (int i = 0; i < n; i++) {
             x[i] = Math.min(x[i], m - x[i]);
         }

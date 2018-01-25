@@ -4,16 +4,15 @@ package on2015_05.on2015_05_23_CodeChef_SnackDown_2015__Round_1A.Dining;
 
 import net.egork.graph.Graph;
 import net.egork.graph.MinCostFlow;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Dining {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
         int days = in.readInt();
         int perDay = in.readInt();
-        double[][] probability = IOUtils.readDoubleTable(in, count, days);
+        double[][] probability = in.readDoubleTable(count, days);
         Graph graph = new Graph(count + days + 2);
         int source = graph.vertexCount() - 2;
         int sink = graph.vertexCount() - 1;

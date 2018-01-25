@@ -3,10 +3,9 @@ package on2015_02.on2015_02_02_Codeforces_Round__290__Div__1_.B___Fox_And_Jumpin
 
 
 import net.egork.collections.intcollection.IntHashMap;
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,8 +15,8 @@ public class TaskB {
 		int count = in.readInt();
 		IntHashMap answer = new IntHashMap();
 		List<Card> queue = new ArrayList<>();
-		int[] cards = IOUtils.readIntArray(in, count);
-		int[] cost = IOUtils.readIntArray(in, count);
+		int[] cards = in.readIntArray(count);
+		int[] cost = in.readIntArray(count);
 		for (int i = 0; i < count; i++) {
 			if (!answer.contains(cards[i])) {
 				queue.add(new Card(cards[i]));

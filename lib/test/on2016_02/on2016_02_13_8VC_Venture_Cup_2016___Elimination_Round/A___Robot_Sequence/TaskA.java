@@ -4,18 +4,13 @@ package on2016_02.on2016_02_13_8VC_Venture_Cup_2016___Elimination_Round.A___Robo
 
 import net.egork.collections.map.Counter;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        char[] path = readCharArray(in, n);
+        char[] path = in.readCharArray(n);
         Counter<IntIntPair> counter = new Counter<>();
         counter.add(new IntIntPair(0, 0));
         int x = 0;

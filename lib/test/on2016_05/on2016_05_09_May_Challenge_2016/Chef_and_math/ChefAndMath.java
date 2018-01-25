@@ -3,8 +3,8 @@ package on2016_05.on2016_05_09_May_Challenge_2016.Chef_and_math;
 
 
 import net.egork.collections.intcollection.IntHashMap;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.util.Arrays.copyOfRange;
 import static net.egork.misc.MiscUtils.MOD7;

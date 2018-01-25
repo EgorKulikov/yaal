@@ -3,8 +3,8 @@ package on2016_04.on2016_04_08_April_Challenge_2016.Help_Watson_Escape;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static net.egork.misc.MiscUtils.MOD7;
 

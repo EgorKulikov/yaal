@@ -4,8 +4,8 @@ package on2016_06.on2016_06_28_Week_of_Code_21.Luck_Balance;
 
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class LuckBalance {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

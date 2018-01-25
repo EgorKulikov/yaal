@@ -4,11 +4,10 @@ package on2015_01.on2015_01_14_SnarkNews_Winter_Series_2015__Round_2.D___Defendi
 import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -22,7 +21,7 @@ public class TaskD {
 		int[] to = new int[edgeCount];
 		int[] length = new int[edgeCount];
 		int[] cost = new int[edgeCount];
-		IOUtils.readIntArrays(in, from, to, length, cost);
+		in.readIntArrays(from, to, length, cost);
 		MiscUtils.decreaseByOne(from, to);
 		Graph direct = Graph.createWeightedGraph(count, from, to, ArrayUtils.asLong(length));
 		long[] directDistances = ShortestDistance.dijkstraAlgorithm(direct, start).first;

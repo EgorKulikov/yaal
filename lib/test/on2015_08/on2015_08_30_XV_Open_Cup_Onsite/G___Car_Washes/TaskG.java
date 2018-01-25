@@ -2,11 +2,10 @@ package on2015_08.on2015_08_30_XV_Open_Cup_Onsite.G___Car_Washes;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -28,7 +27,7 @@ public class TaskG {
 		a = new int[m];
 		b = new int[m];
 		c = new int[m];
-		IOUtils.readIntArrays(in, a, b, c);
+		in.readIntArrays(a, b, c);
 		MiscUtils.decreaseByOne(a, b);
 		value = ArrayUtils.compress(c);
 		answer = new long[n][n][];

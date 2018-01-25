@@ -3,21 +3,16 @@ package on2016_02.on2016_02_13_8VC_Venture_Cup_2016___Elimination_Round.G___Raff
 
 
 import net.egork.collections.intcollection.Heap;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskG {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int t = in.readInt();
         int q = in.readInt();
-        int[] p = readIntArray(in, n);
-        int[] l = readIntArray(in, n);
+        int[] p = in.readIntArray(n);
+        int[] l = in.readIntArray(n);
         int[] bought = new int[n];
         double[] valueLeft = new double[n];
         double[] valueRight = new double[n];

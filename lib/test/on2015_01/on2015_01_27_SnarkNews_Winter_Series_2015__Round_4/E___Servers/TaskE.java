@@ -5,12 +5,11 @@ package on2015_01.on2015_01_27_SnarkNews_Winter_Series_2015__Round_4.E___Servers
 import net.egork.collections.Pair;
 import net.egork.graph.Graph;
 import net.egork.graph.StronglyConnectedComponents;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -19,10 +18,10 @@ public class TaskE {
 		long target = in.readLong();
 		int[] source = new int[edgeCount];
 		int[] destination = new int[edgeCount];
-		IOUtils.readIntArrays(in, source, destination);
+		in.readIntArrays(source, destination);
 		MiscUtils.decreaseByOne(source, destination);
 		Graph graph = Graph.createGraph(count, source, destination);
-		long[] value = IOUtils.readLongArray(in, count);
+		long[] value = in.readLongArray(count);
 		Pair<int[], Graph> pair = StronglyConnectedComponents.kosaraju(graph);
 		long[] result = new long[pair.second.vertexCount()];
 		for (int i = 0; i < count; i++) {

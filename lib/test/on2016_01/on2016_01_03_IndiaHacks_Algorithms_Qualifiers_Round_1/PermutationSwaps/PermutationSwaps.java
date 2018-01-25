@@ -4,20 +4,19 @@ package on2016_01.on2016_01_03_IndiaHacks_Algorithms_Qualifiers_Round_1.Permutat
 
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class PermutationSwaps {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int m = in.readInt();
-		int[] p = IOUtils.readIntArray(in, n);
-		int[] q = IOUtils.readIntArray(in, n);
+		int[] p = in.readIntArray(n);
+		int[] q = in.readIntArray(n);
 		int[] a = new int[m];
 		int[] b = new int[m];
-		IOUtils.readIntArrays(in, a, b);
+		in.readIntArrays(a, b);
 		MiscUtils.decreaseByOne(p, q, a, b);
 		int[] t = new int[n];
 		int[] r = new int[n];

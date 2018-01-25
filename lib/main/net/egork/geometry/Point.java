@@ -1,6 +1,6 @@
 package net.egork.geometry;
 
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

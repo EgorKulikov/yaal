@@ -4,11 +4,10 @@ package on2015_01.on2015_01_10_SnarkNews_Winter_Series_2015__Round_1.C___Interna
 
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
 	long answer = 0;
@@ -18,7 +17,7 @@ public class TaskC {
 		int[] from = new int[count - 1];
 		int[] to = new int[count - 1];
 		int[] profit = new int[count - 1];
-		IOUtils.readIntArrays(in, from, to, profit);
+		in.readIntArrays(from, to, profit);
 		MiscUtils.decreaseByOne(from, to);
 		Graph graph = BidirectionalGraph.createWeightedGraph(count, from, to, ArrayUtils.asLong(profit));
 		go(0, -1, graph);

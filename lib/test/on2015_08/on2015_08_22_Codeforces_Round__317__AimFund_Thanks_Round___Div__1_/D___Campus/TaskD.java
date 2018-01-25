@@ -3,8 +3,8 @@ package on2015_08.on2015_08_22_Codeforces_Round__317__AimFund_Thanks_Round___Div
 
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;

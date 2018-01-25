@@ -2,11 +2,10 @@ package on2015_08.on2015_08_30_XV_Open_Cup_Onsite.B___Movie_goer;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
 	protected long[] value;
@@ -169,8 +168,8 @@ public class TaskB {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int m = in.readInt();
-		int[] f = IOUtils.readIntArray(in, n);
-		int[] w = IOUtils.readIntArray(in, m);
+		int[] f = in.readIntArray(n);
+		int[] w = in.readIntArray(m);
 		int[] next = new int[n];
 		int[] pos = ArrayUtils.createArray(m, n);
 		MiscUtils.decreaseByOne(f);

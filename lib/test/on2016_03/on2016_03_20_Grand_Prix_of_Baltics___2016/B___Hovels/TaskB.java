@@ -5,15 +5,14 @@ package on2016_03.on2016_03_20_Grand_Prix_of_Baltics___2016.B___Hovels;
 import net.egork.collections.intcollection.Range;
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import static java.util.Arrays.fill;
-import static net.egork.io.IOUtils.readIntArrays;
 import static net.egork.misc.MiscUtils.DX4;
 import static net.egork.misc.MiscUtils.DY4;
 
@@ -23,10 +22,10 @@ public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int[] hx = new int[3];
         int[] hy = new int[3];
-        readIntArrays(in, hx, hy);
+        in.readIntArrays(hx, hy);
         int[] sx = new int[3];
         int[] sy = new int[3];
-        readIntArrays(in, sx, sy);
+        in.readIntArrays(sx, sy);
         for (int i = 0; i < 3; i++) {
             hx[i] *= 5;
             hy[i] *= 5;

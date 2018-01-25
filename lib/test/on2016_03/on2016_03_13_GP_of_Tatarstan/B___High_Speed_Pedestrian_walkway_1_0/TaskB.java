@@ -2,11 +2,9 @@ package on2016_03.on2016_03_13_GP_of_Tatarstan.B___High_Speed_Pedestrian_walkway
 
 
 
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.numbers.Matrix;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-
-import static net.egork.io.IOUtils.readIntArray;
 
 public class TaskB {
     private static final long MOD = (long) (1e9 + 9);
@@ -14,7 +12,7 @@ public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         long n = in.readLong();
         int m = in.readInt();
-        int[] c = readIntArray(in, m);
+        int[] c = in.readIntArray(m);
         long[][] matrix = new long[m * m][m * m];
         for (int i = 1; i < m; i++) {
             for (int j = 1; j < m; j++) {

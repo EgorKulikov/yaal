@@ -3,13 +3,10 @@ package on2016_02.on2016_02_20_February_Clash__16.Just_shortest_distance_problem
 
 
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
+import static net.egork.misc.ArrayUtils.createArray;
 
 public class JustShortestDistanceProblem {
     public static final int INFINITY = Integer.MAX_VALUE / 2;

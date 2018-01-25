@@ -2,9 +2,8 @@ package on2015_04.on2015_04_11_Google_Code_Jam_Qualification_Round_2015.C___Dijk
 
 
 
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
 
@@ -46,7 +45,7 @@ public class TaskC {
             public void read(InputReader in) {
                 length = in.readInt();
                 times = in.readLong();
-                string = IOUtils.readCharArray(in, length);
+                string = in.readCharArray(length);
             }
 
             @Override

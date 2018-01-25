@@ -3,13 +3,11 @@ package on2016_02.on2016_02_28_8VC_Venture_Cup_2016___Final_Round.C___Package_De
 
 
 import net.egork.collections.intervaltree.IntervalTree;
-import net.egork.collections.intervaltree.LongIntervalTree;
 import net.egork.collections.intervaltree.ReadOnlyIntervalTree;
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.ArrayUtils.*;
 import static java.lang.Math.*;
 import static java.util.Arrays.*;
@@ -21,7 +19,7 @@ public class TaskC {
         int m = in.readInt();
         int[] x = new int[m];
         int[] p = new int[m];
-        readIntArrays(in, x, p);
+        in.readIntArrays(x, p);
         m++;
         x = copyOf(x, m);
         p = copyOf(p, m);

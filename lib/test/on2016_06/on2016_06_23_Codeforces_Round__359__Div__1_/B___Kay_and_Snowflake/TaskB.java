@@ -7,11 +7,10 @@ import net.egork.generated.collections.function.IntToIntFunction;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.graph.DFSOrder;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static net.egork.graph.Graph.createGraph;
-import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.MiscUtils.decreaseByOne;
 
 public class TaskB {
@@ -23,7 +22,7 @@ public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int q = in.readInt();
-        int[] p = readIntArray(in, n - 1);
+        int[] p = in.readIntArray(n - 1);
         decreaseByOne(p);
         graph = createGraph(n, p, new IntArrayList(Range.range(n - 1).map((IntToIntFunction)
                 x -> x + 1)).toArray());

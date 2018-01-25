@@ -2,28 +2,21 @@ package on2016_02.on2016_02_09_February_Challenge_2016.Sereja_and_Two_Lines;
 
 
 
-import net.egork.collections.intcollection.IntHashMap;
-import net.egork.collections.map.CPPMap;
 import net.egork.collections.map.Counter;
-import net.egork.generated.collections.iterator.IntIterator;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Map;
 
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class SerejaAndTwoLines {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int m = in.readInt();
-        int[][] a = readIntTable(in, n, m);
+        int[][] a = in.readIntTable(n, m);
         int count = compress(a).length;
         Counter<Integer>[] rows = new Counter[count];
         Counter<Integer>[] columns = new Counter[count];

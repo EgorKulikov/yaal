@@ -5,20 +5,18 @@ package on2016_02.on2016_02_26_Manthan__Codefest_16.E___Startup_Funding;
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.ReadOnlyIntervalTree;
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.ArrayUtils.*;
 import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int k = in.readInt();
-        int[] v = readIntArray(in, n);
-        int[] c = readIntArray(in, n);
+        int[] v = in.readIntArray(n);
+        int[] c = in.readIntArray(n);
         int[] result = new int[n];
         IntervalTree max = new ReadOnlyIntervalTree(asLong(v)) {
             @Override

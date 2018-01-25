@@ -6,10 +6,9 @@ import net.egork.collections.intcollection.Heap;
 import net.egork.collections.intcollection.Range;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class LaundroMatt {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -27,7 +26,7 @@ public class LaundroMatt {
                 n = in.readInt();
                 m = in.readInt();
                 d = in.readInt();
-                w = IOUtils.readIntArray(in, n);
+                w = in.readIntArray(n);
             }
 
             @Override

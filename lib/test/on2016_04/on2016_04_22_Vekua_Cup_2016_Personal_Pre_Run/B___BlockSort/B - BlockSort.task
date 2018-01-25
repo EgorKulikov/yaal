@@ -22,7 +22,7 @@
 10 2016.04.22
 31 Vekua Cup 2016 Personal Pre-Run
 1
-30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
 0
 1

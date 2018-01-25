@@ -4,7 +4,7 @@ package on2015_08.on2015_08_07_August_Challenge_2015.Chef_and_insomnia;
 
 import net.egork.chelper.task.Test;
 import net.egork.chelper.tester.TestCase;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.io.StringWriter;
 import java.util.ArrayList;

@@ -3,10 +3,9 @@ package on2015_06.on2015_06_06_Looksery_Cup_2015.F___Yura_and_Developers;
 
 
 import net.egork.chelper.task.Test;
-import net.egork.chelper.tester.TestProvider;
 import net.egork.chelper.tester.TestCase;
 
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;

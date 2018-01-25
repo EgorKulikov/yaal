@@ -3,8 +3,8 @@ package on2016_01.on2016_01_10_SNWS_2016__R1.E___Fine_Sequence_of_Coins;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
 	private static final long MOD = (long) (1e9 + 7);

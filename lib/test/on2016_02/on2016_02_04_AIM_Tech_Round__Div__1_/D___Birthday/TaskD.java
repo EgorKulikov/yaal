@@ -4,18 +4,15 @@ package on2016_02.on2016_02_04_AIM_Tech_Round__Div__1_.D___Birthday;
 
 import net.egork.collections.intcollection.Heap;
 import net.egork.collections.intcollection.Range;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] p = readIntArray(in, n);
+        int[] p = in.readIntArray(n);
         double[] prob = new double[n];
         for (int i = 0; i < n; i++) {
             prob[i] = 1 - p[i] / 100d;

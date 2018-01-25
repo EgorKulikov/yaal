@@ -3,11 +3,10 @@ package on2016_03.on2016_03_18_CROC_2016___Elimination_Round.D___Robot_Rapping_R
 
 
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.util.Arrays.fill;
-import static net.egork.io.IOUtils.readIntArrays;
 import static net.egork.misc.MiscUtils.decreaseByOne;
 
 public class TaskD {
@@ -16,7 +15,7 @@ public class TaskD {
         int m = in.readInt();
         int[] u = new int[m];
         int[] v = new int[m];
-        readIntArrays(in, u, v);
+        in.readIntArrays(u, v);
         decreaseByOne(u, v);
         int left = 1;
         int right = m + 1;

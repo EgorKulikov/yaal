@@ -3,12 +3,11 @@ package on2015_06.on2015_06_27_CodeChef_Snackdown_2015___Final_Round.CardShuffli
 
 
 import net.egork.collections.intcollection.IntTreapArray;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -31,7 +30,7 @@ public class CardShuffling {
             }
             out.printLine(permutation);
         } else {
-            int[] target = IOUtils.readIntArray(in, size);
+            int[] target = in.readIntArray(size);
             MiscUtils.decreaseByOne(target);
             ArrayUtils.reversePermutation(target);
             ArrayUtils.reversePermutation(permutation);

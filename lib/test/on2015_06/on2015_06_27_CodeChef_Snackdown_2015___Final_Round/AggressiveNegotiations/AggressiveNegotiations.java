@@ -4,14 +4,13 @@ package on2015_06.on2015_06_27_CodeChef_Snackdown_2015___Final_Round.AggressiveN
 
 import net.egork.graph.Graph;
 import net.egork.graph.MaxFlow;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class AggressiveNegotiations {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        long[][] rank = IOUtils.readLongTable(in, count, count);
+        long[][] rank = in.readLongTable(count, count);
         long answer = 0;
         for (int i = 59; i >= 0; i--) {
             Graph graph = new Graph(2 * count + 2);

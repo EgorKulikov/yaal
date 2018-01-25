@@ -2,11 +2,10 @@ package on2015_12.on2015_12_14_USACO_2015_December_Contest__Gold.Problem_3__Bess
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -15,7 +14,7 @@ public class Dream {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int m = in.readInt();
-		int[][] map = IOUtils.readIntTable(in, n, m);
+		int[][] map = in.readIntTable(n, m);
 		Queue<State> queue = new ArrayDeque<>();
 //		Map<State, Integer> moves = new HashMap<>();
 		int[][][][] moves = new int[2][4][n][m];

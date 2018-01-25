@@ -3,17 +3,14 @@ package on2016_06.on2016_06_25_World_CodeSprint__4.Robanukkah_Tree;
 
 
 import net.egork.graph.Graph;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.numbers.Combinations;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.ArrayUtils.createArray;
 import static net.egork.misc.ArrayUtils.fill;
 import static net.egork.misc.MiscUtils.MOD9;
-import static net.egork.numbers.IntegerUtils.generateBinomialCoefficients;
-import static net.egork.numbers.IntegerUtils.power;
-import static net.egork.numbers.IntegerUtils.reverse;
+import static net.egork.numbers.IntegerUtils.*;
 
 public class RobanukkahTree {
     long[][] ways = new long[21][21];
@@ -88,7 +85,7 @@ public class RobanukkahTree {
         n = in.readInt();
         k = in.readInt();
         int f = in.readInt();
-        t = readIntArray(in, f);
+        t = in.readIntArray(f);
         graph = new Graph(n);
         for (int i = 1; i < n; i++) {
             graph.addSimpleEdge(in.readInt() - 1, i);

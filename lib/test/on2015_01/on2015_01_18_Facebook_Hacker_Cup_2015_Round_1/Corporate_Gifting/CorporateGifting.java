@@ -3,10 +3,9 @@ package on2015_01.on2015_01_18_Facebook_Hacker_Cup_2015_Round_1.Corporate_Giftin
 
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -19,7 +18,7 @@ public class CorporateGifting {
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
-		int[] parent = IOUtils.readIntArray(in, count);
+		int[] parent = in.readIntArray(count);
 		MiscUtils.decreaseByOne(parent);
 		answer = new long[count];
 		at = new int[count];

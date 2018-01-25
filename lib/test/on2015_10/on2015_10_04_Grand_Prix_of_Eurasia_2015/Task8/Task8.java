@@ -2,10 +2,9 @@ package on2015_10.on2015_10_04_Grand_Prix_of_Eurasia_2015.Task8;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -15,7 +14,7 @@ public class Task8 {
         int s = in.readInt();
         int[] a = new int[n];
         int[] b = new int[n];
-        IOUtils.readIntArrays(in, a, b);
+        in.readIntArrays(a, b);
         ArrayUtils.orderBy(a, b);
         int[] answer = new int[s + 1];
         int[] last = new int[s + 1];

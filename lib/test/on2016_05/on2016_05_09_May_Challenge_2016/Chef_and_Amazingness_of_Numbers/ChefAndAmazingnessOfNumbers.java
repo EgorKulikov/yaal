@@ -5,8 +5,8 @@ package on2016_05.on2016_05_09_May_Challenge_2016.Chef_and_Amazingness_of_Number
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.numbers.NumberIterator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static net.egork.misc.ArrayUtils.fill;
 import static net.egork.misc.MiscUtils.MOD7;

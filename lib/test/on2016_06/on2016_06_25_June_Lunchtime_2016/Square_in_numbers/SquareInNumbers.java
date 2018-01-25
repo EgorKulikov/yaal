@@ -2,18 +2,17 @@ package on2016_06.on2016_06_25_June_Lunchtime_2016.Square_in_numbers;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.round;
 import static java.lang.Math.sqrt;
-import static net.egork.io.IOUtils.readLongArray;
 import static net.egork.numbers.IntegerUtils.gcd;
 
 public class SquareInNumbers {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        long[] a = readLongArray(in, n);
+        long[] a = in.readLongArray(n);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < i; j++) {
                 if (gcd(a[i], a[j]) != 1) {

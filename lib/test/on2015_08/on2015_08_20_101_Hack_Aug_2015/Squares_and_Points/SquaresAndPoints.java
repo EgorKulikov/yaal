@@ -4,10 +4,9 @@ package on2015_08.on2015_08_20_101_Hack_Aug_2015.Squares_and_Points;
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.SumIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -44,10 +43,10 @@ public class SquaresAndPoints {
         int l = in.readInt();
         int[] x = new int[n];
         int[] y = new int[n];
-        IOUtils.readIntArrays(in, x, y);
+        in.readIntArrays(x, y);
         int[] a = new int[m];
         int[] b = new int[m];
-        IOUtils.readIntArrays(in, a, b);
+        in.readIntArrays(a, b);
         int[] x1 = new int[n];
         int[] y1 = new int[n];
         for (int i = 0; i < n; i++) {

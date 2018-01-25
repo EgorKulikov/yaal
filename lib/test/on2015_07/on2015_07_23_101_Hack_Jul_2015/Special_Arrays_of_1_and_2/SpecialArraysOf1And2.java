@@ -3,8 +3,8 @@ package on2015_07.on2015_07_23_101_Hack_Jul_2015.Special_Arrays_of_1_and_2;
 
 
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SpecialArraysOf1And2 {
     private static final long MOD = (long) (1e9 + 7);

@@ -4,10 +4,9 @@ package on2015_09.on2015_09_23_101_Hack_Sep_2015.Xaero_And_Lighting_the_Cities;
 
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class XaeroAndLightingTheCities {
 	int[] light;
@@ -17,10 +16,10 @@ public class XaeroAndLightingTheCities {
 
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		light = IOUtils.readIntArray(in, n);
+		light = in.readIntArray(n);
 		int[] u = new int[n - 1];
 		int[] v = new int[n - 1];
-		IOUtils.readIntArrays(in, u, v);
+		in.readIntArrays(u, v);
 		MiscUtils.decreaseByOne(u, v);
 		with = new int[n];
 		without = new int[n];

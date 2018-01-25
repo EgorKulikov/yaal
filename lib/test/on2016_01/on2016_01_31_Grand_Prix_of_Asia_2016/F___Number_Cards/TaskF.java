@@ -7,13 +7,11 @@ import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
 import static java.lang.Math.*;
 import static java.util.Arrays.*;
@@ -25,7 +23,7 @@ public class TaskF {
 		int n = in.readInt();
 		int[] a = new int[n];
 		int[] c = new int[n];
-		readIntArrays(in, a, c);
+		in.readIntArrays(a, c);
 		MiscUtils.decreaseByOne(a);
 		for (int i = 1; i < n; i++) {
 			if (c[i] != c[i - 1]) {

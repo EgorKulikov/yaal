@@ -11,6 +11,9 @@ public class FenwickTree {
     }
 
     public long get(int from, int to) {
+        if (from > to) {
+            return 0;
+        }
         return get(to) - get(from - 1);
     }
 

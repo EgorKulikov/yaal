@@ -3,8 +3,8 @@ package on2015_06.on2015_06_20_IPSC.TaskD;
 
 import net.egork.collections.Pair;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.List;

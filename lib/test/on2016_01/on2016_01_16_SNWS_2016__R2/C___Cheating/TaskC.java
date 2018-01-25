@@ -3,9 +3,8 @@ package on2016_01.on2016_01_16_SNWS_2016__R2.C___Cheating;
 
 
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -15,7 +14,7 @@ import static net.egork.misc.MiscUtils.*;
 public class TaskC {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		char[][] map = IOUtils.readTable(in, n, n);
+		char[][] map = in.readTable(n, n);
 		Queue<IntIntPair> queue = new ArrayDeque<>();
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {

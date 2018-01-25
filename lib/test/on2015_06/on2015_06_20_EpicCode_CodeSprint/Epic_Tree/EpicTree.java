@@ -4,13 +4,11 @@ package on2015_06.on2015_06_20_EpicCode_CodeSprint.Epic_Tree;
 
 import net.egork.collections.intervaltree.LCA;
 import net.egork.graph.BidirectionalGraph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import java.lang.reflect.Constructor;
 import java.util.Arrays;
 
 public class EpicTree {
@@ -149,7 +147,7 @@ public class EpicTree {
         int count = in.readInt();
         int[] from = new int[count - 1];
         int[] to = new int[count - 1];
-        IOUtils.readIntArrays(in, from, to);
+        in.readIntArrays(from, to);
         MiscUtils.decreaseByOne(from, to);
         BidirectionalGraph graph = BidirectionalGraph.createGraph(count, from, to);
         lca = new LCA(graph);

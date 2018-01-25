@@ -2,13 +2,11 @@ package on2015_04.on2015_04_11_Google_Code_Jam_Qualification_Round_2015.B___Infi
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
-import sun.nio.ch.IOUtil;
 
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -20,7 +18,7 @@ public class TaskB {
             @Override
             public void read(InputReader in) {
                 count = in.readInt();
-                qty = IOUtils.readIntArray(in, count);
+                qty = in.readIntArray(count);
             }
 
             @Override

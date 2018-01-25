@@ -5,10 +5,9 @@ package on2015_12.on2015_12_30_Good_Bye_2015.F___New_Year_and_Cleaning;
 import net.egork.generated.collections.list.IntArray;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
 	private static final long MOD = (long) (1e9 + 7);
@@ -17,7 +16,7 @@ public class TaskF {
 		int n = in.readInt();
 		int h = in.readInt();
 		int w = in.readInt();
-		char[] template = IOUtils.readCharArray(in, n);
+		char[] template = in.readCharArray(n);
 		int l = 0;
 		int r = 0;
 		int u = 0;

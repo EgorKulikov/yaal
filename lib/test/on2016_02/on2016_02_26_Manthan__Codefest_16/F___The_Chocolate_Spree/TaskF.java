@@ -4,13 +4,10 @@ package on2016_02.on2016_02_26_Manthan__Codefest_16.F___The_Chocolate_Spree;
 
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskF {
     int n;
@@ -22,10 +19,10 @@ public class TaskF {
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         n = in.readInt();
-        a = readLongArray(in, n);
+        a = in.readLongArray(n);
         int[] u = new int[n - 1];
         int[] v = new int[n - 1];
-        readIntArrays(in, u, v);
+        in.readIntArrays(u, v);
         decreaseByOne(u, v);
         graph = BidirectionalGraph.createGraph(n, u, v);
         best = new long[n];

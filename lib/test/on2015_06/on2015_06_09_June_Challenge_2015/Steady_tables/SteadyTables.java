@@ -3,8 +3,8 @@ package on2015_06.on2015_06_09_June_Challenge_2015.Steady_tables;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 

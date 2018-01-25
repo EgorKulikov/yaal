@@ -5,13 +5,11 @@ package on2015_05.on2015_05_01_Bayan_Finals.Tree;
 import net.egork.collections.intervaltree.LCA;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
-import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.numbers.Matrix;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
 
@@ -33,7 +31,7 @@ public class Tree {
                 times = in.readInt();
                 int[] from = new int[count - 1];
                 int[] to = new int[count - 1];
-                IOUtils.readIntArrays(in, from, to);
+                in.readIntArrays(from, to);
                 MiscUtils.decreaseByOne(from, to);
                 tree = BidirectionalGraph.createGraph(count, from, to);
             }

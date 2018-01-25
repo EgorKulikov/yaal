@@ -3,17 +3,14 @@ package on2015_04.on2015_04_26_Codeforces_Round__300.F___A_Heap_of_Heaps;
 
 
 import net.egork.collections.FenwickTree;
-import net.egork.collections.intervaltree.IntervalTree;
-import net.egork.collections.intervaltree.SumIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        int[] array = IOUtils.readIntArray(in, count);
+        int[] array = in.readIntArray(count);
         long[] answer = new long[count - 1];
         int[] order = ArrayUtils.createOrder(count);
         ArrayUtils.sort(order, (a, b) -> {

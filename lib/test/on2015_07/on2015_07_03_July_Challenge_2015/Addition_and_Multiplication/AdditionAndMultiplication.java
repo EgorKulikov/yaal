@@ -3,9 +3,8 @@ package on2015_07.on2015_07_03_July_Challenge_2015.Addition_and_Multiplication;
 
 
 import net.egork.collections.intervaltree.IntervalTree;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -17,7 +16,7 @@ public class AdditionAndMultiplication {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int size = in.readInt();
         int count = in.readInt();
-        int[] array = IOUtils.readIntArray(in, size);
+        int[] array = in.readIntArray(size);
         IntervalTree tree = new IntervalTree(size, true) {
             long[] value;
             long[] addDelta;

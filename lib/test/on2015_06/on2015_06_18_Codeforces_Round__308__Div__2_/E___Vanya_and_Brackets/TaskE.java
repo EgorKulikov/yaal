@@ -3,8 +3,8 @@ package on2015_06.on2015_06_18_Codeforces_Round__308__Div__2_.E___Vanya_and_Brac
 
 
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

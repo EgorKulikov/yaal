@@ -3,10 +3,9 @@ package on2015_05.on2015_05_03_VK_Cup_2015___Round_3__unofficial_online_mirror__
 
 
 import net.egork.chelper.task.Test;
-import net.egork.chelper.tester.TestProvider;
 import net.egork.chelper.tester.TestCase;
 
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;

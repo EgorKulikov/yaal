@@ -5,12 +5,10 @@ package on2016_07.on2016_07_22_Codeforces_Round__364__Div__1_.B___Connecting_Uni
 import net.egork.generated.collections.pair.LongIntPair;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.max;
-import static net.egork.io.IOUtils.readIntArray;
-import static net.egork.io.IOUtils.readIntArrays;
 import static net.egork.misc.MiscUtils.decreaseByOne;
 
 public class TaskB {
@@ -21,10 +19,10 @@ public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int k = in.readInt();
-        int[] u = readIntArray(in, 2 * k);
+        int[] u = in.readIntArray(2 * k);
         int[] x = new int[n - 1];
         int[] y = new int[n - 1];
-        readIntArrays(in, x, y);
+        in.readIntArrays(x, y);
         decreaseByOne(u, x, y);
         graph = BidirectionalGraph.createGraph(n, x, y);
         remaining = k;

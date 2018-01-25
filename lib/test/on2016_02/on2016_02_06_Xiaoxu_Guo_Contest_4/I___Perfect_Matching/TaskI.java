@@ -3,10 +3,9 @@ package on2016_02.on2016_02_06_Xiaoxu_Guo_Contest_4.I___Perfect_Matching;
 
 
 import net.egork.collections.intcollection.IntHashMap;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 //import static net.egork.io.IOUtils.*;
 //import static net.egork.misc.MiscUtils.*;
 //import static net.egork.misc.ArrayUtils.*;
@@ -23,7 +22,7 @@ public class TaskI {
         int m = in.readInt();
         int[] a = new int[m];
         int[] b = new int[m];
-        IOUtils.readIntArrays(in, a, b);
+        in.readIntArrays(a, b);
         MiscUtils.decreaseByOne(a, b);
         graph = new int[n];
         for (int i = 0; i < m; i++) {

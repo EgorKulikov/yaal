@@ -3,8 +3,8 @@ package on2015_08.on2015_08_07_August_Challenge_2015.Aditi_and_Magic_Trick;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 

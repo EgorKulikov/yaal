@@ -3,18 +3,16 @@ package on2015_05.on2015_05_Weekly_Challenges___Week_15.HuskarTuskarAndBalls;
 
 
 import net.egork.collections.intervaltree.LCA;
-import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class HuskarTuskarAndBalls {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
         int queryCount = in.readInt();
-        int[] parent = IOUtils.readIntArray(in, count - 1);
+        int[] parent = in.readIntArray(count - 1);
         MiscUtils.decreaseByOne(parent);
         Graph graph = Graph.createTree(parent);
         LCA lca = new LCA(graph);

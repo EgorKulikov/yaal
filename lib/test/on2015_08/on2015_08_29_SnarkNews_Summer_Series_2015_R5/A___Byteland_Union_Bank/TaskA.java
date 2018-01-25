@@ -4,10 +4,9 @@ package on2015_08.on2015_08_29_SnarkNews_Summer_Series_2015_R5.A___Byteland_Unio
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.SumIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -16,7 +15,7 @@ public class TaskA {
 
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		int[] a = IOUtils.readIntArray(in, n);
+		int[] a = in.readIntArray(n);
 		ArrayUtils.reverse(a);
 		a = Arrays.copyOf(a, n + 1);
 		ArrayUtils.reverse(a);

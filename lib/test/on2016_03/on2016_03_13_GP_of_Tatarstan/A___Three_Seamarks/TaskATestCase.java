@@ -3,12 +3,11 @@ package on2016_03.on2016_03_13_GP_of_Tatarstan.A___Three_Seamarks;
 
 
 import net.egork.chelper.task.Test;
-import net.egork.chelper.tester.TestProvider;
 import net.egork.chelper.tester.TestCase;
 
 import net.egork.geometry.Angle;
 import net.egork.geometry.Point;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;

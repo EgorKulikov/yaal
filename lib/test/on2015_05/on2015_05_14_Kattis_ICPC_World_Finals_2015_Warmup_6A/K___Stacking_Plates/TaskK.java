@@ -5,10 +5,9 @@ import net.egork.collections.map.EHashMap;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -25,7 +24,7 @@ public class TaskK {
         int[][] stacks = new int[count][];
         for (int i = 0; i < count; i++) {
             int size = in.readInt();
-            stacks[i] = IOUtils.readIntArray(in, size);
+            stacks[i] = in.readIntArray(size);
         }
         NavigableSet<Integer> all = new TreeSet<>();
         Map<Integer, IntList> where = new EHashMap<>();

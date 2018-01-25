@@ -3,9 +3,8 @@ package on2015_03.on2015_03_02_Codeforces_Round__295__Div__1_.B___Cubes;
 
 import net.egork.collections.map.EHashMap;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Map;
 import java.util.NavigableSet;
@@ -22,7 +21,7 @@ public class TaskB {
 		int count = in.readInt();
 		int[] x = new int[count];
 		int[] y = new int[count];
-		IOUtils.readIntArrays(in, x, y);
+		in.readIntArrays(x, y);
 		id = new EHashMap<>();
 		cubes = new IntIntPair[count];
 		bottom = new IntIntPair[count][3];

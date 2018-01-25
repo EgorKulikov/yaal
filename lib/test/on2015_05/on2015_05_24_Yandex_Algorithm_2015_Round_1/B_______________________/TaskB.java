@@ -2,10 +2,9 @@ package on2015_05.on2015_05_24_Yandex_Algorithm_2015_Round_1.B__________________
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -13,7 +12,7 @@ public class TaskB {
         int[] x = new int[count];
         int[] y = new int[count];
         int[] population = new int[count];
-        IOUtils.readIntArrays(in, x, y, population);
+        in.readIntArrays(x, y, population);
         double[] angle = new double[count * (count - 1) / 2];
         int[] first = new int[angle.length];
         int[] second = new int[angle.length];

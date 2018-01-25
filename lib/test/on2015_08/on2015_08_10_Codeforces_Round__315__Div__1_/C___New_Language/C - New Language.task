@@ -44,7 +44,7 @@ abac
 10 2015.08.10
 30 Codeforces Round #315 (Div. 1)
 1
-30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
 0
 0

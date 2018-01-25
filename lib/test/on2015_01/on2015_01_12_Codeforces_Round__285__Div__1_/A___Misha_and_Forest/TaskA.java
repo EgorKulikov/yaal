@@ -2,9 +2,8 @@ package on2015_01.on2015_01_12_Codeforces_Round__285__Div__1_.A___Misha_and_Fore
 
 
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +13,7 @@ public class TaskA {
 		int count = in.readInt();
 		int[] degree = new int[count];
 		int[] xor = new int[count];
-		IOUtils.readIntArrays(in, degree, xor);
+		in.readIntArrays(degree, xor);
 		List<IntIntPair> answer = new ArrayList<>();
 		int[] queue = new int[count];
 		int size = 0;

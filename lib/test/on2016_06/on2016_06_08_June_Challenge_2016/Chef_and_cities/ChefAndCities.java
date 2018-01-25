@@ -2,19 +2,18 @@ package on2016_06.on2016_06_08_June_Challenge_2016.Chef_and_cities;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.round;
 import static java.lang.Math.sqrt;
-import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.MiscUtils.MOD7;
 import static net.egork.numbers.IntegerUtils.reverse;
 
 public class ChefAndCities {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] f = readIntArray(in, n);
+        int[] f = in.readIntArray(n);
         int base = (int) round(sqrt(n));
         long[] result = new long[base];
         double[] dResult = new double[base];

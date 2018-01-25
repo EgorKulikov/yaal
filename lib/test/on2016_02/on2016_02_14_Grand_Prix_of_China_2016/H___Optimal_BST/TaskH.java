@@ -2,18 +2,16 @@ package on2016_02.on2016_02_14_Grand_Prix_of_China_2016.H___Optimal_BST;
 
 
 
-import net.egork.collections.intcollection.Range;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
 import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskH {
     int[] a;
@@ -25,8 +23,8 @@ public class TaskH {
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        a = readIntArray(in, n);
-        int[] p = readIntArray(in, n - 1);
+        a = in.readIntArray(n);
+        int[] p = in.readIntArray(n - 1);
         decreaseByOne(p);
         int[] range = new int[n - 1];
         for (int i = 0; i < range.length; i++) {

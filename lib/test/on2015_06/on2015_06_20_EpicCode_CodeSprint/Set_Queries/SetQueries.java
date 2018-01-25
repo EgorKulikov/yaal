@@ -2,10 +2,9 @@ package on2015_06.on2015_06_20_EpicCode_CodeSprint.Set_Queries;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -19,7 +18,7 @@ public class SetQueries {
         int queryCount = in.readInt();
         int[][] sets = new int[setCount][];
         for (int i = 0; i < setCount; i++) {
-            sets[i] = IOUtils.readIntArray(in, in.readInt());
+            sets[i] = in.readIntArray(in.readInt());
             Arrays.sort(sets[i]);
         }
         MiscUtils.decreaseByOne(sets);

@@ -4,17 +4,16 @@ package on2015_07.on2015_07_03_July_Challenge_2015.MasterChef;
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.LongIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class MasterChef {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int size = in.readInt();
         int budget = in.readInt();
         int count = in.readInt();
-        int[] value = IOUtils.readIntArray(in, size);
+        int[] value = in.readIntArray(size);
         IntervalTree tree = new LongIntervalTree(size) {
             @Override
             protected long joinValue(long left, long right) {

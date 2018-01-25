@@ -6,11 +6,10 @@ import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.abs;
-import static net.egork.io.IOUtils.readIntArrays;
 import static net.egork.misc.MiscUtils.decreaseByOne;
 import static net.egork.numbers.IntegerUtils.gcd;
 
@@ -20,7 +19,7 @@ public class LongestModPath {
         int[] a = new int[n];
         int[] b = new int[n];
         int[] x = new int[n];
-        readIntArrays(in, a, b, x);
+        in.readIntArrays(a, b, x);
         decreaseByOne(a, b);
         Graph graph = BidirectionalGraph.createGraph(n, a, b);
         IntList cycle = dfs(graph, 0, -1, new boolean[n]);

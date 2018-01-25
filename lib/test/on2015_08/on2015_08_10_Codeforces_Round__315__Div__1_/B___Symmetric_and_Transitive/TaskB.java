@@ -4,8 +4,8 @@ package on2015_08.on2015_08_10_Codeforces_Round__315__Div__1_.B___Symmetric_and_
 
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     static final long MOD = (long) (1e9 + 7);

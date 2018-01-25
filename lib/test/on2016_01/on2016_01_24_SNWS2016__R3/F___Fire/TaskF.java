@@ -6,9 +6,8 @@ import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.generated.collections.set.IntHashSet;
 import net.egork.generated.collections.set.IntSet;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,7 +17,7 @@ public class TaskF {
 		int c = in.readInt();
 		int[] x = new int[p];
 		int[] y = new int[p];
-		IOUtils.readIntArrays(in, x, y);
+		in.readIntArrays(x, y);
 		IndependentSetSystem setSystem = new RecursiveIndependentSetSystem(n * m);
 		for (int i = 0; i < c; i++) {
 			int xx = in.readInt();

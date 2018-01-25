@@ -6,10 +6,9 @@ import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readIntArrays;
 import static net.egork.misc.ArrayUtils.orderBy;
 import static net.egork.misc.MiscUtils.decreaseByOne;
 
@@ -25,7 +24,7 @@ public class RoadsInHackerLand {
         int[] a = new int[m];
         int[] b = new int[m];
         int[] c = new int[m];
-        readIntArrays(in, a, b, c);
+        in.readIntArrays(a, b, c);
         decreaseByOne(a, b);
         orderBy(c, a, b);
         IndependentSetSystem setSystem = new RecursiveIndependentSetSystem(n);

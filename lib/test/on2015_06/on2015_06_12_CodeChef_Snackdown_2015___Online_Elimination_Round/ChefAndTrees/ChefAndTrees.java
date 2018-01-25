@@ -5,18 +5,17 @@ package on2015_06.on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Roun
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class ChefAndTrees {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
         int[] from = new int[count - 1];
         int[] to = new int[count - 1];
-        IOUtils.readIntArrays(in, from, to);
+        in.readIntArrays(from, to);
         if (count == 2) {
             out.printLine("NO");
             return;

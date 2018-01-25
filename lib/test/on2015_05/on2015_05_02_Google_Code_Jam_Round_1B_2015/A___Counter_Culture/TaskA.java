@@ -4,8 +4,8 @@ package on2015_05.on2015_05_02_Google_Code_Jam_Round_1B_2015.A___Counter_Culture
 
 import net.egork.misc.ArrayUtils;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
 

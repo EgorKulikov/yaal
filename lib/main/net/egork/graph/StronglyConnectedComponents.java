@@ -1,10 +1,10 @@
 package net.egork.graph;
 
 import net.egork.collections.Pair;
-import net.egork.generated.collections.set.IntHashSet;
-import net.egork.generated.collections.set.IntSet;
 
 import java.util.Arrays;
+
+import static net.egork.misc.ArrayUtils.createArray;
 
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)
@@ -16,7 +16,10 @@ public class StronglyConnectedComponents {
     private int index = 0;
     private int vertexCount;
     private int[] condensed;
-    private IntSet next;
+    private int[] next;
+    private int key;
+    private int[] queue;
+    private int queueSize;
 
     private StronglyConnectedComponents(Graph graph) {
         this.graph = graph;
@@ -39,13 +42,16 @@ public class StronglyConnectedComponents {
         Arrays.fill(visited, false);
         Graph result = new Graph(0);
         index = 0;
+        next = createArray(graph.vertexCount(), -1);
+        queue = new int[graph.vertexCount()];
         for (int i = vertexCount - 1; i >= 0; i--) {
             if (!visited[order[i]]) {
-                next = new IntHashSet();
+                key = i;
+                queueSize = 0;
                 secondDFS(order[i]);
                 result.addVertices(1);
-                for (int set : next.toArray()) {
-                    result.addSimpleEdge(set, index);
+                for (int j = 0; j < queueSize; j++) {
+                    result.addSimpleEdge(queue[j], index);
                 }
                 index++;
             }
@@ -56,7 +62,10 @@ public class StronglyConnectedComponents {
     private void secondDFS(int vertexID) {
         if (visited[vertexID]) {
             if (condensed[vertexID] != index) {
-                next.add(condensed[vertexID]);
+                if (next[condensed[vertexID]] != key) {
+                    next[condensed[vertexID]] = key;
+                    queue[queueSize++] = condensed[vertexID];
+                }
             }
             return;
         }

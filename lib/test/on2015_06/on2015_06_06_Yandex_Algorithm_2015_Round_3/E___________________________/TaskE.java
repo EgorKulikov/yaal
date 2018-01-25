@@ -3,8 +3,8 @@ package on2015_06.on2015_06_06_Yandex_Algorithm_2015_Round_3.E__________________
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     private static final long MOD = (long) (1e9 + 7);

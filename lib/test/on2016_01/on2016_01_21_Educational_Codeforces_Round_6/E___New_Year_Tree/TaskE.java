@@ -5,19 +5,18 @@ package on2016_01.on2016_01_21_Educational_Codeforces_Round_6.E___New_Year_Tree;
 import net.egork.collections.intervaltree.LongIntervalTree;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.DFSOrder;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int m = in.readInt();
-		int[] color = IOUtils.readIntArray(in, n);
+		int[] color = in.readIntArray(n);
 		int[] x = new int[n - 1];
 		int[] y = new int[n - 1];
-		IOUtils.readIntArrays(in, x, y);
+		in.readIntArrays(x, y);
 		MiscUtils.decreaseByOne(x, y, color);
 		BidirectionalGraph graph = BidirectionalGraph.createGraph(n, x, y);
 		DFSOrder order = new DFSOrder(graph);

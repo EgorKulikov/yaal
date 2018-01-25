@@ -2,16 +2,13 @@ package on2016_02.on2016_02_28_8VC_Venture_Cup_2016___Final_Round.D___Preorder_T
 
 
 
-import net.egork.generated.collections.queue.IntArrayQueue;
-import net.egork.generated.collections.queue.IntQueue;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
 import static java.util.Arrays.*;
 
 public class TaskD {
@@ -22,10 +19,10 @@ public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int k = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         int[] u = new int[n - 1];
         int[] v = new int[n - 1];
-        readIntArrays(in, u, v);
+        in.readIntArrays(u, v);
         decreaseByOne(u, v);
         graph = BidirectionalGraph.createGraph(n, u, v);
         int[] order = order(a);

@@ -3,8 +3,8 @@ package on2015_11.on2015_11_22_Grand_Prix_of_Europe___2015.B___Book_Borders;
 
 
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 

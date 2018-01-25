@@ -3,8 +3,8 @@ package on2015_01.on2015_01_21_SnarkNews_Winter_Series_2015__Round_3.TaskE;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

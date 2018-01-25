@@ -2,11 +2,10 @@ package on2015_08.on2015_08_20_101_Hack_Aug_2015.Grid_Maze;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class GridMaze {
     int n, m;
@@ -15,7 +14,7 @@ public class GridMaze {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         n = in.readInt();
         m = in.readInt();
-        map = IOUtils.readTable(in, n, m);
+        map = in.readTable(n, m);
         int[][] d1 = new int[n][m];
         ArrayUtils.fill(d1, Integer.MAX_VALUE);
         for (int i = 0; i < n; i++) {

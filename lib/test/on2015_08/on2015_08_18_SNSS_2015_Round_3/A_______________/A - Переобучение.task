@@ -43,7 +43,7 @@
 10 2015.08.18
 17 SNSS-2015 Round 3
 1
-30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
 0
 0

@@ -3,16 +3,15 @@ package on2015_03.on2015_03_21_VK_Cup_2015___Round_1__unofficial_online_mirror__
 
 
 import net.egork.datetime.Time;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
 		int max = in.readInt();
 		int segment = in.readInt();
-		String[] times = IOUtils.readStringArray(in, count);
+		String[] times = in.readStringArray(count);
 		int[] queue = new int[count];
 		int start = 0;
 		int end = 0;

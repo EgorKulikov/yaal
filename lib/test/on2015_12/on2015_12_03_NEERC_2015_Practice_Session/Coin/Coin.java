@@ -4,10 +4,9 @@ package on2015_12.on2015_12_03_NEERC_2015_Practice_Session.Coin;
 
 import net.egork.generated.collections.set.IntHashSet;
 import net.egork.generated.collections.set.IntSet;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Coin {
 	IntSet[] left;
@@ -22,8 +21,8 @@ public class Coin {
 		result = new char[k];
 		for (int i = 0; i < k; i++) {
 			int p = in.readInt();
-			int[] onLeft = IOUtils.readIntArray(in, p);
-			int[] onRight = IOUtils.readIntArray(in, p);
+			int[] onLeft = in.readIntArray(p);
+			int[] onRight = in.readIntArray(p);
 			result[i] = in.readCharacter();
 			MiscUtils.decreaseByOne(onLeft, onRight);
 			left[i] = new IntHashSet(onLeft);

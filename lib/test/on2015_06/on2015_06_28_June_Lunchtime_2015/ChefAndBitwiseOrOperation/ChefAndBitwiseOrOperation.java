@@ -1,9 +1,8 @@
 package on2015_06.on2015_06_28_June_Lunchtime_2015.ChefAndBitwiseOrOperation;
 
 
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -11,7 +10,7 @@ public class ChefAndBitwiseOrOperation {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int size = in.readInt();
         int count = in.readInt();
-        int[] array = IOUtils.readIntArray(in, size);
+        int[] array = in.readIntArray(size);
         int[][] positions = new int[size][32];
         int[][] ors = new int[size][32];
         int[] qty = new int[size];

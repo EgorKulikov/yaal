@@ -3,13 +3,8 @@ package on2016_02.on2016_02_09_February_Challenge_2016.Chef_and_Strange_Operatio
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class ChefAndStrangeOperations {
     private static final long MOD = (long) (1e9 + 7);
@@ -18,7 +13,7 @@ public class ChefAndStrangeOperations {
         int n = in.readInt();
         int x = in.readInt() - 1;
         long m = in.readLong();
-        long[] a = readLongArray(in, n);
+        long[] a = in.readLongArray(n);
         long answer = 0;
         long multiplier = 1;
         for (int i = x; i >= 0; i--) {

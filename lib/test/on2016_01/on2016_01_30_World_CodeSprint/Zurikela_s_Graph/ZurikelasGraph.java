@@ -5,8 +5,8 @@ package on2016_01.on2016_01_30_World_CodeSprint.Zurikela_s_Graph;
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class ZurikelasGraph {
 	Graph graph;

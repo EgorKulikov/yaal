@@ -4,11 +4,10 @@ package on2015_04.on2015_04_29_101_Hack_April_15.Introduction_to_Topology;
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.LongIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -20,7 +19,7 @@ public class IntroductionToTopology {
         int count = in.readInt();
         int[] from = new int[count];
         int[] to = new int[count];
-        IOUtils.readIntArrays(in, from, to);
+        in.readIntArrays(from, to);
         MiscUtils.decreaseByOne(from, to);
         from = Arrays.copyOf(from, count + 1);
         to = Arrays.copyOf(to, count + 1);

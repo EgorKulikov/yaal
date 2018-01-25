@@ -2,11 +2,10 @@ package on2015_03.on2015_03_12_March_Challenge_2015.Chef_and_Problems;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -17,10 +16,10 @@ public class ChefAndProblems {
 		int count = in.readInt();
 		int max = in.readInt();
 		int queryCount = in.readInt();
-		int[] height = IOUtils.readIntArray(in, count);
+		int[] height = in.readIntArray(count);
 		int[] from = new int[queryCount];
 		int[] to = new int[queryCount];
-		IOUtils.readIntArrays(in, from, to);
+		in.readIntArrays(from, to);
 		MiscUtils.decreaseByOne(height, from, to);
 		int[] answer = new int[queryCount];
 		int[][] result = new int[(count + STEP - 1) / STEP][count];

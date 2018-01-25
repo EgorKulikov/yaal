@@ -5,10 +5,9 @@ import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Sabotage {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -16,7 +15,7 @@ public class Sabotage {
         int edgeCount = in.readInt();
         int[] from = new int[edgeCount];
         int[] to = new int[edgeCount];
-        IOUtils.readIntArrays(in, from, to);
+        in.readIntArrays(from, to);
         MiscUtils.decreaseByOne(from, to);
         IndependentSetSystem setSystem = new RecursiveIndependentSetSystem(count);
         IntList answer = new IntArrayList();

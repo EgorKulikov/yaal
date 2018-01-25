@@ -6,11 +6,10 @@ import net.egork.collections.intervaltree.LCA;
 import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Maxflow {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,10 +17,10 @@ public class Maxflow {
 		int k = in.readInt();
 		int[] x = new int[n - 1];
 		int[] y = new int[n - 1];
-		IOUtils.readIntArrays(in, x, y);
+		in.readIntArrays(x, y);
 		int[] s = new int[k];
 		int[] t = new int[k];
-		IOUtils.readIntArrays(in, s, t);
+		in.readIntArrays(s, t);
 		MiscUtils.decreaseByOne(x, y, s, t);
 		Graph graph = BidirectionalGraph.createGraph(n, x, y);
 		final LCA lca = new LCA(graph);

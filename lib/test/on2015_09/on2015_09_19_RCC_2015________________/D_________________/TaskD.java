@@ -4,10 +4,9 @@ package on2015_09.on2015_09_19_RCC_2015________________.D_________________;
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.LongIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskD {
 	int[] y;
@@ -16,7 +15,7 @@ public class TaskD {
 		int n = in.readInt();
 		int[] x = new int[n];
 		y = new int[n];
-		IOUtils.readIntArrays(in, x, y);
+		in.readIntArrays(x, y);
 		ArrayUtils.compress(x);
 		ArrayUtils.compress(y);
 		int[] order = ArrayUtils.createOrder(n);

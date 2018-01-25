@@ -2,10 +2,9 @@ package on2015_05.on2015_05_01_Bayan_Finals.BMGK;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
 
@@ -25,7 +24,7 @@ public class BMGK {
                 count = in.readInt();
                 p = new int[count];
                 alpha = new int[count];
-                IOUtils.readIntArrays(in, p, alpha);
+                in.readIntArrays(p, alpha);
             }
 
             @Override

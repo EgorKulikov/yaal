@@ -3,10 +3,9 @@ package on2015_07.on2015_07_09_Week_of_Code__formerly_Weekly_Challenges____16.Sp
 
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.List;
 
@@ -16,7 +15,7 @@ public class Sprinklers {
         int m = in.readInt();
         int s = in.readInt();
         int q = in.readInt();
-        int[] p = IOUtils.readIntArray(in, m);
+        int[] p = in.readIntArray(m);
         MiscUtils.decreaseByOne(p);
         int answer = Integer.MAX_VALUE;
         IntList positions = null;

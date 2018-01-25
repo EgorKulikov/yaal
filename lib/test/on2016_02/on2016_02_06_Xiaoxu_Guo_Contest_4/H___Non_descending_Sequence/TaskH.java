@@ -2,10 +2,9 @@ package on2016_02.on2016_02_06_Xiaoxu_Guo_Contest_4.H___Non_descending_Sequence;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 //import static net.egork.io.IOUtils.*;
 //import static net.egork.misc.MiscUtils.*;
 //import static net.egork.misc.ArrayUtils.*;
@@ -20,7 +19,7 @@ public class TaskH {
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = IOUtils.readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         for (int i = n - 2; i >= 0; i--) {
             a[i] = Math.min(a[i], a[i + 1]);
         }

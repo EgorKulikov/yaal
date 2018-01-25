@@ -2,15 +2,14 @@ package on2016_01.on2016_01_10_SNWS_2016__R1.A___Bad_Key;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		int[] a = IOUtils.readIntArray(in, n);
+		int[] a = in.readIntArray(n);
 		int[] g = new int[n + 1];
 		for (int i = n - 1; i >= 0; i--) {
 			g[i] = IntegerUtils.gcd(g[i + 1], a[i]);

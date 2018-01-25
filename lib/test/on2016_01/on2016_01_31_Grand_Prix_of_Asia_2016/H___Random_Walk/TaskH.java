@@ -2,15 +2,9 @@ package on2016_01.on2016_01_31_Grand_Prix_of_Asia_2016.H___Random_Walk;
 
 
 
-import com.sun.org.apache.bcel.internal.generic.IUSHR;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskH {
 	long[] pow;

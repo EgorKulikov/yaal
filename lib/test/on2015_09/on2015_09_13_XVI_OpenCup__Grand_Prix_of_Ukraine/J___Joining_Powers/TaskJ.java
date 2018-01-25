@@ -2,11 +2,10 @@ package on2015_09.on2015_09_13_XVI_OpenCup__Grand_Prix_of_Ukraine.J___Joining_Po
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -69,7 +68,7 @@ public class TaskJ {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int m = in.readInt();
-        int[] is = IOUtils.readIntArray(in, m);
+        int[] is = in.readIntArray(m);
         if (ArrayUtils.count(is, 1) != 0) {
             out.printLine(n);
             return;

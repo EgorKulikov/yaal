@@ -4,9 +4,8 @@ package on2015_05.on2015_05_03_VK_Cup_2015___Round_3__unofficial_online_mirror__
 import net.egork.generated.collections.comparator.IntComparator;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -14,7 +13,7 @@ public class TaskF {
         int time = in.readInt();
         int[] required = new int[count];
         int[] weight = new int[count];
-        IOUtils.readIntArrays(in, required, weight);
+        in.readIntArrays(required, weight);
         IntList[] quests = new IntList[time + 1];
         for (int i = 0; i <= time; i++) {
             quests[i] = new IntArrayList();

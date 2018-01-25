@@ -3,8 +3,8 @@ package on2015_12.on2015_12_20_Grand_Prix_of_Peterhof.F____p__q__Knight;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.math.BigInteger;
 

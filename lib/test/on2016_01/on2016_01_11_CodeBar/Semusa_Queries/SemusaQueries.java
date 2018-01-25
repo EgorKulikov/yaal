@@ -3,8 +3,8 @@ package on2016_01.on2016_01_11_CodeBar.Semusa_Queries;
 
 
 import net.egork.collections.intervaltree.SumIntervalTree;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SemusaQueries {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

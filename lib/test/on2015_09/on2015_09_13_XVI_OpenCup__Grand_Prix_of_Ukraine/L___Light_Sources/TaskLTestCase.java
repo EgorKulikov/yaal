@@ -4,7 +4,7 @@ package on2015_09.on2015_09_13_XVI_OpenCup__Grand_Prix_of_Ukraine.L___Light_Sour
 
 import net.egork.chelper.task.Test;
 import net.egork.chelper.tester.TestCase;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.io.StringWriter;
 import java.util.ArrayList;

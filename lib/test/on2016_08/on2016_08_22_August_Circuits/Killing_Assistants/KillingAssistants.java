@@ -3,8 +3,8 @@ package on2016_08.on2016_08_22_August_Circuits.Killing_Assistants;
 
 
 import net.egork.numbers.Rational;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class KillingAssistants {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

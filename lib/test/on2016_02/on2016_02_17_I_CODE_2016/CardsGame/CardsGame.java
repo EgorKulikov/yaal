@@ -6,13 +6,8 @@ import net.egork.generated.collections.function.CharCharToIntFunction;
 import net.egork.generated.collections.function.IntIntToIntFunction;
 import net.egork.generated.collections.list.CharArray;
 import net.egork.generated.collections.list.IntArray;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class CardsGame {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

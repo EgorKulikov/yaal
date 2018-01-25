@@ -5,14 +5,13 @@ package on2015_10.on2015_10_29_Volume_11._2011___Long_Statement;
 import net.egork.generated.collections.function.IntToIntFunction;
 import net.egork.generated.collections.list.IntArray;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Task2011 {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        IntList qty = new IntArray(new IntArray(IOUtils.readIntArray(in, n)).map((IntToIntFunction) x -> x - 1).qty(3)).sort();
+        IntList qty = new IntArray(new IntArray(in.readIntArray(n)).map((IntToIntFunction) x -> x - 1).qty(3)).sort();
         if (qty.get(1) == 0) {
             out.printLine("No");
         } else if (qty.get(0) > 0) {

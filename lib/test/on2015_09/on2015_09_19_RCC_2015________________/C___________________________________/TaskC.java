@@ -4,11 +4,10 @@ package on2015_09.on2015_09_19_RCC_2015________________.C_______________________
 import net.egork.collections.intcollection.Heap;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -16,8 +15,8 @@ public class TaskC {
 		int m = in.readInt();
 		int[] f = new int[m];
 		int[] t = new int[m];
-		IOUtils.readIntArrays(in, f, t);
-		int[] order = IOUtils.readIntArray(in, n);
+		in.readIntArrays(f, t);
+		int[] order = in.readIntArray(n);
 		MiscUtils.decreaseByOne(f, t, order);
 		Graph graph = Graph.createGraph(n, f, t);
 		int[] top = GraphAlgorithms.topologicalSort(graph);

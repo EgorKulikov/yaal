@@ -2,18 +2,17 @@ package on2016_06.on2016_06_25_World_CodeSprint__4.Equal_Stacks;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.ArrayUtils.sumArray;
 
 public class EqualStacks {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
-        int[] n = readIntArray(in, 3);
+        int[] n = in.readIntArray(3);
         int[][] heights = new int[3][];
         for (int i = 0; i < 3; i++) {
-            heights[i] = readIntArray(in, n[i]);
+            heights[i] = in.readIntArray(n[i]);
         }
         long[] sums = new long[3];
         for (int i = 0; i < 3; i++) {

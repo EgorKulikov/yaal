@@ -3,20 +3,15 @@ package on2016_02.on2016_02_06_IndiaHacks__Algorithms.D___Table_Splitting_2;
 
 
 import net.egork.collections.iss.IndependentSetSystem;
-import net.egork.collections.iss.ListIndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-
-import static net.egork.io.IOUtils.readTable;
-import static net.egork.misc.ArrayUtils.fill;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class DTableSplitting2 {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int m = in.readInt();
-        char[][] map = readTable(in, n, m);
+        char[][] map = in.readTable(n, m);
         IndependentSetSystem setSystem = new RecursiveIndependentSetSystem((n + 1) * (m + 1));
         for (int i = 0; i <= n; i++) {
             setSystem.join(0, (m + 1) * i);

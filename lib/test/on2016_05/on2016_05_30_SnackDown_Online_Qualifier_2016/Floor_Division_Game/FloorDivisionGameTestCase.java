@@ -4,7 +4,7 @@ package on2016_05.on2016_05_30_SnackDown_Online_Qualifier_2016.Floor_Division_Ga
 
 import net.egork.chelper.task.Test;
 import net.egork.chelper.tester.TestCase;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.io.StringWriter;
 import java.util.ArrayList;

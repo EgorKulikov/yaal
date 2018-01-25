@@ -2,17 +2,16 @@ package on2015_05.on2015_05_04_Yandex_Algorithm_2015_Warm_Up.B___Disassemble_of_
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int side = in.readInt();
         char[][][] cube = new char[side][][];
         for (int i = 0; i < side; i++) {
-            cube[i] = IOUtils.readTable(in, side, side);
+            cube[i] = in.readTable(side, side);
         }
         char[][][][] rotations = new char[3][side][side][side];
         for (int i = 0; i < side; i++) {

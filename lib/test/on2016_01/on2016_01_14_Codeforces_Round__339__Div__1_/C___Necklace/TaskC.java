@@ -4,15 +4,14 @@ package on2016_01.on2016_01_14_Codeforces_Round__339__Div__1_.C___Necklace;
 
 import net.egork.generated.collections.function.IntIntToIntFunction;
 import net.egork.generated.collections.list.IntArray;
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		int[] a = IOUtils.readIntArray(in, n);
+		int[] a = in.readIntArray(n);
 		int odd = new IntArray(a).count(x -> x % 2 == 1);
 		if (odd >= 2) {
 			out.printLine(0);

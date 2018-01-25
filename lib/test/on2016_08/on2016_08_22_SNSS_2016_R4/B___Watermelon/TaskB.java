@@ -4,8 +4,8 @@ package on2016_08.on2016_08_22_SNSS_2016_R4.B___Watermelon;
 
 import net.egork.geometry.Line;
 import net.egork.geometry.Point;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.PI;
 import static java.lang.Math.cos;

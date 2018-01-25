@@ -4,18 +4,14 @@ package on2015_01.on2015_01_12_Codeforces_Round__285__Div__1_.B___Misha_and_Perm
 
 import net.egork.collections.intervaltree.SumIntervalTree;
 import net.egork.collections.set.TreapSet;
-import net.egork.io.IOUtils;
-import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-
-import java.util.Random;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
-		int[] p = IOUtils.readIntArray(in, count);
-		int[] q = IOUtils.readIntArray(in, count);
+		int[] p = in.readIntArray(count);
+		int[] q = in.readIntArray(count);
 		SumIntervalTree pTree = new SumIntervalTree(count);
 		pTree.update(0, count - 1, 1);
 		for (int i = 0; i < count; i++) {

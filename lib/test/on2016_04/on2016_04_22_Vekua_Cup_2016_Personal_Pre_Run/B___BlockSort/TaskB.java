@@ -3,19 +3,17 @@ package on2016_04.on2016_04_22_Vekua_Cup_2016_Personal_Pre_Run.B___BlockSort;
 
 
 import net.egork.collections.Pair;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Random;
-
-import static net.egork.io.IOUtils.readIntArray;
 
 public class TaskB {
     static Random random = new Random(239);
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         Node root = null;
         for (int i : a) {
             Node current = new Node(i);

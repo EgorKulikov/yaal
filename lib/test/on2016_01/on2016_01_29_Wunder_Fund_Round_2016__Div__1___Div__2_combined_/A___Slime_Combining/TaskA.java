@@ -5,8 +5,8 @@ package on2016_01.on2016_01_29_Wunder_Fund_Round_2016__Div__1___Div__2_combined_
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

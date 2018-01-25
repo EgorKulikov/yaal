@@ -240,6 +240,14 @@ public class ArrayUtils {
         });
     }
 
+    public static<T extends Comparable<T>> int[] order(final T[] array) {
+        return sort(createOrder(array.length), new IntComparator() {
+            public int compare(int first, int second) {
+                return array[first].compareTo(array[second]);
+            }
+        });
+    }
+
     public static int[] order(final long[] array) {
         return sort(createOrder(array.length), new IntComparator() {
             public int compare(int first, int second) {

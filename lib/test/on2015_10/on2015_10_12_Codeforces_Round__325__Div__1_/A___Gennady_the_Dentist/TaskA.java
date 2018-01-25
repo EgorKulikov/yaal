@@ -3,9 +3,8 @@ package on2015_10.on2015_10_12_Codeforces_Round__325__Div__1_.A___Gennady_the_De
 
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -15,7 +14,7 @@ public class TaskA {
 		int[] v = new int[n];
 		int[] d = new int[n];
 		int[] p = new int[n];
-		IOUtils.readIntArrays(in, v, d, p);
+		in.readIntArrays(v, d, p);
 		boolean[] inQueue = new boolean[n];
 		Arrays.fill(inQueue, true);
 		IntList answer = new IntArrayList();

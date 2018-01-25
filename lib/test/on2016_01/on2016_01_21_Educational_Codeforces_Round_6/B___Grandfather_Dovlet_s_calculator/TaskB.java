@@ -5,8 +5,8 @@ package on2016_01.on2016_01_21_Educational_Codeforces_Round_6.B___Grandfather_Do
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.numbers.NumberIterator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
 	int[] cost = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};

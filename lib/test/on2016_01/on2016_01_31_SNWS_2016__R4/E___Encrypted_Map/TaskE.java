@@ -5,8 +5,8 @@ package on2016_01.on2016_01_31_SNWS_2016__R4.E___Encrypted_Map;
 import net.egork.graph.Graph;
 import net.egork.graph.MaxFlow;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.InputMismatchException;
 

@@ -2,17 +2,13 @@ package on2016_02.on2016_02_07_IndiaHacks__Algorithms.B___Bear_and_Snowstorm;
 
 
 
-import net.egork.collections.intcollection.Range;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class BBearAndSnowstorm {
     private static final long MOD = (long) (1e9 + 7);
@@ -30,7 +26,7 @@ public class BBearAndSnowstorm {
                 int n = in.readInt();
                 int k = in.readInt();
                 ways = new int[2 * n - 2];
-                int[] p = readIntArray(in, n - 1);
+                int[] p = in.readIntArray(n - 1);
                 decreaseByOne(p);
                 int[] order = new int[n - 1];
                 for (int i = 0; i < order.length; i++) {

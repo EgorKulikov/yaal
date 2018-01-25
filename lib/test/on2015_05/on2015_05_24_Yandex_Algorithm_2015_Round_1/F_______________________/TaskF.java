@@ -5,8 +5,8 @@ package on2015_05.on2015_05_24_Yandex_Algorithm_2015_Round_1.F__________________
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.numbers.Rational;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

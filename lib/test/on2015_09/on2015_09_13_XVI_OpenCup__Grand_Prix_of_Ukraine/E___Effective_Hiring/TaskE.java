@@ -2,10 +2,9 @@ package on2015_09.on2015_09_13_XVI_OpenCup__Grand_Prix_of_Ukraine.E___Effective_
 
 
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -14,7 +13,7 @@ public class TaskE {
         final int[] a = new int[n];
         final int[] c = new int[n];
         int[] s = new int[n];
-        IOUtils.readIntArrays(in, a, c, s);
+        in.readIntArrays(a, c, s);
         int[][] current = new int[k + 1][k + 1];
         ArrayUtils.fill(current, Integer.MAX_VALUE / 2);
         current[0][0] = 0;

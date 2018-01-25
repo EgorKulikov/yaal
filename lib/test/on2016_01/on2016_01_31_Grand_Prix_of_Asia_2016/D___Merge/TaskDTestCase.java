@@ -3,11 +3,10 @@ package on2016_01.on2016_01_31_Grand_Prix_of_Asia_2016.D___Merge;
 
 
 import net.egork.chelper.task.Test;
-import net.egork.chelper.tester.TestProvider;
 import net.egork.chelper.tester.TestCase;
 
 import net.egork.collections.intcollection.Range;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;

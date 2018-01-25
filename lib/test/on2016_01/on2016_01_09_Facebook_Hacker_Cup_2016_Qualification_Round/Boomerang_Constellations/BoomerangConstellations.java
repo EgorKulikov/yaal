@@ -5,9 +5,8 @@ package on2016_01.on2016_01_09_Facebook_Hacker_Cup_2016_Qualification_Round.Boom
 import net.egork.collections.map.Counter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class BoomerangConstellations {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -22,7 +21,7 @@ public class BoomerangConstellations {
                 n = in.readInt();
                 x = new int[n];
                 y = new int[n];
-                IOUtils.readIntArrays(in, x, y);
+                in.readIntArrays(x, y);
             }
 
             @Override

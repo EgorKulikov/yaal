@@ -6,13 +6,11 @@ import net.egork.geometry.GeometryUtils;
 import net.egork.geometry.Point;
 import net.egork.geometry.Polygon;
 import net.egork.geometry.Segment;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import static java.util.Arrays.sort;
 
 public class Square {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

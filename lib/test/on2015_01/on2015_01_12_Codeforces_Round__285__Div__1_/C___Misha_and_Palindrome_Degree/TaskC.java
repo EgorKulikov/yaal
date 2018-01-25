@@ -2,18 +2,17 @@ package on2015_01.on2015_01_12_Codeforces_Round__285__Div__1_.C___Misha_and_Pali
 
 
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
 public class TaskC {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
-		int[] a = IOUtils.readIntArray(in, count);
+		int[] a = in.readIntArray(count);
 		MiscUtils.decreaseByOne(a);
 		int[] qty = new int[count];
 		for (int i : a) qty[i]++;

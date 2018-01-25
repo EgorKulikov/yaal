@@ -1,4 +1,4 @@
-package net.egork.inout;
+package net.egork.io;
 
 import java.io.BufferedWriter;
 import java.io.OutputStream;

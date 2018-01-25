@@ -2,29 +2,23 @@ package on2016_02.on2016_02_09_February_Challenge_2016.MatrixMaximumSum;
 
 
 
-import net.egork.generated.collections.list.IntArrayList;
-import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.set.IntHashSet;
 import net.egork.generated.collections.set.IntSet;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class MatrixMaximumSum {
     private static final long MOD = (long) (1e9 + 7);
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = readIntArray(in, n);
-        int[] b = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
+        int[] b = in.readIntArray(n);
         for (int i = 0; i < n; i++) {
             a[i] += i + 1;
             b[i] += i + 1;

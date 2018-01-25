@@ -3,10 +3,9 @@ package on2016_08.on2016_08_26_SNSS_2016_R5.B___Butterflies;
 
 
 import net.egork.collections.intcollection.IntHashMap;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readIntArrays;
 import static net.egork.misc.ArrayUtils.orderBy;
 
 public class TaskB {
@@ -14,7 +13,7 @@ public class TaskB {
         int n = in.readInt();
         int[] x = new int[n];
         int[] y = new int[n];
-        readIntArrays(in, x, y);
+        in.readIntArrays(x, y);
         IntHashMap qx = new IntHashMap();
         IntHashMap qy = new IntHashMap();
         for (int i : y) {

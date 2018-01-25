@@ -4,8 +4,8 @@ package on2016_05.on2016_05_30_SnackDown_Online_Qualifier_2016.Floor_Division_Ga
 
 import net.egork.generated.collections.list.LongArrayList;
 import net.egork.generated.collections.list.LongList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.HashMap;
 import java.util.Map;

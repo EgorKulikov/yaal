@@ -3,11 +3,10 @@ package on2015_11.on2015_11_22_Grand_Prix_of_Europe___2015.L___Looping_Labyrinth
 
 
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayDeque;
 import java.util.HashSet;
@@ -18,7 +17,7 @@ public class TaskL {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int m = in.readInt();
-		char[][] map = IOUtils.readTable(in, n, m);
+		char[][] map = in.readTable(n, m);
 		int[][] sx = new int[n][m];
 		int[][] sy = new int[n][m];
 		boolean[][] visited = new boolean[n][m];

@@ -27,7 +27,7 @@
 10 2016.01.31
 23 Grand Prix of Asia-2016
 1
-30 net.egork.utils.io.InputReader
-31 net.egork.utils.io.OutputWriter
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
 0
 0

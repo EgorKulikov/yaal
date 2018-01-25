@@ -2,17 +2,16 @@ package on2015_01.on2015_01_21_SnarkNews_Winter_Series_2015__Round_3.TaskF;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int rowCount = in.readInt();
 		int columnCount = in.readInt();
-		int[] sumRow = IOUtils.readIntArray(in, rowCount);
-		final int[] sumColumn = IOUtils.readIntArray(in, columnCount);
+		int[] sumRow = in.readIntArray(rowCount);
+		final int[] sumColumn = in.readIntArray(columnCount);
 		ArrayUtils.sort(sumColumn);
 		int[][] result = new int[rowCount][columnCount];
 		for (int i = 0; i < rowCount; i++) {

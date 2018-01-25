@@ -5,10 +5,9 @@ import net.egork.collections.Pair;
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.Graph;
 import net.egork.graph.MinCostFlow;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -24,16 +23,16 @@ public class Task10 {
         int[] xn = new int[n];
         int[] yn = new int[n];
         int[] p = new int[n];
-        IOUtils.readIntArrays(in, xn, yn, p);
+        in.readIntArrays(xn, yn, p);
         int c = in.readInt();
         int[] xc = new int[c];
         int[] yc = new int[c];
         int[] v = new int[c];
-        IOUtils.readIntArrays(in, xc, yc, v);
+        in.readIntArrays(xc, yc, v);
         int m = in.readInt();
         int[] xm = new int[m];
         int[] ym = new int[m];
-        IOUtils.readIntArrays(in, xm, ym);
+        in.readIntArrays(xm, ym);
         Set<IntIntPair> forbidden = new HashSet<>();
         for (int i = 0; i < n; i++) {
             forbidden.add(new IntIntPair(xn[i], yn[i]));

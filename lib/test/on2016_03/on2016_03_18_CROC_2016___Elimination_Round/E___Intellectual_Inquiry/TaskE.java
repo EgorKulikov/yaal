@@ -2,8 +2,8 @@ package on2016_03.on2016_03_18_CROC_2016___Elimination_Round.E___Intellectual_In
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.util.Arrays.fill;
 import static net.egork.misc.ArrayUtils.order;

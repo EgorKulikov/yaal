@@ -2,8 +2,8 @@ package on2015_04.on2015_04_11_Google_Code_Jam_Qualification_Round_2015.D___Omin
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
 

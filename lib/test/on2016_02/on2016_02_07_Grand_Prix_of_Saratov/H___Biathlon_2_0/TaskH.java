@@ -2,33 +2,23 @@ package on2016_02.on2016_02_07_Grand_Prix_of_Saratov.H___Biathlon_2_0;
 
 
 
-import net.egork.collections.intcollection.Range;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.geometry.Point;
-import net.egork.geometry.Polygon;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import java.util.*;
-
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskH {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int[] a = new int[n];
         int[] b = new int[n];
-        readIntArrays(in, a, b);
+        in.readIntArrays(a, b);
         int m = in.readInt();
         int[] c = new int[m];
         int[] d = new int[m];
-        readIntArrays(in, c, d);
+        in.readIntArrays(c, d);
         int[] order = createOrder(m);
         sort(order, (x, y) -> {
             long left = (long) c[x] * d[y];

@@ -5,8 +5,8 @@ package on2016_01.on2016_01_24_SNWS2016__R3.A___Access_Denied_;
 import net.egork.geometry.Circle;
 import net.egork.geometry.Point;
 import net.egork.geometry.Polygon;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,18 +2,17 @@ package on2015_06.on2015_06_18_Codeforces_Round__308__Div__2_.D___Vanya_and_Tria
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
         int[] x = new int[count];
         int[] y = new int[count];
-        IOUtils.readIntArrays(in, x, y);
+        in.readIntArrays(x, y);
         int[] a = new int[count * (count - 1) / 2];
         int[] b = new int[a.length];
         int[] c = new int[a.length];

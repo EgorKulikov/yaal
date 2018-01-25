@@ -4,11 +4,10 @@ package on2015_08.on2015_08_10_August_Challenge_2015.Chef_and_Path;
 
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -29,7 +28,7 @@ public class ChefAndPath {
         int[] a = new int[n - 1];
         int[] b = new int[n - 1];
         int[] c = new int[n - 1];
-        IOUtils.readIntArrays(in, a, b, c);
+        in.readIntArrays(a, b, c);
         MiscUtils.decreaseByOne(a, b);
         graph = BidirectionalGraph.createWeightedGraph(n, a, b, ArrayUtils.asLong(c));
         Arrays.sort(c);

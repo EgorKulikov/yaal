@@ -3,13 +3,10 @@ package on2015_05.on2015_05_04_Yandex_Algorithm_2015_Warm_Up.D___Folds;
 
 
 import net.egork.collections.map.Counter;
-import net.egork.io.IOUtils;
-import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class TaskD {

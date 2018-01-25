@@ -2,10 +2,9 @@ package on2015_03.on2015_03_02_Codeforces_Round__295__Div__1_.C___Pluses_everywh
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
 	private static final long MOD = (long) (1e9 + 7);
@@ -15,7 +14,7 @@ public class TaskC {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int length = in.readInt();
 		int count = in.readInt();
-		char[] number = IOUtils.readCharArray(in, length);
+		char[] number = in.readCharArray(length);
 		for (int i = 0; i < length; i++) {
 			number[i] -= '0';
 		}

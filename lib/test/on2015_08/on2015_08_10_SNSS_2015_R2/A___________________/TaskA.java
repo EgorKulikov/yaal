@@ -2,16 +2,15 @@ package on2015_08.on2015_08_10_SNSS_2015_R2.A___________________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int m = in.readInt();
-        char[] type = IOUtils.readCharArray(in, n);
+        char[] type = in.readCharArray(n);
         char[] first = new char[m];
         int[] length = new int[m];
         for (int i = 0; i < m; i++) {

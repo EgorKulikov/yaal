@@ -5,16 +5,15 @@ package on2015_12.on2015_12_14_USACO_2015_December_Contest__Platinum.Problem_3__
 import net.egork.collections.intervaltree.ArrayBasedIntervalTree;
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.SumIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Haybales {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
 		int q = in.readInt();
-		int[] hay = IOUtils.readIntArray(in, n);
+		int[] hay = in.readIntArray(n);
 		IntervalTree minTree = new ArrayBasedIntervalTree(ArrayUtils.asLong(hay)) {
 			@Override
 			protected long joinValue(long left, long right) {

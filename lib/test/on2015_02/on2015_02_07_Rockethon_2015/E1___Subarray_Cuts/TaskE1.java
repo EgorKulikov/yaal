@@ -2,10 +2,9 @@ package on2015_02.on2015_02_07_Rockethon_2015.E1___Subarray_Cuts;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE1 {
 	int[] array;
@@ -16,7 +15,7 @@ public class TaskE1 {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		count = in.readInt();
 		int partCount = in.readInt();
-		array = IOUtils.readIntArray(in, count);
+		array = in.readIntArray(count);
 		answerStarted = new long[5][partCount + 1][count + 1];
 		answerNotStarted = new long[5][partCount + 1][count + 1];
 		ArrayUtils.fill(answerStarted, Long.MIN_VALUE);

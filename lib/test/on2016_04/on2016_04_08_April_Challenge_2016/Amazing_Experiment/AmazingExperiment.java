@@ -7,11 +7,10 @@ import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.max;
-import static net.egork.io.IOUtils.readIntArrays;
 import static net.egork.misc.ArrayUtils.*;
 import static net.egork.misc.MiscUtils.decreaseByOne;
 
@@ -27,7 +26,7 @@ public class AmazingExperiment {
         int[] u = new int[n - 1];
         int[] v = new int[n - 1];
         int[] w = new int[n - 1];
-        readIntArrays(in, u, v, w);
+        in.readIntArrays(u, v, w);
         decreaseByOne(u, v);
         graph = BidirectionalGraph.createWeightedGraph(n, u, v, asLong(w));
         answer = new int[n];

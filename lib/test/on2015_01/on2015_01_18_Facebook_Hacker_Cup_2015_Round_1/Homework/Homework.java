@@ -3,8 +3,8 @@ package on2015_01.on2015_01_18_Facebook_Hacker_Cup_2015_Round_1.Homework;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Homework {
 	int[] primality = new int[(int) (1e7 + 1)];

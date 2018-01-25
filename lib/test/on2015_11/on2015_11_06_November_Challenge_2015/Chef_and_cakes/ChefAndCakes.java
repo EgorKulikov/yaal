@@ -3,8 +3,8 @@ package on2015_11.on2015_11_06_November_Challenge_2015.Chef_and_cakes;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class ChefAndCakes {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

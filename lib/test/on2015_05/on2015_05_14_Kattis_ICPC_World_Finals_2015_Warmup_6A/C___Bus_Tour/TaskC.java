@@ -2,11 +2,9 @@ package on2015_05.on2015_05_14_Kattis_ICPC_World_Finals_2015_Warmup_6A.C___Bus_T
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,7 +16,7 @@ public class TaskC {
         int[] from = new int[edgeCount];
         int[] to = new int[edgeCount];
         int[] distance = new int[edgeCount];
-        IOUtils.readIntArrays(in, from, to, distance);
+        in.readIntArrays(from, to, distance);
         int[][] time = new int[count][count];
         ArrayUtils.fill(time, Integer.MAX_VALUE / 4);
         for (int i = 0; i < count; i++) {

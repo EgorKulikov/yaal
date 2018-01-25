@@ -3,15 +3,14 @@ package on2015_03.on2015_03_21_VK_Cup_2015___Round_1__unofficial_online_mirror__
 
 
 import net.egork.collections.intcollection.IntHashMap;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
 		int limit = in.readInt();
-		int[] value = IOUtils.readIntArray(in, count);
+		int[] value = in.readIntArray(count);
 		IntHashMap map = new IntHashMap();
 		for (int i : value) {
 			for (int j = 0; j <= limit; j++) {

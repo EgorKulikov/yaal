@@ -2,9 +2,8 @@ package on2015_06.on2015_06_14_RCC_2015_________________.B______________________
 
 
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +14,7 @@ public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
         int edgeCount = in.readInt();
-        int[] team = IOUtils.readIntArray(in, count);
+        int[] team = in.readIntArray(count);
         int[][] relationship = new int[count][count];
         for (int i = 0; i < edgeCount; i++) {
             int from = in.readInt() - 1;

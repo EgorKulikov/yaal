@@ -4,11 +4,10 @@ package on2016_01.on2016_01_29_Wunder_Fund_Round_2016__Div__1___Div__2_combined_
 
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskD {
 	int good;
@@ -21,7 +20,7 @@ public class TaskD {
 		long y = in.readInt();
 		int[] u = new int[n - 1];
 		int[] v = new int[n - 1];
-		IOUtils.readIntArrays(in, u, v);
+		in.readIntArrays(u, v);
 		MiscUtils.decreaseByOne(u, v);
 		int[] degree = new int[n];
 		for (int i : u) {

@@ -4,10 +4,9 @@ package on2015_06.on2015_06_June_Challenge_2015.Anticommutative_implication;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,7 @@ import java.util.List;
 public class AnticommutativeImplication {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int size = in.readInt();
-        int[][] a = IOUtils.readIntTable(in, size, size);
+        int[][] a = in.readIntTable(size, size);
         int[] color = new int[size];
         int[] queue = new int[size];
         List<IntIntPair> values = new ArrayList<>();

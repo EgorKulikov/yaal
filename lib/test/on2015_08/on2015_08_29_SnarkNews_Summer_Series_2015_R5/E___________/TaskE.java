@@ -2,15 +2,14 @@ package on2015_08.on2015_08_29_SnarkNews_Summer_Series_2015_R5.E___________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		int[] a = IOUtils.readIntArray(in, n);
+		int[] a = in.readIntArray(n);
 		int[] last = ArrayUtils.createArray(n, -1);
 		int answer = 0;
 		for (int i = 0; i < n; i++) {

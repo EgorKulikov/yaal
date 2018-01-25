@@ -4,13 +4,11 @@ package on2016_08.on2016_08_26_SNSS_2016_R5.E___Doom;
 
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readDoubleArray;
-import static net.egork.io.IOUtils.readIntArrays;
+import static java.util.Arrays.copyOf;
 import static net.egork.misc.MiscUtils.decreaseByOne;
-import static org.apache.commons.math3.util.MathArrays.copyOf;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,10 +16,10 @@ public class TaskE {
         int m = in.readInt();
         int s = in.readInt() - 1;
         int f = in.readInt() - 1;
-        double[] rooms = readDoubleArray(in, n);
+        double[] rooms = in.readDoubleArray(n);
         int[] p = new int[m];
         int[] q = new int[m];
-        readIntArrays(in, p, q);
+        in.readIntArrays(p, q);
         decreaseByOne(p, q);
         Graph graph = BidirectionalGraph.createGraph(n, p, q);
         double[][] answer = new double[n][n + 1];

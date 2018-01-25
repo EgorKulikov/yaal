@@ -3,11 +3,10 @@ package on2016_08.on2016_08_11_SNSS_2016_R2.D___Zones;
 
 
 import net.egork.graph.Graph;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.ArrayUtils.count;
 import static net.egork.misc.MiscUtils.decreaseByOne;
 
@@ -19,7 +18,7 @@ public class TaskD {
             throw new UnknownError();
         }
         int n = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         decreaseByOne(a);
         boolean[] was = new boolean[n];
         int at;

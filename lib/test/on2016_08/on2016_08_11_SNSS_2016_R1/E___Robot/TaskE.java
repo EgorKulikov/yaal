@@ -2,17 +2,16 @@ package on2016_08.on2016_08_11_SNSS_2016_R1.E___Robot;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readTable;
 import static net.egork.misc.MiscUtils.isValidCell;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int m = in.readInt();
         int k = in.readInt();
-        char[][] map = readTable(in, m, m);
+        char[][] map = in.readTable(m, m);
         for (int i = 1; i <= k; i++) {
             for (int j = 0; j <= i; j++) {
                 boolean[][] subMap = new boolean[j + 1][i - j + 1];

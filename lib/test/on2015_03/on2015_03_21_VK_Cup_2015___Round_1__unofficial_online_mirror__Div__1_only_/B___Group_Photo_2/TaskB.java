@@ -3,9 +3,8 @@ package on2015_03.on2015_03_21_VK_Cup_2015___Round_1__unofficial_online_mirror__
 
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -14,7 +13,7 @@ public class TaskB {
 		int count = in.readInt();
 		int[] width = new int[count];
 		int[] height = new int[count];
-		IOUtils.readIntArrays(in, width, height);
+		in.readIntArrays(width, height);
 		int[] all = Arrays.copyOf(width, 2 * count);
 		System.arraycopy(height, 0, all, count, count);
 		Arrays.sort(all);

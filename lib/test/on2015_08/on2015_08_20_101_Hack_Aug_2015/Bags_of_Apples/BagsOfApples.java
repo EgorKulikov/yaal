@@ -2,15 +2,14 @@ package on2015_08.on2015_08_20_101_Hack_Aug_2015.Bags_of_Apples;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class BagsOfApples {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = IOUtils.readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         int answer = 0;
         int sum = (int) ArrayUtils.sumArray(a);
         if (sum % 3 == 0) {

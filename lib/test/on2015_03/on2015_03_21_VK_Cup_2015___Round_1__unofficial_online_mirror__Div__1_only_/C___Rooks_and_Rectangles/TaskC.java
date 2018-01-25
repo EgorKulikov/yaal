@@ -4,11 +4,10 @@ package on2015_03.on2015_03_21_VK_Cup_2015___Round_1__unofficial_online_mirror__
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.LongIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,12 +17,12 @@ public class TaskC {
 		int queryCount = in.readInt();
 		int[] row = new int[count];
 		int[] column = new int[count];
-		IOUtils.readIntArrays(in, row, column);
+		in.readIntArrays(row, column);
 		int[] fromRow = new int[queryCount];
 		int[] fromColumn = new int[queryCount];
 		int[] toRow = new int[queryCount];
 		int[] toColumn = new int[queryCount];
-		IOUtils.readIntArrays(in, fromRow, fromColumn, toRow, toColumn);
+		in.readIntArrays(fromRow, fromColumn, toRow, toColumn);
 		MiscUtils.decreaseByOne(row, column, fromRow, fromColumn, toRow, toColumn);
 		boolean[] answer = new boolean[queryCount];
 		for (int r = 0; r < 2; r++) {

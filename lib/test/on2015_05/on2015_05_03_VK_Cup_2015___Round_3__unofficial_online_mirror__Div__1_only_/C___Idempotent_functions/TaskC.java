@@ -2,11 +2,10 @@ package on2015_05.on2015_05_03_VK_Cup_2015___Round_3__unofficial_online_mirror__
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.math.BigInteger;
 import java.util.Arrays;
@@ -14,7 +13,7 @@ import java.util.Arrays;
 public class TaskC {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        int[] f = IOUtils.readIntArray(in, count);
+        int[] f = in.readIntArray(count);
         MiscUtils.decreaseByOne(f);
         boolean[] present = ArrayUtils.createArray(count, true);
         boolean[] next = new boolean[count];

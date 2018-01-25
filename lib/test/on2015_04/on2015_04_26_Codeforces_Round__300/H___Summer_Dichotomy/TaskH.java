@@ -4,11 +4,10 @@ package on2015_04.on2015_04_26_Codeforces_Round__300.H___Summer_Dichotomy;
 
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskH {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,10 +17,10 @@ public class TaskH {
         int edgeCount = in.readInt();
         int[] min = new int[count];
         int[] max = new int[count];
-        IOUtils.readIntArrays(in, min, max);
+        in.readIntArrays(min, max);
         int[] from = new int[edgeCount];
         int[] to = new int[edgeCount];
-        IOUtils.readIntArrays(in, from, to);
+        in.readIntArrays(from, to);
         MiscUtils.decreaseByOne(from, to);
         Graph graph = BidirectionalGraph.createGraph(count, from, to);
         int first = ArrayUtils.minElement(max);

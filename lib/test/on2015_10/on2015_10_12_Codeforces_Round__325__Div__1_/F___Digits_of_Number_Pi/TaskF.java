@@ -5,8 +5,8 @@ package on2015_10.on2015_10_12_Codeforces_Round__325__Div__1_.F___Digits_of_Numb
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.string.SubstringAutomaton;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
 	private static final long MOD = (long) (1e9 + 7);

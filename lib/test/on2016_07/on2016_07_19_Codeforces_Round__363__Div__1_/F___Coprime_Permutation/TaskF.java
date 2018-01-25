@@ -2,10 +2,9 @@ package on2016_07.on2016_07_19_Codeforces_Round__363__Div__1_.F___Coprime_Permut
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.MiscUtils.MOD7;
 import static net.egork.numbers.IntegerUtils.generateDivisorTable;
 import static net.egork.numbers.IntegerUtils.generateFactorial;
@@ -13,7 +12,7 @@ import static net.egork.numbers.IntegerUtils.generateFactorial;
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] p = readIntArray(in, n);
+        int[] p = in.readIntArray(n);
         int[] divisor = generateDivisorTable(n + 1);
         int[] simple = new int[n + 1];
         int[] tps = new int[n + 1];

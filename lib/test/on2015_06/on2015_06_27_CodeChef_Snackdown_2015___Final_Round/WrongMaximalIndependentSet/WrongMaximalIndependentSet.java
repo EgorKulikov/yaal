@@ -4,12 +4,11 @@ package on2015_06.on2015_06_27_CodeChef_Snackdown_2015___Final_Round.WrongMaxima
 
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -25,7 +24,7 @@ public class WrongMaximalIndependentSet {
         int count = in.readInt();
         int[] from = new int[count - 1];
         int[] to = new int[count - 1];
-        IOUtils.readIntArrays(in, from, to);
+        in.readIntArrays(from, to);
         MiscUtils.decreaseByOne(from, to);
         graph = BidirectionalGraph.createGraph(count, from, to);
         willTake = new double[count][count + 1][];

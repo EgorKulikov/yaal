@@ -2,19 +2,18 @@ package on2016_05.on2016_05_02_HourRank_8.Beautiful_Binary_String;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Integer.MAX_VALUE;
 import static java.lang.Integer.bitCount;
 import static java.util.Arrays.fill;
-import static net.egork.io.IOUtils.readCharArray;
 import static net.egork.misc.ArrayUtils.minElement;
 
 public class BeautifulBinaryString {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        char[] b = readCharArray(in, n);
+        char[] b = in.readCharArray(n);
         if (n < 3) {
             out.printLine(0);
             return;

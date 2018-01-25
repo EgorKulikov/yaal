@@ -3,13 +3,8 @@ package on2016_02.on2016_02_26_Manthan__Codefest_16.B___A_Trivial_Problem;
 
 
 import net.egork.collections.intcollection.Range;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

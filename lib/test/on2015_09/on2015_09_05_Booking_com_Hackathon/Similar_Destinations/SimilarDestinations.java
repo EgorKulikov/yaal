@@ -3,8 +3,8 @@ package on2015_09.on2015_09_05_Booking_com_Hackathon.Similar_Destinations;
 
 
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;

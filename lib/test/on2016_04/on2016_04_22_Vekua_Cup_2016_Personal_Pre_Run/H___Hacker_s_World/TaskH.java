@@ -2,11 +2,10 @@ package on2016_04.on2016_04_22_Vekua_Cup_2016_Personal_Pre_Run.H___Hacker_s_Worl
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.util.Arrays.fill;
-import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.ArrayUtils.sumArray;
 import static net.egork.misc.MiscUtils.MOD7;
 
@@ -15,7 +14,7 @@ public class TaskH {
         int n = in.readInt();
         int r = in.readInt();
         int l = in.readInt();
-        int[] d = readIntArray(in, n);
+        int[] d = in.readIntArray(n);
         int sum = (int) sumArray(d);
         if (sum % 9 != ((r + l) % 9)) {
             int answer = 0;

@@ -5,11 +5,10 @@ package on2015_08.on2015_08_05_SNSS_2015_R1.E____________________________;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -22,7 +21,7 @@ public class TaskE {
         int[] c2 = new int[m];
         int[] t = new int[m];
         int[] d = new int[m];
-        IOUtils.readIntArrays(in, c1, c2, t, d);
+        in.readIntArrays(c1, c2, t, d);
         int a = in.readInt() - 1;
         int b = in.readInt() - 1;
         MiscUtils.decreaseByOne(c1, c2);

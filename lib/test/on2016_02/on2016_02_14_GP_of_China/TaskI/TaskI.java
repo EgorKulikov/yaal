@@ -5,12 +5,11 @@ package on2016_02.on2016_02_14_GP_of_China.TaskI;
 import net.egork.collections.intervaltree.LCA;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
-import static net.egork.io.IOUtils.*;
 import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
 import static java.lang.Math.*;
@@ -25,10 +24,10 @@ public class TaskI {
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] p = readIntArray(in, n);
+        int[] p = in.readIntArray(n);
         int[] a = new int[n - 1];
         int[] b = new int[n - 1];
-        readIntArrays(in, a, b);
+        in.readIntArrays(a, b);
         decreaseByOne(p, a, b);
         Graph graph = BidirectionalGraph.createGraph(n, a, b);
         lca = new LCA(graph);

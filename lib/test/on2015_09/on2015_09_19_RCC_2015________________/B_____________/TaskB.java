@@ -2,10 +2,9 @@ package on2015_09.on2015_09_19_RCC_2015________________.B_____________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
 	long[][][] answer;
@@ -16,7 +15,7 @@ public class TaskB {
 		int n = in.readInt();
 		int t = in.readInt();
 		start = in.readInt() - 1;
-		a = IOUtils.readIntArray(in, n);
+		a = in.readIntArray(n);
 		answer = new long[n][n][t + 1];
 		ArrayUtils.fill(answer, -1);
 		long result = 0;

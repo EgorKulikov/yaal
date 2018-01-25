@@ -2,10 +2,9 @@ package on2015_12.on2015_12_14_USACO_2015_December_Contest__Gold.Problem_1__High
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,7 +16,7 @@ import java.util.Set;
 public class Cardgame {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		int[] cards = IOUtils.readIntArray(in, n);
+		int[] cards = in.readIntArray(n);
 		MiscUtils.decreaseByOne(cards);
 		int[] big = Arrays.copyOf(cards, n / 2);
 		int[] small = Arrays.copyOfRange(cards, n / 2, n);

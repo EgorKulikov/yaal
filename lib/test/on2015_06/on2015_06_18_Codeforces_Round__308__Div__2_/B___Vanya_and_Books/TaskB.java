@@ -4,8 +4,8 @@ package on2015_06.on2015_06_18_Codeforces_Round__308__Div__2_.B___Vanya_and_Book
 
 import net.egork.numbers.IntegerUtils;
 import net.egork.numbers.NumberIterator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     long answer;

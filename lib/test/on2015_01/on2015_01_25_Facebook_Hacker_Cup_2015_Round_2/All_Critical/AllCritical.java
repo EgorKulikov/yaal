@@ -3,8 +3,8 @@ package on2015_01.on2015_01_25_Facebook_Hacker_Cup_2015_Round_2.All_Critical;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class AllCritical {
 	long[][] c = IntegerUtils.generateBinomialCoefficients(21);

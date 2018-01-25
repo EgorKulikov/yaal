@@ -5,11 +5,10 @@ package on2015_06.on2015_06_27_CodeChef_Snackdown_2015___Final_Round.TimeTravell
 import net.egork.collections.intervaltree.LCA;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -18,9 +17,9 @@ public class TimeTravellingMonster {
         int count = in.readInt();
         int[] from = new int[count - 1];
         int[] to = new int[count - 1];
-        IOUtils.readIntArrays(in, from, to);
+        in.readIntArrays(from, to);
         int eaten = in.readInt();
-        int[] toEat = IOUtils.readIntArray(in, eaten);
+        int[] toEat = in.readIntArray(eaten);
         MiscUtils.decreaseByOne(from, to, toEat);
         Arrays.sort(toEat);
         Graph graph = BidirectionalGraph.createGraph(count, from, to);

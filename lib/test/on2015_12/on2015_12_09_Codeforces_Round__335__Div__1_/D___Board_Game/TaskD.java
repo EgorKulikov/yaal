@@ -7,10 +7,9 @@ import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.queue.IntArrayQueue;
 import net.egork.generated.collections.queue.IntQueue;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -30,7 +29,7 @@ public class TaskD {
 		b = new int[n];
 		c = new int[n];
 		d = new int[n];
-		IOUtils.readIntArrays(in, a, b, c, d);
+		in.readIntArrays(a, b, c, d);
 		a = Arrays.copyOf(a, n + 1);
 		b = Arrays.copyOf(b, n + 1);
 		c = Arrays.copyOf(c, n + 1);

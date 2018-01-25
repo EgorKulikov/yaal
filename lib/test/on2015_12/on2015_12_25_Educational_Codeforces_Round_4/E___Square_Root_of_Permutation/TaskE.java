@@ -4,16 +4,15 @@ package on2015_12.on2015_12_25_Educational_Codeforces_Round_4.E___Square_Root_of
 
 import net.egork.generated.collections.function.IntToIntFunction;
 import net.egork.generated.collections.list.IntArray;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		int[] p = IOUtils.readIntArray(in, n);
+		int[] p = in.readIntArray(n);
 		MiscUtils.decreaseByOne(p);
 		int[] cycle = ArrayUtils.createArray(n + 1, -1);
 		int[] q = new int[n];

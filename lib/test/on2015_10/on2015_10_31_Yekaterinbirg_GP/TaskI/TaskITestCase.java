@@ -4,7 +4,7 @@ package on2015_10.on2015_10_31_Yekaterinbirg_GP.TaskI;
 
 import net.egork.chelper.task.Test;
 import net.egork.chelper.tester.TestCase;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.io.StringWriter;
 import java.util.ArrayList;

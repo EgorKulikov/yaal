@@ -2,19 +2,18 @@ package on2015_12.on2015_12_30_Good_Bye_2015.D___New_Year_and_Ancient_Prophecy;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskD {
 	private static final long MOD = (long) (1e9 + 7);
 
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int n = in.readInt();
-		char[] digits = IOUtils.readCharArray(in, n);
+		char[] digits = in.readCharArray(n);
 		StringHash hash = new SimpleStringHash(new String(digits));
 		int[] array = StringUtils.suffixArray(new String(digits));
 		long[][] answer = new long[n][n + 1];

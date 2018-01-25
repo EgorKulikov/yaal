@@ -3,12 +3,11 @@ package on2015_10.on2015_10_06_October_Challenge_2015.CyclicShiftsInPermutation;
 
 
 import net.egork.collections.set.TreapSet;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.NavigableSet;
 
@@ -52,8 +51,8 @@ public class CyclicShiftsInPermutation {
         }*/
         int n = in.readInt();
         int k = in.readInt();
-        int[] p = IOUtils.readIntArray(in, n);
-        int[] q = IOUtils.readIntArray(in, n);
+        int[] p = in.readIntArray(n);
+        int[] q = in.readIntArray(n);
         MiscUtils.decreaseByOne(p, q);
         if (k < n) {
             if (k % 2 == 1 && ArrayUtils.getOddity(p) != ArrayUtils.getOddity(q)) {

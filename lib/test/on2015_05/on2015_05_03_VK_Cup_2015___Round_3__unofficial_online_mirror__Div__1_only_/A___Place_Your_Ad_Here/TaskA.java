@@ -2,14 +2,11 @@ package on2015_05.on2015_05_03_VK_Cup_2015___Round_3__unofficial_online_mirror__
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
@@ -19,11 +16,11 @@ public class TaskA {
         int tvCount = in.readInt();
         int[] left = new int[clipCount];
         int[] right = new int[clipCount];
-        IOUtils.readIntArrays(in, left, right);
+        in.readIntArrays(left, right);
         int[] from = new int[tvCount];
         int[] to = new int[tvCount];
         int[] qty = new int[tvCount];
-        IOUtils.readIntArrays(in, from, to, qty);
+        in.readIntArrays(from, to, qty);
         long answer = 0;
         int bestClip = -1;
         int bestTv = -1;

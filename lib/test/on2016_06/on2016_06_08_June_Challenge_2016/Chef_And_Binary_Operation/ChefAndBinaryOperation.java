@@ -2,8 +2,8 @@ package on2016_06.on2016_06_08_June_Challenge_2016.Chef_And_Binary_Operation;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.max;
 import static net.egork.misc.ArrayUtils.count;

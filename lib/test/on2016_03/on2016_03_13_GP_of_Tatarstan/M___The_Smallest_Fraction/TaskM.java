@@ -3,8 +3,8 @@ package on2016_03.on2016_03_13_GP_of_Tatarstan.M___The_Smallest_Fraction;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskM {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

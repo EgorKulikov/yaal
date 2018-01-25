@@ -2,25 +2,14 @@ package on2016_02.on2016_02_07_Grand_Prix_of_Saratov.TaskK;
 
 
 
-import net.egork.collections.Pair;
-import net.egork.collections.intervaltree.ArrayBasedIntervalTree;
-import net.egork.collections.intervaltree.IntervalTree;
-import net.egork.collections.intervaltree.ReadOnlyIntervalTree;
-import net.egork.generated.collections.list.IntArrayList;
-import net.egork.generated.collections.list.IntList;
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
-import net.egork.graph.ShortestDistance;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import sun.security.provider.certpath.Vertex;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
 import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskK {
     Graph graph;
@@ -40,7 +29,7 @@ public class TaskK {
         k = in.readInt();
         int[] u = new int[n - 1];
         int[] v = new int[n - 1];
-        readIntArrays(in, u, v);
+        in.readIntArrays(u, v);
         graph = BidirectionalGraph.createWeightedGraph(n, u, v, createArray(n - 1, 1L));
         vertices = new Vertex[n];
         int diameter = 0;

@@ -7,10 +7,9 @@ package on2015_09.on2015_09_23_101_Hack_Sep_2015.Xaero_And_The_Enigma_Hacking0;
 import net.egork.collections.Pair;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -22,10 +21,10 @@ public class XaeroAndTheEnigmaHacking {
 		int n = in.readInt();
 		int m = in.readInt();
 		long k = in.readLong();
-		char[] s = IOUtils.readCharArray(in, n);
+		char[] s = in.readCharArray(n);
 		int[] l = new int[m];
 		int[] r = new int[m];
-		IOUtils.readIntArrays(in, l, r);
+		in.readIntArrays(l, r);
 		MiscUtils.decreaseByOne(l, r);
 		Node root = new Node(0);
 		for (int i = 1; i < n; i++) {

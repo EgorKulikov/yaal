@@ -2,21 +2,16 @@ package on2016_02.on2016_02_07_IndiaHacks__Algorithms.A___Hourglasses;
 
 
 
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
-import java.awt.*;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import static java.lang.Math.max;
+import static java.lang.Math.min;
 
 public class AHourglasses {
     int limit;

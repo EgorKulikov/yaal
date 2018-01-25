@@ -3,8 +3,8 @@ package on2015_12.on2015_12_08_December_Challenge_2015.Oracle_Devu_and_Longest_C
 
 
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class OracleDevuAndLongestCommonSubsequence {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

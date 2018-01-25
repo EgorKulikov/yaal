@@ -2,10 +2,9 @@ package on2015_05.on2015_05_01_Bayan_Finals.Polyomino;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.concurrency.Scheduler;
 import net.egork.concurrency.Task;
 
@@ -19,7 +18,7 @@ public class Polyomino {
             @Override
             public void read(InputReader in) {
                 length = in.readInt();
-                sequence = IOUtils.readCharArray(in, length);
+                sequence = in.readCharArray(length);
             }
 
             @Override

@@ -3,12 +3,10 @@ package on2015_04.on2015_04_26_Codeforces_Round__300.E___Demiurges_Play_Again;
 
 
 import net.egork.graph.Graph;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     int[] sum;
@@ -19,7 +17,7 @@ public class TaskE {
         int count = in.readInt();
         int[] from = new int[count - 1];
         int[] to = new int[count - 1];
-        IOUtils.readIntArrays(in, from, to);
+        in.readIntArrays(from, to);
         MiscUtils.decreaseByOne(from, to);
         graph = Graph.createGraph(count, from, to);
         min = ArrayUtils.createArray(count, -1);

@@ -5,7 +5,7 @@ package on2016_03.on2016_03_20_Grand_Prix_of_Baltics___2016.B___Hovels;
 import net.egork.chelper.task.Test;
 import net.egork.chelper.tester.TestCase;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.io.StringWriter;
 import java.util.ArrayList;

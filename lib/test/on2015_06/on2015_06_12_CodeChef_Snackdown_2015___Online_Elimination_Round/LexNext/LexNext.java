@@ -5,13 +5,12 @@ package on2015_06.on2015_06_12_CodeChef_Snackdown_2015___Online_Elimination_Roun
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.intervaltree.LongIntervalTree;
 import net.egork.collections.intervaltree.ReadOnlyIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 
@@ -38,7 +37,7 @@ public class LexNext {
         int count = in.readInt();
         int[] index = new int[count];
         int[] length = new int[count];
-        IOUtils.readIntArrays(in, index, length);
+        in.readIntArrays(index, length);
         int[] sArray = ArrayUtils.reversePermutation(StringUtils.suffixArray(s + "$"));
         sArray = Arrays.copyOfRange(sArray, 1, s.length() + 1);
         StringHash hash = new SimpleStringHash(s);

@@ -2,18 +2,17 @@ package on2015_07.on2015_07_30_VK_Cup_2015___Finals__online_mirror.F___Clique_in
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        int[] a = IOUtils.readIntArray(in, count);
+        int[] a = in.readIntArray(count);
         int[] div = IntegerUtils.generateDivisorTable(1000001);
         int[] ans = new int[1000001];
         for (int i = 1; i <= 1000000; i++) {

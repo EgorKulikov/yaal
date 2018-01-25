@@ -4,8 +4,8 @@ package on2016_03.on2016_03_20_Grand_Prix_of_Baltics___2016.I___Stack_and_Subrou
 
 import net.egork.generated.collections.list.LongArrayList;
 import net.egork.generated.collections.list.LongList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.List;

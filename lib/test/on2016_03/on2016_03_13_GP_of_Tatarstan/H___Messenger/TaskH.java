@@ -3,8 +3,8 @@ package on2016_03.on2016_03_13_GP_of_Tatarstan.H___Messenger;
 
 
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.InputMismatchException;
 

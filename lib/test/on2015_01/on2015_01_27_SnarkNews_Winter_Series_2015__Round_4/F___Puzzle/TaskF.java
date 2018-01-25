@@ -2,19 +2,18 @@ package on2015_01.on2015_01_27_SnarkNews_Winter_Series_2015__Round_4.F___Puzzle;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
 		int rowCount = in.readInt();
 		int columnCount = in.readInt();
-		char[][] puzzle = IOUtils.readTable(in, rowCount, columnCount);
-		String[] words = IOUtils.readStringArray(in, count);
+		char[][] puzzle = in.readTable(rowCount, columnCount);
+		String[] words = in.readStringArray(count);
 		boolean[][] checked = new boolean[rowCount][columnCount];
 		boolean ambiguous = false;
 		for (int i = 0; i < count; i++) {

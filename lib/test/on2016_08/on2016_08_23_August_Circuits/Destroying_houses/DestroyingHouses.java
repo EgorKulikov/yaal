@@ -4,8 +4,8 @@ package on2016_08.on2016_08_23_August_Circuits.Destroying_houses;
 
 import net.egork.geometry.Circle;
 import net.egork.geometry.Point;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.*;
 import static net.egork.geometry.GeometryUtils.epsilon;

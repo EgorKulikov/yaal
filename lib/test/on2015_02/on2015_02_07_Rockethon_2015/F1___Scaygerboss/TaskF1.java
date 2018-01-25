@@ -4,11 +4,10 @@ package on2015_02.on2015_02_07_Rockethon_2015.F1___Scaygerboss;
 
 import net.egork.graph.Graph;
 import net.egork.graph.MaxFlow;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF1 {
 	private int rowCount;
@@ -28,7 +27,7 @@ public class TaskF1 {
 				out.printLine(-1);
 				return;
 			}
-			char[][] map = IOUtils.readTable(in, rowCount, columnCount);
+			char[][] map = in.readTable(rowCount, columnCount);
 			distance = new int[rowCount * columnCount][rowCount * columnCount];
 			ArrayUtils.fill(distance, Integer.MAX_VALUE / 2);
 			int[] queueRow = new int[rowCount * columnCount];

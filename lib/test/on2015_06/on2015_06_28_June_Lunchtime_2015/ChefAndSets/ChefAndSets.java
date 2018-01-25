@@ -3,8 +3,8 @@ package on2015_06.on2015_06_28_June_Lunchtime_2015.ChefAndSets;
 
 
 import net.egork.collections.set.TreapSet;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.List;

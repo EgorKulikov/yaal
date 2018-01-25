@@ -2,15 +2,14 @@ package on2015_01.on2015_01_25_Facebook_Hacker_Cup_2015_Round_2.Lazy_Sort;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class LazySort {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
-		int[] order = IOUtils.readIntArray(in, count);
+		int[] order = in.readIntArray(count);
 		for (int i = 0; i < 2; i++) {
 			int from = order[0];
 			int to = order[0];

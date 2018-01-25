@@ -4,19 +4,15 @@ package on2016_02.on2016_02_28_Grand_Prix_of_Bashkortostan_2016.H___Hierarchy;
 
 import net.egork.collections.map.CPPMap;
 import net.egork.collections.map.Counter;
-import net.egork.datetime.Date;
-import net.egork.generated.collections.pair.IntIntPair;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.misc.Factory;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
-import java.util.*;
-
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.NavigableSet;
+import java.util.TreeSet;
 
 public class TaskH {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

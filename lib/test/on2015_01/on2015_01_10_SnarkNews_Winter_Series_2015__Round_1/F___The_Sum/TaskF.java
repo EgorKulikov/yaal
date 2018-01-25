@@ -3,16 +3,15 @@ package on2015_01.on2015_01_10_SnarkNews_Winter_Series_2015__Round_1.F___The_Sum
 
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
 public class TaskF {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
-		int[] array = IOUtils.readIntArray(in, count);
+		int[] array = in.readIntArray(count);
 		int[][] at = new int[100001][];
 		IntList[] listAt = new IntList[100001];
 		for (int i = 0; i < count; i++) {

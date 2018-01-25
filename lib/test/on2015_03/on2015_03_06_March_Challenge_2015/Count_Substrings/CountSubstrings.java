@@ -3,10 +3,9 @@ package on2015_03.on2015_03_06_March_Challenge_2015.Count_Substrings;
 
 
 import net.egork.collections.intervaltree.SumIntervalTree;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -15,7 +14,7 @@ public class CountSubstrings {
 		int count = in.readInt();
 		int limit = in.readInt();
 		int queryCount = in.readInt();
-		char[] sequence = IOUtils.readCharArray(in, count);
+		char[] sequence = in.readCharArray(count);
 		int[] ends = new int[count];
 		int current = 0;
 		int ones = 0;

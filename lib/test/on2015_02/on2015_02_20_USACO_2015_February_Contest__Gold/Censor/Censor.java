@@ -3,13 +3,12 @@ package on2015_02.on2015_02_20_USACO_2015_February_Contest__Gold.Censor;
 
 import net.egork.collections.map.Indexer;
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.string.SuffixAutomaton;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -17,7 +16,7 @@ public class Censor {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		char[] text = in.readString().toCharArray();
 		int count = in.readInt();
-		String[] words = IOUtils.readStringArray(in, count);
+		String[] words = in.readStringArray(count);
 		StringBuilder all = new StringBuilder();
 		for (String word : words) {
 			all.append('#');

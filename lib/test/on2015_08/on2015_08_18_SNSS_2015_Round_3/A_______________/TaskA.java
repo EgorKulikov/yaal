@@ -2,10 +2,9 @@ package on2015_08.on2015_08_18_SNSS_2015_Round_3.A_______________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
     int n;
@@ -26,7 +25,7 @@ public class TaskA {
         for (int i = 0; i < n; i++) {
             d[i] = in.readInt();
             u[i] = in.readInt();
-            children[i] = IOUtils.readIntArray(in, in.readInt());
+            children[i] = in.readIntArray(in.readInt());
         }
         MiscUtils.decreaseByOne(children);
         taken = new int[n];

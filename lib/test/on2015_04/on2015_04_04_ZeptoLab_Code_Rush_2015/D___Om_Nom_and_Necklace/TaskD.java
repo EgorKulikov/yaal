@@ -3,8 +3,8 @@ package on2015_04.on2015_04_04_ZeptoLab_Code_Rush_2015.D___Om_Nom_and_Necklace;
 
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Arrays;

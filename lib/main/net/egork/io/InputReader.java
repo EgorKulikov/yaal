@@ -1,4 +1,4 @@
-package net.egork.inout;
+package net.egork.io;
 
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.generated.collections.pair.LongLongPair;

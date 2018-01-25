@@ -4,8 +4,8 @@ package on2015_01.on2015_01_27_SnarkNews_Winter_Series_2015__Round_4.C___Magic_D
 
 import net.egork.geometry.Point;
 import net.egork.geometry.Polygon;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

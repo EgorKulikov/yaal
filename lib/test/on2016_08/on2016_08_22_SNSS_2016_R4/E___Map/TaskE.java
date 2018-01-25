@@ -2,11 +2,9 @@ package on2016_08.on2016_08_22_SNSS_2016_R4.E___Map;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import static net.egork.io.IOUtils.readIntArrays;
-import static net.egork.io.IOUtils.readTable;
 import static net.egork.misc.MiscUtils.*;
 
 public class TaskE {
@@ -14,11 +12,11 @@ public class TaskE {
         int n = in.readInt();
         int m = in.readInt();
         int k = in.readInt();
-        char[][] map = readTable(in, n, m);
+        char[][] map = in.readTable(n, m);
         int[] r = new int[k];
         int[] c = new int[k];
         int[] d = new int[k];
-        readIntArrays(in, r, c, d);
+        in.readIntArrays(r, c, d);
         decreaseByOne(r, c);
         int[][] number = new int[n][m];
         for (int i = 0; i < k; i++) {

@@ -3,8 +3,8 @@ package on2016_03.on2016_03_13_GP_of_Tatarstan.F___GCD_and_LCM;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
     private static final long MOD = (long) (1e9 + 9);

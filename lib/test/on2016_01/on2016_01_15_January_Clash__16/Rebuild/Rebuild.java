@@ -5,11 +5,10 @@ package on2016_01.on2016_01_15_January_Clash__16.Rebuild;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.ListIndependentSetSystem;
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Rebuild {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,7 +17,7 @@ public class Rebuild {
 		int[] a = new int[m];
 		int[] b = new int[m];
 		int[] c = new int[m];
-		IOUtils.readIntArrays(in, a, b, c);
+		in.readIntArrays(a, b, c);
 		MiscUtils.decreaseByOne(a, b);
 		IndependentSetSystem setSystem = new ListIndependentSetSystem(n);
 		int[] order = ArrayUtils.createOrder(m);

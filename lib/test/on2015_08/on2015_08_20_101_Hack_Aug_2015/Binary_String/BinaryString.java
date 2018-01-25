@@ -2,17 +2,16 @@ package on2015_08.on2015_08_20_101_Hack_Aug_2015.Binary_String;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class BinaryString {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int k = in.readInt();
         int t = in.readInt();
-        char[] s = IOUtils.readCharArray(in, n);
+        char[] s = in.readCharArray(n);
         int[] firstOne = ArrayUtils.createArray(k, n);
         for (int i = 0; i < n; i++) {
             if (s[i] == '1') {

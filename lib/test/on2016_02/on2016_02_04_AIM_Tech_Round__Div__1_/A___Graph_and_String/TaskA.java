@@ -4,13 +4,10 @@ package on2016_02.on2016_02_04_AIM_Tech_Round__Div__1_.A___Graph_and_String;
 
 import net.egork.generated.collections.set.IntHashSet;
 import net.egork.generated.collections.set.IntSet;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskA {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -18,7 +15,7 @@ public class TaskA {
         int m = in.readInt();
         int[] u = new int[m];
         int[] v = new int[m];
-        readIntArrays(in, u, v);
+        in.readIntArrays(u, v);
         if (m == n * (n - 1) / 2) {
             out.printLine("Yes");
             for (int i = 0; i < n; i++) {

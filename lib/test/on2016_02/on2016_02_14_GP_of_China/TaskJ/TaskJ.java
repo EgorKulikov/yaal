@@ -5,17 +5,14 @@ package on2016_02.on2016_02_14_GP_of_China.TaskJ;
 import net.egork.generated.collections.list.IntArray;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskJ {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
-        int[] a = readIntArray(in, 6666);
+        int[] a = in.readIntArray(6666);
         State[] states = new State[6666];
         for (int i = 0; i < 6666; i++) {
             states[i] = new State(a[i], new IntArray(new int[]{i + 1}));

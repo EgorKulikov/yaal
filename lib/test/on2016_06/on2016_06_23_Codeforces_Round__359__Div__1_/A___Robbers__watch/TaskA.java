@@ -3,8 +3,8 @@ package on2016_06.on2016_06_23_Codeforces_Round__359__Div__1_.A___Robbers__watch
 
 
 import net.egork.generated.collections.list.CharArray;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.max;
 import static net.egork.misc.ArrayUtils.maxElement;

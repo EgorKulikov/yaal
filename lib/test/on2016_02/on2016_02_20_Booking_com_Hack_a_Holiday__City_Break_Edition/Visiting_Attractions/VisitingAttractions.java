@@ -3,15 +3,11 @@ package on2016_02.on2016_02_20_Booking_com_Hack_a_Holiday__City_Break_Edition.Vi
 
 
 import net.egork.geometry.Point;
-import net.egork.misc.MiscUtils;
-import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
+import static java.util.Arrays.copyOf;
+import static net.egork.misc.ArrayUtils.createArray;
 
 public class VisitingAttractions {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

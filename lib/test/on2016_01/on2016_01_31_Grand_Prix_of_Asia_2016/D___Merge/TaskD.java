@@ -2,20 +2,11 @@ package on2016_01.on2016_01_31_Grand_Prix_of_Asia_2016.D___Merge;
 
 
 
-import net.egork.collections.Pair;
 import net.egork.collections.intcollection.IntHashMap;
-import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskD {
 	private static final long MOD = (long) (1e9 + 7);
@@ -33,8 +24,8 @@ public class TaskD {
 
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
 		n = in.readInt();
-		p = readIntArray(in, n);
-		q = readIntArray(in, n);
+		p = in.readIntArray(n);
+		q = in.readIntArray(n);
 		ordinary = new long[n + 1][n + 1];
 		fill(ordinary, -1);
 		ordinary[n][n] = 1;

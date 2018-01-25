@@ -6,18 +6,16 @@ import net.egork.generated.collections.function.IntTask;
 import net.egork.generated.collections.list.IntArray;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class ChefDetective {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] r = readIntArray(in, n);
+        int[] r = in.readIntArray(n);
         decreaseByOne(r);
         boolean[] killer = createArray(n, true);
         new IntArray(r).forEach((IntTask)  x -> {

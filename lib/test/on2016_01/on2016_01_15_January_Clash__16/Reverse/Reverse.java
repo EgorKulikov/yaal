@@ -5,8 +5,8 @@ package on2016_01.on2016_01_15_January_Clash__16.Reverse;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.numbers.Matrix;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Reverse {
 	private static final long MOD = (long) (1e9 + 7);

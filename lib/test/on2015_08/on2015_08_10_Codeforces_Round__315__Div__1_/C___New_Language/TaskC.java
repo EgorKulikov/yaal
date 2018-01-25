@@ -5,10 +5,9 @@ package on2015_08.on2015_08_10_Codeforces_Round__315__Div__1_.C___New_Language;
 import net.egork.collections.Pair;
 import net.egork.graph.Graph;
 import net.egork.graph.StronglyConnectedComponents;
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -25,7 +24,7 @@ public class TaskC {
 			pos2[i] = in.readInt();
 			t2[i] = in.readCharacter();
 		}
-		char[] s = IOUtils.readCharArray(in, n);
+		char[] s = in.readCharArray(n);
 		MiscUtils.decreaseByOne(pos1, pos2);
 		char[] nextVowel = new char[type.length];
 		char[] nextConsonant = new char[type.length];

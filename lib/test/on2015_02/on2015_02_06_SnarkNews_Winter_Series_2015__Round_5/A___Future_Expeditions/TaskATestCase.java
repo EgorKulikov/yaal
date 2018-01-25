@@ -4,7 +4,7 @@ package on2015_02.on2015_02_06_SnarkNews_Winter_Series_2015__Round_5.A___Future_
 
 import net.egork.chelper.task.Test;
 import net.egork.chelper.tester.TestCase;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.io.StringWriter;
 import java.util.ArrayList;

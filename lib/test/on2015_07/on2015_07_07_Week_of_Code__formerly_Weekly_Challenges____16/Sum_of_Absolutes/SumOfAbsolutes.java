@@ -2,16 +2,15 @@ package on2015_07.on2015_07_07_Week_of_Code__formerly_Weekly_Challenges____16.Su
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SumOfAbsolutes {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int size = in.readInt();
         int count = in.readInt();
-        int[] a = IOUtils.readIntArray(in, size);
+        int[] a = in.readIntArray(size);
         long[] sums = ArrayUtils.partialSums(a);
         for (int i = 0; i < count; i++) {
             int from = in.readInt() - 1;

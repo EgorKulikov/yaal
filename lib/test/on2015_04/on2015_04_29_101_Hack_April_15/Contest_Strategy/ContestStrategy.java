@@ -2,16 +2,15 @@ package on2015_04.on2015_04_29_101_Hack_April_15.Contest_Strategy;
 
 
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class ContestStrategy {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
         int explanation = in.readInt();
-        int[] time = IOUtils.readIntArray(in, count);
+        int[] time = in.readIntArray(count);
         ArrayUtils.sort(time, IntComparator.REVERSE);
         long left = time[0];
         long right = time[0] + (long)(count - 1) * explanation;

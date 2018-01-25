@@ -4,8 +4,8 @@ package on2015_03.on2015_03_18_Code_Mania_2015.Alice_and_Bob_revisited;
 import net.egork.generated.collections.set.IntHashSet;
 import net.egork.generated.collections.set.IntSet;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class AliceAndBobRevisited {
 	int[][] result = new int[21][21];

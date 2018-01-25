@@ -2,10 +2,9 @@ package on2015_06.on2015_06_14_RCC_2015_________________.C________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,7 +25,7 @@ public class TaskC {
         int count = in.readInt();
         int[] x = new int[count];
         int[] y = new int[count];
-        IOUtils.readIntArrays(in, x, y);
+        in.readIntArrays(x, y);
         int[] realY = ArrayUtils.compress(y);
         int[][] xs = new int[realY.length - 1][2];
         int[] size = new int[xs.length];

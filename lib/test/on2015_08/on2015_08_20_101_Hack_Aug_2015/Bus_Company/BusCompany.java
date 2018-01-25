@@ -4,9 +4,8 @@ package on2015_08.on2015_08_20_101_Hack_Aug_2015.Bus_Company;
 
 import net.egork.graph.Graph;
 import net.egork.graph.MinCostFlow;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class BusCompany {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -16,7 +15,7 @@ public class BusCompany {
         int[] a = new int[n];
         int[] b = new int[n];
         int[] c = new int[n];
-        IOUtils.readIntArrays(in, a, b, c);
+        in.readIntArrays(a, b, c);
         Graph graph = new Graph(m + 2);
         int source = 0;
         int sink = m + 1;

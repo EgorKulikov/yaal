@@ -2,10 +2,9 @@ package on2015_06.on2015_06_20_EpicCode_CodeSprint.Line_Segments;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -14,7 +13,7 @@ public class LineSegments {
         int count = in.readInt();
         int[] start = new int[count];
         int[] end = new int[count];
-        IOUtils.readIntArrays(in, start, end);
+        in.readIntArrays(start, end);
         int[] order = ArrayUtils.createOrder(count);
         ArrayUtils.sort(order, (f, s) -> (start[f] != start[s] ? start[f] - start[s] : end[s] - end[f]));
         ArrayUtils.orderBy(ArrayUtils.reversePermutation(order), end);

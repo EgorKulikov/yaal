@@ -2,10 +2,9 @@ package on2015_02.on2015_02_06_SnarkNews_Winter_Series_2015__Round_5.A___Future_
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
 
@@ -13,9 +12,9 @@ public class TaskA {
 		int count = in.readInt();
 		int cutoff = in.readInt();
 		int good = in.readInt();
-		int[] rating = IOUtils.readIntArray(in, count);
+		int[] rating = in.readIntArray(count);
 		int voteCount = in.readInt();
-		int[] votes = IOUtils.readIntArray(in, voteCount);
+		int[] votes = in.readIntArray(voteCount);
 		ArrayUtils.sort(votes);
 		int[] order = ArrayUtils.order(rating);
 		int left = 0;

@@ -4,8 +4,8 @@ package on2015_09.on2015_09_05_Booking_com_Hackathon.Travel_Profiles;
 import net.egork.collections.set.EHashSet;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 import java.util.Set;

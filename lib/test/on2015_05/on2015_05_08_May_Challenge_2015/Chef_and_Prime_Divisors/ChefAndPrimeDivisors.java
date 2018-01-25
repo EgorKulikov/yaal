@@ -3,8 +3,8 @@ package on2015_05.on2015_05_08_May_Challenge_2015.Chef_and_Prime_Divisors;
 
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class ChefAndPrimeDivisors {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

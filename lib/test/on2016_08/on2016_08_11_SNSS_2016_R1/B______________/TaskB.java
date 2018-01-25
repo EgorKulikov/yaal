@@ -5,19 +5,18 @@ package on2016_08.on2016_08_11_SNSS_2016_R1.B______________;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.graph.Graph;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.string.SuffixAutomaton;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
 import static net.egork.graph.GraphAlgorithms.topologicalSort;
-import static net.egork.io.IOUtils.readStringArray;
 
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int k = in.readInt();
-        String[] a = readStringArray(in, n);
-        String[] b = readStringArray(in, k);
+        String[] a = in.readStringArray(n);
+        String[] b = in.readStringArray(k);
 //        SubstringAutomaton automaton = new SubstringAutomaton(b);
 //        for (String s : a) {
 //            int at = 0;

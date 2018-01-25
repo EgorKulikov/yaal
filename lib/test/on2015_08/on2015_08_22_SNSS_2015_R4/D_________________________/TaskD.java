@@ -2,10 +2,9 @@ package on2015_08.on2015_08_22_SNSS_2015_R4.D_________________________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
@@ -13,7 +12,7 @@ public class TaskD {
         int m = in.readInt();
         int[] a = new int[m];
         int[] b = new int[m];
-        IOUtils.readIntArrays(in, a, b);
+        in.readIntArrays(a, b);
         int answer = 0;
         int end = 0;
         ArrayUtils.orderBy(a, b);

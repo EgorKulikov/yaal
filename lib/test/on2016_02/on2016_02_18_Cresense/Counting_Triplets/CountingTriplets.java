@@ -3,21 +3,15 @@ package on2016_02.on2016_02_18_Cresense.Counting_Triplets;
 
 
 import net.egork.collections.set.TreapSet;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.NavigableSet;
-
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
-import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class CountingTriplets {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         int s = in.readInt();
         int answer = 0;
         NavigableSet<Number> set = new TreapSet<>();

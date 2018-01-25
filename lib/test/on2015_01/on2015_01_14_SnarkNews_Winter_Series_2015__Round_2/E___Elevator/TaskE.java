@@ -2,15 +2,14 @@ package on2015_01.on2015_01_14_SnarkNews_Winter_Series_2015__Round_2.E___Elevato
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskE {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
 		int count = in.readInt();
-		int[] qty = IOUtils.readIntArray(in, count);
+		int[] qty = in.readIntArray(count);
 		long[] sum = ArrayUtils.partialSums(qty);
 		long[] weightedSum = new long[sum.length];
 		for (int i = 1; i <= count; i++) weightedSum[i] = weightedSum[i - 1] + sum[i];

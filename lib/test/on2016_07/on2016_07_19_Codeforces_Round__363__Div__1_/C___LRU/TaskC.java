@@ -2,19 +2,18 @@ package on2016_07.on2016_07_19_Codeforces_Round__363__Div__1_.C___LRU;
 
 
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Integer.bitCount;
 import static java.lang.Math.min;
-import static net.egork.io.IOUtils.readDoubleArray;
 import static net.egork.misc.ArrayUtils.count;
 
 public class TaskC {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int k = in.readInt();
-        double[] p = readDoubleArray(in, n);
+        double[] p = in.readDoubleArray(n);
         double[] answer = new double[1 << n];
         answer[0] = 1;
         for (int i = 1; i < (1 << n); i++) {

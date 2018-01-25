@@ -2,10 +2,9 @@ package on2015_05.on2015_05_08_May_Challenge_2015.Set_Difference;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 
@@ -14,7 +13,7 @@ public class SetDifference {
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        int[] set = IOUtils.readIntArray(in, count);
+        int[] set = in.readIntArray(count);
         Arrays.sort(set);
         long[] tp = IntegerUtils.generatePowers(2, count, MOD);
         long answer = 0;

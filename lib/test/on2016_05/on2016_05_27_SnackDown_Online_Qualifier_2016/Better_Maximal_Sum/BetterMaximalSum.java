@@ -3,17 +3,16 @@ package on2016_05.on2016_05_27_SnackDown_Online_Qualifier_2016.Better_Maximal_Su
 
 
 import net.egork.generated.collections.list.IntArray;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.max;
-import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.ArrayUtils.maxElement;
 
 public class BetterMaximalSum {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         if (new IntArray(a).allOf(x -> x < 0)) {
             out.printLine(maxElement(a));
             return;

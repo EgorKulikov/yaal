@@ -3,10 +3,9 @@ package on2016_02.on2016_02_20_February_Clash__16.Sequences_everywhere;
 
 
 import net.egork.chelper.task.Test;
-import net.egork.chelper.tester.TestProvider;
 import net.egork.chelper.tester.TestCase;
 
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;

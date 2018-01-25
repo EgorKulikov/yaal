@@ -4,8 +4,8 @@ package on2015_07.on2015_07_08_The_COJ_Progressive_Contest__9.SavingTheKingdomOf
 
 import net.egork.geometry.Point;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SavingTheKingdomOfCarlosI {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

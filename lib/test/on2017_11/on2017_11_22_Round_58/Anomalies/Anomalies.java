@@ -1,11 +1,9 @@
 package on2017_11.on2017_11_22_Round_58.Anomalies;
 
 
-
 import net.egork.io.InputReader;
 import net.egork.io.OutputWriter;
 
-import static net.egork.io.InputReader.readIntArray;
 import static net.egork.misc.ArrayUtils.sort;
 
 public class Anomalies {

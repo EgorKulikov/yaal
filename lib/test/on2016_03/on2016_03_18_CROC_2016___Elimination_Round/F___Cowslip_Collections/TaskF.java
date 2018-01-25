@@ -2,12 +2,11 @@ package on2016_03.on2016_03_18_CROC_2016___Elimination_Round.F___Cowslip_Collect
 
 
 
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
 
 import static java.util.Arrays.copyOf;
-import static net.egork.io.IOUtils.readIntArray;
 
 public class TaskF {
     private static final long MOD = (long) (1e9 + 7);
@@ -44,7 +43,7 @@ public class TaskF {
         int n = in.readInt();
         int k = in.readInt();
         int q = in.readInt();
-        int[] a = readIntArray(in, n);
+        int[] a = in.readIntArray(n);
         int[] qty = new int[divisor.length];
         for (int i : a) {
             for (int j : allDivisors[i]) {
@@ -58,7 +57,7 @@ public class TaskF {
             }
         }
         answer %= MOD;
-        int[] c = readIntArray(in, q);
+        int[] c = in.readIntArray(q);
         for (int i : c) {
             for (int j : allDivisors[i]) {
                 if (qty[j] >= k - 1) {

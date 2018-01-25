@@ -2,16 +2,15 @@ package on2015_08.on2015_08_22_SNSS_2015_R4.B___________;
 
 
 
-import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
-        int[][] discs = IOUtils.readIntTable(in, n, 3);
+        int[][] discs = in.readIntTable(n, 3);
         MiscUtils.decreaseByOne(discs);
         int[] last = new int[8];
         long ways = IntegerUtils.power(3, 8);

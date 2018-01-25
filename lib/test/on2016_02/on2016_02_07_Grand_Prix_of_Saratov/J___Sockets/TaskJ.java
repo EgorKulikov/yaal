@@ -3,20 +3,17 @@ package on2016_02.on2016_02_07_Grand_Prix_of_Saratov.J___Sockets;
 
 
 import net.egork.generated.collections.comparator.IntComparator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
-import static net.egork.io.IOUtils.*;
-import static net.egork.misc.MiscUtils.*;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
 import static net.egork.misc.ArrayUtils.*;
-import static java.lang.Math.*;
-import static java.util.Arrays.*;
 
 public class TaskJ {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.readInt();
         int m = in.readInt();
-        int[] a = readIntArray(in, n);
-        int[] b = readIntArray(in, m);
+        int[] a = in.readIntArray(n);
+        int[] b = in.readIntArray(m);
         sort(a, IntComparator.REVERSE);
         sort(b, IntComparator.REVERSE);
         int left = 0;

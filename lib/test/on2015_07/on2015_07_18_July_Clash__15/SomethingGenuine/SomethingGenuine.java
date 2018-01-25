@@ -4,16 +4,15 @@ package on2015_07.on2015_07_18_July_Clash__15.SomethingGenuine;
 
 import net.egork.collections.intcollection.IntHashMap;
 import net.egork.collections.intervaltree.IntervalTree;
-import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SomethingGenuine {
     private static final long MOD = (long) (1e9 + 7);
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int count = in.readInt();
-        int[] array = IOUtils.readIntArray(in, count);
+        int[] array = in.readIntArray(count);
         IntHashMap position = new IntHashMap();
         IntervalTree tree = new IntervalTree(count) {
             long[] sum;
