@@ -6,7 +6,7 @@ import net.egork.chelper.tester.TestCase;
 
 import net.egork.geometry.Angle;
 import net.egork.geometry.Point;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;

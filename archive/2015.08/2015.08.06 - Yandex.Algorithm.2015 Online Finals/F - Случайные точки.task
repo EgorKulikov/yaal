@@ -50027,7 +50027,7 @@
 10 2015.08.06
 35 Yandex.Algorithm.2015 Online Finals
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 0

@@ -1,0 +1,57 @@
+16 HarmoniousGarden
+10 isPossible
+16 java.lang.String
+3
+3 int
+1 n
+3 int
+1 k
+3 int
+1 L
+5
+0
+3
+int 8
+int 2
+int 4
+String
+8 Possible
+1
+1
+3
+int 3
+int 2
+int 3
+String
+10 Impossible
+1
+2
+3
+int 5
+int 2
+int 3
+String
+8 Possible
+1
+3
+3
+int 50
+int 1
+int 47
+String
+8 Possible
+1
+4
+3
+int 50
+int 2
+int 47
+String
+10 Impossible
+1
+10 2017.08.19
+28 2017 TopCoder Open Algorithm
+0
+26 net.egork.HarmoniousGarden
+1
+4 256M

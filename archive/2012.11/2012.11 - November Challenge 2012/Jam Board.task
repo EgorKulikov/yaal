@@ -34,6 +34,6 @@ OFF
 10 2012.11.02
 23 November Challenge 2012
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0

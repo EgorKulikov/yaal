@@ -6,8 +6,8 @@ import net.egork.collections.intcollection.IntList;
 import net.egork.io.IOUtils;
 import net.egork.misc.MapVisitor;
 import net.egork.misc.SimpleMapVisitor;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Island {
     int count = -1;

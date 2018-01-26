@@ -6,7 +6,7 @@ import net.egork.collections.sequence.Array;
 import net.egork.collections.set.EHashSet;
 import net.egork.io.IOUtils;
 import net.egork.numbers.FastFourierTransform;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.StringBufferInputStream;
 import java.util.InputMismatchException;

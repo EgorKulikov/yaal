@@ -4,8 +4,8 @@ import net.egork.collections.ArrayUtils;
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.RecursiveIndependentSetSystem;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class CoalScam {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

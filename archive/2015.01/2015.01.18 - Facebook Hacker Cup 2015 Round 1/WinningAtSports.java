@@ -1,8 +1,8 @@
 package net.egork;
 
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class WinningAtSports {
 	static final long MOD = (long) (1e9 + 7);

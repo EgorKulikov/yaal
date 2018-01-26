@@ -1,7 +1,7 @@
 package net.egork;
 
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.PrintWriter;
 import java.util.Arrays;

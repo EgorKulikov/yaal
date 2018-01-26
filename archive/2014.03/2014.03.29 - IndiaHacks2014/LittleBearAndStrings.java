@@ -5,8 +5,8 @@ import net.egork.graph.GraphAlgorithms;
 import net.egork.misc.ArrayUtils;
 import net.egork.string.StringUtils;
 import net.egork.string.SuffixAutomaton;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 

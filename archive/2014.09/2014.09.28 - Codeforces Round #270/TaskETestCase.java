@@ -6,7 +6,7 @@ import net.egork.chelper.tester.TestCase;
 
 import net.egork.collections.intcollection.IntArray;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;

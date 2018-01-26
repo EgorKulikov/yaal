@@ -1,0 +1,52 @@
+40 A - О взвешивании монет
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+22 3 3
+0 > 1
+1 = 2
+0 = 2
+
+11 Impossible
+
+1
+1
+34 5 5
+0 = 1
+1 = 2
+3 = 4
+0 > 3
+1 > 4
+
+9 Possible
+
+1
+2
+34 6 5
+0 > 1
+1 > 2
+3 = 4
+4 = 5
+5 > 3
+
+11 Impossible
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+90 on2017_08.on2017_08_14_SnarkNews_Summer_Series_2017__Round_1.A______________________.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.08.14
+37 SnarkNews Summer Series 2017, Round 1
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

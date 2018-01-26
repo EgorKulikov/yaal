@@ -22,7 +22,7 @@
 10 2014.05.31
 12 101 Hack May
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

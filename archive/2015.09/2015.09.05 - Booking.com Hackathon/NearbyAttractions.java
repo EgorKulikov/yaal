@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.geometry.Point;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class NearbyAttractions {
 	private static final double PI = 3.14159265359;

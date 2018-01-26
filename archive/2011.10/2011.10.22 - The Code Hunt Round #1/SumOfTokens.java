@@ -1,4 +1,4 @@
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.PrintWriter;
 

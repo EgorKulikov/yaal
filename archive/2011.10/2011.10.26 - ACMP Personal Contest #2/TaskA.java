@@ -4,7 +4,7 @@ import net.egork.collections.CollectionUtils;
 import net.egork.collections.filter.Filter;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.PrintWriter;
 

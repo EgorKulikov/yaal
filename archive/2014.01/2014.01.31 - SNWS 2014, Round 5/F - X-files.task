@@ -37,7 +37,7 @@ XOOOXO
 10 2014.01.31
 18 SNWS 2014, Round 5
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

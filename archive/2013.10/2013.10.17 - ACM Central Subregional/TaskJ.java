@@ -4,8 +4,8 @@ import net.egork.collections.set.EHashSet;
 import net.egork.geometry.*;
 import net.egork.geometry.Vector;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 

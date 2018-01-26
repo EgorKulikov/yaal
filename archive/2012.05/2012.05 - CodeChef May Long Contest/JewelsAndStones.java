@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.filter.Filter;
 import net.egork.collections.sequence.StringWrapper;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.HashSet;
 import java.util.Set;

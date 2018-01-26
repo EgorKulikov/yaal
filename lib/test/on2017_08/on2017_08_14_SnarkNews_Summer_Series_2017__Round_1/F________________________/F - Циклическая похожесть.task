@@ -1,0 +1,40 @@
+45 F - Циклическая похожесть
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+16 2
+xyz
+zxy
+kk
+kk
+
+7 001
+11
+
+1
+1
+24 1
+abcabcaabc
+abcaabcabc
+
+11 1111001001
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+92 on2017_08.on2017_08_14_SnarkNews_Summer_Series_2017__Round_1.F________________________.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.08.14
+37 SnarkNews Summer Series 2017, Round 1
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

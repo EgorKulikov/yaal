@@ -4,7 +4,7 @@ import net.egork.chelper.checkers.Checker;
 import net.egork.chelper.tester.StringInputStream;
 import net.egork.chelper.tester.Verdict;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 public class DChecker implements Checker {
 	public DChecker(String parameters) {

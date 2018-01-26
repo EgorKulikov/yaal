@@ -44,7 +44,7 @@ WWWW..
 10 2016.08.22
 12 SNSS-2016 R4
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

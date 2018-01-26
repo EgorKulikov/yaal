@@ -6,8 +6,8 @@ import net.egork.geometry.GeometryUtils;
 import net.egork.geometry.Point;
 import net.egork.geometry.Segment;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskJ {
 	private double[][] perimeter;

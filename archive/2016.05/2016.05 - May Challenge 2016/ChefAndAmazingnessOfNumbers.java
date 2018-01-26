@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.generated.collections.list.IntList;
 import net.egork.numbers.NumberIterator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static net.egork.misc.ArrayUtils.fill;
 import static net.egork.misc.MiscUtils.MOD7;

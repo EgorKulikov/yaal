@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.DoubleUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

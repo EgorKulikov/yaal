@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.collections.map.Counter;
 import net.egork.graph.Graph;
 import net.egork.graph.MinCostFlow;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class StitchTheTornWikiSpanClassacmchallengeballoonlargeStylebackgroundcolorNullspan {
 	int[] add = {5000, 500, 50, 5};

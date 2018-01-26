@@ -6,7 +6,7 @@ import net.egork.geometry.Point;
 import net.egork.geometry.Polygon;
 import net.egork.geometry.Segment;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.StringBufferInputStream;
 

@@ -53,7 +53,7 @@ hervr*o*t
 10 2013.12.15
 19 OpenCup Peterhof GP
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 1
 1

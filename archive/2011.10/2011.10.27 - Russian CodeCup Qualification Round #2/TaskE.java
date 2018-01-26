@@ -5,7 +5,7 @@ import net.egork.graph.FlowEdge;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 import java.io.PrintWriter;
 
 public class TaskE {

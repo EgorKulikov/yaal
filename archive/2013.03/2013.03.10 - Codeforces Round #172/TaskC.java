@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.graph.GraphUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

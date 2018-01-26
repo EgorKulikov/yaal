@@ -5,8 +5,8 @@ import net.egork.collections.intcollection.IntHashSet;
 import net.egork.collections.intcollection.IntList;
 import net.egork.collections.intcollection.IntSet;
 import net.egork.collections.set.EHashSet;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Set;
 

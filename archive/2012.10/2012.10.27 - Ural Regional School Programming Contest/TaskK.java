@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskK {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

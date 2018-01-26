@@ -1,7 +1,7 @@
 package net.egork;
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Game {
 	private static final boolean[][][][] win = new boolean[31][31][31][31];

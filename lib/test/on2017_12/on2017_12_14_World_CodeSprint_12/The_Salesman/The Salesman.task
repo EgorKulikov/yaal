@@ -1,0 +1,29 @@
+12 The Salesman
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+11 1
+3
+11 6 9
+
+2 5
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+67 on2017_12.on2017_12_14_World_CodeSprint_12.The_Salesman.TheSalesman
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.12.14
+19 World CodeSprint 12
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

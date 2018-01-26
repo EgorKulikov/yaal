@@ -16,7 +16,7 @@
 10 2016.02.14
 11 GP of China
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

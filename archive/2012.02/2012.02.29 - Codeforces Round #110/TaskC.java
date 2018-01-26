@@ -1,7 +1,7 @@
 package net.egork;
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
 	private static final long[][] count = new long[101][100 * 25 + 1];

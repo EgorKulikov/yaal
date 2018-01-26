@@ -1,0 +1,35 @@
+13 Bank Accounts
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+65 3
+3 20 10 60
+100 200 300
+3 20 15 120
+200 250 300
+1 1 10 100
+1000
+
+16 upfront
+fee
+fee
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+22 net.egork.BankAccounts
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.08.18
+24 Goldman Sachs CodeSprint
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

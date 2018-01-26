@@ -29,7 +29,7 @@ Case #5: 16
 10 2013.02.02
 35 Facebook Hacker Cup Online Round #1
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

@@ -1,0 +1,39 @@
+20 A - Cookie Exchanges
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 4 12 20
+
+2 3
+
+1
+1
+9 14 14 14
+
+3 -1
+
+1
+2
+12 454 414 444
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+75 on2017_05.on2017_05_06_AtCoder_Grand_Contest_014.A___Cookie_Exchanges.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.05.06
+25 AtCoder Grand Contest 014
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

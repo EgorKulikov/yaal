@@ -34,7 +34,7 @@
 10 2013.06.16
 33 Russian CodeCup 2013 Online Round
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

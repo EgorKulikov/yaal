@@ -34,6 +34,6 @@ aba
 10 2012.10.28
 0 
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0

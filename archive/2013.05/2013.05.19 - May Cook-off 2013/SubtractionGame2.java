@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.io.IOUtils;
 import net.egork.numbers.MultiplicativeFunction;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SubtractionGame2 {
 	long[] mu = MultiplicativeFunction.MOBIUS.calculateUpTo(10001);

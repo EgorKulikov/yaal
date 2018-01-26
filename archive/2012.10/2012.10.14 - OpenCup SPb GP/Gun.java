@@ -1,8 +1,8 @@
 package net.egork;
 
 import net.egork.numbers.Rational;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

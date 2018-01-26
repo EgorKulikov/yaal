@@ -5,8 +5,8 @@ import net.egork.collections.map.Counter;
 import net.egork.datetime.Date;
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.misc.Factory;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 

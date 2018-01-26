@@ -7,7 +7,7 @@ import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.Graph;
 import net.egork.graph.StronglyConnectedComponents;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.StringBufferInputStream;
 import java.util.HashSet;

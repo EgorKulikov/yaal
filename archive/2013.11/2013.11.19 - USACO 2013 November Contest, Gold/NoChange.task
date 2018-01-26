@@ -28,7 +28,7 @@
 10 2013.11.19
 33 USACO 2013 November Contest, Gold
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

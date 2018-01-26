@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.collections.intervaltree.LongIntervalTree;
 import net.egork.collections.intervaltree.SumIntervalTree;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class SequenceTransmission {
 	static final long MOD = 1000000009;

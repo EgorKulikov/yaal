@@ -4,8 +4,8 @@ import net.egork.collections.Pair;
 import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.generated.collections.set.IntHashSet;
 import net.egork.generated.collections.set.IntSet;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.io.StringBufferInputStream;
 import java.util.Collections;

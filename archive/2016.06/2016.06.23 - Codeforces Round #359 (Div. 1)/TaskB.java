@@ -5,8 +5,8 @@ import net.egork.generated.collections.function.IntToIntFunction;
 import net.egork.generated.collections.list.IntArrayList;
 import net.egork.graph.DFSOrder;
 import net.egork.graph.Graph;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static net.egork.graph.Graph.createGraph;
 import static net.egork.io.IOUtils.readIntArray;

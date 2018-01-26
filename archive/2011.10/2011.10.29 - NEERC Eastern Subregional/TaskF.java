@@ -2,7 +2,7 @@ package net.egork;
 
 import net.egork.collections.intervaltree.SumIntervalTree;
 import net.egork.graph.GraphUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 import java.io.PrintWriter;
 
 public class TaskF {

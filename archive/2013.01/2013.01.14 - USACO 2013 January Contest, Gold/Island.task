@@ -24,7 +24,7 @@ S.SX
 10 2013.01.14
 32 USACO 2013 January Contest, Gold
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

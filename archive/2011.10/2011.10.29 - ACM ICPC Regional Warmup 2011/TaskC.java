@@ -1,7 +1,7 @@
 package net.egork;
 
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 import java.io.PrintWriter;
 
 public class TaskC {

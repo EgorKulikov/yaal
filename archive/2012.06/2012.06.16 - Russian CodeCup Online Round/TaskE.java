@@ -5,8 +5,8 @@ import net.egork.io.IOUtils;
 import net.egork.misc.Factory;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 

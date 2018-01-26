@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.geometry.Point;
 import net.egork.geometry.Polygon;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Random;
 

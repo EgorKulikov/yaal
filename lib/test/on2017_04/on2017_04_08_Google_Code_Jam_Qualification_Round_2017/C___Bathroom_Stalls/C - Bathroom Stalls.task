@@ -1,0 +1,35 @@
+19 C - Bathroom Stalls
+6 SINGLE
+12 LOCAL_REGEXP
+22 C-(small|large).*[.]in
+6 CUSTOM
+5 c.out
+1
+0
+31 5
+4 2
+5 2
+6 2
+1000 1000
+1000 1
+
+68 Case #1: 1 0
+Case #2: 1 0
+Case #3: 1 1
+Case #4: 0 0
+Case #5: 500 499
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+89 on2017_04.on2017_04_08_Google_Code_Jam_Qualification_Round_2017.C___Bathroom_Stalls.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.04.08
+40 Google Code Jam Qualification Round 2017
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+1
+1

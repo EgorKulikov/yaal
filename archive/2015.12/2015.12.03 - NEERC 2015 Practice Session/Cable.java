@@ -5,8 +5,8 @@ import net.egork.generated.collections.function.DoubleToIntFunction;
 import net.egork.generated.collections.function.IntToIntFunction;
 import net.egork.generated.collections.list.DoubleArrayList;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Cable {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

@@ -1,8 +1,8 @@
 package net.egork;
 
 import net.egork.collections.comparators.ReverseComparator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

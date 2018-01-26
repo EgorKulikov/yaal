@@ -4,8 +4,8 @@ import net.egork.collections.intcollection.IntArray;
 import net.egork.collections.intcollection.IntArrayList;
 import net.egork.collections.intcollection.IntList;
 import net.egork.numbers.MultiplicativeFunction;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
 	long t(long x) {

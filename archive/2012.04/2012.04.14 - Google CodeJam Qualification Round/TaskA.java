@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.collections.sequence.Array;
 import net.egork.collections.sequence.StringWrapper;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskA {
 	char[] original = "ejpmysljylckdkxveddknmcrejsicpdrysirbcpcypcrtcsradkhwyfrepkymveddknkmkrkcddekrkdeoyakwaejtysrreujdrlkgcjvyeq ".toCharArray();

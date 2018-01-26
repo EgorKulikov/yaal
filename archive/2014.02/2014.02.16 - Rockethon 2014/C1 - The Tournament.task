@@ -43,7 +43,7 @@
 10 2014.02.16
 14 Rockethon 2014
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

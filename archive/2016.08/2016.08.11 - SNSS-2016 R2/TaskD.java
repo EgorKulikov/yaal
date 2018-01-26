@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.graph.Graph;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static net.egork.io.IOUtils.readIntArray;
 import static net.egork.misc.ArrayUtils.count;

@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.geometry.Circle;
 import net.egork.geometry.Point;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static java.lang.Math.*;
 import static net.egork.geometry.GeometryUtils.epsilon;

@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.collections.map.Counter;
 import net.egork.generated.collections.pair.IntIntPair;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import static net.egork.io.IOUtils.*;
 import static net.egork.misc.MiscUtils.*;
 import static net.egork.misc.ArrayUtils.*;

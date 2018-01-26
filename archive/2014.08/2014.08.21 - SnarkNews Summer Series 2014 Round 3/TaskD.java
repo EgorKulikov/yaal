@@ -4,8 +4,8 @@ import net.egork.collections.intcollection.IntHashMap;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskD {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

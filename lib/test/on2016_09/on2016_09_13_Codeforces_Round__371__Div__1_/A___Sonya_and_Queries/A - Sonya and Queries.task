@@ -1,0 +1,53 @@
+21 A - Sonya and Queries
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+71 12
++ 1
++ 241
+? 1
++ 361
+- 241
+? 0101
++ 101
+? 101
+- 101
+? 101
++ 4000
+? 0
+
+10 2
+1
+2
+1
+1
+
+1
+1
+24 4
++ 200
++ 200
+- 200
+? 0
+
+2 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+81 on2016_09.on2016_09_13_Codeforces_Round__371__Div__1_.A___Sonya_and_Queries.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.09.13
+30 Codeforces Round #371 (Div. 1)
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

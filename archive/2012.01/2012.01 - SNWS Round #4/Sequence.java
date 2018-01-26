@@ -1,8 +1,8 @@
 package net.egork;
 
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Sequence {
 	String sequence = "1 10 100 101 1000 1001 101";

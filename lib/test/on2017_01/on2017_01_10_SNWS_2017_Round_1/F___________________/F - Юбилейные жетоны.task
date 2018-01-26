@@ -1,0 +1,41 @@
+35 F - Юбилейные жетоны
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 3
+1
+3
+2
+
+2 3
+
+1
+1
+13 5
+2
+2
+1
+12
+3
+
+2 8
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+67 on2017_01.on2017_01_10_SNWS_2017_Round_1.F___________________.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.01.10
+17 SNWS-2017 Round 1
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

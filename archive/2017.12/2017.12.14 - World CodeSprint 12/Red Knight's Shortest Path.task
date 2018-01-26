@@ -1,0 +1,44 @@
+26 Red Knight's Shortest Path
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+10 7
+6 6 0 1
+
+13 4
+UL UL UL L
+
+1
+1
+10 6
+5 1 0 5
+
+11 Impossible
+
+1
+2
+10 7
+0 3 4 3
+
+8 2
+LR LL
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+32 net.egork.RedKnightsShortestPath
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.12.14
+19 World CodeSprint 12
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

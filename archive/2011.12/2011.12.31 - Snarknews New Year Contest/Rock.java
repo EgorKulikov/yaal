@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.sequence.StringWrapper;
 import net.egork.numbers.Rational;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Rock {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

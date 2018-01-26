@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.collections.iss.IndependentSetSystem;
 import net.egork.collections.iss.ListIndependentSetSystem;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Conference {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

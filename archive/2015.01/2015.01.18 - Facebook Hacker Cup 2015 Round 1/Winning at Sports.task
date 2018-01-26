@@ -30,7 +30,7 @@ Case #5: 70047606 591137401
 10 2015.01.18
 32 Facebook Hacker Cup 2015 Round 1
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 1
 0

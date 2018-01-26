@@ -24,7 +24,7 @@
 10 2014.11.15
 32 Codeforces Round #277.5 (Div. 2)
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 0

@@ -33,7 +33,7 @@ Case #3: YES
 10 2013.04.13
 34 Google CodeJam Qualification Round
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

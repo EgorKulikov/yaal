@@ -4,8 +4,8 @@ import net.egork.collections.comparators.IntComparator;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.math.BigInteger;
 

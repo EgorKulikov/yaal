@@ -22,7 +22,7 @@
 10 2013.06.03
 26 20-20 Hack - May Challenge
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

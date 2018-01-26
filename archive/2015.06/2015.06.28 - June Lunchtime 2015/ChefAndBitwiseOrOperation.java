@@ -11,8 +11,8 @@ import net.egork.geometry.GeometryUtils;
 import net.egork.graph.MinCostFlow;
 import net.egork.graph.ShortestDistance;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 

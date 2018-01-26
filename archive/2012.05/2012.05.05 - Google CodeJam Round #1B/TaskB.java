@@ -5,8 +5,8 @@ import net.egork.collections.Pair;
 import net.egork.geometry.GeometryUtils;
 import net.egork.io.IOUtils;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayDeque;
 import java.util.Comparator;

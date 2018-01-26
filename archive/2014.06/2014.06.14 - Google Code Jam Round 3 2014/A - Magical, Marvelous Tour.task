@@ -35,7 +35,7 @@ Case #8: 0.6666666667
 10 2014.06.14
 28 Google Code Jam Round 3 2014
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 1
 1

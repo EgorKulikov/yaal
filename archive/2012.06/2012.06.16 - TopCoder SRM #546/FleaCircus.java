@@ -3,7 +3,7 @@ package net.egork;
 import net.egork.collections.map.Counter;
 import net.egork.collections.sequence.ListUtils;
 import net.egork.string.StringUtils;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.io.StringWriter;
 import java.util.ArrayList;

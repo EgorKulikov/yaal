@@ -47,7 +47,7 @@
 10 2013.04.21
 15 OpenCup Azov GP
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

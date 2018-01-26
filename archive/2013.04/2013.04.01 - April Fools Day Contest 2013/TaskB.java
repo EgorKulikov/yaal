@@ -1,7 +1,7 @@
 package net.egork;
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
 	String code = "111111101010101111100101001111111\n" +

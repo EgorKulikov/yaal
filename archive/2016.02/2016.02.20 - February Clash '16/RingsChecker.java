@@ -5,7 +5,7 @@ import net.egork.chelper.checkers.Checker;
 import net.egork.generated.collections.list.DoubleArrayList;
 import net.egork.generated.collections.list.DoubleList;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.StringBufferInputStream;
 import java.util.InputMismatchException;

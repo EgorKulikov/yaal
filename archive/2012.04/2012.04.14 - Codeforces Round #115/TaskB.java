@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.collections.map.CPPMap;
 import net.egork.misc.Factory;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 import java.util.Map;

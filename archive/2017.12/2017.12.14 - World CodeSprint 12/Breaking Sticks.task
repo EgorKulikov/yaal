@@ -1,0 +1,35 @@
+15 Breaking Sticks
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+4 1
+6
+
+3 10
+
+1
+1
+9 3
+1 7 24
+
+3 55
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+24 net.egork.BreakingSticks
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.12.14
+19 World CodeSprint 12
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

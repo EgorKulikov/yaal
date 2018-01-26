@@ -1,7 +1,7 @@
 package net.egork;
 
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskF {
 	private int[][][] answer = new int[101][101][2];

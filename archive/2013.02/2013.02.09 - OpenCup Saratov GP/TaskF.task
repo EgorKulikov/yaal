@@ -42,7 +42,7 @@ Case 2: -1
 10 2013.02.09
 18 OpenCup Saratov GP
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

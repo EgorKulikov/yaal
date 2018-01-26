@@ -6,8 +6,8 @@ import net.egork.collections.intervaltree.ReadOnlyIntervalTree;
 import net.egork.misc.ArrayUtils;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskD {
 	private static final long MOD = (long) (1e9 + 7);

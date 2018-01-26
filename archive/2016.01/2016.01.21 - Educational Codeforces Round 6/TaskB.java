@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.misc.ArrayUtils;
 import net.egork.numbers.IntegerUtils;
 import net.egork.numbers.NumberIterator;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskB {
 	int[] cost = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};

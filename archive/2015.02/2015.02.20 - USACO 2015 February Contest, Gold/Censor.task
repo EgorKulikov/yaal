@@ -22,7 +22,7 @@ execution
 10 2015.02.20
 33 USACO 2015 February Contest, Gold
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 0

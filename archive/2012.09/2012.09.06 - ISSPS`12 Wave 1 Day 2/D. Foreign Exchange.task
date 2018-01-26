@@ -42,6 +42,6 @@ NO
 10 2012.09.06
 21 ISSPS`12 Wave 1 Day 2
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0

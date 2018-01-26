@@ -1,0 +1,33 @@
+41 E - Соединение серверов
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+2 4
+
+2 6
+
+1
+1
+2 5
+
+3 85
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+66 on2017_04.on2017_04_29_Qualification.E______________________.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.04.29
+13 Qualification
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

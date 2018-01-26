@@ -48,7 +48,7 @@
 10 2013.09.01
 29 Andrew Stankevich Contest #44
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

@@ -28,7 +28,7 @@ false
 10 2014.05.26
 19 Learneroo Challenge
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

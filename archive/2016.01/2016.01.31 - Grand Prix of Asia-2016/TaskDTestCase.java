@@ -5,7 +5,7 @@ import net.egork.chelper.tester.TestProvider;
 import net.egork.chelper.tester.TestCase;
 
 import net.egork.collections.intcollection.Range;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;

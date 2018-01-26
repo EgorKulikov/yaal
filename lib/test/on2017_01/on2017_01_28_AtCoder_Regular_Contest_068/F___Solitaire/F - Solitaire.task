@@ -1,0 +1,39 @@
+13 F - Solitaire
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+4 2 1
+
+2 1
+
+1
+1
+5 17 2
+
+7 262144
+
+1
+2
+10 2000 1000
+
+10 674286644
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+70 on2017_01.on2017_01_28_AtCoder_Regular_Contest_068.F___Solitaire.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.01.28
+27 AtCoder Regular Contest 068
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

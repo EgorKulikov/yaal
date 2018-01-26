@@ -1,0 +1,39 @@
+24 F - Повторения
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+6 aaaaa
+
+2 6
+
+1
+1
+8 10101101
+2 7
+
+1
+2
+16 abacabacabacaba
+
+3 30
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+57 on2017_04.on2017_04_29_Qualification.F_____________.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+65 on2017_04.on2017_04_29_Qualification.F_____________.TaskFTestCase
+10 2017.04.29
+13 Qualification
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

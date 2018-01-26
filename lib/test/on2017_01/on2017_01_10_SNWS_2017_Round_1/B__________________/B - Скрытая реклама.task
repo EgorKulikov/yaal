@@ -1,0 +1,38 @@
+33 B - Скрытая реклама
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+5 zzzz
+
+2 z
+
+1
+1
+9 ibmibmibm
+4 ibm
+
+1
+2
+10 hpmetrohp
+
+3 hp
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+66 on2017_01.on2017_01_10_SNWS_2017_Round_1.B__________________.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.01.10
+17 SNWS-2017 Round 1
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

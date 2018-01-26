@@ -6,8 +6,8 @@ import net.egork.collections.map.EHashMap;
 import net.egork.datetime.Date;
 import net.egork.datetime.Time;
 import net.egork.misc.Factory;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.ArrayList;
 import java.util.Collections;

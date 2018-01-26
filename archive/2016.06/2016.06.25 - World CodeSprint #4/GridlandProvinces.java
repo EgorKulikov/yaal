@@ -6,8 +6,8 @@ import net.egork.string.CompositeStringHash;
 import net.egork.string.SimpleStringHash;
 import net.egork.string.StringHash;
 import net.egork.string.SubstringStringHash;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import static net.egork.io.IOUtils.readStringArray;
 import static net.egork.string.StringUtils.reverse;

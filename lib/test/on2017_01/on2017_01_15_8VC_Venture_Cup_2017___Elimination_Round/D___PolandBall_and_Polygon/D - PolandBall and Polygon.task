@@ -1,0 +1,31 @@
+26 D - PolandBall and Polygon
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+4 5 2
+
+11 2 3 5 8 11 
+1
+1
+5 10 3
+
+25 2 3 4 6 9 12 16 21 26 31 
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+96 on2017_01.on2017_01_15_8VC_Venture_Cup_2017___Elimination_Round.D___PolandBall_and_Polygon.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.01.15
+40 8VC Venture Cup 2017 - Elimination Round
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

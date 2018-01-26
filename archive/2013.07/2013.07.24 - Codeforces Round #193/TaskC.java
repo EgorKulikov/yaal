@@ -5,8 +5,8 @@ import net.egork.collections.intcollection.IntArrayList;
 import net.egork.collections.intcollection.IntList;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class TaskC {
     public void solve(int testNumber, InputReader in, OutputWriter out) {

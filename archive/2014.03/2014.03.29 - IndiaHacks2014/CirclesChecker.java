@@ -4,7 +4,7 @@ import net.egork.chelper.tester.Verdict;
 import net.egork.chelper.checkers.Checker;
 import net.egork.io.IOUtils;
 import net.egork.misc.ArrayUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.StringBufferInputStream;
 import java.util.InputMismatchException;

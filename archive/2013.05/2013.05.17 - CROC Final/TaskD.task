@@ -41,7 +41,7 @@
 10 2013.05.17
 10 CROC Final
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

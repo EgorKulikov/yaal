@@ -4,8 +4,8 @@ import net.egork.collections.ArrayUtils;
 import net.egork.collections.CollectionUtils;
 import net.egork.collections.sequence.Array;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Report {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

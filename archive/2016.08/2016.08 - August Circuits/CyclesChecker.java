@@ -3,7 +3,7 @@ package net.egork;
 import net.egork.chelper.tester.Verdict;
 import net.egork.chelper.checkers.Checker;
 import net.egork.generated.collections.set.IntHashSet;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 
 import java.io.StringBufferInputStream;
 import java.util.InputMismatchException;

@@ -1,0 +1,41 @@
+35 B - Новая клавиатура
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+29 5 3 2 1
+abc
+d
+e
+f
+def
+abcdef
+
+3 15
+
+1
+1
+12 1 1 1 1
+a
+z
+
+3 -1
+
+1
+14 main/net/egork
+16 -Xmx256M -Xss64M
+4 Main
+76 on2017_05.on2017_05_14_RCC_2017_Elimination_round.B___________________.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.05.14
+26 RCC 2017 Elimination round
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

@@ -5,7 +5,7 @@ import net.egork.chelper.tester.TestCase;
 import net.egork.graph.Graph;
 import net.egork.graph.MaxFlow;
 import net.egork.misc.MiscUtils;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.io.StringWriter;
 import java.util.ArrayList;

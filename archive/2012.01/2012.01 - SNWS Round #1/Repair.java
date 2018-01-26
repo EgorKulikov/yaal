@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.graph.FlowEdge;
 import net.egork.graph.Graph;
 import net.egork.graph.GraphAlgorithms;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Repair {
 	public void solve(int testNumber, InputReader in, OutputWriter out) {

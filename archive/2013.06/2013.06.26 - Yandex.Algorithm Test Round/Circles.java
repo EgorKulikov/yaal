@@ -4,8 +4,8 @@ import net.egork.collections.CollectionUtils;
 import net.egork.collections.Pair;
 import net.egork.collections.map.Counter;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.math.BigInteger;
 

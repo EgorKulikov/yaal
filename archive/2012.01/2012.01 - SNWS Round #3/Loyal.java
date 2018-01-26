@@ -1,8 +1,8 @@
 package net.egork;
 
 import net.egork.collections.ArrayUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class Loyal {
 	private static final int[][][][] result = new int[16][41][41][21];

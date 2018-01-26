@@ -10,8 +10,8 @@ import net.egork.generated.collections.pair.IntIntPair;
 import net.egork.graph.BidirectionalGraph;
 import net.egork.graph.Graph;
 import net.egork.graph.ShortestDistance;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 import sun.security.provider.certpath.Vertex;
 
 import static net.egork.io.IOUtils.*;

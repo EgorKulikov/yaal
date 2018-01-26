@@ -2,7 +2,7 @@ package net.egork;
 
 import net.egork.collections.sequence.StringWrapper;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
+import net.egork.io.InputReader;
 import java.io.PrintWriter;
 
 public class TaskD {

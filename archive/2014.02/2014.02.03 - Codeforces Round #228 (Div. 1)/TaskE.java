@@ -7,8 +7,8 @@ import net.egork.collections.map.Counter;
 import net.egork.collections.set.EHashSet;
 import net.egork.misc.Factory;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.math.BigInteger;
 import java.util.Map;

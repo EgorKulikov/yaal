@@ -3,8 +3,8 @@ package net.egork;
 import net.egork.graph.Graph;
 import net.egork.graph.MaxFlow;
 import net.egork.io.IOUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 public class VickysItinerary {
 	int[][] f = new int[3001][3001];

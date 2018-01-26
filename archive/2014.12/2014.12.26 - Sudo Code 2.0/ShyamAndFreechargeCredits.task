@@ -20,7 +20,7 @@
 10 2014.12.26
 13 Sudo Code 2.0
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 0

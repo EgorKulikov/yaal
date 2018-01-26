@@ -3,8 +3,8 @@ package net.egork;
 import javafx.geometry.Pos;
 import net.egork.collections.intcollection.IntTreapArray;
 import net.egork.collections.set.TreapSet;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;

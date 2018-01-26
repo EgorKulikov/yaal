@@ -5,8 +5,8 @@ import net.egork.collections.Pair;
 import net.egork.collections.comparators.IntComparator;
 import net.egork.graph.*;
 import net.egork.numbers.IntegerUtils;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Map;
 

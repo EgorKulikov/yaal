@@ -5,8 +5,8 @@ import net.egork.collections.sequence.Array;
 import net.egork.graph.Edge;
 import net.egork.graph.Graph;
 import net.egork.graph.MaxFlow;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.Arrays;
 

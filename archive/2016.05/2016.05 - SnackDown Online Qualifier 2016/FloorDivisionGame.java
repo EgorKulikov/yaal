@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.generated.collections.list.LongArrayList;
 import net.egork.generated.collections.list.LongList;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.HashMap;
 import java.util.Map;

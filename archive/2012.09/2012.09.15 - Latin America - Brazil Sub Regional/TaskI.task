@@ -42,6 +42,6 @@ N
 10 2012.09.16
 35 Latin America - Brazil Sub Regional
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0

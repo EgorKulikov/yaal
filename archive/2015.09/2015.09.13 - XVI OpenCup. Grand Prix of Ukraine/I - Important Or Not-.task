@@ -44,7 +44,7 @@
 10 2015.09.13
 34 XVI OpenCup. Grand Prix of Ukraine
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 0

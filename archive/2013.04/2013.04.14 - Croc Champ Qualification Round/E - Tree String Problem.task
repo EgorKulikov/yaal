@@ -41,7 +41,7 @@ bacaba
 10 2013.04.14
 37 Croc Champ 2013 - Qualification Round
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

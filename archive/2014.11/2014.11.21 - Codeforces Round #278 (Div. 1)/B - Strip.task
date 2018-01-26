@@ -29,7 +29,7 @@
 10 2014.11.21
 30 Codeforces Round #278 (Div. 1)
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 0

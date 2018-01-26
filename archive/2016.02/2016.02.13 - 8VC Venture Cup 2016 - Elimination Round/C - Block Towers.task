@@ -33,7 +33,7 @@
 10 2016.02.13
 40 8VC Venture Cup 2016 - Elimination Round
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

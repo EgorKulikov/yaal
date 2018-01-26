@@ -8036,7 +8036,7 @@
 10 2013.04.27
 31 Google CodeJam Online Round #1A
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

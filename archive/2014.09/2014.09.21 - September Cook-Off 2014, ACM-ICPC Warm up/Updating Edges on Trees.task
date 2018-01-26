@@ -30,7 +30,7 @@
 10 2014.09.21
 41 September Cook-Off 2014, ACM-ICPC Warm up
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 0
 1

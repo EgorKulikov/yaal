@@ -2,8 +2,8 @@ package net.egork;
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.set.TreapSet;
-import net.egork.utils.io.InputReader;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;

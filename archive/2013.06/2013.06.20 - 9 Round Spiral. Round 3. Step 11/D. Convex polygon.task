@@ -24,7 +24,7 @@
 10 2013.06.20
 33 9 Round Spiral. Round 3. Step 11.
 1
-30 net.egork.utils.io.InputReader
+24 net.egork.io.InputReader
 31 net.egork.io.OutputWriter
 1
 1

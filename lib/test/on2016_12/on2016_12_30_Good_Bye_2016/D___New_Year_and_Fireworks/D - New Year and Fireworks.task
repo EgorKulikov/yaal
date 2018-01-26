@@ -1,0 +1,42 @@
+26 D - New Year and Fireworks
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+3
+0
+10 4
+4 2 2 3
+
+3 39
+
+1
+1
+14 6
+1 1 1 1 1 3
+
+3 85
+
+1
+2
+4 1
+3
+
+2 3
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+69 on2016_12.on2016_12_30_Good_Bye_2016.D___New_Year_and_Fireworks.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2016.12.30
+13 Good Bye 2016
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

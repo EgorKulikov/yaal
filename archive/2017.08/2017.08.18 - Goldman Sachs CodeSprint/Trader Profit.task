@@ -1,0 +1,38 @@
+13 Trader Profit
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+62 3
+2
+6
+10 22 5 75 65 80
+3
+4
+20 580 420 900
+1
+5
+100 90 80 50 25
+
+10 87
+1040
+0
+
+1
+14 main/net/egork
+8 -Xmx256M
+8 Solution
+22 net.egork.TraderProfit
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.08.18
+24 Goldman Sachs CodeSprint
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

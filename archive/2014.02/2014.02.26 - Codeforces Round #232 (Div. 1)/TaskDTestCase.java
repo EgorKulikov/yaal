@@ -7,7 +7,7 @@ import net.egork.chelper.tester.TestCase;
 
 import net.egork.collections.intervaltree.IntervalTree;
 import net.egork.collections.sequence.ListUtils;
-import net.egork.utils.io.OutputWriter;
+import net.egork.io.OutputWriter;
 
 import java.util.*;
 import java.io.StringWriter;
