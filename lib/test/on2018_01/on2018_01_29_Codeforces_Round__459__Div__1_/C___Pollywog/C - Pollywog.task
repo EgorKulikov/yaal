@@ -1,0 +1,41 @@
+12 C - Pollywog
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+28 2 3 10 2
+1 2 3
+5 -10
+6 1000
+
+2 6
+
+1
+1
+49 4 7 85 3
+17 5 28 4 52 46 6
+59 -76
+33 -69
+19 2018
+
+4 135
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+72 on2018_01.on2018_01_29_Codeforces_Round__459__Div__1_.C___Pollywog.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+80 on2018_01.on2018_01_29_Codeforces_Round__459__Div__1_.C___Pollywog.TaskCTestCase
+10 2018.01.29
+30 Codeforces Round #459 (Div. 1)
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+0

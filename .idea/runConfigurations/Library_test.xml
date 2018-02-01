@@ -17,7 +17,6 @@
       <value defaultName="moduleWithDependencies" />
     </option>
     <envs />
-    <fork_mode value="class" />
     <patterns />
     <RunnerSettings RunnerId="Cover" />
     <RunnerSettings RunnerId="Debug">
