@@ -1,0 +1,36 @@
+1 A
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+5 2
+1 2
+1 2
+1
+1
+13 6
+2 3 4 6 1 5
+1 3
+1
+2
+23 10
+2 1 8 9 10 7 6 3 4 5
+1 6
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+11 net.egork.A
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.01.31
+19 CSAcademy Round #67
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

@@ -88,4 +88,9 @@ public class IntArrayList extends IntAbstractStream implements IntList {
         }
         data[index] = value;
     }
+
+    @Override
+    public int[] toArray() {
+        return Arrays.copyOf(data, size);
+    }
 }

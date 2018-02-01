@@ -1,0 +1,52 @@
+2 P3
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+2 10
+46 Units:
+1
+3
+7
+9
+Irreducibles:
+Primes:
+2
+4
+5
+6
+8
+1
+1
+2 12
+51 Units:
+1
+5
+7
+11
+Irreducibles:
+2
+10
+Primes:
+2
+3
+9
+10
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+43 on2018_01.on2018_01_27_TLE_17_January.P3.P3
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.01.27
+14 TLE 17 January
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

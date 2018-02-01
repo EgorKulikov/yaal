@@ -1,0 +1,28 @@
+2 P1
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+3 40
+
+19 guess 50
+answer 10
+
+1
+14 main/net/egork
+16 -Xmx256m -Xss64m
+4 Main
+12 net.egork.P1
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.01.27
+14 TLE 17 January
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1
