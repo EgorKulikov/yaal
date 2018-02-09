@@ -1,0 +1,45 @@
+14 B - Two Arrays
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+14 3
+1 2 3
+5 2 2
+
+4 Yes
+
+1
+1
+22 5
+3 1 4 1 5
+2 7 1 8 2
+
+3 No
+
+1
+2
+22 5
+2 7 1 8 2
+3 1 4 1 5
+
+3 No
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.03
+33 AtCoder Petrozavodsk Contest 0...
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

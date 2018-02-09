@@ -1,0 +1,28 @@
+1 C
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+20 3
+Male
+Female
+Vacant
+-1
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+11 net.egork.C
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.03
+33 AtCoder Petrozavodsk Contest 0...
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

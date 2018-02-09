@@ -1,0 +1,29 @@
+41 D - Потребление питания
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+16 0 30
+1 0
+0 5
+10
+
+12 0.0666666667
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.01.31
+17 SNWS-2018 Round 4
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1
