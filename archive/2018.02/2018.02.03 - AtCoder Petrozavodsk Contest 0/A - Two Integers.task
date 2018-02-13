@@ -1,0 +1,33 @@
+16 A - Two Integers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+4 8 6
+
+3 16
+
+1
+1
+4 3 3
+
+3 -1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.03
+33 AtCoder Petrozavodsk Contest 0...
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

@@ -1,0 +1,38 @@
+28 A - Схемотехника
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+30 2
+3
+3
+1 0
+2 0
+1 2
+3
+2
+0 1
+2 0
+
+10 2 2 2
+1 1
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+1
+23 net.egork.TaskATestCase
+10 2018.01.31
+17 SNWS-2018 Round 4
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+0

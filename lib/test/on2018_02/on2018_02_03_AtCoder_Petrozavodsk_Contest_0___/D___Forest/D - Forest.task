@@ -1,0 +1,47 @@
+10 D - Forest
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+38 7 5
+1 2 3 4 5 6 7
+3 0
+4 0
+1 2
+1 3
+5 6
+
+2 7
+
+1
+1
+14 5 0
+3 1 4 1 5
+
+11 Impossible
+
+1
+2
+6 1 0
+5
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+73 on2018_02.on2018_02_03_AtCoder_Petrozavodsk_Contest_0___.D___Forest.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.03
+33 AtCoder Petrozavodsk Contest 0...
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1
