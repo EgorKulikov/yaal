@@ -1,0 +1,32 @@
+12 Broken Clock
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+20 3
+4 2 1
+4 2 2
+4 2 3
+
+24 2
+1000000005
+1000000003
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+71 on2018_02.on2018_02_02_February_Challenge_2018.Broken_Clock.BrokenClock
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.02
+23 February Challenge 2018
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

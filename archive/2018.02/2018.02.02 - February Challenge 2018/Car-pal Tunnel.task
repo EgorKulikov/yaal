@@ -1,0 +1,34 @@
+14 Car-pal Tunnel
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+28 2
+3
+2 2 2
+3 5 5
+2
+3 2
+2 1 1
+
+24 4.000000000
+3.000000000
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+22 net.egork.CarpalTunnel
+39 net.egork.chelper.checkers.TokenChecker
+6 a 1e-6
+0
+10 2018.02.02
+23 February Challenge 2018
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

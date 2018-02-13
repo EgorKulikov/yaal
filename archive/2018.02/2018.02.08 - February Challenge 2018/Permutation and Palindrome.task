@@ -1,0 +1,34 @@
+26 Permutation and Palindrome
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+18 4
+aa
+baa
+abc
+abab
+
+21 1 2
+2 1 3
+-1
+1 2 4 3
+
+1
+14 main/net/egork
+7 -Xmx64M
+4 Main
+34 net.egork.PermutationAndPalindrome
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.08
+23 February Challenge 2018
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

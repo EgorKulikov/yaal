@@ -369,8 +369,25 @@ public class IntegerUtils {
         return result;
     }
 
-    public static long reverse(long number, long module) {
-        return power(number, module - 2, module);
+    private static long _x;
+    private static long _y;
+
+    public static long reverse(long number, long modulo) {
+        extGcd(number, modulo);
+        return trueMod(_x, modulo);
+    }
+
+    private static long extGcd(long a, long b) {
+        if (a == 0) {
+            _x = 0;
+            _y = 1;
+            return b;
+        }
+        long d = extGcd(b % a, a);
+        long nx = _y - (b / a) * _x;
+        _y = _x;
+        _x = nx;
+        return d;
     }
 
     public static boolean isPrime(long number) {
@@ -464,6 +481,13 @@ public class IntegerUtils {
         return bReverse.multiply(BigInteger.valueOf(aRemainder)).mod(mod).multiply(BigInteger.valueOf(bMod)).add(
                 aReverse.multiply(BigInteger.valueOf(bRemainder)).mod(mod).multiply(BigInteger.valueOf(aMod))
         ).mod(mod).longValue() * modGCD + gcdRemainder;
+    }
+
+    public static long findCommonFast(long aRemainder, long aMod, long bRemainder, long bMod) {
+        long aReverse = reverse(aMod, bMod);
+        long bReverse = reverse(bMod, aMod);
+        long mod = aMod * bMod;
+        return (bReverse * aRemainder % mod * bMod + aReverse * bRemainder % mod * aMod) % mod;
     }
 
     public static long[] generatePowers(long base, long maxValue) {

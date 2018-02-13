@@ -1,0 +1,29 @@
+15 F - Fine Tuning
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+12 4
+3 3 1 5
+4
+
+2 4
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+62 on2018_02.on2018_02_07_SNWS_2018_Round_5.F___Fine_Tuning.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.07
+17 SNWS-2018 Round 5
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1
