@@ -1,0 +1,40 @@
+31 F - Топология сети
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+10 3
+1 2
+2 3
+
+4 2 1
+
+1
+1
+22 6
+1 2
+3 2
+2 4
+4 5
+4 6
+
+4 4 2
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+61 on2018_02.on2018_02_18_Qualification.F_________________.TaskF
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.18
+13 Qualification
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

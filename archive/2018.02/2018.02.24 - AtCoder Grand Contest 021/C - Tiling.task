@@ -1,0 +1,46 @@
+10 C - Tiling
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 3 4 4 2
+
+43 YES
+&lt;&gt;&lt;&gt;
+^&lt;&gt;^
+v&lt;&gt;v
+
+1
+1
+8 4 5 5 3
+
+58 YES
+&lt;&gt;..^
+^.&lt;&gt;v
+v&lt;&gt;.^
+&lt;&gt;&lt;&gt;v
+
+1
+2
+10 7 9 20 20
+
+3 NO
+
+1
+14 main/net/egork
+8 -Xmx256M
+4 Main
+15 net.egork.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.24
+25 AtCoder Grand Contest 021
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

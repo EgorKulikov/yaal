@@ -1,0 +1,33 @@
+35 A - Лотерейный билет
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+70 1 2 3 4 5 6 7 8 9 32
+3
+1 2 10 11 12 13
+1 2 3 10 11 12
+32 1 10 20 30 3
+
+20 Unlucky
+Lucky
+Lucky
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.02.18
+13 Qualification
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1
