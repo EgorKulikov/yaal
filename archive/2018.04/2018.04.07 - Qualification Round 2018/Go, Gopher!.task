@@ -1,0 +1,21 @@
+11 Go, Gopher!
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+0
+14 main/net/egork
+6 -Xmx1G
+8 Solution
+18 net.egork.GoGopher
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.04.07
+24 Qualification Round 2018
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

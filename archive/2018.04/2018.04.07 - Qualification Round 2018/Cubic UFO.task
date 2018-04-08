@@ -1,0 +1,42 @@
+9 Cubic UFO
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+21 2
+1.000000
+1.414213
+
+
+131 Case #1:
+0.5 0 0
+0 0.5 0
+0 0 0.5
+Case #2:
+0.3535533905932738 0.3535533905932738 0
+-0.3535533905932738 0.3535533905932738 0
+0 0 0.5
+
+1
+1
+5 1
+1.1
+-1
+1
+14 main/net/egork
+6 -Xmx1G
+8 Solution
+18 net.egork.CubicUFO
+25 net.egork.CubicUFOChecker
+0 
+0
+10 2018.04.07
+24 Qualification Round 2018
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1
