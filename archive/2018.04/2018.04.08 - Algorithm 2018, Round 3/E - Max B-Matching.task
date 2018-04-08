@@ -1,0 +1,29 @@
+18 E - Max B-Matching
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+22 4 5
+5 7 5 2
+1 2 3 4 2
+
+2 9
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskE
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.04.08
+23 Algorithm 2018, Round 3
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+0

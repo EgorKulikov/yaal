@@ -1,0 +1,42 @@
+18 B - Double Trouble
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+12 5
+3 2 1 5 4
+
+2 4
+
+1
+1
+12 2
+1000000 0
+
+3 -1
+
+1
+2
+4 1
+0
+
+2 0
+
+1
+14 main/net/egork
+8 -Xmx512M
+4 Main
+15 net.egork.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.04.08
+23 Algorithm 2018, Round 3
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1
