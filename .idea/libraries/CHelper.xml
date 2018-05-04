@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/chelper.jar!/" />
       <root url="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/" />
+      <root url="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/jackson-annotations-2.7.0.jar!/" />
+      <root url="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/jackson-databind-2.7.4.jar!/" />
+      <root url="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/jackson-core-2.7.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
