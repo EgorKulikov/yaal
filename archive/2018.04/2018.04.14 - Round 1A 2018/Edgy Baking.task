@@ -1,0 +1,43 @@
+11 Edgy Baking
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+64 4
+1 7
+1 1
+2 920
+50 120
+50 120
+1 32
+7 4
+3 240
+10 20
+20 30
+30 10
+
+
+78 Case #1: 6.828427
+Case #2: 920.000000
+Case #3: 32.000000
+Case #4: 240.000000
+
+
+1
+14 main/net/egork
+6 -Xmx1G
+8 Solution
+20 net.egork.EdgyBaking
+39 net.egork.chelper.checkers.TokenChecker
+4 1e-6
+0
+10 2018.04.14
+13 Round 1A 2018
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1

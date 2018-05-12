@@ -1,0 +1,43 @@
+9 Bit Party
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+75 3
+2 2 2
+1 2 3
+1 1 2
+2 2 2
+1 2 3
+2 1 2
+3 4 5
+2 3 3
+2 1 5
+2 4 2
+2 2 4
+2 5 1
+
+
+34 Case #1: 5
+Case #2: 4
+Case #3: 7
+
+
+1
+14 main/net/egork
+6 -Xmx1G
+8 Solution
+55 on2018_04.on2018_04_14_Round_1A_2018.Bit_Party.BitParty
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.04.14
+13 Round 1A 2018
+1
+24 net.egork.io.InputReader
+25 net.egork.io.OutputWriter
+0
+1
