@@ -87,4 +87,41 @@ public class FastFourierTransform {
         }
         return result;
     }
+
+    public static long[] multiply(int[] a, int[] b, int aLength, int bLength) {
+        int resultSize = Integer.highestOneBit(Math.max(aLength, bLength) - 1) << 2;
+        resultSize = Math.max(resultSize, 1);
+        double[] aReal = new double[resultSize];
+        double[] aImaginary = new double[resultSize];
+        double[] bReal = new double[resultSize];
+        double[] bImaginary = new double[resultSize];
+        for (int i = 0; i < aLength; i++) {
+            aReal[i] = a[i];
+        }
+        for (int i = 0; i < bLength; i++) {
+            bReal[i] = b[i];
+        }
+        fft(aReal, aImaginary, false);
+        if (a == b && aLength == bLength) {
+            System.arraycopy(aReal, 0, bReal, 0, aReal.length);
+            System.arraycopy(aImaginary, 0, bImaginary, 0, aImaginary.length);
+        } else {
+            fft(bReal, bImaginary, false);
+        }
+        for (int i = 0; i < resultSize; i++) {
+            double real = aReal[i] * bReal[i] - aImaginary[i] * bImaginary[i];
+            aImaginary[i] = aImaginary[i] * bReal[i] + bImaginary[i] * aReal[i];
+            aReal[i] = real;
+        }
+        fft(aReal, aImaginary, true);
+        long[] result = new long[resultSize];
+        for (int i = 0; i < resultSize; i++) {
+            result[i] = Math.round(aReal[i]);
+        }
+        return result;
+    }
+
+    public static long[] multiply(int[] a, int[] b) {
+        return multiply(a, b, a.length, b.length);
+    }
 }
