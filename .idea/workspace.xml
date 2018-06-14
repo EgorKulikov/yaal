@@ -31,7 +31,10 @@
     <splitter proportion="0.5" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/algo$Library_test.coverage" NAME="Library test Coverage Results" MODIFIED="1375363018826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/algo$on2016_04_in_lib.coverage" NAME="on2016_04 in lib Coverage Results" MODIFIED="1516631552616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>on2016_04.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/algo$Library_test.coverage" NAME="Library test Coverage Results" MODIFIED="1517231649154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="D:\home\projects\algo" />
