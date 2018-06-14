@@ -79,6 +79,7 @@ public class IntHashMap {
         keys[current] = key;
         values[current] = value;
         size++;
+        lastKey = current;
     }
 
     private int getHash(int key) {
@@ -139,10 +140,13 @@ public class IntHashMap {
         }
     }
 
+    private int lastKey = 0;
+
     public boolean contains(int key) {
         int current = getHash(key);
         while (present[current] != 0) {
             if (keys[current] == key && (present[current] & PRESENT_MASK) != 0) {
+                lastKey = current;
                 return true;
             }
             current += step;
@@ -154,6 +158,9 @@ public class IntHashMap {
     }
 
     public int get(int key) {
+        if ((present[lastKey] & PRESENT_MASK) != 0 && keys[lastKey] == key) {
+            return values[lastKey];
+        }
         int current = getHash(key);
         while (present[current] != 0) {
             if (keys[current] == key && (present[current] & PRESENT_MASK) != 0) {
