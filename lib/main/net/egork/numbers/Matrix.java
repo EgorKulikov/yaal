@@ -103,11 +103,11 @@ public class Matrix {
         if ((exponent & 1) == 0) {
             sumPowers(matrix, result, temp, power, temp2, exponent >> 1, mod, side);
             multiply(temp2, result, temp, mod, side);
-            add(result, temp2, mod, side);
+            add(result, temp2, mod);
             multiply(power, temp, temp, mod, side);
         } else {
             sumPowers(matrix, result, temp, power, temp2, exponent - 1, mod, side);
-            add(result, temp, mod, side);
+            add(result, temp, mod);
             multiply(power, temp, matrix, mod, side);
         }
     }
@@ -162,13 +162,11 @@ public class Matrix {
         }
     }
 
-    public static void add(long[] c, long[] a, long mod, int side) {
-        for (int i = 0; i < side; i++) {
-            for (int j = 0; j < side; j++) {
-                c[i * side + j] += a[i * side + j];
-                if (c[i * side + j] >= mod) {
-                    c[i * side + j] -= mod;
-                }
+    public static void add(long[] c, long[] a, long mod) {
+        for (int i = 0; i < c.length; i++) {
+            c[i] += a[i];
+            if (c[i] >= mod) {
+                c[i] -= mod;
             }
         }
     }
