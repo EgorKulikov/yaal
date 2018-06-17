@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="504fd17b-4883-4c04-b591-c04a5f28acfc" name="nfc" comment="Project" />
     <list default="true" id="d974b4d0-f59c-4394-8a40-e0328c570b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.17 - Single Round Match 734/TheRoundCityDiv1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.17 - Single Round Match 734/TheRoundCityDiv1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.17 - TopCoder SRM #734/CardCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.17 - TopCoder SRM #734/CardCounter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.19 - Round 2 2018/Costume Change.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.19 - Round 2 2018/CostumeChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.19 - Round 2 2018/Falling Balls.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.19 - Round 2 2018/FallingBalls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.19 - Round 2 2018/Graceful Chainsaw Jugglers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.05/2018.05.19 - Round 2 2018/GracefulChainsawJugglers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Archi and Comparsion.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/ArchiAndComparsion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Batman and Tree.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/BatmanAndTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Danya and Numbers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/DanyaAndNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Good Permutations.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/GoodPermutations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/GoodPermutationsTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Masha and Minions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/MashaAndMinions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Sonya and Segments.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/SonyaAndSegments.java" afterDir="false" />
+    </list>
+    <list id="504fd17b-4883-4c04-b591-c04a5f28acfc" name="nfc" comment="Project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +35,7 @@
     <splitter proportion="0.5" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/algo$on2016_04_in_lib.coverage" NAME="on2016_04 in lib Coverage Results" MODIFIED="1516631552616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>on2016_04.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/algo$Library_test.coverage" NAME="Library test Coverage Results" MODIFIED="1517231649154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/algo$Library_test.coverage" NAME="Library test Coverage Results" MODIFIED="1375363018826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="D:\home\projects\algo" />
@@ -108,29 +109,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CheckedInts.class" pinned="false" current-in-tab="true">
-        <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/com/github/cojac/models/CheckedInts.class">
+      <file leaf-file-name="Task1006.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/net/egork/Task1006.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="475">
+              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckedLongs.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/com/github/cojac/models/CheckedLongs.class">
+      <file leaf-file-name="Combinations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/main/net/egork/numbers/Combinations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="450">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiplicativeFunction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/main/net/egork/numbers/MultiplicativeFunction.java">
+      <file leaf-file-name="IntStream.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/main/net/egork/generated/collections/IntStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="625">
+              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+              <folding>
+                <element signature="e#2899#2900#0" expanded="true" />
+                <element signature="e#2944#2945#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,6 +154,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>LIST_OF_A</find>
+      <find>wrong</find>
+      <find>Win32</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -170,57 +177,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main/net/egork/IndependentVertexCover.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Taskk.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskITestCase.java" />
-        <option value="$PROJECT_DIR$/test/Solution.java" />
-        <option value="$PROJECT_DIR$/lib/main/net/egork/graph/Graph.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/ChefAndCakes.java" />
-        <option value="$PROJECT_DIR$/lib/main/net/egork/collections/intcollection/Heap.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskK.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskH.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskG.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskGTestCase.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskF.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskJ.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskI.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskL.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Cactus.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Iceberg.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Binary.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/SavingTheUniverseAgain.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TroubleSort.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/GoGopher.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/CubicUFOChecker.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/CubicUFO.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskA.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskB.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskC.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskD.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskE.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/WaffleChoppers.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/BitParty.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/EdgyBaking.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Checker.java" />
-        <option value="$PROJECT_DIR$/test/Main.java" />
-        <option value="$PROJECT_DIR$/main/Main.java" />
-        <option value="$USER_HOME$/Downloads/Main (1).java" />
-        <option value="$PROJECT_DIR$/chelper.properties" />
-        <option value="$PROJECT_DIR$/main/net/egork/MinimizeAbsoluteDifferenceDiv1.java" />
-        <option value="$PROJECT_DIR$/archive/2018.05/2018.05.02 - TopCoder SRM #733/MinimizeAbsoluteDifferenceDiv1.json" />
-        <option value="$PROJECT_DIR$/main/net/egork/ProblemAAramejskijManuskript.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/SocialNetwork.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/DiversePairsDiv1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/DiversePairsDiv1TestCase.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/SumCards.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Task.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TheRoundCityDiv1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TheRectangularCityDiv1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/CardCounter.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/CostumeChange.java" />
         <option value="$PROJECT_DIR$/main/net/egork/FallingBalls.java" />
         <option value="$PROJECT_DIR$/main/net/egork/Gridception.java" />
         <option value="$PROJECT_DIR$/main/net/egork/GracefulChainsawJugglers.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/AFairness.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/BBackfront.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/CSequenceGrowingEasy.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/DIsomorphismFreak.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ESequenceGrowingHard.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/FSimpleSubsequenceProblemTestCase.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/FSimpleSubsequenceProblem.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/IOISelection.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/DigitsPermutation.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ShampooExchange.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Towns.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/FindTheAbsentStudents.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/GroupFormation.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/WatsonsLoveForArrays.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Landslide.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/CompetitiveTeams.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/BalancedSequence.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/FOppaFuncanStyleRemastered.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ArithmeticSequenceDiv1.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/MakingRegularGraph.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ObtuseTrianglesDiv1.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskA.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskB.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskC.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskE.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskDChecker.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskDTestCase.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ClockDelay.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TheMostElegantSequence.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/XorryQueries.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskD.java" />
+        <option value="$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/D___Choosing_Points/TaskD.java" />
+        <option value="$PROJECT_DIR$/archive/2018.06/2018.06.03 - AtCoder Grand Contest 025/TaskD.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/FieldTrip.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/NamePreservingNetworkTestCase.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/NamePreservingNetwork.java" />
+        <option value="$PROJECT_DIR$/test/testing_tool.py" />
+        <option value="$PROJECT_DIR$/main/net/egork/FenceConstruction.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Task.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Task1006.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Task1004.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/MashaAndMinions.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/GoodPermutations.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/GoodPermutationsTestCase.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/SonyaAndSegments.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/BatmanAndTree.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/DanyaAndNumbers.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ArchiAndComparsion.java" />
       </list>
     </option>
   </component>
@@ -279,16 +286,24 @@
     <navigator proportions="" version="1">
       <hideEmptyPackages ProjectPane="false" />
       <autoscrollToSource ProjectPane="false" />
-      <autoscrollFromSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
@@ -307,6 +322,39 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="egork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="egork" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="egork" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
+              <item name="intervaltree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="egork" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="egork" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
@@ -351,46 +399,33 @@
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_04" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_06" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_04" type="462c0819:PsiDirectoryNode" />
-              <item name="Bit_Party" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_06" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_06_03_AtCoder_Grand_Contest_025" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_05" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_06" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_06_03_AtCoder_Grand_Contest_025" type="462c0819:PsiDirectoryNode" />
+              <item name="A___Digits_Sum" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_05" type="462c0819:PsiDirectoryNode" />
-              <item name="Problem_A________________________" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_05" type="462c0819:PsiDirectoryNode" />
-              <item name="MinimizeAbsoluteDifferenceDiv1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_05" type="462c0819:PsiDirectoryNode" />
-              <item name="SumCards" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_06" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_06_03_AtCoder_Grand_Contest_025" type="462c0819:PsiDirectoryNode" />
+              <item name="B___RGB_Coloring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
@@ -400,16 +435,68 @@
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="egork" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="CHelper" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="CHelper" type="70bed36:NamedLibraryElementNode" />
+              <item name="cojac.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="CHelper" type="70bed36:NamedLibraryElementNode" />
+              <item name="cojac.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="cojac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="CHelper" type="70bed36:NamedLibraryElementNode" />
+              <item name="cojac.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="cojac" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Favorites" />
     </panes>
   </component>
@@ -449,22 +536,18 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="IntroduceConstantDialog.RECENTS_KEY">
-      <recent name="net.egork.DigitsForest" />
-      <recent name="net.egork.BestBuggyRatings" />
-      <recent name="net.egork.Task3" />
-      <recent name="net.egork.Tree" />
-      <recent name="net.egork.RobotMovings" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="net.egork.plugin" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="net.egork.string" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Egor\proj\yaal\archive\2018.05\2018.05.17 - TopCoder SRM #734" />
       <recent name="C:\proj\yaal\archive\2015.10\2015.10 - October Challenge 2015" />
       <recent name="C:\proj\yaal\archive\2015.06\2015.06 - June Challenge 2015" />
       <recent name="C:\proj\algo\archive\2014.07\2014.07 - Weekly Challenges - Week 6" />
       <recent name="C:\proj\algo\archive\2014.07\2014.07 - July Challenge 2014" />
-      <recent name="C:\proj\algo\archive\2014.08\2014.08.21 - SnarkNews Summer Series 2014 Round 3" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="net.egork.string.StringUtils" />
@@ -489,8 +572,12 @@
       <recent name="" />
       <recent name="net.egork.collections.intervaltree" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="net.egork.plugin" />
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="net.egork.DigitsForest" />
+      <recent name="net.egork.BestBuggyRatings" />
+      <recent name="net.egork.Task3" />
+      <recent name="net.egork.Tree" />
+      <recent name="net.egork.RobotMovings" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -505,7 +592,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.on2018_05.on2018_05_19_Round_2_2018.Costume_Change in lib">
+  <component name="RunManager" selected="JUnit.on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
+      <module name="test" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -522,17 +613,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_05 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="on2018_05.*" />
+          <option name="PATTERN" value="on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_05" />
+      <option name="PACKAGE_NAME" value="on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -545,17 +636,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_05.on2018_05_12_2018_TopCoder_Open_Algorithm.SumCards in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="on2018_06.on2018_06_03_AtCoder_Grand_Contest_025 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="on2018_05.on2018_05_12_2018_TopCoder_Open_Algorithm.SumCards.*" />
+          <option name="PATTERN" value="on2018_06.on2018_06_03_AtCoder_Grand_Contest_025.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_05.on2018_05_12_2018_TopCoder_Open_Algorithm.SumCards" />
+      <option name="PACKAGE_NAME" value="on2018_06.on2018_06_03_AtCoder_Grand_Contest_025" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -568,17 +659,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_05.on2018_05_17_Single_Round_Match_734.TheRoundCityDiv1 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="on2018_06.on2018_06_09_Round_3_2018.Fence_Construction in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="on2018_05.on2018_05_17_Single_Round_Match_734.TheRoundCityDiv1.*" />
+          <option name="PATTERN" value="on2018_06.on2018_06_09_Round_3_2018.Fence_Construction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_05.on2018_05_17_Single_Round_Match_734.TheRoundCityDiv1" />
+      <option name="PACKAGE_NAME" value="on2018_06.on2018_06_09_Round_3_2018.Fence_Construction" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -591,17 +682,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_05.on2018_05_17_TopCoder_SRM__734.CardCounter in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="on2018_05.on2018_05_17_TopCoder_SRM__734.CardCounter.*" />
+          <option name="PATTERN" value="on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_05.on2018_05_17_TopCoder_SRM__734.CardCounter" />
+      <option name="PACKAGE_NAME" value="on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -614,38 +705,8 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_05.on2018_05_19_Round_2_2018.Costume_Change in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lib" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="on2018_05.on2018_05_19_Round_2_2018.Costume_Change.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_05.on2018_05_19_Round_2_2018.Costume_Change" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="archive" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration name="1006 - Square Frames" type="Task" factoryName="Task">
+      <taskConf>main/net/egork/1006 - Square Frames.json</taskConf>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -807,6 +868,16 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="archive" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
     <configuration default="true" type="Task" factoryName="Task">
       <taskConf />
       <method />
@@ -842,19 +913,20 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Library test" />
-      <item itemvalue="JUnit.on2018_05 in lib" />
-      <item itemvalue="JUnit.on2018_05.on2018_05_12_2018_TopCoder_Open_Algorithm.SumCards in lib" />
-      <item itemvalue="JUnit.on2018_05.on2018_05_17_Single_Round_Match_734.TheRoundCityDiv1 in lib" />
-      <item itemvalue="JUnit.on2018_05.on2018_05_17_TopCoder_SRM__734.CardCounter in lib" />
-      <item itemvalue="JUnit.on2018_05.on2018_05_19_Round_2_2018.Costume_Change in lib" />
+      <item itemvalue="Task.1006 - Square Frames" />
+      <item itemvalue="JUnit.on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph in lib" />
+      <item itemvalue="JUnit.on2018_06.on2018_06_03_AtCoder_Grand_Contest_025 in lib" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="JUnit.on2018_06.on2018_06_09_Round_3_2018.Fence_Construction in lib" />
+      <item itemvalue="JUnit.on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.on2018_05.on2018_05_19_Round_2_2018.Costume_Change in lib" />
-        <item itemvalue="JUnit.on2018_05.on2018_05_17_TopCoder_SRM__734.CardCounter in lib" />
-        <item itemvalue="JUnit.on2018_05.on2018_05_17_Single_Round_Match_734.TheRoundCityDiv1 in lib" />
-        <item itemvalue="JUnit.on2018_05.on2018_05_12_2018_TopCoder_Open_Algorithm.SumCards in lib" />
-        <item itemvalue="JUnit.on2018_05 in lib" />
+        <item itemvalue="JUnit.on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib" />
+        <item itemvalue="JUnit.on2018_06.on2018_06_09_Round_3_2018.Fence_Construction in lib" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="JUnit.on2018_06.on2018_06_03_AtCoder_Grand_Contest_025 in lib" />
+        <item itemvalue="JUnit.on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph in lib" />
       </list>
     </recent_temporary>
   </component>
@@ -992,48 +1064,6 @@
       <workItem from="1424172197042" duration="24000" />
       <workItem from="1424215170873" duration="5402000" />
       <workItem from="1424253877127" duration="3770000" />
-    </task>
-    <task id="LOCAL-00033" summary="Work laptop">
-      <created>1368541012280</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1368541012280</updated>
-    </task>
-    <task id="LOCAL-00034" summary="IntPair">
-      <created>1369144737023</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1369144737023</updated>
-    </task>
-    <task id="LOCAL-00035" summary="OpenCup South Caucasus GP">
-      <created>1369654418169</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1369654418169</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Library">
-      <created>1369920647389</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1369920647389</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Codeforces Round #186">
-      <created>1370246508750</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1370246508750</updated>
-    </task>
-    <task id="LOCAL-00038" summary="20/20 Hack&#10;Codeforces Round #187&#10;IPSC 2013 Practice">
-      <created>1371207941414</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1371207941414</updated>
     </task>
     <task id="LOCAL-00039" summary="CodeChef June Challenge&#10;Codeforces Round #188&#10;TopCoder SRM #582">
       <created>1371556249056</created>
@@ -1336,33 +1366,81 @@
       <option name="project" value="LOCAL" />
       <updated>1526232941001</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="topcoder SRM #734&#10;GCJ Round #2">
+      <created>1526785331357</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1526785331358</updated>
+    </task>
+    <task id="LOCAL-00083" summary="AGC #24">
+      <created>1527087673263</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1527087673264</updated>
+    </task>
+    <task id="LOCAL-00084" summary="HackerRank World CodeSprint #13">
+      <created>1527700445691</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1527700445691</updated>
+    </task>
+    <task id="LOCAL-00085" summary="TCO Round #2A">
+      <created>1527965438342</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1527965438343</updated>
+    </task>
+    <task id="LOCAL-00086" summary="AGC #25&#10;HourRank #28">
+      <created>1528551391067</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1528551391068</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Google Code Jam Round #3">
+      <created>1528688649614</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1528688649614</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="on2015_11_in_lib - 2015.12.03 at 17h 25m 58s.xml">
-      <configuration name="on2015_11 in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_04_on2018_04_07_Qualification_Round_2018_in_lib - 2018.04.08 at 13h 49m 54s.xml">
-      <configuration name="on2018_04.on2018_04_07_Qualification_Round_2018 in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_04_on2018_04_08_Algorithm_2018__Round_3_in_lib - 2018.04.08 at 23h 14m 25s.xml">
-      <configuration name="on2018_04.on2018_04_08_Algorithm_2018__Round_3 in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Main - 2018.05.02 at 21h 54m 05s.xml">
-      <configuration name="Main" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_05_on2018_05_02_Codeforces_Round__478__Div__2__Problem_A_________________________in_lib - 2018.05.02 at 21h 58m 38s.xml">
-      <configuration name="on2018_05.on2018_05_02_Codeforces_Round__478__Div__2_.Problem_A________________________ in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_04_on2018_04_14_Round_1A_2018_Bit_Party_in_lib - 2018.05.12 at 14h 17m 42s.xml">
-      <configuration name="on2018_04.on2018_04_14_Round_1A_2018.Bit_Party in lib" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="on2018_05_in_lib - 2018.05.12 at 14h 18m 18s.xml">
       <configuration name="on2018_05 in lib" configurationId="JUnit" />
     </history-entry>
     <history-entry file="on2018_05_on2018_05_12_2018_TopCoder_Open_Algorithm_SumCards_in_lib - 2018.05.13 at 19h 10m 19s.xml">
       <configuration name="on2018_05.on2018_05_12_2018_TopCoder_Open_Algorithm.SumCards in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_05_on2018_05_17_Single_Round_Match_734_TheRoundCityDiv1_in_lib - 2018.05.20 at 04h 59m 47s.xml">
+      <configuration name="on2018_05.on2018_05_17_Single_Round_Match_734.TheRoundCityDiv1 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_05_on2018_05_17_TopCoder_SRM__734_CardCounter_in_lib - 2018.05.20 at 05h 00m 19s.xml">
+      <configuration name="on2018_05.on2018_05_17_TopCoder_SRM__734.CardCounter in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_05_on2018_05_19_Round_2_2018_Costume_Change_in_lib - 2018.05.20 at 05h 00m 47s.xml">
+      <configuration name="on2018_05.on2018_05_19_Round_2_2018.Costume_Change in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_05_on2018_05_20_AtCoder_Grand_Contest_024_in_lib - 2018.05.23 at 17h 00m 42s.xml">
+      <configuration name="on2018_05.on2018_05_20_AtCoder_Grand_Contest_024 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_05_on2018_05_25_HackerRank___World_CodeSprint_13_in_lib - 2018.05.30 at 19h 13m 05s.xml">
+      <configuration name="on2018_05.on2018_05_25_HackerRank___World_CodeSprint_13 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_06_on2018_06_02_2018_TopCoder_Open_Algorithm_MakingRegularGraph_in_lib - 2018.06.02 at 20h 49m 11s.xml">
+      <configuration name="on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_06_on2018_06_03_AtCoder_Grand_Contest_025_in_lib - 2018.06.09 at 15h 34m 40s.xml">
+      <configuration name="on2018_06.on2018_06_03_AtCoder_Grand_Contest_025 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_06_on2018_06_09_Round_3_2018_Fence_Construction_in_lib - 2018.06.11 at 05h 41m 06s.xml">
+      <configuration name="on2018_06.on2018_06_09_Round_3_2018.Fence_Construction in lib" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1377,19 +1455,19 @@
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5022051" side_tool="true" visible="true" weight="0.4512987" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" weight="0.29545453" />
       <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.6700935" weight="0.32992464" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49779493" weight="0.114583336" />
       <window_info anchor="bottom" auto_hide="true" id="Version Control" order="7" sideWeight="0.32870865" weight="0.32359308" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29610115" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49840087" weight="0.29545453" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" x="-476" y="120" width="473" height="1041" id="Project" order="0" sideWeight="0.5229456" visible="true" weight="0.3411514" />
+      <window_info active="true" content_ui="combo" x="-476" y="120" width="473" height="1041" id="Project" order="0" sideWeight="0.5229456" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="9" weight="0.24862184" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="12" />
-      <window_info anchor="right" id="Debug" order="13" sideWeight="0.7652081" weight="0.50479746" />
+      <window_info anchor="right" id="Debug" order="13" sideWeight="0.7652081" visible="true" weight="0.33315566" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Kotlin" order="11" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
@@ -1430,12 +1508,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <confirmRemoveEmptyChangelist value="2" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="true" />
-    <MESSAGE value="Contests" />
-    <MESSAGE value="Various contests" />
-    <MESSAGE value="USACO December" />
-    <MESSAGE value="Codeforces Round #221" />
-    <MESSAGE value="Codechef January&#10;SNWS Rounds 1-2" />
-    <MESSAGE value="TCO Round #1" />
     <MESSAGE value="TopCoder SRM #621" />
     <MESSAGE value="HackerRank Weekly Challenges Week 3 - Tasks 1-2" />
     <MESSAGE value="HackerRank Weekly Challenges Week 3 - Task 3" />
@@ -1455,7 +1527,13 @@
     <MESSAGE value="Yandex.Algo Round #3" />
     <MESSAGE value="Google Code Jam Round #1A" />
     <MESSAGE value="TCO Warsaw Regional Event" />
-    <option name="LAST_COMMIT_MESSAGE" value="TCO Warsaw Regional Event" />
+    <MESSAGE value="topcoder SRM #734&#10;GCJ Round #2" />
+    <MESSAGE value="AGC #24" />
+    <MESSAGE value="HackerRank World CodeSprint #13" />
+    <MESSAGE value="TCO Round #2A" />
+    <MESSAGE value="AGC #25&#10;HourRank #28" />
+    <MESSAGE value="Google Code Jam Round #3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Google Code Jam Round #3" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1502,7 +1580,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="644" />
+      <option name="time" value="700" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TopCoderTask">
@@ -1514,9 +1592,15 @@
         <watch expression="l" language="JAVA" custom="" />
         <watch expression="(ways[i][j][k].length &gt;&gt; 1)" language="JAVA" custom="" />
         <watch expression="row == H - 1 &amp;&amp; l &gt;= (ways[i][j][k].length &gt;&gt; 1)" language="JAVA" custom="" />
+        <watch expression="degree" language="JAVA" />
+        <watch expression="all" language="JAVA" />
+        <watch expression="aa * aa + (aa + 1) * (aa + 1)" language="JAVA" />
       </configuration>
       <configuration name="Task">
-        <watch expression="PI / 4" language="JAVA" />
+        <watch expression="qty[current]" language="JAVA" />
+        <watch expression="delta" language="JAVA" />
+        <watch expression="original" language="JAVA" />
+        <watch expression="at" language="JAVA" />
       </configuration>
       <configuration name="JUnit">
         <watch expression="orders" language="JAVA" custom="" />
@@ -1533,231 +1617,291 @@
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
       <expression>
-        <expression-string />
+        <expression-string>aa == 6 &amp;&amp; nn == 2</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>aa == 4 &amp;&amp; nn == 1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i == 99</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>j == 1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>answer.length() &gt; i</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cur &gt;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i == 2 &amp;&amp; j == 2</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="watch">
       <expression>
+        <expression-string>at</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>original</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>delta</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>qty[current]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>aa * aa + (aa + 1) * (aa + 1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>all</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>degree</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>n[i] % min.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>n[i]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>id</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>h</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_04/on2018_04_08_Algorithm_2018__Round_3/TaskA/TaskA.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_04/on2018_04_08_Algorithm_2018__Round_3/D___Unsmooth_Tree/TaskD.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_04/on2018_04_08_Algorithm_2018__Round_3/C___Stripe_Bishops/TaskC.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/EdgyBaking.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/WaffleChoppers.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/BitParty.java" />
-    <entry file="file://$PROJECT_DIR$/test/testing_tool.py" />
-    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/misc/ArrayUtils.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ObtuseTrianglesDiv1.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ArithmeticSequenceDiv1.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/MakingRegularGraph.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_02_2018_TopCoder_Open_Algorithm/ArithmeticSequenceDiv1/ArithmeticSequenceDiv1.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_05/on2018_05_25_HackerRank___World_CodeSprint_13/Watson_s_Love_for_Arrays/WatsonsLoveForArrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3950">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
+        <state relative-caret-position="325">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Main.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_02_2018_TopCoder_Open_Algorithm/MakingRegularGraph/MakingRegularGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="104" selection-start-line="75" selection-end-line="104" />
+        <state relative-caret-position="500">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6950">
-          <caret line="301" selection-start-line="266" selection-end-line="301" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/Main (2).java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7325">
-          <caret line="316" selection-start-line="303" selection-end-line="316" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Main1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Main (1).java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
-          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/AverageVarianceSubtree.json" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/BuildingSpanningTreesDiv1.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/Task2.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/ArmorUp.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/ProblemAAramejskijManuskript.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/AverageVarianceSubtree.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/MinimizeAbsoluteDifferenceDiv1.java" />
-    <entry file="file://$PROJECT_DIR$/archive/2018.05/2018.05.02 - TopCoder SRM #733/MinimizeAbsoluteDifferenceDiv1.json" />
-    <entry file="file://$PROJECT_DIR$/archive/2018.05/2018.05.02 - TopCoder SRM #733/MinimizeAbsoluteDifferenceDiv1.java" />
-    <entry file="file://$PROJECT_DIR$/chelper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2016_02/on2016_02_07_IndiaHacks__Algorithms/A___Hourglasses/Main.java">
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/collections/intervaltree/LCA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_04/on2018_04_14_Round_1A_2018/Edgy_Baking/EdgyBaking.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_04/on2018_04_14_Round_1A_2018/Waffle_Choppers/WaffleChoppers.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_05/on2018_05_02_Codeforces_Round__478__Div__2_/Problem_A________________________/ProblemAAramejskijManuskript.java">
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/graph/StronglyConnectedComponents.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="725">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Main.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/DiversePairsDiv1TestCase.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/SumCards.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/DiversePairsDiv1.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/Task.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_05/on2018_05_12_2018_TopCoder_Open_Algorithm/DiversePairsDiv1/DiversePairsDiv1.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_05/on2018_05_12_2018_TopCoder_Open_Algorithm/SocialNetwork/SocialNetwork.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_05/on2018_05_02_TopCoder_SRM__733/MinimizeAbsoluteDifferenceDiv1/MinimizeAbsoluteDifferenceDiv1.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskDChecker.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskDTestCase.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskA.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskB.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskC.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskD.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskE.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ClockDelay.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TheMostElegantSequence.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/XorryQueries.java" />
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/com/github/cojac/models/CheckedInts.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="25">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_05/on2018_05_12_2018_TopCoder_Open_Algorithm/SumCards/SumCards.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/A___Digits_Sum/TaskA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/SocialNetwork.java" />
-    <entry file="file://$PROJECT_DIR$/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/C___Interval_Game/TaskC.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/D___Choosing_Points/TaskD.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_HackerRank___HourRank_28/Clock_Delay/ClockDelay.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_HackerRank___HourRank_28/The_Most_Elegant_Sequence/TheMostElegantSequence.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_HackerRank___HourRank_28/Xorry_Queries/XorryQueries.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/B___RGB_Coloring/TaskB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2500">
-          <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
+        <state relative-caret-position="300">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_04/on2018_04_14_Round_1A_2018/Bit_Party/BitParty.java">
+    <entry file="file://$PROJECT_DIR$/archive/2018.06/2018.06.03 - AtCoder Grand Contest 025/TaskD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="225">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/archive/archive.iml">
+    <entry file="file://$PROJECT_DIR$/test/Solution.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/NamePreservingNetworkTestCase.java" />
+    <entry file="file://$PROJECT_DIR$/test/testing_tool.py" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/FenceConstruction.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/FieldTrip.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/NamePreservingNetwork.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/Task.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_09_Round_3_2018/Field_Trip/FieldTrip.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_09_Round_3_2018/Name_Preserving_Network/NamePreservingNetwork.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_09_Round_3_2018/Fence_Construction/FenceConstruction.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/SortedMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="507">
+          <caret line="262" column="18" selection-start-line="262" selection-start-column="18" selection-end-line="262" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/numbers/MultiplicativeFunction.java">
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/io/InputReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        <state relative-caret-position="4250">
+          <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/com/github/cojac/models/CheckedLongs.class">
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/graph/ShortestDistance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="1800">
+          <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/chelper.jar!/net/egork/chelper/task/NewTopCoderTest.class">
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/generated/collections/IntStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1220">
-          <caret line="435" selection-start-line="435" selection-end-line="435" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/Gridception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/GracefulChainsawJugglers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/FallingBalls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/CostumeChange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TheRoundCityDiv1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TheRectangularCityDiv1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/CardCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="76" column="64" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+        <state relative-caret-position="625">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#2944#2945#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/com/github/cojac/models/CheckedInts.class">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/Task1004.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="334">
+          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/GoodPermutationsTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/numbers/Combinations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ArchiAndComparsion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/MashaAndMinions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/GoodPermutations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/SonyaAndSegments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/BatmanAndTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
+          <folding>
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/DanyaAndNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/Task1006.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
         </state>
       </provider>
     </entry>
