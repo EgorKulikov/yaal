@@ -1,5 +1,7 @@
 package net.egork.collections.iss;
 
+import static java.util.Arrays.fill;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -16,6 +18,14 @@ public class RecursiveIndependentSetSystem implements IndependentSetSystem {
             color[i] = i;
         }
         setCount = size;
+    }
+
+    public void clear() {
+        fill(rank, 0);
+        for (int i = 0; i < color.length; i++) {
+            color[i] = i;
+        }
+        setCount = color.length;
     }
 
     public RecursiveIndependentSetSystem(RecursiveIndependentSetSystem other) {
