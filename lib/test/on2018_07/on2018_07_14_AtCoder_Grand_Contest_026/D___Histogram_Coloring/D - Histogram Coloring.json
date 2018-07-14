@@ -1,0 +1,49 @@
+{
+  "name" : "D - Histogram Coloring",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "9\n2 3 5 4 1 2 4 2 1\n",
+    "output" : "12800\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n2 2\n",
+    "output" : "6\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5\n2 1 2 1 2\n",
+    "output" : "256\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "9\n27 18 28 18 28 45 90 45 23\n",
+    "output" : "844733013\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "on2018_07.on2018_07_14_AtCoder_Grand_Contest_026.D___Histogram_Coloring.DHistogramColoring",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.14",
+  "contestName" : "AtCoder Grand Contest 026",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

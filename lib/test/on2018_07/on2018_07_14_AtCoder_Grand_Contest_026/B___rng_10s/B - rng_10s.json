@@ -1,0 +1,39 @@
+{
+  "name" : "B - rng_10s",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "14\n9 7 5 9\n9 7 6 9\n14 10 7 12\n14 10 8 12\n14 10 9 12\n14 10 7 11\n14 10 8 11\n14 10 9 11\n9 10 5 10\n10 10 5 10\n11 10 5 10\n16 10 5 10\n1000000000000000000 17 14 999999999999999985\n1000000000000000000 17 15 999999999999999985\n",
+    "output" : "No\nYes\nNo\nYes\nYes\nNo\nNo\nYes\nNo\nYes\nYes\nNo\nNo\nYes\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "24\n1 2 3 4\n1 2 4 3\n1 3 2 4\n1 3 4 2\n1 4 2 3\n1 4 3 2\n2 1 3 4\n2 1 4 3\n2 3 1 4\n2 3 4 1\n2 4 1 3\n2 4 3 1\n3 1 2 4\n3 1 4 2\n3 2 1 4\n3 2 4 1\n3 4 1 2\n3 4 2 1\n4 1 2 3\n4 1 3 2\n4 2 1 3\n4 2 3 1\n4 3 1 2\n4 3 2 1\n",
+    "output" : "No\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "on2018_07.on2018_07_14_AtCoder_Grand_Contest_026.B___rng_10s.BRng10s",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.14",
+  "contestName" : "AtCoder Grand Contest 026",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

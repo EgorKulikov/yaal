@@ -1,0 +1,49 @@
+{
+  "name" : "C - String Coloring",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\ncabaacba\n",
+    "output" : "4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "11\nmippiisssisssiipsspiim\n",
+    "output" : "504\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4\nabcdefgh\n",
+    "output" : "0\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "18\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "output" : "9075135300\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "on2018_07.on2018_07_14_AtCoder_Grand_Contest_026.C___String_Coloring.CStringColoring",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.14",
+  "contestName" : "AtCoder Grand Contest 026",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
