@@ -1,0 +1,36 @@
+{
+  "name" : "LeftToRightGame",
+  "signature" : {
+    "name" : "whoWins",
+    "result" : "String",
+    "arguments" : [ "int", "int" ],
+    "argumentNames" : [ "length", "divisor" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "4", "10" ],
+    "result" : "Bob",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "1000" ],
+    "result" : "Alice",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "2", "3" ],
+    "result" : "Bob",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "147", "47" ],
+    "result" : "Alice",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2018.07.07",
+  "contestName" : "2018 TopCoder Open Algorithm",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.LeftToRightGame",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

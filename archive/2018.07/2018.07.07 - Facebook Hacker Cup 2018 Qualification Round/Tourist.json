@@ -1,0 +1,34 @@
+{
+  "name" : "Tourist",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "LOCAL_REGEXP",
+    "fileName" : "tourist.*[.]txt"
+  },
+  "output" : {
+    "type" : "CUSTOM",
+    "fileName" : "tourist.out"
+  },
+  "tests" : [ {
+    "input" : "6\n4 1 3\nLikeSign\nArcade\nSweetStop\nSwagStore\n4 4 100\nFoxGazebo\nMPK20Roof\nWoodenSculpture\nBiryani\n4 3 1\nLikeSign\nArcade\nSweetStop\nSwagStore\n4 3 3\nLikeSign\nArcade\nSweetStop\nSwagStore\n4 3 10\nLikeSign\nArcade\nSweetStop\nSwagStore\n2 1 1000000000000\nRainbowStairs\nWallOfPhones\n",
+    "output" : "Case #1: SweetStop\nCase #2: FoxGazebo MPK20Roof WoodenSculpture Biryani\nCase #3: LikeSign Arcade SweetStop\nCase #4: LikeSign SweetStop SwagStore\nCase #5: LikeSign Arcade SwagStore\nCase #6: WallOfPhones\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.Tourist",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.07",
+  "contestName" : "Facebook Hacker Cup 2018 Qualification Round",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : true,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,18 @@
+package %package%;
+
+import net.egork.chelper.tester.Verdict;
+import net.egork.chelper.tester.State;
+import net.egork.io.InputReader;
+import net.egork.io.OutputWriter;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+
+public class %InteractorClass% {
+    public Verdict interact(InputStream input, InputStream solutionOutput, OutputStream solutionInput, State<Boolean> state) {
+        InputReader in = new InputReader(input);
+        InputReader solOut = new InputReader(solutionOutput);
+        OutputWriter solInp = new OutputWriter(solutionInput);
+        return Verdict.UNDECIDED;
+    }
+}

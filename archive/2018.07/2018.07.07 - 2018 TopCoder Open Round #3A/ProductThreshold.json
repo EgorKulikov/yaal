@@ -1,0 +1,46 @@
+{
+  "name" : "ProductThreshold",
+  "signature" : {
+    "name" : "subarrayCount",
+    "result" : "long",
+    "arguments" : [ "int", "int", "int[]", "int", "int" ],
+    "argumentNames" : [ "N", "limit", "Aprefix", "spread", "offset" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "5", "5", "1 2 3 -4 5", "1", "1" ],
+    "result" : "13",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "10", "8", "2 2 2 2 2 2 2 2 2 2", "1", "47" ],
+    "result" : "27",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "20", "999888777", "47", "7654321", "1" ],
+    "result" : "21",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "5", "8", "3 0 3 0 3", "47", "47" ],
+    "result" : "15",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "1000", "1", "-1", "1", "2" ],
+    "result" : "1000",
+    "index" : 4,
+    "active" : true
+  }, {
+    "arguments" : [ "100", "47", "1", "1", "1" ],
+    "result" : "5050",
+    "index" : 5,
+    "active" : true
+  } ],
+  "date" : "2018.07.07",
+  "contestName" : "2018 TopCoder Open Algorithm",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.ProductThreshold",
+  "failOnOverflow" : false,
+  "memoryLimit" : "256M"
+}

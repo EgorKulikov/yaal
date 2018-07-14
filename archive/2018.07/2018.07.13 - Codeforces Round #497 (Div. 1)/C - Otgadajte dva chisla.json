@@ -1,0 +1,49 @@
+{
+  "name" : "C - Отгадайте два числа",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n2 4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1000000000000000000\n1 1\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1000000000000000000\n1 1000000000000000000\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1000000000000000000\n1000000000000000000 1000000000000000000\n",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "1000000000000000000\n1000000000000000000 1\n",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.13",
+  "contestName" : "Codeforces Round #497 (Div. 1)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : true,
+  "interactor" : "net.egork.TaskCInteractor"
+}

@@ -1,0 +1,34 @@
+{
+  "name" : "Ethan Searches for a String",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "LOCAL_REGEXP",
+    "fileName" : "ethan.*searches.*for.*a.*string.*[.]txt"
+  },
+  "output" : {
+    "type" : "CUSTOM",
+    "fileName" : "ethansearchesforastring.out"
+  },
+  "tests" : [ {
+    "input" : "4\nABACUS\nFACEBOOK\nXYZXZYX\nFBFBF\n",
+    "output" : "Case #1: ASUCABABACUSA\nCase #2: Impossible\nCase #3: XZYXYZXYZXZYXYZXYZYX\nCase #4: Impossible\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.EthanSearchesForAString",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.07",
+  "contestName" : "Facebook Hacker Cup 2018 Qualification Round",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : true,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
