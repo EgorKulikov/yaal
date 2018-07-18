@@ -1,0 +1,54 @@
+{
+  "name" : "Split the Sticks",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n2 6 8\n",
+    "output" : "1\n8 6\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4\n1 1 6 8\n",
+    "output" : "2\n8 1\n7 1\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\n2 2\n",
+    "output" : "2\n2 1\n2 1\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "2\n1 2\n",
+    "output" : "-1\n",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "6\n1 2 3 4 4 8\n",
+    "output" : "2\n8 4\n3 2\n",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx264M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.SplitTheSticks",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.18",
+  "contestName" : "Round 84",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

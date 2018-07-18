@@ -1,0 +1,39 @@
+{
+  "name" : "The Sprawl",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n-3 2\n0 0\n0 5\n1 2\n4 3\n",
+    "output" : "19\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n0 2\n4 0\n0 0\n",
+    "output" : "5\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1G",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.TheSprawl",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "net.egork.TheSprawlTestCase" ],
+  "date" : "2018.07.18",
+  "contestName" : "Round 84",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
