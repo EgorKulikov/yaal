@@ -1,0 +1,49 @@
+{
+  "name" : "Growing Trees",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 4\n1 2 10 -2\n2 3 20 2\n",
+    "output" : "0\n30\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 10\n1 2 20 -3\n2 3 30 -4\n",
+    "output" : "8\n0\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5 5\n1 2 20 -3\n2 3 10 -3\n3 4 22 -2\n3 5 26 -3\n",
+    "output" : "5\n23\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "4 0\n1 2 -1 0\n2 3 20 0\n3 4 -1 0\n",
+    "output" : "0\n20\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1G",
+  "mainClass" : "Main",
+  "taskClass" : "on2018_07.on2018_07_19_Round_84.Growing_Trees.GrowingTrees",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.19",
+  "contestName" : "Round 84",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
