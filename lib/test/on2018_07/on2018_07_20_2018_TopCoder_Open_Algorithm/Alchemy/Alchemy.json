@@ -1,0 +1,41 @@
+{
+  "name" : "Alchemy",
+  "signature" : {
+    "name" : "leadToGold",
+    "result" : "String",
+    "arguments" : [ "int[]", "int[]", "long" ],
+    "argumentNames" : [ "leadOutput", "goldOutput", "goal" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "1 1 1", "0 1 2", "47" ],
+    "result" : "Impossible",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "4 0", "1 3", "23" ],
+    "result" : "Possible",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "3 0 0", "0 5 7", "9876543210" ],
+    "result" : "Impossible",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "3 0 0", "0 5 7", "123456789" ],
+    "result" : "Possible",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "2 3 4 0", "0 0 0 0", "0" ],
+    "result" : "Possible",
+    "index" : 4,
+    "active" : true
+  } ],
+  "date" : "2018.07.20",
+  "contestName" : "2018 TopCoder Open Algorithm",
+  "testClasses" : [ ],
+  "fqn" : "on2018_07.on2018_07_20_2018_TopCoder_Open_Algorithm.Alchemy.Alchemy",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

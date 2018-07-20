@@ -1,0 +1,41 @@
+{
+  "name" : "SquareCutout",
+  "signature" : {
+    "name" : "verify",
+    "result" : "int",
+    "arguments" : [ "String[]" ],
+    "argumentNames" : [ "cutout" ]
+  },
+  "tests" : [ {
+    "arguments" : [ ".....ф..##.ф..##.ф.....ф....." ],
+    "result" : "2",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "...ф..." ],
+    "result" : "1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ ".....ф.###.ф.#.#.ф.###.ф....." ],
+    "result" : "0",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "..####ф..####ф......" ],
+    "result" : "4",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "..#..ф.###.ф#####ф.###.ф..#.." ],
+    "result" : "0",
+    "index" : 4,
+    "active" : true
+  } ],
+  "date" : "2018.07.20",
+  "contestName" : "2018 TopCoder Open Algorithm",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.SquareCutout",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
