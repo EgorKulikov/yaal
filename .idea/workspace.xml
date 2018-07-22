@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d974b4d0-f59c-4394-8a40-e0328c570b87" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Archi and Comparsion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/ArchiAndComparsion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Batman and Tree.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/BatmanAndTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Danya and Numbers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/DanyaAndNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Good Permutations.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/GoodPermutations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/GoodPermutationsTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Masha and Minions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/MashaAndMinions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/Sonya and Segments.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/archive/2018.06/2018.06.17 - CodeChef - June Cook-Off 2018 Division 1/SonyaAndSegments.java" afterDir="false" />
-    </list>
-    <list id="504fd17b-4883-4c04-b591-c04a5f28acfc" name="nfc" comment="Project">
+    <list id="504fd17b-4883-4c04-b591-c04a5f28acfc" name="nfc" comment="Project" />
+    <list default="true" id="d974b4d0-f59c-4394-8a40-e0328c570b87" name="Default" comment="CodeChef June Cook-Off">
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/Chef and GCD Game.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/Chef and Queries on a Tree.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/ChefAndGCDGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/ChefAndQueriesOnATree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/Finding Second Maximum.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/FindingSecondMaximum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/OR Matrix.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/ORMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/Sticks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/2018.07/2018.07.22 - CodeChef - July Cook-Off 2018 Division 1/Sticks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/CHelper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/CHelper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chelper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chelper.properties" afterDir="false" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,6 +33,7 @@
     <splitter proportion="0.5" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/algo$Library_test.ic" NAME="Library test Coverage Results" MODIFIED="1531601302983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/algo$Library_test.coverage" NAME="Library test Coverage Results" MODIFIED="1375363018826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -109,32 +108,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Task1006.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/net/egork/Task1006.java">
+      <file leaf-file-name="LetItFlow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/net/egork/LetItFlow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Combinations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/main/net/egork/numbers/Combinations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntStream.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/main/net/egork/generated/collections/IntStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state relative-caret-position="525">
+              <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
               <folding>
-                <element signature="e#2899#2900#0" expanded="true" />
-                <element signature="e#2944#2945#0" expanded="true" />
+                <element signature="e#1635#1636#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EthanTraversesATree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/net/egork/EthanTraversesATree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlatformParkour.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/net/egork/PlatformParkour.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckedInts.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/com/github/cojac/models/CheckedInts.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/main/net/egork/misc/ArrayUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="265" column="40" lean-forward="true" selection-start-line="265" selection-start-column="40" selection-end-line="265" selection-end-column="40" />
+              <folding>
+                <element signature="e#7286#7287#0" expanded="true" />
+                <element signature="e#7347#7348#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,57 +198,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main/net/egork/FallingBalls.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Gridception.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/GracefulChainsawJugglers.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/AFairness.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/BBackfront.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/CSequenceGrowingEasy.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/DIsomorphismFreak.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/ESequenceGrowingHard.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/FSimpleSubsequenceProblemTestCase.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/FSimpleSubsequenceProblem.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/IOISelection.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/DigitsPermutation.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/ShampooExchange.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Towns.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/FindTheAbsentStudents.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/GroupFormation.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/WatsonsLoveForArrays.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Landslide.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/CompetitiveTeams.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/BalancedSequence.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/FOppaFuncanStyleRemastered.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/ArithmeticSequenceDiv1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/MakingRegularGraph.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/ObtuseTrianglesDiv1.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskA.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskB.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskC.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskE.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskDChecker.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskDTestCase.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/ClockDelay.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TheMostElegantSequence.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/XorryQueries.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/TaskD.java" />
-        <option value="$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/D___Choosing_Points/TaskD.java" />
-        <option value="$PROJECT_DIR$/archive/2018.06/2018.06.03 - AtCoder Grand Contest 025/TaskD.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/FieldTrip.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/NamePreservingNetworkTestCase.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/NamePreservingNetwork.java" />
-        <option value="$PROJECT_DIR$/test/testing_tool.py" />
-        <option value="$PROJECT_DIR$/main/net/egork/FenceConstruction.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Task.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Task1006.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/Task1004.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/MashaAndMinions.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/GoodPermutations.java" />
-        <option value="$PROJECT_DIR$/main/net/egork/GoodPermutationsTestCase.java" />
         <option value="$PROJECT_DIR$/main/net/egork/SonyaAndSegments.java" />
         <option value="$PROJECT_DIR$/main/net/egork/BatmanAndTree.java" />
         <option value="$PROJECT_DIR$/main/net/egork/DanyaAndNumbers.java" />
         <option value="$PROJECT_DIR$/main/net/egork/ArchiAndComparsion.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/LoveStory.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Printer.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/CityBreak.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/RestrictedArrays.java" />
+        <option value="$PROJECT_DIR$/lib/main/net/egork/collections/iss/RecursiveIndependentSetSystem.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/WaterSupply.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/RBubbleSort.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Tourist.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Interception.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/EthanSearchesForAString.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/LeftToRightGame.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ProductThreshold.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ColoringEdgesDiv1.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskA.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskCInteractor.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskC.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskB.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TaskBTestCase.java" />
+        <option value="$PROJECT_DIR$/lib/test/on2018_07/on2018_07_13_Codeforces_Round__497__Div__1_/C______________________/TaskCInteractor.java" />
+        <option value="$PROJECT_DIR$/lib/test/on2018_07/on2018_07_13_Codeforces_Round__497__Div__1_/C______________________/C - Otgadajte dva chisla.json" />
+        <option value="$PROJECT_DIR$/InteractorClass.template" />
+        <option value="$PROJECT_DIR$/main/net/egork/AColorfulSlimes2.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/CStringColoring.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/DHistogramColoring.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/BRng10s.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ESynchronizedSubsequence.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/FManjuGame.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/DouchebagParking.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ThreeOnes.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/SplitTheSticks.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ManhattanCenter.java" />
+        <option value="$PROJECT_DIR$/test/Main.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TheSprawlTestCase.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TheSprawl.java" />
+        <option value="$PROJECT_DIR$/lib/test/on2018_07/on2018_07_18_Round_84/The_Sprawl/TheSprawl.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/GrowingTrees.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/SquareCutout.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/TestProctoring.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Alchemy.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/LetItFlow.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/EthanTraversesATree.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/PlatformParkour.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ORMatrix.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ChefAndGCDGame.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/Sticks.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/FindingSecondMaximum.java" />
+        <option value="$PROJECT_DIR$/main/net/egork/ChefAndQueriesOnATree.java" />
       </list>
     </option>
   </component>
@@ -249,8 +270,8 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-181" />
-    <option name="y" value="170" />
+    <option name="x" value="48" />
+    <option name="y" value="246" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
@@ -292,7 +313,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,195 +328,188 @@
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.06" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07.07 - 2018 TopCoder Open Round #3A" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07.13 - Codeforces Round #497 (Div. 1)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07.14 - AtCoder Grand Contest 026" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07.18 - CSAcademy Round #84" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="archive" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07" type="462c0819:PsiDirectoryNode" />
+              <item name="2018.07.20 - 2018 TopCoder Open Round #3B" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2015_05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2015_05" type="462c0819:PsiDirectoryNode" />
+              <item name="on2015_05_01_Bayan_Finals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07_14_AtCoder_Grand_Contest_026" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07_14_AtCoder_Grand_Contest_026" type="462c0819:PsiDirectoryNode" />
+              <item name="B___rng_10s" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07_14_AtCoder_Grand_Contest_026" type="462c0819:PsiDirectoryNode" />
+              <item name="C___String_Coloring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07_14_AtCoder_Grand_Contest_026" type="462c0819:PsiDirectoryNode" />
+              <item name="D___Histogram_Coloring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07_18_Round_84" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07_18_Round_84" type="462c0819:PsiDirectoryNode" />
+              <item name="Manhattan_Center" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07_18_Round_84" type="462c0819:PsiDirectoryNode" />
+              <item name="The_Sprawl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07_18_Round_84" type="462c0819:PsiDirectoryNode" />
+              <item name="Three_Ones" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="Growing_Trees" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="on2018_07" type="462c0819:PsiDirectoryNode" />
+              <item name="Alchemy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaal" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="egork" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="egork" type="462c0819:PsiDirectoryNode" />
-              <item name="collections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="egork" type="462c0819:PsiDirectoryNode" />
-              <item name="collections" type="462c0819:PsiDirectoryNode" />
-              <item name="intervaltree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="egork" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="egork" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="egork" type="462c0819:PsiDirectoryNode" />
-              <item name="numbers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2016_02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2016_02" type="462c0819:PsiDirectoryNode" />
-              <item name="on2016_02_07_IndiaHacks__Algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2016_02" type="462c0819:PsiDirectoryNode" />
-              <item name="on2016_02_07_IndiaHacks__Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="A___Hourglasses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_06" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_06" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_06_03_AtCoder_Grand_Contest_025" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_06" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_06_03_AtCoder_Grand_Contest_025" type="462c0819:PsiDirectoryNode" />
-              <item name="A___Digits_Sum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_06" type="462c0819:PsiDirectoryNode" />
-              <item name="on2018_06_03_AtCoder_Grand_Contest_025" type="462c0819:PsiDirectoryNode" />
-              <item name="B___RGB_Coloring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaal" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="CHelper" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="CHelper" type="70bed36:NamedLibraryElementNode" />
-              <item name="cojac.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="CHelper" type="70bed36:NamedLibraryElementNode" />
-              <item name="cojac.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cojac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="CHelper" type="70bed36:NamedLibraryElementNode" />
-              <item name="cojac.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cojac" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Favorites" />
     </panes>
   </component>
@@ -516,17 +529,17 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Solution&#9;FILE&#9;file://C:/proj/yaal/test/Solution.java&#10;Sol&#9;FILE&#9;file://C:/proj/yaal/test/Solution.java&#10;Main&#9;FILE&#9;file://C:/proj/yaal/test/Main.java&#10;Number&#9;PSI&#9;JAVA://java.lang.Number" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Egor/proj/yaal/main/net/egork/Sticks.java&#10;Solution&#9;FILE&#9;file://C:/proj/yaal/test/Solution.java&#10;Sol&#9;FILE&#9;file://C:/proj/yaal/test/Solution.java&#10;Main&#9;FILE&#9;file://C:/proj/yaal/test/Main.java&#10;Number&#9;PSI&#9;JAVA://java.lang.Number" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="protected" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TaskClassCase.template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TaskClass.template" />
     <property name="options.lastSelected" value="preferences.updates" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -543,11 +556,11 @@
       <recent name="net.egork.string" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Egor\proj\yaal\archive\2018.07\2018.07.18 - CSAcademy Round #84" />
+      <recent name="C:\Users\Egor\proj\yaal\archive\2018.07\2018.07.13 - Codeforces Round #497 (Div. 1)" />
       <recent name="C:\Users\Egor\proj\yaal\archive\2018.05\2018.05.17 - TopCoder SRM #734" />
       <recent name="C:\proj\yaal\archive\2015.10\2015.10 - October Challenge 2015" />
       <recent name="C:\proj\yaal\archive\2015.06\2015.06 - June Challenge 2015" />
-      <recent name="C:\proj\algo\archive\2014.07\2014.07 - Weekly Challenges - Week 6" />
-      <recent name="C:\proj\algo\archive\2014.07\2014.07 - July Challenge 2014" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="net.egork.string.StringUtils" />
@@ -562,11 +575,11 @@
       <recent name="net.egork" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Egor\proj\yaal\lib\test\on2018_07\on2018_07_13_Codeforces_Round__497__Div__1_\C______________________" />
       <recent name="C:\Users\Egor\proj\yaal\main" />
       <recent name="D:\home\projects\algo\archive\2012.08\2012.08.14 - Codeforces Round #133" />
       <recent name="D:\home\projects\algo\archive\2012.06\2012.06.03 - Colombian Collegiate Programming League" />
       <recent name="D:\home\projects\algo\main" />
-      <recent name="D:\home\projects\algo\archive\2011.03\2011.03.27 - ITRIX 11 OPC" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -592,11 +605,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib">
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Solution" />
-      <module name="test" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.on2018_07.on2018_07_22_Facebook_Hacker_Cup_2018_Round_1.Let_It_Flow in lib">
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -613,17 +622,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="on2018_07.on2018_07_18_Round_84 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph.*" />
+          <option name="PATTERN" value="on2018_07.on2018_07_18_Round_84.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph" />
+      <option name="PACKAGE_NAME" value="on2018_07.on2018_07_18_Round_84" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -636,17 +645,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_06.on2018_06_03_AtCoder_Grand_Contest_025 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="on2018_07.on2018_07_19_Round_84.Growing_Trees in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="on2018_06.on2018_06_03_AtCoder_Grand_Contest_025.*" />
+          <option name="PATTERN" value="on2018_07.on2018_07_19_Round_84.Growing_Trees.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_06.on2018_06_03_AtCoder_Grand_Contest_025" />
+      <option name="PACKAGE_NAME" value="on2018_07.on2018_07_19_Round_84.Growing_Trees" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -659,17 +668,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_06.on2018_06_09_Round_3_2018.Fence_Construction in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="on2018_07.on2018_07_20_2018_TopCoder_Open_Algorithm.Alchemy in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="on2018_06.on2018_06_09_Round_3_2018.Fence_Construction.*" />
+          <option name="PATTERN" value="on2018_07.on2018_07_20_2018_TopCoder_Open_Algorithm.Alchemy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_06.on2018_06_09_Round_3_2018.Fence_Construction" />
+      <option name="PACKAGE_NAME" value="on2018_07.on2018_07_20_2018_TopCoder_Open_Algorithm.Alchemy" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -682,17 +691,17 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="on2018_07.on2018_07_22_CodeChef___July_Cook_Off_2018_Division_1 in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lib" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1.*" />
+          <option name="PATTERN" value="on2018_07.on2018_07_22_CodeChef___July_Cook_Off_2018_Division_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1" />
+      <option name="PACKAGE_NAME" value="on2018_07.on2018_07_22_CodeChef___July_Cook_Off_2018_Division_1" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -705,8 +714,28 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="1006 - Square Frames" type="Task" factoryName="Task">
-      <taskConf>main/net/egork/1006 - Square Frames.json</taskConf>
+    <configuration name="on2018_07.on2018_07_22_Facebook_Hacker_Cup_2018_Round_1.Let_It_Flow in lib" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="on2018_07.on2018_07_22_Facebook_Hacker_Cup_2018_Round_1.Let_It_Flow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="on2018_07.on2018_07_22_Facebook_Hacker_Cup_2018_Round_1.Let_It_Flow" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -795,37 +824,6 @@
       <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -845,41 +843,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="archive" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-    </configuration>
-    <configuration default="true" type="Task" factoryName="Task">
-      <taskConf />
       <method />
     </configuration>
     <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
@@ -913,20 +876,19 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Library test" />
-      <item itemvalue="Task.1006 - Square Frames" />
-      <item itemvalue="JUnit.on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph in lib" />
-      <item itemvalue="JUnit.on2018_06.on2018_06_03_AtCoder_Grand_Contest_025 in lib" />
-      <item itemvalue="Application.Solution" />
-      <item itemvalue="JUnit.on2018_06.on2018_06_09_Round_3_2018.Fence_Construction in lib" />
-      <item itemvalue="JUnit.on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib" />
+      <item itemvalue="JUnit.on2018_07.on2018_07_18_Round_84 in lib" />
+      <item itemvalue="JUnit.on2018_07.on2018_07_19_Round_84.Growing_Trees in lib" />
+      <item itemvalue="JUnit.on2018_07.on2018_07_20_2018_TopCoder_Open_Algorithm.Alchemy in lib" />
+      <item itemvalue="JUnit.on2018_07.on2018_07_22_CodeChef___July_Cook_Off_2018_Division_1 in lib" />
+      <item itemvalue="JUnit.on2018_07.on2018_07_22_Facebook_Hacker_Cup_2018_Round_1.Let_It_Flow in lib" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib" />
-        <item itemvalue="JUnit.on2018_06.on2018_06_09_Round_3_2018.Fence_Construction in lib" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="JUnit.on2018_06.on2018_06_03_AtCoder_Grand_Contest_025 in lib" />
-        <item itemvalue="JUnit.on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph in lib" />
+        <item itemvalue="JUnit.on2018_07.on2018_07_22_Facebook_Hacker_Cup_2018_Round_1.Let_It_Flow in lib" />
+        <item itemvalue="JUnit.on2018_07.on2018_07_22_CodeChef___July_Cook_Off_2018_Division_1 in lib" />
+        <item itemvalue="JUnit.on2018_07.on2018_07_20_2018_TopCoder_Open_Algorithm.Alchemy in lib" />
+        <item itemvalue="JUnit.on2018_07.on2018_07_19_Round_84.Growing_Trees in lib" />
+        <item itemvalue="JUnit.on2018_07.on2018_07_18_Round_84 in lib" />
       </list>
     </recent_temporary>
   </component>
@@ -1064,62 +1026,6 @@
       <workItem from="1424172197042" duration="24000" />
       <workItem from="1424215170873" duration="5402000" />
       <workItem from="1424253877127" duration="3770000" />
-    </task>
-    <task id="LOCAL-00039" summary="CodeChef June Challenge&#10;Codeforces Round #188&#10;TopCoder SRM #582">
-      <created>1371556249056</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1371556249056</updated>
-    </task>
-    <task id="LOCAL-00040" summary="CodeChef June Challenge">
-      <created>1371557424986</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1371557424986</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Unit test fixes">
-      <created>1371558112099</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1371558112099</updated>
-    </task>
-    <task id="LOCAL-00042" summary="TopCoder SRM #583">
-      <created>1371644001085</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1371644001085</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Geometry">
-      <created>1371717646448</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1371717646448</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Geometry/data structures">
-      <created>1371818014125</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1371818014125</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Various contests">
-      <created>1373892063089</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1373892063089</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Test fix">
-      <created>1373892882363</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1373892882363</updated>
     </task>
     <task id="LOCAL-00047" summary="Library fix">
       <created>1373893706140</created>
@@ -1408,39 +1314,95 @@
       <option name="project" value="LOCAL" />
       <updated>1528688649614</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="CodeChef June Cook-Off">
+      <created>1529260673280</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1529260673281</updated>
+    </task>
+    <task id="LOCAL-00089" summary="CSAcademy Round #82">
+      <created>1530140858235</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1530140858236</updated>
+    </task>
+    <task id="LOCAL-00090" summary="topcoder Open Round #3A&#10;Facebook Hacker Cup Qualification Round&#10;Codeforces Round #497">
+      <created>1531526796046</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1531526796046</updated>
+    </task>
+    <task id="LOCAL-00091" summary="AtCoder Grand Contest #26">
+      <created>1531601284325</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1531601284326</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Test fails and I cannot remember what it is :(">
+      <created>1531601851843</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1531601851844</updated>
+    </task>
+    <task id="LOCAL-00093" summary="CSAcademy Round #84">
+      <created>1531942439834</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1531942439835</updated>
+    </task>
+    <task id="LOCAL-00094" summary="CSAcademy Round #84">
+      <created>1531957717477</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1531957717478</updated>
+    </task>
+    <task id="LOCAL-00095" summary="2018 TopCoder Open Round #3B">
+      <created>1532083153571</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1532083153572</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="on2018_05_in_lib - 2018.05.12 at 14h 18m 18s.xml">
-      <configuration name="on2018_05 in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_05_on2018_05_12_2018_TopCoder_Open_Algorithm_SumCards_in_lib - 2018.05.13 at 19h 10m 19s.xml">
-      <configuration name="on2018_05.on2018_05_12_2018_TopCoder_Open_Algorithm.SumCards in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_05_on2018_05_17_Single_Round_Match_734_TheRoundCityDiv1_in_lib - 2018.05.20 at 04h 59m 47s.xml">
-      <configuration name="on2018_05.on2018_05_17_Single_Round_Match_734.TheRoundCityDiv1 in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_05_on2018_05_17_TopCoder_SRM__734_CardCounter_in_lib - 2018.05.20 at 05h 00m 19s.xml">
-      <configuration name="on2018_05.on2018_05_17_TopCoder_SRM__734.CardCounter in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_05_on2018_05_19_Round_2_2018_Costume_Change_in_lib - 2018.05.20 at 05h 00m 47s.xml">
-      <configuration name="on2018_05.on2018_05_19_Round_2_2018.Costume_Change in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_05_on2018_05_20_AtCoder_Grand_Contest_024_in_lib - 2018.05.23 at 17h 00m 42s.xml">
-      <configuration name="on2018_05.on2018_05_20_AtCoder_Grand_Contest_024 in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_05_on2018_05_25_HackerRank___World_CodeSprint_13_in_lib - 2018.05.30 at 19h 13m 05s.xml">
-      <configuration name="on2018_05.on2018_05_25_HackerRank___World_CodeSprint_13 in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_06_on2018_06_02_2018_TopCoder_Open_Algorithm_MakingRegularGraph_in_lib - 2018.06.02 at 20h 49m 11s.xml">
-      <configuration name="on2018_06.on2018_06_02_2018_TopCoder_Open_Algorithm.MakingRegularGraph in lib" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="on2018_06_on2018_06_03_AtCoder_Grand_Contest_025_in_lib - 2018.06.09 at 15h 34m 40s.xml">
-      <configuration name="on2018_06.on2018_06_03_AtCoder_Grand_Contest_025 in lib" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="on2018_06_on2018_06_09_Round_3_2018_Fence_Construction_in_lib - 2018.06.11 at 05h 41m 06s.xml">
       <configuration name="on2018_06.on2018_06_09_Round_3_2018.Fence_Construction in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_06_on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1_in_lib - 2018.06.17 at 20h 37m 21s.xml">
+      <configuration name="on2018_06.on2018_06_17_CodeChef___June_Cook_Off_2018_Division_1 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_06_on2018_06_20_Round_82_in_lib - 2018.06.28 at 01h 07m 04s.xml">
+      <configuration name="on2018_06.on2018_06_20_Round_82 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_07_on2018_07_13_Codeforces_Round__497__Div__1__B____________________________in_lib - 2018.07.14 at 02h 02m 15s.xml">
+      <configuration name="on2018_07.on2018_07_13_Codeforces_Round__497__Div__1_.B___________________________ in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_07_on2018_07_07_2018_TopCoder_Open_Algorithm_ColoringEdgesDiv1_in_lib - 2018.07.14 at 02h 03m 07s.xml">
+      <configuration name="on2018_07.on2018_07_07_2018_TopCoder_Open_Algorithm.ColoringEdgesDiv1 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_07_on2018_07_14_AtCoder_Grand_Contest_026_in_lib - 2018.07.14 at 22h 47m 26s.xml">
+      <configuration name="on2018_07.on2018_07_14_AtCoder_Grand_Contest_026 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Library_test - 2018.07.14 at 22h 51m 11s.xml">
+      <configuration name="Library test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_07_on2018_07_18_Round_84_in_lib - 2018.07.18 at 21h 32m 55s.xml">
+      <configuration name="on2018_07.on2018_07_18_Round_84 in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_07_on2018_07_19_Round_84_Growing_Trees_in_lib - 2018.07.19 at 01h 48m 11s.xml">
+      <configuration name="on2018_07.on2018_07_19_Round_84.Growing_Trees in lib" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="on2018_07_on2018_07_20_2018_TopCoder_Open_Algorithm_Alchemy_in_lib - 2018.07.20 at 12h 38m 40s.xml">
+      <configuration name="on2018_07.on2018_07_20_2018_TopCoder_Open_Algorithm.Alchemy in lib" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1448,48 +1410,49 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="8" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.32453153" weight="0.2391775" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.32409382" weight="0.2391775" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" weight="0.29545453" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.6759062" side_tool="true" weight="0.29545453" />
       <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.6700935" weight="0.32992464" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49779493" weight="0.114583336" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49779493" weight="0.36796537" />
       <window_info anchor="bottom" auto_hide="true" id="Version Control" order="7" sideWeight="0.32870865" weight="0.32359308" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49840087" weight="0.29545453" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" x="-476" y="120" width="473" height="1041" id="Project" order="0" sideWeight="0.5229456" visible="true" weight="0.25746268" />
+      <window_info content_ui="combo" x="-476" y="120" width="473" height="1041" id="Project" order="0" sideWeight="0.5229456" weight="0.2889126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="9" weight="0.24862184" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="12" />
-      <window_info anchor="right" id="Debug" order="13" sideWeight="0.7652081" visible="true" weight="0.33315566" />
+      <window_info anchor="right" id="Debug" order="13" sideWeight="0.49657536" weight="0.5351812" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Kotlin" order="11" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Thumbnails" order="7" weight="0.32990655" />
-      <window_info anchor="right" id="IDEtalk" order="5" />
       <window_info anchor="right" id="JetGradle" order="2" />
       <window_info anchor="right" id="Properties" order="9" />
       <window_info anchor="bottom" id="Changes" order="5" sideWeight="0.49682036" weight="0.55216014" />
       <window_info anchor="right" id="Commander" order="1" sideWeight="0.72149533" weight="0.39944443" />
-      <window_info anchor="bottom" id="IDEtalk Messages" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info x="92" y="92" width="767" height="422" id="Documentation" order="3" type="FLOATING" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" sideWeight="0.72242993" weight="0.24807057" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" sideWeight="0.72242993" weight="0.24786781" />
+      <window_info anchor="bottom" id="IDEtalk Messages" order="7" />
       <window_info anchor="bottom" id="Problems" order="7" weight="0.32977587" />
       <window_info anchor="bottom" id="Dependency Viewer" order="9" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info anchor="right" id="Data Sources" order="7" />
+      <window_info anchor="right" id="IDEtalk" order="5" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.7641409" side_tool="true" weight="0.36926362" />
+      <window_info active="true" anchor="right" id="Coverage" order="12" sideWeight="0.50342464" side_tool="true" visible="true" weight="0.33315566" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.32960597" weight="0.44953173" />
     </layout>
   </component>
@@ -1508,13 +1471,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <confirmRemoveEmptyChangelist value="2" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="true" />
-    <MESSAGE value="TopCoder SRM #621" />
-    <MESSAGE value="HackerRank Weekly Challenges Week 3 - Tasks 1-2" />
-    <MESSAGE value="HackerRank Weekly Challenges Week 3 - Task 3" />
-    <MESSAGE value="Learneroo Challenge&#10;101 Hack May&#10;GCJ Round 2" />
-    <MESSAGE value="TopCoder SRM #625&#10;Codeforces Round #253" />
-    <MESSAGE value="IntHashSet/IntHashMap fix" />
-    <MESSAGE value="Since September oO" />
     <MESSAGE value="Various contest&#10;Tests fix" />
     <MESSAGE value="Various contest&#10;Hash and suffix array fixes" />
     <MESSAGE value="BOOM" />
@@ -1533,7 +1489,14 @@
     <MESSAGE value="TCO Round #2A" />
     <MESSAGE value="AGC #25&#10;HourRank #28" />
     <MESSAGE value="Google Code Jam Round #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Google Code Jam Round #3" />
+    <MESSAGE value="CodeChef June Cook-Off" />
+    <MESSAGE value="CSAcademy Round #82" />
+    <MESSAGE value="topcoder Open Round #3A&#10;Facebook Hacker Cup Qualification Round&#10;Codeforces Round #497" />
+    <MESSAGE value="AtCoder Grand Contest #26" />
+    <MESSAGE value="Test fails and I cannot remember what it is :(" />
+    <MESSAGE value="CSAcademy Round #84" />
+    <MESSAGE value="2018 TopCoder Open Round #3B" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018 TopCoder Open Round #3B" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1576,11 +1539,15 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="93" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="730" />
+        </breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="700" />
+      <option name="time" value="741" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TopCoderTask">
@@ -1595,18 +1562,23 @@
         <watch expression="degree" language="JAVA" />
         <watch expression="all" language="JAVA" />
         <watch expression="aa * aa + (aa + 1) * (aa + 1)" language="JAVA" />
+        <watch expression="white.get(1)" language="JAVA" />
+        <watch expression="white.get(4)" language="JAVA" />
+        <watch expression="white.get(7)" language="JAVA" />
+        <watch expression="black.get(1)" language="JAVA" />
+        <watch expression="black.get(4)" language="JAVA" />
+        <watch expression="black.get(7)" language="JAVA" />
       </configuration>
       <configuration name="Task">
-        <watch expression="qty[current]" language="JAVA" />
-        <watch expression="delta" language="JAVA" />
-        <watch expression="original" language="JAVA" />
-        <watch expression="at" language="JAVA" />
+        <watch expression="tree" language="JAVA" />
+        <watch expression="level[j] - tree[j].startLevel" language="JAVA" />
       </configuration>
       <configuration name="JUnit">
         <watch expression="orders" language="JAVA" custom="" />
       </configuration>
       <configuration name="Application">
         <watch expression="h" language="JAVA" />
+        <watch expression="nullNode" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1617,291 +1589,321 @@
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
       <expression>
-        <expression-string>aa == 6 &amp;&amp; nn == 2</expression-string>
+        <expression-string>i == 2</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>aa == 4 &amp;&amp; nn == 1</expression-string>
+        <expression-string>testNumber == 2195</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>i == 99</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>j == 1</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>answer.length() &gt; i</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>cur &gt;</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>i == 2 &amp;&amp; j == 2</expression-string>
+        <expression-string />
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string />
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="watch">
       <expression>
-        <expression-string>at</expression-string>
+        <expression-string>level[j] - tree[j].startLevel</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>original</expression-string>
+        <expression-string>tree</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>delta</expression-string>
+        <expression-string>nullNode</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>qty[current]</expression-string>
+        <expression-string>rtl</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>aa * aa + (aa + 1) * (aa + 1)</expression-string>
+        <expression-string>ltr</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>all</expression-string>
+        <expression-string>numDivisors[c] - numDivisors[ac] - numDivisors[bc] + numDivisors[abc]</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>degree</expression-string>
+        <expression-string>black.get(7)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>n[i] % min.length</expression-string>
+        <expression-string>black.get(4)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>n[i]</expression-string>
+        <expression-string>black.get(1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>id</expression-string>
+        <expression-string>white.get(7)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/net/egork/ObtuseTrianglesDiv1.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/ArithmeticSequenceDiv1.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/MakingRegularGraph.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_02_2018_TopCoder_Open_Algorithm/ArithmeticSequenceDiv1/ArithmeticSequenceDiv1.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_05/on2018_05_25_HackerRank___World_CodeSprint_13/Watson_s_Love_for_Arrays/WatsonsLoveForArrays.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/CStringColoring.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/AColorfulSlimes2.java" />
+    <entry file="file://$PROJECT_DIR$/InteractorClass.template" />
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/misc/MiscUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="4375">
+          <caret line="177" column="46" selection-start-line="177" selection-start-column="46" selection-end-line="177" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_02_2018_TopCoder_Open_Algorithm/MakingRegularGraph/MakingRegularGraph.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ESynchronizedSubsequence.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/FManjuGame.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/DHistogramColoring.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/BRng10s.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_14_AtCoder_Grand_Contest_026/A___Colorful_Slimes_2/AColorfulSlimes2.java" />
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/numbers/IntegerUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        <state relative-caret-position="6575">
+          <caret line="276" column="23" selection-start-line="276" selection-start-column="23" selection-end-line="276" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/collections/intervaltree/LCA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/graph/StronglyConnectedComponents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskDChecker.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskDTestCase.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskA.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskB.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskC.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskD.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TaskE.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/ClockDelay.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/TheMostElegantSequence.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/XorryQueries.java" />
-    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/com/github/cojac/models/CheckedInts.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/A___Digits_Sum/TaskA.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_14_AtCoder_Grand_Contest_026/B___rng_10s/BRng10s.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/C___Interval_Game/TaskC.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/D___Choosing_Points/TaskD.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_HackerRank___HourRank_28/Clock_Delay/ClockDelay.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_HackerRank___HourRank_28/The_Most_Elegant_Sequence/TheMostElegantSequence.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_HackerRank___HourRank_28/Xorry_Queries/XorryQueries.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_03_AtCoder_Grand_Contest_025/B___RGB_Coloring/TaskB.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_14_AtCoder_Grand_Contest_026/C___String_Coloring/CStringColoring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_14_AtCoder_Grand_Contest_026/E___Synchronized_Subsequence/ESynchronizedSubsequence.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_05/on2015_05_01_Bayan_Finals/BMGK/BMGK.java" />
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/jackson-databind-2.7.4.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19600">
+          <caret line="965" selection-start-line="965" selection-end-line="965" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Main.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TheSprawlTestCase.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TheSprawl.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/DouchebagParking.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ThreeOnes.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/SplitTheSticks.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ManhattanCenter.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_14_AtCoder_Grand_Contest_026/D___Histogram_Coloring/DHistogramColoring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_18_Round_84/Douchebag_Parking/DouchebagParking.java" />
+    <entry file="file://$PROJECT_DIR$/archive/2018.07/2018.07.18 - CSAcademy Round #84/DouchebagParking.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_18_Round_84/Split_the_Sticks/SplitTheSticks.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_18_Round_84/Manhattan_Center/ManhattanCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/archive/2018.06/2018.06.03 - AtCoder Grand Contest 025/TaskD.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_18_Round_84/The_Sprawl/TheSprawl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Solution.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/NamePreservingNetworkTestCase.java" />
-    <entry file="file://$PROJECT_DIR$/test/testing_tool.py" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/FenceConstruction.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/FieldTrip.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/NamePreservingNetwork.java" />
-    <entry file="file://$PROJECT_DIR$/main/net/egork/Task.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_09_Round_3_2018/Field_Trip/FieldTrip.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_09_Round_3_2018/Name_Preserving_Network/NamePreservingNetwork.java" />
-    <entry file="file://$PROJECT_DIR$/lib/test/on2018_06/on2018_06_09_Round_3_2018/Fence_Construction/FenceConstruction.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/SortedMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="262" column="18" selection-start-line="262" selection-start-column="18" selection-end-line="262" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/io/InputReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4250">
-          <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/graph/ShortestDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/generated/collections/IntStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        <state relative-caret-position="875">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding>
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/Task1004.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/GrowingTrees.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_18_Round_84/Three_Ones/ThreeOnes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+        <state relative-caret-position="575">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/GoodPermutationsTestCase.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_19_Round_84/Growing_Trees/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/numbers/Combinations.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/Alchemy.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/TestProctoring.java" />
+    <entry file="file://$PROJECT_DIR$/main/net/egork/SquareCutout.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_19_Round_84/Growing_Trees/GrowingTrees.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="1600">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/ArchiAndComparsion.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_20_2018_TopCoder_Open_Algorithm/SquareCutout/SquareCutout.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_20_2018_TopCoder_Open_Algorithm/TestProctoring/TestProctoring.java" />
+    <entry file="file://$PROJECT_DIR$/lib/test/on2018_07/on2018_07_20_2018_TopCoder_Open_Algorithm/Alchemy/Alchemy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="250">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/MashaAndMinions.java">
+    <entry file="file://$PROJECT_DIR$/lib/test/on2015_03/on2015_03_18_Code_Mania_2015/Galaxies_and_Beyond/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="350">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/GoodPermutations.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/EthanTraversesATree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
+        <state relative-caret-position="375">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/PlatformParkour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/generated/collections/list/IntList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="251" column="20" selection-start-line="251" selection-start-column="20" selection-end-line="251" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main/net/egork/misc/ArrayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="265" column="40" lean-forward="true" selection-start-line="265" selection-start-column="40" selection-end-line="265" selection-end-column="40" />
+          <folding>
+            <element signature="e#7286#7287#0" expanded="true" />
+            <element signature="e#7347#7348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/chelper.jar!/net/egork/chelper/tester/NewTester.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/chelper/lib/cojac.jar!/com/github/cojac/models/CheckedInts.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ChefAndQueriesOnATree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="87" column="41" lean-forward="true" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+          <folding>
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ORMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/Sticks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/net/egork/ChefAndGCDGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
           <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/SonyaAndSegments.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/FindingSecondMaximum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="266">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/BatmanAndTree.java">
+    <entry file="file://$PROJECT_DIR$/main/net/egork/LetItFlow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
+        <state relative-caret-position="525">
+          <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
           <folding>
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1251#1252#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/DanyaAndNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/net/egork/Task1006.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
         </state>
       </provider>
     </entry>

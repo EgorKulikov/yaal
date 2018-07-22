@@ -1,0 +1,34 @@
+{
+  "name" : "Let It Flow",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "LOCAL_REGEXP",
+    "fileName" : "let.*it.*flow.*[.]txt"
+  },
+  "output" : {
+    "type" : "CUSTOM",
+    "fileName" : "letitflow.out"
+  },
+  "tests" : [ {
+    "input" : "7\n2\n..\n..\n..\n2\n#.\n..\n.#\n4\n...#\n....\n.#..\n4\n..##\n....\n.#..\n5\n.#...\n.....\n.....\n8\n....#...\n........\n#.......\n70\n......................................................................\n......................................................................\n......................................................................\n",
+    "output" : "Case #1: 1\nCase #2: 0\nCase #3: 1\nCase #4: 0\nCase #5: 0\nCase #6: 4\nCase #7: 179869065\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "on2018_07.on2018_07_22_Facebook_Hacker_Cup_2018_Round_1.Let_It_Flow.LetItFlow",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.22",
+  "contestName" : "Facebook Hacker Cup 2018 Round 1",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : true,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
