@@ -1,0 +1,44 @@
+{
+  "name" : "A. Полёт",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n12\n11 8\n7 5\n",
+    "output" : "10.0000000000\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n1\n1 4 1\n2 5 3\n",
+    "output" : "-1\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "6\n2\n4 6 3 3 5 6\n2 6 3 6 5 3\n",
+    "output" : "85.4800000000\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "on2018_07.on2018_07_26_Codeforces_Round__499__Div__1_.A_______.A",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "1e-6",
+  "testClasses" : [ ],
+  "date" : "2018.07.26",
+  "contestName" : "Codeforces Round #499 (Div. 1)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
