@@ -1,0 +1,36 @@
+{
+  "name" : "SumPyramid",
+  "signature" : {
+    "name" : "countPyramids",
+    "result" : "int",
+    "arguments" : [ "int", "int" ],
+    "argumentNames" : [ "levels", "top" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "1", "47" ],
+    "result" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "2", "10" ],
+    "result" : "11",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "2" ],
+    "result" : "4",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "5", "7" ],
+    "result" : "18",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2018.07.28",
+  "contestName" : "2018 TopCoder Open Algorithm",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.SumPyramid",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
