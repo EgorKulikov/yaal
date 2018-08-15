@@ -1,0 +1,41 @@
+{
+  "name" : "DigitRotation",
+  "signature" : {
+    "name" : "sumRotations",
+    "result" : "int",
+    "arguments" : [ "String" ],
+    "argumentNames" : [ "X" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "123" ],
+    "result" : "312",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "3570" ],
+    "result" : "10407",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "5545" ],
+    "result" : "21208",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "1283749218734901238749213847902" ],
+    "result" : "867286291",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "4" ],
+    "result" : "0",
+    "index" : 4,
+    "active" : true
+  } ],
+  "date" : "2018.08.15",
+  "contestName" : "*TopCoder Open19* Single Round Match 736",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.DigitRotation",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

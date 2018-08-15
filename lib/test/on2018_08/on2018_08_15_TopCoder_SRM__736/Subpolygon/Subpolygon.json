@@ -1,0 +1,31 @@
+{
+  "name" : "Subpolygon",
+  "signature" : {
+    "name" : "sumOfAreas",
+    "result" : "int",
+    "arguments" : [ "int" ],
+    "argumentNames" : [ "n" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "1" ],
+    "result" : "3",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "2" ],
+    "result" : "1650",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "35" ],
+    "result" : "132946800",
+    "index" : 2,
+    "active" : true
+  } ],
+  "date" : "2018.08.15",
+  "contestName" : "TopCoder SRM #736",
+  "testClasses" : [ ],
+  "fqn" : "on2018_08.on2018_08_15_TopCoder_SRM__736.Subpolygon.Subpolygon",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

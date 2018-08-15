@@ -1,0 +1,50 @@
+{
+  "name" : "MinDegreeSubgraph",
+  "signature" : {
+    "name" : "exists",
+    "result" : "String",
+    "arguments" : [ "int", "long", "int" ],
+    "argumentNames" : [ "n", "m", "k" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "3", "3", "2" ],
+    "result" : "ALL",
+    "index" : 0,
+    "active" : false
+  }, {
+    "arguments" : [ "4", "3", "2" ],
+    "result" : "SOME",
+    "index" : 1,
+    "active" : false
+  }, {
+    "arguments" : [ "6", "10", "3" ],
+    "result" : "ALL",
+    "index" : 2,
+    "active" : false
+  }, {
+    "arguments" : [ "6", "15", "4" ],
+    "result" : "ALL",
+    "index" : 3,
+    "active" : false
+  }, {
+    "arguments" : [ "17", "53", "11" ],
+    "result" : "NONE",
+    "index" : 4,
+    "active" : false
+  }, {
+    "arguments" : [ "1", "0", "0" ],
+    "result" : "ALL",
+    "index" : 5,
+    "active" : false
+  }, {
+    "arguments" : [ "10", "100", "5" ],
+    "index" : 6,
+    "active" : true
+  } ],
+  "date" : "2018.08.15",
+  "contestName" : "*TopCoder Open19* Single Round Match 736",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.MinDegreeSubgraph",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
