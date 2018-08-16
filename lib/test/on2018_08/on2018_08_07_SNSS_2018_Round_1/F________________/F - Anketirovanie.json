@@ -1,0 +1,34 @@
+{
+  "name" : "F - Анкетирование",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n2\n4 5 4 4 2 2 2\n6 4 1 3 0 0 0\n2\n0 4 11 2 3 5 7\n8 14 8 4 6 4 2\n",
+    "output" : "8\n18\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "on2018_08.on2018_08_07_SNSS_2018_Round_1.F________________.TaskF",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.07",
+  "contestName" : "SNSS-2018 Round 1",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,10 +1,13 @@
 package net.egork.io;
 
+import net.egork.generated.collections.pair.IntIntPair;
+
 import java.io.BufferedWriter;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.Writer;
+import java.util.List;
 
 /**
  * @author Egor Kulikov (egor@egork.net)
@@ -133,6 +136,18 @@ public class OutputWriter {
     public void separateLines(int[] array) {
         for (int i : array) {
             printLine(i);
+        }
+    }
+
+    public void printList(List<?> answer) {
+        for (Object o : answer) {
+            printLine(o);
+        }
+    }
+
+    public void printPairList(List<IntIntPair> answer) {
+        for (IntIntPair pair : answer) {
+            printLine(pair.first, pair.second);
         }
     }
 }

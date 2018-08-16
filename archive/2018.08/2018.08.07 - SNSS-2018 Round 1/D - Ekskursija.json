@@ -1,0 +1,44 @@
+{
+  "name" : "D - Экскурсия",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n1 b\n1 b\n3 c\n3 a\n",
+    "output" : "4\n0\n4\n0\n0\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n1 a\n2 a\n1 a\n4 a\n",
+    "output" : "3\n3\n0\n5\n0\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "7\n1 a\n1 a\n2 a\n2 b\n3 a\n3 c\n",
+    "output" : "7\n5\n7\n0\n0\n0\n0\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.07",
+  "contestName" : "SNSS-2018 Round 1",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -4,8 +4,8 @@ package net.egork.string;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class SimpleStringHash extends AbstractStringHash {
-    private static long[] firstReversePower = new long[0];
-    private static long[] secondReversePower = new long[0];
+    public static long[] firstReversePower = new long[0];
+    public static long[] secondReversePower = new long[0];
 
     private final long[] firstHash;
     private final long[] secondHash;
@@ -27,7 +27,7 @@ public class SimpleStringHash extends AbstractStringHash {
         }
     }
 
-    private void ensureCapacity(int length) {
+    public static void ensureCapacity(int length) {
         if (firstReversePower.length >= length) {
             return;
         }

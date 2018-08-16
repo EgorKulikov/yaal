@@ -215,6 +215,13 @@ public class InputReader {
         return buf[curChar];
     }
 
+    public int peekNonWhitespace() {
+        while (isWhitespace(peek())) {
+            read();
+        }
+        return peek();
+    }
+
     public int readInt() {
         int c = read();
         while (isSpaceChar(c)) {

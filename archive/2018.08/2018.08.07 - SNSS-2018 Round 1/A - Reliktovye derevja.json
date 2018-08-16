@@ -1,0 +1,43 @@
+{
+  "name" : "A - Реликтовые деревья",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n",
+    "output" : "4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2018\n",
+    "output" : "116634\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1000000000\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.TaskA",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.07",
+  "contestName" : "SNSS-2018 Round 1",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

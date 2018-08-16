@@ -1,0 +1,58 @@
+{
+  "name" : "TaskB",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "abb\nab",
+    "output" : "2\n1 0\n2 2",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "bbbb\naaa",
+    "output" : "0",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "aaaaa\nbaba\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "aaaaaa\nabab\n",
+    "output" : "",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "aaaaaaa\nababa",
+    "output" : "",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "aaaaaa\nbabab",
+    "output" : "",
+    "index" : 5,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.TaskB",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.07.24",
+  "contestName" : "eJOI 2018 Day 1",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
