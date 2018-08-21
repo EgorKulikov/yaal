@@ -1,0 +1,39 @@
+{
+  "name" : "Toys Small",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "12\n",
+    "output" : "4\n4 5 6 11 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "36\n",
+    "output" : "8\n6 7 8 10 11 13 18 35 \n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx264M",
+  "mainClass" : "Main",
+  "taskClass" : "on2018_08.on2018_08_16_Ceoi_2018_Day_2.Toys_Small.ToysSmall",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "on2018_08.on2018_08_16_Ceoi_2018_Day_2.Toys_Small.ToysSmallTestCase" ],
+  "date" : "2018.08.16",
+  "contestName" : "Ceoi 2018 Day 2",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

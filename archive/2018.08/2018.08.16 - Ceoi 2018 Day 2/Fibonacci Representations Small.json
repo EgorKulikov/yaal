@@ -1,0 +1,34 @@
+{
+  "name" : "Fibonacci Representations Small",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n4 1 1 5\n",
+    "output" : "2\n2\n1\n2\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx264M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.FibonacciRepresentationsSmall",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "net.egork.FibonacciRepresentationsSmallTestCase" ],
+  "date" : "2018.08.16",
+  "contestName" : "CEOI 2018 Day 2",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
