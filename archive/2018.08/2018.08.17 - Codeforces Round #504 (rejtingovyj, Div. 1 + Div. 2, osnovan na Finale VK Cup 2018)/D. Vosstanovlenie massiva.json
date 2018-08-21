@@ -1,0 +1,49 @@
+{
+  "name" : "D. Восстановление массива",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 3\n1 0 2 3\n",
+    "output" : "YES\n1 2 2 3\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 10\n10 10 10\n",
+    "output" : "YES\n10 10 10 \n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5 6\n6 5 6 2 2\n",
+    "output" : "NO\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "3 5\n0 0 0\n",
+    "output" : "YES\n5 4 2\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.D",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.17",
+  "contestName" : "Codeforces Round #504 (рейтинговый, Div. 1 + Div. 2, основан на Финале VK Cup 2018)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
