@@ -1,0 +1,36 @@
+{
+  "name" : "CommonPalindromicSubsequences",
+  "signature" : {
+    "name" : "count",
+    "result" : "long",
+    "arguments" : [ "String", "String" ],
+    "argumentNames" : [ "A", "B" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "abcbac", "cacbbda" ],
+    "result" : "10",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "a", "a" ],
+    "result" : "1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "bc", "adea" ],
+    "result" : "0",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "abcdefghhgfedcba", "badcfehgghefcdab" ],
+    "result" : "160",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2018.08.25",
+  "contestName" : "2018 TopCoder Open Algorithm",
+  "testClasses" : [ "net.egork.CommonPalindromicSubsequencesTestCase" ],
+  "fqn" : "net.egork.CommonPalindromicSubsequences",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

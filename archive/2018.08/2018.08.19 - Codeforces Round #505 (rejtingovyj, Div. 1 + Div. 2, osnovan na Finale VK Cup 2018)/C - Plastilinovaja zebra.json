@@ -1,0 +1,39 @@
+{
+  "name" : "C - Пластилиновая зебра",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "bwwwbwwbw\n",
+    "output" : "5\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "bwwbwwb\n",
+    "output" : "3\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.19",
+  "contestName" : "Codeforces Round #505 (рейтинговый, Div. 1 + Div. 2, основан на Финале VK Cup 2018)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,36 @@
+{
+  "name" : "CubesOnATable",
+  "signature" : {
+    "name" : "placeCubes",
+    "result" : "int[]",
+    "arguments" : [ "int" ],
+    "argumentNames" : [ "surface" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "5" ],
+    "result" : "0 0 0",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "20" ],
+    "result" : "5 5 0 5 5 1 5 6 0 5 6 1 6 5 0 6 5 1 6 6 0 6 6 1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "25" ],
+    "result" : "0 0 0 2 2 0 4 4 0 6 6 0 8 8 0",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "32" ],
+    "result" : "1 3 0 2 3 0 2 3 1 3 3 0 3 3 1 3 3 2 4 3 0 4 3 1 4 3 2 4 3 3",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2018.08.25",
+  "contestName" : "2018 TopCoder Open Algorithm",
+  "testClasses" : [ "net.egork.CubesOnATableTestCase" ],
+  "fqn" : "net.egork.CubesOnATable",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

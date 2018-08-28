@@ -1,0 +1,39 @@
+{
+  "name" : "F. Сделай симметричным",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "12\n1 1 6\n1 6 1\n1 5 5\n1 2 3\n3 4 4\n1 3 2\n3 7 7\n2 2 3\n2 6 1\n3 8 8\n2 5 5\n3 1 1\n",
+    "output" : "1\n0\n2\n2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6\n1 1 2\n3 1 1\n1 1 1\n3 2 2\n2 1 1\n3 2 4\n",
+    "output" : "1\n1\n0\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.F",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.27",
+  "contestName" : "AIM Tech Round 5 (rated, Div. 1 + Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

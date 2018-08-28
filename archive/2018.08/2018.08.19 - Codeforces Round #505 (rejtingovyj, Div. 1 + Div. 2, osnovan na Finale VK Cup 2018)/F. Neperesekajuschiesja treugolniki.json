@@ -1,0 +1,39 @@
+{
+  "name" : "F. Непересекающиеся треугольники",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n1 1\n2 2\n4 6\n4 5\n7 2\n5 3\n",
+    "output" : "6\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "7\n0 -1000000000\n-5 -5\n5 -5\n-5 0\n5 0\n-2 2\n2 2\n",
+    "output" : "21\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.F",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.19",
+  "contestName" : "Codeforces Round #505 (рейтинговый, Div. 1 + Div. 2, основан на Финале VK Cup 2018)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,39 @@
+{
+  "name" : "E. Восстановление массива",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n1 3 1 0\n",
+    "output" : "YES\n1 3 5 2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n4 4\n",
+    "output" : "NO\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.E",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "net.egork.ETestCase" ],
+  "date" : "2018.08.27",
+  "contestName" : "AIM Tech Round 5 (rated, Div. 1 + Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,44 @@
+{
+  "name" : "B. Ослабленный Общий Делитель",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n17 18\n15 24\n12 15\n",
+    "output" : "6\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n10 16\n7 17\n",
+    "output" : "-1\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5\n90 108\n45 105\n75 40\n165 175\n33 30\n",
+    "output" : "5\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.B",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.19",
+  "contestName" : "Codeforces Round #505 (рейтинговый, Div. 1 + Div. 2, основан на Финале VK Cup 2018)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

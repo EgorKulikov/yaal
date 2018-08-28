@@ -1,0 +1,36 @@
+{
+  "name" : "Gangsters",
+  "signature" : {
+    "name" : "countOrderings",
+    "result" : "int",
+    "arguments" : [ "int", "int" ],
+    "argumentNames" : [ "people", "alive" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "4", "2" ],
+    "result" : "12",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "1" ],
+    "result" : "6",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "3", "0" ],
+    "result" : "0",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "9", "3" ],
+    "result" : "203616",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2018.08.25",
+  "contestName" : "2018 TopCoder Open Algorithm",
+  "testClasses" : [ "net.egork.GangstersTestCase" ],
+  "fqn" : "net.egork.Gangsters",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
