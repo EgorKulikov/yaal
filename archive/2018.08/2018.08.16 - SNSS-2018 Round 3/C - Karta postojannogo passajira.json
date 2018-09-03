@@ -1,0 +1,44 @@
+{
+  "name" : "C - Карта постоянного пассажира",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2691820742852371\n",
+    "output" : "2691020742852379\n2699020742852371\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "8000987654321234\n",
+    "output" : "0000987654329234\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "0123456789012345\n",
+    "output" : "-1\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.08.16",
+  "contestName" : "SNSS-2018 Round 3",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
