@@ -1,0 +1,39 @@
+{
+  "name" : "A. Расписание автобусов",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 10\n4 6 8\n2 2 3\n",
+    "output" : "Yes\n16 17 21 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2 1\n1 2\n2 1\n",
+    "output" : "No\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.A",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.05",
+  "contestName" : "Codeforces Round #507 (Div. 1, по задачам Олимпиады Мегаполисов)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
