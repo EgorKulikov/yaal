@@ -1,0 +1,36 @@
+{
+  "name" : "PrimeMaker",
+  "signature" : {
+    "name" : "minimalOperation",
+    "result" : "int",
+    "arguments" : [ "int" ],
+    "argumentNames" : [ "n" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "26" ],
+    "result" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "47" ],
+    "result" : "0",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "222222" ],
+    "result" : "2",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "1" ],
+    "result" : "1",
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2018.09.01",
+  "contestName" : "IIT BHU",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.PrimeMaker",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

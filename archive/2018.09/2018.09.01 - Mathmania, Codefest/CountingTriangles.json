@@ -1,0 +1,26 @@
+{
+  "name" : "CountingTriangles",
+  "signature" : {
+    "name" : "findCount",
+    "result" : "int",
+    "arguments" : [ "long" ],
+    "argumentNames" : [ "N" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "1" ],
+    "result" : "5",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "2" ],
+    "result" : "27",
+    "index" : 1,
+    "active" : true
+  } ],
+  "date" : "2018.09.01",
+  "contestName" : "IIT BHU",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.CountingTriangles",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

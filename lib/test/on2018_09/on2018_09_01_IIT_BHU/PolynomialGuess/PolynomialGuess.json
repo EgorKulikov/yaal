@@ -1,0 +1,26 @@
+{
+  "name" : "PolynomialGuess",
+  "signature" : {
+    "name" : "findValue",
+    "result" : "int",
+    "arguments" : [ "int[]" ],
+    "argumentNames" : [ "p" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "10 11 12 13 14 15" ],
+    "result" : "16",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "2 5 7 12 19 31" ],
+    "result" : "64",
+    "index" : 1,
+    "active" : true
+  } ],
+  "date" : "2018.09.01",
+  "contestName" : "IIT BHU",
+  "testClasses" : [ ],
+  "fqn" : "on2018_09.on2018_09_01_IIT_BHU.PolynomialGuess.PolynomialGuess",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

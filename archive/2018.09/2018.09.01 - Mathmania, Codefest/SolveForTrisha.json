@@ -1,0 +1,26 @@
+{
+  "name" : "SolveForTrisha",
+  "signature" : {
+    "name" : "findSolution",
+    "result" : "int",
+    "arguments" : [ "int" ],
+    "argumentNames" : [ "n" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "2" ],
+    "result" : "0",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "3" ],
+    "result" : "3",
+    "index" : 1,
+    "active" : true
+  } ],
+  "date" : "2018.09.01",
+  "contestName" : "IIT BHU",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.SolveForTrisha",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

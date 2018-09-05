@@ -1,0 +1,44 @@
+{
+  "name" : "E. Поездка",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 4 2\n2 3\n1 2\n1 3\n1 4\n",
+    "output" : "0\n0\n3\n3\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 8 2\n2 1\n4 2\n5 4\n5 2\n4 3\n5 1\n4 1\n3 2\n",
+    "output" : "0\n0\n0\n3\n3\n4\n4\n5\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5 7 2\n1 5\n3 2\n2 5\n3 4\n1 2\n5 3\n1 3\n",
+    "output" : "0\n0\n0\n0\n3\n4\n4\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.E",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.02",
+  "contestName" : "Manthan, Codefest 18 (rated, Div. 1 + Div. 2)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
