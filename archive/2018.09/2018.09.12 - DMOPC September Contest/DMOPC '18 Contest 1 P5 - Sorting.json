@@ -1,0 +1,39 @@
+{
+  "name" : "DMOPC '18 Contest 1 P5 - Sorting",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 2\n2 3 1 0\n4 3\n1 1\n",
+    "output" : "2\n2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 3\n1 0 2 3\n1 2\n3 4\n1 4\n",
+    "output" : "0\n1\n2\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.DMOPC18Contest1P5Sorting",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.09.12",
+  "contestName" : "DMOJ",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
