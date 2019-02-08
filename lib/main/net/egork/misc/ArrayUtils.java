@@ -413,6 +413,14 @@ public class ArrayUtils {
         }
     }
 
+    public static void orderBy(int[] base, char[]... arrays) {
+        int[] order = ArrayUtils.order(base);
+        order(order, base);
+        for (char[] array : arrays) {
+            order(order, array);
+        }
+    }
+
     public static void orderBy(long[] base, long[]... arrays) {
         int[] order = ArrayUtils.order(base);
         order(order, base);
@@ -427,6 +435,14 @@ public class ArrayUtils {
             tempInt[i] = array[order[i]];
         }
         System.arraycopy(tempInt, 0, array, 0, array.length);
+    }
+
+    public static void order(int[] order, char[] array) {
+        char[] tempChar = new char[order.length];
+        for (int i = 0; i < order.length; i++) {
+            tempChar[i] = array[order[i]];
+        }
+        System.arraycopy(tempChar, 0, array, 0, array.length);
     }
 
     public static void order(int[] order, long[] array) {
