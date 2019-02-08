@@ -1,0 +1,49 @@
+{
+  "name" : "B - Garbage Collector",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 100\n1 10\n",
+    "output" : "355\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 1\n1 999999997 999999998 999999999 1000000000\n",
+    "output" : "19999999983\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10 8851025\n38 87 668 3175 22601 65499 90236 790604 4290609 4894746\n",
+    "output" : "150710136\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "16 10\n1 7 12 27 52 75 731 13856 395504 534840 1276551 2356789 9384806 19108104 82684732 535447408\n",
+    "output" : "3256017715\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.TaskB",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "net.egork.TaskBTestCase" ],
+  "date" : "2018.09.15",
+  "contestName" : "AtCoder Grand Contest 027",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
