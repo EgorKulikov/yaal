@@ -1,0 +1,41 @@
+{
+  "name" : "ReconstructNumber",
+  "signature" : {
+    "name" : "smallest",
+    "result" : "String",
+    "arguments" : [ "String" ],
+    "argumentNames" : [ "comparisons" ]
+  },
+  "tests" : [ {
+    "arguments" : [ ">=!<" ],
+    "result" : "10012",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "====!====" ],
+    "result" : "1111100000",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "" ],
+    "result" : "1",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>" ],
+    "result" : "",
+    "index" : 3,
+    "active" : true
+  }, {
+    "arguments" : [ "><<>><=<=>=>" ],
+    "result" : "1012101122110",
+    "index" : 4,
+    "active" : true
+  } ],
+  "date" : "2019.03.06",
+  "contestName" : "TopCoder Open19 SRM 752",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.ReconstructNumber",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

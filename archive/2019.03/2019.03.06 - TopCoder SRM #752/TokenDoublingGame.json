@@ -1,0 +1,35 @@
+{
+  "name" : "TokenDoublingGame",
+  "signature" : {
+    "name" : "expectation",
+    "result" : "int",
+    "arguments" : [ "int" ],
+    "argumentNames" : [ "N" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "1" ],
+    "result" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "2" ],
+    "result" : "333333339",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "13" ],
+    "result" : "444154848",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "3" ],
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2019.03.06",
+  "contestName" : "TopCoder Open19 SRM 752",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.TokenDoublingGame",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
