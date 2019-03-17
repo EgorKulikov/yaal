@@ -1,0 +1,39 @@
+{
+  "name" : "E. Головоломка из фишек",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 2\n00 10\n01 11\n10 01\n10 01\n",
+    "output" : "4\n2 1 1 1\n1 1 1 2\n1 2 2 2\n2 2 2 1\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2 3\n0 0 0\n011 1 0\n0 0 1\n011 0 0\n",
+    "output" : "4\n2 2 1 2\n1 2 2 2\n1 2 1 3\n1 3 1 2\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.E",
+  "checkerClass" : "net.egork.EChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.18",
+  "contestName" : "Mail.Ru Cup 2018 Раунд 1",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

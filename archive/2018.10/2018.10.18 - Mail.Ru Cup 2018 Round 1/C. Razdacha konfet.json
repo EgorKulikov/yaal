@@ -1,0 +1,44 @@
+{
+  "name" : "C. Раздача конфет",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "стандартный ввод"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "стандартный вывод"
+  },
+  "tests" : [ {
+    "input" : "5\n0 0 1 1 2\n2 0 1 0 0\n",
+    "output" : "YES\n1 3 1 2 1\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4\n0 0 2 0\n1 1 1 1\n",
+    "output" : "NO\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3\n0 0 0\n0 0 0\n",
+    "output" : "YES\n1 1 1\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.C",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.18",
+  "contestName" : "Mail.Ru Cup 2018 Раунд 1",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
