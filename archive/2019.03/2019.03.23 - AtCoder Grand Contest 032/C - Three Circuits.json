@@ -1,0 +1,49 @@
+{
+  "name" : "C - Three Circuits",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "7 9\n1 2\n1 3\n2 3\n1 4\n1 5\n4 5\n1 6\n1 7\n6 7\n",
+    "output" : "Yes\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 3\n1 2\n2 3\n3 1\n",
+    "output" : "No\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "18 27\n17 7\n12 15\n18 17\n13 18\n13 6\n5 7\n7 1\n14 5\n15 11\n7 6\n1 9\n5 4\n18 16\n4 6\n7 2\n7 11\n6 3\n12 14\n5 2\n10 5\n7 8\n10 15\n3 15\n9 8\n7 15\n5 16\n18 15\n",
+    "output" : "Yes\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "8 10\n1 2\n2 3\n1 3\n3 4\n3 5\n4 6\n5 6\n6 7\n6 8\n7 8\n",
+    "output" : "Yes",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.CThreeCircuits",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.23",
+  "contestName" : "AtCoder Grand Contest 032",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
