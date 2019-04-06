@@ -1,0 +1,40 @@
+{
+  "name" : "OrthogonalProjections",
+  "signature" : {
+    "name" : "generate",
+    "result" : "int[]",
+    "arguments" : [ "int" ],
+    "argumentNames" : [ "n" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "6" ],
+    "result" : "0 0 0 1 1 2",
+    "index" : 0,
+    "active" : false
+  }, {
+    "arguments" : [ "47" ],
+    "result" : "",
+    "index" : 1,
+    "active" : false
+  }, {
+    "arguments" : [ "8" ],
+    "result" : "0 0 0 2 7 1 14 0 14 2",
+    "index" : 2,
+    "active" : false
+  }, {
+    "arguments" : [ "100" ],
+    "result" : "70 30 16 85 51 41 29 72 47 6 15 45 71 30 45 18 22 58 79 45 58 17",
+    "index" : 3,
+    "active" : false
+  }, {
+    "arguments" : [ "3112" ],
+    "index" : 4,
+    "active" : true
+  } ],
+  "date" : "2019.03.30",
+  "contestName" : "TopCoder Open19 SRM 754",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.OrthogonalProjections",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

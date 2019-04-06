@@ -1,0 +1,44 @@
+{
+  "name" : "A. The Beatles",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 3\n1 1\n",
+    "output" : "1 6\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 2\n0 0\n",
+    "output" : "1 3\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1 10\n5 3\n",
+    "output" : "5 5\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.ATheBeatles",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.30",
+  "contestName" : "Codeforces Round #549 (Div. 1)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

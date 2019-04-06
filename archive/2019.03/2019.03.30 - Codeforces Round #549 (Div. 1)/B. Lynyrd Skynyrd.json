@@ -1,0 +1,39 @@
+{
+  "name" : "B. Lynyrd Skynyrd",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 6 3\n2 1 3\n1 2 3 1 2 3\n1 5\n2 6\n3 5\n",
+    "output" : "110\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2 4 3\n2 1\n1 1 2 2\n1 2\n2 3\n3 4\n",
+    "output" : "010\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.BLynyrdSkynyrd",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.03.30",
+  "contestName" : "Codeforces Round #549 (Div. 1)",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

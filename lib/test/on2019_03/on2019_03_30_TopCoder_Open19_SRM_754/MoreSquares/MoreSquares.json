@@ -1,0 +1,35 @@
+{
+  "name" : "MoreSquares",
+  "signature" : {
+    "name" : "countLocations",
+    "result" : "int",
+    "arguments" : [ "int", "int", "int", "int[]", "int[]" ],
+    "argumentNames" : [ "N", "SX", "SY", "Xprefix", "Yprefix" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "3", "100", "100", "3 0 2", "0 1 2" ],
+    "result" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "5", "100", "100", "47 47 47 47 47", "47 47 47 47 47" ],
+    "result" : "0",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "23", "11", "13", "7", "0" ],
+    "result" : "5",
+    "index" : 2,
+    "active" : true
+  }, {
+    "arguments" : [ "3000", "1000000", "1000000", "1", "0" ],
+    "index" : 3,
+    "active" : true
+  } ],
+  "date" : "2019.03.30",
+  "contestName" : "TopCoder Open19 SRM 754",
+  "testClasses" : [ ],
+  "fqn" : "on2019_03.on2019_03_30_TopCoder_Open19_SRM_754.MoreSquares.MoreSquares",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
