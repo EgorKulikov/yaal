@@ -1,0 +1,34 @@
+{
+  "name" : "You Can Go Your Own Way",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n2\nSE\n5\nEESSSESE\n",
+    "output" : "Case #1: ES\nCase #2: SEEESSES\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Solution",
+  "taskClass" : "net.egork.YouCanGoYourOwnWay",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.06",
+  "contestName" : "Qualification Round 2019 - Google Code Jam 2019",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

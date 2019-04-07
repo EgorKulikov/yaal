@@ -1,0 +1,44 @@
+{
+  "name" : "C. Рамзес и инвертирование углов",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 3\n0 1 0\n0 1 0\n1 0 0\n1 0 0\n1 0 0\n1 0 0\n",
+    "output" : "Yes\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6 7\n0 0 1 1 0 0 1\n0 1 0 0 1 0 1\n0 0 0 1 0 0 1\n1 0 1 0 1 0 0\n0 1 0 0 1 0 1\n0 1 0 1 0 0 1\n1 1 0 1 0 1 1\n0 1 1 0 1 0 0\n1 1 0 1 0 0 1\n1 0 1 0 0 1 0\n0 1 1 0 1 0 0\n0 1 1 1 1 0 1\n",
+    "output" : "Yes\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3 4\n0 1 0 1\n1 0 1 0\n0 1 0 1\n1 1 1 1\n1 1 1 1\n1 1 1 1\n",
+    "output" : "No\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "net.egork.CRamzesIInvertirovanieUglov",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.06",
+  "contestName" : "Codeforces Global Round 2",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,39 @@
+{
+  "name" : "D. Frets On Fire",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n3 1 4 1 5 9\n3\n7 7\n0 2\n8 17\n",
+    "output" : "5 10 18\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n1 500000000000000000\n2\n1000000000000000000 1000000000000000000\n0 1000000000000000000\n",
+    "output" : "2 1500000000000000000\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "on2019_04.on2019_04_06_Codeforces_Global_Round_2.D__Frets_On_Fire.DFretsOnFire",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.06",
+  "contestName" : "Codeforces Global Round 2",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
