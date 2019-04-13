@@ -1,0 +1,34 @@
+{
+  "name" : "Alien Rhyme",
+  "testType" : "MULTI_NUMBER",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n2\nTARPOL\nPROL\n3\nTARPOR\nPROL\nTARPRO\n6\nCODEJAM\nJAM\nHAM\nNALAM\nHUM\nNOLOM\n4\nPI\nHI\nWI\nFI\n\n  ",
+    "output" : "Case #1: 2\nCase #2: 0\nCase #3: 6\nCase #4: 2\n\n  ",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "main/net/egork",
+  "vmArgs" : "-Xmx1G",
+  "mainClass" : "Solution",
+  "taskClass" : "on2019_04.on2019_04_13_Round_1A_2019___Google_Code_Jam_2019.Alien_Rhyme.AlienRhyme",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.13",
+  "contestName" : "Round 1A 2019 - Google Code Jam 2019",
+  "truncate" : true,
+  "inputClass" : "net.egork.io.InputReader",
+  "outputClass" : "net.egork.io.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : true,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -4,7 +4,7 @@ package net.egork.string;
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
 public class Trie {
-    private Node root = new Node();
+    public final Node root = new Node();
 
     public void add(CharSequence word) {
         Node current = root;
@@ -48,8 +48,8 @@ public class Trie {
         }
     }
 
-    private static class Node {
-        private Node[] links = new Node[128];
-        private boolean leaf = false;
+    public static class Node {
+        public final Node[] links = new Node[128];
+        public boolean leaf = false;
     }
 }
