@@ -1,0 +1,31 @@
+{
+  "name" : "PrimeAlters",
+  "signature" : {
+    "name" : "isReachable",
+    "result" : "String",
+    "arguments" : [ "int[]", "int[]" ],
+    "argumentNames" : [ "source", "target" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "2 17 11 98240249", "7 47 47 98240249" ],
+    "result" : "1111",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "294001 100003", "100003 100003" ],
+    "result" : "01",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "7331 72652729", "8219 28794281" ],
+    "result" : "11",
+    "index" : 2,
+    "active" : true
+  } ],
+  "date" : "2019.03.15",
+  "contestName" : "2019 Humblefool Cup",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.PrimeAlters",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

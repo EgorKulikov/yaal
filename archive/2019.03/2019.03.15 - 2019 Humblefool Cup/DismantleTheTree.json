@@ -1,0 +1,31 @@
+{
+  "name" : "DismantleTheTree",
+  "signature" : {
+    "name" : "dismantle",
+    "result" : "int",
+    "arguments" : [ "int", "int[]", "int[]", "int[]" ],
+    "argumentNames" : [ "N", "X", "Y", "weight" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "4", "1 2 2", "2 3 4", "1 2 1" ],
+    "result" : "3",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "5", "1 1 5 3", "2 3 4 5", "2 2 2 1" ],
+    "result" : "5",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "6", "1 2 3 4 4", "3 3 4 5 6", "10 10 10 10 10" ],
+    "result" : "30",
+    "index" : 2,
+    "active" : true
+  } ],
+  "date" : "2019.03.15",
+  "contestName" : "2019 Humblefool Cup",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.DismantleTheTree",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

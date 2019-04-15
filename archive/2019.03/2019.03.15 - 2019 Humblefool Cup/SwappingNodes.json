@@ -1,0 +1,26 @@
+{
+  "name" : "SwappingNodes",
+  "signature" : {
+    "name" : "swapNodes",
+    "result" : "int[]",
+    "arguments" : [ "int[]", "int" ],
+    "argumentNames" : [ "leaves", "numberOfLeaves" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "5 2 1 3", "4" ],
+    "result" : "1 3 2 5",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "13 10 18 16", "4" ],
+    "result" : "10 13 16 18",
+    "index" : 1,
+    "active" : true
+  } ],
+  "date" : "2019.03.15",
+  "contestName" : "2019 Humblefool Cup",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.SwappingNodes",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
