@@ -1,0 +1,31 @@
+{
+  "name" : "OneHandSort",
+  "signature" : {
+    "name" : "sortShelf",
+    "result" : "int[]",
+    "arguments" : [ "int[]" ],
+    "argumentNames" : [ "target" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "0 1 2" ],
+    "result" : "",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "1 2 3 0" ],
+    "result" : "2 1 0 3 4",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "1 0 3 2" ],
+    "result" : "0 1 4 2 3 4",
+    "index" : 2,
+    "active" : true
+  } ],
+  "date" : "2019.04.15",
+  "contestName" : "TopCoder Open19 SRM 755",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.OneHandSort",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

@@ -1,0 +1,31 @@
+{
+  "name" : "OneHandRoadPainting",
+  "signature" : {
+    "name" : "fastest",
+    "result" : "long",
+    "arguments" : [ "int[]", "int[]", "int" ],
+    "argumentNames" : [ "dStart", "dEnd", "paintPerBrush" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "3 7", "4 9", "1" ],
+    "result" : "42",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "3 7", "4 9", "5" ],
+    "result" : "18",
+    "index" : 1,
+    "active" : true
+  }, {
+    "arguments" : [ "1 10 20", "4 13 22", "2" ],
+    "result" : "98",
+    "index" : 2,
+    "active" : true
+  } ],
+  "date" : "2019.04.15",
+  "contestName" : "TopCoder Open19 SRM 755",
+  "testClasses" : [ ],
+  "fqn" : "net.egork.OneHandRoadPainting",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}

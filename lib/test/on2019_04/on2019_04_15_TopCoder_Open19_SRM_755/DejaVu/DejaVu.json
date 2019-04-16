@@ -1,0 +1,26 @@
+{
+  "name" : "DejaVu",
+  "signature" : {
+    "name" : "mostDejaVus",
+    "result" : "int",
+    "arguments" : [ "int", "int", "int" ],
+    "argumentNames" : [ "N", "seed", "R" ]
+  },
+  "tests" : [ {
+    "arguments" : [ "10", "47", "5" ],
+    "result" : "2",
+    "index" : 0,
+    "active" : true
+  }, {
+    "arguments" : [ "14", "474747", "7" ],
+    "result" : "3",
+    "index" : 1,
+    "active" : true
+  } ],
+  "date" : "2019.04.15",
+  "contestName" : "TopCoder Open19 SRM 755",
+  "testClasses" : [ ],
+  "fqn" : "on2019_04.on2019_04_15_TopCoder_Open19_SRM_755.DejaVu.DejaVu",
+  "failOnOverflow" : true,
+  "memoryLimit" : "256M"
+}
