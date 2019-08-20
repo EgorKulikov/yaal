@@ -2,6 +2,8 @@ package net.egork.string;
 
 import java.util.Arrays;
 
+import static java.lang.Math.min;
+
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)
  */
@@ -189,5 +191,43 @@ public class StringUtils {
             System.arraycopy(nextOrder, 0, order, 0, length);
         }
         return order;
+    }
+
+    public static int[] d1Manacher(String s) {
+        int n = s.length();
+        int[] d1 = new int[n];
+        int l = 0;
+        int r = -1;
+        for (int i = 0; i < n; ++i) {
+            int k = (i > r ? 0 : min(d1[l + r - i], r - i));
+            while (i + k < n && i - k >= 0 && s.charAt(i + k) == s.charAt(i - k)) {
+                ++k;
+            }
+            d1[i] = k--;
+            if (i + k > r) {
+                l = i - k;
+                r = i + k;
+            }
+        }
+        return d1;
+    }
+
+    public static int[] d2Manacher(String s) {
+        int n = s.length();
+        int[] d2 = new int[n];
+        int l = 0;
+        int r = -1;
+        for (int i = 0; i < n; ++i) {
+            int k = (i > r ? 0 : min(d2[l + r - i + 1], r - i + 1)) + 1;
+            while (i + k - 1 < n && i - k >= 0 && s.charAt(i + k - 1) == s.charAt(i - k)) {
+                ++k;
+            }
+            d2[i] = --k;
+            if (i + k - 1 > r) {
+                l = i - k;
+                r = i + k - 1;
+            }
+        }
+        return d2;
     }
 }
